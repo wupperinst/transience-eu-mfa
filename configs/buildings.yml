@@ -1,0 +1,11 @@
+# general config
+model_class: 'buildings'
+
+# data sources
+input_data_path: 'data/baseline/input'
+
+# data export
+output_path: 'data/baseline/output'
+do_export:
+  pickle: False
+  csv: False
