@@ -4,6 +4,11 @@ model_class: 'buildings'
 # data sources
 input_data_path: 'data/baseline/input'
 
+# visualization
+visualization:
+  inflow:
+    do_visualize: True
+
 # data export
 output_path: 'data/baseline/output'
 do_export:

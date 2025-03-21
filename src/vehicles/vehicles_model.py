@@ -1,12 +1,12 @@
 import os
 
 from src.common.common_cfg import GeneralCfg
-from .buildings_mfa_system import BuildingsMFASystem
-from .buildings_export import BuildingsDataExporter
-from .buildings_definition import get_definition
+from .vehicles_mfa_system import VehiclesMFASystem
+from .vehicles_export import VehiclesDataExporter
+from .vehicles_definition import get_definition
 
 
-class BuildingsModel:
+class VehiclesModel:
 
     def __init__(self, cfg: GeneralCfg):
         self.cfg = cfg
@@ -23,11 +23,10 @@ class BuildingsModel:
         dimension_map = {
             "Time": "time_in_years",
             "Region": "regions",
-            "Building type": "building_types",
-            "Building age cohorts": "building_cohorts",
+            "Vehicle types": "vehicle_types",
+            "Vehicle size": "vehicle_size",
             "Steel product": "steel_products",
-            "Concrete product": "concrete_products",
-            "Insulation product": "insulation_products",
+            "Plastics product": "plastics_products",
             "Glass products": "glass_products",
         }
 
@@ -43,7 +42,7 @@ class BuildingsModel:
             parameter_files[parameter.name] = os.path.join(
                 self.cfg.input_data_path, "datasets", f"{parameter.name}.csv"
             )
-        self.mfa = BuildingsMFASystem.from_csv(
+        self.mfa = VehiclesMFASystem.from_csv(
             definition=self.definition,
             dimension_files=dimension_files,
             parameter_files=parameter_files,
