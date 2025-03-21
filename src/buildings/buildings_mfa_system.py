@@ -11,20 +11,25 @@ class BuildingsMFASystem(fd.MFASystem):
         flw = self.flows
         stk = self.stock
 
-        flw["Environment => Steel stock in buildings"][...] = prm["building_inflow"]*prm["steel_intensity"]
-        flw["Environment => Concrete stock in buildings"][...] = prm["building_inflow"] * prm["concrete_intensity"]
-        flw["Environment => Insulation stock in buildings"][...] = prm["building_inflow"] * prm["insulation_intensity"]
-        flw["Environment => Glass stock in buildings"][...] = prm["building_inflow"] * prm["glass_intensity"]
-        flw["Steel stock in buildings => Environment"][...] = prm["building_outflow"] * prm["steel_intensity"]
-        flw["Concrete stock in buildings => Environment"][...] = prm["building_outflow"] * prm["concrete_intensity"]
-        flw["Insulation stock in buildings => Environment"][...] = prm["building_outflow"] * prm["insulation_intensity"]
-        flw["Glass stock in buildings => Environment"][...] = prm["building_outflow"] * prm["glass_intensity"]
-        stk["Steel stock in buildings"][...] = prm["building_stock"]*prm["steel_intensity"]
-        stk["Concrete stock in buildings"][...] = prm["building_stock"] * prm["concrete_intensity"]
-        stk["Insulation stock in buildings"][...] = prm["building_stock"] * prm["insulation_intensity"]
-        stk["Glass stock in buildings"][...] = prm["building_stock"] * prm["glass_intensity"]
+        flw["Environment => Steel stock in buildings"][...] = prm["building_inflow"] * prm["buildings_steel_intensity"]
+        flw["Environment => Concrete stock in buildings"][...] = prm["building_inflow"] * prm[
+            "buildings_concrete_intensity"]
+        flw["Environment => Insulation stock in buildings"][...] = prm["building_inflow"] * prm[
+            "buildings_insulation_intensity"]
+        flw["Environment => Glass stock in buildings"][...] = prm["building_inflow"] * prm["buildings_glass_intensity"]
+        flw["Steel stock in buildings => Environment"][...] = prm["building_outflow"] * prm["buildings_steel_intensity"]
+        flw["Concrete stock in buildings => Environment"][...] = prm["building_outflow"] * prm[
+            "buildings_concrete_intensity"]
+        flw["Insulation stock in buildings => Environment"][...] = prm["building_outflow"] * prm[
+            "buildings_insulation_intensity"]
+        flw["Glass stock in buildings => Environment"][...] = prm["building_outflow"] * prm[
+            "buildings_glass_intensity"]
+        stk["Steel stock in buildings"][...] = prm["building_stock"]*prm["buildings_steel_intensity"]
+        stk["Concrete stock in buildings"][...] = prm["building_stock"] * prm["buildings_concrete_intensity"]
+        stk["Insulation stock in buildings"][...] = prm["building_stock"] * prm["buildings_insulation_intensity"]
+        stk["Glass stock in buildings"][...] = prm["building_stock"] * prm["buildings_glass_intensity"]
         flw["Steel stock in buildings => Steel stock in buildings"][...] = \
-            flw["Steel stock in buildings => Environment"] * prm["steel_element_reuse"]
+            flw["Steel stock in buildings => Environment"] * prm["buildings_steel_element_reuse"]
         flw["Environment => Steel stock in buildings"][...] = \
             flw["Environment => Steel stock in buildings"] + \
             flw["Steel stock in buildings => Steel stock in buildings"]
@@ -32,7 +37,7 @@ class BuildingsMFASystem(fd.MFASystem):
             flw["Steel stock in buildings => Environment"] -\
             flw["Steel stock in buildings => Steel stock in buildings"]
         flw["Concrete stock in buildings => Concrete stock in buildings"][...] = \
-            flw["Concrete stock in buildings => Environment"] * prm["concrete_element_reuse"]
+            flw["Concrete stock in buildings => Environment"] * prm["buildings_concrete_element_reuse"]
         flw["Environment => Concrete stock in buildings"][...] = \
             flw["Environment => Concrete stock in buildings"] + \
             flw["Concrete stock in buildings => Concrete stock in buildings"]
