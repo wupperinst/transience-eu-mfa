@@ -40,6 +40,14 @@ def get_definition(cfg: GeneralCfg):
                           dim_letters=("t", "r", "l")),
         fd.FlowDefinition(from_process="Concrete stock in buildings",to_process="Concrete stock in buildings",
                           dim_letters=("t", "r", "o")),
+        fd.FlowDefinition(from_process="Steel stock in buildings", to_process="Environment",
+                         im_letters=("t", "r", "l")),
+        fd.FlowDefinition(from_process="Concrete stock in buildings", to_process="Environment",
+                          dim_letters=("t", "r", "o")),
+        fd.FlowDefinition(from_process="Insulation stock in buildings", to_process="Environment",
+                          dim_letters=("t", "r", "i")),
+        fd.FlowDefinition(from_process="Glass stock in buildings", to_process="Environment",
+                          dim_letters=("t", "r", "g")),
     ]
 
     stocks = [
@@ -74,12 +82,12 @@ def get_definition(cfg: GeneralCfg):
         fd.ParameterDefinition(name="building_stock", dim_letters=("t", "r", "b", "a")),
         fd.ParameterDefinition(name="building_inflow", dim_letters=("t", "r", "b", "a")),
         fd.ParameterDefinition(name="building_outflow", dim_letters=("t", "r", "b", "a")),
-        fd.ParameterDefinition(name="steel_intensity", dim_letters=("r", "b", "a", "l")),
-        fd.ParameterDefinition(name="concrete_intensity", dim_letters=("r", "b", "a", "o")),
-        fd.ParameterDefinition(name="insulation_intensity", dim_letters=("r", "b", "a", "i")),
-        fd.ParameterDefinition(name="glass_intensity", dim_letters=("r", "b", "a", "g")),
-        fd.ParameterDefinition(name="steel_element_reuse", dim_letters=("r", "l")),
-        fd.ParameterDefinition(name="concrete_element_reuse", dim_letters=("r", "o")),
+        fd.ParameterDefinition(name="building_steel_intensity", dim_letters=("r", "b", "a", "l")),
+        fd.ParameterDefinition(name="building_concrete_intensity", dim_letters=("r", "b", "a", "o")),
+        fd.ParameterDefinition(name="building_insulation_intensity", dim_letters=("r", "b", "a", "i")),
+        fd.ParameterDefinition(name="building_glass_intensity", dim_letters=("r", "b", "a", "g")),
+        fd.ParameterDefinition(name="building_steel_element_reuse", dim_letters=("r", "l")),
+        fd.ParameterDefinition(name="building_concrete_element_reuse", dim_letters=("r", "o")),
     ]
 
     return fd.MFADefinition(

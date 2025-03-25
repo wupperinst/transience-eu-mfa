@@ -1,12 +1,11 @@
 from src.common.base_model import EUMFABaseModel
 import flodym as fd
 
-from .data_extrapolations import Extrapolation
-
 
 IMPLEMENTED_MODELS = [
     "buildings",
     "plastics",
+    "vehicles",
 ]
 
 
@@ -35,11 +34,20 @@ class VisualizationCfg(EUMFABaseModel):
     plotting_engine: str = "plotly"
 
 
+class BuildingsVisualizationCfg(VisualizationCfg):
+
+    pass
+
+
+class VehiclesVisualizationCfg(VisualizationCfg):
+
+    pass
+
+
 class GeneralCfg(EUMFABaseModel):
 
     model_class: str
     input_data_path: str
-    customization: ModelCustomization
     visualization: VisualizationCfg
     output_path: str
     do_export: dict[str, bool]
@@ -50,10 +58,21 @@ class GeneralCfg(EUMFABaseModel):
             raise ValueError("model_class must be provided.")
         model_class = kwargs["model_class"]
         subclasses = {
-            "plastics": PlasticsCfg,
-            "steel": SteelCfg,
+            "buildings": BuildingsCfg,
+            "vehicles": VehiclesCfg,
         }
         if model_class not in subclasses:
             raise ValueError(f"Model class {model_class} not supported.")
         subcls = subclasses[model_class]
         return subcls(**kwargs)
+
+
+class BuildingsCfg(GeneralCfg):
+
+    visualization: BuildingsVisualizationCfg
+
+
+class VehiclesCfg(GeneralCfg):
+
+    visualization: VehiclesVisualizationCfg
+

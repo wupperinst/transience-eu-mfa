@@ -4,22 +4,21 @@ from typing import TYPE_CHECKING
 from src.common.custom_export import CustomDataExporter
 
 if TYPE_CHECKING:
-    from src.buildings.buildings_model import BuildingsModel
+    from src.vehicles.vehicles_model import VehiclesModel
 
 
-class BuildingsDataExporter(CustomDataExporter):
+class VehiclesDataExporter(CustomDataExporter):
 
     # Dictionary of variable names vs names displayed in figures. Used by visualization routines.
     _display_names: dict = {
         "Environment",
-        "Building stock",
-        "Steel stock in buildings",
-        "Concrete stock in buildings",
-        "Insulation stock in building",
-        "Glass stock in buildings",
+        "Vehicle stock",
+        "Steel stock in vehicles",
+        "Plastics stock in vehicles",
+        "Glass stock in vehicles",
     }
 
-    def visualize_results(self, model: "BuildingsModel"):
+    def visualize_results(self, model: "VehiclesModel"):
         if self.cfg.inflow["do_visualize"]:
             self.visualize_inflow(mfa=model.mfa)
             self.stop_and_show()
