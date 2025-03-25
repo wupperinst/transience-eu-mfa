@@ -6,6 +6,7 @@ from .data_extrapolations import Extrapolation
 
 IMPLEMENTED_MODELS = [
     "buildings",
+    "plastics",
 ]
 
 
