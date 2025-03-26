@@ -5,11 +5,12 @@ import flodym as fd
 from src.common.common_cfg import GeneralCfg
 from src.buildings.buildings_model import BuildingsModel
 from src.vehicles.vehicles_model import VehiclesModel
-
+from src.plastics.plastics_model import PlasticsModel
 
 models = {
     "buildings": BuildingsModel,
-    "vehicles": VehiclesModel
+    "vehicles": VehiclesModel,
+    "plastics": PlasticsModel,
 }
 
 

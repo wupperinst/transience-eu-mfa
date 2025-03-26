@@ -4,12 +4,12 @@ import flodym as fd
 
 IMPLEMENTED_MODELS = [
     "buildings",
-    "plastics",
     "vehicles",
+    "plastics",
 ]
 
 
-def choose_sublass_by_name(name: str, parent: type) -> type:
+def choose_subclass_by_name(name: str, parent: type) -> type:
 
     def recurse_subclasses(cls):
         return set(cls.__subclasses__()).union(
@@ -22,6 +22,15 @@ def choose_sublass_by_name(name: str, parent: type) -> type:
             f"Subclass name for {parent.__name__} must be one of {list(subclasses.keys())}, but {name} was given."
         )
     return subclasses[name]
+
+
+class ModelCustomization(EUMFABaseModel):
+
+    lifetime_model_name: str
+
+    @property
+    def lifetime_model(self) -> fd.LifetimeModel:
+        return choose_subclass_by_name(self.lifetime_model_name, fd.LifetimeModel)
 
 
 class VisualizationCfg(EUMFABaseModel):
@@ -38,16 +47,20 @@ class BuildingsVisualizationCfg(VisualizationCfg):
 
     pass
 
-
 class VehiclesVisualizationCfg(VisualizationCfg):
 
     pass
+
+class PlasticsVisualizationCfg(VisualizationCfg):
+
+    inflow: dict = {"do_visualize": False}
 
 
 class GeneralCfg(EUMFABaseModel):
 
     model_class: str
     input_data_path: str
+    customization: ModelCustomization
     visualization: VisualizationCfg
     output_path: str
     do_export: dict[str, bool]
@@ -60,6 +73,7 @@ class GeneralCfg(EUMFABaseModel):
         subclasses = {
             "buildings": BuildingsCfg,
             "vehicles": VehiclesCfg,
+            "plastics": PlasticsCfg,
         }
         if model_class not in subclasses:
             raise ValueError(f"Model class {model_class} not supported.")
@@ -71,8 +85,10 @@ class BuildingsCfg(GeneralCfg):
 
     visualization: BuildingsVisualizationCfg
 
-
 class VehiclesCfg(GeneralCfg):
 
     visualization: VehiclesVisualizationCfg
 
+class PlasticsCfg(GeneralCfg):
+
+    visualization: PlasticsVisualizationCfg
