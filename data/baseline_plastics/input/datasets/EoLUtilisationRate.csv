@@ -1,4 +1,4 @@
-region,time,sector,product,value
+region,time,sector,polymer,value
 East,2000,Agriculture,"PE-LD, -LLD",1
 East,2000,Agriculture,"PE-HD, -MD",1
 East,2000,Agriculture,PP,1

@@ -22,14 +22,14 @@ class PlasticsModel:
 
         dimension_map = {
             "time": "time_in_years",
-            "Age-cohort": "age_cohorts",
+            "age-cohort": "age_cohorts",
             "element": "elements",
             "region": "regions",
-            "other Region": "regions",
+            "other_region": "regions",
             "polymer": "polymers",
             "sector": "end_use_sectors",
-            "Waste category": "waste_categories",
-            "Secondary raw material": "secondary_raw_materials",
+            "waste_category": "waste_categories",
+            "secondary_raw_material": "secondary_raw_materials",
         }
 
         dimension_files = {}
@@ -48,6 +48,7 @@ class PlasticsModel:
             definition=self.definition,
             dimension_files=dimension_files,
             parameter_files=parameter_files,
+            allow_missing_parameter_values=True,
         )
         self.mfa.cfg = self.cfg
 

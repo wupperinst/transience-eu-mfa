@@ -1,4 +1,4 @@
-region,time,sector,product,waste,secondary_raw_material,value
+region,time,sector,polymer,waste_category,secondary_raw_material,value
 Germany,2020,Packaging,"PE-LD, -LLD",Mechanical recycling,Granulate,0.4
 Germany,2025,Packaging,"PE-LD, -LLD",Mechanical recycling,Granulate,0.4
 Germany,2030,Packaging,"PE-LD, -LLD",Mechanical recycling,Granulate,0.4

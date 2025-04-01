@@ -1,4 +1,4 @@
-region,time,sector,product,value
+region,time,sector,polymer,value
 EU27+3,2020,Packaging,"PE-LD, -LLD",0.11
 EU27+3,2025,Packaging,"PE-LD, -LLD",0.17
 EU27+3,2030,Packaging,"PE-LD, -LLD",0.23

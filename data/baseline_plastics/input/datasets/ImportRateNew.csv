@@ -1,4 +1,4 @@
-region_from,region_to,time,sector,product,value
+other_region,region,time,sector,polymer,value
 Extra-EU27+3,EU27+3,1970,Packaging,"PE-LD, -LLD",0.11
 Extra-EU27+3,EU27+3,1971,Packaging,"PE-LD, -LLD",0.11
 Extra-EU27+3,EU27+3,1972,Packaging,"PE-LD, -LLD",0.11
