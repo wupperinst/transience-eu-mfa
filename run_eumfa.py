@@ -9,7 +9,7 @@ from src.plastics.plastics_model import PlasticsModel
 
 models = {
     "buildings": BuildingsModel,
-    "vehicles": VehiclesModel
+    "vehicles": VehiclesModel,
     "plastics": PlasticsModel,
 }
 

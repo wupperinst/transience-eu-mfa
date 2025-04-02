@@ -4,6 +4,10 @@ model_class: 'buildings'
 # data sources
 input_data_path: 'data/baseline/input'
 
+# model customization
+customization:
+  lifetime_model_name: 'NormalLifetime'
+
 # visualization
 visualization:
   inflow:
