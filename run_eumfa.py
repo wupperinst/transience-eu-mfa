@@ -9,7 +9,7 @@ from src.plastics.plastics_model import PlasticsModel
 
 models = {
     "buildings": BuildingsModel,
-    "vehicles": VehiclesModel,
+    "vehicles": VehiclesModel
     "plastics": PlasticsModel,
 }
 
@@ -44,8 +44,3 @@ def run_eumfa(cfg_file: str):
 
     model_config = get_model_config(cfg_file)
     recalculate_mfa(model_config)
-
-
-if __name__ == "__main__":
-    cfg_file = "config/buildings.yml"
-    run_eumfa(cfg_file)

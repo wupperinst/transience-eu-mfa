@@ -24,11 +24,11 @@ class BuildingsModel:
             "Time": "time_in_years",
             "Region": "regions",
             "Building type": "building_types",
-            "Building age cohorts": "building_cohorts",
+            "Age cohort": "building_cohorts",
             "Steel product": "steel_products",
             "Concrete product": "concrete_products",
             "Insulation product": "insulation_products",
-            "Glass products": "glass_products",
+            "Glass product": "glass_products",
         }
 
         dimension_files = {}
@@ -47,6 +47,8 @@ class BuildingsModel:
             definition=self.definition,
             dimension_files=dimension_files,
             parameter_files=parameter_files,
+            allow_extra_parameter_values=True,
+            allow_missing_parameter_values=True,
         )
         self.mfa.cfg = self.cfg
 
