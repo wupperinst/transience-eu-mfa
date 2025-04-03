@@ -1,4 +1,5 @@
 import os
+import logging
 
 from src.common.common_cfg import GeneralCfg
 from .plastics_mfa_system import PlasticsMFASystem
@@ -27,7 +28,7 @@ class PlasticsModel:
             "region": "regions",
             "other_region": "regions",
             "polymer": "polymers",
-            "sector": "end_use_sectors",
+            "sector": f"end_use_sectors_{self.cfg.customization.end_use_sectors}",
             "waste_category": "waste_categories",
             "secondary_raw_material": "secondary_raw_materials",
         }
@@ -44,11 +45,14 @@ class PlasticsModel:
             parameter_files[parameter.name] = os.path.join(
                 self.cfg.input_data_path, "datasets", f"{parameter.name}.csv"
             )
+        
+        logging.info(f"model - Initializing PlasticsMFASystem.from_csv")
         self.mfa = PlasticsMFASystem.from_csv(
             definition=self.definition,
             dimension_files=dimension_files,
             parameter_files=parameter_files,
             allow_missing_parameter_values=True,
+            allow_extra_parameter_values=True,
         )
         self.mfa.cfg = self.cfg
 

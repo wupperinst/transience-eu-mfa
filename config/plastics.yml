@@ -7,6 +7,7 @@ input_data_path: 'data/baseline_plastics/input'
 # model customization
 customization:
   lifetime_model_name: 'NormalLifetime'
+  end_use_sectors: 'MainSectors' # options: MainSectors, ...
 
 # visualization
 visualization:
@@ -17,4 +18,4 @@ visualization:
 output_path: 'data/baseline_plastics/output'
 do_export:
   pickle: False
-  csv: True
+  csv: False

@@ -27,10 +27,14 @@ def choose_subclass_by_name(name: str, parent: type) -> type:
 class ModelCustomization(EUMFABaseModel):
 
     lifetime_model_name: str
-
+    
     @property
     def lifetime_model(self) -> fd.LifetimeModel:
         return choose_subclass_by_name(self.lifetime_model_name, fd.LifetimeModel)
+
+class PlasticsCustomizationCfg(ModelCustomization):
+    
+    end_use_sectors: str = "all"
 
 
 class VisualizationCfg(EUMFABaseModel):
@@ -92,3 +96,4 @@ class VehiclesCfg(GeneralCfg):
 class PlasticsCfg(GeneralCfg):
 
     visualization: PlasticsVisualizationCfg
+    customization: PlasticsCustomizationCfg
