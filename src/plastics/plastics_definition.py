@@ -83,7 +83,7 @@ def get_definition(cfg: GeneralCfg):
         fd.ParameterDefinition(name="EoLUtilisationRate", dim_letters=("r", "t", "s", "p")), # Utilisation rate of end-of-life (EoL) plastics products
         fd.ParameterDefinition(name="SortingRate", dim_letters=("r", "t", "s", "p", "w")), # Sorting rate of plastics waste
         fd.ParameterDefinition(name="ImportRateSortedWaste", dim_letters=("o", "r", "t", "s", "p", "w")), # Import rate of sorted plastic waste
-        fd.ParameterDefinition(name="ExportRateSortedWaste", dim_letters=("r", "o", "t", "s", "p")), # Export rate of sorted plastic waste
+        fd.ParameterDefinition(name="ExportRateSortedWaste", dim_letters=("r", "o", "t", "s", "p", "w")), # Export rate of sorted plastic waste
         fd.ParameterDefinition(name="RecyclingConversionRate", dim_letters=("r", "t", "s", "p", "w", "m")), # Conversion rates of sorted waste to secundary raw materials
     ]
 

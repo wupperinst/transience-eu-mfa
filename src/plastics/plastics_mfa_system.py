@@ -9,9 +9,130 @@ class PlasticsMFASystem(fd.MFASystem):
         """
         Perform all computations for the MFA system in sequence.
         """
+        self.interpolate_parameters()
         self.compute_inflows()
         self.compute_stock()
         self.compute_outflows()
+
+
+    def _prepare_interpolate(self, array): 
+        try:
+            xp=np.nonzero(array)[0].tolist()
+            xp.sort()
+            x=list(range(min(xp),max(xp)+1))
+            return xp, x
+        except ValueError:
+            return None, None
+
+    def interpolate_parameters(self):
+        """
+        Interpolate parameters to the model time step.
+        """
+        
+        logging.info("mfa_system - interpolate_parameters")
+
+        # Abbreviation for better readability
+        prm = self.parameters
+        Nr = len(self.dims["r"].items)
+        Ns = len(self.dims["s"].items)
+        Np = len(self.dims["p"].items)
+        Nw = len(self.dims["w"].items)
+        Nm = len(self.dims["m"].items)
+
+        # DOMESTIC DEMAND, IMPORT NEW (absolute), EXPORT NEW (absolute)
+        # Index: rtspe
+        # These data should already be provided for each year.
+        # Note that for import and export another variant is possible using import rates, and those are interpolated below.
+
+        # ImportRateNew, ExportRateNew, MarketShare
+        # Index: rrtsp
+
+        for param in ['ImportRateNew', 'ExportRateNew', 'MarketShare']:
+            
+            logging.info('Interpolating parameter ' + param)
+            for r in np.arange(0,Nr):
+                for rr in np.arange(0,Nr):
+                    for s in np.arange(0,Ns):
+                        for p in np.arange(0,Np):
+
+                            xp,x = self._prepare_interpolate(prm[param].values[r,rr,:,s,p])                    
+                            if xp is not None:
+                                fp = prm[param].values[r,rr,xp,s,p]
+                                yp = np.interp(x, xp, fp)
+                                prm[param].values[r,rr,x,s,p] = yp
+
+        # ImportUsed, ExportUsed, ImportRateUsed, ExportRateUsed
+        # Index: rrtcsp
+
+        # => Cannot be interpolated
+                        
+        # RecyclateShare, EoLCollectionRate, EoLUtilisationRate, DeprivedRate
+        # Index: rtsp
+
+        for param in ['RecyclateShare', 'EoLCollectionRate', 'EoLUtilisationRate', 'DeprivedRate']:
+
+            logging.info('Interpolating parameter ' + param)
+
+            for r in np.arange(0,Nr):
+                for s in np.arange(0,Ns):
+                    for p in np.arange(0,Np):
+
+                        xp,x = self._prepare_interpolate(prm[param].values[r,:,s,p])                    
+                        if xp is not None:
+                            fp = prm[param].values[r,xp,s,p]
+                            yp = np.interp(x, xp, fp)
+                            prm[param].values[r,x,s,p] = yp
+
+        # SortingRate
+        # Index: rtspw
+        logging.info('Interpolating parameter SortingRate')
+        for r in np.arange(0,Nr):
+            for s in np.arange(0,Ns):
+                for p in np.arange(0,Np):
+                    for w in np.arange(0,Nw):
+
+                        xp,x = self._prepare_interpolate(prm['SortingRate'].values[r,:,s,p,w])
+                        if xp is not None:
+                            fp = prm['SortingRate'].values[r,xp,s,p,w]
+                            yp = np.interp(x, xp, fp)
+                            prm['SortingRate'].values[r,x,s,p,w] = yp
+
+        # ImportRateSorted, ExportRateSorted
+        # index: rrtspw
+
+        for param in ['ImportRateSortedWaste', 'ExportRateSortedWaste']:
+            
+            logging.info('Interpolating parameter ' + param)
+
+            for r in np.arange(0,Nr):
+                for rr in np.arange(0,Nr):
+                    for s in np.arange(0,Ns):
+                        for p in np.arange(0,Np):
+                            for w in np.arange(0,Nw):
+
+                                xp,x = self._prepare_interpolate(prm[param].values[r,rr,:,s,p,w])                    
+                                if xp is not None:
+                                    fp = prm[param].values[r,rr,xp,s,p,w]
+                                    yp = np.interp(x, xp, fp)
+                                    prm[param].values[r,rr,x,s,p,w] = yp
+                            
+        # RecyclingLossRate
+        # Index: rtpw
+        logging.info('Interpolating parameter RecyclingLossRate')
+        for r in np.arange(0,Nr):
+            for s in np.arange(0,Ns):
+                for p in np.arange(0,Np):
+                    for w in np.arange(0,Nw):
+                        for m in np.arange(0,Nm):
+
+                            xp,x = self._prepare_interpolate(prm['RecyclingConversionRate'].values[r,:,s,p,w,m])
+                            if xp is not None:
+                                fp = prm['RecyclingConversionRate'].values[r,xp,s,p,w,m]
+                                yp = np.interp(x, xp, fp)
+                                prm['RecyclingConversionRate'].values[r,x,s,p,w,m] = yp
+
+        logging.info('Those parameters were not interpolated (i.e. must be provided in full):\n \
+                        DomesticDemand, ImportNew, ExportNew, ImportUsed, ExportUsed, ImportRateUsed, ExportRateUsed')
 
 
     def compute_inflows(self):
