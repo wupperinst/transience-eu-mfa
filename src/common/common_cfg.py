@@ -35,6 +35,7 @@ class ModelCustomization(EUMFABaseModel):
 class PlasticsCustomizationCfg(ModelCustomization):
     
     end_use_sectors: str = "all"
+    waste_not_for_recycling: list = []
 
 
 class VisualizationCfg(EUMFABaseModel):

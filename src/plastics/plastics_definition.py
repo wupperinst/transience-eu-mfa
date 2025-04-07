@@ -39,24 +39,24 @@ def get_definition(cfg: GeneralCfg):
         fd.FlowDefinition(from_process="Plastics market", to_process="End use stock", dim_letters=("r", "t", "s", "p", "e")), # F_3_4_NewPlastics: New plastic products
         fd.FlowDefinition(from_process="sysenv", to_process="End use stock", dim_letters=("o", "r", "t", "c", "s", "p", "e")), # F_0_4_ImportUsed: Import of used plastic products
         fd.FlowDefinition(from_process="End use stock", to_process="sysenv", dim_letters=("r", "o", "t", "c", "s", "p", "e")), # F_4_0_ExportUsed: Export of used plastic products
-        fd.FlowDefinition(from_process="End use stock", to_process="Waste collection", dim_letters=("r", "t", "c", "s", "p", "e")), # F_4_5_EOLPlastics: End-of-life plastics
+        fd.FlowDefinition(from_process="End use stock", to_process="Waste collection", dim_letters=("t", "c", "r", "s", "p", "e")), # F_4_5_EOLPlastics: End-of-life plastics
         fd.FlowDefinition(from_process="Waste collection", to_process="Waste sorting", dim_letters=("r", "t", "c", "s", "p", "e")), # F_5_6_RecoveredEOL: Recovered end-of-life plastics
-        fd.FlowDefinition(from_process="Waste collection", to_process="sysenv", dim_letters=("r", "t", "c", "s", "p", "e")), # F_5_0_Littering: Littered plastics
-        fd.FlowDefinition(from_process="Waste collection", to_process="sysenv", dim_letters=("r", "t", "c", "s", "p", "e")), # F_5_0_DefaultTreatment: Default treatment for unsorted plastics
+        fd.FlowDefinition(from_process="Waste collection", to_process="sysenv", name_override="Waste collection => LITTERING sysenv", dim_letters=("r", "t", "c", "s", "p", "e")), # F_5_0_Littering: Littered plastics
+        fd.FlowDefinition(from_process="Waste collection", to_process="sysenv", name_override="Waste collection => DEFAULT TREATMENT sysenv", dim_letters=("r", "t", "c", "s", "p", "e")), # F_5_0_DefaultTreatment: Default treatment for unsorted plastics
         fd.FlowDefinition(from_process="Waste sorting", to_process="Sorted waste market", dim_letters=("r", "t", "c", "s", "p", "w", "e")), # F_6_7_SortedEOL: Sorted EoL plastics
         fd.FlowDefinition(from_process="Waste sorting", to_process="sysenv", dim_letters=("r", "t", "c", "s", "p", "w", "e")), # F_6_0_NotForRecycling: Not for recycling EoL plastics
         fd.FlowDefinition(from_process="Sorted waste market", to_process="Recycling", dim_letters=("r", "t", "s", "p", "w", "e")), # F_7_8_SortedEOL: Sorted EoL plastics
         fd.FlowDefinition(from_process="sysenv", to_process="Sorted waste market", dim_letters=("o", "r", "t", "s", "p", "w", "e")), # F_0_7_ImportSorted: Import sorted EoL plastics
         fd.FlowDefinition(from_process="Sorted waste market", to_process="sysenv", dim_letters=("r", "o", "t", "s", "p", "w", "e")), # F_7_0_ExportSorted: Export sorted EoL plastics
-        fd.FlowDefinition(from_process="Recycling", to_process="sysenv", dim_letters=("r", "t", "s", "p", "m", "e")), # F_8_0_ProcessedEOL: Processed EoL plastics
-        fd.FlowDefinition(from_process="Recycling", to_process="sysenv", dim_letters=("r", "t", "s", "p", "e")), # F_8_0_Losses: Recycling losses
+        fd.FlowDefinition(from_process="Recycling", to_process="sysenv", name_override="Recycling => RECYCLATE sysenv", dim_letters=("r", "t", "s", "p", "m", "e")), # F_8_0_ProcessedEOL: Processed EoL plastics
+        fd.FlowDefinition(from_process="Recycling", to_process="sysenv", name_override="Recycling => LOSSES sysenv", dim_letters=("r", "t", "s", "p", "e")), # F_8_0_Losses: Recycling losses
     ]
 
     stocks = [
             fd.StockDefinition(
                 name="End use stock",
                 process_name="End use stock",
-                dim_letters=("t", "c", "r", "s", "p", "e"),
+                dim_letters=("t", "r", "s", "p", "e"),
                 subclass=fd.InflowDrivenDSM,
                 lifetime_model_class=cfg.customization.lifetime_model,
                 time_letter="t",

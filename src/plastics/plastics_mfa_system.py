@@ -1,4 +1,6 @@
 import flodym as fd
+import numpy as np
+import logging
 
 
 class PlasticsMFASystem(fd.MFASystem):
@@ -8,13 +10,21 @@ class PlasticsMFASystem(fd.MFASystem):
         Perform all computations for the MFA system in sequence.
         """
         self.compute_inflows()
+        self.compute_stock()
+        self.compute_outflows()
+
 
     def compute_inflows(self):
+        """
+        Compute flows up to final consumption entering the stock.
+        """
+        
+        logging.info("mfa_system - compute_inflows")
 
         # Abbreviation for better readability
         prm = self.parameters
         flw = self.flows
-        stk = self.stock
+        stk = self.stocks
 
         # Define auxiliary flows for the MFA system in addition to the main flows defined in plastics_definition.py
         aux = {
@@ -25,12 +35,21 @@ class PlasticsMFASystem(fd.MFASystem):
         }
 
         ### POLYMER MARKET
+        logging.info("mfa_system - POLYMER MARKET")
 
-        flw["Environment => Polymer market"][...] = prm["DomesticDemand"] # F_0_1_Domestic
-        flw["Polymer market => SECONDARY Plastics manufacturing"][...] = flw["Environment => Polymer market"] * prm["RecyclateShare"] # F_1_2_Recyclate
-        flw["Polymer market => PRIMARY Plastics manufacturing"][...] = flw["Environment => Polymer market"] - flw["Polymer market => SECONDARY Plastics manufacturing"] # F_1_2_Primary
+        logging.debug(f"prm['DomesticDemand'].shape: {prm['DomesticDemand'].shape}")
+        logging.debug(f"flw['sysenv => Polymer market'].shape: {flw['sysenv => Polymer market'].shape}")
+        flw["sysenv => Polymer market"][...] = prm["DomesticDemand"] # F_0_1_Domestic
+        
+        logging.debug(f"prm['RecyclateShare'].shape: {prm['RecyclateShare'].shape}")
+        logging.debug(f"flw['Polymer market => SECONDARY Plastics manufacturing'].shape: {flw['Polymer market => SECONDARY Plastics manufacturing'].shape}")
+        logging.debug(f"flw['Polymer market => PRIMARY Plastics manufacturing'].shape: {flw['Polymer market => PRIMARY Plastics manufacturing'].shape}")
+        flw["Polymer market => SECONDARY Plastics manufacturing"][...] = flw["sysenv => Polymer market"] * prm["RecyclateShare"] # F_1_2_Recyclate
+        flw["Polymer market => PRIMARY Plastics manufacturing"][...] = flw["sysenv => Polymer market"] - flw["Polymer market => SECONDARY Plastics manufacturing"] # F_1_2_Primary
 
         ### PLASTICS MANUFACTURING
+        logging.info("mfa_system - PLASTICS MANUFACTURING")
+
         # 1) Calculate import and export using rates applying to total domestic inputs to manufacturing
         # 2) Add absolute import and export provided exogenously
         # Note: 1) or 2) can be zero if the user only wants to use rates or absolute values.
@@ -38,21 +57,165 @@ class PlasticsMFASystem(fd.MFASystem):
         # Domestic input to manufacturing (primary + secondary)
         aux["DomesticInputManufacturing"] = flw["Polymer market => PRIMARY Plastics manufacturing"] + flw["Polymer market => SECONDARY Plastics manufacturing"] # InputManufacturing_1_2
         # Imports: absolute and via rates
-        flw["Environment => Plastics manufacturing"][...] = prm["ImportNew"] + aux["DomesticInputManufacturing"] * prm["ImportRateNew"] # F_0_2_ImportNew
+        flw["sysenv => Plastics manufacturing"][...] = prm["ImportNew"] + aux["DomesticInputManufacturing"] * prm["ImportRateNew"] # F_0_2_ImportNew
         # Exports: absolute and via rates
-        flw["Plastics manufacturing => Environment"][...] = aux["DomesticInputManufacturing"] * prm["ExportRateNew"] + prm["ExportNew"] # F_2_0_ExportNew
+        flw["Plastics manufacturing => sysenv"][...] = aux["DomesticInputManufacturing"] * prm["ExportRateNew"] + prm["ExportNew"] # F_2_0_ExportNew
         # Sum over all import and export regions to calculate TOTAL imports and exports and NET imports
         # ImportNew_0_2 = np.einsum('Rrtspe->rtspe', Plastics_MFA_System.FlowDict['F_0_2_ImportNew'].Values)
         # ExportNew_2_0 = np.einsum('rRtspe->rtspe', Plastics_MFA_System.FlowDict['F_2_0_ExportNew'].Values)
-        aux["ImportNew"] = flw["Environment => Plastics manufacturing"].sum_to(("r","t","s","p","e"))
-        aux["ExportNew"] = flw["Plastics manufacturing => Environment"].sum_to(("r","t","s","p","e"))
+        aux["ImportNew"] = flw["sysenv => Plastics manufacturing"].sum_to(("r","t","s","p","e"))
+        aux["ExportNew"] = flw["Plastics manufacturing => sysenv"].sum_to(("r","t","s","p","e"))
         aux["NetImport"] = aux["ImportNew"] - aux["ExportNew"]
         # Mass balance equation for plastics manufacturing
         flw["Plastics manufacturing => Plastics market"][...] = aux["DomesticInputManufacturing"] + aux["NetImport"] # F_2_3_NewPlastics
 
         ### PLASTICS MARKET
+        logging.info("mfa_system - PLASTICS MARKET")
 
         # F_3_4_NewPlastics
-        flw["Plastics market => End use stock"][...] = np.einsum('rtspe,rRtsp->Rtspe',
+        flw["Plastics market => End use stock"].values = np.einsum('rtspe,rRtsp->Rtspe',
                                                             flw["Plastics manufacturing => Plastics market"].values,
                                                             prm["MarketShare"].values)
+
+
+    def compute_stock(self):
+        """
+        Compute inflow-driven stock dynamics.
+        """
+        
+        logging.info("mfa_system - compute_stock")
+
+        # Abbreviation for better readability
+        prm = self.parameters
+        flw = self.flows
+        stk = self.stocks
+
+        # Define auxiliary flows for the MFA system in addition to the main flows defined in plastics_definition.py
+        aux = {
+        }
+
+        ### END USE STOCK
+        logging.info("mfa_system - END USE STOCK")
+
+        stk["End use stock"].inflow[...] = flw["Plastics market => End use stock"]
+        stk["End use stock"].lifetime_model.set_prms(
+            mean=self.parameters["Lifetime"],
+            std=self.parameters["Lifetime"] * 0.3,
+        )
+        stk["End use stock"].compute()
+
+
+    def compute_outflows(self):
+        """
+        Compute flows after leaving the stock.
+        """
+        
+        logging.info("mfa_system - compute_outflows")
+
+        # Abbreviation for better readability
+        prm = self.parameters
+        flw = self.flows
+        stk = self.stocks
+
+        # Define auxiliary flows for the MFA system in addition to the main flows defined in plastics_definition.py
+        aux = {
+            "DeprivedEOL": self.get_new_array(dim_letters=("t", "c", "r", "s", "p", "e")),
+            "CollectedWaste": self.get_new_array(dim_letters=("r", "t", "c", "s", "p", "e")),
+            "UtilisedWaste": self.get_new_array(dim_letters=("r", "t", "c", "s", "p", "e")),
+            "SortedWaste": self.get_new_array(dim_letters=("r", "t", "c", "s", "p", "w", "e")),
+            "SortedEOL_agg": self.get_new_array(dim_letters=("r", "t", "s", "p", "e")),
+            "SortedEOL_inclImports": self.get_new_array(dim_letters=("r", "t", "s", "p", "w", "e")),
+        }
+
+        ### EOL PLASTICS
+        logging.info("mfa_system - EOL PLASTICS")
+
+        #flw["End use stock => Waste collection"].values = stk["End use stock"]._outflow_by_cohort
+        flw["End use stock => Waste collection"].set_values(stk["End use stock"]._outflow_by_cohort)
+
+        ### DEPRIVED VOLUMES
+        logging.info("mfa_system - DEPRIVED VOLUMES")
+
+        # DeprivedRate = Share of total generated waste (according to stock dynamics modelling) that is not actually reachable in reality.
+        aux["DeprivedEOL"][...] = flw["End use stock => Waste collection"] * prm["DeprivedRate"]
+        flw["End use stock => Waste collection"][...] = flw["End use stock => Waste collection"] - aux["DeprivedEOL"]
+        # The deprived volumes are inserted back into the stock
+        logging.debug(f"stk['End use stock']._stock_by_cohort.shape: {stk['End use stock']._stock_by_cohort.shape}")
+        logging.debug(f"aux['DeprivedEOL'].shape: {aux['DeprivedEOL'].shape}")
+        stk["End use stock"].stock[...] = stk["End use stock"].stock + aux["DeprivedEOL"]
+        # The following lines are not syntactically correct in flodym:
+        #stk["End use stock"].stock.set_values(stk["End use stock"].stock.values + aux["DeprivedEOL"])
+        #stk["End use stock"].stock.values[...] = stk["End use stock"].stock.values + aux["DeprivedEOL"]
+        # The following line is how it was done in ODYM
+        #Plastics_MFA_System.StockDict['S_4'].Values = (Plastics_MFA_System.StockDict['S_4'].Values + Deprived_F_4_5)
+
+        ### WASTE COLLECTION & UTILISATION
+        logging.info("mfa_system - WASTE COLLECTION & UTILISATION")
+
+        aux["CollectedWaste"][...] = flw["End use stock => Waste collection"] * prm["EoLCollectionRate"]
+        aux["UtilisedWaste"][...] = aux["CollectedWaste"] * prm["EoLUtilisationRate"]
+        flw["Waste collection => Waste sorting"][...] = aux["UtilisedWaste"]
+        flw["Waste collection => LITTERING sysenv"][...] = (flw["End use stock => Waste collection"] - aux["CollectedWaste"])
+        flw["Waste collection => DEFAULT TREATMENT sysenv"][...] = (aux["CollectedWaste"] - aux["UtilisedWaste"])
+
+        ### WASTE SORTING
+        logging.info("mfa_system - WASTE SORTING")
+
+        logging.debug(f"flw['Waste collection => Waste sorting'].shape: {flw['Waste collection => Waste sorting'].shape}")
+        logging.debug(f"prm['SortingRate'].shape: {prm['SortingRate'].shape}")
+        logging.debug(f"aux['SortedWaste'].shape: {aux['SortedWaste'].shape}")
+        
+        aux["SortedWaste"][...] = flw["Waste collection => Waste sorting"] * prm["SortingRate"]
+        logging.debug(f"aux['SortedWaste'].shape: {aux['SortedWaste'].shape}")
+
+        flw["Waste sorting => Sorted waste market"].set_values(aux["SortedWaste"].values)
+        flw["Waste sorting => sysenv"].set_values(aux["SortedWaste"].values)
+
+        #waste_categories = self.dims.get_subset("w").dim_list[0].items
+        waste_categories = self.dims["w"].items
+        if self.cfg.customization.waste_not_for_recycling:
+            try:
+                waste_not_for_recycling_ix = [waste_categories.index(k) for k in self.cfg.customization.waste_not_for_recycling]
+                logging.debug(f"Waste types NOT for recycling: {str(self.cfg.customization.waste_not_for_recycling)}")
+                waste_for_recycling = set(waste_categories) - set(self.cfg.customization.waste_not_for_recycling)
+                logging.debug(f"Waste types FOR recycling: {str(waste_for_recycling)}")
+            except ValueError:
+                print('\nERROR: config Waste_Types_Not_For_Recycling does not match defined Classification Plastic_waste\n')
+                raise
+        else:
+            waste_not_for_recycling_ix = []
+            logging.warning('config: waste_not_for_recycling is empty! We assume all waste types are for recycling.')
+        
+        for w in np.arange(0, len(waste_categories)):
+            if w in waste_not_for_recycling_ix:
+                flw["Waste sorting => Sorted waste market"].values[:,:,:,:,:,w,:] = 0
+            else:
+                flw["Waste sorting => sysenv"].values[:,:,:,:,:,w,:] = 0
+
+
+        ### SORTED WASTE MARKET
+        logging.info("mfa_system - SORTED WASTE MARKET")
+
+        # Import of sorted waste as import RATE
+        # ImportRateSortedWaste gives which waste categories are imported (as a % of total SortedEOL)
+        # Sum all age-cohorts and waste categories
+        aux["SortedEOL_agg"] = flw["Waste sorting => Sorted waste market"].sum_to(("r","t","s","p","e"))
+        flw["sysenv => Sorted waste market"][...] = aux["SortedEOL_agg"] * prm["ImportRateSortedWaste"]
+        aux["SortedEOL_inclImports"][...] = (flw["Waste sorting => Sorted waste market"].sum_to(("r","t","s","p","w","e"))
+                                                + flw["sysenv => Sorted waste market"].sum_to(("r","t","s","p","w","e")))
+        # Export of sorted waste as export RATE
+        # ExportRateSortedWaste gives which waste categories are exported (as a % of total SortedEOL_inclImports)
+        flw["Sorted waste market => sysenv"][...] = aux["SortedEOL_inclImports"] * prm["ExportRateSortedWaste"]
+
+        # Net domestic input of sorted waste into recycling
+        flw["Sorted waste market => Recycling"][...] = aux["SortedEOL_inclImports"] - flw["Sorted waste market => sysenv"].sum_to(("r","t","s","p","w","e"))
+
+
+        ### RECYCLING
+        logging.info("mfa_system - RECYCLING")
+
+        # Recyclates
+        flw["Recycling => RECYCLATE sysenv"][...] = flw["Sorted waste market => Recycling"] * prm["RecyclingConversionRate"]
+        # Losses
+        flw["Recycling => LOSSES sysenv"][...] = (flw["Sorted waste market => Recycling"].sum_to(("r","t","s","p","e")) 
+                                                    - flw["Recycling => RECYCLATE sysenv"].sum_to(("r","t","s","p","e")))
