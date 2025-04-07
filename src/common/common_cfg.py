@@ -41,6 +41,7 @@ class PlasticsCustomizationCfg(ModelCustomization):
 class VisualizationCfg(EUMFABaseModel):
 
     stock: dict = {"do_visualize": False}
+    inflow: dict = {"do_visualize": False}
     production: dict = {"do_visualize": False}
     sankey: dict = {"do_visualize": False}
     do_show_figs: bool = True
