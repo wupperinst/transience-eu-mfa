@@ -1,5 +1,5 @@
 import flodym as fd
-
+import pandas as pd
 
 class BuildingsMFASystem(fd.MFASystem):
 
@@ -39,3 +39,7 @@ class BuildingsMFASystem(fd.MFASystem):
         flw["Concrete stock in buildings => sysenv"][...] = \
             flw["Concrete stock in buildings => sysenv"] - \
             flw["Concrete stock in buildings => Concrete stock in buildings"]
+
+    def get_flows_as_dataframes(self):
+        """Retrieve flows as pandas DataFrames from the MFA system."""
+        return {flow_name: flow.to_df() for flow_name, flow in self.flows.items()}

@@ -5,6 +5,7 @@ from .buildings_mfa_system import BuildingsMFASystem
 from .buildings_export import BuildingsDataExporter
 from .buildings_definition import get_definition
 
+#todo übergabe hinzufügen (eol, material demand übergeben für kombiniertes modell)
 
 class BuildingsModel:
 
@@ -52,7 +53,12 @@ class BuildingsModel:
         )
         self.mfa.cfg = self.cfg
 
+    def get_flows_as_dataframes(self):
+        """Retrieve flows as pandas DataFrames from the MFA system."""
+        return self.mfa.get_flows_as_dataframes()
+
     def run(self):
         self.mfa.compute()
+
         self.data_writer.export_mfa(mfa=self.mfa)
         self.data_writer.visualize_results(model=self)

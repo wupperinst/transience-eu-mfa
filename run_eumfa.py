@@ -33,6 +33,9 @@ def recalculate_mfa(model_config):
     logging.info(f"{type(mfa).__name__} instance created.")
     mfa.run()
     logging.info("Model computations completed.")
+    flows_as_dataframes = mfa.mfa.get_flows_as_dataframes()
+    return flows_as_dataframes
+
 
 
 def run_eumfa(cfg_file: str):
@@ -43,4 +46,5 @@ def run_eumfa(cfg_file: str):
     )
 
     model_config = get_model_config(cfg_file)
-    recalculate_mfa(model_config)
+    flows_as_dataframes = recalculate_mfa(model_config)
+    return flows_as_dataframes
