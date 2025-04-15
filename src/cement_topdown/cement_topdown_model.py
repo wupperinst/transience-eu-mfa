@@ -1,16 +1,16 @@
 import os
 
 from src.common.common_cfg import GeneralCfg
-from .cement_mfa_system import CementMFASystem
-from .cement_export import CementDataExporter
-from .cement_definition import get_definition
+from .cement_topdown_mfa_system import CementTopdownMFASystem
+from .cement_topdown_export import CementTopdownDataExporter
+from .cement_topdown_definition import get_definition
 
-class CementModel:
+class CementTopdownModel:
 
     def __init__(self, cfg: GeneralCfg):
         self.cfg = cfg
         self.definition = get_definition(cfg)
-        self.data_writer = CementDataExporter(
+        self.data_writer = CementTopdownDataExporter(
             cfg=self.cfg.visualization,
             do_export=self.cfg.do_export,
             output_path=self.cfg.output_path,
@@ -21,9 +21,7 @@ class CementModel:
 
         dimension_map = {
             "Time": "time_in_years",
-            "Region": "regions",
-            "Region simple": "regions_simple"
-            "Concrete product": "concrete_products",
+            "Region simple": "regions_simple",
             "Concrete product simple": "concrete_products_simple",
             "Cement product": "cement_products",
             "Clinker product": "clinker_products",
@@ -43,7 +41,7 @@ class CementModel:
             parameter_files[parameter.name] = os.path.join(
                 self.cfg.input_data_path, "datasets", f"{parameter.name}.csv"
             )
-        self.mfa = CementMFASystem.from_csv(
+        self.mfa = CementTopdownMFASystem.from_csv(
             definition=self.definition,
             dimension_files=dimension_files,
             parameter_files=parameter_files,

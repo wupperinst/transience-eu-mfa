@@ -106,4 +106,4 @@ class PlasticsCfg(GeneralCfg):
     customization: PlasticsCustomizationCfg
 
 class CementTopdownCfg(GeneralCfg):
-    visualization: CementVisualizationCfg
+    visualization: CementTopdownVisualizationCfg

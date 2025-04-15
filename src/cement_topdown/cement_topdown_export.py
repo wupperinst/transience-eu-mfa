@@ -4,10 +4,10 @@ from typing import TYPE_CHECKING
 from src.common.custom_export import CustomDataExporter
 
 if TYPE_CHECKING:
-    from src.cement.cement_model import CementModel
+    from src.cement_topdown.cement_topdown_model import CementTopdownModel
 
 
-class CementDataExporter(CustomDataExporter):
+class CementTopdownDataExporter(CustomDataExporter):
 
     # Dictionary of variable names vs names displayed in figures. Used by visualization routines.
     _display_names: dict = {
@@ -25,7 +25,7 @@ class CementDataExporter(CustomDataExporter):
         "CDW sorted market",
     }
 
-    def visualize_results(self, model: "CementModel"):
+    def visualize_results(self, model: "CementTopdownModel"):
         if self.cfg.inflow["do_visualize"]:
             self.visualize_inflow(mfa=model.mfa)
             self.stop_and_show()
