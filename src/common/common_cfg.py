@@ -6,6 +6,7 @@ IMPLEMENTED_MODELS = [
     "buildings",
     "vehicles",
     "plastics",
+    "cement",
 ]
 
 
@@ -61,6 +62,9 @@ class PlasticsVisualizationCfg(VisualizationCfg):
 
     inflow: dict = {"do_visualize": False}
 
+class CementVisualizationCfg(VisualizationCfg):
+
+    pass
 
 class GeneralCfg(EUMFABaseModel):
 
@@ -80,6 +84,7 @@ class GeneralCfg(EUMFABaseModel):
             "buildings": BuildingsCfg,
             "vehicles": VehiclesCfg,
             "plastics": PlasticsCfg,
+            "cement": CementCfg,
         }
         if model_class not in subclasses:
             raise ValueError(f"Model class {model_class} not supported.")
@@ -99,3 +104,6 @@ class PlasticsCfg(GeneralCfg):
 
     visualization: PlasticsVisualizationCfg
     customization: PlasticsCustomizationCfg
+
+class CementCfg(GeneralCfg):
+    visualization: CementVisualizationCfg

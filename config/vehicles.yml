@@ -2,7 +2,7 @@
 model_class: 'vehicles'
 
 # data sources
-input_data_path: 'data/baseline/input'
+input_data_path: 'data/baseline_vehicles/input'
 
 # model customization
 customization:
@@ -14,7 +14,7 @@ visualization:
     do_visualize: False
 
 # data export
-output_path: 'data/baseline/output'
+output_path: 'data/baseline_vehicles/output'
 do_export:
   pickle: False
   csv: True
