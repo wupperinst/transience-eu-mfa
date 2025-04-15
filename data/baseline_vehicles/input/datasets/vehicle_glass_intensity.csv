@@ -1,0 +1,145 @@
+﻿Vehicle size,Vehicle type,Glass product,Value
+microcar,Internal Combustion Engine – Gasoline,Flat glass,32
+microcar,Internal Combustion Engine – Gasoline,Container glass,0
+microcar,Internal Combustion Engine – Gasoline,Other glass,0
+microcar,Internal Combustion Engine – Liquified Petroleum Gas,Flat glass,32
+microcar,Internal Combustion Engine – Liquified Petroleum Gas,Container glass,0
+microcar,Internal Combustion Engine – Liquified Petroleum Gas,Other glass,0
+microcar,Internal Combustion Engine – Diesel Oil,Flat glass,32
+microcar,Internal Combustion Engine – Diesel Oil,Container glass,0
+microcar,Internal Combustion Engine – Diesel Oil,Other glass,0
+microcar,Internal Combustion Engine – Natural Gas,Flat glass,32
+microcar,Internal Combustion Engine – Natural Gas,Container glass,0
+microcar,Internal Combustion Engine – Natural Gas,Other glass,0
+microcar,Internal Combustion Engine – Ethanol,Flat glass,32
+microcar,Internal Combustion Engine – Ethanol,Container glass,0
+microcar,Internal Combustion Engine – Ethanol,Other glass,0
+microcar,Internal Combustion Engine – Biodiesel,Flat glass,32
+microcar,Internal Combustion Engine – Biodiesel,Container glass,0
+microcar,Internal Combustion Engine – Biodiesel,Other glass,0
+microcar,Internal Combustion Engine – Methanol,Flat glass,32
+microcar,Internal Combustion Engine – Methanol,Container glass,0
+microcar,Internal Combustion Engine – Methanol,Other glass,0
+microcar,Electric Vehicle/Pure Electric Engine,Flat glass,32
+microcar,Electric Vehicle/Pure Electric Engine,Container glass,0
+microcar,Electric Vehicle/Pure Electric Engine,Other glass,0
+microcar,Plug in Hybrid – Gasoline,Flat glass,32
+microcar,Plug in Hybrid – Gasoline,Container glass,0
+microcar,Plug in Hybrid – Gasoline,Other glass,0
+microcar,Plug in Hybrid – Diesel Oil,Flat glass,32
+microcar,Plug in Hybrid – Diesel Oil,Container glass,0
+microcar,Plug in Hybrid – Diesel Oil,Other glass,0
+microcar,Conventional Hybrid – Gasoline,Flat glass,32
+microcar,Conventional Hybrid – Gasoline,Container glass,0
+microcar,Conventional Hybrid – Gasoline,Other glass,0
+microcar,Conventional Hybrid – Diesel Oil,Flat glass,32
+microcar,Conventional Hybrid – Diesel Oil,Container glass,0
+microcar,Conventional Hybrid – Diesel Oil,Other glass,0
+passenger car,Internal Combustion Engine – Gasoline,Flat glass,32
+passenger car,Internal Combustion Engine – Gasoline,Container glass,0
+passenger car,Internal Combustion Engine – Gasoline,Other glass,0
+passenger car,Internal Combustion Engine – Liquified Petroleum Gas,Flat glass,32
+passenger car,Internal Combustion Engine – Liquified Petroleum Gas,Container glass,0
+passenger car,Internal Combustion Engine – Liquified Petroleum Gas,Other glass,0
+passenger car,Internal Combustion Engine – Diesel Oil,Flat glass,32
+passenger car,Internal Combustion Engine – Diesel Oil,Container glass,0
+passenger car,Internal Combustion Engine – Diesel Oil,Other glass,0
+passenger car,Internal Combustion Engine – Natural Gas,Flat glass,32
+passenger car,Internal Combustion Engine – Natural Gas,Container glass,0
+passenger car,Internal Combustion Engine – Natural Gas,Other glass,0
+passenger car,Internal Combustion Engine – Ethanol,Flat glass,32
+passenger car,Internal Combustion Engine – Ethanol,Container glass,0
+passenger car,Internal Combustion Engine – Ethanol,Other glass,0
+passenger car,Internal Combustion Engine – Biodiesel,Flat glass,32
+passenger car,Internal Combustion Engine – Biodiesel,Container glass,0
+passenger car,Internal Combustion Engine – Biodiesel,Other glass,0
+passenger car,Internal Combustion Engine – Methanol,Flat glass,32
+passenger car,Internal Combustion Engine – Methanol,Container glass,0
+passenger car,Internal Combustion Engine – Methanol,Other glass,0
+passenger car,Electric Vehicle/Pure Electric Engine,Flat glass,32
+passenger car,Electric Vehicle/Pure Electric Engine,Container glass,0
+passenger car,Electric Vehicle/Pure Electric Engine,Other glass,0
+passenger car,Plug in Hybrid – Gasoline,Flat glass,32
+passenger car,Plug in Hybrid – Gasoline,Container glass,0
+passenger car,Plug in Hybrid – Gasoline,Other glass,0
+passenger car,Plug in Hybrid – Diesel Oil,Flat glass,32
+passenger car,Plug in Hybrid – Diesel Oil,Container glass,0
+passenger car,Plug in Hybrid – Diesel Oil,Other glass,0
+passenger car,Conventional Hybrid – Gasoline,Flat glass,32
+passenger car,Conventional Hybrid – Gasoline,Container glass,0
+passenger car,Conventional Hybrid – Gasoline,Other glass,0
+passenger car,Conventional Hybrid – Diesel Oil,Flat glass,32
+passenger car,Conventional Hybrid – Diesel Oil,Container glass,0
+passenger car,Conventional Hybrid – Diesel Oil,Other glass,0
+minivan_SUV,Internal Combustion Engine – Gasoline,Flat glass,32
+minivan_SUV,Internal Combustion Engine – Gasoline,Container glass,0
+minivan_SUV,Internal Combustion Engine – Gasoline,Other glass,0
+minivan_SUV,Internal Combustion Engine – Liquified Petroleum Gas,Flat glass,32
+minivan_SUV,Internal Combustion Engine – Liquified Petroleum Gas,Container glass,0
+minivan_SUV,Internal Combustion Engine – Liquified Petroleum Gas,Other glass,0
+minivan_SUV,Internal Combustion Engine – Diesel Oil,Flat glass,32
+minivan_SUV,Internal Combustion Engine – Diesel Oil,Container glass,0
+minivan_SUV,Internal Combustion Engine – Diesel Oil,Other glass,0
+minivan_SUV,Internal Combustion Engine – Natural Gas,Flat glass,32
+minivan_SUV,Internal Combustion Engine – Natural Gas,Container glass,0
+minivan_SUV,Internal Combustion Engine – Natural Gas,Other glass,0
+minivan_SUV,Internal Combustion Engine – Ethanol,Flat glass,32
+minivan_SUV,Internal Combustion Engine – Ethanol,Container glass,0
+minivan_SUV,Internal Combustion Engine – Ethanol,Other glass,0
+minivan_SUV,Internal Combustion Engine – Biodiesel,Flat glass,32
+minivan_SUV,Internal Combustion Engine – Biodiesel,Container glass,0
+minivan_SUV,Internal Combustion Engine – Biodiesel,Other glass,0
+minivan_SUV,Internal Combustion Engine – Methanol,Flat glass,32
+minivan_SUV,Internal Combustion Engine – Methanol,Container glass,0
+minivan_SUV,Internal Combustion Engine – Methanol,Other glass,0
+minivan_SUV,Electric Vehicle/Pure Electric Engine,Flat glass,32
+minivan_SUV,Electric Vehicle/Pure Electric Engine,Container glass,0
+minivan_SUV,Electric Vehicle/Pure Electric Engine,Other glass,0
+minivan_SUV,Plug in Hybrid – Gasoline,Flat glass,32
+minivan_SUV,Plug in Hybrid – Gasoline,Container glass,0
+minivan_SUV,Plug in Hybrid – Gasoline,Other glass,0
+minivan_SUV,Plug in Hybrid – Diesel Oil,Flat glass,32
+minivan_SUV,Plug in Hybrid – Diesel Oil,Container glass,0
+minivan_SUV,Plug in Hybrid – Diesel Oil,Other glass,0
+minivan_SUV,Conventional Hybrid – Gasoline,Flat glass,32
+minivan_SUV,Conventional Hybrid – Gasoline,Container glass,0
+minivan_SUV,Conventional Hybrid – Gasoline,Other glass,0
+minivan_SUV,Conventional Hybrid – Diesel Oil,Flat glass,32
+minivan_SUV,Conventional Hybrid – Diesel Oil,Container glass,0
+minivan_SUV,Conventional Hybrid – Diesel Oil,Other glass,0
+light truck,Internal Combustion Engine – Gasoline,Flat glass,32
+light truck,Internal Combustion Engine – Gasoline,Container glass,0
+light truck,Internal Combustion Engine – Gasoline,Other glass,0
+light truck,Internal Combustion Engine – Liquified Petroleum Gas,Flat glass,32
+light truck,Internal Combustion Engine – Liquified Petroleum Gas,Container glass,0
+light truck,Internal Combustion Engine – Liquified Petroleum Gas,Other glass,0
+light truck,Internal Combustion Engine – Diesel Oil,Flat glass,32
+light truck,Internal Combustion Engine – Diesel Oil,Container glass,0
+light truck,Internal Combustion Engine – Diesel Oil,Other glass,0
+light truck,Internal Combustion Engine – Natural Gas,Flat glass,32
+light truck,Internal Combustion Engine – Natural Gas,Container glass,0
+light truck,Internal Combustion Engine – Natural Gas,Other glass,0
+light truck,Internal Combustion Engine – Ethanol,Flat glass,32
+light truck,Internal Combustion Engine – Ethanol,Container glass,0
+light truck,Internal Combustion Engine – Ethanol,Other glass,0
+light truck,Internal Combustion Engine – Biodiesel,Flat glass,32
+light truck,Internal Combustion Engine – Biodiesel,Container glass,0
+light truck,Internal Combustion Engine – Biodiesel,Other glass,0
+light truck,Internal Combustion Engine – Methanol,Flat glass,32
+light truck,Internal Combustion Engine – Methanol,Container glass,0
+light truck,Internal Combustion Engine – Methanol,Other glass,0
+light truck,Electric Vehicle/Pure Electric Engine,Flat glass,32
+light truck,Electric Vehicle/Pure Electric Engine,Container glass,0
+light truck,Electric Vehicle/Pure Electric Engine,Other glass,0
+light truck,Plug in Hybrid – Gasoline,Flat glass,32
+light truck,Plug in Hybrid – Gasoline,Container glass,0
+light truck,Plug in Hybrid – Gasoline,Other glass,0
+light truck,Plug in Hybrid – Diesel Oil,Flat glass,32
+light truck,Plug in Hybrid – Diesel Oil,Container glass,0
+light truck,Plug in Hybrid – Diesel Oil,Other glass,0
+light truck,Conventional Hybrid – Gasoline,Flat glass,32
+light truck,Conventional Hybrid – Gasoline,Container glass,0
+light truck,Conventional Hybrid – Gasoline,Other glass,0
+light truck,Conventional Hybrid – Diesel Oil,Flat glass,32
+light truck,Conventional Hybrid – Diesel Oil,Container glass,0
+light truck,Conventional Hybrid – Diesel Oil,Other glass,0

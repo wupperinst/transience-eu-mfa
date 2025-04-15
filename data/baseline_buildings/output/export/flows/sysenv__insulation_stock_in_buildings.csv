@@ -1,0 +1,4341 @@
+Time,Region,Insulation product,value
+2020,AUT,Insulation,0.0
+2020,AUT,Insulation (Exterior wall),0.0
+2020,AUT,Insulation (Roof),0.0
+2020,AUT,Insulation (Floor),0.0
+2020,AUT,Insulation (Basement),0.0
+2020,BEL,Insulation,0.0
+2020,BEL,Insulation (Exterior wall),0.0
+2020,BEL,Insulation (Roof),0.0
+2020,BEL,Insulation (Floor),0.0
+2020,BEL,Insulation (Basement),0.0
+2020,BGR,Insulation,0.0
+2020,BGR,Insulation (Exterior wall),0.0
+2020,BGR,Insulation (Roof),0.0
+2020,BGR,Insulation (Floor),0.0
+2020,BGR,Insulation (Basement),0.0
+2020,CYP,Insulation,0.0
+2020,CYP,Insulation (Exterior wall),0.0
+2020,CYP,Insulation (Roof),0.0
+2020,CYP,Insulation (Floor),0.0
+2020,CYP,Insulation (Basement),0.0
+2020,CZE,Insulation,0.0
+2020,CZE,Insulation (Exterior wall),0.0
+2020,CZE,Insulation (Roof),0.0
+2020,CZE,Insulation (Floor),0.0
+2020,CZE,Insulation (Basement),0.0
+2020,DEU,Insulation,0.0
+2020,DEU,Insulation (Exterior wall),0.0
+2020,DEU,Insulation (Roof),0.0
+2020,DEU,Insulation (Floor),0.0
+2020,DEU,Insulation (Basement),0.0
+2020,DNK,Insulation,0.0
+2020,DNK,Insulation (Exterior wall),0.0
+2020,DNK,Insulation (Roof),0.0
+2020,DNK,Insulation (Floor),0.0
+2020,DNK,Insulation (Basement),0.0
+2020,ESP,Insulation,0.0
+2020,ESP,Insulation (Exterior wall),0.0
+2020,ESP,Insulation (Roof),0.0
+2020,ESP,Insulation (Floor),0.0
+2020,ESP,Insulation (Basement),0.0
+2020,EST,Insulation,0.0
+2020,EST,Insulation (Exterior wall),0.0
+2020,EST,Insulation (Roof),0.0
+2020,EST,Insulation (Floor),0.0
+2020,EST,Insulation (Basement),0.0
+2020,FIN,Insulation,0.0
+2020,FIN,Insulation (Exterior wall),0.0
+2020,FIN,Insulation (Roof),0.0
+2020,FIN,Insulation (Floor),0.0
+2020,FIN,Insulation (Basement),0.0
+2020,FRA,Insulation,0.0
+2020,FRA,Insulation (Exterior wall),0.0
+2020,FRA,Insulation (Roof),0.0
+2020,FRA,Insulation (Floor),0.0
+2020,FRA,Insulation (Basement),0.0
+2020,GBR,Insulation,0.0
+2020,GBR,Insulation (Exterior wall),0.0
+2020,GBR,Insulation (Roof),0.0
+2020,GBR,Insulation (Floor),0.0
+2020,GBR,Insulation (Basement),0.0
+2020,GRC,Insulation,0.0
+2020,GRC,Insulation (Exterior wall),0.0
+2020,GRC,Insulation (Roof),0.0
+2020,GRC,Insulation (Floor),0.0
+2020,GRC,Insulation (Basement),0.0
+2020,HRV,Insulation,0.0
+2020,HRV,Insulation (Exterior wall),0.0
+2020,HRV,Insulation (Roof),0.0
+2020,HRV,Insulation (Floor),0.0
+2020,HRV,Insulation (Basement),0.0
+2020,HUN,Insulation,0.0
+2020,HUN,Insulation (Exterior wall),0.0
+2020,HUN,Insulation (Roof),0.0
+2020,HUN,Insulation (Floor),0.0
+2020,HUN,Insulation (Basement),0.0
+2020,IRL,Insulation,0.0
+2020,IRL,Insulation (Exterior wall),0.0
+2020,IRL,Insulation (Roof),0.0
+2020,IRL,Insulation (Floor),0.0
+2020,IRL,Insulation (Basement),0.0
+2020,ITA,Insulation,0.0
+2020,ITA,Insulation (Exterior wall),0.0
+2020,ITA,Insulation (Roof),0.0
+2020,ITA,Insulation (Floor),0.0
+2020,ITA,Insulation (Basement),0.0
+2020,LTU,Insulation,0.0
+2020,LTU,Insulation (Exterior wall),0.0
+2020,LTU,Insulation (Roof),0.0
+2020,LTU,Insulation (Floor),0.0
+2020,LTU,Insulation (Basement),0.0
+2020,LUX,Insulation,0.0
+2020,LUX,Insulation (Exterior wall),0.0
+2020,LUX,Insulation (Roof),0.0
+2020,LUX,Insulation (Floor),0.0
+2020,LUX,Insulation (Basement),0.0
+2020,LVA,Insulation,0.0
+2020,LVA,Insulation (Exterior wall),0.0
+2020,LVA,Insulation (Roof),0.0
+2020,LVA,Insulation (Floor),0.0
+2020,LVA,Insulation (Basement),0.0
+2020,MLT,Insulation,0.0
+2020,MLT,Insulation (Exterior wall),0.0
+2020,MLT,Insulation (Roof),0.0
+2020,MLT,Insulation (Floor),0.0
+2020,MLT,Insulation (Basement),0.0
+2020,NLD,Insulation,0.0
+2020,NLD,Insulation (Exterior wall),0.0
+2020,NLD,Insulation (Roof),0.0
+2020,NLD,Insulation (Floor),0.0
+2020,NLD,Insulation (Basement),0.0
+2020,POL,Insulation,0.0
+2020,POL,Insulation (Exterior wall),0.0
+2020,POL,Insulation (Roof),0.0
+2020,POL,Insulation (Floor),0.0
+2020,POL,Insulation (Basement),0.0
+2020,PRT,Insulation,0.0
+2020,PRT,Insulation (Exterior wall),0.0
+2020,PRT,Insulation (Roof),0.0
+2020,PRT,Insulation (Floor),0.0
+2020,PRT,Insulation (Basement),0.0
+2020,ROU,Insulation,0.0
+2020,ROU,Insulation (Exterior wall),0.0
+2020,ROU,Insulation (Roof),0.0
+2020,ROU,Insulation (Floor),0.0
+2020,ROU,Insulation (Basement),0.0
+2020,SVK,Insulation,0.0
+2020,SVK,Insulation (Exterior wall),0.0
+2020,SVK,Insulation (Roof),0.0
+2020,SVK,Insulation (Floor),0.0
+2020,SVK,Insulation (Basement),0.0
+2020,SVN,Insulation,0.0
+2020,SVN,Insulation (Exterior wall),0.0
+2020,SVN,Insulation (Roof),0.0
+2020,SVN,Insulation (Floor),0.0
+2020,SVN,Insulation (Basement),0.0
+2020,SWE,Insulation,0.0
+2020,SWE,Insulation (Exterior wall),0.0
+2020,SWE,Insulation (Roof),0.0
+2020,SWE,Insulation (Floor),0.0
+2020,SWE,Insulation (Basement),0.0
+2021,AUT,Insulation,0.0
+2021,AUT,Insulation (Exterior wall),63727713.586591996
+2021,AUT,Insulation (Roof),24138460.088827077
+2021,AUT,Insulation (Floor),14206737.397231117
+2021,AUT,Insulation (Basement),8413903.061161034
+2021,BEL,Insulation,0.0
+2021,BEL,Insulation (Exterior wall),56076852.94800754
+2021,BEL,Insulation (Roof),26442409.83248218
+2021,BEL,Insulation (Floor),13044270.31941831
+2021,BEL,Insulation (Basement),6687235.718519989
+2021,BGR,Insulation,0.0
+2021,BGR,Insulation (Exterior wall),8110255.168018812
+2021,BGR,Insulation (Roof),8456706.440424446
+2021,BGR,Insulation (Floor),2953263.8301199996
+2021,BGR,Insulation (Basement),0.0
+2021,CYP,Insulation,0.0
+2021,CYP,Insulation (Exterior wall),5269099.821383276
+2021,CYP,Insulation (Roof),2507371.4030496753
+2021,CYP,Insulation (Floor),2431991.2314764517
+2021,CYP,Insulation (Basement),1107283.1667416608
+2021,CZE,Insulation,0.0
+2021,CZE,Insulation (Exterior wall),30738797.140451178
+2021,CZE,Insulation (Roof),15625660.287431143
+2021,CZE,Insulation (Floor),7648265.419767106
+2021,CZE,Insulation (Basement),3434258.9521303037
+2021,DEU,Insulation,0.0
+2021,DEU,Insulation (Exterior wall),366861635.20070297
+2021,DEU,Insulation (Roof),162234245.41697082
+2021,DEU,Insulation (Floor),94372295.12314248
+2021,DEU,Insulation (Basement),29741488.258769095
+2021,DNK,Insulation,0.0
+2021,DNK,Insulation (Exterior wall),0.0
+2021,DNK,Insulation (Roof),0.0
+2021,DNK,Insulation (Floor),0.0
+2021,DNK,Insulation (Basement),0.0
+2021,ESP,Insulation,0.0
+2021,ESP,Insulation (Exterior wall),118919893.66555826
+2021,ESP,Insulation (Roof),72088956.30627961
+2021,ESP,Insulation (Floor),85686775.23518793
+2021,ESP,Insulation (Basement),26461224.99371409
+2021,EST,Insulation,0.0
+2021,EST,Insulation (Exterior wall),2846557.8912454364
+2021,EST,Insulation (Roof),3260598.973598998
+2021,EST,Insulation (Floor),1358493.0414673411
+2021,EST,Insulation (Basement),597638.1025015076
+2021,FIN,Insulation,0.0
+2021,FIN,Insulation (Exterior wall),12395022.090498805
+2021,FIN,Insulation (Roof),11316356.842950923
+2021,FIN,Insulation (Floor),4844507.380879751
+2021,FIN,Insulation (Basement),2554392.7234107223
+2021,FRA,Insulation,0.0
+2021,FRA,Insulation (Exterior wall),202370652.0450911
+2021,FRA,Insulation (Roof),104630307.77747852
+2021,FRA,Insulation (Floor),109342882.82311438
+2021,FRA,Insulation (Basement),41519350.929542676
+2021,GBR,Insulation,0.0
+2021,GBR,Insulation (Exterior wall),346694096.07900864
+2021,GBR,Insulation (Roof),143353786.1770275
+2021,GBR,Insulation (Floor),72805759.19934732
+2021,GBR,Insulation (Basement),49901170.26337279
+2021,GRC,Insulation,0.0
+2021,GRC,Insulation (Exterior wall),13136125.087292094
+2021,GRC,Insulation (Roof),8439477.027416704
+2021,GRC,Insulation (Floor),10141865.29521626
+2021,GRC,Insulation (Basement),2177906.027572991
+2021,HRV,Insulation,0.0
+2021,HRV,Insulation (Exterior wall),534461.8436649627
+2021,HRV,Insulation (Roof),635194.100016
+2021,HRV,Insulation (Floor),952791.1500239999
+2021,HRV,Insulation (Basement),0.0
+2021,HUN,Insulation,0.0
+2021,HUN,Insulation (Exterior wall),22196351.976975765
+2021,HUN,Insulation (Roof),19535654.900611363
+2021,HUN,Insulation (Floor),7292121.134284384
+2021,HUN,Insulation (Basement),733477.563332267
+2021,IRL,Insulation,0.0
+2021,IRL,Insulation (Exterior wall),31154564.864129566
+2021,IRL,Insulation (Roof),12200820.25609383
+2021,IRL,Insulation (Floor),6231624.00035702
+2021,IRL,Insulation (Basement),4030681.3313547065
+2021,ITA,Insulation,0.0
+2021,ITA,Insulation (Exterior wall),97454087.24310616
+2021,ITA,Insulation (Roof),62097734.12117115
+2021,ITA,Insulation (Floor),76272067.00343654
+2021,ITA,Insulation (Basement),22114195.13898693
+2021,LTU,Insulation,0.0
+2021,LTU,Insulation (Exterior wall),918582.8436304916
+2021,LTU,Insulation (Roof),4273075.298333682
+2021,LTU,Insulation (Floor),2245493.302526075
+2021,LTU,Insulation (Basement),103093.45740461233
+2021,LUX,Insulation,0.0
+2021,LUX,Insulation (Exterior wall),9282393.359437427
+2021,LUX,Insulation (Roof),4154270.667413779
+2021,LUX,Insulation (Floor),2009481.9863493638
+2021,LUX,Insulation (Basement),1366819.7063768117
+2021,LVA,Insulation,0.0
+2021,LVA,Insulation (Exterior wall),605899.7830468208
+2021,LVA,Insulation (Roof),2909794.957784573
+2021,LVA,Insulation (Floor),1498171.1300269642
+2021,LVA,Insulation (Basement),68419.37434106883
+2021,MLT,Insulation,0.0
+2021,MLT,Insulation (Exterior wall),3650504.825066767
+2021,MLT,Insulation (Roof),1807668.9956937816
+2021,MLT,Insulation (Floor),1829379.8208410314
+2021,MLT,Insulation (Basement),786478.7036271626
+2021,NLD,Insulation,0.0
+2021,NLD,Insulation (Exterior wall),105799157.95043579
+2021,NLD,Insulation (Roof),55696506.31650494
+2021,NLD,Insulation (Floor),24780307.146532476
+2021,NLD,Insulation (Basement),13563716.939162645
+2021,POL,Insulation,0.0
+2021,POL,Insulation (Exterior wall),199208341.71248102
+2021,POL,Insulation (Roof),97142882.13889346
+2021,POL,Insulation (Floor),49659956.69784995
+2021,POL,Insulation (Basement),23054107.20278898
+2021,PRT,Insulation,0.0
+2021,PRT,Insulation (Exterior wall),15950893.857917264
+2021,PRT,Insulation (Roof),9227488.628788812
+2021,PRT,Insulation (Floor),10466992.257505376
+2021,PRT,Insulation (Basement),3073425.596156064
+2021,ROU,Insulation,0.0
+2021,ROU,Insulation (Exterior wall),15774554.186978389
+2021,ROU,Insulation (Roof),15357716.046152115
+2021,ROU,Insulation (Floor),4966602.116361729
+2021,ROU,Insulation (Basement),877364.3012811646
+2021,SVK,Insulation,0.0
+2021,SVK,Insulation (Exterior wall),12945805.326722028
+2021,SVK,Insulation (Roof),5118552.484855955
+2021,SVK,Insulation (Floor),3172432.2395166075
+2021,SVK,Insulation (Basement),1247368.6729429117
+2021,SVN,Insulation,0.0
+2021,SVN,Insulation (Exterior wall),9514042.91389415
+2021,SVN,Insulation (Roof),5851101.803422142
+2021,SVN,Insulation (Floor),2416432.046435873
+2021,SVN,Insulation (Basement),971778.4024894587
+2021,SWE,Insulation,0.0
+2021,SWE,Insulation (Exterior wall),117868612.48894125
+2021,SWE,Insulation (Roof),46905704.70112338
+2021,SWE,Insulation (Floor),21193772.668340698
+2021,SWE,Insulation (Basement),25962099.52337434
+2022,AUT,Insulation,0.0
+2022,AUT,Insulation (Exterior wall),63727713.586591996
+2022,AUT,Insulation (Roof),24138460.088827077
+2022,AUT,Insulation (Floor),14206737.397231117
+2022,AUT,Insulation (Basement),8413903.061161034
+2022,BEL,Insulation,0.0
+2022,BEL,Insulation (Exterior wall),56076852.94800754
+2022,BEL,Insulation (Roof),26442409.83248218
+2022,BEL,Insulation (Floor),13044270.31941831
+2022,BEL,Insulation (Basement),6687235.718519989
+2022,BGR,Insulation,0.0
+2022,BGR,Insulation (Exterior wall),8110255.168018812
+2022,BGR,Insulation (Roof),8456706.440424446
+2022,BGR,Insulation (Floor),2953263.8301199996
+2022,BGR,Insulation (Basement),0.0
+2022,CYP,Insulation,0.0
+2022,CYP,Insulation (Exterior wall),5269099.821383276
+2022,CYP,Insulation (Roof),2507371.4030496753
+2022,CYP,Insulation (Floor),2431991.2314764517
+2022,CYP,Insulation (Basement),1107283.1667416608
+2022,CZE,Insulation,0.0
+2022,CZE,Insulation (Exterior wall),30738797.140451178
+2022,CZE,Insulation (Roof),15625660.287431143
+2022,CZE,Insulation (Floor),7648265.419767106
+2022,CZE,Insulation (Basement),3434258.9521303037
+2022,DEU,Insulation,0.0
+2022,DEU,Insulation (Exterior wall),366861635.20070297
+2022,DEU,Insulation (Roof),162234245.41697082
+2022,DEU,Insulation (Floor),94372295.12314248
+2022,DEU,Insulation (Basement),29741488.258769095
+2022,DNK,Insulation,0.0
+2022,DNK,Insulation (Exterior wall),0.0
+2022,DNK,Insulation (Roof),0.0
+2022,DNK,Insulation (Floor),0.0
+2022,DNK,Insulation (Basement),0.0
+2022,ESP,Insulation,0.0
+2022,ESP,Insulation (Exterior wall),118919893.66555826
+2022,ESP,Insulation (Roof),72088956.30627961
+2022,ESP,Insulation (Floor),85686775.23518793
+2022,ESP,Insulation (Basement),26461224.99371409
+2022,EST,Insulation,0.0
+2022,EST,Insulation (Exterior wall),2846557.8912454364
+2022,EST,Insulation (Roof),3260598.973598998
+2022,EST,Insulation (Floor),1358493.0414673411
+2022,EST,Insulation (Basement),597638.1025015076
+2022,FIN,Insulation,0.0
+2022,FIN,Insulation (Exterior wall),12395022.089421405
+2022,FIN,Insulation (Roof),11316356.842950923
+2022,FIN,Insulation (Floor),4844507.380879751
+2022,FIN,Insulation (Basement),2554392.723190345
+2022,FRA,Insulation,0.0
+2022,FRA,Insulation (Exterior wall),202370652.0450911
+2022,FRA,Insulation (Roof),104630307.77747852
+2022,FRA,Insulation (Floor),109342882.82311438
+2022,FRA,Insulation (Basement),41519350.929542676
+2022,GBR,Insulation,0.0
+2022,GBR,Insulation (Exterior wall),346694096.07900864
+2022,GBR,Insulation (Roof),143353786.1770275
+2022,GBR,Insulation (Floor),72805759.19934732
+2022,GBR,Insulation (Basement),49901170.26337279
+2022,GRC,Insulation,0.0
+2022,GRC,Insulation (Exterior wall),13136125.087292094
+2022,GRC,Insulation (Roof),8439477.027416704
+2022,GRC,Insulation (Floor),10141865.29521626
+2022,GRC,Insulation (Basement),2177906.027572991
+2022,HRV,Insulation,0.0
+2022,HRV,Insulation (Exterior wall),534461.8436649627
+2022,HRV,Insulation (Roof),635194.100016
+2022,HRV,Insulation (Floor),952791.1500239999
+2022,HRV,Insulation (Basement),0.0
+2022,HUN,Insulation,0.0
+2022,HUN,Insulation (Exterior wall),22196351.976975765
+2022,HUN,Insulation (Roof),19535654.900611363
+2022,HUN,Insulation (Floor),7292121.134284384
+2022,HUN,Insulation (Basement),733477.563332267
+2022,IRL,Insulation,0.0
+2022,IRL,Insulation (Exterior wall),31154564.864129566
+2022,IRL,Insulation (Roof),12200820.25609383
+2022,IRL,Insulation (Floor),6231624.00035702
+2022,IRL,Insulation (Basement),4030681.3313547065
+2022,ITA,Insulation,0.0
+2022,ITA,Insulation (Exterior wall),97454087.24310616
+2022,ITA,Insulation (Roof),62097734.12117115
+2022,ITA,Insulation (Floor),76272067.00343654
+2022,ITA,Insulation (Basement),22114195.13898693
+2022,LTU,Insulation,0.0
+2022,LTU,Insulation (Exterior wall),918582.8436304916
+2022,LTU,Insulation (Roof),4273075.298333682
+2022,LTU,Insulation (Floor),2245493.302526075
+2022,LTU,Insulation (Basement),103093.45740461233
+2022,LUX,Insulation,0.0
+2022,LUX,Insulation (Exterior wall),9282393.359437427
+2022,LUX,Insulation (Roof),4154270.667413779
+2022,LUX,Insulation (Floor),2009481.9863493638
+2022,LUX,Insulation (Basement),1366819.7063768117
+2022,LVA,Insulation,0.0
+2022,LVA,Insulation (Exterior wall),605899.7830468208
+2022,LVA,Insulation (Roof),2909794.957784573
+2022,LVA,Insulation (Floor),1498171.1300269642
+2022,LVA,Insulation (Basement),68419.37434106883
+2022,MLT,Insulation,0.0
+2022,MLT,Insulation (Exterior wall),3650504.825066767
+2022,MLT,Insulation (Roof),1807668.9956937816
+2022,MLT,Insulation (Floor),1829379.8208410314
+2022,MLT,Insulation (Basement),786478.7036271626
+2022,NLD,Insulation,0.0
+2022,NLD,Insulation (Exterior wall),105799157.95043579
+2022,NLD,Insulation (Roof),55696506.31650494
+2022,NLD,Insulation (Floor),24780307.146532476
+2022,NLD,Insulation (Basement),13563716.939162645
+2022,POL,Insulation,0.0
+2022,POL,Insulation (Exterior wall),199208341.71248102
+2022,POL,Insulation (Roof),97142882.13889346
+2022,POL,Insulation (Floor),49659956.69784995
+2022,POL,Insulation (Basement),23054107.20278898
+2022,PRT,Insulation,0.0
+2022,PRT,Insulation (Exterior wall),15950893.857917264
+2022,PRT,Insulation (Roof),9227488.628788812
+2022,PRT,Insulation (Floor),10466992.257505376
+2022,PRT,Insulation (Basement),3073425.596156064
+2022,ROU,Insulation,0.0
+2022,ROU,Insulation (Exterior wall),15774554.186978389
+2022,ROU,Insulation (Roof),15357716.046152115
+2022,ROU,Insulation (Floor),4966602.116361729
+2022,ROU,Insulation (Basement),877364.3012811646
+2022,SVK,Insulation,0.0
+2022,SVK,Insulation (Exterior wall),12945805.326722028
+2022,SVK,Insulation (Roof),5118552.484855955
+2022,SVK,Insulation (Floor),3172432.2395166075
+2022,SVK,Insulation (Basement),1247368.6729429117
+2022,SVN,Insulation,0.0
+2022,SVN,Insulation (Exterior wall),9514042.91389415
+2022,SVN,Insulation (Roof),5851101.803422142
+2022,SVN,Insulation (Floor),2416432.046435873
+2022,SVN,Insulation (Basement),971778.4024894587
+2022,SWE,Insulation,0.0
+2022,SWE,Insulation (Exterior wall),117868612.48894125
+2022,SWE,Insulation (Roof),46905704.70112338
+2022,SWE,Insulation (Floor),21193772.668340698
+2022,SWE,Insulation (Basement),25962099.52337434
+2023,AUT,Insulation,0.0
+2023,AUT,Insulation (Exterior wall),63727713.586591996
+2023,AUT,Insulation (Roof),24138460.088827077
+2023,AUT,Insulation (Floor),14206737.397231117
+2023,AUT,Insulation (Basement),8413903.061161034
+2023,BEL,Insulation,0.0
+2023,BEL,Insulation (Exterior wall),56076852.94800754
+2023,BEL,Insulation (Roof),26442409.83248218
+2023,BEL,Insulation (Floor),13044270.31941831
+2023,BEL,Insulation (Basement),6687235.718519989
+2023,BGR,Insulation,0.0
+2023,BGR,Insulation (Exterior wall),8110255.167168541
+2023,BGR,Insulation (Roof),8456706.440200446
+2023,BGR,Insulation (Floor),2953263.8298799996
+2023,BGR,Insulation (Basement),0.0
+2023,CYP,Insulation,0.0
+2023,CYP,Insulation (Exterior wall),5269099.821383276
+2023,CYP,Insulation (Roof),2507371.4030496753
+2023,CYP,Insulation (Floor),2431991.2314764517
+2023,CYP,Insulation (Basement),1107283.1667416608
+2023,CZE,Insulation,0.0
+2023,CZE,Insulation (Exterior wall),30738797.140451178
+2023,CZE,Insulation (Roof),15625660.287431143
+2023,CZE,Insulation (Floor),7648265.419767106
+2023,CZE,Insulation (Basement),3434258.9521303037
+2023,DEU,Insulation,0.0
+2023,DEU,Insulation (Exterior wall),366861635.20070297
+2023,DEU,Insulation (Roof),162234245.41697082
+2023,DEU,Insulation (Floor),94372295.12314248
+2023,DEU,Insulation (Basement),29741488.258769095
+2023,DNK,Insulation,0.0
+2023,DNK,Insulation (Exterior wall),0.0
+2023,DNK,Insulation (Roof),0.0
+2023,DNK,Insulation (Floor),0.0
+2023,DNK,Insulation (Basement),0.0
+2023,ESP,Insulation,0.0
+2023,ESP,Insulation (Exterior wall),118919893.66555826
+2023,ESP,Insulation (Roof),72088956.30627961
+2023,ESP,Insulation (Floor),85686775.23518793
+2023,ESP,Insulation (Basement),26461224.99371409
+2023,EST,Insulation,0.0
+2023,EST,Insulation (Exterior wall),2846557.8912454364
+2023,EST,Insulation (Roof),3260598.973598998
+2023,EST,Insulation (Floor),1358493.0414673411
+2023,EST,Insulation (Basement),597638.1025015076
+2023,FIN,Insulation,0.0
+2023,FIN,Insulation (Exterior wall),12395022.090498805
+2023,FIN,Insulation (Roof),11316356.842950923
+2023,FIN,Insulation (Floor),4844507.380879751
+2023,FIN,Insulation (Basement),2554392.7234107223
+2023,FRA,Insulation,0.0
+2023,FRA,Insulation (Exterior wall),202370652.0450911
+2023,FRA,Insulation (Roof),104630307.77747852
+2023,FRA,Insulation (Floor),109342882.82311438
+2023,FRA,Insulation (Basement),41519350.929542676
+2023,GBR,Insulation,0.0
+2023,GBR,Insulation (Exterior wall),346694096.07900864
+2023,GBR,Insulation (Roof),143353786.1770275
+2023,GBR,Insulation (Floor),72805759.19934732
+2023,GBR,Insulation (Basement),49901170.26337279
+2023,GRC,Insulation,0.0
+2023,GRC,Insulation (Exterior wall),13136125.088269873
+2023,GRC,Insulation (Roof),8439477.02777485
+2023,GRC,Insulation (Floor),10141865.29545626
+2023,GRC,Insulation (Basement),2177906.027772991
+2023,HRV,Insulation,0.0
+2023,HRV,Insulation (Exterior wall),534461.8436649627
+2023,HRV,Insulation (Roof),635194.100016
+2023,HRV,Insulation (Floor),952791.1500239999
+2023,HRV,Insulation (Basement),0.0
+2023,HUN,Insulation,0.0
+2023,HUN,Insulation (Exterior wall),22196351.976975765
+2023,HUN,Insulation (Roof),19535654.900611363
+2023,HUN,Insulation (Floor),7292121.134284384
+2023,HUN,Insulation (Basement),733477.563332267
+2023,IRL,Insulation,0.0
+2023,IRL,Insulation (Exterior wall),31154564.864129566
+2023,IRL,Insulation (Roof),12200820.25609383
+2023,IRL,Insulation (Floor),6231624.00035702
+2023,IRL,Insulation (Basement),4030681.3313547065
+2023,ITA,Insulation,0.0
+2023,ITA,Insulation (Exterior wall),97454087.24310616
+2023,ITA,Insulation (Roof),62097734.12117115
+2023,ITA,Insulation (Floor),76272067.00343654
+2023,ITA,Insulation (Basement),22114195.13898693
+2023,LTU,Insulation,0.0
+2023,LTU,Insulation (Exterior wall),918582.8436304916
+2023,LTU,Insulation (Roof),4273075.298333682
+2023,LTU,Insulation (Floor),2245493.302526075
+2023,LTU,Insulation (Basement),103093.45740461233
+2023,LUX,Insulation,0.0
+2023,LUX,Insulation (Exterior wall),9282393.359437427
+2023,LUX,Insulation (Roof),4154270.667413779
+2023,LUX,Insulation (Floor),2009481.9863493638
+2023,LUX,Insulation (Basement),1366819.7063768117
+2023,LVA,Insulation,0.0
+2023,LVA,Insulation (Exterior wall),605899.7830468208
+2023,LVA,Insulation (Roof),2909794.957784573
+2023,LVA,Insulation (Floor),1498171.1300269642
+2023,LVA,Insulation (Basement),68419.37434106883
+2023,MLT,Insulation,0.0
+2023,MLT,Insulation (Exterior wall),3650504.825066767
+2023,MLT,Insulation (Roof),1807668.9956937816
+2023,MLT,Insulation (Floor),1829379.8208410314
+2023,MLT,Insulation (Basement),786478.7036271626
+2023,NLD,Insulation,0.0
+2023,NLD,Insulation (Exterior wall),105799157.95043579
+2023,NLD,Insulation (Roof),55696506.31650494
+2023,NLD,Insulation (Floor),24780307.146532476
+2023,NLD,Insulation (Basement),13563716.939162645
+2023,POL,Insulation,0.0
+2023,POL,Insulation (Exterior wall),199208341.71248102
+2023,POL,Insulation (Roof),97142882.13889346
+2023,POL,Insulation (Floor),49659956.69784995
+2023,POL,Insulation (Basement),23054107.20278898
+2023,PRT,Insulation,0.0
+2023,PRT,Insulation (Exterior wall),15950893.857917264
+2023,PRT,Insulation (Roof),9227488.628788812
+2023,PRT,Insulation (Floor),10466992.257505376
+2023,PRT,Insulation (Basement),3073425.596156064
+2023,ROU,Insulation,0.0
+2023,ROU,Insulation (Exterior wall),15774554.186978389
+2023,ROU,Insulation (Roof),15357716.046152115
+2023,ROU,Insulation (Floor),4966602.116361729
+2023,ROU,Insulation (Basement),877364.3012811646
+2023,SVK,Insulation,0.0
+2023,SVK,Insulation (Exterior wall),12945805.326722028
+2023,SVK,Insulation (Roof),5118552.484855955
+2023,SVK,Insulation (Floor),3172432.2395166075
+2023,SVK,Insulation (Basement),1247368.6729429117
+2023,SVN,Insulation,0.0
+2023,SVN,Insulation (Exterior wall),9514042.91389415
+2023,SVN,Insulation (Roof),5851101.803422142
+2023,SVN,Insulation (Floor),2416432.046435873
+2023,SVN,Insulation (Basement),971778.4024894587
+2023,SWE,Insulation,0.0
+2023,SWE,Insulation (Exterior wall),117868612.48894125
+2023,SWE,Insulation (Roof),46905704.70112338
+2023,SWE,Insulation (Floor),21193772.668340698
+2023,SWE,Insulation (Basement),25962099.52337434
+2024,AUT,Insulation,0.0
+2024,AUT,Insulation (Exterior wall),63727713.58599369
+2024,AUT,Insulation (Roof),24138460.088373266
+2024,AUT,Insulation (Floor),14206737.397031117
+2024,AUT,Insulation (Basement),8413903.061161034
+2024,BEL,Insulation,0.0
+2024,BEL,Insulation (Exterior wall),56076852.94800754
+2024,BEL,Insulation (Roof),26442409.83248218
+2024,BEL,Insulation (Floor),13044270.31941831
+2024,BEL,Insulation (Basement),6687235.718519989
+2024,BGR,Insulation,0.0
+2024,BGR,Insulation (Exterior wall),8110255.168018812
+2024,BGR,Insulation (Roof),8456706.440424446
+2024,BGR,Insulation (Floor),2953263.8301199996
+2024,BGR,Insulation (Basement),0.0
+2024,CYP,Insulation,0.0
+2024,CYP,Insulation (Exterior wall),5269099.821383276
+2024,CYP,Insulation (Roof),2507371.4030496753
+2024,CYP,Insulation (Floor),2431991.2314764517
+2024,CYP,Insulation (Basement),1107283.1667416608
+2024,CZE,Insulation,0.0
+2024,CZE,Insulation (Exterior wall),30738797.140451178
+2024,CZE,Insulation (Roof),15625660.287431143
+2024,CZE,Insulation (Floor),7648265.419767106
+2024,CZE,Insulation (Basement),3434258.9521303037
+2024,DEU,Insulation,0.0
+2024,DEU,Insulation (Exterior wall),366861635.20070297
+2024,DEU,Insulation (Roof),162234245.41697082
+2024,DEU,Insulation (Floor),94372295.12314248
+2024,DEU,Insulation (Basement),29741488.258769095
+2024,DNK,Insulation,0.0
+2024,DNK,Insulation (Exterior wall),0.0
+2024,DNK,Insulation (Roof),0.0
+2024,DNK,Insulation (Floor),0.0
+2024,DNK,Insulation (Basement),0.0
+2024,ESP,Insulation,0.0
+2024,ESP,Insulation (Exterior wall),118919893.66555826
+2024,ESP,Insulation (Roof),72088956.30627961
+2024,ESP,Insulation (Floor),85686775.23518793
+2024,ESP,Insulation (Basement),26461224.99371409
+2024,EST,Insulation,0.0
+2024,EST,Insulation (Exterior wall),2846557.8912454364
+2024,EST,Insulation (Roof),3260598.973598998
+2024,EST,Insulation (Floor),1358493.0414673411
+2024,EST,Insulation (Basement),597638.1025015076
+2024,FIN,Insulation,0.0
+2024,FIN,Insulation (Exterior wall),12395022.090498805
+2024,FIN,Insulation (Roof),11316356.842950923
+2024,FIN,Insulation (Floor),4844507.380879751
+2024,FIN,Insulation (Basement),2554392.7234107223
+2024,FRA,Insulation,0.0
+2024,FRA,Insulation (Exterior wall),202370652.0450911
+2024,FRA,Insulation (Roof),104630307.77747852
+2024,FRA,Insulation (Floor),109342882.82311438
+2024,FRA,Insulation (Basement),41519350.929542676
+2024,GBR,Insulation,0.0
+2024,GBR,Insulation (Exterior wall),346694096.07900864
+2024,GBR,Insulation (Roof),143353786.1770275
+2024,GBR,Insulation (Floor),72805759.19934732
+2024,GBR,Insulation (Basement),49901170.26337279
+2024,GRC,Insulation,0.0
+2024,GRC,Insulation (Exterior wall),13136125.087292094
+2024,GRC,Insulation (Roof),8439477.027416704
+2024,GRC,Insulation (Floor),10141865.29521626
+2024,GRC,Insulation (Basement),2177906.027572991
+2024,HRV,Insulation,0.0
+2024,HRV,Insulation (Exterior wall),534461.8436649627
+2024,HRV,Insulation (Roof),635194.100016
+2024,HRV,Insulation (Floor),952791.1500239999
+2024,HRV,Insulation (Basement),0.0
+2024,HUN,Insulation,0.0
+2024,HUN,Insulation (Exterior wall),22196351.976975765
+2024,HUN,Insulation (Roof),19535654.900611363
+2024,HUN,Insulation (Floor),7292121.134284384
+2024,HUN,Insulation (Basement),733477.563332267
+2024,IRL,Insulation,0.0
+2024,IRL,Insulation (Exterior wall),31154564.864129566
+2024,IRL,Insulation (Roof),12200820.25609383
+2024,IRL,Insulation (Floor),6231624.00035702
+2024,IRL,Insulation (Basement),4030681.3313547065
+2024,ITA,Insulation,0.0
+2024,ITA,Insulation (Exterior wall),97454087.24310616
+2024,ITA,Insulation (Roof),62097734.12117115
+2024,ITA,Insulation (Floor),76272067.00343654
+2024,ITA,Insulation (Basement),22114195.13898693
+2024,LTU,Insulation,0.0
+2024,LTU,Insulation (Exterior wall),918582.8436304916
+2024,LTU,Insulation (Roof),4273075.298333682
+2024,LTU,Insulation (Floor),2245493.302526075
+2024,LTU,Insulation (Basement),103093.45740461233
+2024,LUX,Insulation,0.0
+2024,LUX,Insulation (Exterior wall),9282393.359437427
+2024,LUX,Insulation (Roof),4154270.667413779
+2024,LUX,Insulation (Floor),2009481.9863493638
+2024,LUX,Insulation (Basement),1366819.7063768117
+2024,LVA,Insulation,0.0
+2024,LVA,Insulation (Exterior wall),605899.7830468208
+2024,LVA,Insulation (Roof),2909794.957784573
+2024,LVA,Insulation (Floor),1498171.1300269642
+2024,LVA,Insulation (Basement),68419.37434106883
+2024,MLT,Insulation,0.0
+2024,MLT,Insulation (Exterior wall),3650504.825066767
+2024,MLT,Insulation (Roof),1807668.9956937816
+2024,MLT,Insulation (Floor),1829379.8208410314
+2024,MLT,Insulation (Basement),786478.7036271626
+2024,NLD,Insulation,0.0
+2024,NLD,Insulation (Exterior wall),105799157.95043579
+2024,NLD,Insulation (Roof),55696506.31650494
+2024,NLD,Insulation (Floor),24780307.146532476
+2024,NLD,Insulation (Basement),13563716.939162645
+2024,POL,Insulation,0.0
+2024,POL,Insulation (Exterior wall),199208341.71248102
+2024,POL,Insulation (Roof),97142882.13889346
+2024,POL,Insulation (Floor),49659956.69784995
+2024,POL,Insulation (Basement),23054107.20278898
+2024,PRT,Insulation,0.0
+2024,PRT,Insulation (Exterior wall),15950893.857917264
+2024,PRT,Insulation (Roof),9227488.628788812
+2024,PRT,Insulation (Floor),10466992.257505376
+2024,PRT,Insulation (Basement),3073425.596156064
+2024,ROU,Insulation,0.0
+2024,ROU,Insulation (Exterior wall),15774554.186978389
+2024,ROU,Insulation (Roof),15357716.046152115
+2024,ROU,Insulation (Floor),4966602.116361729
+2024,ROU,Insulation (Basement),877364.3012811646
+2024,SVK,Insulation,0.0
+2024,SVK,Insulation (Exterior wall),12945805.326722028
+2024,SVK,Insulation (Roof),5118552.484855955
+2024,SVK,Insulation (Floor),3172432.2395166075
+2024,SVK,Insulation (Basement),1247368.6729429117
+2024,SVN,Insulation,0.0
+2024,SVN,Insulation (Exterior wall),9514042.91389415
+2024,SVN,Insulation (Roof),5851101.803422142
+2024,SVN,Insulation (Floor),2416432.046435873
+2024,SVN,Insulation (Basement),971778.4024894587
+2024,SWE,Insulation,0.0
+2024,SWE,Insulation (Exterior wall),117868612.48894125
+2024,SWE,Insulation (Roof),46905704.70112338
+2024,SWE,Insulation (Floor),21193772.668340698
+2024,SWE,Insulation (Basement),25962099.52337434
+2025,AUT,Insulation,0.0
+2025,AUT,Insulation (Exterior wall),63727713.586591996
+2025,AUT,Insulation (Roof),24138460.088827077
+2025,AUT,Insulation (Floor),14206737.397231117
+2025,AUT,Insulation (Basement),8413903.061161034
+2025,BEL,Insulation,0.0
+2025,BEL,Insulation (Exterior wall),56076852.94800754
+2025,BEL,Insulation (Roof),26442409.83248218
+2025,BEL,Insulation (Floor),13044270.31941831
+2025,BEL,Insulation (Basement),6687235.718519989
+2025,BGR,Insulation,0.0
+2025,BGR,Insulation (Exterior wall),8110255.168018812
+2025,BGR,Insulation (Roof),8456706.440424446
+2025,BGR,Insulation (Floor),2953263.8301199996
+2025,BGR,Insulation (Basement),0.0
+2025,CYP,Insulation,0.0
+2025,CYP,Insulation (Exterior wall),5269099.821383276
+2025,CYP,Insulation (Roof),2507371.4030496753
+2025,CYP,Insulation (Floor),2431991.2314764517
+2025,CYP,Insulation (Basement),1107283.1667416608
+2025,CZE,Insulation,0.0
+2025,CZE,Insulation (Exterior wall),30738797.140451178
+2025,CZE,Insulation (Roof),15625660.287431143
+2025,CZE,Insulation (Floor),7648265.419767106
+2025,CZE,Insulation (Basement),3434258.9521303037
+2025,DEU,Insulation,0.0
+2025,DEU,Insulation (Exterior wall),366861635.20070297
+2025,DEU,Insulation (Roof),162234245.41697082
+2025,DEU,Insulation (Floor),94372295.12314248
+2025,DEU,Insulation (Basement),29741488.258769095
+2025,DNK,Insulation,0.0
+2025,DNK,Insulation (Exterior wall),0.0
+2025,DNK,Insulation (Roof),0.0
+2025,DNK,Insulation (Floor),0.0
+2025,DNK,Insulation (Basement),0.0
+2025,ESP,Insulation,0.0
+2025,ESP,Insulation (Exterior wall),118919893.66555826
+2025,ESP,Insulation (Roof),72088956.30627961
+2025,ESP,Insulation (Floor),85686775.23518793
+2025,ESP,Insulation (Basement),26461224.99371409
+2025,EST,Insulation,0.0
+2025,EST,Insulation (Exterior wall),2846557.8912454364
+2025,EST,Insulation (Roof),3260598.973598998
+2025,EST,Insulation (Floor),1358493.0414673411
+2025,EST,Insulation (Basement),597638.1025015076
+2025,FIN,Insulation,0.0
+2025,FIN,Insulation (Exterior wall),12395022.090498805
+2025,FIN,Insulation (Roof),11316356.842950923
+2025,FIN,Insulation (Floor),4844507.380879751
+2025,FIN,Insulation (Basement),2554392.7234107223
+2025,FRA,Insulation,0.0
+2025,FRA,Insulation (Exterior wall),202370652.0450911
+2025,FRA,Insulation (Roof),104630307.77747852
+2025,FRA,Insulation (Floor),109342882.82311438
+2025,FRA,Insulation (Basement),41519350.929542676
+2025,GBR,Insulation,0.0
+2025,GBR,Insulation (Exterior wall),346694096.07900864
+2025,GBR,Insulation (Roof),143353786.1770275
+2025,GBR,Insulation (Floor),72805759.19934732
+2025,GBR,Insulation (Basement),49901170.26337279
+2025,GRC,Insulation,0.0
+2025,GRC,Insulation (Exterior wall),13136125.087292094
+2025,GRC,Insulation (Roof),8439477.027416704
+2025,GRC,Insulation (Floor),10141865.29521626
+2025,GRC,Insulation (Basement),2177906.027572991
+2025,HRV,Insulation,0.0
+2025,HRV,Insulation (Exterior wall),534461.8436649627
+2025,HRV,Insulation (Roof),635194.100016
+2025,HRV,Insulation (Floor),952791.1500239999
+2025,HRV,Insulation (Basement),0.0
+2025,HUN,Insulation,0.0
+2025,HUN,Insulation (Exterior wall),22196351.976975765
+2025,HUN,Insulation (Roof),19535654.900611363
+2025,HUN,Insulation (Floor),7292121.134284384
+2025,HUN,Insulation (Basement),733477.563332267
+2025,IRL,Insulation,0.0
+2025,IRL,Insulation (Exterior wall),31154564.864129566
+2025,IRL,Insulation (Roof),12200820.25609383
+2025,IRL,Insulation (Floor),6231624.00035702
+2025,IRL,Insulation (Basement),4030681.3313547065
+2025,ITA,Insulation,0.0
+2025,ITA,Insulation (Exterior wall),97454087.24310616
+2025,ITA,Insulation (Roof),62097734.12117115
+2025,ITA,Insulation (Floor),76272067.00343654
+2025,ITA,Insulation (Basement),22114195.13898693
+2025,LTU,Insulation,0.0
+2025,LTU,Insulation (Exterior wall),918582.8436304916
+2025,LTU,Insulation (Roof),4273075.298333682
+2025,LTU,Insulation (Floor),2245493.302526075
+2025,LTU,Insulation (Basement),103093.45740461233
+2025,LUX,Insulation,0.0
+2025,LUX,Insulation (Exterior wall),9282393.359437427
+2025,LUX,Insulation (Roof),4154270.667413779
+2025,LUX,Insulation (Floor),2009481.9863493638
+2025,LUX,Insulation (Basement),1366819.7063768117
+2025,LVA,Insulation,0.0
+2025,LVA,Insulation (Exterior wall),605899.7830468208
+2025,LVA,Insulation (Roof),2909794.957784573
+2025,LVA,Insulation (Floor),1498171.1300269642
+2025,LVA,Insulation (Basement),68419.37434106883
+2025,MLT,Insulation,0.0
+2025,MLT,Insulation (Exterior wall),3650504.825066767
+2025,MLT,Insulation (Roof),1807668.9956937816
+2025,MLT,Insulation (Floor),1829379.8208410314
+2025,MLT,Insulation (Basement),786478.7036271626
+2025,NLD,Insulation,0.0
+2025,NLD,Insulation (Exterior wall),105799157.95043579
+2025,NLD,Insulation (Roof),55696506.31650494
+2025,NLD,Insulation (Floor),24780307.146532476
+2025,NLD,Insulation (Basement),13563716.939162645
+2025,POL,Insulation,0.0
+2025,POL,Insulation (Exterior wall),199208341.71248102
+2025,POL,Insulation (Roof),97142882.13889346
+2025,POL,Insulation (Floor),49659956.69784995
+2025,POL,Insulation (Basement),23054107.20278898
+2025,PRT,Insulation,0.0
+2025,PRT,Insulation (Exterior wall),15950893.857917264
+2025,PRT,Insulation (Roof),9227488.628788812
+2025,PRT,Insulation (Floor),10466992.257505376
+2025,PRT,Insulation (Basement),3073425.596156064
+2025,ROU,Insulation,0.0
+2025,ROU,Insulation (Exterior wall),15774554.186978389
+2025,ROU,Insulation (Roof),15357716.046152115
+2025,ROU,Insulation (Floor),4966602.116361729
+2025,ROU,Insulation (Basement),877364.3012811646
+2025,SVK,Insulation,0.0
+2025,SVK,Insulation (Exterior wall),12945805.326722028
+2025,SVK,Insulation (Roof),5118552.484855955
+2025,SVK,Insulation (Floor),3172432.2395166075
+2025,SVK,Insulation (Basement),1247368.6729429117
+2025,SVN,Insulation,0.0
+2025,SVN,Insulation (Exterior wall),9514042.91389415
+2025,SVN,Insulation (Roof),5851101.803422142
+2025,SVN,Insulation (Floor),2416432.046435873
+2025,SVN,Insulation (Basement),971778.4024894587
+2025,SWE,Insulation,0.0
+2025,SWE,Insulation (Exterior wall),117868612.48894125
+2025,SWE,Insulation (Roof),46905704.70112338
+2025,SWE,Insulation (Floor),21193772.668340698
+2025,SWE,Insulation (Basement),25962099.52337434
+2026,AUT,Insulation,0.0
+2026,AUT,Insulation (Exterior wall),61677007.94118462
+2026,AUT,Insulation (Roof),22543928.727802973
+2026,AUT,Insulation (Floor),13448281.51713679
+2026,AUT,Insulation (Basement),8540454.434001535
+2026,BEL,Insulation,0.0
+2026,BEL,Insulation (Exterior wall),51635023.43948367
+2026,BEL,Insulation (Roof),18952231.683297385
+2026,BEL,Insulation (Floor),10753196.259180808
+2026,BEL,Insulation (Basement),7302272.955913912
+2026,BGR,Insulation,0.0
+2026,BGR,Insulation (Exterior wall),5803138.838780435
+2026,BGR,Insulation (Roof),7020182.113892632
+2026,BGR,Insulation (Floor),2214978.3400000003
+2026,BGR,Insulation (Basement),0.0
+2026,CYP,Insulation,0.0
+2026,CYP,Insulation (Exterior wall),5066428.80162368
+2026,CYP,Insulation (Roof),2375043.1161040952
+2026,CYP,Insulation (Floor),2271444.41794451
+2026,CYP,Insulation (Basement),1073887.3007333418
+2026,CZE,Insulation,0.0
+2026,CZE,Insulation (Exterior wall),26114659.11610003
+2026,CZE,Insulation (Roof),12261016.615286123
+2026,CZE,Insulation (Floor),6305844.569730901
+2026,CZE,Insulation (Basement),3109944.5945844674
+2026,DEU,Insulation,0.0
+2026,DEU,Insulation (Exterior wall),306873558.08971465
+2026,DEU,Insulation (Roof),121888524.48590507
+2026,DEU,Insulation (Floor),75237246.57624926
+2026,DEU,Insulation (Basement),29405421.187364645
+2026,DNK,Insulation,0.0
+2026,DNK,Insulation (Exterior wall),0.0
+2026,DNK,Insulation (Roof),0.0
+2026,DNK,Insulation (Floor),0.0
+2026,DNK,Insulation (Basement),0.0
+2026,ESP,Insulation,0.0
+2026,ESP,Insulation (Exterior wall),124185062.92070995
+2026,ESP,Insulation (Roof),73527597.6322614
+2026,ESP,Insulation (Floor),86310368.64714336
+2026,ESP,Insulation (Basement),28383976.65096934
+2026,EST,Insulation,0.0
+2026,EST,Insulation (Exterior wall),1666739.563191134
+2026,EST,Insulation (Roof),2263463.699252139
+2026,EST,Insulation (Floor),980089.1148075825
+2026,EST,Insulation (Basement),335532.0246833617
+2026,FIN,Insulation,0.0
+2026,FIN,Insulation (Exterior wall),11654420.969299486
+2026,FIN,Insulation (Roof),8855427.786026794
+2026,FIN,Insulation (Floor),3753672.1863742606
+2026,FIN,Insulation (Basement),2435141.304534049
+2026,FRA,Insulation,0.0
+2026,FRA,Insulation (Exterior wall),224709114.06548777
+2026,FRA,Insulation (Roof),111151983.5787877
+2026,FRA,Insulation (Floor),112158474.91658652
+2026,FRA,Insulation (Basement),47782168.02571065
+2026,GBR,Insulation,0.0
+2026,GBR,Insulation (Exterior wall),368172853.0680516
+2026,GBR,Insulation (Roof),152380202.19961897
+2026,GBR,Insulation (Floor),77314965.96843018
+2026,GBR,Insulation (Basement),52978477.6392615
+2026,GRC,Insulation,0.0
+2026,GRC,Insulation (Exterior wall),17998152.728575997
+2026,GRC,Insulation (Roof),9215622.177332904
+2026,GRC,Insulation (Floor),9552915.210842162
+2026,GRC,Insulation (Basement),3704125.402531474
+2026,HRV,Insulation,0.0
+2026,HRV,Insulation (Exterior wall),265208.1117810218
+2026,HRV,Insulation (Roof),315192.992496
+2026,HRV,Insulation (Floor),472789.488744
+2026,HRV,Insulation (Basement),0.0
+2026,HUN,Insulation,0.0
+2026,HUN,Insulation (Exterior wall),22551772.081480153
+2026,HUN,Insulation (Roof),19266521.561951283
+2026,HUN,Insulation (Floor),7021829.854323237
+2026,HUN,Insulation (Basement),1231330.8214088802
+2026,IRL,Insulation,0.0
+2026,IRL,Insulation (Exterior wall),27927001.093617763
+2026,IRL,Insulation (Roof),8829801.674966596
+2026,IRL,Insulation (Floor),4991677.687643614
+2026,IRL,Insulation (Basement),4114014.1390951285
+2026,ITA,Insulation,0.0
+2026,ITA,Insulation (Exterior wall),128224505.50251716
+2026,ITA,Insulation (Roof),77679424.25601867
+2026,ITA,Insulation (Floor),93058926.21265303
+2026,ITA,Insulation (Basement),30772932.986915894
+2026,LTU,Insulation,0.0
+2026,LTU,Insulation (Exterior wall),474790.51150290447
+2026,LTU,Insulation (Roof),2322201.513699733
+2026,LTU,Insulation (Floor),1177679.5266481792
+2026,LTU,Insulation (Basement),53567.482024591176
+2026,LUX,Insulation,0.0
+2026,LUX,Insulation (Exterior wall),9226657.432057887
+2026,LUX,Insulation (Roof),3721290.575196969
+2026,LUX,Insulation (Floor),1926963.0344255464
+2026,LUX,Insulation (Basement),1405568.6843719203
+2026,LVA,Insulation,0.0
+2026,LVA,Insulation (Exterior wall),424231.969276702
+2026,LVA,Insulation (Roof),2744520.9296773807
+2026,LVA,Insulation (Floor),1121842.2835535812
+2026,LVA,Insulation (Basement),47737.92972064399
+2026,MLT,Insulation,0.0
+2026,MLT,Insulation (Exterior wall),3378600.8201133227
+2026,MLT,Insulation (Roof),1669750.1140442742
+2026,MLT,Insulation (Floor),1686401.2807296661
+2026,MLT,Insulation (Basement),726977.7984105796
+2026,NLD,Insulation,0.0
+2026,NLD,Insulation (Exterior wall),92268613.42459203
+2026,NLD,Insulation (Roof),37543355.0812733
+2026,NLD,Insulation (Floor),19494938.997198
+2026,NLD,Insulation (Basement),13465341.835897263
+2026,POL,Insulation,0.0
+2026,POL,Insulation (Exterior wall),178820356.3549443
+2026,POL,Insulation (Roof),87870852.09112053
+2026,POL,Insulation (Floor),44554673.70639973
+2026,POL,Insulation (Basement),20815425.437470455
+2026,PRT,Insulation,0.0
+2026,PRT,Insulation (Exterior wall),11337634.297371108
+2026,PRT,Insulation (Roof),6170869.247129821
+2026,PRT,Insulation (Floor),6717116.256535453
+2026,PRT,Insulation (Basement),2288565.371857401
+2026,ROU,Insulation,0.0
+2026,ROU,Insulation (Exterior wall),25416020.45858443
+2026,ROU,Insulation (Roof),15750963.112045951
+2026,ROU,Insulation (Floor),6092468.623080739
+2026,ROU,Insulation (Basement),2976220.9879072676
+2026,SVK,Insulation,0.0
+2026,SVK,Insulation (Exterior wall),11716997.942989502
+2026,SVK,Insulation (Roof),4499933.106767241
+2026,SVK,Insulation (Floor),2837333.8752424014
+2026,SVK,Insulation (Basement),1175389.519226126
+2026,SVN,Insulation,0.0
+2026,SVN,Insulation (Exterior wall),7662232.51041181
+2026,SVN,Insulation (Roof),4569058.389259165
+2026,SVN,Insulation (Floor),1884418.3146952742
+2026,SVN,Insulation (Basement),861095.0841190298
+2026,SWE,Insulation,0.0
+2026,SWE,Insulation (Exterior wall),118297765.64072464
+2026,SWE,Insulation (Roof),44137968.961839326
+2026,SWE,Insulation (Floor),19588239.152502898
+2026,SWE,Insulation (Basement),26129552.350749362
+2027,AUT,Insulation,0.0
+2027,AUT,Insulation (Exterior wall),61677007.94118462
+2027,AUT,Insulation (Roof),22543928.727802973
+2027,AUT,Insulation (Floor),13448281.51713679
+2027,AUT,Insulation (Basement),8540454.434001535
+2027,BEL,Insulation,0.0
+2027,BEL,Insulation (Exterior wall),51635023.43948367
+2027,BEL,Insulation (Roof),18952231.683297385
+2027,BEL,Insulation (Floor),10753196.259180808
+2027,BEL,Insulation (Basement),7302272.955913912
+2027,BGR,Insulation,0.0
+2027,BGR,Insulation (Exterior wall),5803138.838780435
+2027,BGR,Insulation (Roof),7020182.113892632
+2027,BGR,Insulation (Floor),2214978.3400000003
+2027,BGR,Insulation (Basement),0.0
+2027,CYP,Insulation,0.0
+2027,CYP,Insulation (Exterior wall),5066428.80162368
+2027,CYP,Insulation (Roof),2375043.1161040952
+2027,CYP,Insulation (Floor),2271444.41794451
+2027,CYP,Insulation (Basement),1073887.3007333418
+2027,CZE,Insulation,0.0
+2027,CZE,Insulation (Exterior wall),26114659.11610003
+2027,CZE,Insulation (Roof),12261016.615286123
+2027,CZE,Insulation (Floor),6305844.569730901
+2027,CZE,Insulation (Basement),3109944.5945844674
+2027,DEU,Insulation,0.0
+2027,DEU,Insulation (Exterior wall),306873558.08971465
+2027,DEU,Insulation (Roof),121888524.48590507
+2027,DEU,Insulation (Floor),75237246.57624926
+2027,DEU,Insulation (Basement),29405421.187364645
+2027,DNK,Insulation,0.0
+2027,DNK,Insulation (Exterior wall),0.0
+2027,DNK,Insulation (Roof),0.0
+2027,DNK,Insulation (Floor),0.0
+2027,DNK,Insulation (Basement),0.0
+2027,ESP,Insulation,0.0
+2027,ESP,Insulation (Exterior wall),124185062.92070995
+2027,ESP,Insulation (Roof),73527597.6322614
+2027,ESP,Insulation (Floor),86310368.64714336
+2027,ESP,Insulation (Basement),28383976.65096934
+2027,EST,Insulation,0.0
+2027,EST,Insulation (Exterior wall),1666739.563191134
+2027,EST,Insulation (Roof),2263463.699252139
+2027,EST,Insulation (Floor),980089.1148075825
+2027,EST,Insulation (Basement),335532.0246833617
+2027,FIN,Insulation,0.0
+2027,FIN,Insulation (Exterior wall),11654420.969299486
+2027,FIN,Insulation (Roof),8855427.786026794
+2027,FIN,Insulation (Floor),3753672.1863742606
+2027,FIN,Insulation (Basement),2435141.304534049
+2027,FRA,Insulation,0.0
+2027,FRA,Insulation (Exterior wall),224709114.06548777
+2027,FRA,Insulation (Roof),111151983.5787877
+2027,FRA,Insulation (Floor),112158474.91658652
+2027,FRA,Insulation (Basement),47782168.02571065
+2027,GBR,Insulation,0.0
+2027,GBR,Insulation (Exterior wall),368172853.0680516
+2027,GBR,Insulation (Roof),152380202.19961897
+2027,GBR,Insulation (Floor),77314965.96843018
+2027,GBR,Insulation (Basement),52978477.6392615
+2027,GRC,Insulation,0.0
+2027,GRC,Insulation (Exterior wall),17998152.728575997
+2027,GRC,Insulation (Roof),9215622.177332904
+2027,GRC,Insulation (Floor),9552915.210842162
+2027,GRC,Insulation (Basement),3704125.402531474
+2027,HRV,Insulation,0.0
+2027,HRV,Insulation (Exterior wall),265208.1117810218
+2027,HRV,Insulation (Roof),315192.992496
+2027,HRV,Insulation (Floor),472789.488744
+2027,HRV,Insulation (Basement),0.0
+2027,HUN,Insulation,0.0
+2027,HUN,Insulation (Exterior wall),22551772.081480153
+2027,HUN,Insulation (Roof),19266521.561951283
+2027,HUN,Insulation (Floor),7021829.854323237
+2027,HUN,Insulation (Basement),1231330.8214088802
+2027,IRL,Insulation,0.0
+2027,IRL,Insulation (Exterior wall),27927001.093617763
+2027,IRL,Insulation (Roof),8829801.674966596
+2027,IRL,Insulation (Floor),4991677.687643614
+2027,IRL,Insulation (Basement),4114014.1390951285
+2027,ITA,Insulation,0.0
+2027,ITA,Insulation (Exterior wall),128224505.50251716
+2027,ITA,Insulation (Roof),77679424.25601867
+2027,ITA,Insulation (Floor),93058926.21265303
+2027,ITA,Insulation (Basement),30772932.986915894
+2027,LTU,Insulation,0.0
+2027,LTU,Insulation (Exterior wall),474790.51150290447
+2027,LTU,Insulation (Roof),2322201.513699733
+2027,LTU,Insulation (Floor),1177679.5266481792
+2027,LTU,Insulation (Basement),53567.482024591176
+2027,LUX,Insulation,0.0
+2027,LUX,Insulation (Exterior wall),9226657.432057887
+2027,LUX,Insulation (Roof),3721290.575196969
+2027,LUX,Insulation (Floor),1926963.0344255464
+2027,LUX,Insulation (Basement),1405568.6843719203
+2027,LVA,Insulation,0.0
+2027,LVA,Insulation (Exterior wall),424231.9690864462
+2027,LVA,Insulation (Roof),2744520.929588492
+2027,LVA,Insulation (Floor),1121842.2831535812
+2027,LVA,Insulation (Basement),47737.929698125474
+2027,MLT,Insulation,0.0
+2027,MLT,Insulation (Exterior wall),3378600.819135545
+2027,MLT,Insulation (Roof),1669750.113686129
+2027,MLT,Insulation (Floor),1686401.2804896662
+2027,MLT,Insulation (Basement),726977.7982105794
+2027,NLD,Insulation,0.0
+2027,NLD,Insulation (Exterior wall),92268613.42459203
+2027,NLD,Insulation (Roof),37543355.0812733
+2027,NLD,Insulation (Floor),19494938.997198
+2027,NLD,Insulation (Basement),13465341.835897263
+2027,POL,Insulation,0.0
+2027,POL,Insulation (Exterior wall),178820356.3549443
+2027,POL,Insulation (Roof),87870852.09112053
+2027,POL,Insulation (Floor),44554673.70639973
+2027,POL,Insulation (Basement),20815425.437470455
+2027,PRT,Insulation,0.0
+2027,PRT,Insulation (Exterior wall),11337634.297371108
+2027,PRT,Insulation (Roof),6170869.247129821
+2027,PRT,Insulation (Floor),6717116.256535453
+2027,PRT,Insulation (Basement),2288565.371857401
+2027,ROU,Insulation,0.0
+2027,ROU,Insulation (Exterior wall),25416020.45858443
+2027,ROU,Insulation (Roof),15750963.112045951
+2027,ROU,Insulation (Floor),6092468.623080739
+2027,ROU,Insulation (Basement),2976220.9879072676
+2027,SVK,Insulation,0.0
+2027,SVK,Insulation (Exterior wall),11716997.942989502
+2027,SVK,Insulation (Roof),4499933.106767241
+2027,SVK,Insulation (Floor),2837333.8752424014
+2027,SVK,Insulation (Basement),1175389.519226126
+2027,SVN,Insulation,0.0
+2027,SVN,Insulation (Exterior wall),7662232.51041181
+2027,SVN,Insulation (Roof),4569058.389259165
+2027,SVN,Insulation (Floor),1884418.3146952742
+2027,SVN,Insulation (Basement),861095.0841190298
+2027,SWE,Insulation,0.0
+2027,SWE,Insulation (Exterior wall),118297765.64072464
+2027,SWE,Insulation (Roof),44137968.961839326
+2027,SWE,Insulation (Floor),19588239.152502898
+2027,SWE,Insulation (Basement),26129552.350749362
+2028,AUT,Insulation,0.0
+2028,AUT,Insulation (Exterior wall),61677007.94118462
+2028,AUT,Insulation (Roof),22543928.727802973
+2028,AUT,Insulation (Floor),13448281.51713679
+2028,AUT,Insulation (Basement),8540454.434001535
+2028,BEL,Insulation,0.0
+2028,BEL,Insulation (Exterior wall),51635023.43948367
+2028,BEL,Insulation (Roof),18952231.683297385
+2028,BEL,Insulation (Floor),10753196.259180808
+2028,BEL,Insulation (Basement),7302272.955913912
+2028,BGR,Insulation,0.0
+2028,BGR,Insulation (Exterior wall),5803138.838780435
+2028,BGR,Insulation (Roof),7020182.113892632
+2028,BGR,Insulation (Floor),2214978.3400000003
+2028,BGR,Insulation (Basement),0.0
+2028,CYP,Insulation,0.0
+2028,CYP,Insulation (Exterior wall),5066428.80162368
+2028,CYP,Insulation (Roof),2375043.1161040952
+2028,CYP,Insulation (Floor),2271444.41794451
+2028,CYP,Insulation (Basement),1073887.3007333418
+2028,CZE,Insulation,0.0
+2028,CZE,Insulation (Exterior wall),26114659.11610003
+2028,CZE,Insulation (Roof),12261016.615286123
+2028,CZE,Insulation (Floor),6305844.569730901
+2028,CZE,Insulation (Basement),3109944.5945844674
+2028,DEU,Insulation,0.0
+2028,DEU,Insulation (Exterior wall),306873558.08971465
+2028,DEU,Insulation (Roof),121888524.48590507
+2028,DEU,Insulation (Floor),75237246.57624926
+2028,DEU,Insulation (Basement),29405421.187364645
+2028,DNK,Insulation,0.0
+2028,DNK,Insulation (Exterior wall),0.0
+2028,DNK,Insulation (Roof),0.0
+2028,DNK,Insulation (Floor),0.0
+2028,DNK,Insulation (Basement),0.0
+2028,ESP,Insulation,0.0
+2028,ESP,Insulation (Exterior wall),124185062.92070995
+2028,ESP,Insulation (Roof),73527597.6322614
+2028,ESP,Insulation (Floor),86310368.64714336
+2028,ESP,Insulation (Basement),28383976.65096934
+2028,EST,Insulation,0.0
+2028,EST,Insulation (Exterior wall),1666739.563191134
+2028,EST,Insulation (Roof),2263463.699252139
+2028,EST,Insulation (Floor),980089.1148075825
+2028,EST,Insulation (Basement),335532.0246833617
+2028,FIN,Insulation,0.0
+2028,FIN,Insulation (Exterior wall),11654420.969299486
+2028,FIN,Insulation (Roof),8855427.786026794
+2028,FIN,Insulation (Floor),3753672.1863742606
+2028,FIN,Insulation (Basement),2435141.304534049
+2028,FRA,Insulation,0.0
+2028,FRA,Insulation (Exterior wall),224709114.06548777
+2028,FRA,Insulation (Roof),111151983.5787877
+2028,FRA,Insulation (Floor),112158474.91658652
+2028,FRA,Insulation (Basement),47782168.02571065
+2028,GBR,Insulation,0.0
+2028,GBR,Insulation (Exterior wall),368172853.0680516
+2028,GBR,Insulation (Roof),152380202.19961897
+2028,GBR,Insulation (Floor),77314965.96843018
+2028,GBR,Insulation (Basement),52978477.6392615
+2028,GRC,Insulation,0.0
+2028,GRC,Insulation (Exterior wall),17998152.728575997
+2028,GRC,Insulation (Roof),9215622.177332904
+2028,GRC,Insulation (Floor),9552915.210842162
+2028,GRC,Insulation (Basement),3704125.402531474
+2028,HRV,Insulation,0.0
+2028,HRV,Insulation (Exterior wall),265208.1117810218
+2028,HRV,Insulation (Roof),315192.992496
+2028,HRV,Insulation (Floor),472789.488744
+2028,HRV,Insulation (Basement),0.0
+2028,HUN,Insulation,0.0
+2028,HUN,Insulation (Exterior wall),22551772.081480153
+2028,HUN,Insulation (Roof),19266521.561951283
+2028,HUN,Insulation (Floor),7021829.854323237
+2028,HUN,Insulation (Basement),1231330.8214088802
+2028,IRL,Insulation,0.0
+2028,IRL,Insulation (Exterior wall),27927001.093617763
+2028,IRL,Insulation (Roof),8829801.674966596
+2028,IRL,Insulation (Floor),4991677.687643614
+2028,IRL,Insulation (Basement),4114014.1390951285
+2028,ITA,Insulation,0.0
+2028,ITA,Insulation (Exterior wall),128224505.50251716
+2028,ITA,Insulation (Roof),77679424.25601867
+2028,ITA,Insulation (Floor),93058926.21265303
+2028,ITA,Insulation (Basement),30772932.986915894
+2028,LTU,Insulation,0.0
+2028,LTU,Insulation (Exterior wall),474790.51150290447
+2028,LTU,Insulation (Roof),2322201.513699733
+2028,LTU,Insulation (Floor),1177679.5266481792
+2028,LTU,Insulation (Basement),53567.482024591176
+2028,LUX,Insulation,0.0
+2028,LUX,Insulation (Exterior wall),9226657.432057887
+2028,LUX,Insulation (Roof),3721290.575196969
+2028,LUX,Insulation (Floor),1926963.0344255464
+2028,LUX,Insulation (Basement),1405568.6843719203
+2028,LVA,Insulation,0.0
+2028,LVA,Insulation (Exterior wall),424231.969276702
+2028,LVA,Insulation (Roof),2744520.9296773807
+2028,LVA,Insulation (Floor),1121842.2835535812
+2028,LVA,Insulation (Basement),47737.92972064399
+2028,MLT,Insulation,0.0
+2028,MLT,Insulation (Exterior wall),3378600.8201133227
+2028,MLT,Insulation (Roof),1669750.1140442742
+2028,MLT,Insulation (Floor),1686401.2807296661
+2028,MLT,Insulation (Basement),726977.7984105796
+2028,NLD,Insulation,0.0
+2028,NLD,Insulation (Exterior wall),92268613.42459203
+2028,NLD,Insulation (Roof),37543355.0812733
+2028,NLD,Insulation (Floor),19494938.997198
+2028,NLD,Insulation (Basement),13465341.835897263
+2028,POL,Insulation,0.0
+2028,POL,Insulation (Exterior wall),178820356.3549443
+2028,POL,Insulation (Roof),87870852.09112053
+2028,POL,Insulation (Floor),44554673.70639973
+2028,POL,Insulation (Basement),20815425.437470455
+2028,PRT,Insulation,0.0
+2028,PRT,Insulation (Exterior wall),11337634.297371108
+2028,PRT,Insulation (Roof),6170869.247129821
+2028,PRT,Insulation (Floor),6717116.256535453
+2028,PRT,Insulation (Basement),2288565.371857401
+2028,ROU,Insulation,0.0
+2028,ROU,Insulation (Exterior wall),25416020.45858443
+2028,ROU,Insulation (Roof),15750963.112045951
+2028,ROU,Insulation (Floor),6092468.623080739
+2028,ROU,Insulation (Basement),2976220.9879072676
+2028,SVK,Insulation,0.0
+2028,SVK,Insulation (Exterior wall),11716997.942989502
+2028,SVK,Insulation (Roof),4499933.106767241
+2028,SVK,Insulation (Floor),2837333.8752424014
+2028,SVK,Insulation (Basement),1175389.519226126
+2028,SVN,Insulation,0.0
+2028,SVN,Insulation (Exterior wall),7662232.511544747
+2028,SVN,Insulation (Roof),4569058.389515469
+2028,SVN,Insulation (Floor),1884418.3148533588
+2028,SVN,Insulation (Basement),861095.0843190298
+2028,SWE,Insulation,0.0
+2028,SWE,Insulation (Exterior wall),118297765.64072464
+2028,SWE,Insulation (Roof),44137968.961839326
+2028,SWE,Insulation (Floor),19588239.152502898
+2028,SWE,Insulation (Basement),26129552.350749362
+2029,AUT,Insulation,0.0
+2029,AUT,Insulation (Exterior wall),61677007.94118462
+2029,AUT,Insulation (Roof),22543928.727802973
+2029,AUT,Insulation (Floor),13448281.51713679
+2029,AUT,Insulation (Basement),8540454.434001535
+2029,BEL,Insulation,0.0
+2029,BEL,Insulation (Exterior wall),51635023.43948367
+2029,BEL,Insulation (Roof),18952231.683297385
+2029,BEL,Insulation (Floor),10753196.259180808
+2029,BEL,Insulation (Basement),7302272.955913912
+2029,BGR,Insulation,0.0
+2029,BGR,Insulation (Exterior wall),5803138.838780435
+2029,BGR,Insulation (Roof),7020182.113892632
+2029,BGR,Insulation (Floor),2214978.3400000003
+2029,BGR,Insulation (Basement),0.0
+2029,CYP,Insulation,0.0
+2029,CYP,Insulation (Exterior wall),5066428.80162368
+2029,CYP,Insulation (Roof),2375043.1161040952
+2029,CYP,Insulation (Floor),2271444.41794451
+2029,CYP,Insulation (Basement),1073887.3007333418
+2029,CZE,Insulation,0.0
+2029,CZE,Insulation (Exterior wall),26114659.11610003
+2029,CZE,Insulation (Roof),12261016.615286123
+2029,CZE,Insulation (Floor),6305844.569730901
+2029,CZE,Insulation (Basement),3109944.5945844674
+2029,DEU,Insulation,0.0
+2029,DEU,Insulation (Exterior wall),306873558.08971465
+2029,DEU,Insulation (Roof),121888524.48590507
+2029,DEU,Insulation (Floor),75237246.57624926
+2029,DEU,Insulation (Basement),29405421.187364645
+2029,DNK,Insulation,0.0
+2029,DNK,Insulation (Exterior wall),0.0
+2029,DNK,Insulation (Roof),0.0
+2029,DNK,Insulation (Floor),0.0
+2029,DNK,Insulation (Basement),0.0
+2029,ESP,Insulation,0.0
+2029,ESP,Insulation (Exterior wall),124185062.92070995
+2029,ESP,Insulation (Roof),73527597.6322614
+2029,ESP,Insulation (Floor),86310368.64714336
+2029,ESP,Insulation (Basement),28383976.65096934
+2029,EST,Insulation,0.0
+2029,EST,Insulation (Exterior wall),1666739.563191134
+2029,EST,Insulation (Roof),2263463.699252139
+2029,EST,Insulation (Floor),980089.1148075825
+2029,EST,Insulation (Basement),335532.0246833617
+2029,FIN,Insulation,0.0
+2029,FIN,Insulation (Exterior wall),11654420.969299486
+2029,FIN,Insulation (Roof),8855427.786026794
+2029,FIN,Insulation (Floor),3753672.1863742606
+2029,FIN,Insulation (Basement),2435141.304534049
+2029,FRA,Insulation,0.0
+2029,FRA,Insulation (Exterior wall),224709114.06548777
+2029,FRA,Insulation (Roof),111151983.5787877
+2029,FRA,Insulation (Floor),112158474.91658652
+2029,FRA,Insulation (Basement),47782168.02571065
+2029,GBR,Insulation,0.0
+2029,GBR,Insulation (Exterior wall),368172853.0680516
+2029,GBR,Insulation (Roof),152380202.19961897
+2029,GBR,Insulation (Floor),77314965.96843018
+2029,GBR,Insulation (Basement),52978477.6392615
+2029,GRC,Insulation,0.0
+2029,GRC,Insulation (Exterior wall),17998152.728575997
+2029,GRC,Insulation (Roof),9215622.177332904
+2029,GRC,Insulation (Floor),9552915.210842162
+2029,GRC,Insulation (Basement),3704125.402531474
+2029,HRV,Insulation,0.0
+2029,HRV,Insulation (Exterior wall),265208.1117810218
+2029,HRV,Insulation (Roof),315192.992496
+2029,HRV,Insulation (Floor),472789.488744
+2029,HRV,Insulation (Basement),0.0
+2029,HUN,Insulation,0.0
+2029,HUN,Insulation (Exterior wall),22551772.081480153
+2029,HUN,Insulation (Roof),19266521.561951283
+2029,HUN,Insulation (Floor),7021829.854323237
+2029,HUN,Insulation (Basement),1231330.8214088802
+2029,IRL,Insulation,0.0
+2029,IRL,Insulation (Exterior wall),27927001.093617763
+2029,IRL,Insulation (Roof),8829801.674966596
+2029,IRL,Insulation (Floor),4991677.687643614
+2029,IRL,Insulation (Basement),4114014.1390951285
+2029,ITA,Insulation,0.0
+2029,ITA,Insulation (Exterior wall),128224505.50251716
+2029,ITA,Insulation (Roof),77679424.25601867
+2029,ITA,Insulation (Floor),93058926.21265303
+2029,ITA,Insulation (Basement),30772932.986915894
+2029,LTU,Insulation,0.0
+2029,LTU,Insulation (Exterior wall),474790.51150290447
+2029,LTU,Insulation (Roof),2322201.513699733
+2029,LTU,Insulation (Floor),1177679.5266481792
+2029,LTU,Insulation (Basement),53567.482024591176
+2029,LUX,Insulation,0.0
+2029,LUX,Insulation (Exterior wall),9226657.432057887
+2029,LUX,Insulation (Roof),3721290.575196969
+2029,LUX,Insulation (Floor),1926963.0344255464
+2029,LUX,Insulation (Basement),1405568.6843719203
+2029,LVA,Insulation,0.0
+2029,LVA,Insulation (Exterior wall),424231.969276702
+2029,LVA,Insulation (Roof),2744520.9296773807
+2029,LVA,Insulation (Floor),1121842.2835535812
+2029,LVA,Insulation (Basement),47737.92972064399
+2029,MLT,Insulation,0.0
+2029,MLT,Insulation (Exterior wall),3378600.8201133227
+2029,MLT,Insulation (Roof),1669750.1140442742
+2029,MLT,Insulation (Floor),1686401.2807296661
+2029,MLT,Insulation (Basement),726977.7984105796
+2029,NLD,Insulation,0.0
+2029,NLD,Insulation (Exterior wall),92268613.42459203
+2029,NLD,Insulation (Roof),37543355.0812733
+2029,NLD,Insulation (Floor),19494938.997198
+2029,NLD,Insulation (Basement),13465341.835897263
+2029,POL,Insulation,0.0
+2029,POL,Insulation (Exterior wall),178820356.3549443
+2029,POL,Insulation (Roof),87870852.09112053
+2029,POL,Insulation (Floor),44554673.70639973
+2029,POL,Insulation (Basement),20815425.437470455
+2029,PRT,Insulation,0.0
+2029,PRT,Insulation (Exterior wall),11337634.297371108
+2029,PRT,Insulation (Roof),6170869.247129821
+2029,PRT,Insulation (Floor),6717116.256535453
+2029,PRT,Insulation (Basement),2288565.371857401
+2029,ROU,Insulation,0.0
+2029,ROU,Insulation (Exterior wall),25416020.45858443
+2029,ROU,Insulation (Roof),15750963.112045951
+2029,ROU,Insulation (Floor),6092468.623080739
+2029,ROU,Insulation (Basement),2976220.9879072676
+2029,SVK,Insulation,0.0
+2029,SVK,Insulation (Exterior wall),11716997.942989502
+2029,SVK,Insulation (Roof),4499933.106767241
+2029,SVK,Insulation (Floor),2837333.8752424014
+2029,SVK,Insulation (Basement),1175389.519226126
+2029,SVN,Insulation,0.0
+2029,SVN,Insulation (Exterior wall),7662232.51041181
+2029,SVN,Insulation (Roof),4569058.389259165
+2029,SVN,Insulation (Floor),1884418.3146952742
+2029,SVN,Insulation (Basement),861095.0841190298
+2029,SWE,Insulation,0.0
+2029,SWE,Insulation (Exterior wall),118297765.64072464
+2029,SWE,Insulation (Roof),44137968.961839326
+2029,SWE,Insulation (Floor),19588239.152502898
+2029,SWE,Insulation (Basement),26129552.350749362
+2030,AUT,Insulation,0.0
+2030,AUT,Insulation (Exterior wall),61677007.94118462
+2030,AUT,Insulation (Roof),22543928.727802973
+2030,AUT,Insulation (Floor),13448281.51713679
+2030,AUT,Insulation (Basement),8540454.434001535
+2030,BEL,Insulation,0.0
+2030,BEL,Insulation (Exterior wall),51635023.43948367
+2030,BEL,Insulation (Roof),18952231.683297385
+2030,BEL,Insulation (Floor),10753196.259180808
+2030,BEL,Insulation (Basement),7302272.955913912
+2030,BGR,Insulation,0.0
+2030,BGR,Insulation (Exterior wall),5803138.838780435
+2030,BGR,Insulation (Roof),7020182.113892632
+2030,BGR,Insulation (Floor),2214978.3400000003
+2030,BGR,Insulation (Basement),0.0
+2030,CYP,Insulation,0.0
+2030,CYP,Insulation (Exterior wall),5066428.80162368
+2030,CYP,Insulation (Roof),2375043.1161040952
+2030,CYP,Insulation (Floor),2271444.41794451
+2030,CYP,Insulation (Basement),1073887.3007333418
+2030,CZE,Insulation,0.0
+2030,CZE,Insulation (Exterior wall),26114659.11610003
+2030,CZE,Insulation (Roof),12261016.615286123
+2030,CZE,Insulation (Floor),6305844.569730901
+2030,CZE,Insulation (Basement),3109944.5945844674
+2030,DEU,Insulation,0.0
+2030,DEU,Insulation (Exterior wall),306873558.08971465
+2030,DEU,Insulation (Roof),121888524.48590507
+2030,DEU,Insulation (Floor),75237246.57624926
+2030,DEU,Insulation (Basement),29405421.187364645
+2030,DNK,Insulation,0.0
+2030,DNK,Insulation (Exterior wall),0.0
+2030,DNK,Insulation (Roof),0.0
+2030,DNK,Insulation (Floor),0.0
+2030,DNK,Insulation (Basement),0.0
+2030,ESP,Insulation,0.0
+2030,ESP,Insulation (Exterior wall),124185062.92070995
+2030,ESP,Insulation (Roof),73527597.6322614
+2030,ESP,Insulation (Floor),86310368.64714336
+2030,ESP,Insulation (Basement),28383976.65096934
+2030,EST,Insulation,0.0
+2030,EST,Insulation (Exterior wall),1666739.563191134
+2030,EST,Insulation (Roof),2263463.699252139
+2030,EST,Insulation (Floor),980089.1148075825
+2030,EST,Insulation (Basement),335532.0246833617
+2030,FIN,Insulation,0.0
+2030,FIN,Insulation (Exterior wall),11654420.969299486
+2030,FIN,Insulation (Roof),8855427.786026794
+2030,FIN,Insulation (Floor),3753672.1863742606
+2030,FIN,Insulation (Basement),2435141.304534049
+2030,FRA,Insulation,0.0
+2030,FRA,Insulation (Exterior wall),224709114.06548777
+2030,FRA,Insulation (Roof),111151983.5787877
+2030,FRA,Insulation (Floor),112158474.91658652
+2030,FRA,Insulation (Basement),47782168.02571065
+2030,GBR,Insulation,0.0
+2030,GBR,Insulation (Exterior wall),368172853.0680516
+2030,GBR,Insulation (Roof),152380202.19961897
+2030,GBR,Insulation (Floor),77314965.96843018
+2030,GBR,Insulation (Basement),52978477.6392615
+2030,GRC,Insulation,0.0
+2030,GRC,Insulation (Exterior wall),17998152.728575997
+2030,GRC,Insulation (Roof),9215622.177332904
+2030,GRC,Insulation (Floor),9552915.210842162
+2030,GRC,Insulation (Basement),3704125.402531474
+2030,HRV,Insulation,0.0
+2030,HRV,Insulation (Exterior wall),265208.1117810218
+2030,HRV,Insulation (Roof),315192.992496
+2030,HRV,Insulation (Floor),472789.488744
+2030,HRV,Insulation (Basement),0.0
+2030,HUN,Insulation,0.0
+2030,HUN,Insulation (Exterior wall),22551772.081480153
+2030,HUN,Insulation (Roof),19266521.561951283
+2030,HUN,Insulation (Floor),7021829.854323237
+2030,HUN,Insulation (Basement),1231330.8214088802
+2030,IRL,Insulation,0.0
+2030,IRL,Insulation (Exterior wall),27927001.093617763
+2030,IRL,Insulation (Roof),8829801.674966596
+2030,IRL,Insulation (Floor),4991677.687643614
+2030,IRL,Insulation (Basement),4114014.1390951285
+2030,ITA,Insulation,0.0
+2030,ITA,Insulation (Exterior wall),128224505.50251716
+2030,ITA,Insulation (Roof),77679424.25601867
+2030,ITA,Insulation (Floor),93058926.21265303
+2030,ITA,Insulation (Basement),30772932.986915894
+2030,LTU,Insulation,0.0
+2030,LTU,Insulation (Exterior wall),474790.51150290447
+2030,LTU,Insulation (Roof),2322201.513699733
+2030,LTU,Insulation (Floor),1177679.5266481792
+2030,LTU,Insulation (Basement),53567.482024591176
+2030,LUX,Insulation,0.0
+2030,LUX,Insulation (Exterior wall),9226657.432057887
+2030,LUX,Insulation (Roof),3721290.575196969
+2030,LUX,Insulation (Floor),1926963.0344255464
+2030,LUX,Insulation (Basement),1405568.6843719203
+2030,LVA,Insulation,0.0
+2030,LVA,Insulation (Exterior wall),424231.969276702
+2030,LVA,Insulation (Roof),2744520.9296773807
+2030,LVA,Insulation (Floor),1121842.2835535812
+2030,LVA,Insulation (Basement),47737.92972064399
+2030,MLT,Insulation,0.0
+2030,MLT,Insulation (Exterior wall),3378600.8201133227
+2030,MLT,Insulation (Roof),1669750.1140442742
+2030,MLT,Insulation (Floor),1686401.2807296661
+2030,MLT,Insulation (Basement),726977.7984105796
+2030,NLD,Insulation,0.0
+2030,NLD,Insulation (Exterior wall),92268613.42459203
+2030,NLD,Insulation (Roof),37543355.0812733
+2030,NLD,Insulation (Floor),19494938.997198
+2030,NLD,Insulation (Basement),13465341.835897263
+2030,POL,Insulation,0.0
+2030,POL,Insulation (Exterior wall),178820356.3549443
+2030,POL,Insulation (Roof),87870852.09112053
+2030,POL,Insulation (Floor),44554673.70639973
+2030,POL,Insulation (Basement),20815425.437470455
+2030,PRT,Insulation,0.0
+2030,PRT,Insulation (Exterior wall),11337634.297371108
+2030,PRT,Insulation (Roof),6170869.247129821
+2030,PRT,Insulation (Floor),6717116.256535453
+2030,PRT,Insulation (Basement),2288565.371857401
+2030,ROU,Insulation,0.0
+2030,ROU,Insulation (Exterior wall),25416020.45858443
+2030,ROU,Insulation (Roof),15750963.112045951
+2030,ROU,Insulation (Floor),6092468.623080739
+2030,ROU,Insulation (Basement),2976220.9879072676
+2030,SVK,Insulation,0.0
+2030,SVK,Insulation (Exterior wall),11716997.942989502
+2030,SVK,Insulation (Roof),4499933.106767241
+2030,SVK,Insulation (Floor),2837333.8752424014
+2030,SVK,Insulation (Basement),1175389.519226126
+2030,SVN,Insulation,0.0
+2030,SVN,Insulation (Exterior wall),7662232.51041181
+2030,SVN,Insulation (Roof),4569058.389259165
+2030,SVN,Insulation (Floor),1884418.3146952742
+2030,SVN,Insulation (Basement),861095.0841190298
+2030,SWE,Insulation,0.0
+2030,SWE,Insulation (Exterior wall),118297765.64072464
+2030,SWE,Insulation (Roof),44137968.961839326
+2030,SWE,Insulation (Floor),19588239.152502898
+2030,SWE,Insulation (Basement),26129552.350749362
+2031,AUT,Insulation,0.0
+2031,AUT,Insulation (Exterior wall),66695039.10124859
+2031,AUT,Insulation (Roof),25933131.57831343
+2031,AUT,Insulation (Floor),14950587.735096151
+2031,AUT,Insulation (Basement),8778634.280823668
+2031,BEL,Insulation,0.0
+2031,BEL,Insulation (Exterior wall),63967523.74093575
+2031,BEL,Insulation (Roof),24850673.412272662
+2031,BEL,Insulation (Floor),13715693.073372534
+2031,BEL,Insulation (Basement),8629538.544219147
+2031,BGR,Insulation,0.0
+2031,BGR,Insulation (Exterior wall),10032626.813612817
+2031,BGR,Insulation (Roof),8461349.007132355
+2031,BGR,Insulation (Floor),3053660.6856782846
+2031,BGR,Insulation (Basement),532188.1958903082
+2031,CYP,Insulation,0.0
+2031,CYP,Insulation (Exterior wall),4887007.162993723
+2031,CYP,Insulation (Roof),2324803.4584518126
+2031,CYP,Insulation (Floor),2253200.1278528734
+2031,CYP,Insulation (Basement),1024120.9085666761
+2031,CZE,Insulation,0.0
+2031,CZE,Insulation (Exterior wall),25155281.865795393
+2031,CZE,Insulation (Roof),11430742.466476187
+2031,CZE,Insulation (Floor),6041747.258662317
+2031,CZE,Insulation (Basement),3029248.232367207
+2031,DEU,Insulation,0.0
+2031,DEU,Insulation (Exterior wall),364833825.8300959
+2031,DEU,Insulation (Roof),161361936.3051725
+2031,DEU,Insulation (Floor),93903041.64141041
+2031,DEU,Insulation (Basement),30078022.602153268
+2031,DNK,Insulation,0.0
+2031,DNK,Insulation (Exterior wall),0.0
+2031,DNK,Insulation (Roof),0.0
+2031,DNK,Insulation (Floor),0.0
+2031,DNK,Insulation (Basement),0.0
+2031,ESP,Insulation,0.0
+2031,ESP,Insulation (Exterior wall),143652213.18493074
+2031,ESP,Insulation (Roof),84356587.76874216
+2031,ESP,Insulation (Floor),98626379.54911347
+2031,ESP,Insulation (Basement),33268959.398289055
+2031,EST,Insulation,0.0
+2031,EST,Insulation (Exterior wall),1544874.7774068008
+2031,EST,Insulation (Roof),1696320.7992401258
+2031,EST,Insulation (Floor),756869.1595305621
+2031,EST,Insulation (Basement),316542.2751535669
+2031,FIN,Insulation,0.0
+2031,FIN,Insulation (Exterior wall),11714476.795650152
+2031,FIN,Insulation (Roof),9192547.982609058
+2031,FIN,Insulation (Floor),4442636.322203894
+2031,FIN,Insulation (Basement),2414840.0236739195
+2031,FRA,Insulation,0.0
+2031,FRA,Insulation (Exterior wall),266229021.46839622
+2031,FRA,Insulation (Roof),133438118.56556569
+2031,FRA,Insulation (Floor),136173603.0793279
+2031,FRA,Insulation (Basement),56241682.975403346
+2031,GBR,Insulation,0.0
+2031,GBR,Insulation (Exterior wall),402064205.65714246
+2031,GBR,Insulation (Roof),166955533.26956815
+2031,GBR,Insulation (Floor),84564125.931993
+2031,GBR,Insulation (Basement),57737773.29526192
+2031,GRC,Insulation,0.0
+2031,GRC,Insulation (Exterior wall),28815579.54825199
+2031,GRC,Insulation (Roof),14633175.00082425
+2031,GRC,Insulation (Floor),15071856.913462285
+2031,GRC,Insulation (Basement),5972809.490682951
+2031,HRV,Insulation,0.0
+2031,HRV,Insulation (Exterior wall),914357.6882288529
+2031,HRV,Insulation (Roof),694391.1248476532
+2031,HRV,Insulation (Floor),896548.86468
+2031,HRV,Insulation (Basement),97596.84688
+2031,HUN,Insulation,0.0
+2031,HUN,Insulation (Exterior wall),25480943.961711526
+2031,HUN,Insulation (Roof),17046941.654983867
+2031,HUN,Insulation (Floor),6984549.940847053
+2031,HUN,Insulation (Basement),2040648.3170896068
+2031,IRL,Insulation,0.0
+2031,IRL,Insulation (Exterior wall),29494714.361347474
+2031,IRL,Insulation (Roof),9912408.066182012
+2031,IRL,Insulation (Floor),5378810.53804275
+2031,IRL,Insulation (Basement),4280867.682360584
+2031,ITA,Insulation,0.0
+2031,ITA,Insulation (Exterior wall),214289714.20213392
+2031,ITA,Insulation (Roof),129376040.04732122
+2031,ITA,Insulation (Floor),154734667.1077063
+2031,ITA,Insulation (Basement),51658135.99443887
+2031,LTU,Insulation,0.0
+2031,LTU,Insulation (Exterior wall),1494745.4001435377
+2031,LTU,Insulation (Roof),2652351.7576983115
+2031,LTU,Insulation (Floor),1345916.7113066693
+2031,LTU,Insulation (Basement),290758.1038485353
+2031,LUX,Insulation,0.0
+2031,LUX,Insulation (Exterior wall),9581292.021306975
+2031,LUX,Insulation (Roof),4100501.9288755073
+2031,LUX,Insulation (Floor),2040654.0345087317
+2031,LUX,Insulation (Basement),1432846.6796074738
+2031,LVA,Insulation,0.0
+2031,LVA,Insulation (Exterior wall),1151866.4422639105
+2031,LVA,Insulation (Roof),3687777.838042886
+2031,LVA,Insulation (Floor),1463625.655606308
+2031,LVA,Insulation (Basement),213454.8459030286
+2031,MLT,Insulation,0.0
+2031,MLT,Insulation (Exterior wall),2793155.641964637
+2031,MLT,Insulation (Roof),1395282.4581614023
+2031,MLT,Insulation (Floor),1420139.060958409
+2031,MLT,Insulation (Basement),591922.0044699208
+2031,NLD,Insulation,0.0
+2031,NLD,Insulation (Exterior wall),109455804.43355764
+2031,NLD,Insulation (Roof),47039673.49521777
+2031,NLD,Insulation (Floor),23634966.80320219
+2031,NLD,Insulation (Basement),15562847.225337707
+2031,POL,Insulation,0.0
+2031,POL,Insulation (Exterior wall),151281596.19523308
+2031,POL,Insulation (Roof),77303690.74391171
+2031,POL,Insulation (Floor),38049944.33411471
+2031,POL,Insulation (Basement),17408077.27576257
+2031,PRT,Insulation,0.0
+2031,PRT,Insulation (Exterior wall),12853164.865519218
+2031,PRT,Insulation (Roof),7035620.935827927
+2031,PRT,Insulation (Floor),7689446.5507
+2031,PRT,Insulation (Basement),2584211.700709095
+2031,ROU,Insulation,0.0
+2031,ROU,Insulation (Exterior wall),49973408.621161565
+2031,ROU,Insulation (Roof),19694821.002817195
+2031,ROU,Insulation (Floor),9754823.451934056
+2031,ROU,Insulation (Basement),7657646.120265247
+2031,SVK,Insulation,0.0
+2031,SVK,Insulation (Exterior wall),11156281.2145462
+2031,SVK,Insulation (Roof),4653538.479679969
+2031,SVK,Insulation (Floor),2850317.4642903176
+2031,SVK,Insulation (Basement),931184.9867720772
+2031,SVN,Insulation,0.0
+2031,SVN,Insulation (Exterior wall),7661646.991668068
+2031,SVN,Insulation (Roof),3817299.5398306716
+2031,SVN,Insulation (Floor),1736228.860948524
+2031,SVN,Insulation (Basement),971111.7466017865
+2031,SWE,Insulation,0.0
+2031,SWE,Insulation (Exterior wall),116969688.7716831
+2031,SWE,Insulation (Roof),45063992.214019746
+2031,SWE,Insulation (Floor),21305216.411449783
+2031,SWE,Insulation (Basement),25708242.292843983
+2032,AUT,Insulation,0.0
+2032,AUT,Insulation (Exterior wall),66695039.10124859
+2032,AUT,Insulation (Roof),25933131.57831343
+2032,AUT,Insulation (Floor),14950587.735096151
+2032,AUT,Insulation (Basement),8778634.280823668
+2032,BEL,Insulation,0.0
+2032,BEL,Insulation (Exterior wall),63967523.741786025
+2032,BEL,Insulation (Roof),24850673.41249666
+2032,BEL,Insulation (Floor),13715693.073612534
+2032,BEL,Insulation (Basement),8629538.544219147
+2032,BGR,Insulation,0.0
+2032,BGR,Insulation (Exterior wall),10032626.81378258
+2032,BGR,Insulation (Roof),8461349.007184677
+2032,BGR,Insulation (Floor),3053660.685726463
+2032,BGR,Insulation (Basement),532188.195903179
+2032,CYP,Insulation,0.0
+2032,CYP,Insulation (Exterior wall),4887007.162993723
+2032,CYP,Insulation (Roof),2324803.4584518126
+2032,CYP,Insulation (Floor),2253200.1278528734
+2032,CYP,Insulation (Basement),1024120.9085666761
+2032,CZE,Insulation,0.0
+2032,CZE,Insulation (Exterior wall),25155281.865795393
+2032,CZE,Insulation (Roof),11430742.466476187
+2032,CZE,Insulation (Floor),6041747.258662317
+2032,CZE,Insulation (Basement),3029248.232367207
+2032,DEU,Insulation,0.0
+2032,DEU,Insulation (Exterior wall),364833825.8300959
+2032,DEU,Insulation (Roof),161361936.3051725
+2032,DEU,Insulation (Floor),93903041.64141041
+2032,DEU,Insulation (Basement),30078022.602153268
+2032,DNK,Insulation,0.0
+2032,DNK,Insulation (Exterior wall),0.0
+2032,DNK,Insulation (Roof),0.0
+2032,DNK,Insulation (Floor),0.0
+2032,DNK,Insulation (Basement),0.0
+2032,ESP,Insulation,0.0
+2032,ESP,Insulation (Exterior wall),143652213.18493074
+2032,ESP,Insulation (Roof),84356587.76874216
+2032,ESP,Insulation (Floor),98626379.54911347
+2032,ESP,Insulation (Basement),33268959.398289055
+2032,EST,Insulation,0.0
+2032,EST,Insulation (Exterior wall),1544874.7773716506
+2032,EST,Insulation (Roof),1696320.7991506443
+2032,EST,Insulation (Floor),756869.1594558954
+2032,EST,Insulation (Basement),316542.2751498138
+2032,FIN,Insulation,0.0
+2032,FIN,Insulation (Exterior wall),11714476.795631127
+2032,FIN,Insulation (Roof),9192547.98260017
+2032,FIN,Insulation (Floor),4442636.322163895
+2032,FIN,Insulation (Basement),2414840.0236716676
+2032,FRA,Insulation,0.0
+2032,FRA,Insulation (Exterior wall),266229021.46839622
+2032,FRA,Insulation (Roof),133438118.56556569
+2032,FRA,Insulation (Floor),136173603.0793279
+2032,FRA,Insulation (Basement),56241682.975403346
+2032,GBR,Insulation,0.0
+2032,GBR,Insulation (Exterior wall),402064205.65714246
+2032,GBR,Insulation (Roof),166955533.26956815
+2032,GBR,Insulation (Floor),84564125.931993
+2032,GBR,Insulation (Basement),57737773.29526192
+2032,GRC,Insulation,0.0
+2032,GRC,Insulation (Exterior wall),28815579.54825199
+2032,GRC,Insulation (Roof),14633175.00082425
+2032,GRC,Insulation (Floor),15071856.913462285
+2032,GRC,Insulation (Basement),5972809.490682951
+2032,HRV,Insulation,0.0
+2032,HRV,Insulation (Exterior wall),914357.6882288529
+2032,HRV,Insulation (Roof),694391.1248476532
+2032,HRV,Insulation (Floor),896548.86468
+2032,HRV,Insulation (Basement),97596.84688
+2032,HUN,Insulation,0.0
+2032,HUN,Insulation (Exterior wall),25480943.961711526
+2032,HUN,Insulation (Roof),17046941.654983867
+2032,HUN,Insulation (Floor),6984549.940847053
+2032,HUN,Insulation (Basement),2040648.3170896068
+2032,IRL,Insulation,0.0
+2032,IRL,Insulation (Exterior wall),29494714.362194832
+2032,IRL,Insulation (Roof),9912408.066481238
+2032,IRL,Insulation (Floor),5378810.538284538
+2032,IRL,Insulation (Basement),4280867.682489291
+2032,ITA,Insulation,0.0
+2032,ITA,Insulation (Exterior wall),214289714.19222152
+2032,ITA,Insulation (Roof),129376040.04357976
+2032,ITA,Insulation (Floor),154734667.10506633
+2032,ITA,Insulation (Basement),51658135.99243887
+2032,LTU,Insulation,0.0
+2032,LTU,Insulation (Exterior wall),1494745.4001435377
+2032,LTU,Insulation (Roof),2652351.757922312
+2032,LTU,Insulation (Floor),1345916.7113306692
+2032,LTU,Insulation (Basement),290758.1038485353
+2032,LUX,Insulation,0.0
+2032,LUX,Insulation (Exterior wall),9581292.021306975
+2032,LUX,Insulation (Roof),4100501.9288755073
+2032,LUX,Insulation (Floor),2040654.0345087317
+2032,LUX,Insulation (Basement),1432846.6796074738
+2032,LVA,Insulation,0.0
+2032,LVA,Insulation (Exterior wall),1151866.4421308737
+2032,LVA,Insulation (Roof),3687777.837902109
+2032,LVA,Insulation (Floor),1463625.655555735
+2032,LVA,Insulation (Basement),213454.84587210504
+2032,MLT,Insulation,0.0
+2032,MLT,Insulation (Exterior wall),2793155.641964637
+2032,MLT,Insulation (Roof),1395282.4581614023
+2032,MLT,Insulation (Floor),1420139.060958409
+2032,MLT,Insulation (Basement),591922.0044699208
+2032,NLD,Insulation,0.0
+2032,NLD,Insulation (Exterior wall),109455804.43355764
+2032,NLD,Insulation (Roof),47039673.49521777
+2032,NLD,Insulation (Floor),23634966.80320219
+2032,NLD,Insulation (Basement),15562847.225337707
+2032,POL,Insulation,0.0
+2032,POL,Insulation (Exterior wall),151281596.19523308
+2032,POL,Insulation (Roof),77303690.74391171
+2032,POL,Insulation (Floor),38049944.33411471
+2032,POL,Insulation (Basement),17408077.27576257
+2032,PRT,Insulation,0.0
+2032,PRT,Insulation (Exterior wall),12853164.865653845
+2032,PRT,Insulation (Roof),7035620.935987927
+2032,PRT,Insulation (Floor),7689446.5509399995
+2032,PRT,Insulation (Basement),2584211.700709095
+2032,ROU,Insulation,0.0
+2032,ROU,Insulation (Exterior wall),49973408.6203113
+2032,ROU,Insulation (Roof),19694821.002593197
+2032,ROU,Insulation (Floor),9754823.451694056
+2032,ROU,Insulation (Basement),7657646.120265247
+2032,SVK,Insulation,0.0
+2032,SVK,Insulation (Exterior wall),11156281.214461174
+2032,SVK,Insulation (Roof),4653538.479657569
+2032,SVK,Insulation (Floor),2850317.4642663174
+2032,SVK,Insulation (Basement),931184.9867720772
+2032,SVN,Insulation,0.0
+2032,SVN,Insulation (Exterior wall),7661646.991668068
+2032,SVN,Insulation (Roof),3817299.5398306716
+2032,SVN,Insulation (Floor),1736228.860948524
+2032,SVN,Insulation (Basement),971111.7466017865
+2032,SWE,Insulation,0.0
+2032,SWE,Insulation (Exterior wall),116969688.76090908
+2032,SWE,Insulation (Roof),45063992.214019746
+2032,SWE,Insulation (Floor),21305216.411449783
+2032,SWE,Insulation (Basement),25708242.29064021
+2033,AUT,Insulation,0.0
+2033,AUT,Insulation (Exterior wall),66695039.10124859
+2033,AUT,Insulation (Roof),25933131.57831343
+2033,AUT,Insulation (Floor),14950587.735096151
+2033,AUT,Insulation (Basement),8778634.280823668
+2033,BEL,Insulation,0.0
+2033,BEL,Insulation (Exterior wall),63967523.741786025
+2033,BEL,Insulation (Roof),24850673.41249666
+2033,BEL,Insulation (Floor),13715693.073612534
+2033,BEL,Insulation (Basement),8629538.544219147
+2033,BGR,Insulation,0.0
+2033,BGR,Insulation (Exterior wall),10032626.813697552
+2033,BGR,Insulation (Roof),8461349.007162277
+2033,BGR,Insulation (Floor),3053660.6857024636
+2033,BGR,Insulation (Basement),532188.195903179
+2033,CYP,Insulation,0.0
+2033,CYP,Insulation (Exterior wall),4887007.161902286
+2033,CYP,Insulation (Roof),2324803.4577478776
+2033,CYP,Insulation (Floor),2253200.1269727917
+2033,CYP,Insulation (Basement),1024120.9082917387
+2033,CZE,Insulation,0.0
+2033,CZE,Insulation (Exterior wall),25155281.865795393
+2033,CZE,Insulation (Roof),11430742.466476187
+2033,CZE,Insulation (Floor),6041747.258662317
+2033,CZE,Insulation (Basement),3029248.232367207
+2033,DEU,Insulation,0.0
+2033,DEU,Insulation (Exterior wall),364833825.8300959
+2033,DEU,Insulation (Roof),161361936.3051725
+2033,DEU,Insulation (Floor),93903041.64141041
+2033,DEU,Insulation (Basement),30078022.602153268
+2033,DNK,Insulation,0.0
+2033,DNK,Insulation (Exterior wall),0.0
+2033,DNK,Insulation (Roof),0.0
+2033,DNK,Insulation (Floor),0.0
+2033,DNK,Insulation (Basement),0.0
+2033,ESP,Insulation,0.0
+2033,ESP,Insulation (Exterior wall),143652213.18493074
+2033,ESP,Insulation (Roof),84356587.76874216
+2033,ESP,Insulation (Floor),98626379.54911347
+2033,ESP,Insulation (Basement),33268959.398289055
+2033,EST,Insulation,0.0
+2033,EST,Insulation (Exterior wall),1544874.7773716506
+2033,EST,Insulation (Roof),1696320.7991506443
+2033,EST,Insulation (Floor),756869.1594558954
+2033,EST,Insulation (Basement),316542.2751498138
+2033,FIN,Insulation,0.0
+2033,FIN,Insulation (Exterior wall),11714476.795650152
+2033,FIN,Insulation (Roof),9192547.982609058
+2033,FIN,Insulation (Floor),4442636.322203894
+2033,FIN,Insulation (Basement),2414840.0236739195
+2033,FRA,Insulation,0.0
+2033,FRA,Insulation (Exterior wall),266229021.46839622
+2033,FRA,Insulation (Roof),133438118.56556569
+2033,FRA,Insulation (Floor),136173603.0793279
+2033,FRA,Insulation (Basement),56241682.975403346
+2033,GBR,Insulation,0.0
+2033,GBR,Insulation (Exterior wall),402064205.65714246
+2033,GBR,Insulation (Roof),166955533.26956815
+2033,GBR,Insulation (Floor),84564125.931993
+2033,GBR,Insulation (Basement),57737773.29526192
+2033,GRC,Insulation,0.0
+2033,GRC,Insulation (Exterior wall),28815579.54825199
+2033,GRC,Insulation (Roof),14633175.00082425
+2033,GRC,Insulation (Floor),15071856.913462285
+2033,GRC,Insulation (Basement),5972809.490682951
+2033,HRV,Insulation,0.0
+2033,HRV,Insulation (Exterior wall),914357.6882288529
+2033,HRV,Insulation (Roof),694391.1248476532
+2033,HRV,Insulation (Floor),896548.86468
+2033,HRV,Insulation (Basement),97596.84688
+2033,HUN,Insulation,0.0
+2033,HUN,Insulation (Exterior wall),25480943.961711526
+2033,HUN,Insulation (Roof),17046941.654983867
+2033,HUN,Insulation (Floor),6984549.940847053
+2033,HUN,Insulation (Basement),2040648.3170896068
+2033,IRL,Insulation,0.0
+2033,IRL,Insulation (Exterior wall),29494714.361347474
+2033,IRL,Insulation (Roof),9912408.066182012
+2033,IRL,Insulation (Floor),5378810.53804275
+2033,IRL,Insulation (Basement),4280867.682360584
+2033,ITA,Insulation,0.0
+2033,ITA,Insulation (Exterior wall),214289714.2019993
+2033,ITA,Insulation (Roof),129376040.04716122
+2033,ITA,Insulation (Floor),154734667.1074663
+2033,ITA,Insulation (Basement),51658135.99443887
+2033,LTU,Insulation,0.0
+2033,LTU,Insulation (Exterior wall),1494745.4001435377
+2033,LTU,Insulation (Roof),2652351.757922312
+2033,LTU,Insulation (Floor),1345916.7113306692
+2033,LTU,Insulation (Basement),290758.1038485353
+2033,LUX,Insulation,0.0
+2033,LUX,Insulation (Exterior wall),9581292.021306975
+2033,LUX,Insulation (Roof),4100501.9288755073
+2033,LUX,Insulation (Floor),2040654.0345087317
+2033,LUX,Insulation (Basement),1432846.6796074738
+2033,LVA,Insulation,0.0
+2033,LVA,Insulation (Exterior wall),1151866.4421308737
+2033,LVA,Insulation (Roof),3687777.837902109
+2033,LVA,Insulation (Floor),1463625.655555735
+2033,LVA,Insulation (Basement),213454.84587210504
+2033,MLT,Insulation,0.0
+2033,MLT,Insulation (Exterior wall),2793155.641964637
+2033,MLT,Insulation (Roof),1395282.4581614023
+2033,MLT,Insulation (Floor),1420139.060958409
+2033,MLT,Insulation (Basement),591922.0044699208
+2033,NLD,Insulation,0.0
+2033,NLD,Insulation (Exterior wall),109455804.43355764
+2033,NLD,Insulation (Roof),47039673.49521777
+2033,NLD,Insulation (Floor),23634966.80320219
+2033,NLD,Insulation (Basement),15562847.225337707
+2033,POL,Insulation,0.0
+2033,POL,Insulation (Exterior wall),151281596.19523308
+2033,POL,Insulation (Roof),77303690.74391171
+2033,POL,Insulation (Floor),38049944.33411471
+2033,POL,Insulation (Basement),17408077.27576257
+2033,PRT,Insulation,0.0
+2033,PRT,Insulation (Exterior wall),12853164.865519218
+2033,PRT,Insulation (Roof),7035620.935827927
+2033,PRT,Insulation (Floor),7689446.5507
+2033,PRT,Insulation (Basement),2584211.700709095
+2033,ROU,Insulation,0.0
+2033,ROU,Insulation (Exterior wall),49973408.621161565
+2033,ROU,Insulation (Roof),19694821.002817195
+2033,ROU,Insulation (Floor),9754823.451934056
+2033,ROU,Insulation (Basement),7657646.120265247
+2033,SVK,Insulation,0.0
+2033,SVK,Insulation (Exterior wall),11156281.215377597
+2033,SVK,Insulation (Roof),4653538.479721281
+2033,SVK,Insulation (Floor),2850317.4645063174
+2033,SVK,Insulation (Basement),931184.9867720772
+2033,SVN,Insulation,0.0
+2033,SVN,Insulation (Exterior wall),7661646.991727898
+2033,SVN,Insulation (Roof),3817299.5398760526
+2033,SVN,Insulation (Floor),1736228.8609685241
+2033,SVN,Insulation (Basement),971111.7466017865
+2033,SWE,Insulation,0.0
+2033,SWE,Insulation (Exterior wall),116969688.7716831
+2033,SWE,Insulation (Roof),45063992.214019746
+2033,SWE,Insulation (Floor),21305216.411449783
+2033,SWE,Insulation (Basement),25708242.292843983
+2034,AUT,Insulation,0.0
+2034,AUT,Insulation (Exterior wall),66695039.10124859
+2034,AUT,Insulation (Roof),25933131.57831343
+2034,AUT,Insulation (Floor),14950587.735096151
+2034,AUT,Insulation (Basement),8778634.280823668
+2034,BEL,Insulation,0.0
+2034,BEL,Insulation (Exterior wall),63967523.74093575
+2034,BEL,Insulation (Roof),24850673.412272662
+2034,BEL,Insulation (Floor),13715693.073372534
+2034,BEL,Insulation (Basement),8629538.544219147
+2034,BGR,Insulation,0.0
+2034,BGR,Insulation (Exterior wall),10032626.813697845
+2034,BGR,Insulation (Roof),8461349.007154753
+2034,BGR,Insulation (Floor),3053660.685702284
+2034,BGR,Insulation (Basement),532188.1958903082
+2034,CYP,Insulation,0.0
+2034,CYP,Insulation (Exterior wall),4887007.162993723
+2034,CYP,Insulation (Roof),2324803.4584518126
+2034,CYP,Insulation (Floor),2253200.1278528734
+2034,CYP,Insulation (Basement),1024120.9085666761
+2034,CZE,Insulation,0.0
+2034,CZE,Insulation (Exterior wall),25155281.865710367
+2034,CZE,Insulation (Roof),11430742.466453787
+2034,CZE,Insulation (Floor),6041747.258638317
+2034,CZE,Insulation (Basement),3029248.232367207
+2034,DEU,Insulation,0.0
+2034,DEU,Insulation (Exterior wall),364833825.8300959
+2034,DEU,Insulation (Roof),161361936.3051725
+2034,DEU,Insulation (Floor),93903041.64141041
+2034,DEU,Insulation (Basement),30078022.602153268
+2034,DNK,Insulation,0.0
+2034,DNK,Insulation (Exterior wall),0.0
+2034,DNK,Insulation (Roof),0.0
+2034,DNK,Insulation (Floor),0.0
+2034,DNK,Insulation (Basement),0.0
+2034,ESP,Insulation,0.0
+2034,ESP,Insulation (Exterior wall),143652213.18493074
+2034,ESP,Insulation (Roof),84356587.76874216
+2034,ESP,Insulation (Floor),98626379.54911347
+2034,ESP,Insulation (Basement),33268959.398289055
+2034,EST,Insulation,0.0
+2034,EST,Insulation (Exterior wall),1544874.7773877752
+2034,EST,Insulation (Roof),1696320.799231237
+2034,EST,Insulation (Floor),756869.159490562
+2034,EST,Insulation (Basement),316542.275151315
+2034,FIN,Insulation,0.0
+2034,FIN,Insulation (Exterior wall),11714476.795459896
+2034,FIN,Insulation (Roof),9192547.982520169
+2034,FIN,Insulation (Floor),4442636.321803895
+2034,FIN,Insulation (Basement),2414840.0236514006
+2034,FRA,Insulation,0.0
+2034,FRA,Insulation (Exterior wall),266229021.46839622
+2034,FRA,Insulation (Roof),133438118.56556569
+2034,FRA,Insulation (Floor),136173603.0793279
+2034,FRA,Insulation (Basement),56241682.975403346
+2034,GBR,Insulation,0.0
+2034,GBR,Insulation (Exterior wall),402064205.65714246
+2034,GBR,Insulation (Roof),166955533.26956815
+2034,GBR,Insulation (Floor),84564125.931993
+2034,GBR,Insulation (Basement),57737773.29526192
+2034,GRC,Insulation,0.0
+2034,GRC,Insulation (Exterior wall),28815579.54825199
+2034,GRC,Insulation (Roof),14633175.00082425
+2034,GRC,Insulation (Floor),15071856.913462285
+2034,GRC,Insulation (Basement),5972809.490682951
+2034,HRV,Insulation,0.0
+2034,HRV,Insulation (Exterior wall),914357.6882288529
+2034,HRV,Insulation (Roof),694391.1248476532
+2034,HRV,Insulation (Floor),896548.86468
+2034,HRV,Insulation (Basement),97596.84688
+2034,HUN,Insulation,0.0
+2034,HUN,Insulation (Exterior wall),25480943.961711526
+2034,HUN,Insulation (Roof),17046941.654983867
+2034,HUN,Insulation (Floor),6984549.940847053
+2034,HUN,Insulation (Basement),2040648.3170896068
+2034,IRL,Insulation,0.0
+2034,IRL,Insulation (Exterior wall),29494714.362194832
+2034,IRL,Insulation (Roof),9912408.066481238
+2034,IRL,Insulation (Floor),5378810.538284538
+2034,IRL,Insulation (Basement),4280867.682489291
+2034,ITA,Insulation,0.0
+2034,ITA,Insulation (Exterior wall),214289714.2019993
+2034,ITA,Insulation (Roof),129376040.04716122
+2034,ITA,Insulation (Floor),154734667.1074663
+2034,ITA,Insulation (Basement),51658135.99443887
+2034,LTU,Insulation,0.0
+2034,LTU,Insulation (Exterior wall),1494745.4001435377
+2034,LTU,Insulation (Roof),2652351.7576983115
+2034,LTU,Insulation (Floor),1345916.7113066693
+2034,LTU,Insulation (Basement),290758.1038485353
+2034,LUX,Insulation,0.0
+2034,LUX,Insulation (Exterior wall),9581292.021306975
+2034,LUX,Insulation (Roof),4100501.9288755073
+2034,LUX,Insulation (Floor),2040654.0345087317
+2034,LUX,Insulation (Basement),1432846.6796074738
+2034,LVA,Insulation,0.0
+2034,LVA,Insulation (Exterior wall),1151866.4421469984
+2034,LVA,Insulation (Roof),3687777.8379827016
+2034,LVA,Insulation (Floor),1463625.6555904017
+2034,LVA,Insulation (Basement),213454.84587360627
+2034,MLT,Insulation,0.0
+2034,MLT,Insulation (Exterior wall),2793155.641964637
+2034,MLT,Insulation (Roof),1395282.4581614023
+2034,MLT,Insulation (Floor),1420139.060958409
+2034,MLT,Insulation (Basement),591922.0044699208
+2034,NLD,Insulation,0.0
+2034,NLD,Insulation (Exterior wall),109455804.43355764
+2034,NLD,Insulation (Roof),47039673.49521777
+2034,NLD,Insulation (Floor),23634966.80320219
+2034,NLD,Insulation (Basement),15562847.225337707
+2034,POL,Insulation,0.0
+2034,POL,Insulation (Exterior wall),151281596.19523308
+2034,POL,Insulation (Roof),77303690.74391171
+2034,POL,Insulation (Floor),38049944.33411471
+2034,POL,Insulation (Basement),17408077.27576257
+2034,PRT,Insulation,0.0
+2034,PRT,Insulation (Exterior wall),12853164.865519218
+2034,PRT,Insulation (Roof),7035620.935827927
+2034,PRT,Insulation (Floor),7689446.5507
+2034,PRT,Insulation (Basement),2584211.700709095
+2034,ROU,Insulation,0.0
+2034,ROU,Insulation (Exterior wall),49973408.6203113
+2034,ROU,Insulation (Roof),19694821.002593197
+2034,ROU,Insulation (Floor),9754823.451694056
+2034,ROU,Insulation (Basement),7657646.120265247
+2034,SVK,Insulation,0.0
+2034,SVK,Insulation (Exterior wall),11156281.215311447
+2034,SVK,Insulation (Roof),4653538.479881569
+2034,SVK,Insulation (Floor),2850317.4645063174
+2034,SVK,Insulation (Basement),931184.9867720772
+2034,SVN,Insulation,0.0
+2034,SVN,Insulation (Exterior wall),7661646.99164287
+2034,SVN,Insulation (Roof),3817299.5398536525
+2034,SVN,Insulation (Floor),1736228.8609445242
+2034,SVN,Insulation (Basement),971111.7466017865
+2034,SWE,Insulation,0.0
+2034,SWE,Insulation (Exterior wall),116969688.76090908
+2034,SWE,Insulation (Roof),45063992.214019746
+2034,SWE,Insulation (Floor),21305216.411449783
+2034,SWE,Insulation (Basement),25708242.29064021
+2035,AUT,Insulation,0.0
+2035,AUT,Insulation (Exterior wall),66695039.1018469
+2035,AUT,Insulation (Roof),25933131.578767244
+2035,AUT,Insulation (Floor),14950587.73529615
+2035,AUT,Insulation (Basement),8778634.280823668
+2035,BEL,Insulation,0.0
+2035,BEL,Insulation (Exterior wall),63967523.74093575
+2035,BEL,Insulation (Roof),24850673.412272662
+2035,BEL,Insulation (Floor),13715693.073372534
+2035,BEL,Insulation (Basement),8629538.544219147
+2035,BGR,Insulation,0.0
+2035,BGR,Insulation (Exterior wall),10032626.813612817
+2035,BGR,Insulation (Roof),8461349.007132355
+2035,BGR,Insulation (Floor),3053660.6856782846
+2035,BGR,Insulation (Basement),532188.1958903082
+2035,CYP,Insulation,0.0
+2035,CYP,Insulation (Exterior wall),4887007.162993723
+2035,CYP,Insulation (Roof),2324803.4584518126
+2035,CYP,Insulation (Floor),2253200.1278528734
+2035,CYP,Insulation (Basement),1024120.9085666761
+2035,CZE,Insulation,0.0
+2035,CZE,Insulation (Exterior wall),25155281.86588042
+2035,CZE,Insulation (Roof),11430742.466498587
+2035,CZE,Insulation (Floor),6041747.258686317
+2035,CZE,Insulation (Basement),3029248.232367207
+2035,DEU,Insulation,0.0
+2035,DEU,Insulation (Exterior wall),364833825.82159317
+2035,DEU,Insulation (Roof),161361936.3029325
+2035,DEU,Insulation (Floor),93903041.63901041
+2035,DEU,Insulation (Basement),30078022.602153268
+2035,DNK,Insulation,0.0
+2035,DNK,Insulation (Exterior wall),0.0
+2035,DNK,Insulation (Roof),0.0
+2035,DNK,Insulation (Floor),0.0
+2035,DNK,Insulation (Basement),0.0
+2035,ESP,Insulation,0.0
+2035,ESP,Insulation (Exterior wall),143652213.18493074
+2035,ESP,Insulation (Roof),84356587.76874216
+2035,ESP,Insulation (Floor),98626379.54911347
+2035,ESP,Insulation (Basement),33268959.398289055
+2035,EST,Insulation,0.0
+2035,EST,Insulation (Exterior wall),1544874.777390676
+2035,EST,Insulation (Roof),1696320.799159533
+2035,EST,Insulation (Floor),756869.1594958954
+2035,EST,Insulation (Basement),316542.2751520657
+2035,FIN,Insulation,0.0
+2035,FIN,Insulation (Exterior wall),11714476.795631127
+2035,FIN,Insulation (Roof),9192547.98260017
+2035,FIN,Insulation (Floor),4442636.322163895
+2035,FIN,Insulation (Basement),2414840.0236716676
+2035,FRA,Insulation,0.0
+2035,FRA,Insulation (Exterior wall),266229021.46839622
+2035,FRA,Insulation (Roof),133438118.56556569
+2035,FRA,Insulation (Floor),136173603.0793279
+2035,FRA,Insulation (Basement),56241682.975403346
+2035,GBR,Insulation,0.0
+2035,GBR,Insulation (Exterior wall),402064205.65714246
+2035,GBR,Insulation (Roof),166955533.26956815
+2035,GBR,Insulation (Floor),84564125.931993
+2035,GBR,Insulation (Basement),57737773.29526192
+2035,GRC,Insulation,0.0
+2035,GRC,Insulation (Exterior wall),28815579.548117366
+2035,GRC,Insulation (Roof),14633175.00066425
+2035,GRC,Insulation (Floor),15071856.913222285
+2035,GRC,Insulation (Basement),5972809.490682951
+2035,HRV,Insulation,0.0
+2035,HRV,Insulation (Exterior wall),914357.6882288529
+2035,HRV,Insulation (Roof),694391.1248476532
+2035,HRV,Insulation (Floor),896548.86468
+2035,HRV,Insulation (Basement),97596.84688
+2035,HUN,Insulation,0.0
+2035,HUN,Insulation (Exterior wall),25480943.961711526
+2035,HUN,Insulation (Roof),17046941.654983867
+2035,HUN,Insulation (Floor),6984549.940847053
+2035,HUN,Insulation (Basement),2040648.3170896068
+2035,IRL,Insulation,0.0
+2035,IRL,Insulation (Exterior wall),29494714.361347474
+2035,IRL,Insulation (Roof),9912408.066182012
+2035,IRL,Insulation (Floor),5378810.53804275
+2035,IRL,Insulation (Basement),4280867.682360584
+2035,ITA,Insulation,0.0
+2035,ITA,Insulation (Exterior wall),214289714.20213392
+2035,ITA,Insulation (Roof),129376040.04732122
+2035,ITA,Insulation (Floor),154734667.1077063
+2035,ITA,Insulation (Basement),51658135.99443887
+2035,LTU,Insulation,0.0
+2035,LTU,Insulation (Exterior wall),1494745.4001435377
+2035,LTU,Insulation (Roof),2652351.7576983115
+2035,LTU,Insulation (Floor),1345916.7113066693
+2035,LTU,Insulation (Basement),290758.1038485353
+2035,LUX,Insulation,0.0
+2035,LUX,Insulation (Exterior wall),9581292.021306975
+2035,LUX,Insulation (Roof),4100501.9288755073
+2035,LUX,Insulation (Floor),2040654.0345087317
+2035,LUX,Insulation (Basement),1432846.6796074738
+2035,LVA,Insulation,0.0
+2035,LVA,Insulation (Exterior wall),1151866.4422639105
+2035,LVA,Insulation (Roof),3687777.838042886
+2035,LVA,Insulation (Floor),1463625.655606308
+2035,LVA,Insulation (Basement),213454.8459030286
+2035,MLT,Insulation,0.0
+2035,MLT,Insulation (Exterior wall),2793155.641964637
+2035,MLT,Insulation (Roof),1395282.4581614023
+2035,MLT,Insulation (Floor),1420139.060958409
+2035,MLT,Insulation (Basement),591922.0044699208
+2035,NLD,Insulation,0.0
+2035,NLD,Insulation (Exterior wall),109455804.43355764
+2035,NLD,Insulation (Roof),47039673.49521777
+2035,NLD,Insulation (Floor),23634966.80320219
+2035,NLD,Insulation (Basement),15562847.225337707
+2035,POL,Insulation,0.0
+2035,POL,Insulation (Exterior wall),151281596.19523308
+2035,POL,Insulation (Roof),77303690.74391171
+2035,POL,Insulation (Floor),38049944.33411471
+2035,POL,Insulation (Basement),17408077.27576257
+2035,PRT,Insulation,0.0
+2035,PRT,Insulation (Exterior wall),12853164.865653845
+2035,PRT,Insulation (Roof),7035620.935987927
+2035,PRT,Insulation (Floor),7689446.5509399995
+2035,PRT,Insulation (Basement),2584211.700709095
+2035,ROU,Insulation,0.0
+2035,ROU,Insulation (Exterior wall),49973408.621161565
+2035,ROU,Insulation (Roof),19694821.002817195
+2035,ROU,Insulation (Floor),9754823.451934056
+2035,ROU,Insulation (Basement),7657646.120265247
+2035,SVK,Insulation,0.0
+2035,SVK,Insulation (Exterior wall),11156281.213695928
+2035,SVK,Insulation (Roof),4653538.479455969
+2035,SVK,Insulation (Floor),2850317.4640503176
+2035,SVK,Insulation (Basement),931184.9867720772
+2035,SVN,Insulation,0.0
+2035,SVN,Insulation (Exterior wall),7661646.99164287
+2035,SVN,Insulation (Roof),3817299.5398536525
+2035,SVN,Insulation (Floor),1736228.8609445242
+2035,SVN,Insulation (Basement),971111.7466017865
+2035,SWE,Insulation,0.0
+2035,SWE,Insulation (Exterior wall),116969688.76090908
+2035,SWE,Insulation (Roof),45063992.214019746
+2035,SWE,Insulation (Floor),21305216.411449783
+2035,SWE,Insulation (Basement),25708242.29064021
+2036,AUT,Insulation,0.0
+2036,AUT,Insulation (Exterior wall),66695039.1018469
+2036,AUT,Insulation (Roof),25933131.578767244
+2036,AUT,Insulation (Floor),14950587.73529615
+2036,AUT,Insulation (Basement),8778634.280823668
+2036,BEL,Insulation,0.0
+2036,BEL,Insulation (Exterior wall),63967523.74093575
+2036,BEL,Insulation (Roof),24850673.412272662
+2036,BEL,Insulation (Floor),13715693.073372534
+2036,BEL,Insulation (Basement),8629538.544219147
+2036,BGR,Insulation,0.0
+2036,BGR,Insulation (Exterior wall),10032626.81378258
+2036,BGR,Insulation (Roof),8461349.007184677
+2036,BGR,Insulation (Floor),3053660.685726463
+2036,BGR,Insulation (Basement),532188.195903179
+2036,CYP,Insulation,0.0
+2036,CYP,Insulation (Exterior wall),4887007.161902286
+2036,CYP,Insulation (Roof),2324803.4577478776
+2036,CYP,Insulation (Floor),2253200.1269727917
+2036,CYP,Insulation (Basement),1024120.9082917387
+2036,CZE,Insulation,0.0
+2036,CZE,Insulation (Exterior wall),25155281.865710367
+2036,CZE,Insulation (Roof),11430742.466453787
+2036,CZE,Insulation (Floor),6041747.258638317
+2036,CZE,Insulation (Basement),3029248.232367207
+2036,DEU,Insulation,0.0
+2036,DEU,Insulation (Exterior wall),364833825.8300959
+2036,DEU,Insulation (Roof),161361936.3051725
+2036,DEU,Insulation (Floor),93903041.64141041
+2036,DEU,Insulation (Basement),30078022.602153268
+2036,DNK,Insulation,0.0
+2036,DNK,Insulation (Exterior wall),0.0
+2036,DNK,Insulation (Roof),0.0
+2036,DNK,Insulation (Floor),0.0
+2036,DNK,Insulation (Basement),0.0
+2036,ESP,Insulation,0.0
+2036,ESP,Insulation (Exterior wall),143652213.18493074
+2036,ESP,Insulation (Roof),84356587.76874216
+2036,ESP,Insulation (Floor),98626379.54911347
+2036,ESP,Insulation (Basement),33268959.398289055
+2036,EST,Insulation,0.0
+2036,EST,Insulation (Exterior wall),1544874.7774068008
+2036,EST,Insulation (Roof),1696320.7992401258
+2036,EST,Insulation (Floor),756869.1595305621
+2036,EST,Insulation (Basement),316542.2751535669
+2036,FIN,Insulation,0.0
+2036,FIN,Insulation (Exterior wall),11714476.795650152
+2036,FIN,Insulation (Roof),9192547.982609058
+2036,FIN,Insulation (Floor),4442636.322203894
+2036,FIN,Insulation (Basement),2414840.0236739195
+2036,FRA,Insulation,0.0
+2036,FRA,Insulation (Exterior wall),266229021.46839622
+2036,FRA,Insulation (Roof),133438118.56556569
+2036,FRA,Insulation (Floor),136173603.0793279
+2036,FRA,Insulation (Basement),56241682.975403346
+2036,GBR,Insulation,0.0
+2036,GBR,Insulation (Exterior wall),402064205.65714246
+2036,GBR,Insulation (Roof),166955533.26956815
+2036,GBR,Insulation (Floor),84564125.931993
+2036,GBR,Insulation (Basement),57737773.29526192
+2036,GRC,Insulation,0.0
+2036,GRC,Insulation (Exterior wall),28815579.548117366
+2036,GRC,Insulation (Roof),14633175.00066425
+2036,GRC,Insulation (Floor),15071856.913222285
+2036,GRC,Insulation (Basement),5972809.490682951
+2036,HRV,Insulation,0.0
+2036,HRV,Insulation (Exterior wall),914357.6882288529
+2036,HRV,Insulation (Roof),694391.1248476532
+2036,HRV,Insulation (Floor),896548.86468
+2036,HRV,Insulation (Basement),97596.84688
+2036,HUN,Insulation,0.0
+2036,HUN,Insulation (Exterior wall),25480943.961711526
+2036,HUN,Insulation (Roof),17046941.654983867
+2036,HUN,Insulation (Floor),6984549.940847053
+2036,HUN,Insulation (Basement),2040648.3170896068
+2036,IRL,Insulation,0.0
+2036,IRL,Insulation (Exterior wall),29494714.361347474
+2036,IRL,Insulation (Roof),9912408.066182012
+2036,IRL,Insulation (Floor),5378810.53804275
+2036,IRL,Insulation (Basement),4280867.682360584
+2036,ITA,Insulation,0.0
+2036,ITA,Insulation (Exterior wall),214289714.20213392
+2036,ITA,Insulation (Roof),129376040.04732122
+2036,ITA,Insulation (Floor),154734667.1077063
+2036,ITA,Insulation (Basement),51658135.99443887
+2036,LTU,Insulation,0.0
+2036,LTU,Insulation (Exterior wall),1494745.4001435377
+2036,LTU,Insulation (Roof),2652351.7576983115
+2036,LTU,Insulation (Floor),1345916.7113066693
+2036,LTU,Insulation (Basement),290758.1038485353
+2036,LUX,Insulation,0.0
+2036,LUX,Insulation (Exterior wall),9581292.021306975
+2036,LUX,Insulation (Roof),4100501.9288755073
+2036,LUX,Insulation (Floor),2040654.0345087317
+2036,LUX,Insulation (Basement),1432846.6796074738
+2036,LVA,Insulation,0.0
+2036,LVA,Insulation (Exterior wall),1151866.4421308737
+2036,LVA,Insulation (Roof),3687777.837902109
+2036,LVA,Insulation (Floor),1463625.655555735
+2036,LVA,Insulation (Basement),213454.84587210504
+2036,MLT,Insulation,0.0
+2036,MLT,Insulation (Exterior wall),2793155.641964637
+2036,MLT,Insulation (Roof),1395282.4581614023
+2036,MLT,Insulation (Floor),1420139.060958409
+2036,MLT,Insulation (Basement),591922.0044699208
+2036,NLD,Insulation,0.0
+2036,NLD,Insulation (Exterior wall),109455804.43355764
+2036,NLD,Insulation (Roof),47039673.49521777
+2036,NLD,Insulation (Floor),23634966.80320219
+2036,NLD,Insulation (Basement),15562847.225337707
+2036,POL,Insulation,0.0
+2036,POL,Insulation (Exterior wall),151281596.19523308
+2036,POL,Insulation (Roof),77303690.74391171
+2036,POL,Insulation (Floor),38049944.33411471
+2036,POL,Insulation (Basement),17408077.27576257
+2036,PRT,Insulation,0.0
+2036,PRT,Insulation (Exterior wall),12853164.865519218
+2036,PRT,Insulation (Roof),7035620.935827927
+2036,PRT,Insulation (Floor),7689446.5507
+2036,PRT,Insulation (Basement),2584211.700709095
+2036,ROU,Insulation,0.0
+2036,ROU,Insulation (Exterior wall),49973408.621161565
+2036,ROU,Insulation (Roof),19694821.002817195
+2036,ROU,Insulation (Floor),9754823.451934056
+2036,ROU,Insulation (Basement),7657646.120265247
+2036,SVK,Insulation,0.0
+2036,SVK,Insulation (Exterior wall),11156281.213695928
+2036,SVK,Insulation (Roof),4653538.479455969
+2036,SVK,Insulation (Floor),2850317.4640503176
+2036,SVK,Insulation (Basement),931184.9867720772
+2036,SVN,Insulation,0.0
+2036,SVN,Insulation (Exterior wall),7661646.991727898
+2036,SVN,Insulation (Roof),3817299.5398760526
+2036,SVN,Insulation (Floor),1736228.8609685241
+2036,SVN,Insulation (Basement),971111.7466017865
+2036,SWE,Insulation,0.0
+2036,SWE,Insulation (Exterior wall),116969688.7716831
+2036,SWE,Insulation (Roof),45063992.214019746
+2036,SWE,Insulation (Floor),21305216.411449783
+2036,SWE,Insulation (Basement),25708242.292843983
+2037,AUT,Insulation,0.0
+2037,AUT,Insulation (Exterior wall),66695039.10124859
+2037,AUT,Insulation (Roof),25933131.57831343
+2037,AUT,Insulation (Floor),14950587.735096151
+2037,AUT,Insulation (Basement),8778634.280823668
+2037,BEL,Insulation,0.0
+2037,BEL,Insulation (Exterior wall),63967523.741786025
+2037,BEL,Insulation (Roof),24850673.41249666
+2037,BEL,Insulation (Floor),13715693.073612534
+2037,BEL,Insulation (Basement),8629538.544219147
+2037,BGR,Insulation,0.0
+2037,BGR,Insulation (Exterior wall),10032626.813697552
+2037,BGR,Insulation (Roof),8461349.007162277
+2037,BGR,Insulation (Floor),3053660.6857024636
+2037,BGR,Insulation (Basement),532188.195903179
+2037,CYP,Insulation,0.0
+2037,CYP,Insulation (Exterior wall),4887007.162993723
+2037,CYP,Insulation (Roof),2324803.4584518126
+2037,CYP,Insulation (Floor),2253200.1278528734
+2037,CYP,Insulation (Basement),1024120.9085666761
+2037,CZE,Insulation,0.0
+2037,CZE,Insulation (Exterior wall),25155281.865795393
+2037,CZE,Insulation (Roof),11430742.466476187
+2037,CZE,Insulation (Floor),6041747.258662317
+2037,CZE,Insulation (Basement),3029248.232367207
+2037,DEU,Insulation,0.0
+2037,DEU,Insulation (Exterior wall),364833825.8300959
+2037,DEU,Insulation (Roof),161361936.3051725
+2037,DEU,Insulation (Floor),93903041.64141041
+2037,DEU,Insulation (Basement),30078022.602153268
+2037,DNK,Insulation,0.0
+2037,DNK,Insulation (Exterior wall),0.0
+2037,DNK,Insulation (Roof),0.0
+2037,DNK,Insulation (Floor),0.0
+2037,DNK,Insulation (Basement),0.0
+2037,ESP,Insulation,0.0
+2037,ESP,Insulation (Exterior wall),143652213.18493074
+2037,ESP,Insulation (Roof),84356587.76874216
+2037,ESP,Insulation (Floor),98626379.54911347
+2037,ESP,Insulation (Basement),33268959.398289055
+2037,EST,Insulation,0.0
+2037,EST,Insulation (Exterior wall),1544874.7773716506
+2037,EST,Insulation (Roof),1696320.7991506443
+2037,EST,Insulation (Floor),756869.1594558954
+2037,EST,Insulation (Basement),316542.2751498138
+2037,FIN,Insulation,0.0
+2037,FIN,Insulation (Exterior wall),11714476.795631127
+2037,FIN,Insulation (Roof),9192547.98260017
+2037,FIN,Insulation (Floor),4442636.322163895
+2037,FIN,Insulation (Basement),2414840.0236716676
+2037,FRA,Insulation,0.0
+2037,FRA,Insulation (Exterior wall),266229021.46839622
+2037,FRA,Insulation (Roof),133438118.56556569
+2037,FRA,Insulation (Floor),136173603.0793279
+2037,FRA,Insulation (Basement),56241682.975403346
+2037,GBR,Insulation,0.0
+2037,GBR,Insulation (Exterior wall),402064205.65714246
+2037,GBR,Insulation (Roof),166955533.26956815
+2037,GBR,Insulation (Floor),84564125.931993
+2037,GBR,Insulation (Basement),57737773.29526192
+2037,GRC,Insulation,0.0
+2037,GRC,Insulation (Exterior wall),28815579.54825199
+2037,GRC,Insulation (Roof),14633175.00082425
+2037,GRC,Insulation (Floor),15071856.913462285
+2037,GRC,Insulation (Basement),5972809.490682951
+2037,HRV,Insulation,0.0
+2037,HRV,Insulation (Exterior wall),914357.6882288529
+2037,HRV,Insulation (Roof),694391.1248476532
+2037,HRV,Insulation (Floor),896548.86468
+2037,HRV,Insulation (Basement),97596.84688
+2037,HUN,Insulation,0.0
+2037,HUN,Insulation (Exterior wall),25480943.961711526
+2037,HUN,Insulation (Roof),17046941.654983867
+2037,HUN,Insulation (Floor),6984549.940847053
+2037,HUN,Insulation (Basement),2040648.3170896068
+2037,IRL,Insulation,0.0
+2037,IRL,Insulation (Exterior wall),29494714.362194832
+2037,IRL,Insulation (Roof),9912408.066481238
+2037,IRL,Insulation (Floor),5378810.538284538
+2037,IRL,Insulation (Basement),4280867.682489291
+2037,ITA,Insulation,0.0
+2037,ITA,Insulation (Exterior wall),214289714.20213392
+2037,ITA,Insulation (Roof),129376040.04732122
+2037,ITA,Insulation (Floor),154734667.1077063
+2037,ITA,Insulation (Basement),51658135.99443887
+2037,LTU,Insulation,0.0
+2037,LTU,Insulation (Exterior wall),1494745.4001435377
+2037,LTU,Insulation (Roof),2652351.757922312
+2037,LTU,Insulation (Floor),1345916.7113306692
+2037,LTU,Insulation (Basement),290758.1038485353
+2037,LUX,Insulation,0.0
+2037,LUX,Insulation (Exterior wall),9581292.021288099
+2037,LUX,Insulation (Roof),4100501.928692819
+2037,LUX,Insulation (Floor),2040654.0344847317
+2037,LUX,Insulation (Basement),1432846.6796074738
+2037,LVA,Insulation,0.0
+2037,LVA,Insulation (Exterior wall),1151866.4421469984
+2037,LVA,Insulation (Roof),3687777.8379827016
+2037,LVA,Insulation (Floor),1463625.6555904017
+2037,LVA,Insulation (Basement),213454.84587360627
+2037,MLT,Insulation,0.0
+2037,MLT,Insulation (Exterior wall),2793155.641964637
+2037,MLT,Insulation (Roof),1395282.4581614023
+2037,MLT,Insulation (Floor),1420139.060958409
+2037,MLT,Insulation (Basement),591922.0044699208
+2037,NLD,Insulation,0.0
+2037,NLD,Insulation (Exterior wall),109455804.43355764
+2037,NLD,Insulation (Roof),47039673.49521777
+2037,NLD,Insulation (Floor),23634966.80320219
+2037,NLD,Insulation (Basement),15562847.225337707
+2037,POL,Insulation,0.0
+2037,POL,Insulation (Exterior wall),151281596.19523308
+2037,POL,Insulation (Roof),77303690.74391171
+2037,POL,Insulation (Floor),38049944.33411471
+2037,POL,Insulation (Basement),17408077.27576257
+2037,PRT,Insulation,0.0
+2037,PRT,Insulation (Exterior wall),12853164.865653845
+2037,PRT,Insulation (Roof),7035620.935987927
+2037,PRT,Insulation (Floor),7689446.5509399995
+2037,PRT,Insulation (Basement),2584211.700709095
+2037,ROU,Insulation,0.0
+2037,ROU,Insulation (Exterior wall),49973408.6203113
+2037,ROU,Insulation (Roof),19694821.002593197
+2037,ROU,Insulation (Floor),9754823.451694056
+2037,ROU,Insulation (Basement),7657646.120265247
+2037,SVK,Insulation,0.0
+2037,SVK,Insulation (Exterior wall),11156281.215377597
+2037,SVK,Insulation (Roof),4653538.479721281
+2037,SVK,Insulation (Floor),2850317.4645063174
+2037,SVK,Insulation (Basement),931184.9867720772
+2037,SVN,Insulation,0.0
+2037,SVN,Insulation (Exterior wall),7661646.99164287
+2037,SVN,Insulation (Roof),3817299.5398536525
+2037,SVN,Insulation (Floor),1736228.8609445242
+2037,SVN,Insulation (Basement),971111.7466017865
+2037,SWE,Insulation,0.0
+2037,SWE,Insulation (Exterior wall),116969688.76090908
+2037,SWE,Insulation (Roof),45063992.214019746
+2037,SWE,Insulation (Floor),21305216.411449783
+2037,SWE,Insulation (Basement),25708242.29064021
+2038,AUT,Insulation,0.0
+2038,AUT,Insulation (Exterior wall),66695039.10124859
+2038,AUT,Insulation (Roof),25933131.57831343
+2038,AUT,Insulation (Floor),14950587.735096151
+2038,AUT,Insulation (Basement),8778634.280823668
+2038,BEL,Insulation,0.0
+2038,BEL,Insulation (Exterior wall),63967523.741786025
+2038,BEL,Insulation (Roof),24850673.41249666
+2038,BEL,Insulation (Floor),13715693.073612534
+2038,BEL,Insulation (Basement),8629538.544219147
+2038,BGR,Insulation,0.0
+2038,BGR,Insulation (Exterior wall),10032626.813697845
+2038,BGR,Insulation (Roof),8461349.007154753
+2038,BGR,Insulation (Floor),3053660.685702284
+2038,BGR,Insulation (Basement),532188.1958903082
+2038,CYP,Insulation,0.0
+2038,CYP,Insulation (Exterior wall),4887007.161902286
+2038,CYP,Insulation (Roof),2324803.4577478776
+2038,CYP,Insulation (Floor),2253200.1269727917
+2038,CYP,Insulation (Basement),1024120.9082917387
+2038,CZE,Insulation,0.0
+2038,CZE,Insulation (Exterior wall),25155281.865710367
+2038,CZE,Insulation (Roof),11430742.466453787
+2038,CZE,Insulation (Floor),6041747.258638317
+2038,CZE,Insulation (Basement),3029248.232367207
+2038,DEU,Insulation,0.0
+2038,DEU,Insulation (Exterior wall),364833825.82159317
+2038,DEU,Insulation (Roof),161361936.3029325
+2038,DEU,Insulation (Floor),93903041.63901041
+2038,DEU,Insulation (Basement),30078022.602153268
+2038,DNK,Insulation,0.0
+2038,DNK,Insulation (Exterior wall),0.0
+2038,DNK,Insulation (Roof),0.0
+2038,DNK,Insulation (Floor),0.0
+2038,DNK,Insulation (Basement),0.0
+2038,ESP,Insulation,0.0
+2038,ESP,Insulation (Exterior wall),143652213.18493074
+2038,ESP,Insulation (Roof),84356587.76874216
+2038,ESP,Insulation (Floor),98626379.54911347
+2038,ESP,Insulation (Basement),33268959.398289055
+2038,EST,Insulation,0.0
+2038,EST,Insulation (Exterior wall),1544874.7774068008
+2038,EST,Insulation (Roof),1696320.7992401258
+2038,EST,Insulation (Floor),756869.1595305621
+2038,EST,Insulation (Basement),316542.2751535669
+2038,FIN,Insulation,0.0
+2038,FIN,Insulation (Exterior wall),11714476.795650152
+2038,FIN,Insulation (Roof),9192547.982609058
+2038,FIN,Insulation (Floor),4442636.322203894
+2038,FIN,Insulation (Basement),2414840.0236739195
+2038,FRA,Insulation,0.0
+2038,FRA,Insulation (Exterior wall),266229021.46839622
+2038,FRA,Insulation (Roof),133438118.56556569
+2038,FRA,Insulation (Floor),136173603.0793279
+2038,FRA,Insulation (Basement),56241682.975403346
+2038,GBR,Insulation,0.0
+2038,GBR,Insulation (Exterior wall),402064205.65714246
+2038,GBR,Insulation (Roof),166955533.26956815
+2038,GBR,Insulation (Floor),84564125.931993
+2038,GBR,Insulation (Basement),57737773.29526192
+2038,GRC,Insulation,0.0
+2038,GRC,Insulation (Exterior wall),28815579.54825199
+2038,GRC,Insulation (Roof),14633175.00082425
+2038,GRC,Insulation (Floor),15071856.913462285
+2038,GRC,Insulation (Basement),5972809.490682951
+2038,HRV,Insulation,0.0
+2038,HRV,Insulation (Exterior wall),914357.6882288529
+2038,HRV,Insulation (Roof),694391.1248476532
+2038,HRV,Insulation (Floor),896548.86468
+2038,HRV,Insulation (Basement),97596.84688
+2038,HUN,Insulation,0.0
+2038,HUN,Insulation (Exterior wall),25480943.961711526
+2038,HUN,Insulation (Roof),17046941.654983867
+2038,HUN,Insulation (Floor),6984549.940847053
+2038,HUN,Insulation (Basement),2040648.3170896068
+2038,IRL,Insulation,0.0
+2038,IRL,Insulation (Exterior wall),29494714.362194832
+2038,IRL,Insulation (Roof),9912408.066481238
+2038,IRL,Insulation (Floor),5378810.538284538
+2038,IRL,Insulation (Basement),4280867.682489291
+2038,ITA,Insulation,0.0
+2038,ITA,Insulation (Exterior wall),214289714.19222152
+2038,ITA,Insulation (Roof),129376040.04357976
+2038,ITA,Insulation (Floor),154734667.10506633
+2038,ITA,Insulation (Basement),51658135.99243887
+2038,LTU,Insulation,0.0
+2038,LTU,Insulation (Exterior wall),1494745.4001435377
+2038,LTU,Insulation (Roof),2652351.7576983115
+2038,LTU,Insulation (Floor),1345916.7113066693
+2038,LTU,Insulation (Basement),290758.1038485353
+2038,LUX,Insulation,0.0
+2038,LUX,Insulation (Exterior wall),9581292.021288099
+2038,LUX,Insulation (Roof),4100501.928692819
+2038,LUX,Insulation (Floor),2040654.0344847317
+2038,LUX,Insulation (Basement),1432846.6796074738
+2038,LVA,Insulation,0.0
+2038,LVA,Insulation (Exterior wall),1151866.4422477859
+2038,LVA,Insulation (Roof),3687777.8379622935
+2038,LVA,Insulation (Floor),1463625.6555716414
+2038,LVA,Insulation (Basement),213454.84590152735
+2038,MLT,Insulation,0.0
+2038,MLT,Insulation (Exterior wall),2793155.641964637
+2038,MLT,Insulation (Roof),1395282.4581614023
+2038,MLT,Insulation (Floor),1420139.060958409
+2038,MLT,Insulation (Basement),591922.0044699208
+2038,NLD,Insulation,0.0
+2038,NLD,Insulation (Exterior wall),109455804.43355764
+2038,NLD,Insulation (Roof),47039673.49521777
+2038,NLD,Insulation (Floor),23634966.80320219
+2038,NLD,Insulation (Basement),15562847.225337707
+2038,POL,Insulation,0.0
+2038,POL,Insulation (Exterior wall),151281596.19523308
+2038,POL,Insulation (Roof),77303690.74391171
+2038,POL,Insulation (Floor),38049944.33411471
+2038,POL,Insulation (Basement),17408077.27576257
+2038,PRT,Insulation,0.0
+2038,PRT,Insulation (Exterior wall),12853164.865653845
+2038,PRT,Insulation (Roof),7035620.935987927
+2038,PRT,Insulation (Floor),7689446.5509399995
+2038,PRT,Insulation (Basement),2584211.700709095
+2038,ROU,Insulation,0.0
+2038,ROU,Insulation (Exterior wall),49973408.621161565
+2038,ROU,Insulation (Roof),19694821.002817195
+2038,ROU,Insulation (Floor),9754823.451934056
+2038,ROU,Insulation (Basement),7657646.120265247
+2038,SVK,Insulation,0.0
+2038,SVK,Insulation (Exterior wall),11156281.215396473
+2038,SVK,Insulation (Roof),4653538.479903969
+2038,SVK,Insulation (Floor),2850317.4645303176
+2038,SVK,Insulation (Basement),931184.9867720772
+2038,SVN,Insulation,0.0
+2038,SVN,Insulation (Exterior wall),7661646.991727898
+2038,SVN,Insulation (Roof),3817299.5398760526
+2038,SVN,Insulation (Floor),1736228.8609685241
+2038,SVN,Insulation (Basement),971111.7466017865
+2038,SWE,Insulation,0.0
+2038,SWE,Insulation (Exterior wall),116969688.7716831
+2038,SWE,Insulation (Roof),45063992.214019746
+2038,SWE,Insulation (Floor),21305216.411449783
+2038,SWE,Insulation (Basement),25708242.292843983
+2039,AUT,Insulation,0.0
+2039,AUT,Insulation (Exterior wall),66695039.10124859
+2039,AUT,Insulation (Roof),25933131.57831343
+2039,AUT,Insulation (Floor),14950587.735096151
+2039,AUT,Insulation (Basement),8778634.280823668
+2039,BEL,Insulation,0.0
+2039,BEL,Insulation (Exterior wall),63967523.741786025
+2039,BEL,Insulation (Roof),24850673.41249666
+2039,BEL,Insulation (Floor),13715693.073612534
+2039,BEL,Insulation (Basement),8629538.544219147
+2039,BGR,Insulation,0.0
+2039,BGR,Insulation (Exterior wall),10032626.813697552
+2039,BGR,Insulation (Roof),8461349.007162277
+2039,BGR,Insulation (Floor),3053660.6857024636
+2039,BGR,Insulation (Basement),532188.195903179
+2039,CYP,Insulation,0.0
+2039,CYP,Insulation (Exterior wall),4887007.162993723
+2039,CYP,Insulation (Roof),2324803.4584518126
+2039,CYP,Insulation (Floor),2253200.1278528734
+2039,CYP,Insulation (Basement),1024120.9085666761
+2039,CZE,Insulation,0.0
+2039,CZE,Insulation (Exterior wall),25155281.86588042
+2039,CZE,Insulation (Roof),11430742.466498587
+2039,CZE,Insulation (Floor),6041747.258686317
+2039,CZE,Insulation (Basement),3029248.232367207
+2039,DEU,Insulation,0.0
+2039,DEU,Insulation (Exterior wall),364833825.8300959
+2039,DEU,Insulation (Roof),161361936.3051725
+2039,DEU,Insulation (Floor),93903041.64141041
+2039,DEU,Insulation (Basement),30078022.602153268
+2039,DNK,Insulation,0.0
+2039,DNK,Insulation (Exterior wall),0.0
+2039,DNK,Insulation (Roof),0.0
+2039,DNK,Insulation (Floor),0.0
+2039,DNK,Insulation (Basement),0.0
+2039,ESP,Insulation,0.0
+2039,ESP,Insulation (Exterior wall),143652213.18493074
+2039,ESP,Insulation (Roof),84356587.76874216
+2039,ESP,Insulation (Floor),98626379.54911347
+2039,ESP,Insulation (Basement),33268959.398289055
+2039,EST,Insulation,0.0
+2039,EST,Insulation (Exterior wall),1544874.7773877752
+2039,EST,Insulation (Roof),1696320.799231237
+2039,EST,Insulation (Floor),756869.159490562
+2039,EST,Insulation (Basement),316542.275151315
+2039,FIN,Insulation,0.0
+2039,FIN,Insulation (Exterior wall),11714476.795650152
+2039,FIN,Insulation (Roof),9192547.982609058
+2039,FIN,Insulation (Floor),4442636.322203894
+2039,FIN,Insulation (Basement),2414840.0236739195
+2039,FRA,Insulation,0.0
+2039,FRA,Insulation (Exterior wall),266229021.46839622
+2039,FRA,Insulation (Roof),133438118.56556569
+2039,FRA,Insulation (Floor),136173603.0793279
+2039,FRA,Insulation (Basement),56241682.975403346
+2039,GBR,Insulation,0.0
+2039,GBR,Insulation (Exterior wall),402064205.65714246
+2039,GBR,Insulation (Roof),166955533.26956815
+2039,GBR,Insulation (Floor),84564125.931993
+2039,GBR,Insulation (Basement),57737773.29526192
+2039,GRC,Insulation,0.0
+2039,GRC,Insulation (Exterior wall),28815579.548117366
+2039,GRC,Insulation (Roof),14633175.00066425
+2039,GRC,Insulation (Floor),15071856.913222285
+2039,GRC,Insulation (Basement),5972809.490682951
+2039,HRV,Insulation,0.0
+2039,HRV,Insulation (Exterior wall),914357.6882288529
+2039,HRV,Insulation (Roof),694391.1248476532
+2039,HRV,Insulation (Floor),896548.86468
+2039,HRV,Insulation (Basement),97596.84688
+2039,HUN,Insulation,0.0
+2039,HUN,Insulation (Exterior wall),25480943.961711526
+2039,HUN,Insulation (Roof),17046941.654983867
+2039,HUN,Insulation (Floor),6984549.940847053
+2039,HUN,Insulation (Basement),2040648.3170896068
+2039,IRL,Insulation,0.0
+2039,IRL,Insulation (Exterior wall),29494714.362194832
+2039,IRL,Insulation (Roof),9912408.066481238
+2039,IRL,Insulation (Floor),5378810.538284538
+2039,IRL,Insulation (Basement),4280867.682489291
+2039,ITA,Insulation,0.0
+2039,ITA,Insulation (Exterior wall),214289714.2019993
+2039,ITA,Insulation (Roof),129376040.04716122
+2039,ITA,Insulation (Floor),154734667.1074663
+2039,ITA,Insulation (Basement),51658135.99443887
+2039,LTU,Insulation,0.0
+2039,LTU,Insulation (Exterior wall),1494745.3999532817
+2039,LTU,Insulation (Roof),2652351.7578334226
+2039,LTU,Insulation (Floor),1345916.7109306692
+2039,LTU,Insulation (Basement),290758.10382601677
+2039,LUX,Insulation,0.0
+2039,LUX,Insulation (Exterior wall),9581292.021288099
+2039,LUX,Insulation (Roof),4100501.928692819
+2039,LUX,Insulation (Floor),2040654.0344847317
+2039,LUX,Insulation (Basement),1432846.6796074738
+2039,LVA,Insulation,0.0
+2039,LVA,Insulation (Exterior wall),1151866.4421308737
+2039,LVA,Insulation (Roof),3687777.837902109
+2039,LVA,Insulation (Floor),1463625.655555735
+2039,LVA,Insulation (Basement),213454.84587210504
+2039,MLT,Insulation,0.0
+2039,MLT,Insulation (Exterior wall),2793155.641964637
+2039,MLT,Insulation (Roof),1395282.4581614023
+2039,MLT,Insulation (Floor),1420139.060958409
+2039,MLT,Insulation (Basement),591922.0044699208
+2039,NLD,Insulation,0.0
+2039,NLD,Insulation (Exterior wall),109455804.43355764
+2039,NLD,Insulation (Roof),47039673.49521777
+2039,NLD,Insulation (Floor),23634966.80320219
+2039,NLD,Insulation (Basement),15562847.225337707
+2039,POL,Insulation,0.0
+2039,POL,Insulation (Exterior wall),151281596.19523308
+2039,POL,Insulation (Roof),77303690.74391171
+2039,POL,Insulation (Floor),38049944.33411471
+2039,POL,Insulation (Basement),17408077.27576257
+2039,PRT,Insulation,0.0
+2039,PRT,Insulation (Exterior wall),12853164.865519218
+2039,PRT,Insulation (Roof),7035620.935827927
+2039,PRT,Insulation (Floor),7689446.5507
+2039,PRT,Insulation (Basement),2584211.700709095
+2039,ROU,Insulation,0.0
+2039,ROU,Insulation (Exterior wall),49973408.6203113
+2039,ROU,Insulation (Roof),19694821.002593197
+2039,ROU,Insulation (Floor),9754823.451694056
+2039,ROU,Insulation (Basement),7657646.120265247
+2039,SVK,Insulation,0.0
+2039,SVK,Insulation (Exterior wall),11156281.214461174
+2039,SVK,Insulation (Roof),4653538.479657569
+2039,SVK,Insulation (Floor),2850317.4642663174
+2039,SVK,Insulation (Basement),931184.9867720772
+2039,SVN,Insulation,0.0
+2039,SVN,Insulation (Exterior wall),7661646.99158304
+2039,SVN,Insulation (Roof),3817299.5398082715
+2039,SVN,Insulation (Floor),1736228.860924524
+2039,SVN,Insulation (Basement),971111.7466017865
+2039,SWE,Insulation,0.0
+2039,SWE,Insulation (Exterior wall),116969688.76090908
+2039,SWE,Insulation (Roof),45063992.214019746
+2039,SWE,Insulation (Floor),21305216.411449783
+2039,SWE,Insulation (Basement),25708242.29064021
+2040,AUT,Insulation,0.0
+2040,AUT,Insulation (Exterior wall),66695039.1018469
+2040,AUT,Insulation (Roof),25933131.578767244
+2040,AUT,Insulation (Floor),14950587.73529615
+2040,AUT,Insulation (Basement),8778634.280823668
+2040,BEL,Insulation,0.0
+2040,BEL,Insulation (Exterior wall),63967523.74093575
+2040,BEL,Insulation (Roof),24850673.412272662
+2040,BEL,Insulation (Floor),13715693.073372534
+2040,BEL,Insulation (Basement),8629538.544219147
+2040,BGR,Insulation,0.0
+2040,BGR,Insulation (Exterior wall),10032626.813697845
+2040,BGR,Insulation (Roof),8461349.007154753
+2040,BGR,Insulation (Floor),3053660.685702284
+2040,BGR,Insulation (Basement),532188.1958903082
+2040,CYP,Insulation,0.0
+2040,CYP,Insulation (Exterior wall),4887007.161902286
+2040,CYP,Insulation (Roof),2324803.4577478776
+2040,CYP,Insulation (Floor),2253200.1269727917
+2040,CYP,Insulation (Basement),1024120.9082917387
+2040,CZE,Insulation,0.0
+2040,CZE,Insulation (Exterior wall),25155281.865710367
+2040,CZE,Insulation (Roof),11430742.466453787
+2040,CZE,Insulation (Floor),6041747.258638317
+2040,CZE,Insulation (Basement),3029248.232367207
+2040,DEU,Insulation,0.0
+2040,DEU,Insulation (Exterior wall),364833825.82159317
+2040,DEU,Insulation (Roof),161361936.3029325
+2040,DEU,Insulation (Floor),93903041.63901041
+2040,DEU,Insulation (Basement),30078022.602153268
+2040,DNK,Insulation,0.0
+2040,DNK,Insulation (Exterior wall),0.0
+2040,DNK,Insulation (Roof),0.0
+2040,DNK,Insulation (Floor),0.0
+2040,DNK,Insulation (Basement),0.0
+2040,ESP,Insulation,0.0
+2040,ESP,Insulation (Exterior wall),143652213.18493074
+2040,ESP,Insulation (Roof),84356587.76874216
+2040,ESP,Insulation (Floor),98626379.54911347
+2040,ESP,Insulation (Basement),33268959.398289055
+2040,EST,Insulation,0.0
+2040,EST,Insulation (Exterior wall),1544874.777390676
+2040,EST,Insulation (Roof),1696320.799159533
+2040,EST,Insulation (Floor),756869.1594958954
+2040,EST,Insulation (Basement),316542.2751520657
+2040,FIN,Insulation,0.0
+2040,FIN,Insulation (Exterior wall),11714476.795459896
+2040,FIN,Insulation (Roof),9192547.982520169
+2040,FIN,Insulation (Floor),4442636.321803895
+2040,FIN,Insulation (Basement),2414840.0236514006
+2040,FRA,Insulation,0.0
+2040,FRA,Insulation (Exterior wall),266229021.46839622
+2040,FRA,Insulation (Roof),133438118.56556569
+2040,FRA,Insulation (Floor),136173603.0793279
+2040,FRA,Insulation (Basement),56241682.975403346
+2040,GBR,Insulation,0.0
+2040,GBR,Insulation (Exterior wall),402064205.65714246
+2040,GBR,Insulation (Roof),166955533.26956815
+2040,GBR,Insulation (Floor),84564125.931993
+2040,GBR,Insulation (Basement),57737773.29526192
+2040,GRC,Insulation,0.0
+2040,GRC,Insulation (Exterior wall),28815579.54825199
+2040,GRC,Insulation (Roof),14633175.00082425
+2040,GRC,Insulation (Floor),15071856.913462285
+2040,GRC,Insulation (Basement),5972809.490682951
+2040,HRV,Insulation,0.0
+2040,HRV,Insulation (Exterior wall),914357.6882288529
+2040,HRV,Insulation (Roof),694391.1248476532
+2040,HRV,Insulation (Floor),896548.86468
+2040,HRV,Insulation (Basement),97596.84688
+2040,HUN,Insulation,0.0
+2040,HUN,Insulation (Exterior wall),25480943.961711526
+2040,HUN,Insulation (Roof),17046941.654983867
+2040,HUN,Insulation (Floor),6984549.940847053
+2040,HUN,Insulation (Basement),2040648.3170896068
+2040,IRL,Insulation,0.0
+2040,IRL,Insulation (Exterior wall),29494714.362194832
+2040,IRL,Insulation (Roof),9912408.066481238
+2040,IRL,Insulation (Floor),5378810.538284538
+2040,IRL,Insulation (Basement),4280867.682489291
+2040,ITA,Insulation,0.0
+2040,ITA,Insulation (Exterior wall),214289714.19235614
+2040,ITA,Insulation (Roof),129376040.04373975
+2040,ITA,Insulation (Floor),154734667.10530633
+2040,ITA,Insulation (Basement),51658135.99243887
+2040,LTU,Insulation,0.0
+2040,LTU,Insulation (Exterior wall),1494745.4001435377
+2040,LTU,Insulation (Roof),2652351.7576983115
+2040,LTU,Insulation (Floor),1345916.7113066693
+2040,LTU,Insulation (Basement),290758.1038485353
+2040,LUX,Insulation,0.0
+2040,LUX,Insulation (Exterior wall),9581292.021306975
+2040,LUX,Insulation (Roof),4100501.9288755073
+2040,LUX,Insulation (Floor),2040654.0345087317
+2040,LUX,Insulation (Basement),1432846.6796074738
+2040,LVA,Insulation,0.0
+2040,LVA,Insulation (Exterior wall),1151866.4421469984
+2040,LVA,Insulation (Roof),3687777.8379827016
+2040,LVA,Insulation (Floor),1463625.6555904017
+2040,LVA,Insulation (Basement),213454.84587360627
+2040,MLT,Insulation,0.0
+2040,MLT,Insulation (Exterior wall),2793155.641964637
+2040,MLT,Insulation (Roof),1395282.4581614023
+2040,MLT,Insulation (Floor),1420139.060958409
+2040,MLT,Insulation (Basement),591922.0044699208
+2040,NLD,Insulation,0.0
+2040,NLD,Insulation (Exterior wall),109455804.43355764
+2040,NLD,Insulation (Roof),47039673.49521777
+2040,NLD,Insulation (Floor),23634966.80320219
+2040,NLD,Insulation (Basement),15562847.225337707
+2040,POL,Insulation,0.0
+2040,POL,Insulation (Exterior wall),151281596.19523308
+2040,POL,Insulation (Roof),77303690.74391171
+2040,POL,Insulation (Floor),38049944.33411471
+2040,POL,Insulation (Basement),17408077.27576257
+2040,PRT,Insulation,0.0
+2040,PRT,Insulation (Exterior wall),12853164.865653845
+2040,PRT,Insulation (Roof),7035620.935987927
+2040,PRT,Insulation (Floor),7689446.5509399995
+2040,PRT,Insulation (Basement),2584211.700709095
+2040,ROU,Insulation,0.0
+2040,ROU,Insulation (Exterior wall),49973408.6203113
+2040,ROU,Insulation (Roof),19694821.002593197
+2040,ROU,Insulation (Floor),9754823.451694056
+2040,ROU,Insulation (Basement),7657646.120265247
+2040,SVK,Insulation,0.0
+2040,SVK,Insulation (Exterior wall),11156281.213695928
+2040,SVK,Insulation (Roof),4653538.479455969
+2040,SVK,Insulation (Floor),2850317.4640503176
+2040,SVK,Insulation (Basement),931184.9867720772
+2040,SVN,Insulation,0.0
+2040,SVN,Insulation (Exterior wall),7661646.991727898
+2040,SVN,Insulation (Roof),3817299.5398760526
+2040,SVN,Insulation (Floor),1736228.8609685241
+2040,SVN,Insulation (Basement),971111.7466017865
+2040,SWE,Insulation,0.0
+2040,SWE,Insulation (Exterior wall),116969688.7716831
+2040,SWE,Insulation (Roof),45063992.214019746
+2040,SWE,Insulation (Floor),21305216.411449783
+2040,SWE,Insulation (Basement),25708242.292843983
+2041,AUT,Insulation,0.0
+2041,AUT,Insulation (Exterior wall),69316818.54132874
+2041,AUT,Insulation (Roof),27739569.539841674
+2041,AUT,Insulation (Floor),15777148.31398039
+2041,AUT,Insulation (Basement),8830772.741288248
+2041,BEL,Insulation,0.0
+2041,BEL,Insulation (Exterior wall),70895951.9808197
+2041,BEL,Insulation (Roof),29357731.507765207
+2041,BEL,Insulation (Floor),15688611.273907162
+2041,BEL,Insulation (Basement),9049089.884622263
+2041,BGR,Insulation,0.0
+2041,BGR,Insulation (Exterior wall),14218030.218941715
+2041,BGR,Insulation (Roof),9954364.234479303
+2041,BGR,Insulation (Floor),3824185.5619689263
+2041,BGR,Insulation (Basement),1279595.0378973044
+2041,CYP,Insulation,0.0
+2041,CYP,Insulation (Exterior wall),3895917.53782305
+2041,CYP,Insulation (Roof),1905246.1154445466
+2041,CYP,Insulation (Floor),1891684.8519208229
+2041,CYP,Insulation (Basement),798739.2828067489
+2041,CZE,Insulation,0.0
+2041,CZE,Insulation (Exterior wall),30563311.38487686
+2041,CZE,Insulation (Roof),12997324.33608402
+2041,CZE,Insulation (Floor),7128107.129605255
+2041,CZE,Insulation (Basement),3921290.1217688564
+2041,DEU,Insulation,0.0
+2041,DEU,Insulation (Exterior wall),438890130.5268543
+2041,DEU,Insulation (Roof),200652677.37909997
+2041,DEU,Insulation (Floor),115180742.54164559
+2041,DEU,Insulation (Basement),33217929.078693688
+2041,DNK,Insulation,0.0
+2041,DNK,Insulation (Exterior wall),0.0
+2041,DNK,Insulation (Roof),0.0
+2041,DNK,Insulation (Floor),0.0
+2041,DNK,Insulation (Basement),0.0
+2041,ESP,Insulation,0.0
+2041,ESP,Insulation (Exterior wall),150305420.082765
+2041,ESP,Insulation (Roof),89661168.24417765
+2041,ESP,Insulation (Floor),105877925.43315524
+2041,ESP,Insulation (Basement),34668605.25678323
+2041,EST,Insulation,0.0
+2041,EST,Insulation (Exterior wall),2208816.4140618597
+2041,EST,Insulation (Roof),1955078.5028072782
+2041,EST,Insulation (Floor),842271.8180403911
+2041,EST,Insulation (Basement),468436.00828424643
+2041,FIN,Insulation,0.0
+2041,FIN,Insulation (Exterior wall),13351595.346553031
+2041,FIN,Insulation (Roof),11598686.979530267
+2041,FIN,Insulation (Floor),5682546.24001711
+2041,FIN,Insulation (Basement),2727149.2827587365
+2041,FRA,Insulation,0.0
+2041,FRA,Insulation (Exterior wall),255539866.85156372
+2041,FRA,Insulation (Roof),132506336.15812986
+2041,FRA,Insulation (Floor),139006944.01632002
+2041,FRA,Insulation (Basement),52958034.92412409
+2041,GBR,Insulation,0.0
+2041,GBR,Insulation (Exterior wall),454092809.7035368
+2041,GBR,Insulation (Roof),191584977.4960322
+2041,GBR,Insulation (Floor),96342514.96453609
+2041,GBR,Insulation (Basement),64519545.23278364
+2041,GRC,Insulation,0.0
+2041,GRC,Insulation (Exterior wall),21252067.39663309
+2041,GRC,Insulation (Roof),11527892.934875568
+2041,GRC,Insulation (Floor),12467050.57515048
+2041,GRC,Insulation (Basement),4151288.697228064
+2041,HRV,Insulation,0.0
+2041,HRV,Insulation (Exterior wall),1347553.3453188213
+2041,HRV,Insulation (Roof),968067.4091692836
+2041,HRV,Insulation (Floor),1217901.4649039998
+2041,HRV,Insulation (Basement),157594.39062
+2041,HUN,Insulation,0.0
+2041,HUN,Insulation (Exterior wall),35395999.36427861
+2041,HUN,Insulation (Roof),19774497.22834882
+2041,HUN,Insulation (Floor),8752571.667483663
+2041,HUN,Insulation (Basement),3569354.4005798576
+2041,IRL,Insulation,0.0
+2041,IRL,Insulation (Exterior wall),29844536.27074741
+2041,IRL,Insulation (Roof),9935933.194650281
+2041,IRL,Insulation (Floor),5410002.8959375955
+2041,IRL,Insulation (Basement),4356349.663317209
+2041,ITA,Insulation,0.0
+2041,ITA,Insulation (Exterior wall),256405751.38485652
+2041,ITA,Insulation (Roof),156228030.51573756
+2041,ITA,Insulation (Floor),187752661.19817492
+2041,ITA,Insulation (Basement),61289551.241157226
+2041,LTU,Insulation,0.0
+2041,LTU,Insulation (Exterior wall),4258673.780617604
+2041,LTU,Insulation (Roof),3837769.910568691
+2041,LTU,Insulation (Floor),1865909.222468182
+2041,LTU,Insulation (Basement),912275.2065873161
+2041,LUX,Insulation,0.0
+2041,LUX,Insulation (Exterior wall),9014729.990513371
+2041,LUX,Insulation (Roof),4079637.6553439945
+2041,LUX,Insulation (Floor),1954365.114975332
+2041,LUX,Insulation (Basement),1327445.3272564223
+2041,LVA,Insulation,0.0
+2041,LVA,Insulation (Exterior wall),3072687.354427052
+2041,LVA,Insulation (Roof),4240207.888533934
+2041,LVA,Insulation (Floor),1529879.8821696956
+2041,LVA,Insulation (Basement),687754.6122089254
+2041,MLT,Insulation,0.0
+2041,MLT,Insulation (Exterior wall),2004833.1614853444
+2041,MLT,Insulation (Roof),992752.8216270609
+2041,MLT,Insulation (Floor),1000927.0426389069
+2041,MLT,Insulation (Basement),420970.6390925592
+2041,NLD,Insulation,0.0
+2041,NLD,Insulation (Exterior wall),122199570.14054003
+2041,NLD,Insulation (Roof),59970314.5447714
+2041,NLD,Insulation (Floor),27907604.691321038
+2041,NLD,Insulation (Basement),16140706.272486519
+2041,POL,Insulation,0.0
+2041,POL,Insulation (Exterior wall),139771919.50283748
+2041,POL,Insulation (Roof),72882677.25142361
+2041,POL,Insulation (Floor),35254803.05514351
+2041,POL,Insulation (Basement),16035440.136460409
+2041,PRT,Insulation,0.0
+2041,PRT,Insulation (Exterior wall),14286977.355433673
+2041,PRT,Insulation (Roof),8000258.770120383
+2041,PRT,Insulation (Floor),8879410.053841338
+2041,PRT,Insulation (Basement),2816113.9485764233
+2041,ROU,Insulation,0.0
+2041,ROU,Insulation (Exterior wall),66832100.57156082
+2041,ROU,Insulation (Roof),23566898.745954823
+2041,ROU,Insulation (Floor),12605910.80752543
+2041,ROU,Insulation (Basement),10538174.049161501
+2041,SVK,Insulation,0.0
+2041,SVK,Insulation (Exterior wall),11028384.61333022
+2041,SVK,Insulation (Roof),4444050.03156591
+2041,SVK,Insulation (Floor),2721625.129206668
+2041,SVK,Insulation (Basement),1092698.605255029
+2041,SVN,Insulation,0.0
+2041,SVN,Insulation (Exterior wall),8640677.66933282
+2041,SVN,Insulation (Roof),3944872.6260581994
+2041,SVN,Insulation (Floor),1891782.206044035
+2041,SVN,Insulation (Basement),1140195.6897803403
+2041,SWE,Insulation,0.0
+2041,SWE,Insulation (Exterior wall),115421582.19451895
+2041,SWE,Insulation (Roof),45056457.4799305
+2041,SWE,Insulation (Floor),22752240.627207804
+2041,SWE,Insulation (Basement),25243401.374050602
+2042,AUT,Insulation,0.0
+2042,AUT,Insulation (Exterior wall),69316818.54047847
+2042,AUT,Insulation (Roof),27739569.539617673
+2042,AUT,Insulation (Floor),15777148.31374039
+2042,AUT,Insulation (Basement),8830772.741288248
+2042,BEL,Insulation,0.0
+2042,BEL,Insulation (Exterior wall),70895951.97911915
+2042,BEL,Insulation (Roof),29357731.507317204
+2042,BEL,Insulation (Floor),15688611.273427162
+2042,BEL,Insulation (Basement),9049089.884622263
+2042,BGR,Insulation,0.0
+2042,BGR,Insulation (Exterior wall),14218030.217808776
+2042,BGR,Insulation (Roof),9954364.234222999
+2042,BGR,Insulation (Floor),3824185.5618108413
+2042,BGR,Insulation (Basement),1279595.0376973043
+2042,CYP,Insulation,0.0
+2042,CYP,Insulation (Exterior wall),3895917.537836512
+2042,CYP,Insulation (Roof),1905246.1154605465
+2042,CYP,Insulation (Floor),1891684.8519448228
+2042,CYP,Insulation (Basement),798739.2828067489
+2042,CZE,Insulation,0.0
+2042,CZE,Insulation (Exterior wall),30563311.384961884
+2042,CZE,Insulation (Roof),12997324.33610642
+2042,CZE,Insulation (Floor),7128107.129629255
+2042,CZE,Insulation (Basement),3921290.1217688564
+2042,DEU,Insulation,0.0
+2042,DEU,Insulation (Exterior wall),438890130.535357
+2042,DEU,Insulation (Roof),200652677.38133997
+2042,DEU,Insulation (Floor),115180742.5440456
+2042,DEU,Insulation (Basement),33217929.078693688
+2042,DNK,Insulation,0.0
+2042,DNK,Insulation (Exterior wall),0.0
+2042,DNK,Insulation (Roof),0.0
+2042,DNK,Insulation (Floor),0.0
+2042,DNK,Insulation (Basement),0.0
+2042,ESP,Insulation,0.0
+2042,ESP,Insulation (Exterior wall),150305420.082765
+2042,ESP,Insulation (Roof),89661168.24417765
+2042,ESP,Insulation (Floor),105877925.43315524
+2042,ESP,Insulation (Basement),34668605.25678323
+2042,EST,Insulation,0.0
+2042,EST,Insulation (Exterior wall),2208816.414178772
+2042,EST,Insulation (Roof),1955078.502867463
+2042,EST,Insulation (Floor),842271.8180562975
+2042,EST,Insulation (Basement),468436.0083136688
+2042,FIN,Insulation,0.0
+2042,FIN,Insulation (Exterior wall),13351595.346362775
+2042,FIN,Insulation (Roof),11598686.979441378
+2042,FIN,Insulation (Floor),5682546.239617109
+2042,FIN,Insulation (Basement),2727149.282736218
+2042,FRA,Insulation,0.0
+2042,FRA,Insulation (Exterior wall),255539866.85156372
+2042,FRA,Insulation (Roof),132506336.15812986
+2042,FRA,Insulation (Floor),139006944.01632002
+2042,FRA,Insulation (Basement),52958034.92412409
+2042,GBR,Insulation,0.0
+2042,GBR,Insulation (Exterior wall),454092809.7035368
+2042,GBR,Insulation (Roof),191584977.4960322
+2042,GBR,Insulation (Floor),96342514.96453609
+2042,GBR,Insulation (Basement),64519545.23278364
+2042,GRC,Insulation,0.0
+2042,GRC,Insulation (Exterior wall),21252067.396857467
+2042,GRC,Insulation (Roof),11527892.935142236
+2042,GRC,Insulation (Floor),12467050.57555048
+2042,GRC,Insulation (Basement),4151288.697228064
+2042,HRV,Insulation,0.0
+2042,HRV,Insulation (Exterior wall),1347553.3453188213
+2042,HRV,Insulation (Roof),968067.4091692836
+2042,HRV,Insulation (Floor),1217901.4649039998
+2042,HRV,Insulation (Basement),157594.39062
+2042,HUN,Insulation,0.0
+2042,HUN,Insulation (Exterior wall),35395999.363431245
+2042,HUN,Insulation (Roof),19774497.228049595
+2042,HUN,Insulation (Floor),8752571.667241875
+2042,HUN,Insulation (Basement),3569354.400451151
+2042,IRL,Insulation,0.0
+2042,IRL,Insulation (Exterior wall),29844536.271594763
+2042,IRL,Insulation (Roof),9935933.194949508
+2042,IRL,Insulation (Floor),5410002.896179384
+2042,IRL,Insulation (Basement),4356349.663445916
+2042,ITA,Insulation,0.0
+2042,ITA,Insulation (Exterior wall),256405751.38485652
+2042,ITA,Insulation (Roof),156228030.51573756
+2042,ITA,Insulation (Floor),187752661.19817492
+2042,ITA,Insulation (Basement),61289551.241157226
+2042,LTU,Insulation,0.0
+2042,LTU,Insulation (Exterior wall),4258673.780617604
+2042,LTU,Insulation (Roof),3837769.910344691
+2042,LTU,Insulation (Floor),1865909.222444182
+2042,LTU,Insulation (Basement),912275.2065873161
+2042,LUX,Insulation,0.0
+2042,LUX,Insulation (Exterior wall),9014729.989399308
+2042,LUX,Insulation (Roof),4079637.6552703786
+2042,LUX,Insulation (Floor),1954365.1148412474
+2042,LUX,Insulation (Basement),1327445.3270564224
+2042,LVA,Insulation,0.0
+2042,LVA,Insulation (Exterior wall),3072687.354427052
+2042,LVA,Insulation (Roof),4240207.890773934
+2042,LVA,Insulation (Floor),1529879.8824096955
+2042,LVA,Insulation (Basement),687754.6122089254
+2042,MLT,Insulation,0.0
+2042,MLT,Insulation (Exterior wall),2004833.1614853444
+2042,MLT,Insulation (Roof),992752.8216270609
+2042,MLT,Insulation (Floor),1000927.0426389069
+2042,MLT,Insulation (Basement),420970.6390925592
+2042,NLD,Insulation,0.0
+2042,NLD,Insulation (Exterior wall),122199570.14054003
+2042,NLD,Insulation (Roof),59970314.5447714
+2042,NLD,Insulation (Floor),27907604.691321038
+2042,NLD,Insulation (Basement),16140706.272486519
+2042,POL,Insulation,0.0
+2042,POL,Insulation (Exterior wall),139771919.50283748
+2042,POL,Insulation (Roof),72882677.25142361
+2042,POL,Insulation (Floor),35254803.05514351
+2042,POL,Insulation (Basement),16035440.136460409
+2042,PRT,Insulation,0.0
+2042,PRT,Insulation (Exterior wall),14286977.355447136
+2042,PRT,Insulation (Roof),8000258.770136383
+2042,PRT,Insulation (Floor),8879410.053865338
+2042,PRT,Insulation (Basement),2816113.9485764233
+2042,ROU,Insulation,0.0
+2042,ROU,Insulation (Exterior wall),66832100.571560815
+2042,ROU,Insulation (Roof),23566898.74595482
+2042,ROU,Insulation (Floor),12605910.80752543
+2042,ROU,Insulation (Basement),10538174.049161501
+2042,SVK,Insulation,0.0
+2042,SVK,Insulation (Exterior wall),11028384.613415247
+2042,SVK,Insulation (Roof),4444050.03158831
+2042,SVK,Insulation (Floor),2721625.1292306683
+2042,SVK,Insulation (Basement),1092698.605255029
+2042,SVN,Insulation,0.0
+2042,SVN,Insulation (Exterior wall),8640677.669247793
+2042,SVN,Insulation (Roof),3944872.6260357993
+2042,SVN,Insulation (Floor),1891782.206020035
+2042,SVN,Insulation (Basement),1140195.6897803403
+2042,SWE,Insulation,0.0
+2042,SWE,Insulation (Exterior wall),115421582.19451895
+2042,SWE,Insulation (Roof),45056457.4799305
+2042,SWE,Insulation (Floor),22752240.627207804
+2042,SWE,Insulation (Basement),25243401.374050602
+2043,AUT,Insulation,0.0
+2043,AUT,Insulation (Exterior wall),69316818.54047847
+2043,AUT,Insulation (Roof),27739569.539617673
+2043,AUT,Insulation (Floor),15777148.31374039
+2043,AUT,Insulation (Basement),8830772.741288248
+2043,BEL,Insulation,0.0
+2043,BEL,Insulation (Exterior wall),70895951.9808197
+2043,BEL,Insulation (Roof),29357731.507765207
+2043,BEL,Insulation (Floor),15688611.273907162
+2043,BEL,Insulation (Basement),9049089.884622263
+2043,BGR,Insulation,0.0
+2043,BGR,Insulation (Exterior wall),14218030.217808776
+2043,BGR,Insulation (Roof),9954364.234222999
+2043,BGR,Insulation (Floor),3824185.5618108413
+2043,BGR,Insulation (Basement),1279595.0376973043
+2043,CYP,Insulation,0.0
+2043,CYP,Insulation (Exterior wall),3895917.53782305
+2043,CYP,Insulation (Roof),1905246.1154445466
+2043,CYP,Insulation (Floor),1891684.8519208229
+2043,CYP,Insulation (Basement),798739.2828067489
+2043,CZE,Insulation,0.0
+2043,CZE,Insulation (Exterior wall),30563311.38487686
+2043,CZE,Insulation (Roof),12997324.33608402
+2043,CZE,Insulation (Floor),7128107.129605255
+2043,CZE,Insulation (Basement),3921290.1217688564
+2043,DEU,Insulation,0.0
+2043,DEU,Insulation (Exterior wall),438890130.43332434
+2043,DEU,Insulation (Roof),200652677.35445994
+2043,DEU,Insulation (Floor),115180742.51524556
+2043,DEU,Insulation (Basement),33217929.078693688
+2043,DNK,Insulation,0.0
+2043,DNK,Insulation (Exterior wall),0.0
+2043,DNK,Insulation (Roof),0.0
+2043,DNK,Insulation (Floor),0.0
+2043,DNK,Insulation (Basement),0.0
+2043,ESP,Insulation,0.0
+2043,ESP,Insulation (Exterior wall),150305420.082765
+2043,ESP,Insulation (Roof),89661168.24417765
+2043,ESP,Insulation (Floor),105877925.43315524
+2043,ESP,Insulation (Basement),34668605.25678323
+2043,EST,Insulation,0.0
+2043,EST,Insulation (Exterior wall),2208816.414178772
+2043,EST,Insulation (Roof),1955078.502867463
+2043,EST,Insulation (Floor),842271.8180562975
+2043,EST,Insulation (Basement),468436.0083136688
+2043,FIN,Insulation,0.0
+2043,FIN,Insulation (Exterior wall),13351595.346553031
+2043,FIN,Insulation (Roof),11598686.979530267
+2043,FIN,Insulation (Floor),5682546.24001711
+2043,FIN,Insulation (Basement),2727149.2827587365
+2043,FRA,Insulation,0.0
+2043,FRA,Insulation (Exterior wall),255539866.85156372
+2043,FRA,Insulation (Roof),132506336.15812986
+2043,FRA,Insulation (Floor),139006944.01632002
+2043,FRA,Insulation (Basement),52958034.92412409
+2043,GBR,Insulation,0.0
+2043,GBR,Insulation (Exterior wall),454092809.7035368
+2043,GBR,Insulation (Roof),191584977.4960322
+2043,GBR,Insulation (Floor),96342514.96453609
+2043,GBR,Insulation (Basement),64519545.23278364
+2043,GRC,Insulation,0.0
+2043,GRC,Insulation (Exterior wall),21252067.39663309
+2043,GRC,Insulation (Roof),11527892.934875568
+2043,GRC,Insulation (Floor),12467050.57515048
+2043,GRC,Insulation (Basement),4151288.697228064
+2043,HRV,Insulation,0.0
+2043,HRV,Insulation (Exterior wall),1347553.3453053588
+2043,HRV,Insulation (Roof),968067.4091532836
+2043,HRV,Insulation (Floor),1217901.4648799999
+2043,HRV,Insulation (Basement),157594.39062
+2043,HUN,Insulation,0.0
+2043,HUN,Insulation (Exterior wall),35395999.36427861
+2043,HUN,Insulation (Roof),19774497.22834882
+2043,HUN,Insulation (Floor),8752571.667483663
+2043,HUN,Insulation (Basement),3569354.4005798576
+2043,IRL,Insulation,0.0
+2043,IRL,Insulation (Exterior wall),29844536.26995697
+2043,IRL,Insulation (Roof),9935933.194471661
+2043,IRL,Insulation (Floor),5410002.895717595
+2043,IRL,Insulation (Basement),4356349.663317209
+2043,ITA,Insulation,0.0
+2043,ITA,Insulation (Exterior wall),256405751.38485652
+2043,ITA,Insulation (Roof),156228030.51573756
+2043,ITA,Insulation (Floor),187752661.19817492
+2043,ITA,Insulation (Basement),61289551.241157226
+2043,LTU,Insulation,0.0
+2043,LTU,Insulation (Exterior wall),4258673.78060148
+2043,LTU,Insulation (Roof),3837769.910488099
+2043,LTU,Insulation (Floor),1865909.2224335154
+2043,LTU,Insulation (Basement),912275.206585815
+2043,LUX,Insulation,0.0
+2043,LUX,Insulation (Exterior wall),9014729.989380434
+2043,LUX,Insulation (Roof),4079637.6550876903
+2043,LUX,Insulation (Floor),1954365.1148172475
+2043,LUX,Insulation (Basement),1327445.3270564224
+2043,LVA,Insulation,0.0
+2043,LVA,Insulation (Exterior wall),3072687.354427052
+2043,LVA,Insulation (Roof),4240207.890773934
+2043,LVA,Insulation (Floor),1529879.8824096955
+2043,LVA,Insulation (Basement),687754.6122089254
+2043,MLT,Insulation,0.0
+2043,MLT,Insulation (Exterior wall),2004833.1614853444
+2043,MLT,Insulation (Roof),992752.8216270609
+2043,MLT,Insulation (Floor),1000927.0426389069
+2043,MLT,Insulation (Basement),420970.6390925592
+2043,NLD,Insulation,0.0
+2043,NLD,Insulation (Exterior wall),122199570.14054003
+2043,NLD,Insulation (Roof),59970314.5447714
+2043,NLD,Insulation (Floor),27907604.691321038
+2043,NLD,Insulation (Basement),16140706.272486519
+2043,POL,Insulation,0.0
+2043,POL,Insulation (Exterior wall),139771919.50283748
+2043,POL,Insulation (Roof),72882677.25142361
+2043,POL,Insulation (Floor),35254803.05514351
+2043,POL,Insulation (Basement),16035440.136460409
+2043,PRT,Insulation,0.0
+2043,PRT,Insulation (Exterior wall),14286977.355447136
+2043,PRT,Insulation (Roof),8000258.770136383
+2043,PRT,Insulation (Floor),8879410.053865338
+2043,PRT,Insulation (Basement),2816113.9485764233
+2043,ROU,Insulation,0.0
+2043,ROU,Insulation (Exterior wall),66832100.57156082
+2043,ROU,Insulation (Roof),23566898.745954823
+2043,ROU,Insulation (Floor),12605910.80752543
+2043,ROU,Insulation (Basement),10538174.049161501
+2043,SVK,Insulation,0.0
+2043,SVK,Insulation (Exterior wall),11028384.614240322
+2043,SVK,Insulation (Roof),4444050.031835292
+2043,SVK,Insulation (Floor),2721625.129466668
+2043,SVK,Insulation (Basement),1092698.605255029
+2043,SVN,Insulation,0.0
+2043,SVN,Insulation (Exterior wall),8640677.668255579
+2043,SVN,Insulation (Roof),3944872.625668792
+2043,SVN,Insulation (Floor),1891782.2057342464
+2043,SVN,Insulation (Basement),1140195.6896516334
+2043,SWE,Insulation,0.0
+2043,SWE,Insulation (Exterior wall),115421582.20529297
+2043,SWE,Insulation (Roof),45056457.4799305
+2043,SWE,Insulation (Floor),22752240.627207804
+2043,SWE,Insulation (Basement),25243401.376254376
+2044,AUT,Insulation,0.0
+2044,AUT,Insulation (Exterior wall),69316818.54132874
+2044,AUT,Insulation (Roof),27739569.539841674
+2044,AUT,Insulation (Floor),15777148.31398039
+2044,AUT,Insulation (Basement),8830772.741288248
+2044,BEL,Insulation,0.0
+2044,BEL,Insulation (Exterior wall),70895951.97996943
+2044,BEL,Insulation (Roof),29357731.507541206
+2044,BEL,Insulation (Floor),15688611.273667162
+2044,BEL,Insulation (Basement),9049089.884622263
+2044,BGR,Insulation,0.0
+2044,BGR,Insulation (Exterior wall),14218030.218941715
+2044,BGR,Insulation (Roof),9954364.234479303
+2044,BGR,Insulation (Floor),3824185.5619689263
+2044,BGR,Insulation (Basement),1279595.0378973044
+2044,CYP,Insulation,0.0
+2044,CYP,Insulation (Exterior wall),3895917.537836512
+2044,CYP,Insulation (Roof),1905246.1154605465
+2044,CYP,Insulation (Floor),1891684.8519448228
+2044,CYP,Insulation (Basement),798739.2828067489
+2044,CZE,Insulation,0.0
+2044,CZE,Insulation (Exterior wall),30563311.384961884
+2044,CZE,Insulation (Roof),12997324.33610642
+2044,CZE,Insulation (Floor),7128107.129629255
+2044,CZE,Insulation (Basement),3921290.1217688564
+2044,DEU,Insulation,0.0
+2044,DEU,Insulation (Exterior wall),438890130.535357
+2044,DEU,Insulation (Roof),200652677.38133997
+2044,DEU,Insulation (Floor),115180742.5440456
+2044,DEU,Insulation (Basement),33217929.078693688
+2044,DNK,Insulation,0.0
+2044,DNK,Insulation (Exterior wall),0.0
+2044,DNK,Insulation (Roof),0.0
+2044,DNK,Insulation (Floor),0.0
+2044,DNK,Insulation (Basement),0.0
+2044,ESP,Insulation,0.0
+2044,ESP,Insulation (Exterior wall),150305420.082765
+2044,ESP,Insulation (Roof),89661168.24417765
+2044,ESP,Insulation (Floor),105877925.43315524
+2044,ESP,Insulation (Basement),34668605.25678323
+2044,EST,Insulation,0.0
+2044,EST,Insulation (Exterior wall),2208816.4141626474
+2044,EST,Insulation (Roof),1955078.5027868706
+2044,EST,Insulation (Floor),842271.8180216308
+2044,EST,Insulation (Basement),468436.00831216754
+2044,FIN,Insulation,0.0
+2044,FIN,Insulation (Exterior wall),13351595.346362775
+2044,FIN,Insulation (Roof),11598686.979441378
+2044,FIN,Insulation (Floor),5682546.239617109
+2044,FIN,Insulation (Basement),2727149.282736218
+2044,FRA,Insulation,0.0
+2044,FRA,Insulation (Exterior wall),255539866.85156372
+2044,FRA,Insulation (Roof),132506336.15812986
+2044,FRA,Insulation (Floor),139006944.01632002
+2044,FRA,Insulation (Basement),52958034.92412409
+2044,GBR,Insulation,0.0
+2044,GBR,Insulation (Exterior wall),454092809.7035368
+2044,GBR,Insulation (Roof),191584977.4960322
+2044,GBR,Insulation (Floor),96342514.96453609
+2044,GBR,Insulation (Basement),64519545.23278364
+2044,GRC,Insulation,0.0
+2044,GRC,Insulation (Exterior wall),21252067.396857467
+2044,GRC,Insulation (Roof),11527892.935142236
+2044,GRC,Insulation (Floor),12467050.57555048
+2044,GRC,Insulation (Basement),4151288.697228064
+2044,HRV,Insulation,0.0
+2044,HRV,Insulation (Exterior wall),1347553.3453188213
+2044,HRV,Insulation (Roof),968067.4091692836
+2044,HRV,Insulation (Floor),1217901.4649039998
+2044,HRV,Insulation (Basement),157594.39062
+2044,HUN,Insulation,0.0
+2044,HUN,Insulation (Exterior wall),35395999.363431245
+2044,HUN,Insulation (Roof),19774497.228049595
+2044,HUN,Insulation (Floor),8752571.667241875
+2044,HUN,Insulation (Basement),3569354.400451151
+2044,IRL,Insulation,0.0
+2044,IRL,Insulation (Exterior wall),29844536.26026539
+2044,IRL,Insulation (Roof),9935933.192386463
+2044,IRL,Insulation (Floor),5410002.894598538
+2044,IRL,Insulation (Basement),4356349.661445916
+2044,ITA,Insulation,0.0
+2044,ITA,Insulation (Exterior wall),256405751.38485652
+2044,ITA,Insulation (Roof),156228030.51573756
+2044,ITA,Insulation (Floor),187752661.19817492
+2044,ITA,Insulation (Basement),61289551.241157226
+2044,LTU,Insulation,0.0
+2044,LTU,Insulation (Exterior wall),4258673.780617604
+2044,LTU,Insulation (Roof),3837769.910344691
+2044,LTU,Insulation (Floor),1865909.222444182
+2044,LTU,Insulation (Basement),912275.2065873161
+2044,LUX,Insulation,0.0
+2044,LUX,Insulation (Exterior wall),9014729.990532245
+2044,LUX,Insulation (Roof),4079637.6555266827
+2044,LUX,Insulation (Floor),1954365.114999332
+2044,LUX,Insulation (Basement),1327445.3272564223
+2044,LVA,Insulation,0.0
+2044,LVA,Insulation (Exterior wall),3072687.354427052
+2044,LVA,Insulation (Roof),4240207.890773934
+2044,LVA,Insulation (Floor),1529879.8824096955
+2044,LVA,Insulation (Basement),687754.6122089254
+2044,MLT,Insulation,0.0
+2044,MLT,Insulation (Exterior wall),2004833.1614853444
+2044,MLT,Insulation (Roof),992752.8216270609
+2044,MLT,Insulation (Floor),1000927.0426389069
+2044,MLT,Insulation (Basement),420970.6390925592
+2044,NLD,Insulation,0.0
+2044,NLD,Insulation (Exterior wall),122199570.14054003
+2044,NLD,Insulation (Roof),59970314.5447714
+2044,NLD,Insulation (Floor),27907604.691321038
+2044,NLD,Insulation (Basement),16140706.272486519
+2044,POL,Insulation,0.0
+2044,POL,Insulation (Exterior wall),139771919.50283748
+2044,POL,Insulation (Roof),72882677.25142361
+2044,POL,Insulation (Floor),35254803.05514351
+2044,POL,Insulation (Basement),16035440.136460409
+2044,PRT,Insulation,0.0
+2044,PRT,Insulation (Exterior wall),14286977.355433673
+2044,PRT,Insulation (Roof),8000258.770120383
+2044,PRT,Insulation (Floor),8879410.053841338
+2044,PRT,Insulation (Basement),2816113.9485764233
+2044,ROU,Insulation,0.0
+2044,ROU,Insulation (Exterior wall),66832100.57241109
+2044,ROU,Insulation (Roof),23566898.74617882
+2044,ROU,Insulation (Floor),12605910.80776543
+2044,ROU,Insulation (Basement),10538174.049161501
+2044,SVK,Insulation,0.0
+2044,SVK,Insulation (Exterior wall),11028384.61247995
+2044,SVK,Insulation (Roof),4444050.03134191
+2044,SVK,Insulation (Floor),2721625.128966668
+2044,SVK,Insulation (Basement),1092698.605255029
+2044,SVN,Insulation,0.0
+2044,SVN,Insulation (Exterior wall),8640677.668485465
+2044,SVN,Insulation (Roof),3944872.625758974
+2044,SVN,Insulation (Floor),1891782.2058022465
+2044,SVN,Insulation (Basement),1140195.6896516334
+2044,SWE,Insulation,0.0
+2044,SWE,Insulation (Exterior wall),115421582.19451895
+2044,SWE,Insulation (Roof),45056457.4799305
+2044,SWE,Insulation (Floor),22752240.627207804
+2044,SWE,Insulation (Basement),25243401.374050602
+2045,AUT,Insulation,0.0
+2045,AUT,Insulation (Exterior wall),69316818.54132874
+2045,AUT,Insulation (Roof),27739569.539841674
+2045,AUT,Insulation (Floor),15777148.31398039
+2045,AUT,Insulation (Basement),8830772.741288248
+2045,BEL,Insulation,0.0
+2045,BEL,Insulation (Exterior wall),70895951.9808197
+2045,BEL,Insulation (Roof),29357731.507765207
+2045,BEL,Insulation (Floor),15688611.273907162
+2045,BEL,Insulation (Basement),9049089.884622263
+2045,BGR,Insulation,0.0
+2045,BGR,Insulation (Exterior wall),14218030.218941715
+2045,BGR,Insulation (Roof),9954364.234479303
+2045,BGR,Insulation (Floor),3824185.5619689263
+2045,BGR,Insulation (Basement),1279595.0378973044
+2045,CYP,Insulation,0.0
+2045,CYP,Insulation (Exterior wall),3895917.537836512
+2045,CYP,Insulation (Roof),1905246.1154605465
+2045,CYP,Insulation (Floor),1891684.8519448228
+2045,CYP,Insulation (Basement),798739.2828067489
+2045,CZE,Insulation,0.0
+2045,CZE,Insulation (Exterior wall),30563311.38487686
+2045,CZE,Insulation (Roof),12997324.33608402
+2045,CZE,Insulation (Floor),7128107.129605255
+2045,CZE,Insulation (Basement),3921290.1217688564
+2045,DEU,Insulation,0.0
+2045,DEU,Insulation (Exterior wall),438890130.5268543
+2045,DEU,Insulation (Roof),200652677.37909997
+2045,DEU,Insulation (Floor),115180742.54164559
+2045,DEU,Insulation (Basement),33217929.078693688
+2045,DNK,Insulation,0.0
+2045,DNK,Insulation (Exterior wall),0.0
+2045,DNK,Insulation (Roof),0.0
+2045,DNK,Insulation (Floor),0.0
+2045,DNK,Insulation (Basement),0.0
+2045,ESP,Insulation,0.0
+2045,ESP,Insulation (Exterior wall),150305420.082765
+2045,ESP,Insulation (Roof),89661168.24417765
+2045,ESP,Insulation (Floor),105877925.43315524
+2045,ESP,Insulation (Basement),34668605.25678323
+2045,EST,Insulation,0.0
+2045,EST,Insulation (Exterior wall),2208816.4140618597
+2045,EST,Insulation (Roof),1955078.5028072782
+2045,EST,Insulation (Floor),842271.8180403911
+2045,EST,Insulation (Basement),468436.00828424643
+2045,FIN,Insulation,0.0
+2045,FIN,Insulation (Exterior wall),13351595.346553031
+2045,FIN,Insulation (Roof),11598686.979530267
+2045,FIN,Insulation (Floor),5682546.24001711
+2045,FIN,Insulation (Basement),2727149.2827587365
+2045,FRA,Insulation,0.0
+2045,FRA,Insulation (Exterior wall),255539866.85156372
+2045,FRA,Insulation (Roof),132506336.15812986
+2045,FRA,Insulation (Floor),139006944.01632002
+2045,FRA,Insulation (Basement),52958034.92412409
+2045,GBR,Insulation,0.0
+2045,GBR,Insulation (Exterior wall),454092809.7035368
+2045,GBR,Insulation (Roof),191584977.4960322
+2045,GBR,Insulation (Floor),96342514.96453609
+2045,GBR,Insulation (Basement),64519545.23278364
+2045,GRC,Insulation,0.0
+2045,GRC,Insulation (Exterior wall),21252067.396857467
+2045,GRC,Insulation (Roof),11527892.935142236
+2045,GRC,Insulation (Floor),12467050.57555048
+2045,GRC,Insulation (Basement),4151288.697228064
+2045,HRV,Insulation,0.0
+2045,HRV,Insulation (Exterior wall),1347553.3453053588
+2045,HRV,Insulation (Roof),968067.4091532836
+2045,HRV,Insulation (Floor),1217901.4648799999
+2045,HRV,Insulation (Basement),157594.39062
+2045,HUN,Insulation,0.0
+2045,HUN,Insulation (Exterior wall),35395999.36427861
+2045,HUN,Insulation (Roof),19774497.22834882
+2045,HUN,Insulation (Floor),8752571.667483663
+2045,HUN,Insulation (Basement),3569354.4005798576
+2045,IRL,Insulation,0.0
+2045,IRL,Insulation (Exterior wall),29844536.27080724
+2045,IRL,Insulation (Roof),9935933.194695663
+2045,IRL,Insulation (Floor),5410002.895957595
+2045,IRL,Insulation (Basement),4356349.663317209
+2045,ITA,Insulation,0.0
+2045,ITA,Insulation (Exterior wall),256405751.38485652
+2045,ITA,Insulation (Roof),156228030.51573756
+2045,ITA,Insulation (Floor),187752661.19817492
+2045,ITA,Insulation (Basement),61289551.241157226
+2045,LTU,Insulation,0.0
+2045,LTU,Insulation (Exterior wall),4258673.78060148
+2045,LTU,Insulation (Roof),3837769.910488099
+2045,LTU,Insulation (Floor),1865909.2224335154
+2045,LTU,Insulation (Basement),912275.206585815
+2045,LUX,Insulation,0.0
+2045,LUX,Insulation (Exterior wall),9014729.990513371
+2045,LUX,Insulation (Roof),4079637.6553439945
+2045,LUX,Insulation (Floor),1954365.114975332
+2045,LUX,Insulation (Basement),1327445.3272564223
+2045,LVA,Insulation,0.0
+2045,LVA,Insulation (Exterior wall),3072687.354427052
+2045,LVA,Insulation (Roof),4240207.888533934
+2045,LVA,Insulation (Floor),1529879.8821696956
+2045,LVA,Insulation (Basement),687754.6122089254
+2045,MLT,Insulation,0.0
+2045,MLT,Insulation (Exterior wall),2004833.1614853444
+2045,MLT,Insulation (Roof),992752.8216270609
+2045,MLT,Insulation (Floor),1000927.0426389069
+2045,MLT,Insulation (Basement),420970.6390925592
+2045,NLD,Insulation,0.0
+2045,NLD,Insulation (Exterior wall),122199570.13968974
+2045,NLD,Insulation (Roof),59970314.544547394
+2045,NLD,Insulation (Floor),27907604.69108104
+2045,NLD,Insulation (Basement),16140706.272486519
+2045,POL,Insulation,0.0
+2045,POL,Insulation (Exterior wall),139771919.50283748
+2045,POL,Insulation (Roof),72882677.25142361
+2045,POL,Insulation (Floor),35254803.05514351
+2045,POL,Insulation (Basement),16035440.136460409
+2045,PRT,Insulation,0.0
+2045,PRT,Insulation (Exterior wall),14286977.355433673
+2045,PRT,Insulation (Roof),8000258.770120383
+2045,PRT,Insulation (Floor),8879410.053841338
+2045,PRT,Insulation (Basement),2816113.9485764233
+2045,ROU,Insulation,0.0
+2045,ROU,Insulation (Exterior wall),66832100.57241109
+2045,ROU,Insulation (Roof),23566898.74617882
+2045,ROU,Insulation (Floor),12605910.80776543
+2045,ROU,Insulation (Basement),10538174.049161501
+2045,SVK,Insulation,0.0
+2045,SVK,Insulation (Exterior wall),11028384.614180492
+2045,SVK,Insulation (Roof),4444050.03178991
+2045,SVK,Insulation (Floor),2721625.129446668
+2045,SVK,Insulation (Basement),1092698.605255029
+2045,SVN,Insulation,0.0
+2045,SVN,Insulation (Exterior wall),8640677.669247793
+2045,SVN,Insulation (Roof),3944872.6260357993
+2045,SVN,Insulation (Floor),1891782.206020035
+2045,SVN,Insulation (Basement),1140195.6897803403
+2045,SWE,Insulation,0.0
+2045,SWE,Insulation (Exterior wall),115421582.19451895
+2045,SWE,Insulation (Roof),45056457.4799305
+2045,SWE,Insulation (Floor),22752240.627207804
+2045,SWE,Insulation (Basement),25243401.374050602
+2046,AUT,Insulation,0.0
+2046,AUT,Insulation (Exterior wall),69316818.54047847
+2046,AUT,Insulation (Roof),27739569.539617673
+2046,AUT,Insulation (Floor),15777148.31374039
+2046,AUT,Insulation (Basement),8830772.741288248
+2046,BEL,Insulation,0.0
+2046,BEL,Insulation (Exterior wall),70895951.9808197
+2046,BEL,Insulation (Roof),29357731.507765207
+2046,BEL,Insulation (Floor),15688611.273907162
+2046,BEL,Insulation (Basement),9049089.884622263
+2046,BGR,Insulation,0.0
+2046,BGR,Insulation (Exterior wall),14218030.218941715
+2046,BGR,Insulation (Roof),9954364.234479303
+2046,BGR,Insulation (Floor),3824185.5619689263
+2046,BGR,Insulation (Basement),1279595.0378973044
+2046,CYP,Insulation,0.0
+2046,CYP,Insulation (Exterior wall),3895917.537836512
+2046,CYP,Insulation (Roof),1905246.1154605465
+2046,CYP,Insulation (Floor),1891684.8519448228
+2046,CYP,Insulation (Basement),798739.2828067489
+2046,CZE,Insulation,0.0
+2046,CZE,Insulation (Exterior wall),30563311.384026587
+2046,CZE,Insulation (Roof),12997324.33586002
+2046,CZE,Insulation (Floor),7128107.129365255
+2046,CZE,Insulation (Basement),3921290.1217688564
+2046,DEU,Insulation,0.0
+2046,DEU,Insulation (Exterior wall),438890130.535357
+2046,DEU,Insulation (Roof),200652677.38133997
+2046,DEU,Insulation (Floor),115180742.5440456
+2046,DEU,Insulation (Basement),33217929.078693688
+2046,DNK,Insulation,0.0
+2046,DNK,Insulation (Exterior wall),0.0
+2046,DNK,Insulation (Roof),0.0
+2046,DNK,Insulation (Floor),0.0
+2046,DNK,Insulation (Basement),0.0
+2046,ESP,Insulation,0.0
+2046,ESP,Insulation (Exterior wall),150305420.082765
+2046,ESP,Insulation (Roof),89661168.24417765
+2046,ESP,Insulation (Floor),105877925.43315524
+2046,ESP,Insulation (Basement),34668605.25678323
+2046,EST,Insulation,0.0
+2046,EST,Insulation (Exterior wall),2208816.4140618597
+2046,EST,Insulation (Roof),1955078.5028072782
+2046,EST,Insulation (Floor),842271.8180403911
+2046,EST,Insulation (Basement),468436.00828424643
+2046,FIN,Insulation,0.0
+2046,FIN,Insulation (Exterior wall),13351595.346391786
+2046,FIN,Insulation (Roof),11598686.978724342
+2046,FIN,Insulation (Floor),5682546.239670442
+2046,FIN,Insulation (Basement),2727149.2827437245
+2046,FRA,Insulation,0.0
+2046,FRA,Insulation (Exterior wall),255539866.85156372
+2046,FRA,Insulation (Roof),132506336.15812986
+2046,FRA,Insulation (Floor),139006944.01632002
+2046,FRA,Insulation (Basement),52958034.92412409
+2046,GBR,Insulation,0.0
+2046,GBR,Insulation (Exterior wall),454092809.7035368
+2046,GBR,Insulation (Roof),191584977.4960322
+2046,GBR,Insulation (Floor),96342514.96453609
+2046,GBR,Insulation (Basement),64519545.23278364
+2046,GRC,Insulation,0.0
+2046,GRC,Insulation (Exterior wall),21252067.39663309
+2046,GRC,Insulation (Roof),11527892.934875568
+2046,GRC,Insulation (Floor),12467050.57515048
+2046,GRC,Insulation (Basement),4151288.697228064
+2046,HRV,Insulation,0.0
+2046,HRV,Insulation (Exterior wall),1347553.3453188213
+2046,HRV,Insulation (Roof),968067.4091692836
+2046,HRV,Insulation (Floor),1217901.4649039998
+2046,HRV,Insulation (Basement),157594.39062
+2046,HUN,Insulation,0.0
+2046,HUN,Insulation (Exterior wall),35395999.363431245
+2046,HUN,Insulation (Roof),19774497.228049595
+2046,HUN,Insulation (Floor),8752571.667241875
+2046,HUN,Insulation (Basement),3569354.400451151
+2046,IRL,Insulation,0.0
+2046,IRL,Insulation (Exterior wall),29844536.270722214
+2046,IRL,Insulation (Roof),9935933.194673263
+2046,IRL,Insulation (Floor),5410002.895933595
+2046,IRL,Insulation (Basement),4356349.663317209
+2046,ITA,Insulation,0.0
+2046,ITA,Insulation (Exterior wall),256405751.38485652
+2046,ITA,Insulation (Roof),156228030.51573756
+2046,ITA,Insulation (Floor),187752661.19817492
+2046,ITA,Insulation (Basement),61289551.241157226
+2046,LTU,Insulation,0.0
+2046,LTU,Insulation (Exterior wall),4258673.78060148
+2046,LTU,Insulation (Roof),3837769.910264099
+2046,LTU,Insulation (Floor),1865909.2224095154
+2046,LTU,Insulation (Basement),912275.206585815
+2046,LUX,Insulation,0.0
+2046,LUX,Insulation (Exterior wall),9014729.989399308
+2046,LUX,Insulation (Roof),4079637.6552703786
+2046,LUX,Insulation (Floor),1954365.1148412474
+2046,LUX,Insulation (Basement),1327445.3270564224
+2046,LVA,Insulation,0.0
+2046,LVA,Insulation (Exterior wall),3072687.354427052
+2046,LVA,Insulation (Roof),4240207.888533934
+2046,LVA,Insulation (Floor),1529879.8821696956
+2046,LVA,Insulation (Basement),687754.6122089254
+2046,MLT,Insulation,0.0
+2046,MLT,Insulation (Exterior wall),2004833.1614853444
+2046,MLT,Insulation (Roof),992752.8216270609
+2046,MLT,Insulation (Floor),1000927.0426389069
+2046,MLT,Insulation (Basement),420970.6390925592
+2046,NLD,Insulation,0.0
+2046,NLD,Insulation (Exterior wall),122199570.14054003
+2046,NLD,Insulation (Roof),59970314.5447714
+2046,NLD,Insulation (Floor),27907604.691321038
+2046,NLD,Insulation (Basement),16140706.272486519
+2046,POL,Insulation,0.0
+2046,POL,Insulation (Exterior wall),139771919.50283748
+2046,POL,Insulation (Roof),72882677.25142361
+2046,POL,Insulation (Floor),35254803.05514351
+2046,POL,Insulation (Basement),16035440.136460409
+2046,PRT,Insulation,0.0
+2046,PRT,Insulation (Exterior wall),14286977.355433673
+2046,PRT,Insulation (Roof),8000258.770120383
+2046,PRT,Insulation (Floor),8879410.053841338
+2046,PRT,Insulation (Basement),2816113.9485764233
+2046,ROU,Insulation,0.0
+2046,ROU,Insulation (Exterior wall),66832100.57241109
+2046,ROU,Insulation (Roof),23566898.74617882
+2046,ROU,Insulation (Floor),12605910.80776543
+2046,ROU,Insulation (Basement),10538174.049161501
+2046,SVK,Insulation,0.0
+2046,SVK,Insulation (Exterior wall),11028384.614180492
+2046,SVK,Insulation (Roof),4444050.03178991
+2046,SVK,Insulation (Floor),2721625.129446668
+2046,SVK,Insulation (Basement),1092698.605255029
+2046,SVN,Insulation,0.0
+2046,SVN,Insulation (Exterior wall),8640677.66933282
+2046,SVN,Insulation (Roof),3944872.6260581994
+2046,SVN,Insulation (Floor),1891782.206044035
+2046,SVN,Insulation (Basement),1140195.6897803403
+2046,SWE,Insulation,0.0
+2046,SWE,Insulation (Exterior wall),115421582.19451895
+2046,SWE,Insulation (Roof),45056457.4799305
+2046,SWE,Insulation (Floor),22752240.627207804
+2046,SWE,Insulation (Basement),25243401.374050602
+2047,AUT,Insulation,0.0
+2047,AUT,Insulation (Exterior wall),69316818.54132874
+2047,AUT,Insulation (Roof),27739569.539841674
+2047,AUT,Insulation (Floor),15777148.31398039
+2047,AUT,Insulation (Basement),8830772.741288248
+2047,BEL,Insulation,0.0
+2047,BEL,Insulation (Exterior wall),70895951.97911915
+2047,BEL,Insulation (Roof),29357731.507317204
+2047,BEL,Insulation (Floor),15688611.273427162
+2047,BEL,Insulation (Basement),9049089.884622263
+2047,BGR,Insulation,0.0
+2047,BGR,Insulation (Exterior wall),14218030.217808776
+2047,BGR,Insulation (Roof),9954364.234222999
+2047,BGR,Insulation (Floor),3824185.5618108413
+2047,BGR,Insulation (Basement),1279595.0376973043
+2047,CYP,Insulation,0.0
+2047,CYP,Insulation (Exterior wall),3895917.537836512
+2047,CYP,Insulation (Roof),1905246.1154605465
+2047,CYP,Insulation (Floor),1891684.8519448228
+2047,CYP,Insulation (Basement),798739.2828067489
+2047,CZE,Insulation,0.0
+2047,CZE,Insulation (Exterior wall),30563311.384961884
+2047,CZE,Insulation (Roof),12997324.33610642
+2047,CZE,Insulation (Floor),7128107.129629255
+2047,CZE,Insulation (Basement),3921290.1217688564
+2047,DEU,Insulation,0.0
+2047,DEU,Insulation (Exterior wall),438890130.535357
+2047,DEU,Insulation (Roof),200652677.38133997
+2047,DEU,Insulation (Floor),115180742.5440456
+2047,DEU,Insulation (Basement),33217929.078693688
+2047,DNK,Insulation,0.0
+2047,DNK,Insulation (Exterior wall),0.0
+2047,DNK,Insulation (Roof),0.0
+2047,DNK,Insulation (Floor),0.0
+2047,DNK,Insulation (Basement),0.0
+2047,ESP,Insulation,0.0
+2047,ESP,Insulation (Exterior wall),150305420.082765
+2047,ESP,Insulation (Roof),89661168.24417765
+2047,ESP,Insulation (Floor),105877925.43315524
+2047,ESP,Insulation (Basement),34668605.25678323
+2047,EST,Insulation,0.0
+2047,EST,Insulation (Exterior wall),2208816.4140457353
+2047,EST,Insulation (Roof),1955078.5027266857
+2047,EST,Insulation (Floor),842271.8180057243
+2047,EST,Insulation (Basement),468436.0082827452
+2047,FIN,Insulation,0.0
+2047,FIN,Insulation (Exterior wall),13351595.346362775
+2047,FIN,Insulation (Roof),11598686.979441378
+2047,FIN,Insulation (Floor),5682546.239617109
+2047,FIN,Insulation (Basement),2727149.282736218
+2047,FRA,Insulation,0.0
+2047,FRA,Insulation (Exterior wall),255539866.85156372
+2047,FRA,Insulation (Roof),132506336.15812986
+2047,FRA,Insulation (Floor),139006944.01632002
+2047,FRA,Insulation (Basement),52958034.92412409
+2047,GBR,Insulation,0.0
+2047,GBR,Insulation (Exterior wall),454092809.7035368
+2047,GBR,Insulation (Roof),191584977.4960322
+2047,GBR,Insulation (Floor),96342514.96453609
+2047,GBR,Insulation (Basement),64519545.23278364
+2047,GRC,Insulation,0.0
+2047,GRC,Insulation (Exterior wall),21252067.396857467
+2047,GRC,Insulation (Roof),11527892.935142236
+2047,GRC,Insulation (Floor),12467050.57555048
+2047,GRC,Insulation (Basement),4151288.697228064
+2047,HRV,Insulation,0.0
+2047,HRV,Insulation (Exterior wall),1347553.3453188213
+2047,HRV,Insulation (Roof),968067.4091692836
+2047,HRV,Insulation (Floor),1217901.4649039998
+2047,HRV,Insulation (Basement),157594.39062
+2047,HUN,Insulation,0.0
+2047,HUN,Insulation (Exterior wall),35395999.36427861
+2047,HUN,Insulation (Roof),19774497.22834882
+2047,HUN,Insulation (Floor),8752571.667483663
+2047,HUN,Insulation (Basement),3569354.4005798576
+2047,IRL,Insulation,0.0
+2047,IRL,Insulation (Exterior wall),29844536.259389926
+2047,IRL,Insulation (Roof),9935933.192185445
+2047,IRL,Insulation (Floor),5410002.894354537
+2047,IRL,Insulation (Basement),4356349.661445916
+2047,ITA,Insulation,0.0
+2047,ITA,Insulation (Exterior wall),256405751.38485652
+2047,ITA,Insulation (Roof),156228030.51573756
+2047,ITA,Insulation (Floor),187752661.19817492
+2047,ITA,Insulation (Basement),61289551.241157226
+2047,LTU,Insulation,0.0
+2047,LTU,Insulation (Exterior wall),4258673.780617604
+2047,LTU,Insulation (Roof),3837769.910344691
+2047,LTU,Insulation (Floor),1865909.222444182
+2047,LTU,Insulation (Basement),912275.2065873161
+2047,LUX,Insulation,0.0
+2047,LUX,Insulation (Exterior wall),9014729.990513371
+2047,LUX,Insulation (Roof),4079637.6553439945
+2047,LUX,Insulation (Floor),1954365.114975332
+2047,LUX,Insulation (Basement),1327445.3272564223
+2047,LVA,Insulation,0.0
+2047,LVA,Insulation (Exterior wall),3072687.354427052
+2047,LVA,Insulation (Roof),4240207.890773934
+2047,LVA,Insulation (Floor),1529879.8824096955
+2047,LVA,Insulation (Basement),687754.6122089254
+2047,MLT,Insulation,0.0
+2047,MLT,Insulation (Exterior wall),2004833.1614853444
+2047,MLT,Insulation (Roof),992752.8216270609
+2047,MLT,Insulation (Floor),1000927.0426389069
+2047,MLT,Insulation (Basement),420970.6390925592
+2047,NLD,Insulation,0.0
+2047,NLD,Insulation (Exterior wall),122199570.14054003
+2047,NLD,Insulation (Roof),59970314.5447714
+2047,NLD,Insulation (Floor),27907604.691321038
+2047,NLD,Insulation (Basement),16140706.272486519
+2047,POL,Insulation,0.0
+2047,POL,Insulation (Exterior wall),139771919.50283748
+2047,POL,Insulation (Roof),72882677.25142361
+2047,POL,Insulation (Floor),35254803.05514351
+2047,POL,Insulation (Basement),16035440.136460409
+2047,PRT,Insulation,0.0
+2047,PRT,Insulation (Exterior wall),14286977.355447136
+2047,PRT,Insulation (Roof),8000258.770136383
+2047,PRT,Insulation (Floor),8879410.053865338
+2047,PRT,Insulation (Basement),2816113.9485764233
+2047,ROU,Insulation,0.0
+2047,ROU,Insulation (Exterior wall),66832100.571560815
+2047,ROU,Insulation (Roof),23566898.74595482
+2047,ROU,Insulation (Floor),12605910.80752543
+2047,ROU,Insulation (Basement),10538174.049161501
+2047,SVK,Insulation,0.0
+2047,SVK,Insulation (Exterior wall),11028384.613475077
+2047,SVK,Insulation (Roof),4444050.031633692
+2047,SVK,Insulation (Floor),2721625.129250668
+2047,SVK,Insulation (Basement),1092698.605255029
+2047,SVN,Insulation,0.0
+2047,SVN,Insulation (Exterior wall),8640677.668255579
+2047,SVN,Insulation (Roof),3944872.625668792
+2047,SVN,Insulation (Floor),1891782.2057342464
+2047,SVN,Insulation (Basement),1140195.6896516334
+2047,SWE,Insulation,0.0
+2047,SWE,Insulation (Exterior wall),115421582.20529297
+2047,SWE,Insulation (Roof),45056457.4799305
+2047,SWE,Insulation (Floor),22752240.627207804
+2047,SWE,Insulation (Basement),25243401.376254376
+2048,AUT,Insulation,0.0
+2048,AUT,Insulation (Exterior wall),69316818.54047847
+2048,AUT,Insulation (Roof),27739569.539617673
+2048,AUT,Insulation (Floor),15777148.31374039
+2048,AUT,Insulation (Basement),8830772.741288248
+2048,BEL,Insulation,0.0
+2048,BEL,Insulation (Exterior wall),70895951.9808197
+2048,BEL,Insulation (Roof),29357731.507765207
+2048,BEL,Insulation (Floor),15688611.273907162
+2048,BEL,Insulation (Basement),9049089.884622263
+2048,BGR,Insulation,0.0
+2048,BGR,Insulation (Exterior wall),14218030.218941715
+2048,BGR,Insulation (Roof),9954364.234479303
+2048,BGR,Insulation (Floor),3824185.5619689263
+2048,BGR,Insulation (Basement),1279595.0378973044
+2048,CYP,Insulation,0.0
+2048,CYP,Insulation (Exterior wall),3895917.537836512
+2048,CYP,Insulation (Roof),1905246.1154605465
+2048,CYP,Insulation (Floor),1891684.8519448228
+2048,CYP,Insulation (Basement),798739.2828067489
+2048,CZE,Insulation,0.0
+2048,CZE,Insulation (Exterior wall),30563311.384961884
+2048,CZE,Insulation (Roof),12997324.33610642
+2048,CZE,Insulation (Floor),7128107.129629255
+2048,CZE,Insulation (Basement),3921290.1217688564
+2048,DEU,Insulation,0.0
+2048,DEU,Insulation (Exterior wall),438890130.51835155
+2048,DEU,Insulation (Roof),200652677.37685996
+2048,DEU,Insulation (Floor),115180742.53924558
+2048,DEU,Insulation (Basement),33217929.078693688
+2048,DNK,Insulation,0.0
+2048,DNK,Insulation (Exterior wall),0.0
+2048,DNK,Insulation (Roof),0.0
+2048,DNK,Insulation (Floor),0.0
+2048,DNK,Insulation (Basement),0.0
+2048,ESP,Insulation,0.0
+2048,ESP,Insulation (Exterior wall),150305420.082765
+2048,ESP,Insulation (Roof),89661168.24417765
+2048,ESP,Insulation (Floor),105877925.43315524
+2048,ESP,Insulation (Basement),34668605.25678323
+2048,EST,Insulation,0.0
+2048,EST,Insulation (Exterior wall),2208816.4140618597
+2048,EST,Insulation (Roof),1955078.5028072782
+2048,EST,Insulation (Floor),842271.8180403911
+2048,EST,Insulation (Basement),468436.00828424643
+2048,FIN,Insulation,0.0
+2048,FIN,Insulation (Exterior wall),13351595.34620153
+2048,FIN,Insulation (Roof),11598686.978635453
+2048,FIN,Insulation (Floor),5682546.239270442
+2048,FIN,Insulation (Basement),2727149.282721206
+2048,FRA,Insulation,0.0
+2048,FRA,Insulation (Exterior wall),255539866.85156372
+2048,FRA,Insulation (Roof),132506336.15812986
+2048,FRA,Insulation (Floor),139006944.01632002
+2048,FRA,Insulation (Basement),52958034.92412409
+2048,GBR,Insulation,0.0
+2048,GBR,Insulation (Exterior wall),454092809.7035368
+2048,GBR,Insulation (Roof),191584977.4960322
+2048,GBR,Insulation (Floor),96342514.96453609
+2048,GBR,Insulation (Basement),64519545.23278364
+2048,GRC,Insulation,0.0
+2048,GRC,Insulation (Exterior wall),21252067.396767713
+2048,GRC,Insulation (Roof),11527892.935035568
+2048,GRC,Insulation (Floor),12467050.57539048
+2048,GRC,Insulation (Basement),4151288.697228064
+2048,HRV,Insulation,0.0
+2048,HRV,Insulation (Exterior wall),1347553.3453188213
+2048,HRV,Insulation (Roof),968067.4091692836
+2048,HRV,Insulation (Floor),1217901.4649039998
+2048,HRV,Insulation (Basement),157594.39062
+2048,HUN,Insulation,0.0
+2048,HUN,Insulation (Exterior wall),35395999.363431245
+2048,HUN,Insulation (Roof),19774497.228049595
+2048,HUN,Insulation (Floor),8752571.667241875
+2048,HUN,Insulation (Basement),3569354.400451151
+2048,IRL,Insulation,0.0
+2048,IRL,Insulation (Exterior wall),29844536.269897137
+2048,IRL,Insulation (Roof),9935933.19442628
+2048,IRL,Insulation (Floor),5410002.895697596
+2048,IRL,Insulation (Basement),4356349.663317209
+2048,ITA,Insulation,0.0
+2048,ITA,Insulation (Exterior wall),256405751.38485652
+2048,ITA,Insulation (Roof),156228030.51573756
+2048,ITA,Insulation (Floor),187752661.19817492
+2048,ITA,Insulation (Basement),61289551.241157226
+2048,LTU,Insulation,0.0
+2048,LTU,Insulation (Exterior wall),4258673.780617604
+2048,LTU,Insulation (Roof),3837769.910568691
+2048,LTU,Insulation (Floor),1865909.222468182
+2048,LTU,Insulation (Basement),912275.2065873161
+2048,LUX,Insulation,0.0
+2048,LUX,Insulation (Exterior wall),9014729.989380434
+2048,LUX,Insulation (Roof),4079637.6550876903
+2048,LUX,Insulation (Floor),1954365.1148172475
+2048,LUX,Insulation (Basement),1327445.3270564224
+2048,LVA,Insulation,0.0
+2048,LVA,Insulation (Exterior wall),3072687.354427052
+2048,LVA,Insulation (Roof),4240207.890773934
+2048,LVA,Insulation (Floor),1529879.8824096955
+2048,LVA,Insulation (Basement),687754.6122089254
+2048,MLT,Insulation,0.0
+2048,MLT,Insulation (Exterior wall),2004833.1614853444
+2048,MLT,Insulation (Roof),992752.8216270609
+2048,MLT,Insulation (Floor),1000927.0426389069
+2048,MLT,Insulation (Basement),420970.6390925592
+2048,NLD,Insulation,0.0
+2048,NLD,Insulation (Exterior wall),122199570.13968974
+2048,NLD,Insulation (Roof),59970314.544547394
+2048,NLD,Insulation (Floor),27907604.69108104
+2048,NLD,Insulation (Basement),16140706.272486519
+2048,POL,Insulation,0.0
+2048,POL,Insulation (Exterior wall),139771919.50283748
+2048,POL,Insulation (Roof),72882677.25142361
+2048,POL,Insulation (Floor),35254803.05514351
+2048,POL,Insulation (Basement),16035440.136460409
+2048,PRT,Insulation,0.0
+2048,PRT,Insulation (Exterior wall),14286977.355447136
+2048,PRT,Insulation (Roof),8000258.770136383
+2048,PRT,Insulation (Floor),8879410.053865338
+2048,PRT,Insulation (Basement),2816113.9485764233
+2048,ROU,Insulation,0.0
+2048,ROU,Insulation (Exterior wall),66832100.57241109
+2048,ROU,Insulation (Roof),23566898.74617882
+2048,ROU,Insulation (Floor),12605910.80776543
+2048,ROU,Insulation (Basement),10538174.049161501
+2048,SVK,Insulation,0.0
+2048,SVK,Insulation (Exterior wall),11028384.614240322
+2048,SVK,Insulation (Roof),4444050.031835292
+2048,SVK,Insulation (Floor),2721625.129466668
+2048,SVK,Insulation (Basement),1092698.605255029
+2048,SVN,Insulation,0.0
+2048,SVN,Insulation (Exterior wall),8640677.669247793
+2048,SVN,Insulation (Roof),3944872.6260357993
+2048,SVN,Insulation (Floor),1891782.206020035
+2048,SVN,Insulation (Basement),1140195.6897803403
+2048,SWE,Insulation,0.0
+2048,SWE,Insulation (Exterior wall),115421582.19451895
+2048,SWE,Insulation (Roof),45056457.4799305
+2048,SWE,Insulation (Floor),22752240.627207804
+2048,SWE,Insulation (Basement),25243401.374050602
+2049,AUT,Insulation,0.0
+2049,AUT,Insulation (Exterior wall),69316818.54132874
+2049,AUT,Insulation (Roof),27739569.539841674
+2049,AUT,Insulation (Floor),15777148.31398039
+2049,AUT,Insulation (Basement),8830772.741288248
+2049,BEL,Insulation,0.0
+2049,BEL,Insulation (Exterior wall),70895951.9808197
+2049,BEL,Insulation (Roof),29357731.507765207
+2049,BEL,Insulation (Floor),15688611.273907162
+2049,BEL,Insulation (Basement),9049089.884622263
+2049,BGR,Insulation,0.0
+2049,BGR,Insulation (Exterior wall),14218030.217808776
+2049,BGR,Insulation (Roof),9954364.234222999
+2049,BGR,Insulation (Floor),3824185.5618108413
+2049,BGR,Insulation (Basement),1279595.0376973043
+2049,CYP,Insulation,0.0
+2049,CYP,Insulation (Exterior wall),3895917.537836512
+2049,CYP,Insulation (Roof),1905246.1154605465
+2049,CYP,Insulation (Floor),1891684.8519448228
+2049,CYP,Insulation (Basement),798739.2828067489
+2049,CZE,Insulation,0.0
+2049,CZE,Insulation (Exterior wall),30563311.384961884
+2049,CZE,Insulation (Roof),12997324.33610642
+2049,CZE,Insulation (Floor),7128107.129629255
+2049,CZE,Insulation (Basement),3921290.1217688564
+2049,DEU,Insulation,0.0
+2049,DEU,Insulation (Exterior wall),438890130.4503298
+2049,DEU,Insulation (Roof),200652677.35893995
+2049,DEU,Insulation (Floor),115180742.52004558
+2049,DEU,Insulation (Basement),33217929.078693688
+2049,DNK,Insulation,0.0
+2049,DNK,Insulation (Exterior wall),0.0
+2049,DNK,Insulation (Roof),0.0
+2049,DNK,Insulation (Floor),0.0
+2049,DNK,Insulation (Basement),0.0
+2049,ESP,Insulation,0.0
+2049,ESP,Insulation (Exterior wall),150305420.082765
+2049,ESP,Insulation (Roof),89661168.24417765
+2049,ESP,Insulation (Floor),105877925.43315524
+2049,ESP,Insulation (Basement),34668605.25678323
+2049,EST,Insulation,0.0
+2049,EST,Insulation (Exterior wall),2208816.414178772
+2049,EST,Insulation (Roof),1955078.502867463
+2049,EST,Insulation (Floor),842271.8180562975
+2049,EST,Insulation (Basement),468436.0083136688
+2049,FIN,Insulation,0.0
+2049,FIN,Insulation (Exterior wall),13351595.346553031
+2049,FIN,Insulation (Roof),11598686.979530267
+2049,FIN,Insulation (Floor),5682546.24001711
+2049,FIN,Insulation (Basement),2727149.2827587365
+2049,FRA,Insulation,0.0
+2049,FRA,Insulation (Exterior wall),255539866.85156372
+2049,FRA,Insulation (Roof),132506336.15812986
+2049,FRA,Insulation (Floor),139006944.01632002
+2049,FRA,Insulation (Basement),52958034.92412409
+2049,GBR,Insulation,0.0
+2049,GBR,Insulation (Exterior wall),454092809.7035368
+2049,GBR,Insulation (Roof),191584977.4960322
+2049,GBR,Insulation (Floor),96342514.96453609
+2049,GBR,Insulation (Basement),64519545.23278364
+2049,GRC,Insulation,0.0
+2049,GRC,Insulation (Exterior wall),21252067.39663309
+2049,GRC,Insulation (Roof),11527892.934875568
+2049,GRC,Insulation (Floor),12467050.57515048
+2049,GRC,Insulation (Basement),4151288.697228064
+2049,HRV,Insulation,0.0
+2049,HRV,Insulation (Exterior wall),1347553.3453053588
+2049,HRV,Insulation (Roof),968067.4091532836
+2049,HRV,Insulation (Floor),1217901.4648799999
+2049,HRV,Insulation (Basement),157594.39062
+2049,HUN,Insulation,0.0
+2049,HUN,Insulation (Exterior wall),35395999.363431245
+2049,HUN,Insulation (Roof),19774497.228049595
+2049,HUN,Insulation (Floor),8752571.667241875
+2049,HUN,Insulation (Basement),3569354.400451151
+2049,IRL,Insulation,0.0
+2049,IRL,Insulation (Exterior wall),29844536.260325223
+2049,IRL,Insulation (Roof),9935933.192431845
+2049,IRL,Insulation (Floor),5410002.894618537
+2049,IRL,Insulation (Basement),4356349.661445916
+2049,ITA,Insulation,0.0
+2049,ITA,Insulation (Exterior wall),256405751.38485652
+2049,ITA,Insulation (Roof),156228030.51573756
+2049,ITA,Insulation (Floor),187752661.19817492
+2049,ITA,Insulation (Basement),61289551.241157226
+2049,LTU,Insulation,0.0
+2049,LTU,Insulation (Exterior wall),4258673.780617604
+2049,LTU,Insulation (Roof),3837769.910568691
+2049,LTU,Insulation (Floor),1865909.222468182
+2049,LTU,Insulation (Basement),912275.2065873161
+2049,LUX,Insulation,0.0
+2049,LUX,Insulation (Exterior wall),9014729.990513371
+2049,LUX,Insulation (Roof),4079637.6553439945
+2049,LUX,Insulation (Floor),1954365.114975332
+2049,LUX,Insulation (Basement),1327445.3272564223
+2049,LVA,Insulation,0.0
+2049,LVA,Insulation (Exterior wall),3072687.354427052
+2049,LVA,Insulation (Roof),4240207.890773934
+2049,LVA,Insulation (Floor),1529879.8824096955
+2049,LVA,Insulation (Basement),687754.6122089254
+2049,MLT,Insulation,0.0
+2049,MLT,Insulation (Exterior wall),2004833.1614853444
+2049,MLT,Insulation (Roof),992752.8216270609
+2049,MLT,Insulation (Floor),1000927.0426389069
+2049,MLT,Insulation (Basement),420970.6390925592
+2049,NLD,Insulation,0.0
+2049,NLD,Insulation (Exterior wall),122199570.14054003
+2049,NLD,Insulation (Roof),59970314.5447714
+2049,NLD,Insulation (Floor),27907604.691321038
+2049,NLD,Insulation (Basement),16140706.272486519
+2049,POL,Insulation,0.0
+2049,POL,Insulation (Exterior wall),139771919.50283748
+2049,POL,Insulation (Roof),72882677.25142361
+2049,POL,Insulation (Floor),35254803.05514351
+2049,POL,Insulation (Basement),16035440.136460409
+2049,PRT,Insulation,0.0
+2049,PRT,Insulation (Exterior wall),14286977.355433673
+2049,PRT,Insulation (Roof),8000258.770120383
+2049,PRT,Insulation (Floor),8879410.053841338
+2049,PRT,Insulation (Basement),2816113.9485764233
+2049,ROU,Insulation,0.0
+2049,ROU,Insulation (Exterior wall),66832100.57071055
+2049,ROU,Insulation (Roof),23566898.74573082
+2049,ROU,Insulation (Floor),12605910.80728543
+2049,ROU,Insulation (Basement),10538174.049161501
+2049,SVK,Insulation,0.0
+2049,SVK,Insulation (Exterior wall),11028384.61253978
+2049,SVK,Insulation (Roof),4444050.031387292
+2049,SVK,Insulation (Floor),2721625.128986668
+2049,SVK,Insulation (Basement),1092698.605255029
+2049,SVN,Insulation,0.0
+2049,SVN,Insulation (Exterior wall),8640677.668400437
+2049,SVN,Insulation (Roof),3944872.6257365737
+2049,SVN,Insulation (Floor),1891782.2057782465
+2049,SVN,Insulation (Basement),1140195.6896516334
+2049,SWE,Insulation,0.0
+2049,SWE,Insulation (Exterior wall),115421582.20529297
+2049,SWE,Insulation (Roof),45056457.4799305
+2049,SWE,Insulation (Floor),22752240.627207804
+2049,SWE,Insulation (Basement),25243401.376254376
+2050,AUT,Insulation,0.0
+2050,AUT,Insulation (Exterior wall),69316818.54047847
+2050,AUT,Insulation (Roof),27739569.539617673
+2050,AUT,Insulation (Floor),15777148.31374039
+2050,AUT,Insulation (Basement),8830772.741288248
+2050,BEL,Insulation,0.0
+2050,BEL,Insulation (Exterior wall),70895951.97996943
+2050,BEL,Insulation (Roof),29357731.507541206
+2050,BEL,Insulation (Floor),15688611.273667162
+2050,BEL,Insulation (Basement),9049089.884622263
+2050,BGR,Insulation,0.0
+2050,BGR,Insulation (Exterior wall),14218030.218941715
+2050,BGR,Insulation (Roof),9954364.234479303
+2050,BGR,Insulation (Floor),3824185.5619689263
+2050,BGR,Insulation (Basement),1279595.0378973044
+2050,CYP,Insulation,0.0
+2050,CYP,Insulation (Exterior wall),3895917.537836512
+2050,CYP,Insulation (Roof),1905246.1154605465
+2050,CYP,Insulation (Floor),1891684.8519448228
+2050,CYP,Insulation (Basement),798739.2828067489
+2050,CZE,Insulation,0.0
+2050,CZE,Insulation (Exterior wall),30563311.384026587
+2050,CZE,Insulation (Roof),12997324.33586002
+2050,CZE,Insulation (Floor),7128107.129365255
+2050,CZE,Insulation (Basement),3921290.1217688564
+2050,DEU,Insulation,0.0
+2050,DEU,Insulation (Exterior wall),438890130.535357
+2050,DEU,Insulation (Roof),200652677.38133997
+2050,DEU,Insulation (Floor),115180742.5440456
+2050,DEU,Insulation (Basement),33217929.078693688
+2050,DNK,Insulation,0.0
+2050,DNK,Insulation (Exterior wall),0.0
+2050,DNK,Insulation (Roof),0.0
+2050,DNK,Insulation (Floor),0.0
+2050,DNK,Insulation (Basement),0.0
+2050,ESP,Insulation,0.0
+2050,ESP,Insulation (Exterior wall),150305420.082765
+2050,ESP,Insulation (Roof),89661168.24417765
+2050,ESP,Insulation (Floor),105877925.43315524
+2050,ESP,Insulation (Basement),34668605.25678323
+2050,EST,Insulation,0.0
+2050,EST,Insulation (Exterior wall),2208816.4140618597
+2050,EST,Insulation (Roof),1955078.5028072782
+2050,EST,Insulation (Floor),842271.8180403911
+2050,EST,Insulation (Basement),468436.00828424643
+2050,FIN,Insulation,0.0
+2050,FIN,Insulation (Exterior wall),13351595.346362775
+2050,FIN,Insulation (Roof),11598686.979441378
+2050,FIN,Insulation (Floor),5682546.239617109
+2050,FIN,Insulation (Basement),2727149.282736218
+2050,FRA,Insulation,0.0
+2050,FRA,Insulation (Exterior wall),255539866.85156372
+2050,FRA,Insulation (Roof),132506336.15812986
+2050,FRA,Insulation (Floor),139006944.01632002
+2050,FRA,Insulation (Basement),52958034.92412409
+2050,GBR,Insulation,0.0
+2050,GBR,Insulation (Exterior wall),454092809.7035368
+2050,GBR,Insulation (Roof),191584977.4960322
+2050,GBR,Insulation (Floor),96342514.96453609
+2050,GBR,Insulation (Basement),64519545.23278364
+2050,GRC,Insulation,0.0
+2050,GRC,Insulation (Exterior wall),21252067.396857467
+2050,GRC,Insulation (Roof),11527892.935142236
+2050,GRC,Insulation (Floor),12467050.57555048
+2050,GRC,Insulation (Basement),4151288.697228064
+2050,HRV,Insulation,0.0
+2050,HRV,Insulation (Exterior wall),1347553.3453053588
+2050,HRV,Insulation (Roof),968067.4091532836
+2050,HRV,Insulation (Floor),1217901.4648799999
+2050,HRV,Insulation (Basement),157594.39062
+2050,HUN,Insulation,0.0
+2050,HUN,Insulation (Exterior wall),35395999.36427861
+2050,HUN,Insulation (Roof),19774497.22834882
+2050,HUN,Insulation (Floor),8752571.667483663
+2050,HUN,Insulation (Basement),3569354.4005798576
+2050,IRL,Insulation,0.0
+2050,IRL,Insulation (Exterior wall),29844536.27156957
+2050,IRL,Insulation (Roof),9935933.194972489
+2050,IRL,Insulation (Floor),5410002.896175383
+2050,IRL,Insulation (Basement),4356349.663445916
+2050,ITA,Insulation,0.0
+2050,ITA,Insulation (Exterior wall),256405751.38485652
+2050,ITA,Insulation (Roof),156228030.51573756
+2050,ITA,Insulation (Floor),187752661.19817492
+2050,ITA,Insulation (Basement),61289551.241157226
+2050,LTU,Insulation,0.0
+2050,LTU,Insulation (Exterior wall),4258673.780617604
+2050,LTU,Insulation (Roof),3837769.910344691
+2050,LTU,Insulation (Floor),1865909.222444182
+2050,LTU,Insulation (Basement),912275.2065873161
+2050,LUX,Insulation,0.0
+2050,LUX,Insulation (Exterior wall),9014729.989399308
+2050,LUX,Insulation (Roof),4079637.6552703786
+2050,LUX,Insulation (Floor),1954365.1148412474
+2050,LUX,Insulation (Basement),1327445.3270564224
+2050,LVA,Insulation,0.0
+2050,LVA,Insulation (Exterior wall),3072687.354427052
+2050,LVA,Insulation (Roof),4240207.890773934
+2050,LVA,Insulation (Floor),1529879.8824096955
+2050,LVA,Insulation (Basement),687754.6122089254
+2050,MLT,Insulation,0.0
+2050,MLT,Insulation (Exterior wall),2004833.1614853444
+2050,MLT,Insulation (Roof),992752.8216270609
+2050,MLT,Insulation (Floor),1000927.0426389069
+2050,MLT,Insulation (Basement),420970.6390925592
+2050,NLD,Insulation,0.0
+2050,NLD,Insulation (Exterior wall),122199570.14054003
+2050,NLD,Insulation (Roof),59970314.5447714
+2050,NLD,Insulation (Floor),27907604.691321038
+2050,NLD,Insulation (Basement),16140706.272486519
+2050,POL,Insulation,0.0
+2050,POL,Insulation (Exterior wall),139771919.50283748
+2050,POL,Insulation (Roof),72882677.25142361
+2050,POL,Insulation (Floor),35254803.05514351
+2050,POL,Insulation (Basement),16035440.136460409
+2050,PRT,Insulation,0.0
+2050,PRT,Insulation (Exterior wall),14286977.355433673
+2050,PRT,Insulation (Roof),8000258.770120383
+2050,PRT,Insulation (Floor),8879410.053841338
+2050,PRT,Insulation (Basement),2816113.9485764233
+2050,ROU,Insulation,0.0
+2050,ROU,Insulation (Exterior wall),66832100.57241109
+2050,ROU,Insulation (Roof),23566898.74617882
+2050,ROU,Insulation (Floor),12605910.80776543
+2050,ROU,Insulation (Basement),10538174.049161501
+2050,SVK,Insulation,0.0
+2050,SVK,Insulation (Exterior wall),11028384.613415247
+2050,SVK,Insulation (Roof),4444050.03158831
+2050,SVK,Insulation (Floor),2721625.1292306683
+2050,SVK,Insulation (Basement),1092698.605255029
+2050,SVN,Insulation,0.0
+2050,SVN,Insulation (Exterior wall),8640677.669247793
+2050,SVN,Insulation (Roof),3944872.6260357993
+2050,SVN,Insulation (Floor),1891782.206020035
+2050,SVN,Insulation (Basement),1140195.6897803403
+2050,SWE,Insulation,0.0
+2050,SWE,Insulation (Exterior wall),115421582.19451895
+2050,SWE,Insulation (Roof),45056457.4799305
+2050,SWE,Insulation (Floor),22752240.627207804
+2050,SWE,Insulation (Basement),25243401.374050602
