@@ -1,6 +1,7 @@
-# run buildings (reduced), extract material demand and eol, map dimensions, run vehicles (reduced), extract material demand and eol, map dimensions,
+# run buildings (reduced), extract material demand and eol flows, map dimensions, run vehicles (reduced), extract material demand and eol, map dimensions,
 # read bottom up concrete, map bottom up concrete,
-# calculate residual demand concrete with results from bottom up, project residual demand concrete, calculate residual stocks concrete, residual eol concrete,
+# calculate residual demand concrete with results from bottom up, project residual demand concrete, residual eol concrete,
+
 #calculate total material demand concrete, calculate total eol concrete,
 # run with these inputs downstream concrete,
 # repeat for steel, plastics
@@ -13,7 +14,7 @@ import os
 # 0. Choose material and bottom up models
 bottom_up_sectors_to_consider = ["buildings"]
 materials_to_consider = ["concrete"]
-downstream_only = False # uses given demand and eol flows
+downstream_only = False # uses given demand and eol flows and calculates recycling rate, production...
 
 # Configure logging
 logging.basicConfig(level=logging.WARNING, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -22,6 +23,7 @@ logging.basicConfig(level=logging.WARNING, format="%(asctime)s - %(levelname)s -
 if "builings" in bottom_up_sectors_to_consider and downstream_only == False:
 
     flows = run_eumfa("config/buildings.yml")
+
 
     # 2. Sort results by material and continue with respective material
     for flow_name, flow in flows.items():
@@ -40,45 +42,47 @@ if "builings" in bottom_up_sectors_to_consider and downstream_only == False:
 
     #todo do this for all materials
     #todo add "if material in materials_to_consider"
+    if "concrete" in materials_to_consider:
+        # 3. Translate dimensions
+        concrete_flows = {}
+        # Define mappings for dimensions
+        # todo: do this with an excel
+        concrete_product_mapping = {
+            "Precast concrete (not reinforced)": "Precast",
+            "Reinforced concrete": "Reinforced",
+            "Other concrete": "Other",
+        }
 
-    # 3. Translate dimensions
-    concrete_flows = {}
-    # Define mappings for dimensions
-    # todo: do this with an excel
-    concrete_product_mapping = {
-        "Precast concrete (not reinforced)": "Precast",
-        "Reinforced concrete": "Reinforced",
-        "Other concrete": "Other",
-    }
+        concrete_region_mapping = {
+            "AUT": "Austria",
+            "BEL": "Belgium",
+            "SWE": "Sweden",
+        }
 
-    region_mapping = {
-        "AUT": "Austria",
-        "BEL": "Belgium",
-        "SWE": "Sweden",
-    }
-    for flow_name, flow in flows.items():
-        df = pd.DataFrame.from_dict(flow)
+        for flow_name, flow in flows.items():
 
-        # Check for required dimensions
-        if "Concrete product" in df.index.names:
-            # Map "Concrete product" dimension
-            df.index = df.index.set_levels(
-                df.index.levels[df.index.names.index("Concrete product")].map(
-                    lambda x: map_with_logging(x, concrete_product_mapping, "Concrete product")
-                ),
-                level="Concrete product"
-            )
+            df = pd.DataFrame.from_dict(flow)
 
-            # Map "Region" dimension only for "Concrete product"
-            if "Region" in df.index.names:
+            # Check for required dimensions
+            if "Concrete product" in df.index.names:
+                # Map "Concrete product" dimension
                 df.index = df.index.set_levels(
-                    df.index.levels[df.index.names.index("Region")].map(
-                        lambda x: map_with_logging(x, region_mapping, "Region")
+                    df.index.levels[df.index.names.index("Concrete product")].map(
+                        lambda x: map_with_logging(x, concrete_product_mapping, "Concrete product")
                     ),
-                    level="Region"
+                    level="Concrete product"
                 )
 
-        # Add the updated DataFrame to the new dictionary
+                # Map "Region" dimension only for "Concrete product"
+                if "Region" in df.index.names:
+                    df.index = df.index.set_levels(
+                        df.index.levels[df.index.names.index("Region")].map(
+                            lambda x: map_with_logging(x, concrete_region_mapping, "Region")
+                        ),
+                        level="Region"
+                    )
+
+           #todo only save flows with concrete product
         concrete_flows[flow_name] = df
 
         # Ergebnisse (demand, eol) speichern - als csv und später aus csv auslesen, oder als df?
@@ -86,6 +90,105 @@ if "builings" in bottom_up_sectors_to_consider and downstream_only == False:
             sanitized_name = sanitize_filename(flow_name)
             output_path = f"data/baseline/output/{sanitized_name}_concrete_flows.csv"
             df.to_csv(output_path)
+
+
+    if "Plastics" in materials_to_consider:
+        # 3. Translate dimensions
+        plastic_flows = {}
+        # Define mappings for dimensions
+        # todo: do this with an excel
+        plastic_product_mapping = {
+            "Precast concrete (not reinforced)": "Precast",
+            "Reinforced concrete": "Reinforced",
+            "Other concrete": "Other",
+        }
+
+        plastic_region_mapping = {
+            "AUT": "Austria",
+            "BEL": "Belgium",
+            "SWE": "Sweden",
+        }
+        for flow_name, flow in flows.items():
+            df = pd.DataFrame.from_dict(flow)
+
+
+            if "Insulation product" in df.index.names:
+                # Map "Insulation product" dimension
+                df.index = df.index.set_levels(
+                    df.index.levels[df.index.names.index("Insulation product")].map(
+                        lambda x: map_with_logging(x, plastic_product_mapping, "Insulation product")
+                    ),
+                    level="Insulation product"
+                    )
+
+                if "Region" in df.index.names:
+                    df.index = df.index.set_levels(
+                        df.index.levels[df.index.names.index("Region")].map(
+                            lambda x: map_with_logging(x, plastic_region_mapping, "Region")
+                        ),
+                        level="Region"
+                    )
+        #todo only save flows with insulation product
+        plastic_flows[flow_name] = df
+
+        # Ergebnisse (demand, eol) speichern - als csv und später aus csv auslesen, oder als df?
+        for flow_name, df in plastic_flows.items():
+            sanitized_name = sanitize_filename(flow_name)
+            output_path = f"data/baseline/output/{sanitized_name}_plastic_flows.csv"
+            df.to_csv(output_path)
+
+    if "Steel" in materials_to_consider:
+        # 3. Translate dimensions
+        steel_flows = {}
+        # Define mappings for dimensions
+        # todo: do this with an excel - von Thurid übernehmen
+
+        steel_product_mapping = {
+            "Precast concrete (not reinforced)": "Precast",
+            "Reinforced concrete": "Reinforced",
+            "Other concrete": "Other",
+        }
+
+        steel_region_mapping = {
+            "AUT": "Austria",
+            "BEL": "Belgium",
+            "SWE": "Sweden",
+        }
+        for flow_name, flow in flows.items():
+            df = pd.DataFrame.from_dict(flow)
+
+            if "Steel product" in df.index.names:
+                # Map "Steel product" dimension
+                df.index = df.index.set_levels(
+                    df.index.levels[df.index.names.index("Steel product")].map(
+                        lambda x: map_with_logging(x, steel_product_mapping, "Steel product")
+                    ),
+                    level="Steel product"
+                )
+
+                # Map "Region" dimension only for "Steel product"
+                if "Region" in df.index.names:
+                    df.index = df.index.set_levels(
+                        df.index.levels[df.index.names.index("Region")].map(
+                            lambda x: map_with_logging(x, steel_region_mapping, "Region")
+                        ),
+                        level="Region"
+                    )
+            # todo only save flows with steel product
+            steel_flows[flow_name] = df
+
+            # Ergebnisse (demand, eol) speichern - als csv und später aus csv auslesen, oder als df?
+            for flow_name, df in steel_flows.items():
+                sanitized_name = sanitize_filename(flow_name)
+                output_path = f"data/baseline/output/{sanitized_name}_steel_flows.csv"
+                df.to_csv(output_path)
+
+
+
+
+            #todo: sum all flows with the same dimension elements
+            # Add the updated DataFrame to the new dictionary
+
 
 
 
@@ -114,6 +217,8 @@ if "concrete" in materials_to_consider and downstream_only == False:
 
 #   e) Ergebnisse (demand, eol) speichern - als csv und später aus csv auslesen, oder als df?
 #       I. Save flows
+
+
 
 if "concrete" in materials_to_consider:
 #   f) Total material demand and eol berechnen
