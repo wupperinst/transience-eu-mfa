@@ -6,15 +6,14 @@ from src.common.common_cfg import GeneralCfg
 from src.buildings.buildings_model import BuildingsModel
 from src.vehicles.vehicles_model import VehiclesModel
 from src.plastics.plastics_model import PlasticsModel
-from src.cement.cement_model import CementModel
+from src.cement_topdown.cement_topdown_model import CementTopdownModel
 
 models = {
     "buildings": BuildingsModel,
     "vehicles": VehiclesModel,
     "plastics": PlasticsModel,
-    "cement": CementModel,
+    "cement_topdown": CementTopdownModel,
 }
-
 
 def get_model_config(filename):
     with open(filename, "r") as stream:
