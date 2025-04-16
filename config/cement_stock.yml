@@ -1,0 +1,20 @@
+# general config
+model_class: 'cement_stock'
+
+# data sources
+input_data_path: 'data/baseline_cement_stock_flows/input'
+
+# model customization
+customization:
+  lifetime_model_name: 'NormalLifetime'
+
+# visualization
+visualization:
+  inflow:
+    do_visualize: False
+
+# data export
+output_path: 'data/baseline_cement_stock_flows/output'
+do_export:
+  pickle: False
+  csv: True

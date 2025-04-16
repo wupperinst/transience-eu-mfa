@@ -37,7 +37,6 @@ def get_definition(cfg: GeneralCfg):
         "Concrete production future",
         "Concrete market future",
         "End use stock future",
-        "End use stock future",
         "CDW collection future",
         "CDW unsorted market future",
         "CDW separation future",

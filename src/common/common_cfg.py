@@ -7,6 +7,8 @@ IMPLEMENTED_MODELS = [
     "vehicles",
     "plastics",
     "cement_topdown",
+    "cement_stock",
+    "cement_flows",
 ]
 
 
@@ -66,6 +68,14 @@ class CementTopdownVisualizationCfg(VisualizationCfg):
 
     pass
 
+class CementStockVisualizationCfg(VisualizationCfg):
+
+    pass
+
+class CementFlowsVisualizationCfg(VisualizationCfg):
+
+    pass
+
 class GeneralCfg(EUMFABaseModel):
 
     model_class: str
@@ -85,6 +95,8 @@ class GeneralCfg(EUMFABaseModel):
             "vehicles": VehiclesCfg,
             "plastics": PlasticsCfg,
             "cement_topdown": CementTopdownCfg,
+            "cement_stock": CementStockCfg,
+            "cement_flows": CementFlowsCfg,
         }
         if model_class not in subclasses:
             raise ValueError(f"Model class {model_class} not supported.")
@@ -107,3 +119,9 @@ class PlasticsCfg(GeneralCfg):
 
 class CementTopdownCfg(GeneralCfg):
     visualization: CementTopdownVisualizationCfg
+
+class CementStockCfg(GeneralCfg):
+    visualization: CementStockVisualizationCfg
+
+class CementFlowsCfg(GeneralCfg):
+    visualization: CementFlowsVisualizationCfg
