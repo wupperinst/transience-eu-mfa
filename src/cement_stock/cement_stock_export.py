@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from src.common.custom_export import CustomDataExporter
 
 if TYPE_CHECKING:
-    from src.cement_stock.cement_stock_model import CementStockModel
+    from src.cement_stock.cement_stock_model import CementTopdownMFASystem
 
 
 class CementStockDataExporter(CustomDataExporter):
@@ -25,7 +25,7 @@ class CementStockDataExporter(CustomDataExporter):
         "CDW sorted market",
     }
 
-    def visualize_results(self, model: "CementStockModel"):
+    def visualize_results(self, model: "CementTopdownMFASystem"):
         if self.cfg.inflow["do_visualize"]:
             self.visualize_inflow(mfa=model.mfa)
             self.stop_and_show()

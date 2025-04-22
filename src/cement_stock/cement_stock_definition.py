@@ -21,15 +21,15 @@ def get_definition(cfg: GeneralCfg):
 
     flows = [
         fd.FlowDefinition(from_process="Concrete market future", to_process="End use stock future",
-                          dim_letters=("t", "j", "f", "s")),
+                          dim_letters=("t", "f", "s")),
         fd.FlowDefinition(from_process="End use stock future", to_process="CDW collection future",
-                          dim_letters=("t", "j", "f", "s")),
+                          dim_letters=("t", "f", "s")),
     ]
 
     stocks = [
         fd.StockDefinition(
             name="End use stock future",
-            dim_letters=("t", "j", "f", "s"),
+            dim_letters=("t", "f", "s"),
             subclass=fd.InflowDrivenDSM,
             lifetime_model_class=cfg.customization.lifetime_model,
             time_letter="t",
@@ -39,6 +39,8 @@ def get_definition(cfg: GeneralCfg):
     parameters = [
         fd.ParameterDefinition(name="end_use_lifetime_mean", dim_letters=("s",)),
         fd.ParameterDefinition(name="end_use_lifetime_std", dim_letters=("s",)),
+        fd.ParameterDefinition(name="demand_future", dim_letters=("t", "j", "f", "s")),
+        fd.ParameterDefinition(name="dissipative_losses", dim_letters=("t", "s")),
     ]
 
     return fd.MFADefinition(

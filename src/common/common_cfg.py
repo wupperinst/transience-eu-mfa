@@ -6,7 +6,6 @@ IMPLEMENTED_MODELS = [
     "buildings",
     "vehicles",
     "plastics",
-    "cement_topdown",
     "cement_stock",
     "cement_flows",
 ]
@@ -94,7 +93,6 @@ class GeneralCfg(EUMFABaseModel):
             "buildings": BuildingsCfg,
             "vehicles": VehiclesCfg,
             "plastics": PlasticsCfg,
-            "cement_topdown": CementTopdownCfg,
             "cement_stock": CementStockCfg,
             "cement_flows": CementFlowsCfg,
         }
