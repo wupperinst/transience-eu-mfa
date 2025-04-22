@@ -39,6 +39,8 @@ def get_definition(cfg: GeneralCfg):
         "CDW unsorted market future",
         "CDW separation future",
         "CDW sorted market future",
+        "End use stock historic",
+       "End use stock future",
    ]
 
    flows = [
@@ -86,26 +88,44 @@ def get_definition(cfg: GeneralCfg):
                       dim_letters=("t", "j", "h")),
         fd.FlowDefinition(from_process="CDW sorted market future", to_process="sysenv future",
                       dim_letters=("t", "j", "h")),
-    ]
+        ]
+
+   stocks = [
+       fd.StockDefinition(
+           name="End use stock historic",
+           dim_letters=("t", "j", "f", "s"),
+           subclass=fd.InflowDrivenDSM,
+           lifetime_model_class=cfg.customization.lifetime_model,
+           time_letter="t",
+       ),
+   ]
 
    parameters = [
-        fd.ParameterDefinition(name="trade_clinker", dim_letters=("t", "j", "y")),
-        fd.ParameterDefinition(name="clinker_factor", dim_letters=("t", "x", "y")),
-        fd.ParameterDefinition(name="cement_production", dim_letters=("t", "j", "x")),
-        fd.ParameterDefinition(name="trade_cement", dim_letters=("t", "j", "x")),
-        fd.ParameterDefinition(name="cement_to_concrete", dim_letters=("f", "x")),
-        fd.ParameterDefinition(name="trade_concrete", dim_letters=("f", "j", "t")),
-        fd.ParameterDefinition(name="end_use_matrix", dim_letters=("f", "s", "t")),
-        fd.ParameterDefinition(name="mapping_waste", dim_letters=("f", "h")),
-        fd.ParameterDefinition(name="dissipative_losses", dim_letters=("s", "t")),
-        fd.ParameterDefinition(name="trade_CDW_unsorted", dim_letters=("h", "j", "t")),
-        fd.ParameterDefinition(name="separation_efficiency", dim_letters=("h", "t")),
-        fd.ParameterDefinition(name="trade_CDW_sorted", dim_letters=("h", "j", "t")),
-    ]
+            fd.ParameterDefinition(name="trade_clinker", dim_letters=("t", "j", "y")),
+            fd.ParameterDefinition(name="clinker_factor", dim_letters=("t", "x", "y")),
+            fd.ParameterDefinition(name="cement_production", dim_letters=("t", "j", "x")),
+            fd.ParameterDefinition(name="trade_cement", dim_letters=("t", "j", "x")),
+            fd.ParameterDefinition(name="cement_to_concrete", dim_letters=("f", "x")),
+            fd.ParameterDefinition(name="trade_concrete", dim_letters=("f", "j", "t")),
+            fd.ParameterDefinition(name="end_use_matrix", dim_letters=("f", "s", "t")),
+            fd.ParameterDefinition(name="mapping_waste", dim_letters=("f", "h")),
+            fd.ParameterDefinition(name="dissipative_losses", dim_letters=("s", "t")),
+            fd.ParameterDefinition(name="trade_CDW_unsorted", dim_letters=("h", "j", "t")),
+            fd.ParameterDefinition(name="separation_efficiency", dim_letters=("h", "t")),
+            fd.ParameterDefinition(name="trade_CDW_sorted", dim_letters=("h", "j", "t")),
+            fd.ParameterDefinition(name = "total_future_demand", dim_letters=("t", "j", "f", "s")),
+            fd.ParameterDefinition(name = "total_future_eol_flows", dim_letters=("t", "j", "f", "s")),
+           fd.ParameterDefinition(name="end_use_lifetime_mean", dim_letters=("s",)),
+            fd.ParameterDefinition(name="end_use_lifetime_std", dim_letters=("s",)),
+        ]
+
 
    return fd.MFADefinition(
         dimensions=dimensions,
         processes=processes,
         flows=flows,
+        stocks=stocks,
         parameters=parameters,
     )
+
+

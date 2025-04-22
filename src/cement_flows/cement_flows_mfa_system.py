@@ -46,7 +46,8 @@ class CementTopdownMFASystem(fd.MFASystem):
         flw = self.flows
 
         #start inflows and outflows from eumfa_combined to determine flw["Concrete market future => End use stock future"] and flw["End use stock future => CDW collection future"]
-
+        flw["Concrete market future => End use stock future"][...] = prm["total_future_demand"]
+        flw["End use stock future => CDW collection future"][...] = prm["total_future_eol_flows"]
         flw["Concrete production future => Concrete market future"][...] = \
             flw["Concrete market future => End use stock future"].sum_to(("t", "j", "f")) - prm["trade_concrete"]
         flw["Cement market future => Concrete production future"][...]= \
@@ -69,4 +70,5 @@ class CementTopdownMFASystem(fd.MFASystem):
 
     def get_flows_as_dataframes(self):
         """Retrieve flows as pandas DataFrames from the MFA system."""
+        print("Cement flows calculated")
         return {flow_name: flow.to_df() for flow_name, flow in self.flows.items()}

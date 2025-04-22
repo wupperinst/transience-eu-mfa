@@ -11,7 +11,7 @@ class CementTopdownMFASystem(fd.MFASystem):
         stk = self.stocks
 
         # Start value and growth rate for future inflow from eumfa_combined to determine flw["Concrete market future => End use stock future"]
-
+        flw["Concrete market future => End use stock future"][...] = prm["demand_future"]
         stk["End use stock future"].inflow[...] = flw["Concrete market future => End use stock future"][...]
         stk["End use stock future"].lifetime_model.set_prms(
             mean=prm["end_use_lifetime_mean"], std=prm["end_use_lifetime_std"]

@@ -1,9 +1,9 @@
 import os
-
 from src.common.common_cfg import GeneralCfg
-from .cement_flows_mfa_system import CementFlowsMFASystem
+from .cement_flows_mfa_system import CementTopdownMFASystem
 from .cement_flows_export import CementFlowsDataExporter
 from .cement_flows_definition import get_definition
+
 
 class CementFlowsModel:
 
@@ -41,7 +41,7 @@ class CementFlowsModel:
             parameter_files[parameter.name] = os.path.join(
                 self.cfg.input_data_path, "datasets", f"{parameter.name}.csv"
             )
-        self.mfa = CementFlowsMFASystem.from_csv(
+        self.mfa = CementTopdownMFASystem.from_csv(
             definition=self.definition,
             dimension_files=dimension_files,
             parameter_files=parameter_files,
