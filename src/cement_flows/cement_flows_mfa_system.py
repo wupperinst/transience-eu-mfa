@@ -32,6 +32,8 @@ class CementTopdownMFASystem(fd.MFASystem):
         stk["End use stock historic"].compute()
         flw["End use stock historic => CDW collection historic"][...] = stk["End use stock historic"].outflow * \
             prm["dissipative_losses"]
+        #  todo:      flw["End use stock historic => CDW collection historic"][...] = (stk["End use stock historic"].outflow - outflows from buildings from historic stocks in baseline scenario +
+        #        outflows from buildings from histroic stock in any other scernario) * \ prm["dissipative_losses"]
         flw["CDW collection historic => CDW unsorted market historic"][...] = \
             flw["End use stock historic => CDW collection historic"][...] * prm["mapping_waste"]
         flw["CDW unsorted market historic => CDW separation historic"][...] = \
