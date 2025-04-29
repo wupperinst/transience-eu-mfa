@@ -17,7 +17,7 @@ class PlasticsDataExporter(CustomDataExporter):
     def visualize_results(self, model: "PlasticsModel"):
         if self.cfg.production["do_visualize"]:
             self.visualize_production(mfa=model.mfa)
-        if self.cfg.use_stock["do_visualize"]:
+        if self.cfg.stock["do_visualize"]:
             print("Stock visualization not implemented yet.")
             # self.visualize_stock(mfa=mfa)
         if self.cfg.sankey["do_visualize"]:
