@@ -16,12 +16,12 @@ class BuildingsMFASystem(fd.MFASystem):
         flw["sysenv => Insulation stock in buildings"][...] = prm["building_inflow"] * prm[
             "building_insulation_intensity"]
         flw["sysenv => Glass stock in buildings"][...] = prm["building_inflow"] * prm["building_glass_intensity"]
-        flw["Steel stock in buildings => sysenv"][...] = prm["building_outflow"] * prm["building_steel_intensity"]
-        flw["Concrete stock in buildings => sysenv"][...] = prm["building_outflow"] * prm[
+        flw["Steel stock in buildings => sysenv"][...] = -prm["building_outflow"] * prm["building_steel_intensity"]
+        flw["Concrete stock in buildings => sysenv"][...] = -prm["building_outflow"] * prm[
             "building_concrete_intensity"]
-        flw["Insulation stock in buildings => sysenv"][...] = prm["building_outflow"] * prm[
+        flw["Insulation stock in buildings => sysenv"][...] = -prm["building_outflow"] * prm[
             "building_insulation_intensity"]
-        flw["Glass stock in buildings => sysenv"][...] = prm["building_outflow"] * prm[
+        flw["Glass stock in buildings => sysenv"][...] = -prm["building_outflow"] * prm[
             "building_glass_intensity"]
         flw["Steel stock in buildings => Steel stock in buildings"][...] = \
             flw["Steel stock in buildings => sysenv"] * prm["building_steel_element_reuse"]
@@ -39,3 +39,7 @@ class BuildingsMFASystem(fd.MFASystem):
         flw["Concrete stock in buildings => sysenv"][...] = \
             flw["Concrete stock in buildings => sysenv"] - \
             flw["Concrete stock in buildings => Concrete stock in buildings"]
+
+    def get_flows_as_dataframes(self):
+        """Retrieve flows as pandas DataFrames from the MFA system."""
+        return {flow_name: flow.to_df() for flow_name, flow in self.flows.items()}

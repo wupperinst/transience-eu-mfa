@@ -5,6 +5,7 @@ from .vehicles_mfa_system import VehiclesMFASystem
 from .vehicles_export import VehiclesDataExporter
 from .vehicles_definition import get_definition
 
+#todo übergabe hinzufügen (eol, material demand übergeben für kombiniertes modell)
 
 class VehiclesModel:
 
