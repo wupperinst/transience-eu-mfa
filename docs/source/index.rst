@@ -7,6 +7,7 @@
 .. toctree::
    :hidden:
    :caption: Module overview
+   :maxdepth: 3
 
    overview
 
@@ -14,7 +15,7 @@
    :hidden:
    :caption: Sub-modules' documentation
 
-   plastics
+..   plastics
    steel
    buildings
    vehicles
@@ -23,5 +24,5 @@
    :hidden:
    :caption: MIC3 integration
 
-   inputs_from_mic3
+..   inputs_from_mic3
    outputs_to_mic3
