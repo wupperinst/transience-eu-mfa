@@ -13,10 +13,12 @@
 
 .. toctree::
    :hidden:
-   :caption: Sub-modules' documentation
+   :caption: Sub-modules
+   :maxdepth: 3
 
-..   plastics
+   plastics
    steel
+   cement
    buildings
    vehicles
 
