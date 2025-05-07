@@ -1,0 +1,13 @@
+Parameter, Source, Description
+Material intensity buildings, "P&S Database", "No data manipulation required"
+Building inflow, "P&S Database", "Determine building inflow from the building stock and building outflow"
+Building outflow, "P&S Database", "Determine building outflow from the residential per capita building stock, share of residential building types, population development, changes in the non-residential building stock and the non-residential building stock in a base year"
+Material intensity vehicles, "P&S Database", "No data manipulation required"
+Vehicle registrations, "Energy system module", "Differentiate the vehicle inflow to consider different vehicle sizes"
+Consumption change, "CGE module", "No data manipulation required"
+Translation, "P&S Database", "No data manipulation required"
+Trade clinker, "Global MFA", "Harmonization of product categories"
+Trade cement, "Global MFA", "Harmonization of product categories"
+Trade concrete, "Global MFA", "Harmonization of product categories"
+Trade unsorted concrete waste, "Global MFA", "Harmonization of product categories"
+Trade sorted concrete waste, "Global MFA", "Harmonization of product categories"
