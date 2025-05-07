@@ -88,6 +88,49 @@ This approach necessitates a reference development when circular economy measure
 The circular economy measures affect the top-down and bottom-up inflows independently of each other.
 
 
+Code structure
+------------------------------
+
+The EU MFA module consists of sub-modules for the three basic materials steel, plastics and cement, as well as for 
+the application sectors buildings and vehicles. The data and source code for each sub-module in their own sub-folders follow the same structure:
+
+* ``data``: contains the input and output data for the sub-modules
+
+    * ``scenario_material``or ``scenario_application``: sub-folder for a sub-module's scenario
+
+        * ``input``: contains the input data for the sub-module
+            * ``datasets``: contains the input data for the exogenous parameters
+            * ``dimensions``: contains the input data for the dimensions indexing the parameters and variables
+        * ``output``: contains the output data from the sub-module
+  
+* ``src``: contains the source code for the sub-modules
+
+    * ``common``: contains the common functions for the sub-modules
+
+    * ``material`` or ``application``: contains the source code for the sub-modules
+        * ``*_definition.py``: contains flodym objects defining the sub-module's dimensions, parameters and variables
+        * ``*_mfa_system.py``: contains the computation of the sub-module's material flows and stock dynamics
+        * ``*_export.py``: contains the export functions for the sub-module's results
+        * ``*_model.py``: contains the sub-module's class wrapping the other files
+
+
+The documentation of the sub-modules in the following chapters focuses on the MFA models implemented mainly 
+in the ``*_definition.py`` and ``*_mfa_system.py`` files. Each chapter contains the following sections:
+
+*   **Indices**: in flodym all parameters and variables of the model are indexed. Those indices define the system boundaries, 
+    e.g. temporal and geographical resolution, considered materials, products, sectors. 
+    Even though the sub-modules of the EU MFA can work independently from each other, 
+    we defined consistent indices across the sub-modules to ensure their consistency and to enable their combination.
+
+*   **Parameters**: the exogenous drivers of the models (e.g. consumption levels, product lifetimes, 
+    trade and waste collection rates) expected for the dimension defined as indices.
+
+*   **Variables**: the variables (e.g. stocks, flows) are endogenously calculated by the model.
+
+*   **Processes**: the transformation steps between flows are described in plain English
+    and with an algebraic formulation of the equations that govern these processes. 
+
+
 .. rubric:: Footnotes
 
 .. [#f1] D3.3 – Conceptualisation of CE and policy mapping and D3.4 – Framework for industry transition modelling  
