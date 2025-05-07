@@ -1,0 +1,6 @@
+Parameter, Index, Description
+Material intensity vehicles, "v, z, l, d, g", "Differentiates the use of steel in cars by car type and size"
+Vehicle registrations, "t, r, v", "Number of passenger vehicles differentiated by type and size"
+Consumption change, "t, s", "Indicates changes in the consumption per use sector"
+Translation, "t, s", "Indicates changes in the relationship between monetary and physical units"
+Lifetimes, "s", "Indicates lifetime of products per use sector (mean and standard deviation)"

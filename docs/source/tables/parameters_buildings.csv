@@ -1,0 +1,4 @@
+Parameter, Index, Description
+Material intensity buildings, "r, b, a, l, o, i, g", "Differentiates the use of steel, concrete, insulation and glass in buildings by region, building type and age cohort"
+Building inflow, "t, r, b, a", "Floor space development differentiated by region, building type and age cohort"
+Building outflow, "t, r, b, a", "Floor space development differentiated by region, building type and age cohort"

@@ -1,0 +1,12 @@
+"Dimension", "Index", "Description"
+"time", "t", "Temporal resolution, e.g. yearly values from 1950 to 2050"
+"element", "e", "Individual elements"
+"region", "r", "Geographical resolution, e.g. EU member states"
+"region aggregated", "j", "Geographical resolution, e.g. EU28"
+"use sector", "s", "Broad application sectors"
+"concrete products simplified", "f", "Concrete products, e.g. transport concrete, precast concrete"
+"cement products", "x", "Cement products, i.e. cement"
+"clinker products", "y", "Clinker products, i.e. clinker"
+"concrete waste", "h", "Concrete waste types considered, i.e. CDW"
+
+

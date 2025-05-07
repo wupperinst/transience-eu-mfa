@@ -26,5 +26,4 @@
    :hidden:
    :caption: MIC3 integration
 
-..   inputs_from_mic3
-   outputs_to_mic3
+   integration

@@ -68,13 +68,18 @@ framework. Some general-level explanation are in order:
 Indices
 ========================
 
+The following table presents the dimensions indexing the parameters and variables (stock and flows)
+of the MFA model for plastics.
 
+.. csv-table::
+    :header-rows: 1
+    :file: tables/indices_plastics.csv
 
 Parameters
 ========================
 
 The following table presents the data structure and signification of all
-input parameters expected by the model.
+input parameters expected by the MFA model for plastics.
 
 .. csv-table::
     :header-rows: 1
@@ -91,7 +96,7 @@ Processes
 ========================
 
 The following presents the equations governing each of the processes
-presented in :ref:`plastics-full-diagram`. For each process we provide a short
+in :ref:`plastics-full-diagram`. For each process we provide a short
 description in plain English, an explanation of the exogenous parameters
 and model variables, and an algebraic formulation of the equations
 governing the process. For the parameters and variables we can use both
@@ -100,6 +105,9 @@ formulation.
 
 Process (1) "Polymer market"
 --------------------------------
+
+Short description
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Demand for polymers from the domestic processing industries is satisfied
 with either "fresh" polymers (from primary raw materials or from
@@ -284,7 +292,7 @@ through two processing steps in process 5:
     the former flow sent to sorting would cover the "gelbe Tonne",
     "Pfandsystem", shredder light fraction, and demolition waste, while
     the latter would be the "schwarze Tonne" sent to the municipal waste
-    incinerator with energy recovery ( in other country the default
+    incinerator with energy recovery (in other country the default
     treatment may be incineration without energy recovery or landfill,
     or a combination of different routes).
 

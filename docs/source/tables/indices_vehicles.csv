@@ -1,0 +1,10 @@
+"Dimension", "Index", "Description"
+"time", "t", "Temporal resolution, e.g. yearly values from 1950 to 2050"
+"element", "e", "Individual elements"
+"region", "r", "Geographical resolution, e.g. EU member states"
+"vehicle types", "v", "Vehicle type, e.g. internal combustion engine, plug in hybrid"
+"passenger car size", "z", "Vehicle size, e.g. SUV, micro car"
+"steel products", "l", "Steel products, e.g. concrete reinforcing bars"
+"plastics products", "d", "Plastics products in vehicles, e.g. PP, PVC"
+
+

@@ -1,0 +1,10 @@
+"Dimension", "Index", "Description"
+"time", "t", "Temporal resolution, e.g. yearly values from 1950 to 2050"
+"element", "e", "Individual elements"
+"region", "r", "Geographical resolution, e.g. EU member states"
+"age cohort", "c", "Age cohort of broad application sectors"
+"use sector", "s", "Broad application sectors"
+"polymers", "p", "Polymers, e.g. …"
+"plastic waste", "w", "Plastic waste types considered: …", "Plastics"
+"plastic secondary raw material", "m", "Secondary raw materials from plastics, e.g.", "Plastics"
+

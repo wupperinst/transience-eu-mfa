@@ -1,0 +1,3 @@
+Variable, Index, Description
+"Material inflows for vehicles", "t, r, v, l, d, g", "Yearly steel, plastics and glass inflows"
+"Material outflows from vehicles", "t, r, v, l, d, g", "Yearly steel, plastics and glass outflows"

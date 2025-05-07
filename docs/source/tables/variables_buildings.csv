@@ -1,0 +1,3 @@
+Variable, Index, Description
+"Material inflows for buildings", "t, r, l, o, i, g", "Yearly steel, insulation, concrete and glass inflows"
+"Material outflows from buildings", "t, r, l, o, i, g", "Yearly steel, insulation, concrete and glass outflows"
