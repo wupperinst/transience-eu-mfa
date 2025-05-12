@@ -93,6 +93,7 @@ class GeneralCfg(EUMFABaseModel):
             "buildings": BuildingsCfg,
             "vehicles": VehiclesCfg,
             "plastics": PlasticsCfg,
+            "cement_topdown": CementTopdownCfg,
             "cement_stock": CementStockCfg,
             "cement_flows": CementFlowsCfg,
         }

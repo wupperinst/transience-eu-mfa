@@ -20,7 +20,7 @@ class CementTopdownMFASystem(fd.MFASystem):
         flw["Cement market historic => Concrete production historic"][...] = \
             flw["Cement production historic => Cement market historic"][...] - prm["trade_cement"]
         flw["Concrete production historic => Concrete market historic"][...] = \
-            flw["Cement market historic => Concrete production historic"][...] / prm["cement_to_concrete"]
+            flw["Cement market historic => Concrete production historic"][...] * prm["cement_to_concrete_historic"]
         flw["Concrete market historic => End use stock historic"][...] = \
             (flw["Concrete production historic => Concrete market historic"][...] -
              prm["trade_concrete"]) * prm["end_use_matrix"]
@@ -49,8 +49,8 @@ class CementTopdownMFASystem(fd.MFASystem):
         flw["Concrete market future => End use stock future"][...] = prm["start_value"] * prm["growth_rate"]
         flw["Concrete production future => Concrete market future"][...] = \
             flw["Concrete market future => End use stock future"].sum_to(("t", "j", "f")) - prm["trade_concrete"]
-        flw["Cement market future => Concrete production future"][...]= \
-            flw["Concrete production future => Concrete market future"] * prm["cement_to_concrete"]
+        flw["Cement market future => Concrete production future"][...] = \
+            flw["Concrete production future => Concrete market future"] * prm["cement_to_concrete_future"]
         flw["Cement production future => Cement market future"][...] = \
             flw["Cement market future => Concrete production future"] - prm["trade_cement"]
         flw["Clinker market future => Cement production future"][...] = \
