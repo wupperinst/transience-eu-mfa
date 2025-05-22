@@ -14,6 +14,12 @@ The basic version of the building module has been developed as part of the Horiz
 
 The module is built with the framework [flodym (Flexibe Open Dynamic Material Systems Model)](https://github.com/pik-piam/flodym).
 
+## Installation
+ - Download the code from this repository or `git clone` it.
+ - Install the requirements in a [python virtual environment](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/).
+ - Run `python3 src/eumfa_SUBMODULE.py` from the repo's folder where you replace *SUBMODULE* with the name of one of the bottom-up (*vehicles* or *buildings*) or top-down (*plastics*, *steel*, or *cement_topdown*) MFA models. The sub-module *combined* integrates the *buildings* and *cement_topdown* models (under development for other materials).
+
+
  <!-- stop parsing here on readthedocs -->
 
 ## Documentation
