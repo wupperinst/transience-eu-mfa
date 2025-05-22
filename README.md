@@ -20,4 +20,4 @@ The module is built with the framework [flodym (Flexibe Open Dynamic Material Sy
 A preliminary documentation of the module is available on [readthedocs](https://transience-eu-mfa.readthedocs.io/en/latest/).
 
 ## License
-[TRANSIENCE EU MFA](https://github.com/wupperinst/transience-eu-mfa) © 2025 by [Wuppertal Institute for climate, environment and energy](https://wupperinst.org/) and [Fraunhofer ISI](https://www.isi.fraunhofer.de/en.html) is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)
+[TRANSIENCE EU MFA](https://github.com/wupperinst/transience-eu-mfa) © 2025 by [Wuppertal Institute for climate, environment and energy](https://wupperinst.org/) and [Fraunhofer ISI](https://www.isi.fraunhofer.de/en.html) is licensed under [GNU AGPL 3.0](https://www.gnu.org/licenses/agpl-3.0.html)
