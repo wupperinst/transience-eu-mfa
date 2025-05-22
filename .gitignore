@@ -5,6 +5,9 @@ venv/
 *.xlsx
 *.xls
 
+# Output csv files
+data/*/output/export/flows/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
