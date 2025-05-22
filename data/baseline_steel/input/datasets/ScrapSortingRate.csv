@@ -1,0 +1,495 @@
+"region","time","sector","intermediary_product","product","scrap_type","value"
+"EU27+1",1946,"Construction","Steel Intermediary","Light Sections","Construction and Demolition",1
+"EU27+1",1946,"Construction","Steel Intermediary","Heavy Sections","Construction and Demolition",1
+"EU27+1",1946,"Construction","Steel Intermediary","Rail","Construction and Demolition",1
+"EU27+1",1946,"Construction","Steel Intermediary","Rebar","Construction and Demolition",1
+"EU27+1",1946,"Construction","Steel Intermediary","Wire Rod","Construction and Demolition",1
+"EU27+1",1946,"Construction","Steel Intermediary","Hot Rolled Bar","Construction and Demolition",1
+"EU27+1",1946,"Construction","Steel Intermediary","Plate","Construction and Demolition",1
+"EU27+1",1946,"Construction","Steel Intermediary","Hot Rolled Coil","Construction and Demolition",1
+"EU27+1",1946,"Construction","Steel Intermediary","Hot Rolled Coil Galvanized","Construction and Demolition",1
+"EU27+1",1946,"Construction","Steel Intermediary","Hot Rolled Narrow Strip","Construction and Demolition",1
+"EU27+1",1946,"Construction","Steel Intermediary","Cold Rolled Coil","Construction and Demolition",1
+"EU27+1",1946,"Construction","Steel Intermediary","Cold Rolled Coil Galvanized","Construction and Demolition",1
+"EU27+1",1946,"Construction","Steel Intermediary","Cold Rolled Coil Organic Coated","Construction and Demolition",1
+"EU27+1",1946,"Construction","Steel Intermediary","Cold Rolled Coil Tinned","Construction and Demolition",1
+"EU27+1",1946,"Construction","Steel Intermediary","Electrical Sheet","Construction and Demolition",1
+"EU27+1",1946,"Construction","Steel Intermediary","Welded Tube","Construction and Demolition",1
+"EU27+1",1946,"Construction","Steel Intermediary","Seamless Tube","Construction and Demolition",1
+"EU27+1",1946,"Construction","Steel Intermediary","Cast Iron","Construction and Demolition",1
+"EU27+1",1946,"Construction","Steel Intermediary","Cast Steel","Construction and Demolition",1
+"EU27+1",1946,"Automotive","Steel Intermediary","Light Sections","End of Life Vehicles",1
+"EU27+1",1946,"Automotive","Steel Intermediary","Heavy Sections","End of Life Vehicles",1
+"EU27+1",1946,"Automotive","Steel Intermediary","Rail","End of Life Vehicles",1
+"EU27+1",1946,"Automotive","Steel Intermediary","Rebar","End of Life Vehicles",1
+"EU27+1",1946,"Automotive","Steel Intermediary","Wire Rod","End of Life Vehicles",1
+"EU27+1",1946,"Automotive","Steel Intermediary","Hot Rolled Bar","End of Life Vehicles",1
+"EU27+1",1946,"Automotive","Steel Intermediary","Plate","End of Life Vehicles",1
+"EU27+1",1946,"Automotive","Steel Intermediary","Hot Rolled Coil","End of Life Vehicles",1
+"EU27+1",1946,"Automotive","Steel Intermediary","Hot Rolled Coil Galvanized","End of Life Vehicles",1
+"EU27+1",1946,"Automotive","Steel Intermediary","Hot Rolled Narrow Strip","End of Life Vehicles",1
+"EU27+1",1946,"Automotive","Steel Intermediary","Cold Rolled Coil","End of Life Vehicles",1
+"EU27+1",1946,"Automotive","Steel Intermediary","Cold Rolled Coil Galvanized","End of Life Vehicles",1
+"EU27+1",1946,"Automotive","Steel Intermediary","Cold Rolled Coil Organic Coated","End of Life Vehicles",1
+"EU27+1",1946,"Automotive","Steel Intermediary","Cold Rolled Coil Tinned","End of Life Vehicles",1
+"EU27+1",1946,"Automotive","Steel Intermediary","Electrical Sheet","End of Life Vehicles",1
+"EU27+1",1946,"Automotive","Steel Intermediary","Welded Tube","End of Life Vehicles",1
+"EU27+1",1946,"Automotive","Steel Intermediary","Seamless Tube","End of Life Vehicles",1
+"EU27+1",1946,"Automotive","Steel Intermediary","Cast Iron","End of Life Vehicles",1
+"EU27+1",1946,"Automotive","Steel Intermediary","Cast Steel","End of Life Vehicles",1
+"EU27+1",1946,"Other Transport","Steel Intermediary","Light Sections","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Other Transport","Steel Intermediary","Heavy Sections","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Other Transport","Steel Intermediary","Rail","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Other Transport","Steel Intermediary","Rebar","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Other Transport","Steel Intermediary","Wire Rod","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Other Transport","Steel Intermediary","Hot Rolled Bar","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Other Transport","Steel Intermediary","Plate","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Other Transport","Steel Intermediary","Hot Rolled Coil","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Other Transport","Steel Intermediary","Hot Rolled Coil Galvanized","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Other Transport","Steel Intermediary","Hot Rolled Narrow Strip","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Other Transport","Steel Intermediary","Cold Rolled Coil","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Other Transport","Steel Intermediary","Cold Rolled Coil Galvanized","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Other Transport","Steel Intermediary","Cold Rolled Coil Organic Coated","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Other Transport","Steel Intermediary","Cold Rolled Coil Tinned","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Other Transport","Steel Intermediary","Electrical Sheet","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Other Transport","Steel Intermediary","Welded Tube","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Other Transport","Steel Intermediary","Seamless Tube","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Other Transport","Steel Intermediary","Cast Iron","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Other Transport","Steel Intermediary","Cast Steel","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Other Transport","Steel Intermediary","Light Sections","Industrial Non Electrical Waste",0.8
+"EU27+1",1946,"Other Transport","Steel Intermediary","Heavy Sections","Industrial Non Electrical Waste",0.8
+"EU27+1",1946,"Other Transport","Steel Intermediary","Rail","Industrial Non Electrical Waste",0.8
+"EU27+1",1946,"Other Transport","Steel Intermediary","Rebar","Industrial Non Electrical Waste",0.8
+"EU27+1",1946,"Other Transport","Steel Intermediary","Wire Rod","Industrial Non Electrical Waste",0.8
+"EU27+1",1946,"Other Transport","Steel Intermediary","Hot Rolled Bar","Industrial Non Electrical Waste",0.8
+"EU27+1",1946,"Other Transport","Steel Intermediary","Plate","Industrial Non Electrical Waste",0.8
+"EU27+1",1946,"Other Transport","Steel Intermediary","Hot Rolled Coil","Industrial Non Electrical Waste",0.8
+"EU27+1",1946,"Other Transport","Steel Intermediary","Hot Rolled Coil Galvanized","Industrial Non Electrical Waste",0.8
+"EU27+1",1946,"Other Transport","Steel Intermediary","Hot Rolled Narrow Strip","Industrial Non Electrical Waste",0.8
+"EU27+1",1946,"Other Transport","Steel Intermediary","Cold Rolled Coil","Industrial Non Electrical Waste",0.8
+"EU27+1",1946,"Other Transport","Steel Intermediary","Cold Rolled Coil Galvanized","Industrial Non Electrical Waste",0.8
+"EU27+1",1946,"Other Transport","Steel Intermediary","Cold Rolled Coil Organic Coated","Industrial Non Electrical Waste",0.8
+"EU27+1",1946,"Other Transport","Steel Intermediary","Cold Rolled Coil Tinned","Industrial Non Electrical Waste",0.8
+"EU27+1",1946,"Other Transport","Steel Intermediary","Electrical Sheet","Industrial Non Electrical Waste",0.8
+"EU27+1",1946,"Other Transport","Steel Intermediary","Welded Tube","Industrial Non Electrical Waste",0.8
+"EU27+1",1946,"Other Transport","Steel Intermediary","Seamless Tube","Industrial Non Electrical Waste",0.8
+"EU27+1",1946,"Other Transport","Steel Intermediary","Cast Iron","Industrial Non Electrical Waste",0.8
+"EU27+1",1946,"Other Transport","Steel Intermediary","Cast Steel","Industrial Non Electrical Waste",0.8
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Light Sections","Industrial Non Electrical Waste",1
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Heavy Sections","Industrial Non Electrical Waste",1
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Rail","Industrial Non Electrical Waste",1
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Rebar","Industrial Non Electrical Waste",1
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Wire Rod","Industrial Non Electrical Waste",1
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Hot Rolled Bar","Industrial Non Electrical Waste",1
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Plate","Industrial Non Electrical Waste",1
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Hot Rolled Coil","Industrial Non Electrical Waste",1
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Hot Rolled Coil Galvanized","Industrial Non Electrical Waste",1
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Hot Rolled Narrow Strip","Industrial Non Electrical Waste",1
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Cold Rolled Coil","Industrial Non Electrical Waste",1
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Cold Rolled Coil Galvanized","Industrial Non Electrical Waste",1
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Cold Rolled Coil Organic Coated","Industrial Non Electrical Waste",1
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Cold Rolled Coil Tinned","Industrial Non Electrical Waste",1
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Electrical Sheet","Industrial Non Electrical Waste",1
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Welded Tube","Industrial Non Electrical Waste",1
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Seamless Tube","Industrial Non Electrical Waste",1
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Cast Iron","Industrial Non Electrical Waste",1
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Cast Steel","Industrial Non Electrical Waste",1
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Light Sections","Municipal Solid Waste",0.5
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Heavy Sections","Municipal Solid Waste",0.5
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Rail","Municipal Solid Waste",0.5
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Rebar","Municipal Solid Waste",0.5
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Wire Rod","Municipal Solid Waste",0.5
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Hot Rolled Bar","Municipal Solid Waste",0.5
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Plate","Municipal Solid Waste",0.5
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Hot Rolled Coil","Municipal Solid Waste",0.5
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Hot Rolled Coil Galvanized","Municipal Solid Waste",0.5
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Hot Rolled Narrow Strip","Municipal Solid Waste",0.5
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cold Rolled Coil","Municipal Solid Waste",0.5
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Galvanized","Municipal Solid Waste",0.5
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Organic Coated","Municipal Solid Waste",0.5
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Tinned","Municipal Solid Waste",0.5
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Electrical Sheet","Municipal Solid Waste",0.5
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Welded Tube","Municipal Solid Waste",0.5
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Seamless Tube","Municipal Solid Waste",0.5
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cast Iron","Municipal Solid Waste",0.5
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cast Steel","Municipal Solid Waste",0.5
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Light Sections","Waste Electric and Electronic Equipment",0.1
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Heavy Sections","Waste Electric and Electronic Equipment",0.1
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Rail","Waste Electric and Electronic Equipment",0.1
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Rebar","Waste Electric and Electronic Equipment",0.1
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Wire Rod","Waste Electric and Electronic Equipment",0.1
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Hot Rolled Bar","Waste Electric and Electronic Equipment",0.1
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Plate","Waste Electric and Electronic Equipment",0.1
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Hot Rolled Coil","Waste Electric and Electronic Equipment",0.1
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Hot Rolled Coil Galvanized","Waste Electric and Electronic Equipment",0.1
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Hot Rolled Narrow Strip","Waste Electric and Electronic Equipment",0.1
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cold Rolled Coil","Waste Electric and Electronic Equipment",0.1
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Galvanized","Waste Electric and Electronic Equipment",0.1
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Organic Coated","Waste Electric and Electronic Equipment",0.1
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Tinned","Waste Electric and Electronic Equipment",0.1
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Electrical Sheet","Waste Electric and Electronic Equipment",0.1
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Welded Tube","Waste Electric and Electronic Equipment",0.1
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Seamless Tube","Waste Electric and Electronic Equipment",0.1
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cast Iron","Waste Electric and Electronic Equipment",0.1
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cast Steel","Waste Electric and Electronic Equipment",0.1
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Light Sections","Industrial Electrical Waste",0.4
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Heavy Sections","Industrial Electrical Waste",0.4
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Rail","Industrial Electrical Waste",0.4
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Rebar","Industrial Electrical Waste",0.4
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Wire Rod","Industrial Electrical Waste",0.4
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Hot Rolled Bar","Industrial Electrical Waste",0.4
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Plate","Industrial Electrical Waste",0.4
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Hot Rolled Coil","Industrial Electrical Waste",0.4
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Hot Rolled Coil Galvanized","Industrial Electrical Waste",0.4
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Hot Rolled Narrow Strip","Industrial Electrical Waste",0.4
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cold Rolled Coil","Industrial Electrical Waste",0.4
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Galvanized","Industrial Electrical Waste",0.4
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Organic Coated","Industrial Electrical Waste",0.4
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Tinned","Industrial Electrical Waste",0.4
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Electrical Sheet","Industrial Electrical Waste",0.4
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Welded Tube","Industrial Electrical Waste",0.4
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Seamless Tube","Industrial Electrical Waste",0.4
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cast Iron","Industrial Electrical Waste",0.4
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cast Steel","Industrial Electrical Waste",0.4
+"EU27+1",1946,"Metalware","Steel Intermediary","Light Sections","Municipal Solid Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Heavy Sections","Municipal Solid Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Rail","Municipal Solid Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Rebar","Municipal Solid Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Wire Rod","Municipal Solid Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Hot Rolled Bar","Municipal Solid Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Plate","Municipal Solid Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Hot Rolled Coil","Municipal Solid Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Hot Rolled Coil Galvanized","Municipal Solid Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Hot Rolled Narrow Strip","Municipal Solid Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Cold Rolled Coil","Municipal Solid Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Cold Rolled Coil Galvanized","Municipal Solid Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Cold Rolled Coil Organic Coated","Municipal Solid Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Cold Rolled Coil Tinned","Municipal Solid Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Electrical Sheet","Municipal Solid Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Welded Tube","Municipal Solid Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Seamless Tube","Municipal Solid Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Cast Iron","Municipal Solid Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Cast Steel","Municipal Solid Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Light Sections","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Heavy Sections","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Rail","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Rebar","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Wire Rod","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Hot Rolled Bar","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Plate","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Hot Rolled Coil","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Hot Rolled Coil Galvanized","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Hot Rolled Narrow Strip","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Cold Rolled Coil","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Cold Rolled Coil Galvanized","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Cold Rolled Coil Organic Coated","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Cold Rolled Coil Tinned","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Electrical Sheet","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Welded Tube","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Seamless Tube","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Cast Iron","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Cast Steel","Industrial Electrical Waste",0.2
+"EU27+1",1946,"Metalware","Steel Intermediary","Light Sections","Industrial Non Electrical Waste",0.6
+"EU27+1",1946,"Metalware","Steel Intermediary","Heavy Sections","Industrial Non Electrical Waste",0.6
+"EU27+1",1946,"Metalware","Steel Intermediary","Rail","Industrial Non Electrical Waste",0.6
+"EU27+1",1946,"Metalware","Steel Intermediary","Rebar","Industrial Non Electrical Waste",0.6
+"EU27+1",1946,"Metalware","Steel Intermediary","Wire Rod","Industrial Non Electrical Waste",0.6
+"EU27+1",1946,"Metalware","Steel Intermediary","Hot Rolled Bar","Industrial Non Electrical Waste",0.6
+"EU27+1",1946,"Metalware","Steel Intermediary","Plate","Industrial Non Electrical Waste",0.6
+"EU27+1",1946,"Metalware","Steel Intermediary","Hot Rolled Coil","Industrial Non Electrical Waste",0.6
+"EU27+1",1946,"Metalware","Steel Intermediary","Hot Rolled Coil Galvanized","Industrial Non Electrical Waste",0.6
+"EU27+1",1946,"Metalware","Steel Intermediary","Hot Rolled Narrow Strip","Industrial Non Electrical Waste",0.6
+"EU27+1",1946,"Metalware","Steel Intermediary","Cold Rolled Coil","Industrial Non Electrical Waste",0.6
+"EU27+1",1946,"Metalware","Steel Intermediary","Cold Rolled Coil Galvanized","Industrial Non Electrical Waste",0.6
+"EU27+1",1946,"Metalware","Steel Intermediary","Cold Rolled Coil Organic Coated","Industrial Non Electrical Waste",0.6
+"EU27+1",1946,"Metalware","Steel Intermediary","Cold Rolled Coil Tinned","Industrial Non Electrical Waste",0.6
+"EU27+1",1946,"Metalware","Steel Intermediary","Electrical Sheet","Industrial Non Electrical Waste",0.6
+"EU27+1",1946,"Metalware","Steel Intermediary","Welded Tube","Industrial Non Electrical Waste",0.6
+"EU27+1",1946,"Metalware","Steel Intermediary","Seamless Tube","Industrial Non Electrical Waste",0.6
+"EU27+1",1946,"Metalware","Steel Intermediary","Cast Iron","Industrial Non Electrical Waste",0.6
+"EU27+1",1946,"Metalware","Steel Intermediary","Cast Steel","Industrial Non Electrical Waste",0.6
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Light Sections","Municipal Solid Waste",0.2
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Heavy Sections","Municipal Solid Waste",0.2
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Rail","Municipal Solid Waste",0.2
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Rebar","Municipal Solid Waste",0.2
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Wire Rod","Municipal Solid Waste",0.2
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Hot Rolled Bar","Municipal Solid Waste",0.2
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Plate","Municipal Solid Waste",0.2
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Hot Rolled Coil","Municipal Solid Waste",0.2
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Hot Rolled Coil Galvanized","Municipal Solid Waste",0.2
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Hot Rolled Narrow Strip","Municipal Solid Waste",0.2
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Cold Rolled Coil","Municipal Solid Waste",0.2
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Cold Rolled Coil Galvanized","Municipal Solid Waste",0.2
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Cold Rolled Coil Organic Coated","Municipal Solid Waste",0.2
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Cold Rolled Coil Tinned","Municipal Solid Waste",0.2
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Electrical Sheet","Municipal Solid Waste",0.2
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Welded Tube","Municipal Solid Waste",0.2
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Seamless Tube","Municipal Solid Waste",0.2
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Cast Iron","Municipal Solid Waste",0.2
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Cast Steel","Municipal Solid Waste",0.2
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Light Sections","Waste Electric and Electronic Equipment",0.8
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Heavy Sections","Waste Electric and Electronic Equipment",0.8
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Rail","Waste Electric and Electronic Equipment",0.8
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Rebar","Waste Electric and Electronic Equipment",0.8
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Wire Rod","Waste Electric and Electronic Equipment",0.8
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Hot Rolled Bar","Waste Electric and Electronic Equipment",0.8
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Plate","Waste Electric and Electronic Equipment",0.8
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Hot Rolled Coil","Waste Electric and Electronic Equipment",0.8
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Hot Rolled Coil Galvanized","Waste Electric and Electronic Equipment",0.8
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Hot Rolled Narrow Strip","Waste Electric and Electronic Equipment",0.8
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Cold Rolled Coil","Waste Electric and Electronic Equipment",0.8
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Cold Rolled Coil Galvanized","Waste Electric and Electronic Equipment",0.8
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Cold Rolled Coil Organic Coated","Waste Electric and Electronic Equipment",0.8
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Cold Rolled Coil Tinned","Waste Electric and Electronic Equipment",0.8
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Electrical Sheet","Waste Electric and Electronic Equipment",0.8
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Welded Tube","Waste Electric and Electronic Equipment",0.8
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Seamless Tube","Waste Electric and Electronic Equipment",0.8
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Cast Iron","Waste Electric and Electronic Equipment",0.8
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Cast Steel","Waste Electric and Electronic Equipment",0.8
+"EU27+1",2050,"Construction","Steel Intermediary","Light Sections","Construction and Demolition",1
+"EU27+1",2050,"Construction","Steel Intermediary","Heavy Sections","Construction and Demolition",1
+"EU27+1",2050,"Construction","Steel Intermediary","Rail","Construction and Demolition",1
+"EU27+1",2050,"Construction","Steel Intermediary","Rebar","Construction and Demolition",1
+"EU27+1",2050,"Construction","Steel Intermediary","Wire Rod","Construction and Demolition",1
+"EU27+1",2050,"Construction","Steel Intermediary","Hot Rolled Bar","Construction and Demolition",1
+"EU27+1",2050,"Construction","Steel Intermediary","Plate","Construction and Demolition",1
+"EU27+1",2050,"Construction","Steel Intermediary","Hot Rolled Coil","Construction and Demolition",1
+"EU27+1",2050,"Construction","Steel Intermediary","Hot Rolled Coil Galvanized","Construction and Demolition",1
+"EU27+1",2050,"Construction","Steel Intermediary","Hot Rolled Narrow Strip","Construction and Demolition",1
+"EU27+1",2050,"Construction","Steel Intermediary","Cold Rolled Coil","Construction and Demolition",1
+"EU27+1",2050,"Construction","Steel Intermediary","Cold Rolled Coil Galvanized","Construction and Demolition",1
+"EU27+1",2050,"Construction","Steel Intermediary","Cold Rolled Coil Organic Coated","Construction and Demolition",1
+"EU27+1",2050,"Construction","Steel Intermediary","Cold Rolled Coil Tinned","Construction and Demolition",1
+"EU27+1",2050,"Construction","Steel Intermediary","Electrical Sheet","Construction and Demolition",1
+"EU27+1",2050,"Construction","Steel Intermediary","Welded Tube","Construction and Demolition",1
+"EU27+1",2050,"Construction","Steel Intermediary","Seamless Tube","Construction and Demolition",1
+"EU27+1",2050,"Construction","Steel Intermediary","Cast Iron","Construction and Demolition",1
+"EU27+1",2050,"Construction","Steel Intermediary","Cast Steel","Construction and Demolition",1
+"EU27+1",2050,"Automotive","Steel Intermediary","Light Sections","End of Life Vehicles",1
+"EU27+1",2050,"Automotive","Steel Intermediary","Heavy Sections","End of Life Vehicles",1
+"EU27+1",2050,"Automotive","Steel Intermediary","Rail","End of Life Vehicles",1
+"EU27+1",2050,"Automotive","Steel Intermediary","Rebar","End of Life Vehicles",1
+"EU27+1",2050,"Automotive","Steel Intermediary","Wire Rod","End of Life Vehicles",1
+"EU27+1",2050,"Automotive","Steel Intermediary","Hot Rolled Bar","End of Life Vehicles",1
+"EU27+1",2050,"Automotive","Steel Intermediary","Plate","End of Life Vehicles",1
+"EU27+1",2050,"Automotive","Steel Intermediary","Hot Rolled Coil","End of Life Vehicles",1
+"EU27+1",2050,"Automotive","Steel Intermediary","Hot Rolled Coil Galvanized","End of Life Vehicles",1
+"EU27+1",2050,"Automotive","Steel Intermediary","Hot Rolled Narrow Strip","End of Life Vehicles",1
+"EU27+1",2050,"Automotive","Steel Intermediary","Cold Rolled Coil","End of Life Vehicles",1
+"EU27+1",2050,"Automotive","Steel Intermediary","Cold Rolled Coil Galvanized","End of Life Vehicles",1
+"EU27+1",2050,"Automotive","Steel Intermediary","Cold Rolled Coil Organic Coated","End of Life Vehicles",1
+"EU27+1",2050,"Automotive","Steel Intermediary","Cold Rolled Coil Tinned","End of Life Vehicles",1
+"EU27+1",2050,"Automotive","Steel Intermediary","Electrical Sheet","End of Life Vehicles",1
+"EU27+1",2050,"Automotive","Steel Intermediary","Welded Tube","End of Life Vehicles",1
+"EU27+1",2050,"Automotive","Steel Intermediary","Seamless Tube","End of Life Vehicles",1
+"EU27+1",2050,"Automotive","Steel Intermediary","Cast Iron","End of Life Vehicles",1
+"EU27+1",2050,"Automotive","Steel Intermediary","Cast Steel","End of Life Vehicles",1
+"EU27+1",2050,"Other Transport","Steel Intermediary","Light Sections","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Other Transport","Steel Intermediary","Heavy Sections","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Other Transport","Steel Intermediary","Rail","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Other Transport","Steel Intermediary","Rebar","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Other Transport","Steel Intermediary","Wire Rod","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Other Transport","Steel Intermediary","Hot Rolled Bar","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Other Transport","Steel Intermediary","Plate","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Other Transport","Steel Intermediary","Hot Rolled Coil","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Other Transport","Steel Intermediary","Hot Rolled Coil Galvanized","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Other Transport","Steel Intermediary","Hot Rolled Narrow Strip","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Other Transport","Steel Intermediary","Cold Rolled Coil","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Other Transport","Steel Intermediary","Cold Rolled Coil Galvanized","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Other Transport","Steel Intermediary","Cold Rolled Coil Organic Coated","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Other Transport","Steel Intermediary","Cold Rolled Coil Tinned","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Other Transport","Steel Intermediary","Electrical Sheet","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Other Transport","Steel Intermediary","Welded Tube","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Other Transport","Steel Intermediary","Seamless Tube","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Other Transport","Steel Intermediary","Cast Iron","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Other Transport","Steel Intermediary","Cast Steel","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Other Transport","Steel Intermediary","Light Sections","Industrial Non Electrical Waste",0.8
+"EU27+1",2050,"Other Transport","Steel Intermediary","Heavy Sections","Industrial Non Electrical Waste",0.8
+"EU27+1",2050,"Other Transport","Steel Intermediary","Rail","Industrial Non Electrical Waste",0.8
+"EU27+1",2050,"Other Transport","Steel Intermediary","Rebar","Industrial Non Electrical Waste",0.8
+"EU27+1",2050,"Other Transport","Steel Intermediary","Wire Rod","Industrial Non Electrical Waste",0.8
+"EU27+1",2050,"Other Transport","Steel Intermediary","Hot Rolled Bar","Industrial Non Electrical Waste",0.8
+"EU27+1",2050,"Other Transport","Steel Intermediary","Plate","Industrial Non Electrical Waste",0.8
+"EU27+1",2050,"Other Transport","Steel Intermediary","Hot Rolled Coil","Industrial Non Electrical Waste",0.8
+"EU27+1",2050,"Other Transport","Steel Intermediary","Hot Rolled Coil Galvanized","Industrial Non Electrical Waste",0.8
+"EU27+1",2050,"Other Transport","Steel Intermediary","Hot Rolled Narrow Strip","Industrial Non Electrical Waste",0.8
+"EU27+1",2050,"Other Transport","Steel Intermediary","Cold Rolled Coil","Industrial Non Electrical Waste",0.8
+"EU27+1",2050,"Other Transport","Steel Intermediary","Cold Rolled Coil Galvanized","Industrial Non Electrical Waste",0.8
+"EU27+1",2050,"Other Transport","Steel Intermediary","Cold Rolled Coil Organic Coated","Industrial Non Electrical Waste",0.8
+"EU27+1",2050,"Other Transport","Steel Intermediary","Cold Rolled Coil Tinned","Industrial Non Electrical Waste",0.8
+"EU27+1",2050,"Other Transport","Steel Intermediary","Electrical Sheet","Industrial Non Electrical Waste",0.8
+"EU27+1",2050,"Other Transport","Steel Intermediary","Welded Tube","Industrial Non Electrical Waste",0.8
+"EU27+1",2050,"Other Transport","Steel Intermediary","Seamless Tube","Industrial Non Electrical Waste",0.8
+"EU27+1",2050,"Other Transport","Steel Intermediary","Cast Iron","Industrial Non Electrical Waste",0.8
+"EU27+1",2050,"Other Transport","Steel Intermediary","Cast Steel","Industrial Non Electrical Waste",0.8
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Light Sections","Industrial Non Electrical Waste",1
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Heavy Sections","Industrial Non Electrical Waste",1
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Rail","Industrial Non Electrical Waste",1
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Rebar","Industrial Non Electrical Waste",1
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Wire Rod","Industrial Non Electrical Waste",1
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Hot Rolled Bar","Industrial Non Electrical Waste",1
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Plate","Industrial Non Electrical Waste",1
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Hot Rolled Coil","Industrial Non Electrical Waste",1
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Hot Rolled Coil Galvanized","Industrial Non Electrical Waste",1
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Hot Rolled Narrow Strip","Industrial Non Electrical Waste",1
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Cold Rolled Coil","Industrial Non Electrical Waste",1
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Cold Rolled Coil Galvanized","Industrial Non Electrical Waste",1
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Cold Rolled Coil Organic Coated","Industrial Non Electrical Waste",1
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Cold Rolled Coil Tinned","Industrial Non Electrical Waste",1
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Electrical Sheet","Industrial Non Electrical Waste",1
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Welded Tube","Industrial Non Electrical Waste",1
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Seamless Tube","Industrial Non Electrical Waste",1
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Cast Iron","Industrial Non Electrical Waste",1
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Cast Steel","Industrial Non Electrical Waste",1
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Light Sections","Municipal Solid Waste",0.5
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Heavy Sections","Municipal Solid Waste",0.5
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Rail","Municipal Solid Waste",0.5
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Rebar","Municipal Solid Waste",0.5
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Wire Rod","Municipal Solid Waste",0.5
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Hot Rolled Bar","Municipal Solid Waste",0.5
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Plate","Municipal Solid Waste",0.5
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Hot Rolled Coil","Municipal Solid Waste",0.5
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Hot Rolled Coil Galvanized","Municipal Solid Waste",0.5
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Hot Rolled Narrow Strip","Municipal Solid Waste",0.5
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cold Rolled Coil","Municipal Solid Waste",0.5
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Galvanized","Municipal Solid Waste",0.5
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Organic Coated","Municipal Solid Waste",0.5
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Tinned","Municipal Solid Waste",0.5
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Electrical Sheet","Municipal Solid Waste",0.5
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Welded Tube","Municipal Solid Waste",0.5
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Seamless Tube","Municipal Solid Waste",0.5
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cast Iron","Municipal Solid Waste",0.5
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cast Steel","Municipal Solid Waste",0.5
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Light Sections","Waste Electric and Electronic Equipment",0.1
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Heavy Sections","Waste Electric and Electronic Equipment",0.1
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Rail","Waste Electric and Electronic Equipment",0.1
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Rebar","Waste Electric and Electronic Equipment",0.1
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Wire Rod","Waste Electric and Electronic Equipment",0.1
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Hot Rolled Bar","Waste Electric and Electronic Equipment",0.1
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Plate","Waste Electric and Electronic Equipment",0.1
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Hot Rolled Coil","Waste Electric and Electronic Equipment",0.1
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Hot Rolled Coil Galvanized","Waste Electric and Electronic Equipment",0.1
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Hot Rolled Narrow Strip","Waste Electric and Electronic Equipment",0.1
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cold Rolled Coil","Waste Electric and Electronic Equipment",0.1
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Galvanized","Waste Electric and Electronic Equipment",0.1
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Organic Coated","Waste Electric and Electronic Equipment",0.1
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Tinned","Waste Electric and Electronic Equipment",0.1
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Electrical Sheet","Waste Electric and Electronic Equipment",0.1
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Welded Tube","Waste Electric and Electronic Equipment",0.1
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Seamless Tube","Waste Electric and Electronic Equipment",0.1
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cast Iron","Waste Electric and Electronic Equipment",0.1
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cast Steel","Waste Electric and Electronic Equipment",0.1
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Light Sections","Industrial Electrical Waste",0.4
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Heavy Sections","Industrial Electrical Waste",0.4
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Rail","Industrial Electrical Waste",0.4
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Rebar","Industrial Electrical Waste",0.4
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Wire Rod","Industrial Electrical Waste",0.4
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Hot Rolled Bar","Industrial Electrical Waste",0.4
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Plate","Industrial Electrical Waste",0.4
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Hot Rolled Coil","Industrial Electrical Waste",0.4
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Hot Rolled Coil Galvanized","Industrial Electrical Waste",0.4
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Hot Rolled Narrow Strip","Industrial Electrical Waste",0.4
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cold Rolled Coil","Industrial Electrical Waste",0.4
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Galvanized","Industrial Electrical Waste",0.4
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Organic Coated","Industrial Electrical Waste",0.4
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Tinned","Industrial Electrical Waste",0.4
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Electrical Sheet","Industrial Electrical Waste",0.4
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Welded Tube","Industrial Electrical Waste",0.4
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Seamless Tube","Industrial Electrical Waste",0.4
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cast Iron","Industrial Electrical Waste",0.4
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cast Steel","Industrial Electrical Waste",0.4
+"EU27+1",2050,"Metalware","Steel Intermediary","Light Sections","Municipal Solid Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Heavy Sections","Municipal Solid Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Rail","Municipal Solid Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Rebar","Municipal Solid Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Wire Rod","Municipal Solid Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Hot Rolled Bar","Municipal Solid Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Plate","Municipal Solid Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Hot Rolled Coil","Municipal Solid Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Hot Rolled Coil Galvanized","Municipal Solid Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Hot Rolled Narrow Strip","Municipal Solid Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Cold Rolled Coil","Municipal Solid Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Cold Rolled Coil Galvanized","Municipal Solid Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Cold Rolled Coil Organic Coated","Municipal Solid Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Cold Rolled Coil Tinned","Municipal Solid Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Electrical Sheet","Municipal Solid Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Welded Tube","Municipal Solid Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Seamless Tube","Municipal Solid Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Cast Iron","Municipal Solid Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Cast Steel","Municipal Solid Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Light Sections","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Heavy Sections","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Rail","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Rebar","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Wire Rod","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Hot Rolled Bar","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Plate","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Hot Rolled Coil","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Hot Rolled Coil Galvanized","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Hot Rolled Narrow Strip","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Cold Rolled Coil","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Cold Rolled Coil Galvanized","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Cold Rolled Coil Organic Coated","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Cold Rolled Coil Tinned","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Electrical Sheet","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Welded Tube","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Seamless Tube","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Cast Iron","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Cast Steel","Industrial Electrical Waste",0.2
+"EU27+1",2050,"Metalware","Steel Intermediary","Light Sections","Industrial Non Electrical Waste",0.6
+"EU27+1",2050,"Metalware","Steel Intermediary","Heavy Sections","Industrial Non Electrical Waste",0.6
+"EU27+1",2050,"Metalware","Steel Intermediary","Rail","Industrial Non Electrical Waste",0.6
+"EU27+1",2050,"Metalware","Steel Intermediary","Rebar","Industrial Non Electrical Waste",0.6
+"EU27+1",2050,"Metalware","Steel Intermediary","Wire Rod","Industrial Non Electrical Waste",0.6
+"EU27+1",2050,"Metalware","Steel Intermediary","Hot Rolled Bar","Industrial Non Electrical Waste",0.6
+"EU27+1",2050,"Metalware","Steel Intermediary","Plate","Industrial Non Electrical Waste",0.6
+"EU27+1",2050,"Metalware","Steel Intermediary","Hot Rolled Coil","Industrial Non Electrical Waste",0.6
+"EU27+1",2050,"Metalware","Steel Intermediary","Hot Rolled Coil Galvanized","Industrial Non Electrical Waste",0.6
+"EU27+1",2050,"Metalware","Steel Intermediary","Hot Rolled Narrow Strip","Industrial Non Electrical Waste",0.6
+"EU27+1",2050,"Metalware","Steel Intermediary","Cold Rolled Coil","Industrial Non Electrical Waste",0.6
+"EU27+1",2050,"Metalware","Steel Intermediary","Cold Rolled Coil Galvanized","Industrial Non Electrical Waste",0.6
+"EU27+1",2050,"Metalware","Steel Intermediary","Cold Rolled Coil Organic Coated","Industrial Non Electrical Waste",0.6
+"EU27+1",2050,"Metalware","Steel Intermediary","Cold Rolled Coil Tinned","Industrial Non Electrical Waste",0.6
+"EU27+1",2050,"Metalware","Steel Intermediary","Electrical Sheet","Industrial Non Electrical Waste",0.6
+"EU27+1",2050,"Metalware","Steel Intermediary","Welded Tube","Industrial Non Electrical Waste",0.6
+"EU27+1",2050,"Metalware","Steel Intermediary","Seamless Tube","Industrial Non Electrical Waste",0.6
+"EU27+1",2050,"Metalware","Steel Intermediary","Cast Iron","Industrial Non Electrical Waste",0.6
+"EU27+1",2050,"Metalware","Steel Intermediary","Cast Steel","Industrial Non Electrical Waste",0.6
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Light Sections","Municipal Solid Waste",0.2
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Heavy Sections","Municipal Solid Waste",0.2
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Rail","Municipal Solid Waste",0.2
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Rebar","Municipal Solid Waste",0.2
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Wire Rod","Municipal Solid Waste",0.2
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Hot Rolled Bar","Municipal Solid Waste",0.2
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Plate","Municipal Solid Waste",0.2
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Hot Rolled Coil","Municipal Solid Waste",0.2
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Hot Rolled Coil Galvanized","Municipal Solid Waste",0.2
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Hot Rolled Narrow Strip","Municipal Solid Waste",0.2
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Cold Rolled Coil","Municipal Solid Waste",0.2
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Cold Rolled Coil Galvanized","Municipal Solid Waste",0.2
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Cold Rolled Coil Organic Coated","Municipal Solid Waste",0.2
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Cold Rolled Coil Tinned","Municipal Solid Waste",0.2
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Electrical Sheet","Municipal Solid Waste",0.2
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Welded Tube","Municipal Solid Waste",0.2
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Seamless Tube","Municipal Solid Waste",0.2
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Cast Iron","Municipal Solid Waste",0.2
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Cast Steel","Municipal Solid Waste",0.2
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Light Sections","Waste Electric and Electronic Equipment",0.8
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Heavy Sections","Waste Electric and Electronic Equipment",0.8
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Rail","Waste Electric and Electronic Equipment",0.8
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Rebar","Waste Electric and Electronic Equipment",0.8
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Wire Rod","Waste Electric and Electronic Equipment",0.8
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Hot Rolled Bar","Waste Electric and Electronic Equipment",0.8
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Plate","Waste Electric and Electronic Equipment",0.8
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Hot Rolled Coil","Waste Electric and Electronic Equipment",0.8
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Hot Rolled Coil Galvanized","Waste Electric and Electronic Equipment",0.8
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Hot Rolled Narrow Strip","Waste Electric and Electronic Equipment",0.8
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Cold Rolled Coil","Waste Electric and Electronic Equipment",0.8
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Cold Rolled Coil Galvanized","Waste Electric and Electronic Equipment",0.8
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Cold Rolled Coil Organic Coated","Waste Electric and Electronic Equipment",0.8
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Cold Rolled Coil Tinned","Waste Electric and Electronic Equipment",0.8
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Electrical Sheet","Waste Electric and Electronic Equipment",0.8
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Welded Tube","Waste Electric and Electronic Equipment",0.8
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Seamless Tube","Waste Electric and Electronic Equipment",0.8
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Cast Iron","Waste Electric and Electronic Equipment",0.8
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Cast Steel","Waste Electric and Electronic Equipment",0.8

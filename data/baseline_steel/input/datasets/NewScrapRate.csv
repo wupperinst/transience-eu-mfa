@@ -1,0 +1,400 @@
+"region","time","sector","intermediary_product","product","value"
+"EU27+1",1946,"Automotive","Steel Intermediary","Cast Iron",0.05500000000000001
+"EU27+1",1946,"Automotive","Steel Intermediary","Cast Steel",0.20900000000000002
+"EU27+1",1946,"Automotive","Steel Intermediary","Cold Rolled Coil",0.20900000000000002
+"EU27+1",1946,"Automotive","Steel Intermediary","Cold Rolled Coil Galvanized",0.44000000000000006
+"EU27+1",1946,"Automotive","Steel Intermediary","Cold Rolled Coil Organic Coated",0.20900000000000002
+"EU27+1",1946,"Automotive","Steel Intermediary","Cold Rolled Coil Tinned",0.20900000000000002
+"EU27+1",1946,"Automotive","Steel Intermediary","Electrical Sheet",0.20900000000000002
+"EU27+1",1946,"Automotive","Steel Intermediary","Heavy Sections",0.20900000000000002
+"EU27+1",1946,"Automotive","Steel Intermediary","Hot Rolled Bar",0.22000000000000003
+"EU27+1",1946,"Automotive","Steel Intermediary","Hot Rolled Coil",0.20900000000000002
+"EU27+1",1946,"Automotive","Steel Intermediary","Hot Rolled Coil Galvanized",0.20900000000000002
+"EU27+1",1946,"Automotive","Steel Intermediary","Hot Rolled Narrow Strip",0.20900000000000002
+"EU27+1",1946,"Automotive","Steel Intermediary","Light Sections",0.20900000000000002
+"EU27+1",1946,"Automotive","Steel Intermediary","Plate",0.20900000000000002
+"EU27+1",1946,"Automotive","Steel Intermediary","Rail",0.20900000000000002
+"EU27+1",1946,"Automotive","Steel Intermediary","Rebar",0.20900000000000002
+"EU27+1",1946,"Automotive","Steel Intermediary","Seamless Tube",0.20900000000000002
+"EU27+1",1946,"Automotive","Steel Intermediary","Welded Tube",0.20900000000000002
+"EU27+1",1946,"Automotive","Steel Intermediary","Wire Rod",0.11000000000000001
+"EU27+1",1946,"Construction","Steel Intermediary","Cast Iron",0.05500000000000001
+"EU27+1",1946,"Construction","Steel Intermediary","Cast Steel",0.066
+"EU27+1",1946,"Construction","Steel Intermediary","Cold Rolled Coil",0.11000000000000001
+"EU27+1",1946,"Construction","Steel Intermediary","Cold Rolled Coil Galvanized",0.066
+"EU27+1",1946,"Construction","Steel Intermediary","Cold Rolled Coil Organic Coated",0.066
+"EU27+1",1946,"Construction","Steel Intermediary","Cold Rolled Coil Tinned",0.066
+"EU27+1",1946,"Construction","Steel Intermediary","Electrical Sheet",0.066
+"EU27+1",1946,"Construction","Steel Intermediary","Heavy Sections",0.05500000000000001
+"EU27+1",1946,"Construction","Steel Intermediary","Hot Rolled Bar",0.05500000000000001
+"EU27+1",1946,"Construction","Steel Intermediary","Hot Rolled Coil",0.11000000000000001
+"EU27+1",1946,"Construction","Steel Intermediary","Hot Rolled Coil Galvanized",0.066
+"EU27+1",1946,"Construction","Steel Intermediary","Hot Rolled Narrow Strip",0.11000000000000001
+"EU27+1",1946,"Construction","Steel Intermediary","Light Sections",0.066
+"EU27+1",1946,"Construction","Steel Intermediary","Plate",0.11000000000000001
+"EU27+1",1946,"Construction","Steel Intermediary","Rail",0.066
+"EU27+1",1946,"Construction","Steel Intermediary","Rebar",0.05500000000000001
+"EU27+1",1946,"Construction","Steel Intermediary","Seamless Tube",0.066
+"EU27+1",1946,"Construction","Steel Intermediary","Welded Tube",0.066
+"EU27+1",1946,"Construction","Steel Intermediary","Wire Rod",0.05500000000000001
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Cast Iron",0.05500000000000001
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Cast Steel",0.20900000000000002
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Cold Rolled Coil",0.22000000000000003
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Cold Rolled Coil Galvanized",0.20900000000000002
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Cold Rolled Coil Organic Coated",0.22000000000000003
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Cold Rolled Coil Tinned",0.20900000000000002
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Electrical Sheet",0.20900000000000002
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Heavy Sections",0.20900000000000002
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Hot Rolled Bar",0.20900000000000002
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Hot Rolled Coil",0.20900000000000002
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Hot Rolled Coil Galvanized",0.20900000000000002
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Hot Rolled Narrow Strip",0.20900000000000002
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Light Sections",0.20900000000000002
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Plate",0.20900000000000002
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Rail",0.20900000000000002
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Rebar",0.20900000000000002
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Seamless Tube",0.20900000000000002
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Welded Tube",0.20900000000000002
+"EU27+1",1946,"Domestic appliances","Steel Intermediary","Wire Rod",0.20900000000000002
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Cast Iron",0.05500000000000001
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Cast Steel",0.15400000000000003
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Cold Rolled Coil",0.44000000000000006
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Cold Rolled Coil Galvanized",0.15400000000000003
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Cold Rolled Coil Organic Coated",0.15400000000000003
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Cold Rolled Coil Tinned",0.15400000000000003
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Electrical Sheet",0.15400000000000003
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Heavy Sections",0.15400000000000003
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Hot Rolled Bar",0.22000000000000003
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Hot Rolled Coil",0.15400000000000003
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Hot Rolled Coil Galvanized",0.15400000000000003
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Hot Rolled Narrow Strip",0.15400000000000003
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Light Sections",0.15400000000000003
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Plate",0.22000000000000003
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Rail",0.15400000000000003
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Rebar",0.15400000000000003
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Seamless Tube",0.15400000000000003
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Welded Tube",0.15400000000000003
+"EU27+1",1946,"Mechanical Engineering","Steel Intermediary","Wire Rod",0.11000000000000001
+"EU27+1",1946,"Metalware","Steel Intermediary","Cast Iron",0.05500000000000001
+"EU27+1",1946,"Metalware","Steel Intermediary","Cast Steel",0.22000000000000003
+"EU27+1",1946,"Metalware","Steel Intermediary","Cold Rolled Coil",0.22000000000000003
+"EU27+1",1946,"Metalware","Steel Intermediary","Cold Rolled Coil Galvanized",0.22000000000000003
+"EU27+1",1946,"Metalware","Steel Intermediary","Cold Rolled Coil Organic Coated",0.22000000000000003
+"EU27+1",1946,"Metalware","Steel Intermediary","Cold Rolled Coil Tinned",0.22000000000000003
+"EU27+1",1946,"Metalware","Steel Intermediary","Electrical Sheet",0.22000000000000003
+"EU27+1",1946,"Metalware","Steel Intermediary","Heavy Sections",0.22000000000000003
+"EU27+1",1946,"Metalware","Steel Intermediary","Hot Rolled Bar",0.22000000000000003
+"EU27+1",1946,"Metalware","Steel Intermediary","Hot Rolled Coil",0.22000000000000003
+"EU27+1",1946,"Metalware","Steel Intermediary","Hot Rolled Coil Galvanized",0.22000000000000003
+"EU27+1",1946,"Metalware","Steel Intermediary","Hot Rolled Narrow Strip",0.22000000000000003
+"EU27+1",1946,"Metalware","Steel Intermediary","Light Sections",0.22000000000000003
+"EU27+1",1946,"Metalware","Steel Intermediary","Plate",0.22000000000000003
+"EU27+1",1946,"Metalware","Steel Intermediary","Rail",0.22000000000000003
+"EU27+1",1946,"Metalware","Steel Intermediary","Rebar",0.22000000000000003
+"EU27+1",1946,"Metalware","Steel Intermediary","Seamless Tube",0.22000000000000003
+"EU27+1",1946,"Metalware","Steel Intermediary","Welded Tube",0.22000000000000003
+"EU27+1",1946,"Metalware","Steel Intermediary","Wire Rod",0.22000000000000003
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cast Iron",0.05500000000000001
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cast Steel",0.22000000000000003
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cold Rolled Coil",0.22000000000000003
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Galvanized",0.22000000000000003
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Organic Coated",0.22000000000000003
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Tinned",0.22000000000000003
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Electrical Sheet",0.22000000000000003
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Heavy Sections",0.22000000000000003
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Hot Rolled Bar",0.22000000000000003
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Hot Rolled Coil",0.22000000000000003
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Hot Rolled Coil Galvanized",0.22000000000000003
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Hot Rolled Narrow Strip",0.22000000000000003
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Light Sections",0.22000000000000003
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Plate",0.22000000000000003
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Rail",0.22000000000000003
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Rebar",0.22000000000000003
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Seamless Tube",0.22000000000000003
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Welded Tube",0.22000000000000003
+"EU27+1",1946,"Miscellaneous","Steel Intermediary","Wire Rod",0.22000000000000003
+"EU27+1",1946,"Other Transport","Steel Intermediary","Cast Iron",0.05500000000000001
+"EU27+1",1946,"Other Transport","Steel Intermediary","Cast Steel",0.07700000000000001
+"EU27+1",1946,"Other Transport","Steel Intermediary","Cold Rolled Coil",0.07700000000000001
+"EU27+1",1946,"Other Transport","Steel Intermediary","Cold Rolled Coil Galvanized",0.07700000000000001
+"EU27+1",1946,"Other Transport","Steel Intermediary","Cold Rolled Coil Organic Coated",0.07700000000000001
+"EU27+1",1946,"Other Transport","Steel Intermediary","Cold Rolled Coil Tinned",0.07700000000000001
+"EU27+1",1946,"Other Transport","Steel Intermediary","Electrical Sheet",0.07700000000000001
+"EU27+1",1946,"Other Transport","Steel Intermediary","Heavy Sections",0.07700000000000001
+"EU27+1",1946,"Other Transport","Steel Intermediary","Hot Rolled Bar",0.22000000000000003
+"EU27+1",1946,"Other Transport","Steel Intermediary","Hot Rolled Coil",0.07700000000000001
+"EU27+1",1946,"Other Transport","Steel Intermediary","Hot Rolled Coil Galvanized",0.07700000000000001
+"EU27+1",1946,"Other Transport","Steel Intermediary","Hot Rolled Narrow Strip",0.07700000000000001
+"EU27+1",1946,"Other Transport","Steel Intermediary","Light Sections",0.07700000000000001
+"EU27+1",1946,"Other Transport","Steel Intermediary","Plate",0.22000000000000003
+"EU27+1",1946,"Other Transport","Steel Intermediary","Rail",0.07700000000000001
+"EU27+1",1946,"Other Transport","Steel Intermediary","Rebar",0.07700000000000001
+"EU27+1",1946,"Other Transport","Steel Intermediary","Seamless Tube",0.07700000000000001
+"EU27+1",1946,"Other Transport","Steel Intermediary","Welded Tube",0.07700000000000001
+"EU27+1",1946,"Other Transport","Steel Intermediary","Wire Rod",0.11000000000000001
+"EU27+1",2019,"Automotive","Steel Intermediary","Cast Iron",0.05
+"EU27+1",2019,"Automotive","Steel Intermediary","Cast Steel",0.19
+"EU27+1",2019,"Automotive","Steel Intermediary","Cold Rolled Coil",0.19
+"EU27+1",2019,"Automotive","Steel Intermediary","Cold Rolled Coil Galvanized",0.4
+"EU27+1",2019,"Automotive","Steel Intermediary","Cold Rolled Coil Organic Coated",0.19
+"EU27+1",2019,"Automotive","Steel Intermediary","Cold Rolled Coil Tinned",0.19
+"EU27+1",2019,"Automotive","Steel Intermediary","Electrical Sheet",0.19
+"EU27+1",2019,"Automotive","Steel Intermediary","Heavy Sections",0.19
+"EU27+1",2019,"Automotive","Steel Intermediary","Hot Rolled Bar",0.2
+"EU27+1",2019,"Automotive","Steel Intermediary","Hot Rolled Coil",0.19
+"EU27+1",2019,"Automotive","Steel Intermediary","Hot Rolled Coil Galvanized",0.19
+"EU27+1",2019,"Automotive","Steel Intermediary","Hot Rolled Narrow Strip",0.19
+"EU27+1",2019,"Automotive","Steel Intermediary","Light Sections",0.19
+"EU27+1",2019,"Automotive","Steel Intermediary","Plate",0.19
+"EU27+1",2019,"Automotive","Steel Intermediary","Rail",0.19
+"EU27+1",2019,"Automotive","Steel Intermediary","Rebar",0.19
+"EU27+1",2019,"Automotive","Steel Intermediary","Seamless Tube",0.19
+"EU27+1",2019,"Automotive","Steel Intermediary","Welded Tube",0.19
+"EU27+1",2019,"Automotive","Steel Intermediary","Wire Rod",0.1
+"EU27+1",2019,"Construction","Steel Intermediary","Cast Iron",0.05
+"EU27+1",2019,"Construction","Steel Intermediary","Cast Steel",0.06
+"EU27+1",2019,"Construction","Steel Intermediary","Cold Rolled Coil",0.1
+"EU27+1",2019,"Construction","Steel Intermediary","Cold Rolled Coil Galvanized",0.06
+"EU27+1",2019,"Construction","Steel Intermediary","Cold Rolled Coil Organic Coated",0.06
+"EU27+1",2019,"Construction","Steel Intermediary","Cold Rolled Coil Tinned",0.06
+"EU27+1",2019,"Construction","Steel Intermediary","Electrical Sheet",0.06
+"EU27+1",2019,"Construction","Steel Intermediary","Heavy Sections",0.05
+"EU27+1",2019,"Construction","Steel Intermediary","Hot Rolled Bar",0.05
+"EU27+1",2019,"Construction","Steel Intermediary","Hot Rolled Coil",0.1
+"EU27+1",2019,"Construction","Steel Intermediary","Hot Rolled Coil Galvanized",0.06
+"EU27+1",2019,"Construction","Steel Intermediary","Hot Rolled Narrow Strip",0.1
+"EU27+1",2019,"Construction","Steel Intermediary","Light Sections",0.06
+"EU27+1",2019,"Construction","Steel Intermediary","Plate",0.1
+"EU27+1",2019,"Construction","Steel Intermediary","Rail",0.06
+"EU27+1",2019,"Construction","Steel Intermediary","Rebar",0.05
+"EU27+1",2019,"Construction","Steel Intermediary","Seamless Tube",0.06
+"EU27+1",2019,"Construction","Steel Intermediary","Welded Tube",0.06
+"EU27+1",2019,"Construction","Steel Intermediary","Wire Rod",0.05
+"EU27+1",2019,"Domestic appliances","Steel Intermediary","Cast Iron",0.05
+"EU27+1",2019,"Domestic appliances","Steel Intermediary","Cast Steel",0.19
+"EU27+1",2019,"Domestic appliances","Steel Intermediary","Cold Rolled Coil",0.2
+"EU27+1",2019,"Domestic appliances","Steel Intermediary","Cold Rolled Coil Galvanized",0.19
+"EU27+1",2019,"Domestic appliances","Steel Intermediary","Cold Rolled Coil Organic Coated",0.2
+"EU27+1",2019,"Domestic appliances","Steel Intermediary","Cold Rolled Coil Tinned",0.19
+"EU27+1",2019,"Domestic appliances","Steel Intermediary","Electrical Sheet",0.19
+"EU27+1",2019,"Domestic appliances","Steel Intermediary","Heavy Sections",0.19
+"EU27+1",2019,"Domestic appliances","Steel Intermediary","Hot Rolled Bar",0.19
+"EU27+1",2019,"Domestic appliances","Steel Intermediary","Hot Rolled Coil",0.19
+"EU27+1",2019,"Domestic appliances","Steel Intermediary","Hot Rolled Coil Galvanized",0.19
+"EU27+1",2019,"Domestic appliances","Steel Intermediary","Hot Rolled Narrow Strip",0.19
+"EU27+1",2019,"Domestic appliances","Steel Intermediary","Light Sections",0.19
+"EU27+1",2019,"Domestic appliances","Steel Intermediary","Plate",0.19
+"EU27+1",2019,"Domestic appliances","Steel Intermediary","Rail",0.19
+"EU27+1",2019,"Domestic appliances","Steel Intermediary","Rebar",0.19
+"EU27+1",2019,"Domestic appliances","Steel Intermediary","Seamless Tube",0.19
+"EU27+1",2019,"Domestic appliances","Steel Intermediary","Welded Tube",0.19
+"EU27+1",2019,"Domestic appliances","Steel Intermediary","Wire Rod",0.19
+"EU27+1",2019,"Mechanical Engineering","Steel Intermediary","Cast Iron",0.05
+"EU27+1",2019,"Mechanical Engineering","Steel Intermediary","Cast Steel",0.14
+"EU27+1",2019,"Mechanical Engineering","Steel Intermediary","Cold Rolled Coil",0.4
+"EU27+1",2019,"Mechanical Engineering","Steel Intermediary","Cold Rolled Coil Galvanized",0.14
+"EU27+1",2019,"Mechanical Engineering","Steel Intermediary","Cold Rolled Coil Organic Coated",0.14
+"EU27+1",2019,"Mechanical Engineering","Steel Intermediary","Cold Rolled Coil Tinned",0.14
+"EU27+1",2019,"Mechanical Engineering","Steel Intermediary","Electrical Sheet",0.14
+"EU27+1",2019,"Mechanical Engineering","Steel Intermediary","Heavy Sections",0.14
+"EU27+1",2019,"Mechanical Engineering","Steel Intermediary","Hot Rolled Bar",0.2
+"EU27+1",2019,"Mechanical Engineering","Steel Intermediary","Hot Rolled Coil",0.14
+"EU27+1",2019,"Mechanical Engineering","Steel Intermediary","Hot Rolled Coil Galvanized",0.14
+"EU27+1",2019,"Mechanical Engineering","Steel Intermediary","Hot Rolled Narrow Strip",0.14
+"EU27+1",2019,"Mechanical Engineering","Steel Intermediary","Light Sections",0.14
+"EU27+1",2019,"Mechanical Engineering","Steel Intermediary","Plate",0.2
+"EU27+1",2019,"Mechanical Engineering","Steel Intermediary","Rail",0.14
+"EU27+1",2019,"Mechanical Engineering","Steel Intermediary","Rebar",0.14
+"EU27+1",2019,"Mechanical Engineering","Steel Intermediary","Seamless Tube",0.14
+"EU27+1",2019,"Mechanical Engineering","Steel Intermediary","Welded Tube",0.14
+"EU27+1",2019,"Mechanical Engineering","Steel Intermediary","Wire Rod",0.1
+"EU27+1",2019,"Metalware","Steel Intermediary","Cast Iron",0.05
+"EU27+1",2019,"Metalware","Steel Intermediary","Cast Steel",0.2
+"EU27+1",2019,"Metalware","Steel Intermediary","Cold Rolled Coil",0.2
+"EU27+1",2019,"Metalware","Steel Intermediary","Cold Rolled Coil Galvanized",0.2
+"EU27+1",2019,"Metalware","Steel Intermediary","Cold Rolled Coil Organic Coated",0.2
+"EU27+1",2019,"Metalware","Steel Intermediary","Cold Rolled Coil Tinned",0.2
+"EU27+1",2019,"Metalware","Steel Intermediary","Electrical Sheet",0.2
+"EU27+1",2019,"Metalware","Steel Intermediary","Heavy Sections",0.2
+"EU27+1",2019,"Metalware","Steel Intermediary","Hot Rolled Bar",0.2
+"EU27+1",2019,"Metalware","Steel Intermediary","Hot Rolled Coil",0.2
+"EU27+1",2019,"Metalware","Steel Intermediary","Hot Rolled Coil Galvanized",0.2
+"EU27+1",2019,"Metalware","Steel Intermediary","Hot Rolled Narrow Strip",0.2
+"EU27+1",2019,"Metalware","Steel Intermediary","Light Sections",0.2
+"EU27+1",2019,"Metalware","Steel Intermediary","Plate",0.2
+"EU27+1",2019,"Metalware","Steel Intermediary","Rail",0.2
+"EU27+1",2019,"Metalware","Steel Intermediary","Rebar",0.2
+"EU27+1",2019,"Metalware","Steel Intermediary","Seamless Tube",0.2
+"EU27+1",2019,"Metalware","Steel Intermediary","Welded Tube",0.2
+"EU27+1",2019,"Metalware","Steel Intermediary","Wire Rod",0.2
+"EU27+1",2019,"Miscellaneous","Steel Intermediary","Cast Iron",0.05
+"EU27+1",2019,"Miscellaneous","Steel Intermediary","Cast Steel",0.2
+"EU27+1",2019,"Miscellaneous","Steel Intermediary","Cold Rolled Coil",0.2
+"EU27+1",2019,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Galvanized",0.2
+"EU27+1",2019,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Organic Coated",0.2
+"EU27+1",2019,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Tinned",0.2
+"EU27+1",2019,"Miscellaneous","Steel Intermediary","Electrical Sheet",0.2
+"EU27+1",2019,"Miscellaneous","Steel Intermediary","Heavy Sections",0.2
+"EU27+1",2019,"Miscellaneous","Steel Intermediary","Hot Rolled Bar",0.2
+"EU27+1",2019,"Miscellaneous","Steel Intermediary","Hot Rolled Coil",0.2
+"EU27+1",2019,"Miscellaneous","Steel Intermediary","Hot Rolled Coil Galvanized",0.2
+"EU27+1",2019,"Miscellaneous","Steel Intermediary","Hot Rolled Narrow Strip",0.2
+"EU27+1",2019,"Miscellaneous","Steel Intermediary","Light Sections",0.2
+"EU27+1",2019,"Miscellaneous","Steel Intermediary","Plate",0.2
+"EU27+1",2019,"Miscellaneous","Steel Intermediary","Rail",0.2
+"EU27+1",2019,"Miscellaneous","Steel Intermediary","Rebar",0.2
+"EU27+1",2019,"Miscellaneous","Steel Intermediary","Seamless Tube",0.2
+"EU27+1",2019,"Miscellaneous","Steel Intermediary","Welded Tube",0.2
+"EU27+1",2019,"Miscellaneous","Steel Intermediary","Wire Rod",0.2
+"EU27+1",2019,"Other Transport","Steel Intermediary","Cast Iron",0.05
+"EU27+1",2019,"Other Transport","Steel Intermediary","Cast Steel",0.07
+"EU27+1",2019,"Other Transport","Steel Intermediary","Cold Rolled Coil",0.07
+"EU27+1",2019,"Other Transport","Steel Intermediary","Cold Rolled Coil Galvanized",0.07
+"EU27+1",2019,"Other Transport","Steel Intermediary","Cold Rolled Coil Organic Coated",0.07
+"EU27+1",2019,"Other Transport","Steel Intermediary","Cold Rolled Coil Tinned",0.07
+"EU27+1",2019,"Other Transport","Steel Intermediary","Electrical Sheet",0.07
+"EU27+1",2019,"Other Transport","Steel Intermediary","Heavy Sections",0.07
+"EU27+1",2019,"Other Transport","Steel Intermediary","Hot Rolled Bar",0.2
+"EU27+1",2019,"Other Transport","Steel Intermediary","Hot Rolled Coil",0.07
+"EU27+1",2019,"Other Transport","Steel Intermediary","Hot Rolled Coil Galvanized",0.07
+"EU27+1",2019,"Other Transport","Steel Intermediary","Hot Rolled Narrow Strip",0.07
+"EU27+1",2019,"Other Transport","Steel Intermediary","Light Sections",0.07
+"EU27+1",2019,"Other Transport","Steel Intermediary","Plate",0.2
+"EU27+1",2019,"Other Transport","Steel Intermediary","Rail",0.07
+"EU27+1",2019,"Other Transport","Steel Intermediary","Rebar",0.07
+"EU27+1",2019,"Other Transport","Steel Intermediary","Seamless Tube",0.07
+"EU27+1",2019,"Other Transport","Steel Intermediary","Welded Tube",0.07
+"EU27+1",2019,"Other Transport","Steel Intermediary","Wire Rod",0.1
+"EU27+1",2050,"Automotive","Steel Intermediary","Cast Iron",0.045000000000000005
+"EU27+1",2050,"Automotive","Steel Intermediary","Cast Steel",0.171
+"EU27+1",2050,"Automotive","Steel Intermediary","Cold Rolled Coil",0.171
+"EU27+1",2050,"Automotive","Steel Intermediary","Cold Rolled Coil Galvanized",0.36000000000000004
+"EU27+1",2050,"Automotive","Steel Intermediary","Cold Rolled Coil Organic Coated",0.171
+"EU27+1",2050,"Automotive","Steel Intermediary","Cold Rolled Coil Tinned",0.171
+"EU27+1",2050,"Automotive","Steel Intermediary","Electrical Sheet",0.171
+"EU27+1",2050,"Automotive","Steel Intermediary","Heavy Sections",0.171
+"EU27+1",2050,"Automotive","Steel Intermediary","Hot Rolled Bar",0.18000000000000002
+"EU27+1",2050,"Automotive","Steel Intermediary","Hot Rolled Coil",0.171
+"EU27+1",2050,"Automotive","Steel Intermediary","Hot Rolled Coil Galvanized",0.171
+"EU27+1",2050,"Automotive","Steel Intermediary","Hot Rolled Narrow Strip",0.171
+"EU27+1",2050,"Automotive","Steel Intermediary","Light Sections",0.171
+"EU27+1",2050,"Automotive","Steel Intermediary","Plate",0.171
+"EU27+1",2050,"Automotive","Steel Intermediary","Rail",0.171
+"EU27+1",2050,"Automotive","Steel Intermediary","Rebar",0.171
+"EU27+1",2050,"Automotive","Steel Intermediary","Seamless Tube",0.171
+"EU27+1",2050,"Automotive","Steel Intermediary","Welded Tube",0.171
+"EU27+1",2050,"Automotive","Steel Intermediary","Wire Rod",0.09000000000000001
+"EU27+1",2050,"Construction","Steel Intermediary","Cast Iron",0.045000000000000005
+"EU27+1",2050,"Construction","Steel Intermediary","Cast Steel",0.054
+"EU27+1",2050,"Construction","Steel Intermediary","Cold Rolled Coil",0.09000000000000001
+"EU27+1",2050,"Construction","Steel Intermediary","Cold Rolled Coil Galvanized",0.054
+"EU27+1",2050,"Construction","Steel Intermediary","Cold Rolled Coil Organic Coated",0.054
+"EU27+1",2050,"Construction","Steel Intermediary","Cold Rolled Coil Tinned",0.054
+"EU27+1",2050,"Construction","Steel Intermediary","Electrical Sheet",0.054
+"EU27+1",2050,"Construction","Steel Intermediary","Heavy Sections",0.045000000000000005
+"EU27+1",2050,"Construction","Steel Intermediary","Hot Rolled Bar",0.045000000000000005
+"EU27+1",2050,"Construction","Steel Intermediary","Hot Rolled Coil",0.09000000000000001
+"EU27+1",2050,"Construction","Steel Intermediary","Hot Rolled Coil Galvanized",0.054
+"EU27+1",2050,"Construction","Steel Intermediary","Hot Rolled Narrow Strip",0.09000000000000001
+"EU27+1",2050,"Construction","Steel Intermediary","Light Sections",0.054
+"EU27+1",2050,"Construction","Steel Intermediary","Plate",0.09000000000000001
+"EU27+1",2050,"Construction","Steel Intermediary","Rail",0.054
+"EU27+1",2050,"Construction","Steel Intermediary","Rebar",0.045000000000000005
+"EU27+1",2050,"Construction","Steel Intermediary","Seamless Tube",0.054
+"EU27+1",2050,"Construction","Steel Intermediary","Welded Tube",0.054
+"EU27+1",2050,"Construction","Steel Intermediary","Wire Rod",0.045000000000000005
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Cast Iron",0.045000000000000005
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Cast Steel",0.171
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Cold Rolled Coil",0.18000000000000002
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Cold Rolled Coil Galvanized",0.171
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Cold Rolled Coil Organic Coated",0.18000000000000002
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Cold Rolled Coil Tinned",0.171
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Electrical Sheet",0.171
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Heavy Sections",0.171
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Hot Rolled Bar",0.171
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Hot Rolled Coil",0.171
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Hot Rolled Coil Galvanized",0.171
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Hot Rolled Narrow Strip",0.171
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Light Sections",0.171
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Plate",0.171
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Rail",0.171
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Rebar",0.171
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Seamless Tube",0.171
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Welded Tube",0.171
+"EU27+1",2050,"Domestic appliances","Steel Intermediary","Wire Rod",0.171
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Cast Iron",0.045000000000000005
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Cast Steel",0.12600000000000003
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Cold Rolled Coil",0.36000000000000004
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Cold Rolled Coil Galvanized",0.12600000000000003
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Cold Rolled Coil Organic Coated",0.12600000000000003
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Cold Rolled Coil Tinned",0.12600000000000003
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Electrical Sheet",0.12600000000000003
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Heavy Sections",0.12600000000000003
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Hot Rolled Bar",0.18000000000000002
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Hot Rolled Coil",0.12600000000000003
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Hot Rolled Coil Galvanized",0.12600000000000003
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Hot Rolled Narrow Strip",0.12600000000000003
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Light Sections",0.12600000000000003
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Plate",0.18000000000000002
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Rail",0.12600000000000003
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Rebar",0.12600000000000003
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Seamless Tube",0.12600000000000003
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Welded Tube",0.12600000000000003
+"EU27+1",2050,"Mechanical Engineering","Steel Intermediary","Wire Rod",0.09000000000000001
+"EU27+1",2050,"Metalware","Steel Intermediary","Cast Iron",0.045000000000000005
+"EU27+1",2050,"Metalware","Steel Intermediary","Cast Steel",0.18000000000000002
+"EU27+1",2050,"Metalware","Steel Intermediary","Cold Rolled Coil",0.18000000000000002
+"EU27+1",2050,"Metalware","Steel Intermediary","Cold Rolled Coil Galvanized",0.18000000000000002
+"EU27+1",2050,"Metalware","Steel Intermediary","Cold Rolled Coil Organic Coated",0.18000000000000002
+"EU27+1",2050,"Metalware","Steel Intermediary","Cold Rolled Coil Tinned",0.18000000000000002
+"EU27+1",2050,"Metalware","Steel Intermediary","Electrical Sheet",0.18000000000000002
+"EU27+1",2050,"Metalware","Steel Intermediary","Heavy Sections",0.18000000000000002
+"EU27+1",2050,"Metalware","Steel Intermediary","Hot Rolled Bar",0.18000000000000002
+"EU27+1",2050,"Metalware","Steel Intermediary","Hot Rolled Coil",0.18000000000000002
+"EU27+1",2050,"Metalware","Steel Intermediary","Hot Rolled Coil Galvanized",0.18000000000000002
+"EU27+1",2050,"Metalware","Steel Intermediary","Hot Rolled Narrow Strip",0.18000000000000002
+"EU27+1",2050,"Metalware","Steel Intermediary","Light Sections",0.18000000000000002
+"EU27+1",2050,"Metalware","Steel Intermediary","Plate",0.18000000000000002
+"EU27+1",2050,"Metalware","Steel Intermediary","Rail",0.18000000000000002
+"EU27+1",2050,"Metalware","Steel Intermediary","Rebar",0.18000000000000002
+"EU27+1",2050,"Metalware","Steel Intermediary","Seamless Tube",0.18000000000000002
+"EU27+1",2050,"Metalware","Steel Intermediary","Welded Tube",0.18000000000000002
+"EU27+1",2050,"Metalware","Steel Intermediary","Wire Rod",0.18000000000000002
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cast Iron",0.045000000000000005
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cast Steel",0.18000000000000002
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cold Rolled Coil",0.18000000000000002
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Galvanized",0.18000000000000002
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Organic Coated",0.18000000000000002
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Cold Rolled Coil Tinned",0.18000000000000002
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Electrical Sheet",0.18000000000000002
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Heavy Sections",0.18000000000000002
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Hot Rolled Bar",0.18000000000000002
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Hot Rolled Coil",0.18000000000000002
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Hot Rolled Coil Galvanized",0.18000000000000002
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Hot Rolled Narrow Strip",0.18000000000000002
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Light Sections",0.18000000000000002
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Plate",0.18000000000000002
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Rail",0.18000000000000002
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Rebar",0.18000000000000002
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Seamless Tube",0.18000000000000002
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Welded Tube",0.18000000000000002
+"EU27+1",2050,"Miscellaneous","Steel Intermediary","Wire Rod",0.18000000000000002
+"EU27+1",2050,"Other Transport","Steel Intermediary","Cast Iron",0.045000000000000005
+"EU27+1",2050,"Other Transport","Steel Intermediary","Cast Steel",0.06300000000000001
+"EU27+1",2050,"Other Transport","Steel Intermediary","Cold Rolled Coil",0.06300000000000001
+"EU27+1",2050,"Other Transport","Steel Intermediary","Cold Rolled Coil Galvanized",0.06300000000000001
+"EU27+1",2050,"Other Transport","Steel Intermediary","Cold Rolled Coil Organic Coated",0.06300000000000001
+"EU27+1",2050,"Other Transport","Steel Intermediary","Cold Rolled Coil Tinned",0.06300000000000001
+"EU27+1",2050,"Other Transport","Steel Intermediary","Electrical Sheet",0.06300000000000001
+"EU27+1",2050,"Other Transport","Steel Intermediary","Heavy Sections",0.06300000000000001
+"EU27+1",2050,"Other Transport","Steel Intermediary","Hot Rolled Bar",0.18000000000000002
+"EU27+1",2050,"Other Transport","Steel Intermediary","Hot Rolled Coil",0.06300000000000001
+"EU27+1",2050,"Other Transport","Steel Intermediary","Hot Rolled Coil Galvanized",0.06300000000000001
+"EU27+1",2050,"Other Transport","Steel Intermediary","Hot Rolled Narrow Strip",0.06300000000000001
+"EU27+1",2050,"Other Transport","Steel Intermediary","Light Sections",0.06300000000000001
+"EU27+1",2050,"Other Transport","Steel Intermediary","Plate",0.18000000000000002
+"EU27+1",2050,"Other Transport","Steel Intermediary","Rail",0.06300000000000001
+"EU27+1",2050,"Other Transport","Steel Intermediary","Rebar",0.06300000000000001
+"EU27+1",2050,"Other Transport","Steel Intermediary","Seamless Tube",0.06300000000000001
+"EU27+1",2050,"Other Transport","Steel Intermediary","Welded Tube",0.06300000000000001
+"EU27+1",2050,"Other Transport","Steel Intermediary","Wire Rod",0.09000000000000001
