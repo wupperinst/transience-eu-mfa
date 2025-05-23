@@ -103,6 +103,12 @@ governing the process. For the parameters and variables we can use both
 common names as in the diagram and code names as in the algebraic
 formulation.
 
+.. note::
+
+   | We present here the *production-driven* approach used to calibrate the model with historical data and to build the baseline scenario. In that setting the first flow on the left of the :ref:`plastics-full-diagram` (demand for polymers from the domestic processing industries) is an *exogenous parameter*. The consumption flow between the  processes "Plastics market" and "End use sectors" is a *model variable*.
+   | Not detailed here but trivial to derive from the production-driven approach is the *consumption-driven* approach. In that case the consumption flow (new plastics in goods entering the use sector stock) is an *exogenous parameter*. The flows left  of it in the :ref:`plastics-full-diagram` are then calculated backwards. The domestic converter demand for polymers products is a *model variable*.
+   | Both approaches have their own merits depending on the research question and data availability.
+
 Process (1) "Polymer market"
 --------------------------------
 

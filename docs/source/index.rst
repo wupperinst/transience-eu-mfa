@@ -25,5 +25,6 @@
 .. toctree::
    :hidden:
    :caption: MIC3 integration
-
+   :maxdepth: 3
+   
    integration
