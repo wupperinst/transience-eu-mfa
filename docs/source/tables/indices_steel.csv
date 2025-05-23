@@ -1,0 +1,8 @@
+"Dimension", "Index", "Description"
+"time", "t", "Temporal resolution, e.g. yearly values from 1950 to 2050"
+"element", "e", "'All' covers the mass of the steel products incl. contamination, further individual elements can be defined, e.g. for contaminants such as Cu"
+"region", "r", "Geographical resolution, e.g. EU member states"
+"age cohort", "c", "Age cohort of application sectors"
+"use sector", "s", "Broad application sectors"
+"product", "p", "Considered steel products (e.g. Rebar, Wire Rod, Plate, Hot Rolled Coil etc.)"
+"waste categories", "w", "Categories depending on the use sector the steel scrap originates from"
