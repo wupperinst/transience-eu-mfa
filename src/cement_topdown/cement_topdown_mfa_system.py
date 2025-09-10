@@ -1,78 +1,39 @@
+# cement_topdown_mfa_system.py
 import flodym as fd
+from src.cement_flows.cement_flows_mfa_system import CementFlowsMFASystem as FlowsFuncs
+from src.cement_stock.cement_stock_mfa_system import CementStockMFASystem as StockFuncs
 
 class CementTopdownMFASystem(fd.MFASystem):
-
     def compute(self):
-        self.compute_historic_stock()
-        self.compute_future_stock()
+        self.compute_historic_chain()
+        self.compute_future_chain()
 
+    def compute_historic_chain(self):
+        # Reuse the historic computation from cement_flows
+        FlowsFuncs.compute_historic_stock(self)
 
-    def compute_historic_stock(self):
-        prm = self.parameters
-        flw = self.flows
-        stk = self.stocks
+    def compute_future_chain(self):
+        prm, flw = self.parameters, self.flows
 
-        flw["Cement production historic => Cement market historic"][...] = prm["cement_production"]
-        flw["Clinker market historic => Cement production historic"][...] = \
-            flw["Cement production historic => Cement market historic"] * prm["clinker_factor"]
-        flw["Clinker production historic => Clinker market historic"][...] = \
-            flw["Clinker market historic => Cement production historic"][...] - prm["trade_clinker"]
-        flw["Cement market historic => Concrete production historic"][...] = \
-            flw["Cement production historic => Cement market historic"][...] - prm["trade_cement"]
-        flw["Concrete production historic => Concrete market historic"][...] = \
-            flw["Cement market historic => Concrete production historic"][...] * prm["cement_to_concrete_historic"]
-        flw["Concrete market historic => End use stock historic"][...] = \
-            (flw["Concrete production historic => Concrete market historic"][...] -
-             prm["trade_concrete"]) * prm["end_use_matrix"]
-        stk["End use stock historic"].inflow[...] = \
-            flw["Concrete market historic => End use stock historic"][...]
-        stk["End use stock historic"].lifetime_model.set_prms(
-            mean=prm["end_use_lifetime_mean"], std=prm["end_use_lifetime_std"]
-        )
-        stk["End use stock historic"].compute()
-        flw["End use stock historic => CDW collection historic"][...] = stk["End use stock historic"].outflow * \
-            prm["dissipative_losses"]
-        flw["CDW collection historic => CDW unsorted market historic"][...] = \
-            flw["End use stock historic => CDW collection historic"][...] * prm["mapping_waste"]
-        flw["CDW unsorted market historic => CDW separation historic"][...] = \
-            flw["CDW collection historic => CDW unsorted market historic"][...] - prm["trade_CDW_unsorted"]
-        flw["CDW separation historic => CDW sorted market historic"][...] = \
-            flw["CDW unsorted market historic => CDW separation historic"][...] * prm["separation_efficiency"]
-        flw["CDW sorted market historic => sysenv historic"][...] = \
-            flw["CDW separation historic => CDW sorted market historic"][...] - prm["trade_CDW_sorted"]
+        # 1) Build demand_future internally (no CSV required)
+        #    Fallback: use start_value * growth_rate already present in cement_topdown
+        if "demand_future" not in prm:
+            self.parameters["demand_future"] = prm["start_value"] * prm["growth_rate"]
 
-    def compute_future_stock(self):
-        prm = self.parameters
-        flw = self.flows
-        stk = self.stocks
+        # 2) Run the existing stock function (fills future inflow and EOL flow)
+        StockFuncs.compute_future_stock(self)
 
-        flw["Concrete market future => End use stock future"][...] = prm["start_value"] * prm["growth_rate"]
-        flw["Concrete production future => Concrete market future"][...] = \
-            flw["Concrete market future => End use stock future"].sum_to(("t", "j", "f")) - prm["trade_concrete"]
-        flw["Cement market future => Concrete production future"][...] = \
-            flw["Concrete production future => Concrete market future"] * prm["cement_to_concrete_future"]
-        flw["Cement production future => Cement market future"][...] = \
-            flw["Cement market future => Concrete production future"] - prm["trade_cement"]
-        flw["Clinker market future => Cement production future"][...] = \
-            flw["Cement production future => Cement market future"] * prm["trade_clinker"]
-        flw["Clinker production future => Clinker market future"][...] = \
-            flw["Clinker market future => Cement production future"] - prm["trade_clinker"]
-        stk["End use stock future"].inflow[...] = flw["Concrete market future => End use stock future"][...]
-        stk["End use stock future"].lifetime_model.set_prms(
-            mean=prm["end_use_lifetime_mean"], std=prm["end_use_lifetime_std"]
-        )
-        stk["End use stock future"].compute()
-        flw["End use stock future => CDW collection future"][...] = stk["End use stock future"].outflow * \
-                                                               prm["dissipative_losses"]
-        flw["CDW collection future => CDW unsorted market future"][...] = \
-            flw["End use stock future => CDW collection future"][...] * prm["mapping_waste"]
-        flw["CDW unsorted market future => CDW separation future"][...] = \
-            flw["CDW collection future => CDW unsorted market future"][...] - prm["trade_CDW_unsorted"]
-        flw["CDW separation future => CDW sorted market future"][...] = \
-            flw["CDW unsorted market future => CDW separation future"][...] * prm["separation_efficiency"]
-        flw["CDW sorted market future => sysenv future"][...] = \
-            flw["CDW separation future => CDW sorted market future"][...] - prm["trade_CDW_sorted"]
+        # 3) Feed flows into the params expected by the flows function (no CSV required)
+        if "total_future_demand" not in prm:
+            self.parameters["total_future_demand"] = self.get_new_array(dim_letters=("t","j","f","s"))
+        self.parameters["total_future_demand"][...] = flw["Concrete market future => End use stock future"][...]
 
+        if "total_future_eol_flows" not in prm:
+            self.parameters["total_future_eol_flows"] = self.get_new_array(dim_letters=("t","j","f","s"))
+        self.parameters["total_future_eol_flows"][...] = flw["End use stock future => CDW collection future"][...]
+
+        # 4) Run the existing future chain from cement_flows (correct clinker logic)
+        FlowsFuncs.compute_future_flows(self)
 
     def get_flows_as_dataframes(self):
         """Retrieve flows as pandas DataFrames from the MFA system."""

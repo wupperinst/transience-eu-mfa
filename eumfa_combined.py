@@ -8,10 +8,12 @@
 
 import logging
 from run_eumfa import run_eumfa
-import pandas as pd
 import glob
 import os
 import csv
+import pandas as pd
+import gc
+import sys
 from src.common.combine_flows import FlowCalculator
 
 
@@ -33,9 +35,7 @@ logging.basicConfig(level=logging.WARNING, format="%(asctime)s - %(levelname)s -
 flow_calculator = FlowCalculator()
 # 1. Run bottom-up model
 
-import pandas as pd
-import gc
-import sys
+
 
 if __name__ == "__main__":
     try:
@@ -176,6 +176,8 @@ if __name__ == "__main__":
 
             # Get all historic and future file pairs
             historic_files = glob.glob(os.path.join(results_folder, "*historic*.csv"))
+
+
             for historic_file in historic_files:
                 future_file = historic_file.replace("historic", "future")
                 if os.path.exists(future_file):
@@ -184,13 +186,21 @@ if __name__ == "__main__":
                         historic_df = pd.read_csv(historic_file)
                         future_df = pd.read_csv(future_file)
 
-                        # Combine the dataframes
-                        combined_df = pd.concat([historic_df, future_df])
+                        # Align columns: union of columns across both
+                        all_cols = sorted(set(historic_df.columns) | set(future_df.columns))
+                        for df in (historic_df, future_df):
+                            for col in all_cols:
+                                if col not in df.columns:
+                                    df[col] = "Unknown" if col != "value" else 0
 
-                        # Group by all columns except 'value' and sum the 'value' column
-                        combined_df = combined_df.groupby(
-                            [col for col in combined_df.columns if col != 'value'], as_index=False
-                        )['value'].sum()
+                        combined_df = pd.concat([historic_df[all_cols], future_df[all_cols]], ignore_index=True)
+
+                        # Group if there are keys; otherwise just sum value into a single row
+                        key_cols = [c for c in all_cols if c != "value"]
+                        if key_cols:
+                            combined_df = combined_df.groupby(key_cols, as_index=False)["value"].sum()
+                        else:
+                            combined_df = pd.DataFrame({"value": [combined_df["value"].astype(float).sum()]})
 
                         # Save the combined table
                         output_file = historic_file.replace("historic", "combined")

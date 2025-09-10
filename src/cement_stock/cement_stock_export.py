@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from src.common.custom_export import CustomDataExporter
 
 if TYPE_CHECKING:
-    from src.cement_stock.cement_stock_model import CementTopdownMFASystem
+    from src.cement_stock.cement_stock_model import CementStockMFASystem
 
 
 class CementStockDataExporter(CustomDataExporter):
@@ -25,14 +25,14 @@ class CementStockDataExporter(CustomDataExporter):
         "CDW sorted market",
     }
 
-    def visualize_results(self, model: "CementTopdownMFASystem"):
+    def visualize_results(self, model: "CementStockMFASystem"):
         if self.cfg.inflow["do_visualize"]:
             self.visualize_inflow(mfa=model.mfa)
             self.stop_and_show()
 
     def visualize_inflow(self, mfa: fd.MFASystem):
         ap_modeled = self.plotter_class(
-            array=mfa.inflow["Region"].sum_over(("b","a")),
+            array=mfa.inflow["Region simple"].sum_over(("b","a")),
             intra_line_dim="Time",
             line_label="Modeled",
             display_names=self._display_names,

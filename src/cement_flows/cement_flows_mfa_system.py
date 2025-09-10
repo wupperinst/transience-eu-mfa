@@ -1,6 +1,6 @@
 import flodym as fd
 
-class CementTopdownMFASystem(fd.MFASystem):
+class CementFlowsMFASystem(fd.MFASystem):
 
     def compute(self):
         self.compute_historic_stock()
@@ -13,8 +13,9 @@ class CementTopdownMFASystem(fd.MFASystem):
         stk = self.stocks
 
         flw["Cement production historic => Cement market historic"][...] = prm["cement_production"]
-        flw["Clinker market historic => Cement production historic"][...] = \
+        flw["Clinker market historic => Cement production historic"][...] = (
             flw["Cement production historic => Cement market historic"] * prm["clinker_factor"]
+        ).sum_to(("t", "j", "y"))
         flw["Clinker production historic => Clinker market historic"][...] = \
             flw["Clinker market historic => Cement production historic"][...] - prm["trade_clinker"]
         flw["Cement market historic => Concrete production historic"][...] = \
@@ -56,10 +57,12 @@ class CementTopdownMFASystem(fd.MFASystem):
             flw["Concrete production future => Concrete market future"] * prm["cement_to_concrete_future"]
         flw["Cement production future => Cement market future"][...] = \
             flw["Cement market future => Concrete production future"] - prm["trade_cement"]
-        flw["Clinker market future => Cement production future"][...] = \
-            flw["Cement production future => Cement market future"] * prm["trade_clinker"]
-        flw["Clinker production future => Clinker market future"][...] = \
+        flw["Clinker market future => Cement production future"][...] = (
+            flw["Cement production future => Cement market future"] * prm["clinker_factor"]
+        ).sum_to(("t", "j", "y"))
+        flw["Clinker production future => Clinker market future"][...] = (
             flw["Clinker market future => Cement production future"] - prm["trade_clinker"]
+        )
         flw["CDW collection future => CDW unsorted market future"][...] = \
             flw["End use stock future => CDW collection future"][...] * prm["mapping_waste"]
         flw["CDW unsorted market future => CDW separation future"][...] = \
