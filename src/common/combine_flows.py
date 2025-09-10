@@ -1,4 +1,3 @@
-
 import pandas as pd
 
 class FlowCalculator:
@@ -81,32 +80,43 @@ class FlowCalculator:
         top_down_filepath,
         output_filepath,
         default_region='EU28',
-        bottom_up_end_use_sector='Buildings'
+        bottom_up_end_use_sector='Buildings',
+        product_column='Concrete product simple',
+        sector_column='End use sector',
+        region_column='Region simple',
+        value_column='value'
     ):
         bottom_up_df = pd.read_csv(bottom_up_filepath)
         top_down_df = pd.read_csv(top_down_filepath)
 
-        if 'End use sector' not in bottom_up_df.columns:
-            bottom_up_df['End use sector'] = bottom_up_end_use_sector
+        if sector_column not in bottom_up_df.columns:
+            bottom_up_df[sector_column] = bottom_up_end_use_sector
+        if sector_column not in top_down_df.columns:
+            top_down_df[sector_column] = 'Unspecified'
+        if region_column not in bottom_up_df.columns:
+            bottom_up_df[region_column] = default_region
+        if region_column not in top_down_df.columns:
+            top_down_df[region_column] = default_region
 
-        if 'End use sector' not in top_down_df.columns:
-            top_down_df['End use sector'] = 'Unspecified'
+        # Normiere Spaltennamen Value->value falls nötig
+        for df in (bottom_up_df, top_down_df):
+            if 'Value' in df.columns and value_column not in df.columns:
+                df.rename(columns={'Value': value_column}, inplace=True)
 
-        if 'Region simple' not in bottom_up_df.columns:
-            bottom_up_df['Region simple'] = default_region
+        required_columns = ['Time', region_column, product_column, sector_column, value_column]
+        missing_bottom = [c for c in required_columns if c not in bottom_up_df.columns]
+        missing_top = [c for c in required_columns if c not in top_down_df.columns]
+        if missing_bottom:
+            raise ValueError(f"Bottom-up Datei fehlt Spalten: {missing_bottom}")
+        if missing_top:
+            raise ValueError(f"Top-down Datei fehlt Spalten: {missing_top}")
 
-        if 'Region simple' not in top_down_df.columns:
-            top_down_df['Region simple'] = default_region
-
-        required_columns = ['Time', 'Region simple', 'Concrete product simple', 'End use sector', 'value']
         bottom_up_df = bottom_up_df[required_columns]
         top_down_df = top_down_df[required_columns]
 
         combined_df = pd.concat([bottom_up_df, top_down_df], ignore_index=True)
-
         total_flows_df = combined_df.groupby(
-            ['Time', 'Region simple', 'Concrete product simple', 'End use sector'], as_index=False)['value'].sum()
-
+            ['Time', region_column, product_column, sector_column], as_index=False)[value_column].sum()
         total_flows_df.to_csv(output_filepath, index=False)
         print(f"Total flows have been calculated and saved to {output_filepath}")
 
@@ -168,4 +178,3 @@ class FlowCalculator:
         remapped_data.set_index(index_columns, inplace=True)
 
         return remapped_data
-
