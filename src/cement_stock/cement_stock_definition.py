@@ -21,15 +21,15 @@ def get_definition(cfg: GeneralCfg):
 
     flows = [
         fd.FlowDefinition(from_process="Concrete market future", to_process="End use stock future",
-                          dim_letters=("t", "f", "s")),
+                          dim_letters=("t", "j", "f", "s")),
         fd.FlowDefinition(from_process="End use stock future", to_process="CDW collection future",
-                          dim_letters=("t", "f", "s")),
+                          dim_letters=("t", "j", "f", "s")),
     ]
 
     stocks = [
         fd.StockDefinition(
             name="End use stock future",
-            dim_letters=("t", "f", "s"),
+            dim_letters=("t", "j", "f", "s"),
             subclass=fd.InflowDrivenDSM,
             lifetime_model_class=cfg.customization.lifetime_model,
             time_letter="t",
