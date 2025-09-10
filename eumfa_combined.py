@@ -114,11 +114,10 @@ class EUMFAOrchestrator:
             mapped[flow_name] = remapped_reset
         return mapped
 
-    # ---------------- Residual / Projektion (Concrete spezifisch) ----------------
+    # ---------------- Residual Nachfrage + Stock ----------------
     def project_residual_demand(self, cfg: MaterialConfig):
         sanitized = FlowCalculator.sanitize_filename(cfg.bottom_up_to_stock_flow)
         bottom_up_fp = f"{self.bottom_up_output_dir}/{sanitized}_{cfg.tag}_flows.csv"
-        # Zukunftsnachfrage (Residual) berechnen
         self.flow_calc.project_demand(
             top_down_start_value_filepath=cfg.start_value_file,
             top_down_growth_rate_filepath=cfg.growth_rate_file,
@@ -131,10 +130,10 @@ class EUMFAOrchestrator:
             base_year=self.base_year
         )
         logger.info("Residual Nachfrage projiziert -> %s", cfg.demand_future_file)
-        # Stock Modell ausführen (liefert market_future + eol_future Dateien)
         if cfg.stock_model_config:
             run_eumfa(cfg.stock_model_config)
 
+    # ---------------- Total Nachfrage ----------------
     def calculate_total_demand(self, cfg: MaterialConfig):
         sanitized = FlowCalculator.sanitize_filename(cfg.bottom_up_to_stock_flow)
         bottom_up_fp = f"{self.bottom_up_output_dir}/{sanitized}_{cfg.tag}_flows.csv"
@@ -148,17 +147,23 @@ class EUMFAOrchestrator:
         )
         logger.info("Total Nachfrage berechnet -> %s", cfg.total_future_demand_file)
 
+    # ---------------- EOL ----------------
     def store_future_eol(self, cfg: MaterialConfig):
         if not cfg.eol_future_file or not cfg.total_future_eol_file:
             return
-        df = pd.read_csv(cfg.eol_future_file)
-        df.to_csv(cfg.total_future_eol_file, index=False)
-        logger.info("Future EOL gespeichert -> %s", cfg.total_future_eol_file)
+        try:
+            df = pd.read_csv(cfg.eol_future_file)
+            df.to_csv(cfg.total_future_eol_file, index=False)
+            logger.info("Future EOL gespeichert -> %s", cfg.total_future_eol_file)
+        except Exception as e:
+            logger.error("Fehler beim Speichern Future EOL: %s", e)
 
+    # ---------------- Downstream ----------------
     def run_downstream_flows(self, cfg: MaterialConfig):
         if cfg.flows_model_config:
             run_eumfa(cfg.flows_model_config)
 
+    # ---------------- Historic + Future kombinieren ----------------
     def combine_historic_future(self, results_folder: str):
         historic_files = glob.glob(os.path.join(results_folder, "*historic*.csv"))
         if not historic_files:
@@ -175,7 +180,7 @@ class EUMFAOrchestrator:
                 fut_df = pd.read_csv(future)
 
                 def clean(df: pd.DataFrame) -> pd.DataFrame:
-                    drop_cols = [c for c in df.columns if c.lower().startswith("unnamed")]  # entferne Indexreste
+                    drop_cols = [c for c in df.columns if c.lower().startswith("unnamed")]
                     if drop_cols:
                         df = df.drop(columns=drop_cols)
                     return df
@@ -198,9 +203,7 @@ class EUMFAOrchestrator:
                 if 'value' in combined.columns:
                     key_cols = [c for c in all_cols if c != 'value']
                     if key_cols:
-                        combined = (combined
-                                    .groupby(key_cols, as_index=False, dropna=False)['value']
-                                    .sum())
+                        combined = combined.groupby(key_cols, as_index=False, dropna=False)['value'].sum()
                     else:
                         total_value = combined['value'].sum()
                         combined = pd.DataFrame([{'value': total_value}])
@@ -222,13 +225,12 @@ class EUMFAOrchestrator:
                     del combined
                 gc.collect()
 
-    # ---------------- Hauptpipeline Concrete -----------------
+    # ---------------- Pipeline ----------------
     def pipeline(self, cfg: MaterialConfig, run_bottom_up: bool, run_residual: bool, run_downstream: bool):
         if run_bottom_up:
             model_cfgs = []
             if cfg.sector == 'buildings':
                 model_cfgs.append("config/buildings.yml")
-            # Weitere Sektoren später
             flows = self.run_bottom_up_models(model_cfgs) if model_cfgs else {}
             self.map_and_store_flows(flows, cfg)
         if run_residual:

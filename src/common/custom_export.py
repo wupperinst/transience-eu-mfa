@@ -15,12 +15,34 @@ class CustomDataExporter(EUMFABaseModel):
     _display_names: dict = {}
 
     def export_mfa(self, mfa: fd.MFASystem):
-        if self.do_export["pickle"]:
+        if self.do_export.get("pickle", False):
             fde.export_mfa_to_pickle(mfa=mfa, export_path=self.export_path("mfa.pickle"))
-        if self.do_export["csv"]:
-            dir_out = os.path.join(self.export_path(), "flows")
-            fde.export_mfa_flows_to_csv(mfa=mfa, export_directory=dir_out)
-            fde.export_mfa_stocks_to_csv(mfa=mfa, export_directory=dir_out)
+        if self.do_export.get("csv", False):
+            dir_flows = os.path.join(self.export_path(), "flows")
+            dir_stocks = os.path.join(self.export_path(), "stocks")
+            # Keep flodym’s flow export
+            fde.export_mfa_flows_to_csv(mfa=mfa, export_directory=dir_flows)
+            # Use our own stock export to keep dimension columns (incl. Time)
+            self._export_stocks_with_dims(mfa, dir_stocks)
+
+    def _export_stocks_with_dims(self, mfa: fd.MFASystem, export_directory: str):
+        os.makedirs(export_directory, exist_ok=True)
+        for stock_name, stock in mfa.stocks.items():
+            # Export the three standard arrays if present
+            for field in ("stock", "inflow", "outflow"):
+                arr = getattr(stock, field, None)
+                if arr is None:
+                    continue
+                # arr supports to_df() with all dimension columns + 'value'
+                df = arr.to_df()
+                safe_name = stock_name.replace("=>", "_to_").replace(" ", "_")
+                df.to_csv(os.path.join(export_directory, f"{safe_name}__{field}.csv"), index=False)
+
+    def export_path(self, filename: str = None):
+        path_tuple = (self.output_path, "export")
+        if filename is not None:
+            path_tuple += (filename,)
+        return os.path.join(*path_tuple)
 
     def export_path(self, filename: str = None):
         path_tuple = (self.output_path, "export")
