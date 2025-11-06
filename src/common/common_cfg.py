@@ -80,6 +80,8 @@ class CementFlowsVisualizationCfg(VisualizationCfg):
 class GeneralCfg(EUMFABaseModel):
 
     model_class: str
+    scenario: str
+    logging: dict
     input_data_path: str
     customization: ModelCustomization
     visualization: VisualizationCfg

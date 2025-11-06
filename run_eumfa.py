@@ -15,8 +15,8 @@ from src.cement_flows.cement_flows_model import CementFlowsModel
 models = {
     "buildings": BuildingsModel,
 #    "vehicles": VehiclesModel,
-   "plastics": PlasticsModel,
-  "steel": SteelModel,
+    "plastics": PlasticsModel,
+    "steel": SteelModel,
     "cement_topdown": CementTopdownModel,
     "cement_stock" : CementStockModel,
     "cement_flows" : CementFlowsModel
@@ -47,12 +47,17 @@ def recalculate_mfa(model_config):
 
 
 def run_eumfa(cfg_file: str):
+    model_config = get_model_config(cfg_file)
+
+    try:
+        logging_level = model_config['logging']['level'].upper()
+    except KeyError:
+        logging_level = "INFO"
     logging.basicConfig(
         format="%(asctime)s %(levelname)-8s %(message)s",
-        level=logging.INFO,
+        level=logging_level,
         datefmt="%Y-%m-%d %H:%M:%S",
     )
 
-    model_config = get_model_config(cfg_file)
     flows_as_dataframes = recalculate_mfa(model_config)
     return flows_as_dataframes
