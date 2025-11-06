@@ -149,3 +149,8 @@ class SteelMFASystem(fd.MFASystem):
         # Sorting scrap
         flw["Waste management => AVAILABLE SCRAP sysenv"][...] = aux["ContaminatedScrap"] * prm["ScrapSortingRate"] # F_5_0_AvailableScrap
         flw["Waste management => LOST SCRAP sysenv"][...] = aux["ContaminatedScrap"] * (1 - prm["ScrapSortingRate"]) # F_5_0_LostScrap
+
+
+    def get_flows_as_dataframes(self):
+        """Retrieve flows as pandas DataFrames from the MFA system."""
+        return {flow_name: flow.to_df() for flow_name, flow in self.flows.items()}

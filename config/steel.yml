@@ -12,9 +12,11 @@ customization:
 visualization:
   inflow:
     do_visualize: True
+  sankey:
+    do_visualize: True
 
 # data export
 output_path: 'data/baseline_steel/output'
 do_export:
   pickle: False
-  csv: False
+  csv: True
