@@ -1,6 +1,6 @@
 import flodym as fd
 
-class CementTopdownMFASystem(fd.MFASystem):
+class CementStockMFASystem(fd.MFASystem):
 
     def compute(self):
         self.compute_future_stock()
