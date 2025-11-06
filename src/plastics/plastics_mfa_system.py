@@ -340,3 +340,8 @@ class PlasticsMFASystem(fd.MFASystem):
         # Losses
         flw["Recycling => LOSSES sysenv"][...] = (flw["Sorted waste market => Recycling"].sum_to(("r","t","s","p","e")) 
                                                     - flw["Recycling => RECYCLATE sysenv"].sum_to(("r","t","s","p","e")))
+        
+
+    def get_flows_as_dataframes(self):
+        """Retrieve flows as pandas DataFrames from the MFA system."""
+        return {flow_name: flow.to_df() for flow_name, flow in self.flows.items()}

@@ -14,6 +14,8 @@ customization:
 visualization:
   inflow:
     do_visualize: True
+  sankey:
+    do_visualize: True
 
 # data export
 output_path: 'data/baseline_plastics/output'

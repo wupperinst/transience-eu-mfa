@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from src.common.custom_export import CustomDataExporter
 
 if TYPE_CHECKING:
-    from simson.plastics.plastics_model import PlasticsModel
+    from src.plastics.plastics_model import PlasticsModel
 
 
 class PlasticsDataExporter(CustomDataExporter):
@@ -16,7 +16,8 @@ class PlasticsDataExporter(CustomDataExporter):
 
     def visualize_results(self, model: "PlasticsModel"):
         if self.cfg.inflow["do_visualize"]:
-            self.visualize_inflow(mfa=model.mfa)
+            print("Inflow visualization not implemented yet.")
+            # self.visualize_inflow(mfa=model.mfa)
         if self.cfg.stock["do_visualize"]:
             print("Stock visualization not implemented yet.")
             # self.visualize_stock(mfa=mfa)
