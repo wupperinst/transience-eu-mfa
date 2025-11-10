@@ -10,7 +10,12 @@ class PlasticsMFASystem(fd.MFASystem):
         Perform all computations for the MFA system in sequence.
         """
         self.interpolate_parameters()
-        self.compute_inflows()
+        if self.cfg.customization.model_driven == 'production':
+            self.compute_inflows_production_driven()
+        elif self.cfg.customization.model_driven == 'final_demand':
+            self.compute_inflows_final_demand_driven()
+        else:
+            raise ValueError(f"Config item model_driven has invalid value: {self.cfg.model_driven}. Choose 'production' or 'final_demand'.")
         self.compute_stock()
         self.compute_outflows()
 
@@ -135,12 +140,12 @@ class PlasticsMFASystem(fd.MFASystem):
                         DomesticDemand, ImportNew, ExportNew, ImportUsed, ExportUsed, ImportRateUsed, ExportRateUsed')
 
 
-    def compute_inflows(self):
+    def compute_inflows_production_driven(self):
         """
-        Compute flows up to final consumption entering the stock.
+        Compute flows from production (converter demand) downstream down to final consumption entering the stock.
         """
         
-        logging.info("mfa_system - compute_inflows")
+        logging.info("mfa_system - compute_inflows_production_driven")
 
         # Abbreviation for better readability
         prm = self.parameters
@@ -198,6 +203,64 @@ class PlasticsMFASystem(fd.MFASystem):
                                                             flw["Plastics manufacturing => Plastics market"].values,
                                                             prm["MarketShare"].values)
 
+
+    def compute_inflows_final_demand_driven(self):
+        """
+        Compute flows from final consumption entering the stock upstream up to production (converter demand).
+        """
+
+        logging.info("mfa_system - compute_inflows_final_demand_driven")
+
+        # Abbreviation for better readability
+        prm = self.parameters
+        flw = self.flows
+        stk = self.stocks
+
+        # Define auxiliary flows for the MFA system in addition to the main flows defined in plastics_definition.py
+        aux = {
+            "DomesticInputManufacturing": self.get_new_array(dim_letters=("r", "t", "s", "p", "e")),
+            "ImportNew": self.get_new_array(dim_letters=("r", "t", "s", "p", "e")),
+            "ExportNew": self.get_new_array(dim_letters=("r", "t", "s", "p", "e")),
+            "NetImport": self.get_new_array(dim_letters=("r", "t", "s", "p", "e")),
+        }
+
+        ### PLASTICS MARKET
+        logging.info("mfa_system - PLASTICS MARKET")
+
+        # F_3_4_NewPlastics
+        flw["Plastics market => End use stock"][...] = prm["FinalDemand"]
+        # F_2_3_NewPlastics
+        flw["Plastics manufacturing => Plastics market"].values = np.einsum('rtspe,rRtsp->Rtspe',
+                                                                        flw["Plastics market => End use stock"].values,
+                                                                        prm["MarketShare"].values)
+
+        ### PLASTICS MANUFACTURING
+        logging.info("mfa_system - PLASTICS MANUFACTURING")
+
+        # Remove absolute import and export provided exogenously.
+        # Note: not implementing rate of import and export as in production_driven.
+        # Imports: absolute
+        flw["sysenv => Plastics manufacturing"][...] = prm["ImportNew"] # F_0_2_ImportNew
+        # Exports: absolute
+        flw["Plastics manufacturing => sysenv"][...] = prm["ExportNew"] # F_2_0_ExportNew
+
+        # Sum over all import and export regions to calculate TOTAL imports and exports and NET imports
+        aux["ImportNew"] = flw["sysenv => Plastics manufacturing"].sum_to(("r","t","s","p","e"))
+        aux["ExportNew"] = flw["Plastics manufacturing => sysenv"].sum_to(("r","t","s","p","e"))
+        aux["NetImport"] = aux["ImportNew"] - aux["ExportNew"]
+
+        # Mass balance equation for plastics manufacturing
+        aux["DomesticInputManufacturing"][...] = flw["Plastics manufacturing => Plastics market"][...] - aux["NetImport"] # F_2_3_NewPlastics
+
+        ### POLYMER MARKET
+        logging.info("mfa_system - POLYMER MARKET")
+
+        # Use 1 - RecyclateShare to avoid "divide by zero" when splittig DomesticInputManufacturing into primary and secondary
+        flw["Polymer market => PRIMARY Plastics manufacturing"][...] = aux["DomesticInputManufacturing"] / (1 - prm["RecyclateShare"]) # F_1_2_Primary
+        flw["Polymer market => SECONDARY Plastics manufacturing"][...] = aux["DomesticInputManufacturing"] - flw["Polymer market => PRIMARY Plastics manufacturing"] # F_1_2_Recyclate
+
+        flw["sysenv => Polymer market"][...] = aux["DomesticInputManufacturing"] # F_0_1_Domestic
+        
 
     def compute_stock(self):
         """

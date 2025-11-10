@@ -1,0 +1,2647 @@
+region,sector,polymer,value
+East,Agriculture,"PE-LD, -LLD",3.0
+East,Agriculture,"PE-HD, -MD",3.0
+East,Agriculture,PP,3.0
+East,Agriculture,PS,3.0
+East,Agriculture,PS-E,3.0
+East,Agriculture,PVC,3.0
+East,Agriculture,PET,3.0
+East,Agriculture,"ABS, SAN",3.0
+East,Agriculture,PMMA,3.0
+East,Agriculture,"PA (PA6, PA66)",3.0
+East,Agriculture,PC,3.0
+East,Agriculture,Other Thermoplastics,3.0
+East,Agriculture,PUR,3.0
+East,Agriculture,Other Plastics,3.0
+East,Automotive,"PE-LD, -LLD",24.0
+East,Automotive,"PE-HD, -MD",24.0
+East,Automotive,PP,24.0
+East,Automotive,PS,24.0
+East,Automotive,PS-E,24.0
+East,Automotive,PVC,24.0
+East,Automotive,PET,24.0
+East,Automotive,"ABS, SAN",24.0
+East,Automotive,PMMA,24.0
+East,Automotive,"PA (PA6, PA66)",24.0
+East,Automotive,PC,24.0
+East,Automotive,Other Thermoplastics,24.0
+East,Automotive,PUR,24.0
+East,Automotive,Other Plastics,24.0
+East,Building and Construction,"PE-LD, -LLD",47.0
+East,Building and Construction,"PE-HD, -MD",47.0
+East,Building and Construction,PP,47.0
+East,Building and Construction,PS,47.0
+East,Building and Construction,PS-E,47.0
+East,Building and Construction,PVC,47.0
+East,Building and Construction,PET,47.0
+East,Building and Construction,"ABS, SAN",47.0
+East,Building and Construction,PMMA,47.0
+East,Building and Construction,"PA (PA6, PA66)",47.0
+East,Building and Construction,PC,47.0
+East,Building and Construction,Other Thermoplastics,47.0
+East,Building and Construction,PUR,47.0
+East,Building and Construction,Other Plastics,47.0
+East,Commercial & industrial packaging,"PE-LD, -LLD",0.2
+East,Commercial & industrial packaging,"PE-HD, -MD",0.2
+East,Commercial & industrial packaging,PP,0.2
+East,Commercial & industrial packaging,PS,0.2
+East,Commercial & industrial packaging,PS-E,0.2
+East,Commercial & industrial packaging,PVC,0.2
+East,Commercial & industrial packaging,PET,0.2
+East,Commercial & industrial packaging,"ABS, SAN",0.2
+East,Commercial & industrial packaging,PMMA,0.2
+East,Commercial & industrial packaging,"PA (PA6, PA66)",0.2
+East,Commercial & industrial packaging,PC,0.2
+East,Commercial & industrial packaging,Other Thermoplastics,0.2
+East,Commercial & industrial packaging,PUR,0.2
+East,Commercial & industrial packaging,Other Plastics,0.2
+East,Electrical and Electronics,"PE-LD, -LLD",18.3
+East,Electrical and Electronics,"PE-HD, -MD",18.3
+East,Electrical and Electronics,PP,18.3
+East,Electrical and Electronics,PS,18.3
+East,Electrical and Electronics,PS-E,18.3
+East,Electrical and Electronics,PVC,18.3
+East,Electrical and Electronics,PET,18.3
+East,Electrical and Electronics,"ABS, SAN",18.3
+East,Electrical and Electronics,PMMA,18.3
+East,Electrical and Electronics,"PA (PA6, PA66)",18.3
+East,Electrical and Electronics,PC,18.3
+East,Electrical and Electronics,Other Thermoplastics,18.3
+East,Electrical and Electronics,PUR,18.3
+East,Electrical and Electronics,Other Plastics,18.3
+East,EPS ETICS,"PE-LD, -LLD",65.0
+East,EPS ETICS,"PE-HD, -MD",65.0
+East,EPS ETICS,PP,65.0
+East,EPS ETICS,PS,65.0
+East,EPS ETICS,PS-E,65.0
+East,EPS ETICS,PVC,65.0
+East,EPS ETICS,PET,65.0
+East,EPS ETICS,"ABS, SAN",65.0
+East,EPS ETICS,PMMA,65.0
+East,EPS ETICS,"PA (PA6, PA66)",65.0
+East,EPS ETICS,PC,65.0
+East,EPS ETICS,Other Thermoplastics,65.0
+East,EPS ETICS,PUR,65.0
+East,EPS ETICS,Other Plastics,65.0
+East,EPS flat roof,"PE-LD, -LLD",35.0
+East,EPS flat roof,"PE-HD, -MD",35.0
+East,EPS flat roof,PP,35.0
+East,EPS flat roof,PS,35.0
+East,EPS flat roof,PS-E,35.0
+East,EPS flat roof,PVC,35.0
+East,EPS flat roof,PET,35.0
+East,EPS flat roof,"ABS, SAN",35.0
+East,EPS flat roof,PMMA,35.0
+East,EPS flat roof,"PA (PA6, PA66)",35.0
+East,EPS flat roof,PC,35.0
+East,EPS flat roof,Other Thermoplastics,35.0
+East,EPS flat roof,PUR,35.0
+East,EPS flat roof,Other Plastics,35.0
+East,EPS flooring,"PE-LD, -LLD",75.0
+East,EPS flooring,"PE-HD, -MD",75.0
+East,EPS flooring,PP,75.0
+East,EPS flooring,PS,75.0
+East,EPS flooring,PS-E,75.0
+East,EPS flooring,PVC,75.0
+East,EPS flooring,PET,75.0
+East,EPS flooring,"ABS, SAN",75.0
+East,EPS flooring,PMMA,75.0
+East,EPS flooring,"PA (PA6, PA66)",75.0
+East,EPS flooring,PC,75.0
+East,EPS flooring,Other Thermoplastics,75.0
+East,EPS flooring,PUR,75.0
+East,EPS flooring,Other Plastics,75.0
+East,EPS others in B&C,"PE-LD, -LLD",75.0
+East,EPS others in B&C,"PE-HD, -MD",75.0
+East,EPS others in B&C,PP,75.0
+East,EPS others in B&C,PS,75.0
+East,EPS others in B&C,PS-E,75.0
+East,EPS others in B&C,PVC,75.0
+East,EPS others in B&C,PET,75.0
+East,EPS others in B&C,"ABS, SAN",75.0
+East,EPS others in B&C,PMMA,75.0
+East,EPS others in B&C,"PA (PA6, PA66)",75.0
+East,EPS others in B&C,PC,75.0
+East,EPS others in B&C,Other Thermoplastics,75.0
+East,EPS others in B&C,PUR,75.0
+East,EPS others in B&C,Other Plastics,75.0
+East,EPS perimeter,"PE-LD, -LLD",80.0
+East,EPS perimeter,"PE-HD, -MD",80.0
+East,EPS perimeter,PP,80.0
+East,EPS perimeter,PS,80.0
+East,EPS perimeter,PS-E,80.0
+East,EPS perimeter,PVC,80.0
+East,EPS perimeter,PET,80.0
+East,EPS perimeter,"ABS, SAN",80.0
+East,EPS perimeter,PMMA,80.0
+East,EPS perimeter,"PA (PA6, PA66)",80.0
+East,EPS perimeter,PC,80.0
+East,EPS perimeter,Other Thermoplastics,80.0
+East,EPS perimeter,PUR,80.0
+East,EPS perimeter,Other Plastics,80.0
+East,Household packaging,"PE-LD, -LLD",0.2
+East,Household packaging,"PE-HD, -MD",0.2
+East,Household packaging,PP,0.2
+East,Household packaging,PS,0.2
+East,Household packaging,PS-E,0.2
+East,Household packaging,PVC,0.2
+East,Household packaging,PET,0.2
+East,Household packaging,"ABS, SAN",0.2
+East,Household packaging,PMMA,0.2
+East,Household packaging,"PA (PA6, PA66)",0.2
+East,Household packaging,PC,0.2
+East,Household packaging,Other Thermoplastics,0.2
+East,Household packaging,PUR,0.2
+East,Household packaging,Other Plastics,0.2
+East,"Household, Leisure, Sports","PE-LD, -LLD",9.9
+East,"Household, Leisure, Sports","PE-HD, -MD",9.9
+East,"Household, Leisure, Sports",PP,9.9
+East,"Household, Leisure, Sports",PS,9.9
+East,"Household, Leisure, Sports",PS-E,9.9
+East,"Household, Leisure, Sports",PVC,9.9
+East,"Household, Leisure, Sports",PET,9.9
+East,"Household, Leisure, Sports","ABS, SAN",9.9
+East,"Household, Leisure, Sports",PMMA,9.9
+East,"Household, Leisure, Sports","PA (PA6, PA66)",9.9
+East,"Household, Leisure, Sports",PC,9.9
+East,"Household, Leisure, Sports",Other Thermoplastics,9.9
+East,"Household, Leisure, Sports",PUR,9.9
+East,"Household, Leisure, Sports",Other Plastics,9.9
+East,Others,"PE-LD, -LLD",6.0
+East,Others,"PE-HD, -MD",6.0
+East,Others,PP,6.0
+East,Others,PS,6.0
+East,Others,PS-E,6.0
+East,Others,PVC,6.0
+East,Others,PET,6.0
+East,Others,"ABS, SAN",6.0
+East,Others,PMMA,6.0
+East,Others,"PA (PA6, PA66)",6.0
+East,Others,PC,6.0
+East,Others,Other Thermoplastics,6.0
+East,Others,PUR,6.0
+East,Others,Other Plastics,6.0
+East,Packaging,"PE-LD, -LLD",0.2
+East,Packaging,"PE-HD, -MD",0.2
+East,Packaging,PP,0.2
+East,Packaging,PS,0.2
+East,Packaging,PS-E,0.2
+East,Packaging,PVC,0.2
+East,Packaging,PET,0.2
+East,Packaging,"ABS, SAN",0.2
+East,Packaging,PMMA,0.2
+East,Packaging,"PA (PA6, PA66)",0.2
+East,Packaging,PC,0.2
+East,Packaging,Other Thermoplastics,0.2
+East,Packaging,PUR,0.2
+East,Packaging,Other Plastics,0.2
+East,PET beverage bottles,"PE-LD, -LLD",0.2
+East,PET beverage bottles,"PE-HD, -MD",0.2
+East,PET beverage bottles,PP,0.2
+East,PET beverage bottles,PS,0.2
+East,PET beverage bottles,PS-E,0.2
+East,PET beverage bottles,PVC,0.2
+East,PET beverage bottles,PET,0.2
+East,PET beverage bottles,"ABS, SAN",0.2
+East,PET beverage bottles,PMMA,0.2
+East,PET beverage bottles,"PA (PA6, PA66)",0.2
+East,PET beverage bottles,PC,0.2
+East,PET beverage bottles,Other Thermoplastics,0.2
+East,PET beverage bottles,PUR,0.2
+East,PET beverage bottles,Other Plastics,0.2
+East,PET other packaging,"PE-LD, -LLD",0.2
+East,PET other packaging,"PE-HD, -MD",0.2
+East,PET other packaging,PP,0.2
+East,PET other packaging,PS,0.2
+East,PET other packaging,PS-E,0.2
+East,PET other packaging,PVC,0.2
+East,PET other packaging,PET,0.2
+East,PET other packaging,"ABS, SAN",0.2
+East,PET other packaging,PMMA,0.2
+East,PET other packaging,"PA (PA6, PA66)",0.2
+East,PET other packaging,PC,0.2
+East,PET other packaging,Other Thermoplastics,0.2
+East,PET other packaging,PUR,0.2
+East,PET other packaging,Other Plastics,0.2
+East,PUR boards and panels rigid foam,"PE-LD, -LLD",65.0
+East,PUR boards and panels rigid foam,"PE-HD, -MD",65.0
+East,PUR boards and panels rigid foam,PP,65.0
+East,PUR boards and panels rigid foam,PS,65.0
+East,PUR boards and panels rigid foam,PS-E,65.0
+East,PUR boards and panels rigid foam,PVC,65.0
+East,PUR boards and panels rigid foam,PET,65.0
+East,PUR boards and panels rigid foam,"ABS, SAN",65.0
+East,PUR boards and panels rigid foam,PMMA,65.0
+East,PUR boards and panels rigid foam,"PA (PA6, PA66)",65.0
+East,PUR boards and panels rigid foam,PC,65.0
+East,PUR boards and panels rigid foam,Other Thermoplastics,65.0
+East,PUR boards and panels rigid foam,PUR,65.0
+East,PUR boards and panels rigid foam,Other Plastics,65.0
+East,PUR moulded automotive,"PE-LD, -LLD",24.0
+East,PUR moulded automotive,"PE-HD, -MD",24.0
+East,PUR moulded automotive,PP,24.0
+East,PUR moulded automotive,PS,24.0
+East,PUR moulded automotive,PS-E,24.0
+East,PUR moulded automotive,PVC,24.0
+East,PUR moulded automotive,PET,24.0
+East,PUR moulded automotive,"ABS, SAN",24.0
+East,PUR moulded automotive,PMMA,24.0
+East,PUR moulded automotive,"PA (PA6, PA66)",24.0
+East,PUR moulded automotive,PC,24.0
+East,PUR moulded automotive,Other Thermoplastics,24.0
+East,PUR moulded automotive,PUR,24.0
+East,PUR moulded automotive,Other Plastics,24.0
+East,PUR moulded furniture,"PE-LD, -LLD",10.0
+East,PUR moulded furniture,"PE-HD, -MD",10.0
+East,PUR moulded furniture,PP,10.0
+East,PUR moulded furniture,PS,10.0
+East,PUR moulded furniture,PS-E,10.0
+East,PUR moulded furniture,PVC,10.0
+East,PUR moulded furniture,PET,10.0
+East,PUR moulded furniture,"ABS, SAN",10.0
+East,PUR moulded furniture,PMMA,10.0
+East,PUR moulded furniture,"PA (PA6, PA66)",10.0
+East,PUR moulded furniture,PC,10.0
+East,PUR moulded furniture,Other Thermoplastics,10.0
+East,PUR moulded furniture,PUR,10.0
+East,PUR moulded furniture,Other Plastics,10.0
+East,PUR others in Automotive,"PE-LD, -LLD",24.0
+East,PUR others in Automotive,"PE-HD, -MD",24.0
+East,PUR others in Automotive,PP,24.0
+East,PUR others in Automotive,PS,24.0
+East,PUR others in Automotive,PS-E,24.0
+East,PUR others in Automotive,PVC,24.0
+East,PUR others in Automotive,PET,24.0
+East,PUR others in Automotive,"ABS, SAN",24.0
+East,PUR others in Automotive,PMMA,24.0
+East,PUR others in Automotive,"PA (PA6, PA66)",24.0
+East,PUR others in Automotive,PC,24.0
+East,PUR others in Automotive,Other Thermoplastics,24.0
+East,PUR others in Automotive,PUR,24.0
+East,PUR others in Automotive,Other Plastics,24.0
+East,PUR others in Others,"PE-LD, -LLD",10.0
+East,PUR others in Others,"PE-HD, -MD",10.0
+East,PUR others in Others,PP,10.0
+East,PUR others in Others,PS,10.0
+East,PUR others in Others,PS-E,10.0
+East,PUR others in Others,PVC,10.0
+East,PUR others in Others,PET,10.0
+East,PUR others in Others,"ABS, SAN",10.0
+East,PUR others in Others,PMMA,10.0
+East,PUR others in Others,"PA (PA6, PA66)",10.0
+East,PUR others in Others,PC,10.0
+East,PUR others in Others,Other Thermoplastics,10.0
+East,PUR others in Others,PUR,10.0
+East,PUR others in Others,Other Plastics,10.0
+East,PUR rigid spray foam,"PE-LD, -LLD",65.0
+East,PUR rigid spray foam,"PE-HD, -MD",65.0
+East,PUR rigid spray foam,PP,65.0
+East,PUR rigid spray foam,PS,65.0
+East,PUR rigid spray foam,PS-E,65.0
+East,PUR rigid spray foam,PVC,65.0
+East,PUR rigid spray foam,PET,65.0
+East,PUR rigid spray foam,"ABS, SAN",65.0
+East,PUR rigid spray foam,PMMA,65.0
+East,PUR rigid spray foam,"PA (PA6, PA66)",65.0
+East,PUR rigid spray foam,PC,65.0
+East,PUR rigid spray foam,Other Thermoplastics,65.0
+East,PUR rigid spray foam,PUR,65.0
+East,PUR rigid spray foam,Other Plastics,65.0
+East,PUR slabstock furniture,"PE-LD, -LLD",10.0
+East,PUR slabstock furniture,"PE-HD, -MD",10.0
+East,PUR slabstock furniture,PP,10.0
+East,PUR slabstock furniture,PS,10.0
+East,PUR slabstock furniture,PS-E,10.0
+East,PUR slabstock furniture,PVC,10.0
+East,PUR slabstock furniture,PET,10.0
+East,PUR slabstock furniture,"ABS, SAN",10.0
+East,PUR slabstock furniture,PMMA,10.0
+East,PUR slabstock furniture,"PA (PA6, PA66)",10.0
+East,PUR slabstock furniture,PC,10.0
+East,PUR slabstock furniture,Other Thermoplastics,10.0
+East,PUR slabstock furniture,PUR,10.0
+East,PUR slabstock furniture,Other Plastics,10.0
+East,PUR slabstock mattresses,"PE-LD, -LLD",10.0
+East,PUR slabstock mattresses,"PE-HD, -MD",10.0
+East,PUR slabstock mattresses,PP,10.0
+East,PUR slabstock mattresses,PS,10.0
+East,PUR slabstock mattresses,PS-E,10.0
+East,PUR slabstock mattresses,PVC,10.0
+East,PUR slabstock mattresses,PET,10.0
+East,PUR slabstock mattresses,"ABS, SAN",10.0
+East,PUR slabstock mattresses,PMMA,10.0
+East,PUR slabstock mattresses,"PA (PA6, PA66)",10.0
+East,PUR slabstock mattresses,PC,10.0
+East,PUR slabstock mattresses,Other Thermoplastics,10.0
+East,PUR slabstock mattresses,PUR,10.0
+East,PUR slabstock mattresses,Other Plastics,10.0
+East,PVC others in B&C,"PE-LD, -LLD",10.0
+East,PVC others in B&C,"PE-HD, -MD",10.0
+East,PVC others in B&C,PP,10.0
+East,PVC others in B&C,PS,10.0
+East,PVC others in B&C,PS-E,10.0
+East,PVC others in B&C,PVC,10.0
+East,PVC others in B&C,PET,10.0
+East,PVC others in B&C,"ABS, SAN",10.0
+East,PVC others in B&C,PMMA,10.0
+East,PVC others in B&C,"PA (PA6, PA66)",10.0
+East,PVC others in B&C,PC,10.0
+East,PVC others in B&C,Other Thermoplastics,10.0
+East,PVC others in B&C,PUR,10.0
+East,PVC others in B&C,Other Plastics,10.0
+East,PVC pipes,"PE-LD, -LLD",80.0
+East,PVC pipes,"PE-HD, -MD",80.0
+East,PVC pipes,PP,80.0
+East,PVC pipes,PS,80.0
+East,PVC pipes,PS-E,80.0
+East,PVC pipes,PVC,80.0
+East,PVC pipes,PET,80.0
+East,PVC pipes,"ABS, SAN",80.0
+East,PVC pipes,PMMA,80.0
+East,PVC pipes,"PA (PA6, PA66)",80.0
+East,PVC pipes,PC,80.0
+East,PVC pipes,Other Thermoplastics,80.0
+East,PVC pipes,PUR,80.0
+East,PVC pipes,Other Plastics,80.0
+East,PVC profiles,"PE-LD, -LLD",40.0
+East,PVC profiles,"PE-HD, -MD",40.0
+East,PVC profiles,PP,40.0
+East,PVC profiles,PS,40.0
+East,PVC profiles,PS-E,40.0
+East,PVC profiles,PVC,40.0
+East,PVC profiles,PET,40.0
+East,PVC profiles,"ABS, SAN",40.0
+East,PVC profiles,PMMA,40.0
+East,PVC profiles,"PA (PA6, PA66)",40.0
+East,PVC profiles,PC,40.0
+East,PVC profiles,Other Thermoplastics,40.0
+East,PVC profiles,PUR,40.0
+East,PVC profiles,Other Plastics,40.0
+EU27+3,Agriculture,"PE-LD, -LLD",3.0
+EU27+3,Agriculture,"PE-HD, -MD",3.0
+EU27+3,Agriculture,PP,3.0
+EU27+3,Agriculture,PS,3.0
+EU27+3,Agriculture,PS-E,3.0
+EU27+3,Agriculture,PVC,3.0
+EU27+3,Agriculture,PET,3.0
+EU27+3,Agriculture,"ABS, SAN",3.0
+EU27+3,Agriculture,PMMA,3.0
+EU27+3,Agriculture,"PA (PA6, PA66)",3.0
+EU27+3,Agriculture,PC,3.0
+EU27+3,Agriculture,Other Thermoplastics,3.0
+EU27+3,Agriculture,PUR,3.0
+EU27+3,Agriculture,Other Plastics,3.0
+EU27+3,Automotive,"PE-HD, -MD",17.9
+EU27+3,Automotive,PP,17.9
+EU27+3,Automotive,PS,17.9
+EU27+3,Automotive,PS-E,17.9
+EU27+3,Automotive,PVC,17.9
+EU27+3,Automotive,PET,17.9
+EU27+3,Automotive,"ABS, SAN",17.9
+EU27+3,Automotive,PMMA,17.9
+EU27+3,Automotive,"PA (PA6, PA66)",17.9
+EU27+3,Automotive,PC,17.9
+EU27+3,Automotive,Other Thermoplastics,17.9
+EU27+3,Automotive,PUR,17.9
+EU27+3,Automotive,Other Plastics,17.9
+EU27+3,Automotive,"PE-LD, -LLD",17.9
+EU27+3,Building and Construction,Other Plastics,47.0
+EU27+3,Building and Construction,PUR,47.0
+EU27+3,Building and Construction,"PE-LD, -LLD",47.0
+EU27+3,Building and Construction,"PE-HD, -MD",47.0
+EU27+3,Building and Construction,PP,47.0
+EU27+3,Building and Construction,PS,47.0
+EU27+3,Building and Construction,PS-E,47.0
+EU27+3,Building and Construction,PVC,47.0
+EU27+3,Building and Construction,PET,47.0
+EU27+3,Building and Construction,"ABS, SAN",47.0
+EU27+3,Building and Construction,PMMA,47.0
+EU27+3,Building and Construction,"PA (PA6, PA66)",47.0
+EU27+3,Building and Construction,PC,47.0
+EU27+3,Building and Construction,Other Thermoplastics,47.0
+EU27+3,Commercial & industrial packaging,"PE-LD, -LLD",0.2
+EU27+3,Commercial & industrial packaging,"PE-HD, -MD",0.2
+EU27+3,Commercial & industrial packaging,PP,0.2
+EU27+3,Commercial & industrial packaging,PS-E,0.2
+EU27+3,Commercial & industrial packaging,PVC,0.2
+EU27+3,Commercial & industrial packaging,PET,0.2
+EU27+3,Commercial & industrial packaging,PS,0.2
+EU27+3,Commercial & industrial packaging,PMMA,0.2
+EU27+3,Commercial & industrial packaging,"PA (PA6, PA66)",0.2
+EU27+3,Commercial & industrial packaging,PC,0.2
+EU27+3,Commercial & industrial packaging,"ABS, SAN",0.2
+EU27+3,Commercial & industrial packaging,PUR,0.2
+EU27+3,Commercial & industrial packaging,Other Plastics,0.2
+EU27+3,Commercial & industrial packaging,Other Thermoplastics,0.2
+EU27+3,Electrical and Electronics,"PE-LD, -LLD",13.4
+EU27+3,Electrical and Electronics,PP,13.4
+EU27+3,Electrical and Electronics,PS,13.4
+EU27+3,Electrical and Electronics,PS-E,13.4
+EU27+3,Electrical and Electronics,PVC,13.4
+EU27+3,Electrical and Electronics,PET,13.4
+EU27+3,Electrical and Electronics,"ABS, SAN",13.4
+EU27+3,Electrical and Electronics,PMMA,13.4
+EU27+3,Electrical and Electronics,"PA (PA6, PA66)",13.4
+EU27+3,Electrical and Electronics,PC,13.4
+EU27+3,Electrical and Electronics,Other Thermoplastics,13.4
+EU27+3,Electrical and Electronics,PUR,13.4
+EU27+3,Electrical and Electronics,Other Plastics,13.4
+EU27+3,Electrical and Electronics,"PE-HD, -MD",13.4
+EU27+3,EPS ETICS,"PE-LD, -LLD",65.0
+EU27+3,EPS ETICS,"PE-HD, -MD",65.0
+EU27+3,EPS ETICS,PS,65.0
+EU27+3,EPS ETICS,PS-E,65.0
+EU27+3,EPS ETICS,PVC,65.0
+EU27+3,EPS ETICS,PP,65.0
+EU27+3,EPS ETICS,"ABS, SAN",65.0
+EU27+3,EPS ETICS,PMMA,65.0
+EU27+3,EPS ETICS,"PA (PA6, PA66)",65.0
+EU27+3,EPS ETICS,PET,65.0
+EU27+3,EPS ETICS,Other Plastics,65.0
+EU27+3,EPS ETICS,PC,65.0
+EU27+3,EPS ETICS,Other Thermoplastics,65.0
+EU27+3,EPS ETICS,PUR,65.0
+EU27+3,EPS flat roof,PC,35.0
+EU27+3,EPS flat roof,"PE-LD, -LLD",35.0
+EU27+3,EPS flat roof,"PE-HD, -MD",35.0
+EU27+3,EPS flat roof,PP,35.0
+EU27+3,EPS flat roof,PS,35.0
+EU27+3,EPS flat roof,PS-E,35.0
+EU27+3,EPS flat roof,PVC,35.0
+EU27+3,EPS flat roof,PET,35.0
+EU27+3,EPS flat roof,"ABS, SAN",35.0
+EU27+3,EPS flat roof,PMMA,35.0
+EU27+3,EPS flat roof,Other Thermoplastics,35.0
+EU27+3,EPS flat roof,PUR,35.0
+EU27+3,EPS flat roof,Other Plastics,35.0
+EU27+3,EPS flat roof,"PA (PA6, PA66)",35.0
+EU27+3,EPS flooring,"PE-LD, -LLD",75.0
+EU27+3,EPS flooring,"PE-HD, -MD",75.0
+EU27+3,EPS flooring,PS,75.0
+EU27+3,EPS flooring,PS-E,75.0
+EU27+3,EPS flooring,PVC,75.0
+EU27+3,EPS flooring,PP,75.0
+EU27+3,EPS flooring,"ABS, SAN",75.0
+EU27+3,EPS flooring,PMMA,75.0
+EU27+3,EPS flooring,"PA (PA6, PA66)",75.0
+EU27+3,EPS flooring,PET,75.0
+EU27+3,EPS flooring,Other Thermoplastics,75.0
+EU27+3,EPS flooring,PUR,75.0
+EU27+3,EPS flooring,Other Plastics,75.0
+EU27+3,EPS flooring,PC,75.0
+EU27+3,EPS others in B&C,"PE-LD, -LLD",75.0
+EU27+3,EPS others in B&C,"PE-HD, -MD",75.0
+EU27+3,EPS others in B&C,PP,75.0
+EU27+3,EPS others in B&C,PS,75.0
+EU27+3,EPS others in B&C,PS-E,75.0
+EU27+3,EPS others in B&C,PVC,75.0
+EU27+3,EPS others in B&C,PET,75.0
+EU27+3,EPS others in B&C,"ABS, SAN",75.0
+EU27+3,EPS others in B&C,"PA (PA6, PA66)",75.0
+EU27+3,EPS others in B&C,PC,75.0
+EU27+3,EPS others in B&C,Other Thermoplastics,75.0
+EU27+3,EPS others in B&C,PUR,75.0
+EU27+3,EPS others in B&C,Other Plastics,75.0
+EU27+3,EPS others in B&C,PMMA,75.0
+EU27+3,EPS perimeter,"PE-LD, -LLD",80.0
+EU27+3,EPS perimeter,PP,80.0
+EU27+3,EPS perimeter,PS,80.0
+EU27+3,EPS perimeter,PS-E,80.0
+EU27+3,EPS perimeter,"PE-HD, -MD",80.0
+EU27+3,EPS perimeter,PET,80.0
+EU27+3,EPS perimeter,"ABS, SAN",80.0
+EU27+3,EPS perimeter,PMMA,80.0
+EU27+3,EPS perimeter,PVC,80.0
+EU27+3,EPS perimeter,"PA (PA6, PA66)",80.0
+EU27+3,EPS perimeter,PC,80.0
+EU27+3,EPS perimeter,Other Thermoplastics,80.0
+EU27+3,EPS perimeter,PUR,80.0
+EU27+3,EPS perimeter,Other Plastics,80.0
+EU27+3,Household packaging,"PE-LD, -LLD",0.2
+EU27+3,Household packaging,"PE-HD, -MD",0.2
+EU27+3,Household packaging,PP,0.2
+EU27+3,Household packaging,PS,0.2
+EU27+3,Household packaging,PS-E,0.2
+EU27+3,Household packaging,PVC,0.2
+EU27+3,Household packaging,PET,0.2
+EU27+3,Household packaging,"ABS, SAN",0.2
+EU27+3,Household packaging,PMMA,0.2
+EU27+3,Household packaging,"PA (PA6, PA66)",0.2
+EU27+3,Household packaging,PC,0.2
+EU27+3,Household packaging,PUR,0.2
+EU27+3,Household packaging,Other Plastics,0.2
+EU27+3,Household packaging,Other Thermoplastics,0.2
+EU27+3,"Household, Leisure, Sports","PE-HD, -MD",7.2
+EU27+3,"Household, Leisure, Sports",PP,7.2
+EU27+3,"Household, Leisure, Sports",PS,7.2
+EU27+3,"Household, Leisure, Sports",PS-E,7.2
+EU27+3,"Household, Leisure, Sports",PVC,7.2
+EU27+3,"Household, Leisure, Sports",PET,7.2
+EU27+3,"Household, Leisure, Sports","ABS, SAN",7.2
+EU27+3,"Household, Leisure, Sports",PMMA,7.2
+EU27+3,"Household, Leisure, Sports","PA (PA6, PA66)",7.2
+EU27+3,"Household, Leisure, Sports",PC,7.2
+EU27+3,"Household, Leisure, Sports",Other Thermoplastics,7.2
+EU27+3,"Household, Leisure, Sports",PUR,7.2
+EU27+3,"Household, Leisure, Sports","PE-LD, -LLD",7.2
+EU27+3,"Household, Leisure, Sports",Other Plastics,7.2
+EU27+3,Others,"PE-HD, -MD",6.0
+EU27+3,Others,PP,6.0
+EU27+3,Others,PS,6.0
+EU27+3,Others,"PE-LD, -LLD",6.0
+EU27+3,Others,PVC,6.0
+EU27+3,Others,PET,6.0
+EU27+3,Others,"ABS, SAN",6.0
+EU27+3,Others,PS-E,6.0
+EU27+3,Others,"PA (PA6, PA66)",6.0
+EU27+3,Others,PC,6.0
+EU27+3,Others,Other Thermoplastics,6.0
+EU27+3,Others,PMMA,6.0
+EU27+3,Others,PUR,6.0
+EU27+3,Others,Other Plastics,6.0
+EU27+3,Packaging,"PE-LD, -LLD",0.2
+EU27+3,Packaging,PP,0.2
+EU27+3,Packaging,PS,0.2
+EU27+3,Packaging,PS-E,0.2
+EU27+3,Packaging,PVC,0.2
+EU27+3,Packaging,PET,0.2
+EU27+3,Packaging,"ABS, SAN",0.2
+EU27+3,Packaging,PMMA,0.2
+EU27+3,Packaging,"PA (PA6, PA66)",0.2
+EU27+3,Packaging,PC,0.2
+EU27+3,Packaging,Other Thermoplastics,0.2
+EU27+3,Packaging,PUR,0.2
+EU27+3,Packaging,Other Plastics,0.2
+EU27+3,Packaging,"PE-HD, -MD",0.2
+EU27+3,PET beverage bottles,"PE-LD, -LLD",0.2
+EU27+3,PET beverage bottles,PP,0.2
+EU27+3,PET beverage bottles,PS,0.2
+EU27+3,PET beverage bottles,PS-E,0.2
+EU27+3,PET beverage bottles,PVC,0.2
+EU27+3,PET beverage bottles,PET,0.2
+EU27+3,PET beverage bottles,"ABS, SAN",0.2
+EU27+3,PET beverage bottles,PMMA,0.2
+EU27+3,PET beverage bottles,"PA (PA6, PA66)",0.2
+EU27+3,PET beverage bottles,PC,0.2
+EU27+3,PET beverage bottles,Other Thermoplastics,0.2
+EU27+3,PET beverage bottles,PUR,0.2
+EU27+3,PET beverage bottles,Other Plastics,0.2
+EU27+3,PET beverage bottles,"PE-HD, -MD",0.2
+EU27+3,PET other packaging,"PE-LD, -LLD",0.2
+EU27+3,PET other packaging,PP,0.2
+EU27+3,PET other packaging,PS,0.2
+EU27+3,PET other packaging,PS-E,0.2
+EU27+3,PET other packaging,PVC,0.2
+EU27+3,PET other packaging,PET,0.2
+EU27+3,PET other packaging,"ABS, SAN",0.2
+EU27+3,PET other packaging,PMMA,0.2
+EU27+3,PET other packaging,"PA (PA6, PA66)",0.2
+EU27+3,PET other packaging,PC,0.2
+EU27+3,PET other packaging,Other Thermoplastics,0.2
+EU27+3,PET other packaging,PUR,0.2
+EU27+3,PET other packaging,Other Plastics,0.2
+EU27+3,PET other packaging,"PE-HD, -MD",0.2
+EU27+3,PUR boards and panels rigid foam,"PE-LD, -LLD",65.0
+EU27+3,PUR boards and panels rigid foam,PP,65.0
+EU27+3,PUR boards and panels rigid foam,PS,65.0
+EU27+3,PUR boards and panels rigid foam,PS-E,65.0
+EU27+3,PUR boards and panels rigid foam,"PE-HD, -MD",65.0
+EU27+3,PUR boards and panels rigid foam,PMMA,65.0
+EU27+3,PUR boards and panels rigid foam,PVC,65.0
+EU27+3,PUR boards and panels rigid foam,PET,65.0
+EU27+3,PUR boards and panels rigid foam,"ABS, SAN",65.0
+EU27+3,PUR boards and panels rigid foam,PUR,65.0
+EU27+3,PUR boards and panels rigid foam,"PA (PA6, PA66)",65.0
+EU27+3,PUR boards and panels rigid foam,PC,65.0
+EU27+3,PUR boards and panels rigid foam,Other Thermoplastics,65.0
+EU27+3,PUR boards and panels rigid foam,Other Plastics,65.0
+EU27+3,PUR moulded automotive,PVC,17.9
+EU27+3,PUR moulded automotive,"PE-LD, -LLD",17.9
+EU27+3,PUR moulded automotive,"PE-HD, -MD",17.9
+EU27+3,PUR moulded automotive,PP,17.9
+EU27+3,PUR moulded automotive,PS,17.9
+EU27+3,PUR moulded automotive,PET,17.9
+EU27+3,PUR moulded automotive,"ABS, SAN",17.9
+EU27+3,PUR moulded automotive,PMMA,17.9
+EU27+3,PUR moulded automotive,"PA (PA6, PA66)",17.9
+EU27+3,PUR moulded automotive,PC,17.9
+EU27+3,PUR moulded automotive,Other Thermoplastics,17.9
+EU27+3,PUR moulded automotive,PUR,17.9
+EU27+3,PUR moulded automotive,Other Plastics,17.9
+EU27+3,PUR moulded automotive,PS-E,17.9
+EU27+3,PUR moulded furniture,"PE-LD, -LLD",10.0
+EU27+3,PUR moulded furniture,"PE-HD, -MD",10.0
+EU27+3,PUR moulded furniture,PP,10.0
+EU27+3,PUR moulded furniture,PS-E,10.0
+EU27+3,PUR moulded furniture,PVC,10.0
+EU27+3,PUR moulded furniture,PET,10.0
+EU27+3,PUR moulded furniture,"ABS, SAN",10.0
+EU27+3,PUR moulded furniture,PMMA,10.0
+EU27+3,PUR moulded furniture,"PA (PA6, PA66)",10.0
+EU27+3,PUR moulded furniture,PC,10.0
+EU27+3,PUR moulded furniture,Other Thermoplastics,10.0
+EU27+3,PUR moulded furniture,PUR,10.0
+EU27+3,PUR moulded furniture,Other Plastics,10.0
+EU27+3,PUR moulded furniture,PS,10.0
+EU27+3,PUR others in Automotive,"PE-LD, -LLD",17.9
+EU27+3,PUR others in Automotive,PP,17.9
+EU27+3,PUR others in Automotive,PS,17.9
+EU27+3,PUR others in Automotive,PS-E,17.9
+EU27+3,PUR others in Automotive,"PE-HD, -MD",17.9
+EU27+3,PUR others in Automotive,PET,17.9
+EU27+3,PUR others in Automotive,"ABS, SAN",17.9
+EU27+3,PUR others in Automotive,PMMA,17.9
+EU27+3,PUR others in Automotive,"PA (PA6, PA66)",17.9
+EU27+3,PUR others in Automotive,PC,17.9
+EU27+3,PUR others in Automotive,Other Thermoplastics,17.9
+EU27+3,PUR others in Automotive,PUR,17.9
+EU27+3,PUR others in Automotive,Other Plastics,17.9
+EU27+3,PUR others in Automotive,PVC,17.9
+EU27+3,PUR others in Others,"PE-LD, -LLD",10.0
+EU27+3,PUR others in Others,"PE-HD, -MD",10.0
+EU27+3,PUR others in Others,PP,10.0
+EU27+3,PUR others in Others,PS,10.0
+EU27+3,PUR others in Others,PS-E,10.0
+EU27+3,PUR others in Others,PVC,10.0
+EU27+3,PUR others in Others,PET,10.0
+EU27+3,PUR others in Others,"ABS, SAN",10.0
+EU27+3,PUR others in Others,PMMA,10.0
+EU27+3,PUR others in Others,"PA (PA6, PA66)",10.0
+EU27+3,PUR others in Others,PC,10.0
+EU27+3,PUR others in Others,Other Thermoplastics,10.0
+EU27+3,PUR others in Others,PUR,10.0
+EU27+3,PUR others in Others,Other Plastics,10.0
+EU27+3,PUR rigid spray foam,"PE-LD, -LLD",65.0
+EU27+3,PUR rigid spray foam,"PE-HD, -MD",65.0
+EU27+3,PUR rigid spray foam,PS,65.0
+EU27+3,PUR rigid spray foam,PS-E,65.0
+EU27+3,PUR rigid spray foam,PVC,65.0
+EU27+3,PUR rigid spray foam,PP,65.0
+EU27+3,PUR rigid spray foam,"ABS, SAN",65.0
+EU27+3,PUR rigid spray foam,PMMA,65.0
+EU27+3,PUR rigid spray foam,"PA (PA6, PA66)",65.0
+EU27+3,PUR rigid spray foam,PC,65.0
+EU27+3,PUR rigid spray foam,Other Thermoplastics,65.0
+EU27+3,PUR rigid spray foam,PUR,65.0
+EU27+3,PUR rigid spray foam,Other Plastics,65.0
+EU27+3,PUR rigid spray foam,PET,65.0
+EU27+3,PUR slabstock furniture,"PE-LD, -LLD",10.0
+EU27+3,PUR slabstock furniture,"PE-HD, -MD",10.0
+EU27+3,PUR slabstock furniture,PP,10.0
+EU27+3,PUR slabstock furniture,PS-E,10.0
+EU27+3,PUR slabstock furniture,PVC,10.0
+EU27+3,PUR slabstock furniture,PET,10.0
+EU27+3,PUR slabstock furniture,"ABS, SAN",10.0
+EU27+3,PUR slabstock furniture,PMMA,10.0
+EU27+3,PUR slabstock furniture,"PA (PA6, PA66)",10.0
+EU27+3,PUR slabstock furniture,PC,10.0
+EU27+3,PUR slabstock furniture,Other Thermoplastics,10.0
+EU27+3,PUR slabstock furniture,PUR,10.0
+EU27+3,PUR slabstock furniture,Other Plastics,10.0
+EU27+3,PUR slabstock furniture,PS,10.0
+EU27+3,PUR slabstock mattresses,"PE-HD, -MD",10.0
+EU27+3,PUR slabstock mattresses,PP,10.0
+EU27+3,PUR slabstock mattresses,PS,10.0
+EU27+3,PUR slabstock mattresses,"PE-LD, -LLD",10.0
+EU27+3,PUR slabstock mattresses,PS-E,10.0
+EU27+3,PUR slabstock mattresses,PVC,10.0
+EU27+3,PUR slabstock mattresses,PET,10.0
+EU27+3,PUR slabstock mattresses,"ABS, SAN",10.0
+EU27+3,PUR slabstock mattresses,PMMA,10.0
+EU27+3,PUR slabstock mattresses,"PA (PA6, PA66)",10.0
+EU27+3,PUR slabstock mattresses,PC,10.0
+EU27+3,PUR slabstock mattresses,Other Thermoplastics,10.0
+EU27+3,PUR slabstock mattresses,PUR,10.0
+EU27+3,PUR slabstock mattresses,Other Plastics,10.0
+EU27+3,PVC others in B&C,"PE-LD, -LLD",10.0
+EU27+3,PVC others in B&C,"PE-HD, -MD",10.0
+EU27+3,PVC others in B&C,PP,10.0
+EU27+3,PVC others in B&C,PS,10.0
+EU27+3,PVC others in B&C,PS-E,10.0
+EU27+3,PVC others in B&C,PVC,10.0
+EU27+3,PVC others in B&C,"ABS, SAN",10.0
+EU27+3,PVC others in B&C,PMMA,10.0
+EU27+3,PVC others in B&C,"PA (PA6, PA66)",10.0
+EU27+3,PVC others in B&C,PC,10.0
+EU27+3,PVC others in B&C,Other Thermoplastics,10.0
+EU27+3,PVC others in B&C,PUR,10.0
+EU27+3,PVC others in B&C,Other Plastics,10.0
+EU27+3,PVC others in B&C,PET,10.0
+EU27+3,PVC pipes,"PE-HD, -MD",80.0
+EU27+3,PVC pipes,PP,80.0
+EU27+3,PVC pipes,PS,80.0
+EU27+3,PVC pipes,"PE-LD, -LLD",80.0
+EU27+3,PVC pipes,PVC,80.0
+EU27+3,PVC pipes,PET,80.0
+EU27+3,PVC pipes,"ABS, SAN",80.0
+EU27+3,PVC pipes,PS-E,80.0
+EU27+3,PVC pipes,"PA (PA6, PA66)",80.0
+EU27+3,PVC pipes,PC,80.0
+EU27+3,PVC pipes,Other Thermoplastics,80.0
+EU27+3,PVC pipes,PUR,80.0
+EU27+3,PVC pipes,Other Plastics,80.0
+EU27+3,PVC pipes,PMMA,80.0
+EU27+3,PVC profiles,"PE-LD, -LLD",40.0
+EU27+3,PVC profiles,"PE-HD, -MD",40.0
+EU27+3,PVC profiles,PP,40.0
+EU27+3,PVC profiles,PS-E,40.0
+EU27+3,PVC profiles,PVC,40.0
+EU27+3,PVC profiles,PET,40.0
+EU27+3,PVC profiles,PS,40.0
+EU27+3,PVC profiles,"ABS, SAN",40.0
+EU27+3,PVC profiles,PMMA,40.0
+EU27+3,PVC profiles,"PA (PA6, PA66)",40.0
+EU27+3,PVC profiles,PC,40.0
+EU27+3,PVC profiles,Other Thermoplastics,40.0
+EU27+3,PVC profiles,PUR,40.0
+EU27+3,PVC profiles,Other Plastics,40.0
+Extra-EU27+3,Agriculture,"PE-LD, -LLD",3.0
+Extra-EU27+3,Agriculture,"PE-HD, -MD",3.0
+Extra-EU27+3,Agriculture,PP,3.0
+Extra-EU27+3,Agriculture,PS,3.0
+Extra-EU27+3,Agriculture,PS-E,3.0
+Extra-EU27+3,Agriculture,PVC,3.0
+Extra-EU27+3,Agriculture,PET,3.0
+Extra-EU27+3,Agriculture,"ABS, SAN",3.0
+Extra-EU27+3,Agriculture,PMMA,3.0
+Extra-EU27+3,Agriculture,"PA (PA6, PA66)",3.0
+Extra-EU27+3,Agriculture,PC,3.0
+Extra-EU27+3,Agriculture,Other Thermoplastics,3.0
+Extra-EU27+3,Agriculture,PUR,3.0
+Extra-EU27+3,Agriculture,Other Plastics,3.0
+Extra-EU27+3,Automotive,"PE-HD, -MD",17.9
+Extra-EU27+3,Automotive,PP,17.9
+Extra-EU27+3,Automotive,PS,17.9
+Extra-EU27+3,Automotive,PS-E,17.9
+Extra-EU27+3,Automotive,PVC,17.9
+Extra-EU27+3,Automotive,PET,17.9
+Extra-EU27+3,Automotive,"ABS, SAN",17.9
+Extra-EU27+3,Automotive,PMMA,17.9
+Extra-EU27+3,Automotive,"PA (PA6, PA66)",17.9
+Extra-EU27+3,Automotive,PC,17.9
+Extra-EU27+3,Automotive,Other Thermoplastics,17.9
+Extra-EU27+3,Automotive,PUR,17.9
+Extra-EU27+3,Automotive,Other Plastics,17.9
+Extra-EU27+3,Automotive,"PE-LD, -LLD",17.9
+Extra-EU27+3,Building and Construction,Other Plastics,47.0
+Extra-EU27+3,Building and Construction,PUR,47.0
+Extra-EU27+3,Building and Construction,"PE-LD, -LLD",47.0
+Extra-EU27+3,Building and Construction,"PE-HD, -MD",47.0
+Extra-EU27+3,Building and Construction,PP,47.0
+Extra-EU27+3,Building and Construction,PS,47.0
+Extra-EU27+3,Building and Construction,PS-E,47.0
+Extra-EU27+3,Building and Construction,PVC,47.0
+Extra-EU27+3,Building and Construction,PET,47.0
+Extra-EU27+3,Building and Construction,"ABS, SAN",47.0
+Extra-EU27+3,Building and Construction,PMMA,47.0
+Extra-EU27+3,Building and Construction,"PA (PA6, PA66)",47.0
+Extra-EU27+3,Building and Construction,PC,47.0
+Extra-EU27+3,Building and Construction,Other Thermoplastics,47.0
+Extra-EU27+3,Commercial & industrial packaging,"PE-LD, -LLD",0.2
+Extra-EU27+3,Commercial & industrial packaging,"PE-HD, -MD",0.2
+Extra-EU27+3,Commercial & industrial packaging,PP,0.2
+Extra-EU27+3,Commercial & industrial packaging,PS-E,0.2
+Extra-EU27+3,Commercial & industrial packaging,PVC,0.2
+Extra-EU27+3,Commercial & industrial packaging,PET,0.2
+Extra-EU27+3,Commercial & industrial packaging,PS,0.2
+Extra-EU27+3,Commercial & industrial packaging,PMMA,0.2
+Extra-EU27+3,Commercial & industrial packaging,"PA (PA6, PA66)",0.2
+Extra-EU27+3,Commercial & industrial packaging,PC,0.2
+Extra-EU27+3,Commercial & industrial packaging,"ABS, SAN",0.2
+Extra-EU27+3,Commercial & industrial packaging,PUR,0.2
+Extra-EU27+3,Commercial & industrial packaging,Other Plastics,0.2
+Extra-EU27+3,Commercial & industrial packaging,Other Thermoplastics,0.2
+Extra-EU27+3,Electrical and Electronics,"PE-LD, -LLD",13.4
+Extra-EU27+3,Electrical and Electronics,PP,13.4
+Extra-EU27+3,Electrical and Electronics,PS,13.4
+Extra-EU27+3,Electrical and Electronics,PS-E,13.4
+Extra-EU27+3,Electrical and Electronics,PVC,13.4
+Extra-EU27+3,Electrical and Electronics,PET,13.4
+Extra-EU27+3,Electrical and Electronics,"ABS, SAN",13.4
+Extra-EU27+3,Electrical and Electronics,PMMA,13.4
+Extra-EU27+3,Electrical and Electronics,"PA (PA6, PA66)",13.4
+Extra-EU27+3,Electrical and Electronics,PC,13.4
+Extra-EU27+3,Electrical and Electronics,Other Thermoplastics,13.4
+Extra-EU27+3,Electrical and Electronics,PUR,13.4
+Extra-EU27+3,Electrical and Electronics,Other Plastics,13.4
+Extra-EU27+3,Electrical and Electronics,"PE-HD, -MD",13.4
+Extra-EU27+3,EPS ETICS,"PE-LD, -LLD",65.0
+Extra-EU27+3,EPS ETICS,"PE-HD, -MD",65.0
+Extra-EU27+3,EPS ETICS,PS,65.0
+Extra-EU27+3,EPS ETICS,PS-E,65.0
+Extra-EU27+3,EPS ETICS,PVC,65.0
+Extra-EU27+3,EPS ETICS,PP,65.0
+Extra-EU27+3,EPS ETICS,"ABS, SAN",65.0
+Extra-EU27+3,EPS ETICS,PMMA,65.0
+Extra-EU27+3,EPS ETICS,"PA (PA6, PA66)",65.0
+Extra-EU27+3,EPS ETICS,PET,65.0
+Extra-EU27+3,EPS ETICS,Other Plastics,65.0
+Extra-EU27+3,EPS ETICS,PC,65.0
+Extra-EU27+3,EPS ETICS,Other Thermoplastics,65.0
+Extra-EU27+3,EPS ETICS,PUR,65.0
+Extra-EU27+3,EPS flat roof,PC,35.0
+Extra-EU27+3,EPS flat roof,"PE-LD, -LLD",35.0
+Extra-EU27+3,EPS flat roof,"PE-HD, -MD",35.0
+Extra-EU27+3,EPS flat roof,PP,35.0
+Extra-EU27+3,EPS flat roof,PS,35.0
+Extra-EU27+3,EPS flat roof,PS-E,35.0
+Extra-EU27+3,EPS flat roof,PVC,35.0
+Extra-EU27+3,EPS flat roof,PET,35.0
+Extra-EU27+3,EPS flat roof,"ABS, SAN",35.0
+Extra-EU27+3,EPS flat roof,PMMA,35.0
+Extra-EU27+3,EPS flat roof,Other Thermoplastics,35.0
+Extra-EU27+3,EPS flat roof,PUR,35.0
+Extra-EU27+3,EPS flat roof,Other Plastics,35.0
+Extra-EU27+3,EPS flat roof,"PA (PA6, PA66)",35.0
+Extra-EU27+3,EPS flooring,"PE-LD, -LLD",75.0
+Extra-EU27+3,EPS flooring,"PE-HD, -MD",75.0
+Extra-EU27+3,EPS flooring,PS,75.0
+Extra-EU27+3,EPS flooring,PS-E,75.0
+Extra-EU27+3,EPS flooring,PVC,75.0
+Extra-EU27+3,EPS flooring,PP,75.0
+Extra-EU27+3,EPS flooring,"ABS, SAN",75.0
+Extra-EU27+3,EPS flooring,PMMA,75.0
+Extra-EU27+3,EPS flooring,"PA (PA6, PA66)",75.0
+Extra-EU27+3,EPS flooring,PET,75.0
+Extra-EU27+3,EPS flooring,Other Thermoplastics,75.0
+Extra-EU27+3,EPS flooring,PUR,75.0
+Extra-EU27+3,EPS flooring,Other Plastics,75.0
+Extra-EU27+3,EPS flooring,PC,75.0
+Extra-EU27+3,EPS others in B&C,"PE-LD, -LLD",75.0
+Extra-EU27+3,EPS others in B&C,"PE-HD, -MD",75.0
+Extra-EU27+3,EPS others in B&C,PP,75.0
+Extra-EU27+3,EPS others in B&C,PS,75.0
+Extra-EU27+3,EPS others in B&C,PS-E,75.0
+Extra-EU27+3,EPS others in B&C,PVC,75.0
+Extra-EU27+3,EPS others in B&C,PET,75.0
+Extra-EU27+3,EPS others in B&C,"ABS, SAN",75.0
+Extra-EU27+3,EPS others in B&C,"PA (PA6, PA66)",75.0
+Extra-EU27+3,EPS others in B&C,PC,75.0
+Extra-EU27+3,EPS others in B&C,Other Thermoplastics,75.0
+Extra-EU27+3,EPS others in B&C,PUR,75.0
+Extra-EU27+3,EPS others in B&C,Other Plastics,75.0
+Extra-EU27+3,EPS others in B&C,PMMA,75.0
+Extra-EU27+3,EPS perimeter,"PE-LD, -LLD",80.0
+Extra-EU27+3,EPS perimeter,PP,80.0
+Extra-EU27+3,EPS perimeter,PS,80.0
+Extra-EU27+3,EPS perimeter,PS-E,80.0
+Extra-EU27+3,EPS perimeter,"PE-HD, -MD",80.0
+Extra-EU27+3,EPS perimeter,PET,80.0
+Extra-EU27+3,EPS perimeter,"ABS, SAN",80.0
+Extra-EU27+3,EPS perimeter,PMMA,80.0
+Extra-EU27+3,EPS perimeter,PVC,80.0
+Extra-EU27+3,EPS perimeter,"PA (PA6, PA66)",80.0
+Extra-EU27+3,EPS perimeter,PC,80.0
+Extra-EU27+3,EPS perimeter,Other Thermoplastics,80.0
+Extra-EU27+3,EPS perimeter,PUR,80.0
+Extra-EU27+3,EPS perimeter,Other Plastics,80.0
+Extra-EU27+3,Household packaging,"PE-LD, -LLD",0.2
+Extra-EU27+3,Household packaging,"PE-HD, -MD",0.2
+Extra-EU27+3,Household packaging,PP,0.2
+Extra-EU27+3,Household packaging,PS,0.2
+Extra-EU27+3,Household packaging,PS-E,0.2
+Extra-EU27+3,Household packaging,PVC,0.2
+Extra-EU27+3,Household packaging,PET,0.2
+Extra-EU27+3,Household packaging,"ABS, SAN",0.2
+Extra-EU27+3,Household packaging,PMMA,0.2
+Extra-EU27+3,Household packaging,"PA (PA6, PA66)",0.2
+Extra-EU27+3,Household packaging,PC,0.2
+Extra-EU27+3,Household packaging,PUR,0.2
+Extra-EU27+3,Household packaging,Other Plastics,0.2
+Extra-EU27+3,Household packaging,Other Thermoplastics,0.2
+Extra-EU27+3,"Household, Leisure, Sports","PE-HD, -MD",7.2
+Extra-EU27+3,"Household, Leisure, Sports",PP,7.2
+Extra-EU27+3,"Household, Leisure, Sports",PS,7.2
+Extra-EU27+3,"Household, Leisure, Sports",PS-E,7.2
+Extra-EU27+3,"Household, Leisure, Sports",PVC,7.2
+Extra-EU27+3,"Household, Leisure, Sports",PET,7.2
+Extra-EU27+3,"Household, Leisure, Sports","ABS, SAN",7.2
+Extra-EU27+3,"Household, Leisure, Sports",PMMA,7.2
+Extra-EU27+3,"Household, Leisure, Sports","PA (PA6, PA66)",7.2
+Extra-EU27+3,"Household, Leisure, Sports",PC,7.2
+Extra-EU27+3,"Household, Leisure, Sports",Other Thermoplastics,7.2
+Extra-EU27+3,"Household, Leisure, Sports",PUR,7.2
+Extra-EU27+3,"Household, Leisure, Sports","PE-LD, -LLD",7.2
+Extra-EU27+3,"Household, Leisure, Sports",Other Plastics,7.2
+Extra-EU27+3,Others,"PE-HD, -MD",6.0
+Extra-EU27+3,Others,PP,6.0
+Extra-EU27+3,Others,PS,6.0
+Extra-EU27+3,Others,"PE-LD, -LLD",6.0
+Extra-EU27+3,Others,PVC,6.0
+Extra-EU27+3,Others,PET,6.0
+Extra-EU27+3,Others,"ABS, SAN",6.0
+Extra-EU27+3,Others,PS-E,6.0
+Extra-EU27+3,Others,"PA (PA6, PA66)",6.0
+Extra-EU27+3,Others,PC,6.0
+Extra-EU27+3,Others,Other Thermoplastics,6.0
+Extra-EU27+3,Others,PMMA,6.0
+Extra-EU27+3,Others,PUR,6.0
+Extra-EU27+3,Others,Other Plastics,6.0
+Extra-EU27+3,Packaging,"PE-LD, -LLD",0.2
+Extra-EU27+3,Packaging,PP,0.2
+Extra-EU27+3,Packaging,PS,0.2
+Extra-EU27+3,Packaging,PS-E,0.2
+Extra-EU27+3,Packaging,PVC,0.2
+Extra-EU27+3,Packaging,PET,0.2
+Extra-EU27+3,Packaging,"ABS, SAN",0.2
+Extra-EU27+3,Packaging,PMMA,0.2
+Extra-EU27+3,Packaging,"PA (PA6, PA66)",0.2
+Extra-EU27+3,Packaging,PC,0.2
+Extra-EU27+3,Packaging,Other Thermoplastics,0.2
+Extra-EU27+3,Packaging,PUR,0.2
+Extra-EU27+3,Packaging,Other Plastics,0.2
+Extra-EU27+3,Packaging,"PE-HD, -MD",0.2
+Extra-EU27+3,PET beverage bottles,"PE-LD, -LLD",0.2
+Extra-EU27+3,PET beverage bottles,PP,0.2
+Extra-EU27+3,PET beverage bottles,PS,0.2
+Extra-EU27+3,PET beverage bottles,PS-E,0.2
+Extra-EU27+3,PET beverage bottles,PVC,0.2
+Extra-EU27+3,PET beverage bottles,PET,0.2
+Extra-EU27+3,PET beverage bottles,"ABS, SAN",0.2
+Extra-EU27+3,PET beverage bottles,PMMA,0.2
+Extra-EU27+3,PET beverage bottles,"PA (PA6, PA66)",0.2
+Extra-EU27+3,PET beverage bottles,PC,0.2
+Extra-EU27+3,PET beverage bottles,Other Thermoplastics,0.2
+Extra-EU27+3,PET beverage bottles,PUR,0.2
+Extra-EU27+3,PET beverage bottles,Other Plastics,0.2
+Extra-EU27+3,PET beverage bottles,"PE-HD, -MD",0.2
+Extra-EU27+3,PET other packaging,"PE-LD, -LLD",0.2
+Extra-EU27+3,PET other packaging,PP,0.2
+Extra-EU27+3,PET other packaging,PS,0.2
+Extra-EU27+3,PET other packaging,PS-E,0.2
+Extra-EU27+3,PET other packaging,PVC,0.2
+Extra-EU27+3,PET other packaging,PET,0.2
+Extra-EU27+3,PET other packaging,"ABS, SAN",0.2
+Extra-EU27+3,PET other packaging,PMMA,0.2
+Extra-EU27+3,PET other packaging,"PA (PA6, PA66)",0.2
+Extra-EU27+3,PET other packaging,PC,0.2
+Extra-EU27+3,PET other packaging,Other Thermoplastics,0.2
+Extra-EU27+3,PET other packaging,PUR,0.2
+Extra-EU27+3,PET other packaging,Other Plastics,0.2
+Extra-EU27+3,PET other packaging,"PE-HD, -MD",0.2
+Extra-EU27+3,PUR boards and panels rigid foam,"PE-LD, -LLD",65.0
+Extra-EU27+3,PUR boards and panels rigid foam,PP,65.0
+Extra-EU27+3,PUR boards and panels rigid foam,PS,65.0
+Extra-EU27+3,PUR boards and panels rigid foam,PS-E,65.0
+Extra-EU27+3,PUR boards and panels rigid foam,"PE-HD, -MD",65.0
+Extra-EU27+3,PUR boards and panels rigid foam,PMMA,65.0
+Extra-EU27+3,PUR boards and panels rigid foam,PVC,65.0
+Extra-EU27+3,PUR boards and panels rigid foam,PET,65.0
+Extra-EU27+3,PUR boards and panels rigid foam,"ABS, SAN",65.0
+Extra-EU27+3,PUR boards and panels rigid foam,PUR,65.0
+Extra-EU27+3,PUR boards and panels rigid foam,"PA (PA6, PA66)",65.0
+Extra-EU27+3,PUR boards and panels rigid foam,PC,65.0
+Extra-EU27+3,PUR boards and panels rigid foam,Other Thermoplastics,65.0
+Extra-EU27+3,PUR boards and panels rigid foam,Other Plastics,65.0
+Extra-EU27+3,PUR moulded automotive,PVC,17.9
+Extra-EU27+3,PUR moulded automotive,"PE-LD, -LLD",17.9
+Extra-EU27+3,PUR moulded automotive,"PE-HD, -MD",17.9
+Extra-EU27+3,PUR moulded automotive,PP,17.9
+Extra-EU27+3,PUR moulded automotive,PS,17.9
+Extra-EU27+3,PUR moulded automotive,PET,17.9
+Extra-EU27+3,PUR moulded automotive,"ABS, SAN",17.9
+Extra-EU27+3,PUR moulded automotive,PMMA,17.9
+Extra-EU27+3,PUR moulded automotive,"PA (PA6, PA66)",17.9
+Extra-EU27+3,PUR moulded automotive,PC,17.9
+Extra-EU27+3,PUR moulded automotive,Other Thermoplastics,17.9
+Extra-EU27+3,PUR moulded automotive,PUR,17.9
+Extra-EU27+3,PUR moulded automotive,Other Plastics,17.9
+Extra-EU27+3,PUR moulded automotive,PS-E,17.9
+Extra-EU27+3,PUR moulded furniture,"PE-LD, -LLD",10.0
+Extra-EU27+3,PUR moulded furniture,"PE-HD, -MD",10.0
+Extra-EU27+3,PUR moulded furniture,PP,10.0
+Extra-EU27+3,PUR moulded furniture,PS-E,10.0
+Extra-EU27+3,PUR moulded furniture,PVC,10.0
+Extra-EU27+3,PUR moulded furniture,PET,10.0
+Extra-EU27+3,PUR moulded furniture,"ABS, SAN",10.0
+Extra-EU27+3,PUR moulded furniture,PMMA,10.0
+Extra-EU27+3,PUR moulded furniture,"PA (PA6, PA66)",10.0
+Extra-EU27+3,PUR moulded furniture,PC,10.0
+Extra-EU27+3,PUR moulded furniture,Other Thermoplastics,10.0
+Extra-EU27+3,PUR moulded furniture,PUR,10.0
+Extra-EU27+3,PUR moulded furniture,Other Plastics,10.0
+Extra-EU27+3,PUR moulded furniture,PS,10.0
+Extra-EU27+3,PUR others in Automotive,"PE-LD, -LLD",17.9
+Extra-EU27+3,PUR others in Automotive,PP,17.9
+Extra-EU27+3,PUR others in Automotive,PS,17.9
+Extra-EU27+3,PUR others in Automotive,PS-E,17.9
+Extra-EU27+3,PUR others in Automotive,"PE-HD, -MD",17.9
+Extra-EU27+3,PUR others in Automotive,PET,17.9
+Extra-EU27+3,PUR others in Automotive,"ABS, SAN",17.9
+Extra-EU27+3,PUR others in Automotive,PMMA,17.9
+Extra-EU27+3,PUR others in Automotive,"PA (PA6, PA66)",17.9
+Extra-EU27+3,PUR others in Automotive,PC,17.9
+Extra-EU27+3,PUR others in Automotive,Other Thermoplastics,17.9
+Extra-EU27+3,PUR others in Automotive,PUR,17.9
+Extra-EU27+3,PUR others in Automotive,Other Plastics,17.9
+Extra-EU27+3,PUR others in Automotive,PVC,17.9
+Extra-EU27+3,PUR others in Others,"PE-LD, -LLD",10.0
+Extra-EU27+3,PUR others in Others,"PE-HD, -MD",10.0
+Extra-EU27+3,PUR others in Others,PP,10.0
+Extra-EU27+3,PUR others in Others,PS,10.0
+Extra-EU27+3,PUR others in Others,PS-E,10.0
+Extra-EU27+3,PUR others in Others,PVC,10.0
+Extra-EU27+3,PUR others in Others,PET,10.0
+Extra-EU27+3,PUR others in Others,"ABS, SAN",10.0
+Extra-EU27+3,PUR others in Others,PMMA,10.0
+Extra-EU27+3,PUR others in Others,"PA (PA6, PA66)",10.0
+Extra-EU27+3,PUR others in Others,PC,10.0
+Extra-EU27+3,PUR others in Others,Other Thermoplastics,10.0
+Extra-EU27+3,PUR others in Others,PUR,10.0
+Extra-EU27+3,PUR others in Others,Other Plastics,10.0
+Extra-EU27+3,PUR rigid spray foam,"PE-LD, -LLD",65.0
+Extra-EU27+3,PUR rigid spray foam,"PE-HD, -MD",65.0
+Extra-EU27+3,PUR rigid spray foam,PS,65.0
+Extra-EU27+3,PUR rigid spray foam,PS-E,65.0
+Extra-EU27+3,PUR rigid spray foam,PVC,65.0
+Extra-EU27+3,PUR rigid spray foam,PP,65.0
+Extra-EU27+3,PUR rigid spray foam,"ABS, SAN",65.0
+Extra-EU27+3,PUR rigid spray foam,PMMA,65.0
+Extra-EU27+3,PUR rigid spray foam,"PA (PA6, PA66)",65.0
+Extra-EU27+3,PUR rigid spray foam,PC,65.0
+Extra-EU27+3,PUR rigid spray foam,Other Thermoplastics,65.0
+Extra-EU27+3,PUR rigid spray foam,PUR,65.0
+Extra-EU27+3,PUR rigid spray foam,Other Plastics,65.0
+Extra-EU27+3,PUR rigid spray foam,PET,65.0
+Extra-EU27+3,PUR slabstock furniture,"PE-LD, -LLD",10.0
+Extra-EU27+3,PUR slabstock furniture,"PE-HD, -MD",10.0
+Extra-EU27+3,PUR slabstock furniture,PP,10.0
+Extra-EU27+3,PUR slabstock furniture,PS-E,10.0
+Extra-EU27+3,PUR slabstock furniture,PVC,10.0
+Extra-EU27+3,PUR slabstock furniture,PET,10.0
+Extra-EU27+3,PUR slabstock furniture,"ABS, SAN",10.0
+Extra-EU27+3,PUR slabstock furniture,PMMA,10.0
+Extra-EU27+3,PUR slabstock furniture,"PA (PA6, PA66)",10.0
+Extra-EU27+3,PUR slabstock furniture,PC,10.0
+Extra-EU27+3,PUR slabstock furniture,Other Thermoplastics,10.0
+Extra-EU27+3,PUR slabstock furniture,PUR,10.0
+Extra-EU27+3,PUR slabstock furniture,Other Plastics,10.0
+Extra-EU27+3,PUR slabstock furniture,PS,10.0
+Extra-EU27+3,PUR slabstock mattresses,"PE-HD, -MD",10.0
+Extra-EU27+3,PUR slabstock mattresses,PP,10.0
+Extra-EU27+3,PUR slabstock mattresses,PS,10.0
+Extra-EU27+3,PUR slabstock mattresses,"PE-LD, -LLD",10.0
+Extra-EU27+3,PUR slabstock mattresses,PS-E,10.0
+Extra-EU27+3,PUR slabstock mattresses,PVC,10.0
+Extra-EU27+3,PUR slabstock mattresses,PET,10.0
+Extra-EU27+3,PUR slabstock mattresses,"ABS, SAN",10.0
+Extra-EU27+3,PUR slabstock mattresses,PMMA,10.0
+Extra-EU27+3,PUR slabstock mattresses,"PA (PA6, PA66)",10.0
+Extra-EU27+3,PUR slabstock mattresses,PC,10.0
+Extra-EU27+3,PUR slabstock mattresses,Other Thermoplastics,10.0
+Extra-EU27+3,PUR slabstock mattresses,PUR,10.0
+Extra-EU27+3,PUR slabstock mattresses,Other Plastics,10.0
+Extra-EU27+3,PVC others in B&C,"PE-LD, -LLD",10.0
+Extra-EU27+3,PVC others in B&C,"PE-HD, -MD",10.0
+Extra-EU27+3,PVC others in B&C,PP,10.0
+Extra-EU27+3,PVC others in B&C,PS,10.0
+Extra-EU27+3,PVC others in B&C,PS-E,10.0
+Extra-EU27+3,PVC others in B&C,PVC,10.0
+Extra-EU27+3,PVC others in B&C,"ABS, SAN",10.0
+Extra-EU27+3,PVC others in B&C,PMMA,10.0
+Extra-EU27+3,PVC others in B&C,"PA (PA6, PA66)",10.0
+Extra-EU27+3,PVC others in B&C,PC,10.0
+Extra-EU27+3,PVC others in B&C,Other Thermoplastics,10.0
+Extra-EU27+3,PVC others in B&C,PUR,10.0
+Extra-EU27+3,PVC others in B&C,Other Plastics,10.0
+Extra-EU27+3,PVC others in B&C,PET,10.0
+Extra-EU27+3,PVC pipes,"PE-HD, -MD",80.0
+Extra-EU27+3,PVC pipes,PP,80.0
+Extra-EU27+3,PVC pipes,PS,80.0
+Extra-EU27+3,PVC pipes,"PE-LD, -LLD",80.0
+Extra-EU27+3,PVC pipes,PVC,80.0
+Extra-EU27+3,PVC pipes,PET,80.0
+Extra-EU27+3,PVC pipes,"ABS, SAN",80.0
+Extra-EU27+3,PVC pipes,PS-E,80.0
+Extra-EU27+3,PVC pipes,"PA (PA6, PA66)",80.0
+Extra-EU27+3,PVC pipes,PC,80.0
+Extra-EU27+3,PVC pipes,Other Thermoplastics,80.0
+Extra-EU27+3,PVC pipes,PUR,80.0
+Extra-EU27+3,PVC pipes,Other Plastics,80.0
+Extra-EU27+3,PVC pipes,PMMA,80.0
+Extra-EU27+3,PVC profiles,"PE-LD, -LLD",40.0
+Extra-EU27+3,PVC profiles,"PE-HD, -MD",40.0
+Extra-EU27+3,PVC profiles,PP,40.0
+Extra-EU27+3,PVC profiles,PS-E,40.0
+Extra-EU27+3,PVC profiles,PVC,40.0
+Extra-EU27+3,PVC profiles,PET,40.0
+Extra-EU27+3,PVC profiles,PS,40.0
+Extra-EU27+3,PVC profiles,"ABS, SAN",40.0
+Extra-EU27+3,PVC profiles,PMMA,40.0
+Extra-EU27+3,PVC profiles,"PA (PA6, PA66)",40.0
+Extra-EU27+3,PVC profiles,PC,40.0
+Extra-EU27+3,PVC profiles,Other Thermoplastics,40.0
+Extra-EU27+3,PVC profiles,PUR,40.0
+Extra-EU27+3,PVC profiles,Other Plastics,40.0
+Germany,Agriculture,"PE-LD, -LLD",3.0
+Germany,Agriculture,"PE-HD, -MD",3.0
+Germany,Agriculture,PP,3.0
+Germany,Agriculture,PS,3.0
+Germany,Agriculture,PS-E,3.0
+Germany,Agriculture,PVC,3.0
+Germany,Agriculture,PET,3.0
+Germany,Agriculture,"ABS, SAN",3.0
+Germany,Agriculture,PMMA,3.0
+Germany,Agriculture,"PA (PA6, PA66)",3.0
+Germany,Agriculture,PC,3.0
+Germany,Agriculture,Other Thermoplastics,3.0
+Germany,Agriculture,PUR,3.0
+Germany,Agriculture,Other Plastics,3.0
+Germany,Automotive,"PE-LD, -LLD",16.0
+Germany,Automotive,"PE-HD, -MD",16.0
+Germany,Automotive,PP,16.0
+Germany,Automotive,PS,16.0
+Germany,Automotive,PS-E,16.0
+Germany,Automotive,PVC,16.0
+Germany,Automotive,PET,16.0
+Germany,Automotive,"ABS, SAN",16.0
+Germany,Automotive,PMMA,16.0
+Germany,Automotive,"PA (PA6, PA66)",16.0
+Germany,Automotive,PC,16.0
+Germany,Automotive,Other Thermoplastics,16.0
+Germany,Automotive,PUR,16.0
+Germany,Automotive,Other Plastics,16.0
+Germany,Building and Construction,"PE-LD, -LLD",47.0
+Germany,Building and Construction,"PE-HD, -MD",47.0
+Germany,Building and Construction,PP,47.0
+Germany,Building and Construction,PS,47.0
+Germany,Building and Construction,PS-E,47.0
+Germany,Building and Construction,PVC,47.0
+Germany,Building and Construction,PET,47.0
+Germany,Building and Construction,"ABS, SAN",47.0
+Germany,Building and Construction,PMMA,47.0
+Germany,Building and Construction,"PA (PA6, PA66)",47.0
+Germany,Building and Construction,PC,47.0
+Germany,Building and Construction,Other Thermoplastics,47.0
+Germany,Building and Construction,PUR,47.0
+Germany,Building and Construction,Other Plastics,47.0
+Germany,Commercial & industrial packaging,"PE-LD, -LLD",0.2
+Germany,Commercial & industrial packaging,"PE-HD, -MD",0.2
+Germany,Commercial & industrial packaging,PP,0.2
+Germany,Commercial & industrial packaging,PS,0.2
+Germany,Commercial & industrial packaging,PS-E,0.2
+Germany,Commercial & industrial packaging,PVC,0.2
+Germany,Commercial & industrial packaging,PET,0.2
+Germany,Commercial & industrial packaging,"ABS, SAN",0.2
+Germany,Commercial & industrial packaging,PMMA,0.2
+Germany,Commercial & industrial packaging,"PA (PA6, PA66)",0.2
+Germany,Commercial & industrial packaging,PC,0.2
+Germany,Commercial & industrial packaging,Other Thermoplastics,0.2
+Germany,Commercial & industrial packaging,PUR,0.2
+Germany,Commercial & industrial packaging,Other Plastics,0.2
+Germany,Electrical and Electronics,"PE-LD, -LLD",13.0
+Germany,Electrical and Electronics,"PE-HD, -MD",13.0
+Germany,Electrical and Electronics,PP,13.0
+Germany,Electrical and Electronics,PS,13.0
+Germany,Electrical and Electronics,PS-E,13.0
+Germany,Electrical and Electronics,PVC,13.0
+Germany,Electrical and Electronics,PET,13.0
+Germany,Electrical and Electronics,"ABS, SAN",13.0
+Germany,Electrical and Electronics,PMMA,13.0
+Germany,Electrical and Electronics,"PA (PA6, PA66)",13.0
+Germany,Electrical and Electronics,PC,13.0
+Germany,Electrical and Electronics,Other Thermoplastics,13.0
+Germany,Electrical and Electronics,PUR,13.0
+Germany,Electrical and Electronics,Other Plastics,13.0
+Germany,EPS ETICS,"PE-LD, -LLD",65.0
+Germany,EPS ETICS,"PE-HD, -MD",65.0
+Germany,EPS ETICS,PP,65.0
+Germany,EPS ETICS,PS,65.0
+Germany,EPS ETICS,PS-E,65.0
+Germany,EPS ETICS,PVC,65.0
+Germany,EPS ETICS,PET,65.0
+Germany,EPS ETICS,"ABS, SAN",65.0
+Germany,EPS ETICS,PMMA,65.0
+Germany,EPS ETICS,"PA (PA6, PA66)",65.0
+Germany,EPS ETICS,PC,65.0
+Germany,EPS ETICS,Other Thermoplastics,65.0
+Germany,EPS ETICS,PUR,65.0
+Germany,EPS ETICS,Other Plastics,65.0
+Germany,EPS flat roof,"PE-LD, -LLD",35.0
+Germany,EPS flat roof,"PE-HD, -MD",35.0
+Germany,EPS flat roof,PP,35.0
+Germany,EPS flat roof,PS,35.0
+Germany,EPS flat roof,PS-E,35.0
+Germany,EPS flat roof,PVC,35.0
+Germany,EPS flat roof,PET,35.0
+Germany,EPS flat roof,"ABS, SAN",35.0
+Germany,EPS flat roof,PMMA,35.0
+Germany,EPS flat roof,"PA (PA6, PA66)",35.0
+Germany,EPS flat roof,PC,35.0
+Germany,EPS flat roof,Other Thermoplastics,35.0
+Germany,EPS flat roof,PUR,35.0
+Germany,EPS flat roof,Other Plastics,35.0
+Germany,EPS flooring,"PE-LD, -LLD",75.0
+Germany,EPS flooring,"PE-HD, -MD",75.0
+Germany,EPS flooring,PP,75.0
+Germany,EPS flooring,PS,75.0
+Germany,EPS flooring,PS-E,75.0
+Germany,EPS flooring,PVC,75.0
+Germany,EPS flooring,PET,75.0
+Germany,EPS flooring,"ABS, SAN",75.0
+Germany,EPS flooring,PMMA,75.0
+Germany,EPS flooring,"PA (PA6, PA66)",75.0
+Germany,EPS flooring,PC,75.0
+Germany,EPS flooring,Other Thermoplastics,75.0
+Germany,EPS flooring,PUR,75.0
+Germany,EPS flooring,Other Plastics,75.0
+Germany,EPS others in B&C,"PE-LD, -LLD",75.0
+Germany,EPS others in B&C,"PE-HD, -MD",75.0
+Germany,EPS others in B&C,PP,75.0
+Germany,EPS others in B&C,PS,75.0
+Germany,EPS others in B&C,PS-E,75.0
+Germany,EPS others in B&C,PVC,75.0
+Germany,EPS others in B&C,PET,75.0
+Germany,EPS others in B&C,"ABS, SAN",75.0
+Germany,EPS others in B&C,PMMA,75.0
+Germany,EPS others in B&C,"PA (PA6, PA66)",75.0
+Germany,EPS others in B&C,PC,75.0
+Germany,EPS others in B&C,Other Thermoplastics,75.0
+Germany,EPS others in B&C,PUR,75.0
+Germany,EPS others in B&C,Other Plastics,75.0
+Germany,EPS perimeter,"PE-LD, -LLD",80.0
+Germany,EPS perimeter,"PE-HD, -MD",80.0
+Germany,EPS perimeter,PP,80.0
+Germany,EPS perimeter,PS,80.0
+Germany,EPS perimeter,PS-E,80.0
+Germany,EPS perimeter,PVC,80.0
+Germany,EPS perimeter,PET,80.0
+Germany,EPS perimeter,"ABS, SAN",80.0
+Germany,EPS perimeter,PMMA,80.0
+Germany,EPS perimeter,"PA (PA6, PA66)",80.0
+Germany,EPS perimeter,PC,80.0
+Germany,EPS perimeter,Other Thermoplastics,80.0
+Germany,EPS perimeter,PUR,80.0
+Germany,EPS perimeter,Other Plastics,80.0
+Germany,Household packaging,"PE-LD, -LLD",0.2
+Germany,Household packaging,"PE-HD, -MD",0.2
+Germany,Household packaging,PP,0.2
+Germany,Household packaging,PS,0.2
+Germany,Household packaging,PS-E,0.2
+Germany,Household packaging,PVC,0.2
+Germany,Household packaging,PET,0.2
+Germany,Household packaging,"ABS, SAN",0.2
+Germany,Household packaging,PMMA,0.2
+Germany,Household packaging,"PA (PA6, PA66)",0.2
+Germany,Household packaging,PC,0.2
+Germany,Household packaging,Other Thermoplastics,0.2
+Germany,Household packaging,PUR,0.2
+Germany,Household packaging,Other Plastics,0.2
+Germany,"Household, Leisure, Sports","PE-LD, -LLD",7.0
+Germany,"Household, Leisure, Sports","PE-HD, -MD",7.0
+Germany,"Household, Leisure, Sports",PP,7.0
+Germany,"Household, Leisure, Sports",PS,7.0
+Germany,"Household, Leisure, Sports",PS-E,7.0
+Germany,"Household, Leisure, Sports",PVC,7.0
+Germany,"Household, Leisure, Sports",PET,7.0
+Germany,"Household, Leisure, Sports","ABS, SAN",7.0
+Germany,"Household, Leisure, Sports",PMMA,7.0
+Germany,"Household, Leisure, Sports","PA (PA6, PA66)",7.0
+Germany,"Household, Leisure, Sports",PC,7.0
+Germany,"Household, Leisure, Sports",Other Thermoplastics,7.0
+Germany,"Household, Leisure, Sports",PUR,7.0
+Germany,"Household, Leisure, Sports",Other Plastics,7.0
+Germany,Others,"PE-LD, -LLD",6.0
+Germany,Others,"PE-HD, -MD",6.0
+Germany,Others,PP,6.0
+Germany,Others,PS,6.0
+Germany,Others,PS-E,6.0
+Germany,Others,PVC,6.0
+Germany,Others,PET,6.0
+Germany,Others,"ABS, SAN",6.0
+Germany,Others,PMMA,6.0
+Germany,Others,"PA (PA6, PA66)",6.0
+Germany,Others,PC,6.0
+Germany,Others,Other Thermoplastics,6.0
+Germany,Others,PUR,6.0
+Germany,Others,Other Plastics,6.0
+Germany,Packaging,"PE-LD, -LLD",0.2
+Germany,Packaging,"PE-HD, -MD",0.2
+Germany,Packaging,PP,0.2
+Germany,Packaging,PS,0.2
+Germany,Packaging,PS-E,0.2
+Germany,Packaging,PVC,0.2
+Germany,Packaging,PET,0.2
+Germany,Packaging,"ABS, SAN",0.2
+Germany,Packaging,PMMA,0.2
+Germany,Packaging,"PA (PA6, PA66)",0.2
+Germany,Packaging,PC,0.2
+Germany,Packaging,Other Thermoplastics,0.2
+Germany,Packaging,PUR,0.2
+Germany,Packaging,Other Plastics,0.2
+Germany,PET beverage bottles,"PE-LD, -LLD",0.2
+Germany,PET beverage bottles,"PE-HD, -MD",0.2
+Germany,PET beverage bottles,PP,0.2
+Germany,PET beverage bottles,PS,0.2
+Germany,PET beverage bottles,PS-E,0.2
+Germany,PET beverage bottles,PVC,0.2
+Germany,PET beverage bottles,PET,0.2
+Germany,PET beverage bottles,"ABS, SAN",0.2
+Germany,PET beverage bottles,PMMA,0.2
+Germany,PET beverage bottles,"PA (PA6, PA66)",0.2
+Germany,PET beverage bottles,PC,0.2
+Germany,PET beverage bottles,Other Thermoplastics,0.2
+Germany,PET beverage bottles,PUR,0.2
+Germany,PET beverage bottles,Other Plastics,0.2
+Germany,PET other packaging,"PE-LD, -LLD",0.2
+Germany,PET other packaging,"PE-HD, -MD",0.2
+Germany,PET other packaging,PP,0.2
+Germany,PET other packaging,PS,0.2
+Germany,PET other packaging,PS-E,0.2
+Germany,PET other packaging,PVC,0.2
+Germany,PET other packaging,PET,0.2
+Germany,PET other packaging,"ABS, SAN",0.2
+Germany,PET other packaging,PMMA,0.2
+Germany,PET other packaging,"PA (PA6, PA66)",0.2
+Germany,PET other packaging,PC,0.2
+Germany,PET other packaging,Other Thermoplastics,0.2
+Germany,PET other packaging,PUR,0.2
+Germany,PET other packaging,Other Plastics,0.2
+Germany,PUR boards and panels rigid foam,"PE-LD, -LLD",65.0
+Germany,PUR boards and panels rigid foam,"PE-HD, -MD",65.0
+Germany,PUR boards and panels rigid foam,PP,65.0
+Germany,PUR boards and panels rigid foam,PS,65.0
+Germany,PUR boards and panels rigid foam,PS-E,65.0
+Germany,PUR boards and panels rigid foam,PVC,65.0
+Germany,PUR boards and panels rigid foam,PET,65.0
+Germany,PUR boards and panels rigid foam,"ABS, SAN",65.0
+Germany,PUR boards and panels rigid foam,PMMA,65.0
+Germany,PUR boards and panels rigid foam,"PA (PA6, PA66)",65.0
+Germany,PUR boards and panels rigid foam,PC,65.0
+Germany,PUR boards and panels rigid foam,Other Thermoplastics,65.0
+Germany,PUR boards and panels rigid foam,PUR,65.0
+Germany,PUR boards and panels rigid foam,Other Plastics,65.0
+Germany,PUR moulded automotive,"PE-LD, -LLD",16.0
+Germany,PUR moulded automotive,"PE-HD, -MD",16.0
+Germany,PUR moulded automotive,PP,16.0
+Germany,PUR moulded automotive,PS,16.0
+Germany,PUR moulded automotive,PS-E,16.0
+Germany,PUR moulded automotive,PVC,16.0
+Germany,PUR moulded automotive,PET,16.0
+Germany,PUR moulded automotive,"ABS, SAN",16.0
+Germany,PUR moulded automotive,PMMA,16.0
+Germany,PUR moulded automotive,"PA (PA6, PA66)",16.0
+Germany,PUR moulded automotive,PC,16.0
+Germany,PUR moulded automotive,Other Thermoplastics,16.0
+Germany,PUR moulded automotive,PUR,16.0
+Germany,PUR moulded automotive,Other Plastics,16.0
+Germany,PUR moulded furniture,"PE-LD, -LLD",10.0
+Germany,PUR moulded furniture,"PE-HD, -MD",10.0
+Germany,PUR moulded furniture,PP,10.0
+Germany,PUR moulded furniture,PS,10.0
+Germany,PUR moulded furniture,PS-E,10.0
+Germany,PUR moulded furniture,PVC,10.0
+Germany,PUR moulded furniture,PET,10.0
+Germany,PUR moulded furniture,"ABS, SAN",10.0
+Germany,PUR moulded furniture,PMMA,10.0
+Germany,PUR moulded furniture,"PA (PA6, PA66)",10.0
+Germany,PUR moulded furniture,PC,10.0
+Germany,PUR moulded furniture,Other Thermoplastics,10.0
+Germany,PUR moulded furniture,PUR,10.0
+Germany,PUR moulded furniture,Other Plastics,10.0
+Germany,PUR others in Automotive,"PE-LD, -LLD",16.0
+Germany,PUR others in Automotive,"PE-HD, -MD",16.0
+Germany,PUR others in Automotive,PP,16.0
+Germany,PUR others in Automotive,PS,16.0
+Germany,PUR others in Automotive,PS-E,16.0
+Germany,PUR others in Automotive,PVC,16.0
+Germany,PUR others in Automotive,PET,16.0
+Germany,PUR others in Automotive,"ABS, SAN",16.0
+Germany,PUR others in Automotive,PMMA,16.0
+Germany,PUR others in Automotive,"PA (PA6, PA66)",16.0
+Germany,PUR others in Automotive,PC,16.0
+Germany,PUR others in Automotive,Other Thermoplastics,16.0
+Germany,PUR others in Automotive,PUR,16.0
+Germany,PUR others in Automotive,Other Plastics,16.0
+Germany,PUR others in Others,"PE-LD, -LLD",10.0
+Germany,PUR others in Others,"PE-HD, -MD",10.0
+Germany,PUR others in Others,PP,10.0
+Germany,PUR others in Others,PS,10.0
+Germany,PUR others in Others,PS-E,10.0
+Germany,PUR others in Others,PVC,10.0
+Germany,PUR others in Others,PET,10.0
+Germany,PUR others in Others,"ABS, SAN",10.0
+Germany,PUR others in Others,PMMA,10.0
+Germany,PUR others in Others,"PA (PA6, PA66)",10.0
+Germany,PUR others in Others,PC,10.0
+Germany,PUR others in Others,Other Thermoplastics,10.0
+Germany,PUR others in Others,PUR,10.0
+Germany,PUR others in Others,Other Plastics,10.0
+Germany,PUR rigid spray foam,"PE-LD, -LLD",65.0
+Germany,PUR rigid spray foam,"PE-HD, -MD",65.0
+Germany,PUR rigid spray foam,PP,65.0
+Germany,PUR rigid spray foam,PS,65.0
+Germany,PUR rigid spray foam,PS-E,65.0
+Germany,PUR rigid spray foam,PVC,65.0
+Germany,PUR rigid spray foam,PET,65.0
+Germany,PUR rigid spray foam,"ABS, SAN",65.0
+Germany,PUR rigid spray foam,PMMA,65.0
+Germany,PUR rigid spray foam,"PA (PA6, PA66)",65.0
+Germany,PUR rigid spray foam,PC,65.0
+Germany,PUR rigid spray foam,Other Thermoplastics,65.0
+Germany,PUR rigid spray foam,PUR,65.0
+Germany,PUR rigid spray foam,Other Plastics,65.0
+Germany,PUR slabstock furniture,"PE-LD, -LLD",10.0
+Germany,PUR slabstock furniture,"PE-HD, -MD",10.0
+Germany,PUR slabstock furniture,PP,10.0
+Germany,PUR slabstock furniture,PS,10.0
+Germany,PUR slabstock furniture,PS-E,10.0
+Germany,PUR slabstock furniture,PVC,10.0
+Germany,PUR slabstock furniture,PET,10.0
+Germany,PUR slabstock furniture,"ABS, SAN",10.0
+Germany,PUR slabstock furniture,PMMA,10.0
+Germany,PUR slabstock furniture,"PA (PA6, PA66)",10.0
+Germany,PUR slabstock furniture,PC,10.0
+Germany,PUR slabstock furniture,Other Thermoplastics,10.0
+Germany,PUR slabstock furniture,PUR,10.0
+Germany,PUR slabstock furniture,Other Plastics,10.0
+Germany,PUR slabstock mattresses,"PE-LD, -LLD",10.0
+Germany,PUR slabstock mattresses,"PE-HD, -MD",10.0
+Germany,PUR slabstock mattresses,PP,10.0
+Germany,PUR slabstock mattresses,PS,10.0
+Germany,PUR slabstock mattresses,PS-E,10.0
+Germany,PUR slabstock mattresses,PVC,10.0
+Germany,PUR slabstock mattresses,PET,10.0
+Germany,PUR slabstock mattresses,"ABS, SAN",10.0
+Germany,PUR slabstock mattresses,PMMA,10.0
+Germany,PUR slabstock mattresses,"PA (PA6, PA66)",10.0
+Germany,PUR slabstock mattresses,PC,10.0
+Germany,PUR slabstock mattresses,Other Thermoplastics,10.0
+Germany,PUR slabstock mattresses,PUR,10.0
+Germany,PUR slabstock mattresses,Other Plastics,10.0
+Germany,PVC others in B&C,"PE-LD, -LLD",10.0
+Germany,PVC others in B&C,"PE-HD, -MD",10.0
+Germany,PVC others in B&C,PP,10.0
+Germany,PVC others in B&C,PS,10.0
+Germany,PVC others in B&C,PS-E,10.0
+Germany,PVC others in B&C,PVC,10.0
+Germany,PVC others in B&C,PET,10.0
+Germany,PVC others in B&C,"ABS, SAN",10.0
+Germany,PVC others in B&C,PMMA,10.0
+Germany,PVC others in B&C,"PA (PA6, PA66)",10.0
+Germany,PVC others in B&C,PC,10.0
+Germany,PVC others in B&C,Other Thermoplastics,10.0
+Germany,PVC others in B&C,PUR,10.0
+Germany,PVC others in B&C,Other Plastics,10.0
+Germany,PVC pipes,"PE-LD, -LLD",80.0
+Germany,PVC pipes,"PE-HD, -MD",80.0
+Germany,PVC pipes,PP,80.0
+Germany,PVC pipes,PS,80.0
+Germany,PVC pipes,PS-E,80.0
+Germany,PVC pipes,PVC,80.0
+Germany,PVC pipes,PET,80.0
+Germany,PVC pipes,"ABS, SAN",80.0
+Germany,PVC pipes,PMMA,80.0
+Germany,PVC pipes,"PA (PA6, PA66)",80.0
+Germany,PVC pipes,PC,80.0
+Germany,PVC pipes,Other Thermoplastics,80.0
+Germany,PVC pipes,PUR,80.0
+Germany,PVC pipes,Other Plastics,80.0
+Germany,PVC profiles,"PE-LD, -LLD",40.0
+Germany,PVC profiles,"PE-HD, -MD",40.0
+Germany,PVC profiles,PP,40.0
+Germany,PVC profiles,PS,40.0
+Germany,PVC profiles,PS-E,40.0
+Germany,PVC profiles,PVC,40.0
+Germany,PVC profiles,PET,40.0
+Germany,PVC profiles,"ABS, SAN",40.0
+Germany,PVC profiles,PMMA,40.0
+Germany,PVC profiles,"PA (PA6, PA66)",40.0
+Germany,PVC profiles,PC,40.0
+Germany,PVC profiles,Other Thermoplastics,40.0
+Germany,PVC profiles,PUR,40.0
+Germany,PVC profiles,Other Plastics,40.0
+North,Agriculture,"PE-LD, -LLD",3.0
+North,Agriculture,"PE-HD, -MD",3.0
+North,Agriculture,PP,3.0
+North,Agriculture,PS,3.0
+North,Agriculture,PS-E,3.0
+North,Agriculture,PVC,3.0
+North,Agriculture,PET,3.0
+North,Agriculture,"ABS, SAN",3.0
+North,Agriculture,PMMA,3.0
+North,Agriculture,"PA (PA6, PA66)",3.0
+North,Agriculture,PC,3.0
+North,Agriculture,Other Thermoplastics,3.0
+North,Agriculture,PUR,3.0
+North,Agriculture,Other Plastics,3.0
+North,Automotive,"PE-LD, -LLD",17.4
+North,Automotive,"PE-HD, -MD",17.4
+North,Automotive,PP,17.4
+North,Automotive,PS,17.4
+North,Automotive,PS-E,17.4
+North,Automotive,PVC,17.4
+North,Automotive,PET,17.4
+North,Automotive,"ABS, SAN",17.4
+North,Automotive,PMMA,17.4
+North,Automotive,"PA (PA6, PA66)",17.4
+North,Automotive,PC,17.4
+North,Automotive,Other Thermoplastics,17.4
+North,Automotive,PUR,17.4
+North,Automotive,Other Plastics,17.4
+North,Building and Construction,"PE-LD, -LLD",47.0
+North,Building and Construction,"PE-HD, -MD",47.0
+North,Building and Construction,PP,47.0
+North,Building and Construction,PS,47.0
+North,Building and Construction,PS-E,47.0
+North,Building and Construction,PVC,47.0
+North,Building and Construction,PET,47.0
+North,Building and Construction,"ABS, SAN",47.0
+North,Building and Construction,PMMA,47.0
+North,Building and Construction,"PA (PA6, PA66)",47.0
+North,Building and Construction,PC,47.0
+North,Building and Construction,Other Thermoplastics,47.0
+North,Building and Construction,PUR,47.0
+North,Building and Construction,Other Plastics,47.0
+North,Commercial & industrial packaging,"PE-LD, -LLD",0.2
+North,Commercial & industrial packaging,"PE-HD, -MD",0.2
+North,Commercial & industrial packaging,PP,0.2
+North,Commercial & industrial packaging,PS,0.2
+North,Commercial & industrial packaging,PS-E,0.2
+North,Commercial & industrial packaging,PVC,0.2
+North,Commercial & industrial packaging,PET,0.2
+North,Commercial & industrial packaging,"ABS, SAN",0.2
+North,Commercial & industrial packaging,PMMA,0.2
+North,Commercial & industrial packaging,"PA (PA6, PA66)",0.2
+North,Commercial & industrial packaging,PC,0.2
+North,Commercial & industrial packaging,Other Thermoplastics,0.2
+North,Commercial & industrial packaging,PUR,0.2
+North,Commercial & industrial packaging,Other Plastics,0.2
+North,Electrical and Electronics,"PE-LD, -LLD",13.9
+North,Electrical and Electronics,"PE-HD, -MD",13.9
+North,Electrical and Electronics,PP,13.9
+North,Electrical and Electronics,PS,13.9
+North,Electrical and Electronics,PS-E,13.9
+North,Electrical and Electronics,PVC,13.9
+North,Electrical and Electronics,PET,13.9
+North,Electrical and Electronics,"ABS, SAN",13.9
+North,Electrical and Electronics,PMMA,13.9
+North,Electrical and Electronics,"PA (PA6, PA66)",13.9
+North,Electrical and Electronics,PC,13.9
+North,Electrical and Electronics,Other Thermoplastics,13.9
+North,Electrical and Electronics,PUR,13.9
+North,Electrical and Electronics,Other Plastics,13.9
+North,EPS ETICS,"PE-LD, -LLD",65.0
+North,EPS ETICS,"PE-HD, -MD",65.0
+North,EPS ETICS,PP,65.0
+North,EPS ETICS,PS,65.0
+North,EPS ETICS,PS-E,65.0
+North,EPS ETICS,PVC,65.0
+North,EPS ETICS,PET,65.0
+North,EPS ETICS,"ABS, SAN",65.0
+North,EPS ETICS,PMMA,65.0
+North,EPS ETICS,"PA (PA6, PA66)",65.0
+North,EPS ETICS,PC,65.0
+North,EPS ETICS,Other Thermoplastics,65.0
+North,EPS ETICS,PUR,65.0
+North,EPS ETICS,Other Plastics,65.0
+North,EPS flat roof,"PE-LD, -LLD",35.0
+North,EPS flat roof,"PE-HD, -MD",35.0
+North,EPS flat roof,PP,35.0
+North,EPS flat roof,PS,35.0
+North,EPS flat roof,PS-E,35.0
+North,EPS flat roof,PVC,35.0
+North,EPS flat roof,PET,35.0
+North,EPS flat roof,"ABS, SAN",35.0
+North,EPS flat roof,PMMA,35.0
+North,EPS flat roof,"PA (PA6, PA66)",35.0
+North,EPS flat roof,PC,35.0
+North,EPS flat roof,Other Thermoplastics,35.0
+North,EPS flat roof,PUR,35.0
+North,EPS flat roof,Other Plastics,35.0
+North,EPS flooring,"PE-LD, -LLD",75.0
+North,EPS flooring,"PE-HD, -MD",75.0
+North,EPS flooring,PP,75.0
+North,EPS flooring,PS,75.0
+North,EPS flooring,PS-E,75.0
+North,EPS flooring,PVC,75.0
+North,EPS flooring,PET,75.0
+North,EPS flooring,"ABS, SAN",75.0
+North,EPS flooring,PMMA,75.0
+North,EPS flooring,"PA (PA6, PA66)",75.0
+North,EPS flooring,PC,75.0
+North,EPS flooring,Other Thermoplastics,75.0
+North,EPS flooring,PUR,75.0
+North,EPS flooring,Other Plastics,75.0
+North,EPS others in B&C,"PE-LD, -LLD",75.0
+North,EPS others in B&C,"PE-HD, -MD",75.0
+North,EPS others in B&C,PP,75.0
+North,EPS others in B&C,PS,75.0
+North,EPS others in B&C,PS-E,75.0
+North,EPS others in B&C,PVC,75.0
+North,EPS others in B&C,PET,75.0
+North,EPS others in B&C,"ABS, SAN",75.0
+North,EPS others in B&C,PMMA,75.0
+North,EPS others in B&C,"PA (PA6, PA66)",75.0
+North,EPS others in B&C,PC,75.0
+North,EPS others in B&C,Other Thermoplastics,75.0
+North,EPS others in B&C,PUR,75.0
+North,EPS others in B&C,Other Plastics,75.0
+North,EPS perimeter,"PE-LD, -LLD",80.0
+North,EPS perimeter,"PE-HD, -MD",80.0
+North,EPS perimeter,PP,80.0
+North,EPS perimeter,PS,80.0
+North,EPS perimeter,PS-E,80.0
+North,EPS perimeter,PVC,80.0
+North,EPS perimeter,PET,80.0
+North,EPS perimeter,"ABS, SAN",80.0
+North,EPS perimeter,PMMA,80.0
+North,EPS perimeter,"PA (PA6, PA66)",80.0
+North,EPS perimeter,PC,80.0
+North,EPS perimeter,Other Thermoplastics,80.0
+North,EPS perimeter,PUR,80.0
+North,EPS perimeter,Other Plastics,80.0
+North,Household packaging,"PE-LD, -LLD",0.2
+North,Household packaging,"PE-HD, -MD",0.2
+North,Household packaging,PP,0.2
+North,Household packaging,PS,0.2
+North,Household packaging,PS-E,0.2
+North,Household packaging,PVC,0.2
+North,Household packaging,PET,0.2
+North,Household packaging,"ABS, SAN",0.2
+North,Household packaging,PMMA,0.2
+North,Household packaging,"PA (PA6, PA66)",0.2
+North,Household packaging,PC,0.2
+North,Household packaging,Other Thermoplastics,0.2
+North,Household packaging,PUR,0.2
+North,Household packaging,Other Plastics,0.2
+North,"Household, Leisure, Sports","PE-LD, -LLD",7.5
+North,"Household, Leisure, Sports","PE-HD, -MD",7.5
+North,"Household, Leisure, Sports",PP,7.5
+North,"Household, Leisure, Sports",PS,7.5
+North,"Household, Leisure, Sports",PS-E,7.5
+North,"Household, Leisure, Sports",PVC,7.5
+North,"Household, Leisure, Sports",PET,7.5
+North,"Household, Leisure, Sports","ABS, SAN",7.5
+North,"Household, Leisure, Sports",PMMA,7.5
+North,"Household, Leisure, Sports","PA (PA6, PA66)",7.5
+North,"Household, Leisure, Sports",PC,7.5
+North,"Household, Leisure, Sports",Other Thermoplastics,7.5
+North,"Household, Leisure, Sports",PUR,7.5
+North,"Household, Leisure, Sports",Other Plastics,7.5
+North,Others,"PE-LD, -LLD",6.0
+North,Others,"PE-HD, -MD",6.0
+North,Others,PP,6.0
+North,Others,PS,6.0
+North,Others,PS-E,6.0
+North,Others,PVC,6.0
+North,Others,PET,6.0
+North,Others,"ABS, SAN",6.0
+North,Others,PMMA,6.0
+North,Others,"PA (PA6, PA66)",6.0
+North,Others,PC,6.0
+North,Others,Other Thermoplastics,6.0
+North,Others,PUR,6.0
+North,Others,Other Plastics,6.0
+North,Packaging,"PE-LD, -LLD",0.2
+North,Packaging,"PE-HD, -MD",0.2
+North,Packaging,PP,0.2
+North,Packaging,PS,0.2
+North,Packaging,PS-E,0.2
+North,Packaging,PVC,0.2
+North,Packaging,PET,0.2
+North,Packaging,"ABS, SAN",0.2
+North,Packaging,PMMA,0.2
+North,Packaging,"PA (PA6, PA66)",0.2
+North,Packaging,PC,0.2
+North,Packaging,Other Thermoplastics,0.2
+North,Packaging,PUR,0.2
+North,Packaging,Other Plastics,0.2
+North,PET beverage bottles,"PE-LD, -LLD",0.2
+North,PET beverage bottles,"PE-HD, -MD",0.2
+North,PET beverage bottles,PP,0.2
+North,PET beverage bottles,PS,0.2
+North,PET beverage bottles,PS-E,0.2
+North,PET beverage bottles,PVC,0.2
+North,PET beverage bottles,PET,0.2
+North,PET beverage bottles,"ABS, SAN",0.2
+North,PET beverage bottles,PMMA,0.2
+North,PET beverage bottles,"PA (PA6, PA66)",0.2
+North,PET beverage bottles,PC,0.2
+North,PET beverage bottles,Other Thermoplastics,0.2
+North,PET beverage bottles,PUR,0.2
+North,PET beverage bottles,Other Plastics,0.2
+North,PET other packaging,"PE-LD, -LLD",0.2
+North,PET other packaging,"PE-HD, -MD",0.2
+North,PET other packaging,PP,0.2
+North,PET other packaging,PS,0.2
+North,PET other packaging,PS-E,0.2
+North,PET other packaging,PVC,0.2
+North,PET other packaging,PET,0.2
+North,PET other packaging,"ABS, SAN",0.2
+North,PET other packaging,PMMA,0.2
+North,PET other packaging,"PA (PA6, PA66)",0.2
+North,PET other packaging,PC,0.2
+North,PET other packaging,Other Thermoplastics,0.2
+North,PET other packaging,PUR,0.2
+North,PET other packaging,Other Plastics,0.2
+North,PUR boards and panels rigid foam,"PE-LD, -LLD",65.0
+North,PUR boards and panels rigid foam,"PE-HD, -MD",65.0
+North,PUR boards and panels rigid foam,PP,65.0
+North,PUR boards and panels rigid foam,PS,65.0
+North,PUR boards and panels rigid foam,PS-E,65.0
+North,PUR boards and panels rigid foam,PVC,65.0
+North,PUR boards and panels rigid foam,PET,65.0
+North,PUR boards and panels rigid foam,"ABS, SAN",65.0
+North,PUR boards and panels rigid foam,PMMA,65.0
+North,PUR boards and panels rigid foam,"PA (PA6, PA66)",65.0
+North,PUR boards and panels rigid foam,PC,65.0
+North,PUR boards and panels rigid foam,Other Thermoplastics,65.0
+North,PUR boards and panels rigid foam,PUR,65.0
+North,PUR boards and panels rigid foam,Other Plastics,65.0
+North,PUR moulded automotive,"PE-LD, -LLD",17.4
+North,PUR moulded automotive,"PE-HD, -MD",17.4
+North,PUR moulded automotive,PP,17.4
+North,PUR moulded automotive,PS,17.4
+North,PUR moulded automotive,PS-E,17.4
+North,PUR moulded automotive,PVC,17.4
+North,PUR moulded automotive,PET,17.4
+North,PUR moulded automotive,"ABS, SAN",17.4
+North,PUR moulded automotive,PMMA,17.4
+North,PUR moulded automotive,"PA (PA6, PA66)",17.4
+North,PUR moulded automotive,PC,17.4
+North,PUR moulded automotive,Other Thermoplastics,17.4
+North,PUR moulded automotive,PUR,17.4
+North,PUR moulded automotive,Other Plastics,17.4
+North,PUR moulded furniture,"PE-LD, -LLD",10.0
+North,PUR moulded furniture,"PE-HD, -MD",10.0
+North,PUR moulded furniture,PP,10.0
+North,PUR moulded furniture,PS,10.0
+North,PUR moulded furniture,PS-E,10.0
+North,PUR moulded furniture,PVC,10.0
+North,PUR moulded furniture,PET,10.0
+North,PUR moulded furniture,"ABS, SAN",10.0
+North,PUR moulded furniture,PMMA,10.0
+North,PUR moulded furniture,"PA (PA6, PA66)",10.0
+North,PUR moulded furniture,PC,10.0
+North,PUR moulded furniture,Other Thermoplastics,10.0
+North,PUR moulded furniture,PUR,10.0
+North,PUR moulded furniture,Other Plastics,10.0
+North,PUR others in Automotive,"PE-LD, -LLD",17.4
+North,PUR others in Automotive,"PE-HD, -MD",17.4
+North,PUR others in Automotive,PP,17.4
+North,PUR others in Automotive,PS,17.4
+North,PUR others in Automotive,PS-E,17.4
+North,PUR others in Automotive,PVC,17.4
+North,PUR others in Automotive,PET,17.4
+North,PUR others in Automotive,"ABS, SAN",17.4
+North,PUR others in Automotive,PMMA,17.4
+North,PUR others in Automotive,"PA (PA6, PA66)",17.4
+North,PUR others in Automotive,PC,17.4
+North,PUR others in Automotive,Other Thermoplastics,17.4
+North,PUR others in Automotive,PUR,17.4
+North,PUR others in Automotive,Other Plastics,17.4
+North,PUR others in Others,"PE-LD, -LLD",10.0
+North,PUR others in Others,"PE-HD, -MD",10.0
+North,PUR others in Others,PP,10.0
+North,PUR others in Others,PS,10.0
+North,PUR others in Others,PS-E,10.0
+North,PUR others in Others,PVC,10.0
+North,PUR others in Others,PET,10.0
+North,PUR others in Others,"ABS, SAN",10.0
+North,PUR others in Others,PMMA,10.0
+North,PUR others in Others,"PA (PA6, PA66)",10.0
+North,PUR others in Others,PC,10.0
+North,PUR others in Others,Other Thermoplastics,10.0
+North,PUR others in Others,PUR,10.0
+North,PUR others in Others,Other Plastics,10.0
+North,PUR rigid spray foam,"PE-LD, -LLD",65.0
+North,PUR rigid spray foam,"PE-HD, -MD",65.0
+North,PUR rigid spray foam,PP,65.0
+North,PUR rigid spray foam,PS,65.0
+North,PUR rigid spray foam,PS-E,65.0
+North,PUR rigid spray foam,PVC,65.0
+North,PUR rigid spray foam,PET,65.0
+North,PUR rigid spray foam,"ABS, SAN",65.0
+North,PUR rigid spray foam,PMMA,65.0
+North,PUR rigid spray foam,"PA (PA6, PA66)",65.0
+North,PUR rigid spray foam,PC,65.0
+North,PUR rigid spray foam,Other Thermoplastics,65.0
+North,PUR rigid spray foam,PUR,65.0
+North,PUR rigid spray foam,Other Plastics,65.0
+North,PUR slabstock furniture,"PE-LD, -LLD",10.0
+North,PUR slabstock furniture,"PE-HD, -MD",10.0
+North,PUR slabstock furniture,PP,10.0
+North,PUR slabstock furniture,PS,10.0
+North,PUR slabstock furniture,PS-E,10.0
+North,PUR slabstock furniture,PVC,10.0
+North,PUR slabstock furniture,PET,10.0
+North,PUR slabstock furniture,"ABS, SAN",10.0
+North,PUR slabstock furniture,PMMA,10.0
+North,PUR slabstock furniture,"PA (PA6, PA66)",10.0
+North,PUR slabstock furniture,PC,10.0
+North,PUR slabstock furniture,Other Thermoplastics,10.0
+North,PUR slabstock furniture,PUR,10.0
+North,PUR slabstock furniture,Other Plastics,10.0
+North,PUR slabstock mattresses,"PE-LD, -LLD",10.0
+North,PUR slabstock mattresses,"PE-HD, -MD",10.0
+North,PUR slabstock mattresses,PP,10.0
+North,PUR slabstock mattresses,PS,10.0
+North,PUR slabstock mattresses,PS-E,10.0
+North,PUR slabstock mattresses,PVC,10.0
+North,PUR slabstock mattresses,PET,10.0
+North,PUR slabstock mattresses,"ABS, SAN",10.0
+North,PUR slabstock mattresses,PMMA,10.0
+North,PUR slabstock mattresses,"PA (PA6, PA66)",10.0
+North,PUR slabstock mattresses,PC,10.0
+North,PUR slabstock mattresses,Other Thermoplastics,10.0
+North,PUR slabstock mattresses,PUR,10.0
+North,PUR slabstock mattresses,Other Plastics,10.0
+North,PVC others in B&C,"PE-LD, -LLD",10.0
+North,PVC others in B&C,"PE-HD, -MD",10.0
+North,PVC others in B&C,PP,10.0
+North,PVC others in B&C,PS,10.0
+North,PVC others in B&C,PS-E,10.0
+North,PVC others in B&C,PVC,10.0
+North,PVC others in B&C,PET,10.0
+North,PVC others in B&C,"ABS, SAN",10.0
+North,PVC others in B&C,PMMA,10.0
+North,PVC others in B&C,"PA (PA6, PA66)",10.0
+North,PVC others in B&C,PC,10.0
+North,PVC others in B&C,Other Thermoplastics,10.0
+North,PVC others in B&C,PUR,10.0
+North,PVC others in B&C,Other Plastics,10.0
+North,PVC pipes,"PE-LD, -LLD",80.0
+North,PVC pipes,"PE-HD, -MD",80.0
+North,PVC pipes,PP,80.0
+North,PVC pipes,PS,80.0
+North,PVC pipes,PS-E,80.0
+North,PVC pipes,PVC,80.0
+North,PVC pipes,PET,80.0
+North,PVC pipes,"ABS, SAN",80.0
+North,PVC pipes,PMMA,80.0
+North,PVC pipes,"PA (PA6, PA66)",80.0
+North,PVC pipes,PC,80.0
+North,PVC pipes,Other Thermoplastics,80.0
+North,PVC pipes,PUR,80.0
+North,PVC pipes,Other Plastics,80.0
+North,PVC profiles,"PE-LD, -LLD",40.0
+North,PVC profiles,"PE-HD, -MD",40.0
+North,PVC profiles,PP,40.0
+North,PVC profiles,PS,40.0
+North,PVC profiles,PS-E,40.0
+North,PVC profiles,PVC,40.0
+North,PVC profiles,PET,40.0
+North,PVC profiles,"ABS, SAN",40.0
+North,PVC profiles,PMMA,40.0
+North,PVC profiles,"PA (PA6, PA66)",40.0
+North,PVC profiles,PC,40.0
+North,PVC profiles,Other Thermoplastics,40.0
+North,PVC profiles,PUR,40.0
+North,PVC profiles,Other Plastics,40.0
+South,Agriculture,"PE-LD, -LLD",3.0
+South,Agriculture,"PE-HD, -MD",3.0
+South,Agriculture,PP,3.0
+South,Agriculture,PS,3.0
+South,Agriculture,PS-E,3.0
+South,Agriculture,PVC,3.0
+South,Agriculture,PET,3.0
+South,Agriculture,"ABS, SAN",3.0
+South,Agriculture,PMMA,3.0
+South,Agriculture,"PA (PA6, PA66)",3.0
+South,Agriculture,PC,3.0
+South,Agriculture,Other Thermoplastics,3.0
+South,Agriculture,PUR,3.0
+South,Agriculture,Other Plastics,3.0
+South,Automotive,"PE-LD, -LLD",21.6
+South,Automotive,"PE-HD, -MD",21.6
+South,Automotive,PP,21.6
+South,Automotive,PS,21.6
+South,Automotive,PS-E,21.6
+South,Automotive,PVC,21.6
+South,Automotive,PET,21.6
+South,Automotive,"ABS, SAN",21.6
+South,Automotive,PMMA,21.6
+South,Automotive,"PA (PA6, PA66)",21.6
+South,Automotive,PC,21.6
+South,Automotive,Other Thermoplastics,21.6
+South,Automotive,PUR,21.6
+South,Automotive,Other Plastics,21.6
+South,Building and Construction,"PE-LD, -LLD",47.0
+South,Building and Construction,"PE-HD, -MD",47.0
+South,Building and Construction,PP,47.0
+South,Building and Construction,PS,47.0
+South,Building and Construction,PS-E,47.0
+South,Building and Construction,PVC,47.0
+South,Building and Construction,PET,47.0
+South,Building and Construction,"ABS, SAN",47.0
+South,Building and Construction,PMMA,47.0
+South,Building and Construction,"PA (PA6, PA66)",47.0
+South,Building and Construction,PC,47.0
+South,Building and Construction,Other Thermoplastics,47.0
+South,Building and Construction,PUR,47.0
+South,Building and Construction,Other Plastics,47.0
+South,Commercial & industrial packaging,"PE-LD, -LLD",0.2
+South,Commercial & industrial packaging,"PE-HD, -MD",0.2
+South,Commercial & industrial packaging,PP,0.2
+South,Commercial & industrial packaging,PS,0.2
+South,Commercial & industrial packaging,PS-E,0.2
+South,Commercial & industrial packaging,PVC,0.2
+South,Commercial & industrial packaging,PET,0.2
+South,Commercial & industrial packaging,"ABS, SAN",0.2
+South,Commercial & industrial packaging,PMMA,0.2
+South,Commercial & industrial packaging,"PA (PA6, PA66)",0.2
+South,Commercial & industrial packaging,PC,0.2
+South,Commercial & industrial packaging,Other Thermoplastics,0.2
+South,Commercial & industrial packaging,PUR,0.2
+South,Commercial & industrial packaging,Other Plastics,0.2
+South,Electrical and Electronics,"PE-LD, -LLD",15.7
+South,Electrical and Electronics,"PE-HD, -MD",15.7
+South,Electrical and Electronics,PP,15.7
+South,Electrical and Electronics,PS,15.7
+South,Electrical and Electronics,PS-E,15.7
+South,Electrical and Electronics,PVC,15.7
+South,Electrical and Electronics,PET,15.7
+South,Electrical and Electronics,"ABS, SAN",15.7
+South,Electrical and Electronics,PMMA,15.7
+South,Electrical and Electronics,"PA (PA6, PA66)",15.7
+South,Electrical and Electronics,PC,15.7
+South,Electrical and Electronics,Other Thermoplastics,15.7
+South,Electrical and Electronics,PUR,15.7
+South,Electrical and Electronics,Other Plastics,15.7
+South,EPS ETICS,"PE-LD, -LLD",65.0
+South,EPS ETICS,"PE-HD, -MD",65.0
+South,EPS ETICS,PP,65.0
+South,EPS ETICS,PS,65.0
+South,EPS ETICS,PS-E,65.0
+South,EPS ETICS,PVC,65.0
+South,EPS ETICS,PET,65.0
+South,EPS ETICS,"ABS, SAN",65.0
+South,EPS ETICS,PMMA,65.0
+South,EPS ETICS,"PA (PA6, PA66)",65.0
+South,EPS ETICS,PC,65.0
+South,EPS ETICS,Other Thermoplastics,65.0
+South,EPS ETICS,PUR,65.0
+South,EPS ETICS,Other Plastics,65.0
+South,EPS flat roof,"PE-LD, -LLD",35.0
+South,EPS flat roof,"PE-HD, -MD",35.0
+South,EPS flat roof,PP,35.0
+South,EPS flat roof,PS,35.0
+South,EPS flat roof,PS-E,35.0
+South,EPS flat roof,PVC,35.0
+South,EPS flat roof,PET,35.0
+South,EPS flat roof,"ABS, SAN",35.0
+South,EPS flat roof,PMMA,35.0
+South,EPS flat roof,"PA (PA6, PA66)",35.0
+South,EPS flat roof,PC,35.0
+South,EPS flat roof,Other Thermoplastics,35.0
+South,EPS flat roof,PUR,35.0
+South,EPS flat roof,Other Plastics,35.0
+South,EPS flooring,"PE-LD, -LLD",75.0
+South,EPS flooring,"PE-HD, -MD",75.0
+South,EPS flooring,PP,75.0
+South,EPS flooring,PS,75.0
+South,EPS flooring,PS-E,75.0
+South,EPS flooring,PVC,75.0
+South,EPS flooring,PET,75.0
+South,EPS flooring,"ABS, SAN",75.0
+South,EPS flooring,PMMA,75.0
+South,EPS flooring,"PA (PA6, PA66)",75.0
+South,EPS flooring,PC,75.0
+South,EPS flooring,Other Thermoplastics,75.0
+South,EPS flooring,PUR,75.0
+South,EPS flooring,Other Plastics,75.0
+South,EPS others in B&C,"PE-LD, -LLD",75.0
+South,EPS others in B&C,"PE-HD, -MD",75.0
+South,EPS others in B&C,PP,75.0
+South,EPS others in B&C,PS,75.0
+South,EPS others in B&C,PS-E,75.0
+South,EPS others in B&C,PVC,75.0
+South,EPS others in B&C,PET,75.0
+South,EPS others in B&C,"ABS, SAN",75.0
+South,EPS others in B&C,PMMA,75.0
+South,EPS others in B&C,"PA (PA6, PA66)",75.0
+South,EPS others in B&C,PC,75.0
+South,EPS others in B&C,Other Thermoplastics,75.0
+South,EPS others in B&C,PUR,75.0
+South,EPS others in B&C,Other Plastics,75.0
+South,EPS perimeter,"PE-LD, -LLD",80.0
+South,EPS perimeter,"PE-HD, -MD",80.0
+South,EPS perimeter,PP,80.0
+South,EPS perimeter,PS,80.0
+South,EPS perimeter,PS-E,80.0
+South,EPS perimeter,PVC,80.0
+South,EPS perimeter,PET,80.0
+South,EPS perimeter,"ABS, SAN",80.0
+South,EPS perimeter,PMMA,80.0
+South,EPS perimeter,"PA (PA6, PA66)",80.0
+South,EPS perimeter,PC,80.0
+South,EPS perimeter,Other Thermoplastics,80.0
+South,EPS perimeter,PUR,80.0
+South,EPS perimeter,Other Plastics,80.0
+South,Household packaging,"PE-LD, -LLD",0.2
+South,Household packaging,"PE-HD, -MD",0.2
+South,Household packaging,PP,0.2
+South,Household packaging,PS,0.2
+South,Household packaging,PS-E,0.2
+South,Household packaging,PVC,0.2
+South,Household packaging,PET,0.2
+South,Household packaging,"ABS, SAN",0.2
+South,Household packaging,PMMA,0.2
+South,Household packaging,"PA (PA6, PA66)",0.2
+South,Household packaging,PC,0.2
+South,Household packaging,Other Thermoplastics,0.2
+South,Household packaging,PUR,0.2
+South,Household packaging,Other Plastics,0.2
+South,"Household, Leisure, Sports","PE-LD, -LLD",8.5
+South,"Household, Leisure, Sports","PE-HD, -MD",8.5
+South,"Household, Leisure, Sports",PP,8.5
+South,"Household, Leisure, Sports",PS,8.5
+South,"Household, Leisure, Sports",PS-E,8.5
+South,"Household, Leisure, Sports",PVC,8.5
+South,"Household, Leisure, Sports",PET,8.5
+South,"Household, Leisure, Sports","ABS, SAN",8.5
+South,"Household, Leisure, Sports",PMMA,8.5
+South,"Household, Leisure, Sports","PA (PA6, PA66)",8.5
+South,"Household, Leisure, Sports",PC,8.5
+South,"Household, Leisure, Sports",Other Thermoplastics,8.5
+South,"Household, Leisure, Sports",PUR,8.5
+South,"Household, Leisure, Sports",Other Plastics,8.5
+South,Others,"PE-LD, -LLD",6.0
+South,Others,"PE-HD, -MD",6.0
+South,Others,PP,6.0
+South,Others,PS,6.0
+South,Others,PS-E,6.0
+South,Others,PVC,6.0
+South,Others,PET,6.0
+South,Others,"ABS, SAN",6.0
+South,Others,PMMA,6.0
+South,Others,"PA (PA6, PA66)",6.0
+South,Others,PC,6.0
+South,Others,Other Thermoplastics,6.0
+South,Others,PUR,6.0
+South,Others,Other Plastics,6.0
+South,Packaging,"PE-LD, -LLD",0.2
+South,Packaging,"PE-HD, -MD",0.2
+South,Packaging,PP,0.2
+South,Packaging,PS,0.2
+South,Packaging,PS-E,0.2
+South,Packaging,PVC,0.2
+South,Packaging,PET,0.2
+South,Packaging,"ABS, SAN",0.2
+South,Packaging,PMMA,0.2
+South,Packaging,"PA (PA6, PA66)",0.2
+South,Packaging,PC,0.2
+South,Packaging,Other Thermoplastics,0.2
+South,Packaging,PUR,0.2
+South,Packaging,Other Plastics,0.2
+South,PET beverage bottles,"PE-LD, -LLD",0.2
+South,PET beverage bottles,"PE-HD, -MD",0.2
+South,PET beverage bottles,PP,0.2
+South,PET beverage bottles,PS,0.2
+South,PET beverage bottles,PS-E,0.2
+South,PET beverage bottles,PVC,0.2
+South,PET beverage bottles,PET,0.2
+South,PET beverage bottles,"ABS, SAN",0.2
+South,PET beverage bottles,PMMA,0.2
+South,PET beverage bottles,"PA (PA6, PA66)",0.2
+South,PET beverage bottles,PC,0.2
+South,PET beverage bottles,Other Thermoplastics,0.2
+South,PET beverage bottles,PUR,0.2
+South,PET beverage bottles,Other Plastics,0.2
+South,PET other packaging,"PE-LD, -LLD",0.2
+South,PET other packaging,"PE-HD, -MD",0.2
+South,PET other packaging,PP,0.2
+South,PET other packaging,PS,0.2
+South,PET other packaging,PS-E,0.2
+South,PET other packaging,PVC,0.2
+South,PET other packaging,PET,0.2
+South,PET other packaging,"ABS, SAN",0.2
+South,PET other packaging,PMMA,0.2
+South,PET other packaging,"PA (PA6, PA66)",0.2
+South,PET other packaging,PC,0.2
+South,PET other packaging,Other Thermoplastics,0.2
+South,PET other packaging,PUR,0.2
+South,PET other packaging,Other Plastics,0.2
+South,PUR boards and panels rigid foam,"PE-LD, -LLD",65.0
+South,PUR boards and panels rigid foam,"PE-HD, -MD",65.0
+South,PUR boards and panels rigid foam,PP,65.0
+South,PUR boards and panels rigid foam,PS,65.0
+South,PUR boards and panels rigid foam,PS-E,65.0
+South,PUR boards and panels rigid foam,PVC,65.0
+South,PUR boards and panels rigid foam,PET,65.0
+South,PUR boards and panels rigid foam,"ABS, SAN",65.0
+South,PUR boards and panels rigid foam,PMMA,65.0
+South,PUR boards and panels rigid foam,"PA (PA6, PA66)",65.0
+South,PUR boards and panels rigid foam,PC,65.0
+South,PUR boards and panels rigid foam,Other Thermoplastics,65.0
+South,PUR boards and panels rigid foam,PUR,65.0
+South,PUR boards and panels rigid foam,Other Plastics,65.0
+South,PUR moulded automotive,"PE-LD, -LLD",21.6
+South,PUR moulded automotive,"PE-HD, -MD",21.6
+South,PUR moulded automotive,PP,21.6
+South,PUR moulded automotive,PS,21.6
+South,PUR moulded automotive,PS-E,21.6
+South,PUR moulded automotive,PVC,21.6
+South,PUR moulded automotive,PET,21.6
+South,PUR moulded automotive,"ABS, SAN",21.6
+South,PUR moulded automotive,PMMA,21.6
+South,PUR moulded automotive,"PA (PA6, PA66)",21.6
+South,PUR moulded automotive,PC,21.6
+South,PUR moulded automotive,Other Thermoplastics,21.6
+South,PUR moulded automotive,PUR,21.6
+South,PUR moulded automotive,Other Plastics,21.6
+South,PUR moulded furniture,"PE-LD, -LLD",10.0
+South,PUR moulded furniture,"PE-HD, -MD",10.0
+South,PUR moulded furniture,PP,10.0
+South,PUR moulded furniture,PS,10.0
+South,PUR moulded furniture,PS-E,10.0
+South,PUR moulded furniture,PVC,10.0
+South,PUR moulded furniture,PET,10.0
+South,PUR moulded furniture,"ABS, SAN",10.0
+South,PUR moulded furniture,PMMA,10.0
+South,PUR moulded furniture,"PA (PA6, PA66)",10.0
+South,PUR moulded furniture,PC,10.0
+South,PUR moulded furniture,Other Thermoplastics,10.0
+South,PUR moulded furniture,PUR,10.0
+South,PUR moulded furniture,Other Plastics,10.0
+South,PUR others in Automotive,"PE-LD, -LLD",21.6
+South,PUR others in Automotive,"PE-HD, -MD",21.6
+South,PUR others in Automotive,PP,21.6
+South,PUR others in Automotive,PS,21.6
+South,PUR others in Automotive,PS-E,21.6
+South,PUR others in Automotive,PVC,21.6
+South,PUR others in Automotive,PET,21.6
+South,PUR others in Automotive,"ABS, SAN",21.6
+South,PUR others in Automotive,PMMA,21.6
+South,PUR others in Automotive,"PA (PA6, PA66)",21.6
+South,PUR others in Automotive,PC,21.6
+South,PUR others in Automotive,Other Thermoplastics,21.6
+South,PUR others in Automotive,PUR,21.6
+South,PUR others in Automotive,Other Plastics,21.6
+South,PUR others in Others,"PE-LD, -LLD",10.0
+South,PUR others in Others,"PE-HD, -MD",10.0
+South,PUR others in Others,PP,10.0
+South,PUR others in Others,PS,10.0
+South,PUR others in Others,PS-E,10.0
+South,PUR others in Others,PVC,10.0
+South,PUR others in Others,PET,10.0
+South,PUR others in Others,"ABS, SAN",10.0
+South,PUR others in Others,PMMA,10.0
+South,PUR others in Others,"PA (PA6, PA66)",10.0
+South,PUR others in Others,PC,10.0
+South,PUR others in Others,Other Thermoplastics,10.0
+South,PUR others in Others,PUR,10.0
+South,PUR others in Others,Other Plastics,10.0
+South,PUR rigid spray foam,"PE-LD, -LLD",65.0
+South,PUR rigid spray foam,"PE-HD, -MD",65.0
+South,PUR rigid spray foam,PP,65.0
+South,PUR rigid spray foam,PS,65.0
+South,PUR rigid spray foam,PS-E,65.0
+South,PUR rigid spray foam,PVC,65.0
+South,PUR rigid spray foam,PET,65.0
+South,PUR rigid spray foam,"ABS, SAN",65.0
+South,PUR rigid spray foam,PMMA,65.0
+South,PUR rigid spray foam,"PA (PA6, PA66)",65.0
+South,PUR rigid spray foam,PC,65.0
+South,PUR rigid spray foam,Other Thermoplastics,65.0
+South,PUR rigid spray foam,PUR,65.0
+South,PUR rigid spray foam,Other Plastics,65.0
+South,PUR slabstock furniture,"PE-LD, -LLD",10.0
+South,PUR slabstock furniture,"PE-HD, -MD",10.0
+South,PUR slabstock furniture,PP,10.0
+South,PUR slabstock furniture,PS,10.0
+South,PUR slabstock furniture,PS-E,10.0
+South,PUR slabstock furniture,PVC,10.0
+South,PUR slabstock furniture,PET,10.0
+South,PUR slabstock furniture,"ABS, SAN",10.0
+South,PUR slabstock furniture,PMMA,10.0
+South,PUR slabstock furniture,"PA (PA6, PA66)",10.0
+South,PUR slabstock furniture,PC,10.0
+South,PUR slabstock furniture,Other Thermoplastics,10.0
+South,PUR slabstock furniture,PUR,10.0
+South,PUR slabstock furniture,Other Plastics,10.0
+South,PUR slabstock mattresses,"PE-LD, -LLD",10.0
+South,PUR slabstock mattresses,"PE-HD, -MD",10.0
+South,PUR slabstock mattresses,PP,10.0
+South,PUR slabstock mattresses,PS,10.0
+South,PUR slabstock mattresses,PS-E,10.0
+South,PUR slabstock mattresses,PVC,10.0
+South,PUR slabstock mattresses,PET,10.0
+South,PUR slabstock mattresses,"ABS, SAN",10.0
+South,PUR slabstock mattresses,PMMA,10.0
+South,PUR slabstock mattresses,"PA (PA6, PA66)",10.0
+South,PUR slabstock mattresses,PC,10.0
+South,PUR slabstock mattresses,Other Thermoplastics,10.0
+South,PUR slabstock mattresses,PUR,10.0
+South,PUR slabstock mattresses,Other Plastics,10.0
+South,PVC others in B&C,"PE-LD, -LLD",10.0
+South,PVC others in B&C,"PE-HD, -MD",10.0
+South,PVC others in B&C,PP,10.0
+South,PVC others in B&C,PS,10.0
+South,PVC others in B&C,PS-E,10.0
+South,PVC others in B&C,PVC,10.0
+South,PVC others in B&C,PET,10.0
+South,PVC others in B&C,"ABS, SAN",10.0
+South,PVC others in B&C,PMMA,10.0
+South,PVC others in B&C,"PA (PA6, PA66)",10.0
+South,PVC others in B&C,PC,10.0
+South,PVC others in B&C,Other Thermoplastics,10.0
+South,PVC others in B&C,PUR,10.0
+South,PVC others in B&C,Other Plastics,10.0
+South,PVC pipes,"PE-LD, -LLD",80.0
+South,PVC pipes,"PE-HD, -MD",80.0
+South,PVC pipes,PP,80.0
+South,PVC pipes,PS,80.0
+South,PVC pipes,PS-E,80.0
+South,PVC pipes,PVC,80.0
+South,PVC pipes,PET,80.0
+South,PVC pipes,"ABS, SAN",80.0
+South,PVC pipes,PMMA,80.0
+South,PVC pipes,"PA (PA6, PA66)",80.0
+South,PVC pipes,PC,80.0
+South,PVC pipes,Other Thermoplastics,80.0
+South,PVC pipes,PUR,80.0
+South,PVC pipes,Other Plastics,80.0
+South,PVC profiles,"PE-LD, -LLD",40.0
+South,PVC profiles,"PE-HD, -MD",40.0
+South,PVC profiles,PP,40.0
+South,PVC profiles,PS,40.0
+South,PVC profiles,PS-E,40.0
+South,PVC profiles,PVC,40.0
+South,PVC profiles,PET,40.0
+South,PVC profiles,"ABS, SAN",40.0
+South,PVC profiles,PMMA,40.0
+South,PVC profiles,"PA (PA6, PA66)",40.0
+South,PVC profiles,PC,40.0
+South,PVC profiles,Other Thermoplastics,40.0
+South,PVC profiles,PUR,40.0
+South,PVC profiles,Other Plastics,40.0
+West,Agriculture,"PE-LD, -LLD",3.0
+West,Agriculture,"PE-HD, -MD",3.0
+West,Agriculture,PP,3.0
+West,Agriculture,PS,3.0
+West,Agriculture,PS-E,3.0
+West,Agriculture,PVC,3.0
+West,Agriculture,PET,3.0
+West,Agriculture,"ABS, SAN",3.0
+West,Agriculture,PMMA,3.0
+West,Agriculture,"PA (PA6, PA66)",3.0
+West,Agriculture,PC,3.0
+West,Agriculture,Other Thermoplastics,3.0
+West,Agriculture,PUR,3.0
+West,Agriculture,Other Plastics,3.0
+West,Automotive,"PE-LD, -LLD",17.9
+West,Automotive,"PE-HD, -MD",17.9
+West,Automotive,PP,17.9
+West,Automotive,PS,17.9
+West,Automotive,PS-E,17.9
+West,Automotive,PVC,17.9
+West,Automotive,PET,17.9
+West,Automotive,"ABS, SAN",17.9
+West,Automotive,PMMA,17.9
+West,Automotive,"PA (PA6, PA66)",17.9
+West,Automotive,PC,17.9
+West,Automotive,Other Thermoplastics,17.9
+West,Automotive,PUR,17.9
+West,Automotive,Other Plastics,17.9
+West,Building and Construction,"PE-LD, -LLD",47.0
+West,Building and Construction,"PE-HD, -MD",47.0
+West,Building and Construction,PP,47.0
+West,Building and Construction,PS,47.0
+West,Building and Construction,PS-E,47.0
+West,Building and Construction,PVC,47.0
+West,Building and Construction,PET,47.0
+West,Building and Construction,"ABS, SAN",47.0
+West,Building and Construction,PMMA,47.0
+West,Building and Construction,"PA (PA6, PA66)",47.0
+West,Building and Construction,PC,47.0
+West,Building and Construction,Other Thermoplastics,47.0
+West,Building and Construction,PUR,47.0
+West,Building and Construction,Other Plastics,47.0
+West,Commercial & industrial packaging,"PE-LD, -LLD",0.2
+West,Commercial & industrial packaging,"PE-HD, -MD",0.2
+West,Commercial & industrial packaging,PP,0.2
+West,Commercial & industrial packaging,PS,0.2
+West,Commercial & industrial packaging,PS-E,0.2
+West,Commercial & industrial packaging,PVC,0.2
+West,Commercial & industrial packaging,PET,0.2
+West,Commercial & industrial packaging,"ABS, SAN",0.2
+West,Commercial & industrial packaging,PMMA,0.2
+West,Commercial & industrial packaging,"PA (PA6, PA66)",0.2
+West,Commercial & industrial packaging,PC,0.2
+West,Commercial & industrial packaging,Other Thermoplastics,0.2
+West,Commercial & industrial packaging,PUR,0.2
+West,Commercial & industrial packaging,Other Plastics,0.2
+West,Electrical and Electronics,"PE-LD, -LLD",13.4
+West,Electrical and Electronics,"PE-HD, -MD",13.4
+West,Electrical and Electronics,PP,13.4
+West,Electrical and Electronics,PS,13.4
+West,Electrical and Electronics,PS-E,13.4
+West,Electrical and Electronics,PVC,13.4
+West,Electrical and Electronics,PET,13.4
+West,Electrical and Electronics,"ABS, SAN",13.4
+West,Electrical and Electronics,PMMA,13.4
+West,Electrical and Electronics,"PA (PA6, PA66)",13.4
+West,Electrical and Electronics,PC,13.4
+West,Electrical and Electronics,Other Thermoplastics,13.4
+West,Electrical and Electronics,PUR,13.4
+West,Electrical and Electronics,Other Plastics,13.4
+West,EPS ETICS,"PE-LD, -LLD",65.0
+West,EPS ETICS,"PE-HD, -MD",65.0
+West,EPS ETICS,PP,65.0
+West,EPS ETICS,PS,65.0
+West,EPS ETICS,PS-E,65.0
+West,EPS ETICS,PVC,65.0
+West,EPS ETICS,PET,65.0
+West,EPS ETICS,"ABS, SAN",65.0
+West,EPS ETICS,PMMA,65.0
+West,EPS ETICS,"PA (PA6, PA66)",65.0
+West,EPS ETICS,PC,65.0
+West,EPS ETICS,Other Thermoplastics,65.0
+West,EPS ETICS,PUR,65.0
+West,EPS ETICS,Other Plastics,65.0
+West,EPS flat roof,"PE-LD, -LLD",35.0
+West,EPS flat roof,"PE-HD, -MD",35.0
+West,EPS flat roof,PP,35.0
+West,EPS flat roof,PS,35.0
+West,EPS flat roof,PS-E,35.0
+West,EPS flat roof,PVC,35.0
+West,EPS flat roof,PET,35.0
+West,EPS flat roof,"ABS, SAN",35.0
+West,EPS flat roof,PMMA,35.0
+West,EPS flat roof,"PA (PA6, PA66)",35.0
+West,EPS flat roof,PC,35.0
+West,EPS flat roof,Other Thermoplastics,35.0
+West,EPS flat roof,PUR,35.0
+West,EPS flat roof,Other Plastics,35.0
+West,EPS flooring,"PE-LD, -LLD",75.0
+West,EPS flooring,"PE-HD, -MD",75.0
+West,EPS flooring,PP,75.0
+West,EPS flooring,PS,75.0
+West,EPS flooring,PS-E,75.0
+West,EPS flooring,PVC,75.0
+West,EPS flooring,PET,75.0
+West,EPS flooring,"ABS, SAN",75.0
+West,EPS flooring,PMMA,75.0
+West,EPS flooring,"PA (PA6, PA66)",75.0
+West,EPS flooring,PC,75.0
+West,EPS flooring,Other Thermoplastics,75.0
+West,EPS flooring,PUR,75.0
+West,EPS flooring,Other Plastics,75.0
+West,EPS others in B&C,"PE-LD, -LLD",75.0
+West,EPS others in B&C,"PE-HD, -MD",75.0
+West,EPS others in B&C,PP,75.0
+West,EPS others in B&C,PS,75.0
+West,EPS others in B&C,PS-E,75.0
+West,EPS others in B&C,PVC,75.0
+West,EPS others in B&C,PET,75.0
+West,EPS others in B&C,"ABS, SAN",75.0
+West,EPS others in B&C,PMMA,75.0
+West,EPS others in B&C,"PA (PA6, PA66)",75.0
+West,EPS others in B&C,PC,75.0
+West,EPS others in B&C,Other Thermoplastics,75.0
+West,EPS others in B&C,PUR,75.0
+West,EPS others in B&C,Other Plastics,75.0
+West,EPS perimeter,"PE-LD, -LLD",80.0
+West,EPS perimeter,"PE-HD, -MD",80.0
+West,EPS perimeter,PP,80.0
+West,EPS perimeter,PS,80.0
+West,EPS perimeter,PS-E,80.0
+West,EPS perimeter,PVC,80.0
+West,EPS perimeter,PET,80.0
+West,EPS perimeter,"ABS, SAN",80.0
+West,EPS perimeter,PMMA,80.0
+West,EPS perimeter,"PA (PA6, PA66)",80.0
+West,EPS perimeter,PC,80.0
+West,EPS perimeter,Other Thermoplastics,80.0
+West,EPS perimeter,PUR,80.0
+West,EPS perimeter,Other Plastics,80.0
+West,Household packaging,"PE-LD, -LLD",0.2
+West,Household packaging,"PE-HD, -MD",0.2
+West,Household packaging,PP,0.2
+West,Household packaging,PS,0.2
+West,Household packaging,PS-E,0.2
+West,Household packaging,PVC,0.2
+West,Household packaging,PET,0.2
+West,Household packaging,"ABS, SAN",0.2
+West,Household packaging,PMMA,0.2
+West,Household packaging,"PA (PA6, PA66)",0.2
+West,Household packaging,PC,0.2
+West,Household packaging,Other Thermoplastics,0.2
+West,Household packaging,PUR,0.2
+West,Household packaging,Other Plastics,0.2
+West,"Household, Leisure, Sports","PE-LD, -LLD",7.2
+West,"Household, Leisure, Sports","PE-HD, -MD",7.2
+West,"Household, Leisure, Sports",PP,7.2
+West,"Household, Leisure, Sports",PS,7.2
+West,"Household, Leisure, Sports",PS-E,7.2
+West,"Household, Leisure, Sports",PVC,7.2
+West,"Household, Leisure, Sports",PET,7.2
+West,"Household, Leisure, Sports","ABS, SAN",7.2
+West,"Household, Leisure, Sports",PMMA,7.2
+West,"Household, Leisure, Sports","PA (PA6, PA66)",7.2
+West,"Household, Leisure, Sports",PC,7.2
+West,"Household, Leisure, Sports",Other Thermoplastics,7.2
+West,"Household, Leisure, Sports",PUR,7.2
+West,"Household, Leisure, Sports",Other Plastics,7.2
+West,Others,"PE-LD, -LLD",6.0
+West,Others,"PE-HD, -MD",6.0
+West,Others,PP,6.0
+West,Others,PS,6.0
+West,Others,PS-E,6.0
+West,Others,PVC,6.0
+West,Others,PET,6.0
+West,Others,"ABS, SAN",6.0
+West,Others,PMMA,6.0
+West,Others,"PA (PA6, PA66)",6.0
+West,Others,PC,6.0
+West,Others,Other Thermoplastics,6.0
+West,Others,PUR,6.0
+West,Others,Other Plastics,6.0
+West,Packaging,"PE-LD, -LLD",0.2
+West,Packaging,"PE-HD, -MD",0.2
+West,Packaging,PP,0.2
+West,Packaging,PS,0.2
+West,Packaging,PS-E,0.2
+West,Packaging,PVC,0.2
+West,Packaging,PET,0.2
+West,Packaging,"ABS, SAN",0.2
+West,Packaging,PMMA,0.2
+West,Packaging,"PA (PA6, PA66)",0.2
+West,Packaging,PC,0.2
+West,Packaging,Other Thermoplastics,0.2
+West,Packaging,PUR,0.2
+West,Packaging,Other Plastics,0.2
+West,PET beverage bottles,"PE-LD, -LLD",0.2
+West,PET beverage bottles,"PE-HD, -MD",0.2
+West,PET beverage bottles,PP,0.2
+West,PET beverage bottles,PS,0.2
+West,PET beverage bottles,PS-E,0.2
+West,PET beverage bottles,PVC,0.2
+West,PET beverage bottles,PET,0.2
+West,PET beverage bottles,"ABS, SAN",0.2
+West,PET beverage bottles,PMMA,0.2
+West,PET beverage bottles,"PA (PA6, PA66)",0.2
+West,PET beverage bottles,PC,0.2
+West,PET beverage bottles,Other Thermoplastics,0.2
+West,PET beverage bottles,PUR,0.2
+West,PET beverage bottles,Other Plastics,0.2
+West,PET other packaging,"PE-LD, -LLD",0.2
+West,PET other packaging,"PE-HD, -MD",0.2
+West,PET other packaging,PP,0.2
+West,PET other packaging,PS,0.2
+West,PET other packaging,PS-E,0.2
+West,PET other packaging,PVC,0.2
+West,PET other packaging,PET,0.2
+West,PET other packaging,"ABS, SAN",0.2
+West,PET other packaging,PMMA,0.2
+West,PET other packaging,"PA (PA6, PA66)",0.2
+West,PET other packaging,PC,0.2
+West,PET other packaging,Other Thermoplastics,0.2
+West,PET other packaging,PUR,0.2
+West,PET other packaging,Other Plastics,0.2
+West,PUR boards and panels rigid foam,"PE-LD, -LLD",65.0
+West,PUR boards and panels rigid foam,"PE-HD, -MD",65.0
+West,PUR boards and panels rigid foam,PP,65.0
+West,PUR boards and panels rigid foam,PS,65.0
+West,PUR boards and panels rigid foam,PS-E,65.0
+West,PUR boards and panels rigid foam,PVC,65.0
+West,PUR boards and panels rigid foam,PET,65.0
+West,PUR boards and panels rigid foam,"ABS, SAN",65.0
+West,PUR boards and panels rigid foam,PMMA,65.0
+West,PUR boards and panels rigid foam,"PA (PA6, PA66)",65.0
+West,PUR boards and panels rigid foam,PC,65.0
+West,PUR boards and panels rigid foam,Other Thermoplastics,65.0
+West,PUR boards and panels rigid foam,PUR,65.0
+West,PUR boards and panels rigid foam,Other Plastics,65.0
+West,PUR moulded automotive,"PE-LD, -LLD",17.9
+West,PUR moulded automotive,"PE-HD, -MD",17.9
+West,PUR moulded automotive,PP,17.9
+West,PUR moulded automotive,PS,17.9
+West,PUR moulded automotive,PS-E,17.9
+West,PUR moulded automotive,PVC,17.9
+West,PUR moulded automotive,PET,17.9
+West,PUR moulded automotive,"ABS, SAN",17.9
+West,PUR moulded automotive,PMMA,17.9
+West,PUR moulded automotive,"PA (PA6, PA66)",17.9
+West,PUR moulded automotive,PC,17.9
+West,PUR moulded automotive,Other Thermoplastics,17.9
+West,PUR moulded automotive,PUR,17.9
+West,PUR moulded automotive,Other Plastics,17.9
+West,PUR moulded furniture,"PE-LD, -LLD",10.0
+West,PUR moulded furniture,"PE-HD, -MD",10.0
+West,PUR moulded furniture,PP,10.0
+West,PUR moulded furniture,PS,10.0
+West,PUR moulded furniture,PS-E,10.0
+West,PUR moulded furniture,PVC,10.0
+West,PUR moulded furniture,PET,10.0
+West,PUR moulded furniture,"ABS, SAN",10.0
+West,PUR moulded furniture,PMMA,10.0
+West,PUR moulded furniture,"PA (PA6, PA66)",10.0
+West,PUR moulded furniture,PC,10.0
+West,PUR moulded furniture,Other Thermoplastics,10.0
+West,PUR moulded furniture,PUR,10.0
+West,PUR moulded furniture,Other Plastics,10.0
+West,PUR others in Automotive,"PE-LD, -LLD",17.9
+West,PUR others in Automotive,"PE-HD, -MD",17.9
+West,PUR others in Automotive,PP,17.9
+West,PUR others in Automotive,PS,17.9
+West,PUR others in Automotive,PS-E,17.9
+West,PUR others in Automotive,PVC,17.9
+West,PUR others in Automotive,PET,17.9
+West,PUR others in Automotive,"ABS, SAN",17.9
+West,PUR others in Automotive,PMMA,17.9
+West,PUR others in Automotive,"PA (PA6, PA66)",17.9
+West,PUR others in Automotive,PC,17.9
+West,PUR others in Automotive,Other Thermoplastics,17.9
+West,PUR others in Automotive,PUR,17.9
+West,PUR others in Automotive,Other Plastics,17.9
+West,PUR others in Others,"PE-LD, -LLD",10.0
+West,PUR others in Others,"PE-HD, -MD",10.0
+West,PUR others in Others,PP,10.0
+West,PUR others in Others,PS,10.0
+West,PUR others in Others,PS-E,10.0
+West,PUR others in Others,PVC,10.0
+West,PUR others in Others,PET,10.0
+West,PUR others in Others,"ABS, SAN",10.0
+West,PUR others in Others,PMMA,10.0
+West,PUR others in Others,"PA (PA6, PA66)",10.0
+West,PUR others in Others,PC,10.0
+West,PUR others in Others,Other Thermoplastics,10.0
+West,PUR others in Others,PUR,10.0
+West,PUR others in Others,Other Plastics,10.0
+West,PUR rigid spray foam,"PE-LD, -LLD",65.0
+West,PUR rigid spray foam,"PE-HD, -MD",65.0
+West,PUR rigid spray foam,PP,65.0
+West,PUR rigid spray foam,PS,65.0
+West,PUR rigid spray foam,PS-E,65.0
+West,PUR rigid spray foam,PVC,65.0
+West,PUR rigid spray foam,PET,65.0
+West,PUR rigid spray foam,"ABS, SAN",65.0
+West,PUR rigid spray foam,PMMA,65.0
+West,PUR rigid spray foam,"PA (PA6, PA66)",65.0
+West,PUR rigid spray foam,PC,65.0
+West,PUR rigid spray foam,Other Thermoplastics,65.0
+West,PUR rigid spray foam,PUR,65.0
+West,PUR rigid spray foam,Other Plastics,65.0
+West,PUR slabstock furniture,"PE-LD, -LLD",10.0
+West,PUR slabstock furniture,"PE-HD, -MD",10.0
+West,PUR slabstock furniture,PP,10.0
+West,PUR slabstock furniture,PS,10.0
+West,PUR slabstock furniture,PS-E,10.0
+West,PUR slabstock furniture,PVC,10.0
+West,PUR slabstock furniture,PET,10.0
+West,PUR slabstock furniture,"ABS, SAN",10.0
+West,PUR slabstock furniture,PMMA,10.0
+West,PUR slabstock furniture,"PA (PA6, PA66)",10.0
+West,PUR slabstock furniture,PC,10.0
+West,PUR slabstock furniture,Other Thermoplastics,10.0
+West,PUR slabstock furniture,PUR,10.0
+West,PUR slabstock furniture,Other Plastics,10.0
+West,PUR slabstock mattresses,"PE-LD, -LLD",10.0
+West,PUR slabstock mattresses,"PE-HD, -MD",10.0
+West,PUR slabstock mattresses,PP,10.0
+West,PUR slabstock mattresses,PS,10.0
+West,PUR slabstock mattresses,PS-E,10.0
+West,PUR slabstock mattresses,PVC,10.0
+West,PUR slabstock mattresses,PET,10.0
+West,PUR slabstock mattresses,"ABS, SAN",10.0
+West,PUR slabstock mattresses,PMMA,10.0
+West,PUR slabstock mattresses,"PA (PA6, PA66)",10.0
+West,PUR slabstock mattresses,PC,10.0
+West,PUR slabstock mattresses,Other Thermoplastics,10.0
+West,PUR slabstock mattresses,PUR,10.0
+West,PUR slabstock mattresses,Other Plastics,10.0
+West,PVC others in B&C,"PE-LD, -LLD",10.0
+West,PVC others in B&C,"PE-HD, -MD",10.0
+West,PVC others in B&C,PP,10.0
+West,PVC others in B&C,PS,10.0
+West,PVC others in B&C,PS-E,10.0
+West,PVC others in B&C,PVC,10.0
+West,PVC others in B&C,PET,10.0
+West,PVC others in B&C,"ABS, SAN",10.0
+West,PVC others in B&C,PMMA,10.0
+West,PVC others in B&C,"PA (PA6, PA66)",10.0
+West,PVC others in B&C,PC,10.0
+West,PVC others in B&C,Other Thermoplastics,10.0
+West,PVC others in B&C,PUR,10.0
+West,PVC others in B&C,Other Plastics,10.0
+West,PVC pipes,"PE-LD, -LLD",80.0
+West,PVC pipes,"PE-HD, -MD",80.0
+West,PVC pipes,PP,80.0
+West,PVC pipes,PS,80.0
+West,PVC pipes,PS-E,80.0
+West,PVC pipes,PVC,80.0
+West,PVC pipes,PET,80.0
+West,PVC pipes,"ABS, SAN",80.0
+West,PVC pipes,PMMA,80.0
+West,PVC pipes,"PA (PA6, PA66)",80.0
+West,PVC pipes,PC,80.0
+West,PVC pipes,Other Thermoplastics,80.0
+West,PVC pipes,PUR,80.0
+West,PVC pipes,Other Plastics,80.0
+West,PVC profiles,"PE-LD, -LLD",40.0
+West,PVC profiles,"PE-HD, -MD",40.0
+West,PVC profiles,PP,40.0
+West,PVC profiles,PS,40.0
+West,PVC profiles,PS-E,40.0
+West,PVC profiles,PVC,40.0
+West,PVC profiles,PET,40.0
+West,PVC profiles,"ABS, SAN",40.0
+West,PVC profiles,PMMA,40.0
+West,PVC profiles,"PA (PA6, PA66)",40.0
+West,PVC profiles,PC,40.0
+West,PVC profiles,Other Thermoplastics,40.0
+West,PVC profiles,PUR,40.0
+West,PVC profiles,Other Plastics,40.0

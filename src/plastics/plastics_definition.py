@@ -1,3 +1,4 @@
+import logging
 import flodym as fd
 
 from src.common.common_cfg import GeneralCfg
@@ -63,8 +64,18 @@ def get_definition(cfg: GeneralCfg):
             ),
     ]
 
-    parameters = [
-        fd.ParameterDefinition(name="DomesticDemand", dim_letters=("r", "t", "s", "p", "e")), # Domestic demand for polymers
+    # If config requires production-driven then DomesticDemand is an exogenous parameter
+    if cfg.customization.model_driven == "production":
+        logging.debug("Production-driven model, loading prm 'DomesticDemand'")
+        parameters = [fd.ParameterDefinition(name="DomesticDemand", dim_letters=("r", "t", "s", "p", "e"))] # F_0_1 Converter demand for polymers
+    # If config requires inflow-driven then FinalDemand is an exogenous parameter
+    elif cfg.customization.model_driven == "final_demand":
+        logging.debug("Final-demand-driven model, loading prm 'FinalDemand'")
+        parameters = [fd.ParameterDefinition(name="FinalDemand", dim_letters=("r", "t", "s", "p", "e"))] # F_3_4_NewPlastics: New plastic products
+    else:
+        raise ValueError(f"Unknown model_driven option in config: {cfg.customization.model_driven}")
+    
+    parameters.extend([
         fd.ParameterDefinition(name="RecyclateShare", dim_letters=("r", "t", "s", "p")), # Recyclate shares in demand for new polymers
         fd.ParameterDefinition(name="ImportNew", dim_letters=("o", "r", "t", "s", "p", "e")), # Import of new plastic products
         fd.ParameterDefinition(name="ExportNew", dim_letters=("r", "o", "t", "s", "p", "e")), # Export of new plastic products
@@ -85,8 +96,9 @@ def get_definition(cfg: GeneralCfg):
         fd.ParameterDefinition(name="ImportRateSortedWaste", dim_letters=("o", "r", "t", "s", "p", "w")), # Import rate of sorted plastic waste
         fd.ParameterDefinition(name="ExportRateSortedWaste", dim_letters=("r", "o", "t", "s", "p", "w")), # Export rate of sorted plastic waste
         fd.ParameterDefinition(name="RecyclingConversionRate", dim_letters=("r", "t", "s", "p", "w", "m")), # Conversion rates of sorted waste to secundary raw materials
-    ]
+    ])
 
+    print(parameters)
     return fd.MFADefinition(
         dimensions=dimensions,
         processes=processes,

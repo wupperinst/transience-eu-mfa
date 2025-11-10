@@ -38,6 +38,7 @@ class ModelCustomization(EUMFABaseModel):
 
 class PlasticsCustomizationCfg(ModelCustomization):
     
+    model_driven: str = "production"  # options: production, final_demand
     end_use_sectors: str = "all"
     waste_not_for_recycling: list = []
 

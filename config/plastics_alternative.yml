@@ -1,0 +1,30 @@
+# general config
+model_class: 'plastics'
+scenario: 'alternative'
+
+# logging
+logging:
+  level: 'DEBUG' # options: DEBUG, INFO, WARNING, ERROR, CRITICAL
+
+# data sources
+input_data_path: 'data/alternative_plastics/input'
+
+# model customization
+customization:
+  model_driven: 'final_demand' # options: production, final_demand
+  lifetime_model_name: 'NormalLifetime'
+  end_use_sectors: 'MainSectors' # options: MainSectors, ...
+  waste_not_for_recycling: ['Landfill', 'Incineration']
+
+# visualization
+visualization:
+  inflow:
+    do_visualize: True
+  sankey:
+    do_visualize: True
+
+# data export
+output_path: 'data/alternative_plastics/output'
+do_export:
+  pickle: False
+  csv: False
