@@ -165,10 +165,16 @@ if __name__ == "__main__":
                 start_value_df=start_df,
                 bottom_up_df=bu_df,
                 growth_rate_df=growth_df,
-                base_year=baseyear,  # taken from eumfa_combined
+                base_year=baseyear,
                 time_col='Time',
                 value_col='value',
-                key_cols=('Concrete product simple', 'End use sector', 'Region simple')
+                key_cols=None,  # auto-align on intersection after fills
+                fill_values_per_df={
+                    'bottom_up': {'End use sector': 'Buildings'}
+                    # optional: if start/growth need constants, add them here
+                    # 'start_value': {'Region simple': 'EU28'},
+                    # 'growth_rate': {'Region simple': 'EU28'}
+                }
             )
             residual_future_df.to_csv(result_filepath, index=False)
             print(f"Residual future demand saved: {result_filepath}")

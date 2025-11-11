@@ -173,39 +173,25 @@ class FlowCalculator:
         growth_rate_df: pd.DataFrame,
         *,
         base_year: int,
-        key_cols: tuple | list,
+        key_cols: tuple | list | None = None,
         time_col: str = 'Time',
         value_col: str = 'value',
-        default_fill: str = 'Unknown'
+        default_fill: str = 'Unknown',
+        fill_values_per_df: dict[str, dict] | None = None,
     ) -> pd.DataFrame:
         """
-        Generic residual = (top-down total at base_year) - (bottom-up at base_year),
-        then project residual by growth rates over time.
+        Residual = (top-down at base_year) − (bottom-up at base_year), then project by growth factors.
 
-        Inputs:
 
-          - start_value_df: top-down totals (must include base_year)
-          - bottom_up_df: bottom-up totals
+        - If key_cols is None: auto-align on the intersection of non-value, non-time columns
 
-          - growth_rate_df: growth factors per year and (subset of) key_cols
+          present in BOTH start_value_df and bottom_up_df (after filling).
 
-            Note: growth_rate_df[value_col] is interpreted as a factor for each year.
+        - fill_values_per_df lets you inject constant dims per dataset, e.g.:
 
-          - base_year: taken from calling script (eumfa_combined)
-          - key_cols: list/tuple of alignment dimensions (e.g., ['Product','Sector','Region'])
+            {'bottom_up': {'End use sector': 'Buildings'}}
 
-          - time_col, value_col: column names in data
-          - default_fill: value to use for missing key columns
-
-        Behavior:
-
-          - Normalizes value column names
-          - Fills missing key columns with default_fill
-
-          - Residual at base_year is clipped at >= 0
-          - Expands growth_rate_df to missing key_cols using unique combos from residual_base
-
-          - For rows where year == base_year, sets value to residual_base (not multiplied)
+        - Growth dims not in the residual keys are broadcast across residual combinations.
 
         """
         def _ensure_value(df: pd.DataFrame) -> pd.DataFrame:
@@ -219,49 +205,81 @@ class FlowCalculator:
             df[value_col] = pd.to_numeric(df[value_col], errors='coerce').fillna(0)
             return df
 
-        # Copy and normalize
+        # Normalize
         start_value_df = _ensure_value(start_value_df.copy())
         bottom_up_df = _ensure_value(bottom_up_df.copy())
         growth_rate_df = _ensure_value(growth_rate_df.copy())
 
-        # Ensure key columns exist in all inputs
-        for df in (start_value_df, bottom_up_df, growth_rate_df):
-            for k in key_cols:
-                if k not in df.columns:
-                    df[k] = default_fill
+        if time_col not in start_value_df.columns or time_col not in bottom_up_df.columns:
+            raise ValueError(f"time_col '{time_col}' must exist in both start_value_df and bottom_up_df.")
 
-        # Extract base year slices and aggregate to key_cols
+        # Inject constant dims per dataset (optional)
+        if fill_values_per_df:
+            sv_fills = fill_values_per_df.get('start_value', {})
+            bu_fills = fill_values_per_df.get('bottom_up', {})
+            gr_fills = fill_values_per_df.get('growth_rate', {})
+            for k, v in sv_fills.items():
+                if k not in start_value_df.columns:
+                    start_value_df[k] = v
+            for k, v in bu_fills.items():
+                if k not in bottom_up_df.columns:
+                    bottom_up_df[k] = v
+            for k, v in gr_fills.items():
+                if k not in growth_rate_df.columns:
+                    growth_rate_df[k] = v
+
+        # If key_cols provided, use only those present in BOTH; else find intersection
+        if key_cols is None:
+            start_keys = set(start_value_df.columns) - {value_col, time_col}
+            bu_keys = set(bottom_up_df.columns) - {value_col, time_col}
+            align_keys = sorted(start_keys & bu_keys)
+            if not align_keys:
+                logging.warning("compute_residual_flodym: no common keys found; residual computed on totals only.")
+        else:
+            align_keys = [k for k in key_cols if k in start_value_df.columns and k in bottom_up_df.columns]
+            dropped = sorted(set(key_cols) - set(align_keys))
+            if dropped:
+                logging.warning(f"compute_residual_flodym: dropping keys not shared by start/bottom_up: {dropped}")
+
+        # Base-year slices
         sv_base = start_value_df[start_value_df[time_col] == base_year]
         bu_base = bottom_up_df[bottom_up_df[time_col] == base_year]
 
-        sv_base_agg = sv_base.groupby(list(key_cols), as_index=False)[value_col].sum().rename(columns={value_col: 'start_val'})
-        bu_base_agg = bu_base.groupby(list(key_cols), as_index=False)[value_col].sum().rename(columns={value_col: 'bu_val'})
+        # Aggregate on align_keys
+        if align_keys:
+            sv_base_agg = sv_base.groupby(align_keys, as_index=False)[value_col].sum().rename(columns={value_col: 'start_val'})
+            bu_base_agg = bu_base.groupby(align_keys, as_index=False)[value_col].sum().rename(columns={value_col: 'bu_val'})
+            base_merged = sv_base_agg.merge(bu_base_agg, on=align_keys, how='outer').fillna(0)
+        else:
+            base_merged = pd.DataFrame({
+                'start_val': [sv_base[value_col].sum()],
+                'bu_val': [bu_base[value_col].sum()]
+            })
+        base_merged['residual_base'] = (base_merged.get('start_val', 0) - base_merged.get('bu_val', 0)).clip(lower=0)
+        residual_base = base_merged[(align_keys if align_keys else []) + ['residual_base']]
 
-        base_merged = sv_base_agg.merge(bu_base_agg, on=list(key_cols), how='outer').fillna(0)
-        base_merged['residual_base'] = (base_merged['start_val'] - base_merged['bu_val']).clip(lower=0)
-        residual_base = base_merged[list(key_cols) + ['residual_base']]
+        # Ensure base-year exists in growth
+        if base_year not in set(growth_rate_df[time_col].unique()):
+            stub = growth_rate_df.iloc[:1].copy()
+            stub[time_col] = base_year
+            stub[value_col] = 1.0
+            growth_rate_df = pd.concat([growth_rate_df, stub], ignore_index=True)
 
-        # Expand growth_rate_df to missing key cols using residual_base unique combos
-        missing_keys = [k for k in key_cols if k not in growth_rate_df.columns]
-        if missing_keys:
-            uniques = residual_base[missing_keys].drop_duplicates()
-            growth_rate_df = growth_rate_df.assign(__k=1).merge(uniques.assign(__k=1), on='__k').drop(columns='__k')
+        # Broadcast growth across residual keys not present in growth
+        for k in (align_keys or []):
+            if k not in growth_rate_df.columns:
+                uniques = residual_base[[k]].drop_duplicates()
+                growth_rate_df = growth_rate_df.assign(__k=1).merge(uniques.assign(__k=1), on='__k').drop(columns='__k')
 
-        # Merge growth factors with residual base on all key_cols now present
-        gr_merged = growth_rate_df.merge(residual_base, on=list(key_cols), how='left')
+        # Merge and project
+        gr_merged = growth_rate_df.merge(residual_base, on=align_keys, how='left') if align_keys else \
+                    growth_rate_df.assign(residual_base=float(residual_base['residual_base'].iloc[0] if not residual_base.empty else 0))
         gr_merged['residual_base'] = gr_merged['residual_base'].fillna(0)
-
-        # Project: value = residual_base * growth_factor; force base_year to residual_base
         gr_merged[value_col] = gr_merged['residual_base'] * gr_merged[value_col]
         mask_base = (gr_merged[time_col] == base_year)
         gr_merged.loc[mask_base, value_col] = gr_merged.loc[mask_base, 'residual_base']
 
-        out_cols = list(key_cols) + [time_col, value_col]
-        # Ensure all out columns exist
-        for c in out_cols:
-            if c not in gr_merged.columns:
-                gr_merged[c] = default_fill if c != value_col else 0
-
+        out_cols = (align_keys if align_keys else []) + [time_col, value_col]
         return gr_merged[out_cols]
 
     def compute_total_future_flodym(
