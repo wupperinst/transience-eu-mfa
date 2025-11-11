@@ -16,278 +16,288 @@ import gc
 import sys
 from src.common.combine_flows import FlowCalculator
 
+fc = FlowCalculator()
+
+# Configure logging
+logging.basicConfig(level=logging.WARNING, format="%(asctime)s - %(levelname)s - %(message)s")
 
 """Choose material and bottom up models"""
-bottom_up_sectors_to_consider = ["buildings", "vehicles"]
-materials_to_consider = ["concrete", "plastics", "steel"]
+use_buildings = True
+use_vehicles = True
+combine_plastics = True  #only possible for demand driven
+combine_steel = False #only possible for demand driven
+combine_cement = True
 downstream_only = False # uses given demand and eol flows and calculates recycling rate, production...
 baseyear = 2023
 
-
+#file paths for mapping
 mapping_file_path_buildings_concrete = "data/baseline_combined/mapping_buildings_concrete.csv"
 mapping_file_path_buildings_steel = "data/baseline_combined/mapping_buildings_steel.csv"
 mapping_file_path_buildings_plastics = "data/baseline_combined/mapping_buildings_plastics.csv"
 mapping_file_path_vehicles_steel = "data/baseline_combined/mapping_vehicles_steel.csv"
 mapping_file_path_vehicles_plastics = "data/baseline_combined/mapping_vehicles_plastics.csv"
 
-# Configure logging
-logging.basicConfig(level=logging.WARNING, format="%(asctime)s - %(levelname)s - %(message)s")
+#file paths and files for top-down results
+plastics_topdown_dir = "data/baseline_plastics_flows/input/datasets"
+steel_topdown_dir    = "data/baseline_steel_flows/input/datasets"
+cement_stock_dir     = "data/baseline_cement_stock/input/datasets"
+cement_flows_dir     = "data/baseline_cement_flows/input/datasets"
+plastics_start_value_csv = os.path.join(plastics_topdown_dir, "start_value.csv")
+plastics_growth_rate_csv = os.path.join(plastics_topdown_dir, "growth_rate.csv")
+steel_start_value_csv = os.path.join(steel_topdown_dir, "start_value.csv")
+steel_growth_rate_csv = os.path.join(steel_topdown_dir, "growth_rate.csv")
+cement_start_value_csv = os.path.join(cement_flows_dir, "start_value.csv")
+cement_growth_rate_csv = os.path.join(cement_flows_dir, "growth_rate.csv")
 
+#Supporting functions
+def _ensure_dir(path: str):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
 
+def _std_plastics_cols(df: pd.DataFrame) -> pd.DataFrame:
+    df = df.rename(columns={
+        "Time": "time", "Region": "region", "Sector": "sector",
+        "Polymer": "polymer", "Element": "element",
+    }, errors="ignore")
+    for c in ("time", "region", "sector", "polymer"):
+        if c not in df.columns:
+            df[c] = "Unknown"
+    if "element" not in df.columns:
+        df["element"] = "All"
+    return df
 
-flow_calculator = FlowCalculator()
-# 1. Run bottom-up model
+def _std_steel_cols(df: pd.DataFrame) -> pd.DataFrame:
+    df = df.rename(columns={
+        "Time": "time", "Region": "region", "Sector": "sector",
+        "Intermediate": "intermediate", "Product": "product", "Element": "element",
+    }, errors="ignore")
+    for c in ("time", "region", "sector", "intermediate", "product"):
+        if c not in df.columns:
+            df[c] = "Unknown"
+    if "element" not in df.columns:
+        df["element"] = "All"
+    return df
 
+def _std_cement_cols(df: pd.DataFrame) -> pd.DataFrame:
+    df = df.rename(columns={
+        "Time": "Time", "Region": "Region simple",
+        "Concrete product": "Concrete product simple",
+        "End use sector": "End use sector",
+    }, errors="ignore")
+    for c in ("Time", "Region simple", "Concrete product simple", "End use sector"):
+        if c not in df.columns:
+            # Default: fehlende Dimensionen mit sinnvollen Werten auffüllen
+            if c == "End use sector":
+                df[c] = "Buildings"
+            else:
+                df[c] = "Unknown"
+    return df
+
+def _map_bottom_up_to_target(flows: dict, relevant_flows: list[str], mapping_csv: str, std_fn) -> list[pd.DataFrame]:
+    out = []
+    if flows is None:
+        return out
+    mapping_df = pd.read_csv(mapping_csv, sep=None, engine="python")
+    for flow_name, flow in flows.items():
+        if flow_name not in relevant_flows:
+            continue
+        fdf = flow.to_df().reset_index() if hasattr(flow, "to_df") else flow.copy()
+        remapped = fc.map_dimensions_dual_targets(
+            original_df=fdf,
+            mapping_df=mapping_df,
+            value_col="value",
+            drop_source_dims=True,
+        )
+        out.append(std_fn(remapped))
+    return out
+
+def _concat_and_keep(df_list: list[pd.DataFrame], cols: list[str]) -> pd.DataFrame:
+    if not df_list:
+        raise RuntimeError("Keine passenden Bottom-up-Flows gefunden.")
+    df = pd.concat(df_list, ignore_index=True)
+    return df[cols].copy()
+
+#Sub-module combination
 if __name__ == "__main__":
     try:
-        if "buildings" in bottom_up_sectors_to_consider and not downstream_only:
+        flows_buildings = None
+        flows_vehicles = None
+
+        if use_buildings and not downstream_only:
             flows_buildings = run_eumfa("config/buildings.yml")
-
-            if "concrete" in materials_to_consider:
-                concrete_flows = {}
-
-                # Filter relevant flows for concrete products
-                relevant_flows = [
-                    "sysenv => Concrete stock in buildings",
-                    "Concrete stock in buildings => sysenv"
-                ]
-                mapping_file_path = mapping_file_path_buildings_concrete
-
-                #todo make this an independent function to use for all materials
-                for flow_name, flow in flows_buildings.items():
-                    if flow_name in relevant_flows:
-                        # DataFrame aus xarray/DataArray erzeugen
-                        if hasattr(flow, 'to_dataframe'):
-                            flow_df = flow.to_dataframe().reset_index()
-                        else:
-                            flow_df = flow.copy()
-                        # Mapping-Datei im original_dimension-Schema einlesen
-                        with open(mapping_file_path, mode='r', newline='', encoding='utf-8') as f:
-                            mapping_dict = list(csv.DictReader(f, delimiter=';'))
-                        # map_dimensions anwenden (nutzt Faktoren & Dimensionstransformation)
-                        #todo: checken mappen von einer dimension auf mehrere - insulation proudct, sector b&c, material PUR,EPS
-                        mapped_df = flow_calculator.map_dimensions(flow_df, mapping_dict)
-                        concrete_flows[flow_name] = mapped_df
-                        print(f"Remapped flow (map_dimensions): {flow_name}")
-
-                # Save remapped flows to CSV files
-                for flow_name, remapped_data in concrete_flows.items():
-                    output_path = f"data/baseline/output/{FlowCalculator.sanitize_filename(flow_name)}_concrete_flows.csv"
-                    remapped_data.to_csv(output_path, index=False)
-                    print(f"Saved remapped flow to: {output_path}")
-
-            if "plastics" in materials_to_consider:
-                relevant_flows = [
-                    "sysenv => Insulation stock in buildings",
-                    "Insulation stock in buildings => sysenv"
-                ]
-                mapping_file_path = mapping_file_path_buildings_plastics
-
-                plastics_flows = {}
-                for flow_name, flow in flows_buildings.items():
-                    if flow_name in relevant_flows:
-                        flow_df = flow.to_dataframe().reset_index() if hasattr(flow, 'to_dataframe') else flow.copy()
-                        mapping_df = pd.read_csv(mapping_file_path, sep=None, engine='python')
-
-                        remapped = flow_calculator.map_dimensions_dual_targets(
-                            original_df=flow_df,
-                            mapping_df=mapping_df,
-                            value_col='value',
-                            drop_source_dims=True
-                        )
-                        plastics_flows[flow_name] = remapped
-                        print(f"Remapped (dual targets) flow: {flow_name}")
-
-                for flow_name, remapped_data in plastics_flows.items():
-                    output_path = f"data/baseline/output/{FlowCalculator.sanitize_filename(flow_name)}_plastics_flows.csv"
-                    remapped_data.to_csv(output_path, index=False)
-                    print(f"Saved remapped plastics flow to: {output_path}")
-
-
-                pass
-
-            if "Steel" in materials_to_consider:
-                relevant_flows = [
-                    "sysenv => Steel stock in buildings",
-                    "Steel stock in buildings => sysenv"
-                ]
-                mapping_file_path = mapping_file_path_buildings_steel
-
-                steel_flows = {}
-                for flow_name, flow in flows_buildings.items():
-                    if flow_name in relevant_flows:
-                        flow_df = flow.to_dataframe().reset_index() if hasattr(flow, 'to_dataframe') else flow.copy()
-                        mapping_df = pd.read_csv(mapping_file_path, sep=None, engine='python')
-
-                        remapped = flow_calculator.map_dimensions_dual_targets(
-                            original_df=flow_df,
-                            mapping_df=mapping_df,
-                            value_col='value',
-                            drop_source_dims=True
-                        )
-                        steel_flows[flow_name] = remapped
-                        print(f"Remapped (dual targets) flow: {flow_name}")
-
-                for flow_name, remapped_data in steel_flows.items():
-                    output_path = f"data/baseline/output/{FlowCalculator.sanitize_filename(flow_name)}_steel_flows.csv"
-                    remapped_data.to_csv(output_path, index=False)
-                    print(f"Saved remapped steel flow to: {output_path}")
-                pass
-
-
-
-        if "vehicles" in bottom_up_sectors_to_consider and not downstream_only:
+        if use_vehicles and not downstream_only:
             flows_vehicles = run_eumfa("config/vehicles.yml")
-            pass
 
-        # 2. For materials (plastics, concrete, steel)
-        #   a) Top-down material demand - translate dimensions - not necessary for cement
-        #       I. Read Excel Domestic Demand
-        #       II. Check for dimensions, translate dimensions
-        #   b) Calculate residual material demand
-        #       I. Residual material demand = top-down material demand - bottom-up material demand
-        #   c) Project residual material demand
-        #       I. Residual material demand projection = Residual material demand * growth rate (year)
-        #   d) Run MFA stock with projected residual material demand to get residual EOL flow
+        #Combination of bottom-up sub-modules with plastics
+        if combine_plastics and not downstream_only:
+            mapped_parts = []
+            mapped_parts += _map_bottom_up_to_target(
+                flows=flows_buildings,
+                relevant_flows=["sysenv => Insulation stock in buildings"],
+                mapping_csv=mapping_file_path_buildings_plastics,
+                std_fn=_std_plastics_cols,
+            )
+            mapped_parts += _map_bottom_up_to_target(
+                flows=flows_vehicles,
+                relevant_flows=["sysenv => Plastics stock in vehicles"],
+                mapping_csv=mapping_file_path_vehicles_plastics,
+                std_fn=_std_plastics_cols,
+            )
 
-        if "concrete" in materials_to_consider and downstream_only == False:
+            bu_demand_plastics = _concat_and_keep(
+                mapped_parts, ["time", "region", "sector", "polymer", "element", "value"]
+            )
+            bu_path = os.path.join(plastics_topdown_dir, "bottom_up_demand_all.csv")
+            _ensure_dir(bu_path)
+            bu_demand_plastics.to_csv(bu_path, index=False)
 
-            top_down_start_value_filepath = f'data/baseline_cement_stock_flows/input/datasets/start_value.csv'
-            top_down_growth_rate_filepath = f'data/baseline_cement_stock_flows/input/datasets/growth_rate.csv'
-            bottom_up_demand_filepath = f'data/baseline/output/sysenv__to__Concrete_stock_in_buildings_concrete_flows.csv'
-            result_filepath = f'data/baseline_cement_stock_flows/input/datasets/demand_future.csv'
+            start_df = _std_plastics_cols(pd.read_csv(plastics_start_value_csv))
+            growth_df = _std_plastics_cols(pd.read_csv(plastics_growth_rate_csv))
+            bu_df = _std_plastics_cols(pd.read_csv(bu_path))
 
-            # Neue Residual-Berechnung ohne Aggregation
-            start_df = pd.read_csv(top_down_start_value_filepath)
-            growth_df = pd.read_csv(top_down_growth_rate_filepath)
-            bu_df = pd.read_csv(bottom_up_demand_filepath)
-            residual_future_df = flow_calculator.compute_residual_flodym(
+            residual_future = fc.compute_residual_flodym(
                 start_value_df=start_df,
                 bottom_up_df=bu_df,
                 growth_rate_df=growth_df,
                 base_year=baseyear,
-                time_col='Time',
-                value_col='value',
-                key_cols=None,  # auto-align on intersection after fills
-                fill_values_per_df={
-                    'bottom_up': {'End use sector': 'Buildings'}
-                    # optional: if start/growth need constants, add them here
-                    # 'start_value': {'Region simple': 'EU28'},
-                    # 'growth_rate': {'Region simple': 'EU28'}
-                }
+                time_col="time",
+                value_col="value",
+                key_cols=("region", "sector", "polymer", "element"),
             )
-            residual_future_df.to_csv(result_filepath, index=False)
-            print(f"Residual future demand saved: {result_filepath}")
+            residual_out = os.path.join(plastics_topdown_dir, "demand_future.csv")
+            residual_future.to_csv(residual_out, index=False)
 
-            #call residual demand stock model
-            residual_flows_concrete_future = run_eumfa("config/cement_stock.yml") # todo check if this calls the right mfa
-
-
-        #   f) Calculate total material demand and eol flow
-
-            # File paths for future demand
-            bottom_up_demand_filepath = 'data/baseline/output/sysenv__to__Concrete_stock_in_buildings_concrete_flows.csv'
-            residual_future_demand_filepath = result_filepath  # demand_future.csv (Residual)
-            output_demand_filepath = 'data/baseline_cement_stock_flows/input/datasets/total_future_demand.csv'
-
-            # Total Future Demand (Bottom-up + Residual)
-            bu_future_df = pd.read_csv(bottom_up_demand_filepath)
-            residual_future_df_reload = pd.read_csv(residual_future_demand_filepath)
-            total_future_demand_df = flow_calculator.compute_total_future_flodym(
-                key_cols=('Concrete product simple', 'End use sector', 'Region simple'),
-                time_col='Time',
-                value_col='value',
-                base_year=baseyear,  # ensure only future years are summed
-                include_base_year=False,
-                flows={
-                    'bottom_up': bu_future_df,
-                    'residual': residual_future_df_reload
-                },
-                fill_values_per_df={
-                    'bottom_up': {'End use sector': 'Buildings', 'Region simple': 'EU28'},
-                    'residual': {'End use sector': 'Residual', 'Region simple': 'EU28'}
-                }
-            )
-            total_future_demand_df.to_csv(output_demand_filepath, index=False)
-            print(f"Total future demand gespeichert: {output_demand_filepath}")
-
-            # Total Future EOL (Bottom-up EOL + Residual EOL)
-            #todo: sort by cohort
-
-            bottom_up_eol_filepath = 'data/baseline/output/Concrete_stock_in_buildings__to__sysenv_concrete_flows.csv'
-            residual_eol_filepath = 'data/baseline_cement_stock_flows/output/export/flows/end_use_stock_future__cdw_collection_future.csv'
-            output_total_eol_filepath = 'data/baseline_cement_stock_flows/input/datasets/total_future_eol_flows.csv'
-
-            bu_eol_df = pd.read_csv(bottom_up_eol_filepath)
-            residual_eol_df = pd.read_csv(residual_eol_filepath)
-            total_future_eol_df = flow_calculator.compute_total_future_flodym(
-                key_cols=('Concrete product simple', 'End use sector', 'Region simple'),
-                time_col='Time',
-                value_col='value',
+            total_future = fc.compute_total_future_flodym(
+                key_cols=("region", "sector", "polymer", "element"),
+                time_col="time",
+                value_col="value",
                 base_year=baseyear,
                 include_base_year=False,
-                flows={
-                    'bottom_up': bu_eol_df,
-                    'residual': residual_eol_df
-                },
-                fill_values_per_df={
-                    'bottom_up': {'End use sector': 'Buildings', 'Region simple': 'EU28'},
-                    'residual': {'End use sector': 'Residual', 'Region simple': 'EU28'}
-                }
+                flows={"bottom_up": bu_df, "residual": residual_future},
+                fill_values_per_df={"bottom_up": {"element": "All"}, "residual": {"element": "All"}},
             )
-            total_future_eol_df.to_csv(output_total_eol_filepath, index=False)
-            print(f"Total future EOL flows gespeichert: {output_total_eol_filepath}")
-            # File paths for EOL flows
-            #top_down_eol_filepath = 'data/baseline_cement_stock_flows/output/export/flows/end_use_stock_future__cdw_collection_future.csv'
-            #output_eol_filepath = 'data/baseline_cement_stock_flows/input/datasets/total_future_eol_flows.csv'
-            #eol_data = pd.read_csv(top_down_eol_filepath)
-            #eol_data.to_csv(output_eol_filepath, index=False)
+            final_demand_path = os.path.join(plastics_topdown_dir, "FinalDemand.csv")
+            total_future.to_csv(final_demand_path, index=False)
+            print(f"[Plastics] FinalDemand: {final_demand_path}")
 
-        if "plastics" in materials_to_consider and downstream_only == False:
-            pass
-        if "steel" in materials_to_consider and downstream_only == False:
-            pass
+            run_eumfa("config/plastics_baseline.yml")
 
-        #   g) Downstream modell rechnen
-        if "concrete" in materials_to_consider:
-        # calculate historic and future flows
-            flows_concrete = run_eumfa("config/cement_flows.yml")
+        #Combination of bottom-up sub-modules with steel
+        if combine_steel and not downstream_only:
+            mapped_parts_steel = []
+            mapped_parts_steel += _map_bottom_up_to_target(
+                flows=flows_buildings,
+                relevant_flows=["sysenv => Steel stock in buildings"],
+                mapping_csv=mapping_file_path_buildings_steel,
+                std_fn=_std_steel_cols,
+            )
+            mapped_parts_steel += _map_bottom_up_to_target(
+                flows=flows_vehicles,
+                relevant_flows=["sysenv => Steel stock in vehicles"],
+                mapping_csv=mapping_file_path_vehicles_steel,
+                std_fn=_std_steel_cols,
+            )
 
+            bu_demand_steel = _concat_and_keep(
+                mapped_parts_steel, ["time", "region", "sector", "intermediate", "product", "element", "value"]
+            )
+            bu_path_steel = os.path.join(steel_topdown_dir, "bottom_up_demand_all.csv")
+            _ensure_dir(bu_path_steel)
+            bu_demand_steel.to_csv(bu_path_steel, index=False)
 
-        # Combine historic and future tables
+            start_df_s = _std_steel_cols(pd.read_csv(steel_start_value_csv))
+            growth_df_s = _std_steel_cols(pd.read_csv(steel_growth_rate_csv))
+            bu_df_s = _std_steel_cols(pd.read_csv(bu_path_steel))
 
+            residual_future_s = fc.compute_residual_flodym(
+                start_value_df=start_df_s,
+                bottom_up_df=bu_df_s,
+                growth_rate_df=growth_df_s,
+                base_year=baseyear,
+                time_col="time",
+                value_col="value",
+                key_cols=("region", "sector", "intermediate", "product", "element"),
+            )
+            residual_out_s = os.path.join(steel_topdown_dir, "demand_future.csv")
+            residual_future_s.to_csv(residual_out_s, index=False)
 
-            # Combine historic and future tables (neu via flodym Helfer)
-            results_folder = "data/baseline_cement_stock_flows/output/export/flows"
-            historic_files = glob.glob(os.path.join(results_folder, "*historic*.csv"))
-            for historic_file in historic_files:
-                future_file = historic_file.replace("historic", "future")
-                if os.path.exists(future_file):
-                    output_file = historic_file.replace("historic", "combined")
-                    try:
-                        flow_calculator.combine_hist_future_flodym(
-                            historic_path=historic_file,
-                            future_path=future_file,
-                            output_path=output_file,
-                            time_col='Time',
-                            value_col='value'
-                        )
-                        print(f"Combined table saved to: {output_file}")
-                    except Exception as e:
-                        print(f"Error combining (flodym) {historic_file} + {future_file}: {e}")
-                else:
-                    logging.warning(f"Future file not found for: {historic_file}")
+            total_future_s = fc.compute_total_future_flodym(
+                key_cols=("region", "sector", "intermediate", "product", "element"),
+                time_col="time", value_col="value", base_year=baseyear, include_base_year=False,
+                flows={"bottom_up": bu_df_s, "residual": residual_future_s},
+                fill_values_per_df={"bottom_up": {"element": "All"}, "residual": {"element": "All"}},
+            )
+            final_demand_path = os.path.join(steel_topdown_dir, "FinalDemand.csv")
+            total_future_s.to_csv(final_demand_path, index=False)
+            print(f"[Steel] FinalDemand: {final_demand_path}")
 
-        if "plastics" in materials_to_consider:
-            pass
-        if "steel" in materials_to_consider:
-            pass
+            run_eumfa("config/steel.yml")
 
-            # Clean up DataFrames
-            del historic_df, future_df, combined_df
-            gc.collect()
+        #Combination of bottom-up sub-modules with cement
+        if combine_cement and use_buildings and not downstream_only:
+            mapped_cement_parts = _map_bottom_up_to_target(
+                flows=flows_buildings,
+                relevant_flows=["sysenv => Concrete stock in buildings"],
+                mapping_csv=mapping_file_path_buildings_concrete,
+                std_fn=_std_cement_cols,
+            )
+            bu_demand_cement = _concat_and_keep(
+                mapped_cement_parts,
+                ["Time", "Region simple", "Concrete product simple", "End use sector", "value"],
+            )
+            bu_path_cement = os.path.join(cement_stock_dir, "bottom_up_demand_buildings.csv")
+            _ensure_dir(bu_path_cement)
+            bu_demand_cement.to_csv(bu_path_cement, index=False)
+
+            start_df_c = _std_cement_cols(pd.read_csv(cement_start_value_csv))
+            growth_df_c = _std_cement_cols(pd.read_csv(cement_growth_rate_csv))
+            bu_df_c = _std_cement_cols(pd.read_csv(bu_path_cement))
+
+            demand_future_df = fc.compute_residual_flodym(
+                start_value_df=start_df_c,
+                bottom_up_df=bu_df_c,
+                growth_rate_df=growth_df_c,
+                base_year=baseyear,
+                time_col="Time",
+                value_col="value",
+                key_cols=("Region simple", "Concrete product simple", "End use sector"),
+            )
+            demand_future_path = os.path.join(cement_stock_dir, "demand_future.csv")
+            demand_future_df.to_csv(demand_future_path, index=False)
+            print(f"[Cement] demand_future: {demand_future_path}")
+
+            run_eumfa("config/cement_stock.yml")
+
+            # total_future_demand/eol aus cement_stock-Export ziehen und an cement_flows übergeben
+            # Dateinamen gemäß sanitize_filename:
+            from src.common.combine_flows import FlowCalculator as FC
+            inflow_export = os.path.join(
+                os.path.dirname(cement_stock_dir.replace("/input", "/output")),
+                "export", "flows",
+                f"{FC.sanitize_filename('Concrete market future => End use stock future')}.csv",
+            )
+            eol_export = os.path.join(
+                os.path.dirname(cement_stock_dir.replace("/input", "/output")),
+                "export", "flows",
+                f"{FC.sanitize_filename('End use stock future => CDW collection future')}.csv",
+            )
+            total_future_demand = pd.read_csv(inflow_export)
+            total_future_eol = pd.read_csv(eol_export)
+
+            # Sicherstellen, dass Spaltennamen mit cement_flows übereinstimmen
+            total_future_demand = _std_cement_cols(total_future_demand)
+            total_future_eol = _std_cement_cols(total_future_eol)
+
+            tfd_path = os.path.join(cement_flows_dir, "total_future_demand.csv")
+            tfe_path = os.path.join(cement_flows_dir, "total_future_eol_flows.csv")
+            _ensure_dir(tfd_path); _ensure_dir(tfe_path)
+            total_future_demand.to_csv(tfd_path, index=False)
+            total_future_eol.to_csv(tfe_path, index=False)
+            print(f"[Cement] total_future_demand/eol geschrieben: {tfd_path} | {tfe_path}")
+
+            # e) cement_flows laufen lassen (nutzt total_future_* als Input)
+            run_eumfa("config/cement_flows.yml")
 
     except Exception as e:
         print(f"An error occurred: {e}")
     finally:
-        sys.exit(0)
+        pass

@@ -32,7 +32,7 @@ class CementStockDataExporter(CustomDataExporter):
 
     def visualize_inflow(self, mfa: fd.MFASystem):
         ap_modeled = self.plotter_class(
-            array=mfa.inflow["Region simple"].sum_over(("b","a")),
+            array=mfa.inflow["Region simple"].sum_over(("f","s")),
             intra_line_dim="Time",
             line_label="Modeled",
             display_names=self._display_names,
