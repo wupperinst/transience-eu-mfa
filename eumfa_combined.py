@@ -18,8 +18,8 @@ from src.common.combine_flows import FlowCalculator
 
 
 """Choose material and bottom up models"""
-bottom_up_sectors_to_consider = ["buildings"]
-materials_to_consider = ["concrete"]
+bottom_up_sectors_to_consider = ["buildings", "vehicles"]
+materials_to_consider = ["concrete", "plastics", "steel"]
 downstream_only = False # uses given demand and eol flows and calculates recycling rate, production...
 baseyear = 2023
 
@@ -76,7 +76,7 @@ if __name__ == "__main__":
                     remapped_data.to_csv(output_path, index=False)
                     print(f"Saved remapped flow to: {output_path}")
 
-            if "plastics" in materials_to_consider and not downstream_only:
+            if "plastics" in materials_to_consider:
                 relevant_flows = [
                     "sysenv => Insulation stock in buildings",
                     "Insulation stock in buildings => sysenv"
@@ -111,12 +111,33 @@ if __name__ == "__main__":
                     "sysenv => Steel stock in buildings",
                     "Steel stock in buildings => sysenv"
                 ]
+                mapping_file_path = mapping_file_path_buildings_steel
+
+                steel_flows = {}
+                for flow_name, flow in flows_buildings.items():
+                    if flow_name in relevant_flows:
+                        flow_df = flow.to_dataframe().reset_index() if hasattr(flow, 'to_dataframe') else flow.copy()
+                        mapping_df = pd.read_csv(mapping_file_path, sep=None, engine='python')
+
+                        remapped = flow_calculator.map_dimensions_dual_targets(
+                            original_df=flow_df,
+                            mapping_df=mapping_df,
+                            value_col='value',
+                            drop_source_dims=True
+                        )
+                        steel_flows[flow_name] = remapped
+                        print(f"Remapped (dual targets) flow: {flow_name}")
+
+                for flow_name, remapped_data in steel_flows.items():
+                    output_path = f"data/baseline/output/{FlowCalculator.sanitize_filename(flow_name)}_steel_flows.csv"
+                    remapped_data.to_csv(output_path, index=False)
+                    print(f"Saved remapped steel flow to: {output_path}")
                 pass
 
 
 
-        if "vehicles" in bottom_up_sectors_to_consider:
-            run_eumfa("config/vehicles.yml")
+        if "vehicles" in bottom_up_sectors_to_consider and not downstream_only:
+            flows_vehicles = run_eumfa("config/vehicles.yml")
             pass
 
         # 2. For materials (plastics, concrete, steel)
