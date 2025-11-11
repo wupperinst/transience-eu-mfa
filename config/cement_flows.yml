@@ -1,5 +1,10 @@
 # general config
 model_class: 'cement_flows'
+scenario: 'baseline'
+
+# logging
+logging:
+  level: 'DEBUG' # options: DEBUG, INFO, WARNING, ERROR, CRITICAL
 
 # data sources
 input_data_path: 'data/baseline_cement_stock_flows/input'

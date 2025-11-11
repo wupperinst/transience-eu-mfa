@@ -1,5 +1,10 @@
 # general config
 model_class: 'buildings'
+scenario: 'baseline'
+
+# logging
+logging:
+  level: 'DEBUG' # options: DEBUG, INFO, WARNING, ERROR, CRITICAL
 
 # data sources
 input_data_path: 'data/baseline_buildings/input'

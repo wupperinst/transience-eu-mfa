@@ -65,6 +65,7 @@ if __name__ == "__main__":
                         with open(mapping_file_path, mode='r', newline='', encoding='utf-8') as f:
                             mapping_dict = list(csv.DictReader(f, delimiter=';'))
                         # map_dimensions anwenden (nutzt Faktoren & Dimensionstransformation)
+                        #todo: checken mappen von einer dimension auf mehrere - insulation proudct, sector b&c, material PUR,EPS
                         mapped_df = flow_calculator.map_dimensions(flow_df, mapping_dict)
                         concrete_flows[flow_name] = mapped_df
                         print(f"Remapped flow (map_dimensions): {flow_name}")
@@ -75,12 +76,34 @@ if __name__ == "__main__":
                     remapped_data.to_csv(output_path, index=False)
                     print(f"Saved remapped flow to: {output_path}")
 
-
-            if "Plastics" in materials_to_consider:
+            if "plastics" in materials_to_consider and not downstream_only:
                 relevant_flows = [
                     "sysenv => Insulation stock in buildings",
                     "Insulation stock in buildings => sysenv"
                 ]
+                mapping_file_path = mapping_file_path_buildings_plastics
+
+                plastics_flows = {}
+                for flow_name, flow in flows_buildings.items():
+                    if flow_name in relevant_flows:
+                        flow_df = flow.to_dataframe().reset_index() if hasattr(flow, 'to_dataframe') else flow.copy()
+                        mapping_df = pd.read_csv(mapping_file_path, sep=None, engine='python')
+
+                        remapped = flow_calculator.map_dimensions_dual_targets(
+                            original_df=flow_df,
+                            mapping_df=mapping_df,
+                            value_col='value',
+                            drop_source_dims=True
+                        )
+                        plastics_flows[flow_name] = remapped
+                        print(f"Remapped (dual targets) flow: {flow_name}")
+
+                for flow_name, remapped_data in plastics_flows.items():
+                    output_path = f"data/baseline/output/{FlowCalculator.sanitize_filename(flow_name)}_plastics_flows.csv"
+                    remapped_data.to_csv(output_path, index=False)
+                    print(f"Saved remapped plastics flow to: {output_path}")
+
+
                 pass
 
             if "Steel" in materials_to_consider:
@@ -121,10 +144,10 @@ if __name__ == "__main__":
                 start_value_df=start_df,
                 bottom_up_df=bu_df,
                 growth_rate_df=growth_df,
-                base_year=baseyear,
+                base_year=baseyear,  # taken from eumfa_combined
                 time_col='Time',
                 value_col='value',
-                key_cols=('Concrete product simple','End use sector','Region simple')
+                key_cols=('Concrete product simple', 'End use sector', 'Region simple')
             )
             residual_future_df.to_csv(result_filepath, index=False)
             print(f"Residual future demand saved: {result_filepath}")
@@ -144,19 +167,26 @@ if __name__ == "__main__":
             bu_future_df = pd.read_csv(bottom_up_demand_filepath)
             residual_future_df_reload = pd.read_csv(residual_future_demand_filepath)
             total_future_demand_df = flow_calculator.compute_total_future_flodym(
-                bottom_up_df=bu_future_df,
-                residual_df=residual_future_df_reload,
-                key_cols=('Concrete product simple','End use sector','Region simple'),
+                key_cols=('Concrete product simple', 'End use sector', 'Region simple'),
                 time_col='Time',
                 value_col='value',
-                default_region='EU28',
-                bottom_up_end_use_sector='Buildings',
-                residual_end_use_sector='Residual'
+                base_year=baseyear,  # ensure only future years are summed
+                include_base_year=False,
+                flows={
+                    'bottom_up': bu_future_df,
+                    'residual': residual_future_df_reload
+                },
+                fill_values_per_df={
+                    'bottom_up': {'End use sector': 'Buildings', 'Region simple': 'EU28'},
+                    'residual': {'End use sector': 'Residual', 'Region simple': 'EU28'}
+                }
             )
             total_future_demand_df.to_csv(output_demand_filepath, index=False)
             print(f"Total future demand gespeichert: {output_demand_filepath}")
 
             # Total Future EOL (Bottom-up EOL + Residual EOL)
+            #todo: sort by cohort
+
             bottom_up_eol_filepath = 'data/baseline/output/Concrete_stock_in_buildings__to__sysenv_concrete_flows.csv'
             residual_eol_filepath = 'data/baseline_cement_stock_flows/output/export/flows/end_use_stock_future__cdw_collection_future.csv'
             output_total_eol_filepath = 'data/baseline_cement_stock_flows/input/datasets/total_future_eol_flows.csv'
@@ -164,14 +194,19 @@ if __name__ == "__main__":
             bu_eol_df = pd.read_csv(bottom_up_eol_filepath)
             residual_eol_df = pd.read_csv(residual_eol_filepath)
             total_future_eol_df = flow_calculator.compute_total_future_flodym(
-                bottom_up_df=bu_eol_df,
-                residual_df=residual_eol_df,
-                key_cols=('Concrete product simple','End use sector','Region simple'),
+                key_cols=('Concrete product simple', 'End use sector', 'Region simple'),
                 time_col='Time',
                 value_col='value',
-                default_region='EU28',
-                bottom_up_end_use_sector='Buildings',
-                residual_end_use_sector='Residual'
+                base_year=baseyear,
+                include_base_year=False,
+                flows={
+                    'bottom_up': bu_eol_df,
+                    'residual': residual_eol_df
+                },
+                fill_values_per_df={
+                    'bottom_up': {'End use sector': 'Buildings', 'Region simple': 'EU28'},
+                    'residual': {'End use sector': 'Residual', 'Region simple': 'EU28'}
+                }
             )
             total_future_eol_df.to_csv(output_total_eol_filepath, index=False)
             print(f"Total future EOL flows gespeichert: {output_total_eol_filepath}")
