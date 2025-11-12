@@ -1,69 +1,69 @@
-original_dimension;original_element;target_dimension;target_element;factor;comment
-Region;AUT;Region simple;EU28;1;
-Region;BEL;Region simple;EU28;1;
-Region;BGR;Region simple;EU28;1;
-Region;CYP;Region simple;EU28;1;
-Region;CZE;Region simple;EU28;1;
-Region;DEU;Region simple;EU28;1;
-Region;DNK;Region simple;EU28;1;
-Region;ESP;Region simple;EU28;1;
-Region;EST;Region simple;EU28;1;
-Region;FIN;Region simple;EU28;1;
-Region;FRA;Region simple;EU28;1;
-Region;GBR;Region simple;EU28;1;
-Region;GRC;Region simple;EU28;1;
-Region;HRV;Region simple;EU28;1;
-Region;HUN;Region simple;EU28;1;
-Region;IRL;Region simple;EU28;1;
-Region;ITA;Region simple;EU28;1;
-Region;LTU;Region simple;EU28;1;
-Region;LUX;Region simple;EU28;1;
-Region;LVA;Region simple;EU28;1;
-Region;MLT;Region simple;EU28;1;
-Region;NLD;Region simple;EU28;1;
-Region;POL;Region simple;EU28;1;
-Region;PRT;Region simple;EU28;1;
-Region;ROU;Region simple;EU28;1;
-Region;SVK;Region simple;EU28;1;
-Region;SVN;Region simple;EU28;1;
-Region;SWE;Region simple;EU28;1;
-Concrete product;Transport concrete (not reinforced);Concrete product simple;Transport concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Transport concrete (reinforced);Concrete product simple;Transport concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Transport concrete (reinforced)_Exterior wall;Concrete product simple;Transport concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Transport concrete (reinforced)_Interior load-bearing wall;Concrete product simple;Transport concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Transport concrete (reinforced)_Interior wall;Concrete product simple;Transport concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Transport concrete (reinforced)_Roof;Concrete product simple;Transport concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Transport concrete (reinforced)_Floor;Concrete product simple;Transport concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Transport concrete (reinforced)_Basement wall;Concrete product simple;Transport concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Transport concrete (reinforced)_Basement ceiling;Concrete product simple;Transport concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Transport concrete (reinforced)_Basement ground floor;Concrete product simple;Transport concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Transport concrete (reinforced)_Foundation;Concrete product simple;Transport concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Transport concrete (not reinforced)_Exterior wall;Concrete product simple;Transport concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Transport concrete (not reinforced)_Interior load-bearing wall;Concrete product simple;Transport concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Transport concrete (not reinforced)_Interior wall;Concrete product simple;Transport concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Transport concrete (not reinforced)_Roof;Concrete product simple;Transport concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Transport concrete (not reinforced)_Floor;Concrete product simple;Transport concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Transport concrete (not reinforced)_Basement wall;Concrete product simple;Transport concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Transport concrete (not reinforced)_Basement ceiling;Concrete product simple;Transport concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Transport concrete (not reinforced)_Basement ground floor;Concrete product simple;Transport concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Transport concrete (not reinforced)_Foundation;Concrete product simple;Transport concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Precast concrete (not reinforced);Concrete product simple;Precast concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Precast concrete (reinforced);Concrete product simple;Precast concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Precast concrete (reinforced)_Exterior wall;Concrete product simple;Precast concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Precast concrete (reinforced)_Interior load-bearing wall;Concrete product simple;Precast concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Precast concrete (reinforced)_Interior wall;Concrete product simple;Precast concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Precast concrete (reinforced)_Roof;Concrete product simple;Precast concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Precast concrete (reinforced)_Floor;Concrete product simple;Precast concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Precast concrete (reinforced)_Basement wall;Concrete product simple;Precast concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Precast concrete (reinforced)_Basement ceiling;Concrete product simple;Precast concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Precast concrete (reinforced)_Basement ground floor;Concrete product simple;Precast concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Precast concrete (reinforced)_Foundation;Concrete product simple;Precast concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Precast concrete (not reinforced)_Exterior wall;Concrete product simple;Precast concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Precast concrete (not reinforced)_Interior load-bearing wall;Concrete product simple;Precast concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Precast concrete (not reinforced)_Interior wall;Concrete product simple;Precast concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Precast concrete (not reinforced)_Roof;Concrete product simple;Precast concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Precast concrete (not reinforced)_Floor;Concrete product simple;Precast concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Precast concrete (not reinforced)_Basement wall;Concrete product simple;Precast concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Precast concrete (not reinforced)_Basement ceiling;Concrete product simple;Precast concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Precast concrete (not reinforced)_Basement ground floor;Concrete product simple;Precast concrete;0.001;kg in buildings model, t in cement model
-Concrete product;Precast concrete (not reinforced)_Foundation;Concrete product simple;Precast concrete;0.001;kg in buildings model, t in cement model
+original_dimension,original_element,target_dimension,target_element,factor,comment,
+Region,AUT,Region simple,EU28,1,,
+Region,BEL,Region simple,EU28,1,,
+Region,BGR,Region simple,EU28,1,,
+Region,CYP,Region simple,EU28,1,,
+Region,CZE,Region simple,EU28,1,,
+Region,DEU,Region simple,EU28,1,,
+Region,DNK,Region simple,EU28,1,,
+Region,ESP,Region simple,EU28,1,,
+Region,EST,Region simple,EU28,1,,
+Region,FIN,Region simple,EU28,1,,
+Region,FRA,Region simple,EU28,1,,
+Region,GBR,Region simple,EU28,1,,
+Region,GRC,Region simple,EU28,1,,
+Region,HRV,Region simple,EU28,1,,
+Region,HUN,Region simple,EU28,1,,
+Region,IRL,Region simple,EU28,1,,
+Region,ITA,Region simple,EU28,1,,
+Region,LTU,Region simple,EU28,1,,
+Region,LUX,Region simple,EU28,1,,
+Region,LVA,Region simple,EU28,1,,
+Region,MLT,Region simple,EU28,1,,
+Region,NLD,Region simple,EU28,1,,
+Region,POL,Region simple,EU28,1,,
+Region,PRT,Region simple,EU28,1,,
+Region,ROU,Region simple,EU28,1,,
+Region,SVK,Region simple,EU28,1,,
+Region,SVN,Region simple,EU28,1,,
+Region,SWE,Region simple,EU28,1,,
+Concrete product,Transport concrete (not reinforced),Concrete product simple,Transport concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Transport concrete (reinforced),Concrete product simple,Transport concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Transport concrete (reinforced)_Exterior wall,Concrete product simple,Transport concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Transport concrete (reinforced)_Interior load-bearing wall,Concrete product simple,Transport concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Transport concrete (reinforced)_Interior wall,Concrete product simple,Transport concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Transport concrete (reinforced)_Roof,Concrete product simple,Transport concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Transport concrete (reinforced)_Floor,Concrete product simple,Transport concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Transport concrete (reinforced)_Basement wall,Concrete product simple,Transport concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Transport concrete (reinforced)_Basement ceiling,Concrete product simple,Transport concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Transport concrete (reinforced)_Basement ground floor,Concrete product simple,Transport concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Transport concrete (reinforced)_Foundation,Concrete product simple,Transport concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Transport concrete (not reinforced)_Exterior wall,Concrete product simple,Transport concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Transport concrete (not reinforced)_Interior load-bearing wall,Concrete product simple,Transport concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Transport concrete (not reinforced)_Interior wall,Concrete product simple,Transport concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Transport concrete (not reinforced)_Roof,Concrete product simple,Transport concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Transport concrete (not reinforced)_Floor,Concrete product simple,Transport concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Transport concrete (not reinforced)_Basement wall,Concrete product simple,Transport concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Transport concrete (not reinforced)_Basement ceiling,Concrete product simple,Transport concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Transport concrete (not reinforced)_Basement ground floor,Concrete product simple,Transport concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Transport concrete (not reinforced)_Foundation,Concrete product simple,Transport concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Precast concrete (not reinforced),Concrete product simple,Precast concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Precast concrete (reinforced),Concrete product simple,Precast concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Precast concrete (reinforced)_Exterior wall,Concrete product simple,Precast concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Precast concrete (reinforced)_Interior load-bearing wall,Concrete product simple,Precast concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Precast concrete (reinforced)_Interior wall,Concrete product simple,Precast concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Precast concrete (reinforced)_Roof,Concrete product simple,Precast concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Precast concrete (reinforced)_Floor,Concrete product simple,Precast concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Precast concrete (reinforced)_Basement wall,Concrete product simple,Precast concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Precast concrete (reinforced)_Basement ceiling,Concrete product simple,Precast concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Precast concrete (reinforced)_Basement ground floor,Concrete product simple,Precast concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Precast concrete (reinforced)_Foundation,Concrete product simple,Precast concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Precast concrete (not reinforced)_Exterior wall,Concrete product simple,Precast concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Precast concrete (not reinforced)_Interior load-bearing wall,Concrete product simple,Precast concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Precast concrete (not reinforced)_Interior wall,Concrete product simple,Precast concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Precast concrete (not reinforced)_Roof,Concrete product simple,Precast concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Precast concrete (not reinforced)_Floor,Concrete product simple,Precast concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Precast concrete (not reinforced)_Basement wall,Concrete product simple,Precast concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Precast concrete (not reinforced)_Basement ceiling,Concrete product simple,Precast concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Precast concrete (not reinforced)_Basement ground floor,Concrete product simple,Precast concrete,0.001,kg in buildings model, t in cement model
+Concrete product,Precast concrete (not reinforced)_Foundation,Concrete product simple,Precast concrete,0.001,kg in buildings model, t in cement model

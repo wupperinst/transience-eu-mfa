@@ -1,0 +1,9 @@
+original_parameter,target_parameter,target_region,original_dimension,original_element,target_dimension,target_element,target_dimension,target_element,factor,comment
+BottomUpDemand,FinalDemand,all,Plastics product,﻿PP,sector,Automotive,polymer,PP,0.001,"kg in vehicles model, t in plastics model"
+BottomUpDemand,FinalDemand,all,Plastics product,PE,sector,Automotive,polymer,"PE-LD, -LLD",0.00034,Based on Plastics Europe data
+BottomUpDemand,FinalDemand,all,Plastics product,PE,sector,Automotive,polymer,"PE-HD, -MD",0.00066,Based on Plastics Europe data
+BottomUpDemand,FinalDemand,all,Plastics product,ABS,sector,Automotive,polymer,"ABS, SAN",0.001,"kg in vehicles model, t in plastics model"
+BottomUpDemand,FinalDemand,all,Plastics product,PVC,sector,Automotive,polymer,PVC,0.001,"kg in vehicles model, t in plastics model"
+BottomUpDemand,FinalDemand,all,Plastics product,PC,sector,Automotive,polymer,PC,0.001,"kg in vehicles model, t in plastics model"
+BottomUpDemand,FinalDemand,all,Plastics product,PA/Nylon,sector,Automotive,polymer,"PA (PA6, PA66)",0.001,"kg in vehicles model, t in plastics model"
+BottomUpDemand,FinalDemand,all,Plastics product,PUR,sector,Automotive,polymer,PUR,0.001,"kg in vehicles model, t in plastics model"
