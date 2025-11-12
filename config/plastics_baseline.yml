@@ -11,7 +11,7 @@ input_data_path: 'data/baseline_plastics/input'
 
 # model customization
 customization:
-  model_driven: 'production' # options: production, final_demand
+  model_driven: 'final_demand' # options: production, final_demand
   lifetime_model_name: 'NormalLifetime'
   end_use_sectors: 'MainSectors' # options: MainSectors, ...
   waste_not_for_recycling: ['Landfill', 'Incineration']

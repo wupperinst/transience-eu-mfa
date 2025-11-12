@@ -15,7 +15,7 @@ class BuildingsDataExporter(CustomDataExporter):
         "Building stock",
         "Steel stock in buildings",
         "Concrete stock in buildings",
-        "Insulation stock in building",
+        "Insulation stock in buildings",
         "Glass stock in buildings",
     }
 
