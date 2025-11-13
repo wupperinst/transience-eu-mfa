@@ -39,9 +39,8 @@ def init_mfa(cfg: dict) -> fd.MFASystem:
 def recalculate_mfa(model_config):
     mfa = init_mfa(cfg=model_config)
     logging.info(f"{type(mfa).__name__} instance created.")
-    mfa.run()
-    logging.info("Model computations completed.")
-    flows_as_dataframes = mfa.mfa.get_flows_as_dataframes()
+    flows_as_dataframes = mfa.run()
+    
     return flows_as_dataframes
 
 

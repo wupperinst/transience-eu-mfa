@@ -1,4 +1,5 @@
 import os
+import logging
 from src.common.common_cfg import GeneralCfg
 from .cement_flows_mfa_system import CementFlowsMFASystem
 from .cement_flows_export import CementFlowsDataExporter
@@ -56,6 +57,12 @@ class CementFlowsModel:
 
     def run(self):
         self.mfa.compute()
+        logging.info("Model computations completed.")
+
+        logging.info("Exporting flows as dataframes.")
+        flows_as_dataframes = self.mfa.get_flows_as_dataframes()
 
         self.data_writer.export_mfa(mfa=self.mfa)
         self.data_writer.visualize_results(model=self)
+
+        return flows_as_dataframes

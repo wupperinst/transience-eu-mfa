@@ -405,6 +405,8 @@ class PlasticsMFASystem(fd.MFASystem):
                                                     - flw["Recycling => RECYCLATE sysenv"].sum_to(("r","t","s","p","e")))
         
 
-    def get_flows_as_dataframes(self):
+    def get_flows_as_dataframes(self, flow_names=[]):
         """Retrieve flows as pandas DataFrames from the MFA system."""
-        return {flow_name: flow.to_df() for flow_name, flow in self.flows.items()}
+        if not flow_names:
+            flow_names = list(self.flows.keys())
+        return {flow_name: self.flows[flow_name].to_df() for flow_name in flow_names}
