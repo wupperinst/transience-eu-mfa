@@ -1,4 +1,5 @@
 import os
+import logging
 from matplotlib import pyplot as plt
 from src.common.base_model import EUMFABaseModel
 import plotly.graph_objects as go
@@ -11,6 +12,7 @@ from src.common.common_cfg import VisualizationCfg
 class CustomDataExporter(EUMFABaseModel):
     output_path: str
     do_export: dict = {"pickle": True, "csv": True}
+    selected_export: dict = {"csv_selected_flows": []} # list of flow names to export to csv
     cfg: VisualizationCfg
     _display_names: dict = {}
 
@@ -21,6 +23,18 @@ class CustomDataExporter(EUMFABaseModel):
             dir_out = os.path.join(self.export_path(), "flows")
             fde.export_mfa_flows_to_csv(mfa=mfa, export_directory=dir_out)
             fde.export_mfa_stocks_to_csv(mfa=mfa, export_directory=dir_out)
+
+    def export_selected_mfa_flows_to_csv(self, mfa: fd.MFASystem, flow_names: list[str]):
+        dir_out = os.path.join(self.export_path(), "flows")
+        if not os.path.exists(dir_out):
+            os.makedirs(dir_out)
+        for flow_name in flow_names:
+            try:
+                flow = mfa.flows[flow_name]
+                flow.to_df().to_csv(os.path.join(dir_out, f"{fde.helper.to_valid_file_name(flow_name)}.csv"))
+            except KeyError:
+                logging.INFO(f"Export to csv: flow '{flow_name}' not found in MFA system.")
+                continue
 
     def export_path(self, filename: str = None):
         path_tuple = (self.output_path, "export")

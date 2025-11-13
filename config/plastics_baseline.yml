@@ -28,3 +28,9 @@ output_path: 'data/baseline_plastics/output'
 do_export:
   pickle: False
   csv: False
+selected_export:
+  csv_selected_flows:
+    - 'sysenv => Polymer market'
+    - 'Plastics market => End use stock'
+    - 'Waste collection => Waste sorting'
+
