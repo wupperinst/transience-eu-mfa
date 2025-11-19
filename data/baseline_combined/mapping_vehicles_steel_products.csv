@@ -1,0 +1,4 @@
+original_parameter,target_parameter,target_region,original_dimension,original_element,target_dimension,target_element,target_dimension,target_element,factor,comment
+BottomUpDemand,FinalDemand,all,Steel product,Hot rolled bars,sector,Automotive,product,Hot Rolled Bar,0.001,kg in vehicles model but t in steel model
+BottomUpDemand,FinalDemand,all,Steel product,Hot rolled coil, sheet and strip,sector,Automotive,product,Hot Rolled Coil,,kg in vehicles model but t in steel model
+BottomUpDemand,FinalDemand,all,Steel product,Hot rolled coil, sheet and strip,sector,Automotive,product,Hot Rolled Narrow Strip,,kg in vehicles model but t in steel model
