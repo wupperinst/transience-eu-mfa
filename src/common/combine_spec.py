@@ -72,4 +72,4 @@ def get_dim_catalog(target: str) -> Dict[str, Tuple[str, Optional[str]]]:
     return DIM_CATALOGS[target]
 
 def products_csv_sep_for(target: str) -> Optional[str]:
-    return ";" if target == "cement" else None
+    return None
