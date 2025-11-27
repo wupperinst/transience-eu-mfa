@@ -4,6 +4,7 @@
 import logging
 import os
 from typing import Optional, List, Dict, Tuple
+import re
 
 import pandas as pd
 
@@ -331,9 +332,7 @@ class FlowCalculator:
         hist = pd.read_csv(historic_path)
         fut = pd.read_csv(future_path)
 
-        if base_year is not None and time_col in hist.columns and time_col in fut.columns:
-            hist = hist[hist[time_col] <= base_year]
-            fut = fut[fut[time_col] > base_year]
+
 
         all_cols = sorted(set(hist.columns) | set(fut.columns))
         for df in (hist, fut):
@@ -348,3 +347,44 @@ class FlowCalculator:
         combined_df.to_csv(output_path, index=False)
         logging.info(f"Combined written: {output_path}")
         return combined_df
+
+def _parse_cohort_years(cohort_str):
+    # Gibt (start_jahr, end_jahr) zurück, z.B. '1970-1989' → (1970, 1989), '2040<' → (2040, 9999)
+    s = str(cohort_str).strip()
+    if s.startswith(">"):
+        return (0, int(s[1:]))
+    if s.endswith("<"):
+        return (int(s[:-1]), 9999)
+    if "-" in s:
+        a, b = s.split("-")
+        return (int(a), int(b))
+    if s.isdigit():
+        y = int(s)
+        return (y, y)
+    return (None, None)
+
+def _filter_and_split_buildings_eol(df, baseyear):
+    """
+    Gibt nur den Teil der EoL-Flüsse zurück, der nach dem baseyear liegt.
+    Falls Kohorte baseyear schneidet, wird anteilig gesplittet.
+    """
+    result = []
+    for _, row in df.iterrows():
+        start, end = _parse_cohort_years(row["Age cohort"])
+        if start is None or end is None:
+            continue
+        # Kohorte NACH baseyear: komplett übernehmen
+        if start > baseyear:
+            result.append(row)
+        # Kohorte enthält baseyear: Anteil nach baseyear extrahieren
+        elif start <= baseyear < end:
+            years_total = end - start + 1
+            years_after = end - baseyear
+            if years_after > 0 and years_total > 0:
+                fraction = years_after / years_total
+                new_row = row.copy()
+                new_row["value"] = row["value"] * fraction
+                new_row["Age cohort"] = f"{baseyear + 1}-{end}"
+                result.append(new_row)
+        # Kohorte liegt davor: ignorieren
+    return pd.DataFrame(result)
