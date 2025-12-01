@@ -65,6 +65,7 @@ class VehiclesVisualizationCfg(VisualizationCfg):
 class PlasticsVisualizationCfg(VisualizationCfg):
 
     outflow: dict = {"do_visualize": False}
+    dashboard: dict = {"do_visualize": False}
 
 class CementTopdownVisualizationCfg(VisualizationCfg):
 

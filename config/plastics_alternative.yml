@@ -19,13 +19,15 @@ customization:
 # visualization
 visualization:
   inflow:
-    do_visualize: True
+    do_visualize: False
   production:
-    do_visualize: True
+    do_visualize: False
   outflow:
-    do_visualize: True
+    do_visualize: False
   sankey:
     do_visualize: False
+  dashboard:
+    do_visualize: True
 
 # data export
 output_path: 'data/alternative_plastics/output'
