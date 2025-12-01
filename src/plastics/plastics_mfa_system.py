@@ -409,4 +409,18 @@ class PlasticsMFASystem(fd.MFASystem):
         """Retrieve flows as pandas DataFrames from the MFA system."""
         if not flow_names:
             flow_names = list(self.flows.keys())
-        return {flow_name: self.flows[flow_name].to_df() for flow_name in flow_names}
+        dfs = {flow_name: self.flows[flow_name].to_df() for flow_name in flow_names}
+        dfs_index_reset = {flow_name: df.reset_index() for flow_name, df in dfs.items()}
+        return dfs_index_reset
+
+    def aggregate_flows_by_age_cohort(self, flows_dfs):
+        """Aggregate flow DataFrames by age-cohort."""
+        for flow_name, df in flows_dfs.items():
+            if 'age-cohort' in df.columns:
+                logging.debug(f"Aggregating {flow_name}.")
+                group_cols = [c for c in df.columns if (c != 'age-cohort' and c != 'value')]
+                grouped = df.groupby(group_cols, as_index=False, sort=False).sum()
+                df_agg = grouped.get(group_cols + ['value'])
+                flows_dfs[flow_name] = df_agg
+                logging.debug(df_agg.columns)
+        return flows_dfs

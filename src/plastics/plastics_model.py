@@ -66,7 +66,14 @@ class PlasticsModel:
         logging.info("Exporting flows as dataframes.")
         flows_as_dataframes = self.mfa.get_flows_as_dataframes(flow_names=self.cfg.selected_export["csv_selected_flows"])
         
+        logging.info("Aggregating flows along age-cohort.")
+        flows_as_dataframes = self.mfa.aggregate_flows_by_age_cohort(flows_as_dataframes)
+        
+        logging.info("Exporting results to csv.")
         #self.data_writer.export_selected_mfa_flows_to_csv(mfa=self.mfa, flow_names=self.cfg.selected_export["csv_selected_flows"])
+        self.data_writer.export_selected_flows_to_csv(flow_dfs=flows_as_dataframes, flow_names=self.cfg.selected_export["csv_selected_flows"])
+        
+        logging.info("Visualizing results.")
         self.data_writer.visualize_results(model=self, flows_dfs=flows_as_dataframes, scenario=self.cfg.scenario)
 
         return flows_as_dataframes
