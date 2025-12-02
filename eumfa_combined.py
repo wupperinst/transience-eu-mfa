@@ -184,8 +184,8 @@ if __name__ == "__main__":
                 _ensure_dir(bu_out_c); bu_cement.to_csv(bu_out_c, index=False)
 
                 # Read start and growth
-                start_c = pd.read_csv(TOPDOWN["cement_start"], sep=";")
-                growth_c = pd.read_csv(TOPDOWN["cement_growth"], sep=";")
+                start_c = pd.read_csv(TOPDOWN["cement_start"])
+                growth_c = pd.read_csv(TOPDOWN["cement_growth"])
                 start_c = _std_cement_cols(start_c)
                 bu_c = _std_cement_cols(pd.read_csv(bu_out_c))
 
