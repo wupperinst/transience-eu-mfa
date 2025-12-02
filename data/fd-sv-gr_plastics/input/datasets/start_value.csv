@@ -1,0 +1,1121 @@
+region,time,sector,polymer,element,value
+EU-28,2023,Building and Construction,"PE-LD, -LLD",All,0
+EU-28,2023,Building and Construction,"PE-HD, -MD",All,0
+EU-28,2023,Building and Construction,PP,All,0
+EU-28,2023,Building and Construction,PS,All,0
+EU-28,2023,Building and Construction,PS-E,All,0
+EU-28,2023,Building and Construction,PVC,All,0
+EU-28,2023,Building and Construction,PET,All,0
+EU-28,2023,Building and Construction,"ABS, SAN",All,0
+EU-28,2023,Building and Construction,PMMA,All,0
+EU-28,2023,Building and Construction,"PA (PA6, PA66)",All,0
+EU-28,2023,Building and Construction,PC,All,0
+EU-28,2023,Building and Construction,Other Thermoplastics,All,0
+EU-28,2023,Building and Construction,PUR,All,0
+EU-28,2023,Building and Construction,Other Plastics,All,0
+EU-28,2023,Automotive,"PE-LD, -LLD",All,0
+EU-28,2023,Automotive,"PE-HD, -MD",All,0
+EU-28,2023,Automotive,PP,All,0
+EU-28,2023,Automotive,PS,All,0
+EU-28,2023,Automotive,PS-E,All,0
+EU-28,2023,Automotive,PVC,All,0
+EU-28,2023,Automotive,PET,All,0
+EU-28,2023,Automotive,"ABS, SAN",All,0
+EU-28,2023,Automotive,PMMA,All,0
+EU-28,2023,Automotive,"PA (PA6, PA66)",All,0
+EU-28,2023,Automotive,PC,All,0
+EU-28,2023,Automotive,Other Thermoplastics,All,0
+EU-28,2023,Automotive,PUR,All,0
+EU-28,2023,Automotive,Other Plastics,All,0
+EU-28,2023,Electrical and Electronics,"PE-LD, -LLD",All,0
+EU-28,2023,Electrical and Electronics,"PE-HD, -MD",All,0
+EU-28,2023,Electrical and Electronics,PP,All,0
+EU-28,2023,Electrical and Electronics,PS,All,0
+EU-28,2023,Electrical and Electronics,PS-E,All,0
+EU-28,2023,Electrical and Electronics,PVC,All,0
+EU-28,2023,Electrical and Electronics,PET,All,0
+EU-28,2023,Electrical and Electronics,"ABS, SAN",All,0
+EU-28,2023,Electrical and Electronics,PMMA,All,0
+EU-28,2023,Electrical and Electronics,"PA (PA6, PA66)",All,0
+EU-28,2023,Electrical and Electronics,PC,All,0
+EU-28,2023,Electrical and Electronics,Other Thermoplastics,All,0
+EU-28,2023,Electrical and Electronics,PUR,All,0
+EU-28,2023,Electrical and Electronics,Other Plastics,All,0
+EU-28,2023,Agriculture,"PE-LD, -LLD",All,0
+EU-28,2023,Agriculture,"PE-HD, -MD",All,0
+EU-28,2023,Agriculture,PP,All,0
+EU-28,2023,Agriculture,PS,All,0
+EU-28,2023,Agriculture,PS-E,All,0
+EU-28,2023,Agriculture,PVC,All,0
+EU-28,2023,Agriculture,PET,All,0
+EU-28,2023,Agriculture,"ABS, SAN",All,0
+EU-28,2023,Agriculture,PMMA,All,0
+EU-28,2023,Agriculture,"PA (PA6, PA66)",All,0
+EU-28,2023,Agriculture,PC,All,0
+EU-28,2023,Agriculture,Other Thermoplastics,All,0
+EU-28,2023,Agriculture,PUR,All,0
+EU-28,2023,Agriculture,Other Plastics,All,0
+EU-28,2023,"Household, Leisure, Sports","PE-LD, -LLD",All,0
+EU-28,2023,"Household, Leisure, Sports","PE-HD, -MD",All,0
+EU-28,2023,"Household, Leisure, Sports",PP,All,0
+EU-28,2023,"Household, Leisure, Sports",PS,All,0
+EU-28,2023,"Household, Leisure, Sports",PS-E,All,0
+EU-28,2023,"Household, Leisure, Sports",PVC,All,0
+EU-28,2023,"Household, Leisure, Sports",PET,All,0
+EU-28,2023,"Household, Leisure, Sports","ABS, SAN",All,0
+EU-28,2023,"Household, Leisure, Sports",PMMA,All,0
+EU-28,2023,"Household, Leisure, Sports","PA (PA6, PA66)",All,0
+EU-28,2023,"Household, Leisure, Sports",PC,All,0
+EU-28,2023,"Household, Leisure, Sports",Other Thermoplastics,All,0
+EU-28,2023,"Household, Leisure, Sports",PUR,All,0
+EU-28,2023,"Household, Leisure, Sports",Other Plastics,All,0
+EU-28,2023,Others,"PE-LD, -LLD",All,0
+EU-28,2023,Others,"PE-HD, -MD",All,0
+EU-28,2023,Others,PP,All,0
+EU-28,2023,Others,PS,All,0
+EU-28,2023,Others,PS-E,All,0
+EU-28,2023,Others,PVC,All,0
+EU-28,2023,Others,PET,All,0
+EU-28,2023,Others,"ABS, SAN",All,0
+EU-28,2023,Others,PMMA,All,0
+EU-28,2023,Others,"PA (PA6, PA66)",All,0
+EU-28,2023,Others,PC,All,0
+EU-28,2023,Others,Other Thermoplastics,All,0
+EU-28,2023,Others,PUR,All,0
+EU-28,2023,Others,Other Plastics,All,0
+EU-28,2023,Household packaging,"PE-LD, -LLD",All,0
+EU-28,2023,Household packaging,"PE-HD, -MD",All,0
+EU-28,2023,Household packaging,PP,All,0
+EU-28,2023,Household packaging,PS,All,0
+EU-28,2023,Household packaging,PS-E,All,0
+EU-28,2023,Household packaging,PVC,All,0
+EU-28,2023,Household packaging,PET,All,0
+EU-28,2023,Household packaging,"ABS, SAN",All,0
+EU-28,2023,Household packaging,PMMA,All,0
+EU-28,2023,Household packaging,"PA (PA6, PA66)",All,0
+EU-28,2023,Household packaging,PC,All,0
+EU-28,2023,Household packaging,Other Thermoplastics,All,0
+EU-28,2023,Household packaging,PUR,All,0
+EU-28,2023,Household packaging,Other Plastics,All,0
+EU-28,2023,Commercial & industrial packaging,"PE-LD, -LLD",All,0
+EU-28,2023,Commercial & industrial packaging,"PE-HD, -MD",All,0
+EU-28,2023,Commercial & industrial packaging,PP,All,0
+EU-28,2023,Commercial & industrial packaging,PS,All,0
+EU-28,2023,Commercial & industrial packaging,PS-E,All,0
+EU-28,2023,Commercial & industrial packaging,PVC,All,0
+EU-28,2023,Commercial & industrial packaging,PET,All,0
+EU-28,2023,Commercial & industrial packaging,"ABS, SAN",All,0
+EU-28,2023,Commercial & industrial packaging,PMMA,All,0
+EU-28,2023,Commercial & industrial packaging,"PA (PA6, PA66)",All,0
+EU-28,2023,Commercial & industrial packaging,PC,All,0
+EU-28,2023,Commercial & industrial packaging,Other Thermoplastics,All,0
+EU-28,2023,Commercial & industrial packaging,PUR,All,0
+EU-28,2023,Commercial & industrial packaging,Other Plastics,All,0
+RoW,2023,Building and Construction,"PE-LD, -LLD",All,0
+RoW,2023,Building and Construction,"PE-HD, -MD",All,0
+RoW,2023,Building and Construction,PP,All,0
+RoW,2023,Building and Construction,PS,All,0
+RoW,2023,Building and Construction,PS-E,All,0
+RoW,2023,Building and Construction,PVC,All,0
+RoW,2023,Building and Construction,PET,All,0
+RoW,2023,Building and Construction,"ABS, SAN",All,0
+RoW,2023,Building and Construction,PMMA,All,0
+RoW,2023,Building and Construction,"PA (PA6, PA66)",All,0
+RoW,2023,Building and Construction,PC,All,0
+RoW,2023,Building and Construction,Other Thermoplastics,All,0
+RoW,2023,Building and Construction,PUR,All,0
+RoW,2023,Building and Construction,Other Plastics,All,0
+RoW,2023,Automotive,"PE-LD, -LLD",All,0
+RoW,2023,Automotive,"PE-HD, -MD",All,0
+RoW,2023,Automotive,PP,All,0
+RoW,2023,Automotive,PS,All,0
+RoW,2023,Automotive,PS-E,All,0
+RoW,2023,Automotive,PVC,All,0
+RoW,2023,Automotive,PET,All,0
+RoW,2023,Automotive,"ABS, SAN",All,0
+RoW,2023,Automotive,PMMA,All,0
+RoW,2023,Automotive,"PA (PA6, PA66)",All,0
+RoW,2023,Automotive,PC,All,0
+RoW,2023,Automotive,Other Thermoplastics,All,0
+RoW,2023,Automotive,PUR,All,0
+RoW,2023,Automotive,Other Plastics,All,0
+RoW,2023,Electrical and Electronics,"PE-LD, -LLD",All,0
+RoW,2023,Electrical and Electronics,"PE-HD, -MD",All,0
+RoW,2023,Electrical and Electronics,PP,All,0
+RoW,2023,Electrical and Electronics,PS,All,0
+RoW,2023,Electrical and Electronics,PS-E,All,0
+RoW,2023,Electrical and Electronics,PVC,All,0
+RoW,2023,Electrical and Electronics,PET,All,0
+RoW,2023,Electrical and Electronics,"ABS, SAN",All,0
+RoW,2023,Electrical and Electronics,PMMA,All,0
+RoW,2023,Electrical and Electronics,"PA (PA6, PA66)",All,0
+RoW,2023,Electrical and Electronics,PC,All,0
+RoW,2023,Electrical and Electronics,Other Thermoplastics,All,0
+RoW,2023,Electrical and Electronics,PUR,All,0
+RoW,2023,Electrical and Electronics,Other Plastics,All,0
+RoW,2023,Agriculture,"PE-LD, -LLD",All,0
+RoW,2023,Agriculture,"PE-HD, -MD",All,0
+RoW,2023,Agriculture,PP,All,0
+RoW,2023,Agriculture,PS,All,0
+RoW,2023,Agriculture,PS-E,All,0
+RoW,2023,Agriculture,PVC,All,0
+RoW,2023,Agriculture,PET,All,0
+RoW,2023,Agriculture,"ABS, SAN",All,0
+RoW,2023,Agriculture,PMMA,All,0
+RoW,2023,Agriculture,"PA (PA6, PA66)",All,0
+RoW,2023,Agriculture,PC,All,0
+RoW,2023,Agriculture,Other Thermoplastics,All,0
+RoW,2023,Agriculture,PUR,All,0
+RoW,2023,Agriculture,Other Plastics,All,0
+RoW,2023,"Household, Leisure, Sports","PE-LD, -LLD",All,0
+RoW,2023,"Household, Leisure, Sports","PE-HD, -MD",All,0
+RoW,2023,"Household, Leisure, Sports",PP,All,0
+RoW,2023,"Household, Leisure, Sports",PS,All,0
+RoW,2023,"Household, Leisure, Sports",PS-E,All,0
+RoW,2023,"Household, Leisure, Sports",PVC,All,0
+RoW,2023,"Household, Leisure, Sports",PET,All,0
+RoW,2023,"Household, Leisure, Sports","ABS, SAN",All,0
+RoW,2023,"Household, Leisure, Sports",PMMA,All,0
+RoW,2023,"Household, Leisure, Sports","PA (PA6, PA66)",All,0
+RoW,2023,"Household, Leisure, Sports",PC,All,0
+RoW,2023,"Household, Leisure, Sports",Other Thermoplastics,All,0
+RoW,2023,"Household, Leisure, Sports",PUR,All,0
+RoW,2023,"Household, Leisure, Sports",Other Plastics,All,0
+RoW,2023,Others,"PE-LD, -LLD",All,0
+RoW,2023,Others,"PE-HD, -MD",All,0
+RoW,2023,Others,PP,All,0
+RoW,2023,Others,PS,All,0
+RoW,2023,Others,PS-E,All,0
+RoW,2023,Others,PVC,All,0
+RoW,2023,Others,PET,All,0
+RoW,2023,Others,"ABS, SAN",All,0
+RoW,2023,Others,PMMA,All,0
+RoW,2023,Others,"PA (PA6, PA66)",All,0
+RoW,2023,Others,PC,All,0
+RoW,2023,Others,Other Thermoplastics,All,0
+RoW,2023,Others,PUR,All,0
+RoW,2023,Others,Other Plastics,All,0
+RoW,2023,Household packaging,"PE-LD, -LLD",All,0
+RoW,2023,Household packaging,"PE-HD, -MD",All,0
+RoW,2023,Household packaging,PP,All,0
+RoW,2023,Household packaging,PS,All,0
+RoW,2023,Household packaging,PS-E,All,0
+RoW,2023,Household packaging,PVC,All,0
+RoW,2023,Household packaging,PET,All,0
+RoW,2023,Household packaging,"ABS, SAN",All,0
+RoW,2023,Household packaging,PMMA,All,0
+RoW,2023,Household packaging,"PA (PA6, PA66)",All,0
+RoW,2023,Household packaging,PC,All,0
+RoW,2023,Household packaging,Other Thermoplastics,All,0
+RoW,2023,Household packaging,PUR,All,0
+RoW,2023,Household packaging,Other Plastics,All,0
+RoW,2023,Commercial & industrial packaging,"PE-LD, -LLD",All,0
+RoW,2023,Commercial & industrial packaging,"PE-HD, -MD",All,0
+RoW,2023,Commercial & industrial packaging,PP,All,0
+RoW,2023,Commercial & industrial packaging,PS,All,0
+RoW,2023,Commercial & industrial packaging,PS-E,All,0
+RoW,2023,Commercial & industrial packaging,PVC,All,0
+RoW,2023,Commercial & industrial packaging,PET,All,0
+RoW,2023,Commercial & industrial packaging,"ABS, SAN",All,0
+RoW,2023,Commercial & industrial packaging,PMMA,All,0
+RoW,2023,Commercial & industrial packaging,"PA (PA6, PA66)",All,0
+RoW,2023,Commercial & industrial packaging,PC,All,0
+RoW,2023,Commercial & industrial packaging,Other Thermoplastics,All,0
+RoW,2023,Commercial & industrial packaging,PUR,All,0
+RoW,2023,Commercial & industrial packaging,Other Plastics,All,0
+Germany,2023,Building and Construction,"PE-LD, -LLD",All,154.355440234209
+Germany,2023,Building and Construction,"PE-HD, -MD",All,466.268715728234
+Germany,2023,Building and Construction,PP,All,268.847467189675
+Germany,2023,Building and Construction,PS,All,83.0637221741684
+Germany,2023,Building and Construction,PS-E,All,422.716143379992
+Germany,2023,Building and Construction,PVC,All,1204.45279308067
+Germany,2023,Building and Construction,PET,All,0
+Germany,2023,Building and Construction,"ABS, SAN",All,40.3501773226356
+Germany,2023,Building and Construction,PMMA,All,26.9001182150904
+Germany,2023,Building and Construction,"PA (PA6, PA66)",All,16.6524541331512
+Germany,2023,Building and Construction,PC,All,53.8002364301808
+Germany,2023,Building and Construction,Other Thermoplastics,All,110.802867885968
+Germany,2023,Building and Construction,PUR,All,348.702389548186
+Germany,2023,Building and Construction,Other Plastics,All,234.73555537692
+Germany,2023,Automotive,"PE-LD, -LLD",All,33.1153319257932
+Germany,2023,Automotive,"PE-HD, -MD",All,64.1371658562777
+Germany,2023,Automotive,PP,All,182.705279590583
+Germany,2023,Automotive,PS,All,11.609397973985
+Germany,2023,Automotive,PS-E,All,1.90317999573524
+Germany,2023,Automotive,PVC,All,29.1186539347492
+Germany,2023,Automotive,PET,All,0
+Germany,2023,Automotive,"ABS, SAN",All,50.6245878865574
+Germany,2023,Automotive,PMMA,All,9.70621797824974
+Germany,2023,Automotive,"PA (PA6, PA66)",All,50.6245878865574
+Germany,2023,Automotive,PC,All,36.9216919172637
+Germany,2023,Automotive,Other Thermoplastics,All,194.314677564568
+Germany,2023,Automotive,PUR,All,118.568113734306
+Germany,2023,Automotive,Other Plastics,All,60.3308058648072
+Germany,2023,Electrical and Electronics,"PE-LD, -LLD",All,92.3629343853288
+Germany,2023,Electrical and Electronics,"PE-HD, -MD",All,56.0547463855788
+Germany,2023,Electrical and Electronics,PP,All,161.794381612921
+Germany,2023,Electrical and Electronics,PS,All,56.0547463855788
+Germany,2023,Electrical and Electronics,PS-E,All,0
+Germany,2023,Electrical and Electronics,PVC,All,42.9965384207565
+Germany,2023,Electrical and Electronics,PET,All,3.18492877190789
+Germany,2023,Electrical and Electronics,"ABS, SAN",All,75.8013047714077
+Germany,2023,Electrical and Electronics,PMMA,All,3.18492877190789
+Germany,2023,Electrical and Electronics,"PA (PA6, PA66)",All,72.6163759994999
+Germany,2023,Electrical and Electronics,PC,All,62.7430968065854
+Germany,2023,Electrical and Electronics,Other Thermoplastics,All,201.287498384579
+Germany,2023,Electrical and Electronics,PUR,All,105.739635227342
+Germany,2023,Electrical and Electronics,Other Plastics,All,65.9280255784933
+Germany,2023,Agriculture,"PE-LD, -LLD",All,225.591183202569
+Germany,2023,Agriculture,"PE-HD, -MD",All,16.9090283570481
+Germany,2023,Agriculture,PP,All,225.591183202569
+Germany,2023,Agriculture,PS,All,8.6607218414149
+Germany,2023,Agriculture,PS-E,All,0
+Germany,2023,Agriculture,PVC,All,59.3878069125593
+Germany,2023,Agriculture,PET,All,4.12415325781662
+Germany,2023,Agriculture,"ABS, SAN",All,0
+Germany,2023,Agriculture,PMMA,All,0
+Germany,2023,Agriculture,"PA (PA6, PA66)",All,0
+Germany,2023,Agriculture,PC,All,4.12415325781662
+Germany,2023,Agriculture,Other Thermoplastics,All,42.4787785555112
+Germany,2023,Agriculture,PUR,All,0
+Germany,2023,Agriculture,Other Plastics,All,80.8334038532058
+Germany,2023,"Household, Leisure, Sports","PE-LD, -LLD",All,18.8257623968797
+Germany,2023,"Household, Leisure, Sports","PE-HD, -MD",All,78.6431042063199
+Germany,2023,"Household, Leisure, Sports",PP,All,245.645835146381
+Germany,2023,"Household, Leisure, Sports",PS,All,47.3680473211811
+Germany,2023,"Household, Leisure, Sports",PS-E,All,3.0364132898193
+Germany,2023,"Household, Leisure, Sports",PVC,All,59.8173418094402
+Germany,2023,"Household, Leisure, Sports",PET,All,3.0364132898193
+Germany,2023,"Household, Leisure, Sports","ABS, SAN",All,37.6515247937593
+Germany,2023,"Household, Leisure, Sports",PMMA,All,6.37646790862053
+Germany,2023,"Household, Leisure, Sports","PA (PA6, PA66)",All,6.37646790862053
+Germany,2023,"Household, Leisure, Sports",PC,All,9.41288119843983
+Germany,2023,"Household, Leisure, Sports",Other Thermoplastics,All,28.2386435953195
+Germany,2023,"Household, Leisure, Sports",PUR,All,12.4492944882591
+Germany,2023,"Household, Leisure, Sports",Other Plastics,All,103.84533451182
+Germany,2023,Others,"PE-LD, -LLD",All,384.398215837476
+Germany,2023,Others,"PE-HD, -MD",All,185.426991700125
+Germany,2023,Others,PP,All,490.494703262417
+Germany,2023,Others,PS,All,66.1087535626532
+Germany,2023,Others,PS-E,All,0
+Germany,2023,Others,PVC,All,89.3274377407557
+Germany,2023,Others,PET,All,3.22481724695869
+Germany,2023,Others,"ABS, SAN",All,26.4435014250613
+Germany,2023,Others,PMMA,All,29.6683186720199
+Germany,2023,Others,"PA (PA6, PA66)",All,79.6529859998797
+Germany,2023,Others,PC,All,46.4373683562051
+Germany,2023,Others,Other Thermoplastics,All,142.536922315574
+Germany,2023,Others,PUR,All,593.043891715703
+Germany,2023,Others,Other Plastics,All,573.050024784559
+Germany,2023,Household packaging,"PE-LD, -LLD",All,650.649848045338
+Germany,2023,Household packaging,"PE-HD, -MD",All,371.364110645074
+Germany,2023,Household packaging,PP,All,478.271464534569
+Germany,2023,Household packaging,PS,All,59.6074636022093
+Germany,2023,Household packaging,PS-E,All,29.3436040118946
+Germany,2023,Household packaging,PVC,All,41.9280356683058
+Germany,2023,Household packaging,PET,All,425.111177152386
+Germany,2023,Household packaging,"ABS, SAN",All,2.05980070927358
+Germany,2023,Household packaging,PMMA,All,0
+Germany,2023,Household packaging,"PA (PA6, PA66)",All,6.17940212782074
+Germany,2023,Household packaging,PC,All,2.05980070927358
+Germany,2023,Household packaging,Other Thermoplastics,All,5.22872487738678
+Germany,2023,Household packaging,PUR,All,5.22872487738678
+Germany,2023,Household packaging,Other Plastics,All,19.6473298423018
+Germany,2023,Commercial & industrial packaging,"PE-LD, -LLD",All,373.863335505659
+Germany,2023,Commercial & industrial packaging,"PE-HD, -MD",All,213.343594385997
+Germany,2023,Commercial & industrial packaging,PP,All,274.821779555449
+Germany,2023,Commercial & industrial packaging,PS,All,34.1958606981095
+Germany,2023,Commercial & industrial packaging,PS-E,All,16.8364941051854
+Germany,2023,Commercial & industrial packaging,PVC,All,24.0046005734575
+Germany,2023,Commercial & industrial packaging,PET,All,244.324053361528
+Germany,2023,Commercial & industrial packaging,"ABS, SAN",All,1.26756966724528
+Germany,2023,Commercial & industrial packaging,PMMA,All,0
+Germany,2023,Commercial & industrial packaging,"PA (PA6, PA66)",All,3.64426279333018
+Germany,2023,Commercial & industrial packaging,PC,All,1.26756966724528
+Germany,2023,Commercial & industrial packaging,Other Thermoplastics,All,3.01047795970754
+Germany,2023,Commercial & industrial packaging,PUR,All,3.01047795970754
+Germany,2023,Commercial & industrial packaging,Other Plastics,All,11.2496807968019
+EU27+3,2023,Building and Construction,"PE-LD, -LLD",All,482
+EU27+3,2023,Building and Construction,"PE-HD, -MD",All,1456
+EU27+3,2023,Building and Construction,PP,All,839.52
+EU27+3,2023,Building and Construction,PS,All,259.38
+EU27+3,2023,Building and Construction,PS-E,All,1320
+EU27+3,2023,Building and Construction,PVC,All,3761.1
+EU27+3,2023,Building and Construction,PET,All,0
+EU27+3,2023,Building and Construction,"ABS, SAN",All,126
+EU27+3,2023,Building and Construction,PMMA,All,84
+EU27+3,2023,Building and Construction,"PA (PA6, PA66)",All,52
+EU27+3,2023,Building and Construction,PC,All,168
+EU27+3,2023,Building and Construction,Other Thermoplastics,All,346
+EU27+3,2023,Building and Construction,PUR,All,1088.88
+EU27+3,2023,Building and Construction,Other Plastics,All,733
+EU27+3,2023,Automotive,"PE-LD, -LLD",All,154.86
+EU27+3,2023,Automotive,"PE-HD, -MD",All,299.93
+EU27+3,2023,Automotive,PP,All,854.4
+EU27+3,2023,Automotive,PS,All,54.29
+EU27+3,2023,Automotive,PS-E,All,8.9
+EU27+3,2023,Automotive,PVC,All,136.17
+EU27+3,2023,Automotive,PET,All,0
+EU27+3,2023,Automotive,"ABS, SAN",All,236.74
+EU27+3,2023,Automotive,PMMA,All,45.39
+EU27+3,2023,Automotive,"PA (PA6, PA66)",All,236.74
+EU27+3,2023,Automotive,PC,All,172.66
+EU27+3,2023,Automotive,Other Thermoplastics,All,908.69
+EU27+3,2023,Automotive,PUR,All,554.47
+EU27+3,2023,Automotive,Other Plastics,All,282.13
+EU27+3,2023,Electrical and Electronics,"PE-LD, -LLD",All,350.9
+EU27+3,2023,Electrical and Electronics,"PE-HD, -MD",All,212.96
+EU27+3,2023,Electrical and Electronics,PP,All,614.68
+EU27+3,2023,Electrical and Electronics,PS,All,212.96
+EU27+3,2023,Electrical and Electronics,PS-E,All,0
+EU27+3,2023,Electrical and Electronics,PVC,All,163.35
+EU27+3,2023,Electrical and Electronics,PET,All,12.1
+EU27+3,2023,Electrical and Electronics,"ABS, SAN",All,287.98
+EU27+3,2023,Electrical and Electronics,PMMA,All,12.1
+EU27+3,2023,Electrical and Electronics,"PA (PA6, PA66)",All,275.88
+EU27+3,2023,Electrical and Electronics,PC,All,238.37
+EU27+3,2023,Electrical and Electronics,Other Thermoplastics,All,764.72
+EU27+3,2023,Electrical and Electronics,PUR,All,401.72
+EU27+3,2023,Electrical and Electronics,Other Plastics,All,250.47
+EU27+3,2023,Agriculture,"PE-LD, -LLD",All,547
+EU27+3,2023,Agriculture,"PE-HD, -MD",All,41
+EU27+3,2023,Agriculture,PP,All,547
+EU27+3,2023,Agriculture,PS,All,21
+EU27+3,2023,Agriculture,PS-E,All,0
+EU27+3,2023,Agriculture,PVC,All,144
+EU27+3,2023,Agriculture,PET,All,10
+EU27+3,2023,Agriculture,"ABS, SAN",All,0
+EU27+3,2023,Agriculture,PMMA,All,0
+EU27+3,2023,Agriculture,"PA (PA6, PA66)",All,0
+EU27+3,2023,Agriculture,PC,All,10
+EU27+3,2023,Agriculture,Other Thermoplastics,All,103
+EU27+3,2023,Agriculture,PUR,All,0
+EU27+3,2023,Agriculture,Other Plastics,All,196
+EU27+3,2023,"Household, Leisure, Sports","PE-LD, -LLD",All,62
+EU27+3,2023,"Household, Leisure, Sports","PE-HD, -MD",All,259
+EU27+3,2023,"Household, Leisure, Sports",PP,All,809
+EU27+3,2023,"Household, Leisure, Sports",PS,All,156
+EU27+3,2023,"Household, Leisure, Sports",PS-E,All,10
+EU27+3,2023,"Household, Leisure, Sports",PVC,All,197
+EU27+3,2023,"Household, Leisure, Sports",PET,All,10
+EU27+3,2023,"Household, Leisure, Sports","ABS, SAN",All,124
+EU27+3,2023,"Household, Leisure, Sports",PMMA,All,21
+EU27+3,2023,"Household, Leisure, Sports","PA (PA6, PA66)",All,21
+EU27+3,2023,"Household, Leisure, Sports",PC,All,31
+EU27+3,2023,"Household, Leisure, Sports",Other Thermoplastics,All,93
+EU27+3,2023,"Household, Leisure, Sports",PUR,All,41
+EU27+3,2023,"Household, Leisure, Sports",Other Plastics,All,342
+EU27+3,2023,Others,"PE-LD, -LLD",All,1192
+EU27+3,2023,Others,"PE-HD, -MD",All,575
+EU27+3,2023,Others,PP,All,1521
+EU27+3,2023,Others,PS,All,205
+EU27+3,2023,Others,PS-E,All,0
+EU27+3,2023,Others,PVC,All,277
+EU27+3,2023,Others,PET,All,10
+EU27+3,2023,Others,"ABS, SAN",All,82
+EU27+3,2023,Others,PMMA,All,92
+EU27+3,2023,Others,"PA (PA6, PA66)",All,247
+EU27+3,2023,Others,PC,All,144
+EU27+3,2023,Others,Other Thermoplastics,All,442
+EU27+3,2023,Others,PUR,All,1839
+EU27+3,2023,Others,Other Plastics,All,1777
+EU27+3,2023,Household packaging,"PE-LD, -LLD",All,4106.44
+EU27+3,2023,Household packaging,"PE-HD, -MD",All,2343.78666666667
+EU27+3,2023,Household packaging,PP,All,3018.51
+EU27+3,2023,Household packaging,PS,All,376.2
+EU27+3,2023,Household packaging,PS-E,All,185.196
+EU27+3,2023,Household packaging,PVC,All,264.62
+EU27+3,2023,Household packaging,PET,All,2683
+EU27+3,2023,Household packaging,"ABS, SAN",All,13
+EU27+3,2023,Household packaging,PMMA,All,0
+EU27+3,2023,Household packaging,"PA (PA6, PA66)",All,39
+EU27+3,2023,Household packaging,PC,All,13
+EU27+3,2023,Household packaging,Other Thermoplastics,All,33
+EU27+3,2023,Household packaging,PUR,All,33
+EU27+3,2023,Household packaging,Other Plastics,All,124
+EU27+3,2023,Commercial & industrial packaging,"PE-LD, -LLD",All,2359.56
+EU27+3,2023,Commercial & industrial packaging,"PE-HD, -MD",All,1346.47333333333
+EU27+3,2023,Commercial & industrial packaging,PP,All,1734.48
+EU27+3,2023,Commercial & industrial packaging,PS,All,215.82
+EU27+3,2023,Commercial & industrial packaging,PS-E,All,106.26
+EU27+3,2023,Commercial & industrial packaging,PVC,All,151.5
+EU27+3,2023,Commercial & industrial packaging,PET,All,1542
+EU27+3,2023,Commercial & industrial packaging,"ABS, SAN",All,8
+EU27+3,2023,Commercial & industrial packaging,PMMA,All,0
+EU27+3,2023,Commercial & industrial packaging,"PA (PA6, PA66)",All,23
+EU27+3,2023,Commercial & industrial packaging,PC,All,8
+EU27+3,2023,Commercial & industrial packaging,Other Thermoplastics,All,19
+EU27+3,2023,Commercial & industrial packaging,PUR,All,19
+EU27+3,2023,Commercial & industrial packaging,Other Plastics,All,71
+West,2023,Building and Construction,"PE-LD, -LLD",All,67.3720278709726
+West,2023,Building and Construction,"PE-HD, -MD",All,203.513843527253
+West,2023,Building and Construction,PP,All,117.344740328296
+West,2023,Building and Construction,PS,All,36.255096658035
+West,2023,Building and Construction,PS-E,All,184.50430869229
+West,2023,Building and Construction,PVC,All,525.711481380736
+West,2023,Building and Construction,PET,All,0
+West,2023,Building and Construction,"ABS, SAN",All,17.6117749206277
+West,2023,Building and Construction,PMMA,All,11.7411832804185
+West,2023,Building and Construction,"PA (PA6, PA66)",All,7.26835155454476
+West,2023,Building and Construction,PC,All,23.4823665608369
+West,2023,Building and Construction,Other Thermoplastics,All,48.3624930360093
+West,2023,Building and Construction,PUR,All,152.199281552167
+West,2023,Building and Construction,Other Plastics,All,102.455801720794
+West,2023,Automotive,"PE-LD, -LLD",All,37.6698906397685
+West,2023,Automotive,"PE-HD, -MD",All,72.9583514115057
+West,2023,Automotive,PP,All,207.833879391826
+West,2023,Automotive,PS,All,13.2061110863556
+West,2023,Automotive,PS-E,All,2.16493624366486
+West,2023,Automotive,PVC,All,33.1235245280723
+West,2023,Automotive,PET,All,0
+West,2023,Automotive,"ABS, SAN",All,57.5873040814852
+West,2023,Automotive,PMMA,All,11.0411748426908
+West,2023,Automotive,"PA (PA6, PA66)",All,57.5873040814852
+West,2023,Automotive,PC,All,41.9997631270982
+West,2023,Automotive,Other Thermoplastics,All,221.039990478182
+West,2023,Automotive,PUR,All,134.875527980321
+West,2023,Automotive,Other Plastics,All,68.628478924176
+West,2023,Electrical and Electronics,"PE-LD, -LLD",All,67.4749844585332
+West,2023,Electrical and Electronics,"PE-HD, -MD",All,40.9503353955236
+West,2023,Electrical and Electronics,PP,All,118.197558982534
+West,2023,Electrical and Electronics,PS,All,40.9503353955236
+West,2023,Electrical and Electronics,PS-E,All,0
+West,2023,Electrical and Electronics,PVC,All,31.4107686272482
+West,2023,Electrical and Electronics,PET,All,2.32672360201839
+West,2023,Electrical and Electronics,"ABS, SAN",All,55.3760217280376
+West,2023,Electrical and Electronics,PMMA,All,2.32672360201839
+West,2023,Electrical and Electronics,"PA (PA6, PA66)",All,53.0492981260192
+West,2023,Electrical and Electronics,PC,All,45.8364549597622
+West,2023,Electrical and Electronics,Other Thermoplastics,All,147.048931647562
+West,2023,Electrical and Electronics,PUR,All,77.2472235870104
+West,2023,Electrical and Electronics,Other Plastics,All,48.1631785617806
+West,2023,Agriculture,"PE-LD, -LLD",All,48.5473952307824
+West,2023,Agriculture,"PE-HD, -MD",All,3.63883583996723
+West,2023,Agriculture,PP,All,48.5473952307824
+West,2023,Agriculture,PS,All,1.86379396681249
+West,2023,Agriculture,PS-E,All,0
+West,2023,Agriculture,PVC,All,12.7803014867142
+West,2023,Agriculture,PET,All,0.887520936577374
+West,2023,Agriculture,"ABS, SAN",All,0
+West,2023,Agriculture,PMMA,All,0
+West,2023,Agriculture,"PA (PA6, PA66)",All,0
+West,2023,Agriculture,PC,All,0.887520936577374
+West,2023,Agriculture,Other Thermoplastics,All,9.14146564674695
+West,2023,Agriculture,PUR,All,0
+West,2023,Agriculture,Other Plastics,All,17.3954103569165
+West,2023,"Household, Leisure, Sports","PE-LD, -LLD",All,11.9220548202595
+West,2023,"Household, Leisure, Sports","PE-HD, -MD",All,49.8034225556002
+West,2023,"Household, Leisure, Sports",PP,All,155.563586283709
+West,2023,"Household, Leisure, Sports",PS,All,29.9974282574271
+West,2023,"Household, Leisure, Sports",PS-E,All,1.92291206778379
+West,2023,"Household, Leisure, Sports",PVC,All,37.8813677353407
+West,2023,"Household, Leisure, Sports",PET,All,1.92291206778379
+West,2023,"Household, Leisure, Sports","ABS, SAN",All,23.844109640519
+West,2023,"Household, Leisure, Sports",PMMA,All,4.03811534234596
+West,2023,"Household, Leisure, Sports","PA (PA6, PA66)",All,4.03811534234596
+West,2023,"Household, Leisure, Sports",PC,All,5.96102741012975
+West,2023,"Household, Leisure, Sports",Other Thermoplastics,All,17.8830822303892
+West,2023,"Household, Leisure, Sports",PUR,All,7.88393947791354
+West,2023,"Household, Leisure, Sports",Other Plastics,All,65.7635927182056
+West,2023,Others,"PE-LD, -LLD",All,229.211118479828
+West,2023,Others,"PE-HD, -MD",All,110.567443897568
+West,2023,Others,PP,All,292.474925509914
+West,2023,Others,PS,All,39.4196973895677
+West,2023,Others,PS-E,All,0
+West,2023,Others,PVC,All,53.264664277611
+West,2023,Others,PET,All,1.92291206778379
+West,2023,Others,"ABS, SAN",All,15.7678789558271
+West,2023,Others,PMMA,All,17.6907910236109
+West,2023,Others,"PA (PA6, PA66)",All,47.4959280742596
+West,2023,Others,PC,All,27.6899337760866
+West,2023,Others,Other Thermoplastics,All,84.9927133960435
+West,2023,Others,PUR,All,353.623529265439
+West,2023,Others,Other Plastics,All,341.701474445179
+West,2023,Household packaging,"PE-LD, -LLD",All,789.632303163007
+West,2023,Household packaging,"PE-HD, -MD",All,450.689566564408
+West,2023,Household packaging,PP,All,580.432930572605
+West,2023,Household packaging,PS,All,72.3399519900262
+West,2023,Household packaging,PS-E,All,35.6115623305287
+West,2023,Household packaging,PVC,All,50.8840991376947
+West,2023,Household packaging,PET,All,515.917307786391
+West,2023,Household packaging,"ABS, SAN",All,2.49978568811893
+West,2023,Household packaging,PMMA,All,0
+West,2023,Household packaging,"PA (PA6, PA66)",All,7.49935706435678
+West,2023,Household packaging,PC,All,2.49978568811893
+West,2023,Household packaging,Other Thermoplastics,All,6.34560982368651
+West,2023,Household packaging,PUR,All,6.34560982368651
+West,2023,Household packaging,Other Plastics,All,23.844109640519
+West,2023,Commercial & industrial packaging,"PE-LD, -LLD",All,453.722639865992
+West,2023,Commercial & industrial packaging,"PE-HD, -MD",All,258.914982161573
+West,2023,Commercial & industrial packaging,PP,All,333.525252332963
+West,2023,Commercial & industrial packaging,PS,All,41.5002882469098
+West,2023,Commercial & industrial packaging,PS-E,All,20.4328636322706
+West,2023,Commercial & industrial packaging,PVC,All,29.1321178269244
+West,2023,Commercial & industrial packaging,PET,All,296.51304085226
+West,2023,Commercial & industrial packaging,"ABS, SAN",All,1.53832965422703
+West,2023,Commercial & industrial packaging,PMMA,All,0
+West,2023,Commercial & industrial packaging,"PA (PA6, PA66)",All,4.42269775590272
+West,2023,Commercial & industrial packaging,PC,All,1.53832965422703
+West,2023,Commercial & industrial packaging,Other Thermoplastics,All,3.6535329287892
+West,2023,Commercial & industrial packaging,PUR,All,3.6535329287892
+West,2023,Commercial & industrial packaging,Other Plastics,All,13.6526756812649
+South,2023,Building and Construction,"PE-LD, -LLD",All,180.927265111493
+South,2023,Building and Construction,"PE-HD, -MD",All,546.535473033888
+South,2023,Building and Construction,PP,All,315.128750220748
+South,2023,Building and Construction,PS,All,97.3628921672595
+South,2023,Building and Construction,PS-E,All,495.485456321931
+South,2023,Building and Construction,PVC,All,1411.79571952456
+South,2023,Building and Construction,PET,All,0
+South,2023,Building and Construction,"ABS, SAN",All,47.296339012548
+South,2023,Building and Construction,PMMA,All,31.530892675032
+South,2023,Building and Construction,"PA (PA6, PA66)",All,19.5191240369246
+South,2023,Building and Construction,PC,All,63.061785350064
+South,2023,Building and Construction,Other Thermoplastics,All,129.877248399537
+South,2023,Building and Construction,PUR,All,408.7304573332
+South,2023,Building and Construction,Other Plastics,All,275.144575366648
+South,2023,Automotive,"PE-LD, -LLD",All,52.0699880399538
+South,2023,Automotive,"PE-HD, -MD",All,100.848195226807
+South,2023,Automotive,PP,All,287.282692634228
+South,2023,Automotive,PS,All,18.2544210944665
+South,2023,Automotive,PS-E,All,2.9925280482732
+South,2023,Automotive,PVC,All,45.78567913858
+South,2023,Automotive,PET,All,0
+South,2023,Automotive,"ABS, SAN",All,79.6012460840672
+South,2023,Automotive,PMMA,All,15.2618930461933
+South,2023,Automotive,"PA (PA6, PA66)",All,79.6012460840672
+South,2023,Automotive,PC,All,58.0550441365002
+South,2023,Automotive,Other Thermoplastics,All,305.537113728694
+South,2023,Automotive,PUR,All,186.434497407421
+South,2023,Automotive,Other Plastics,All,94.8631391302606
+South,2023,Electrical and Electronics,"PE-LD, -LLD",All,136.025357007029
+South,2023,Electrical and Electronics,"PE-HD, -MD",All,82.5533201146105
+South,2023,Electrical and Electronics,PP,All,238.278901239898
+South,2023,Electrical and Electronics,PS,All,82.5533201146105
+South,2023,Electrical and Electronics,PS-E,All,0
+South,2023,Electrical and Electronics,PVC,All,63.3221489515478
+South,2023,Electrical and Electronics,PET,All,4.69052955196651
+South,2023,Electrical and Electronics,"ABS, SAN",All,111.634603336803
+South,2023,Electrical and Electronics,PMMA,All,4.69052955196651
+South,2023,Electrical and Electronics,"PA (PA6, PA66)",All,106.944073784836
+South,2023,Electrical and Electronics,PC,All,92.4034321737402
+South,2023,Electrical and Electronics,Other Thermoplastics,All,296.441467684283
+South,2023,Electrical and Electronics,PUR,All,155.725581125288
+South,2023,Electrical and Electronics,Other Plastics,All,97.0939617257067
+South,2023,Agriculture,"PE-LD, -LLD",All,302.684510332101
+South,2023,Agriculture,"PE-HD, -MD",All,22.6875044307425
+South,2023,Agriculture,PP,All,302.684510332101
+South,2023,Agriculture,PS,All,11.620429098673
+South,2023,Agriculture,PS-E,All,0
+South,2023,Agriculture,PVC,All,79.6829423909004
+South,2023,Agriculture,PET,All,5.53353766603475
+South,2023,Agriculture,"ABS, SAN",All,0
+South,2023,Agriculture,PMMA,All,0
+South,2023,Agriculture,"PA (PA6, PA66)",All,0
+South,2023,Agriculture,PC,All,5.53353766603475
+South,2023,Agriculture,Other Thermoplastics,All,56.9954379601579
+South,2023,Agriculture,PUR,All,0
+South,2023,Agriculture,Other Plastics,All,108.457338254281
+South,2023,"Household, Leisure, Sports","PE-LD, -LLD",All,24.0341183654482
+South,2023,"Household, Leisure, Sports","PE-HD, -MD",All,100.400591236308
+South,2023,"Household, Leisure, Sports",PP,All,313.606479962058
+South,2023,"Household, Leisure, Sports",PS,All,60.472942984031
+South,2023,"Household, Leisure, Sports",PS-E,All,3.87647070410455
+South,2023,"Household, Leisure, Sports",PVC,All,76.3664728708596
+South,2023,"Household, Leisure, Sports",PET,All,3.87647070410455
+South,2023,"Household, Leisure, Sports","ABS, SAN",All,48.0682367308964
+South,2023,"Household, Leisure, Sports",PMMA,All,8.14058847861955
+South,2023,"Household, Leisure, Sports","PA (PA6, PA66)",All,8.14058847861955
+South,2023,"Household, Leisure, Sports",PC,All,12.0170591827241
+South,2023,"Household, Leisure, Sports",Other Thermoplastics,All,36.0511775481723
+South,2023,"Household, Leisure, Sports",PUR,All,15.8935298868287
+South,2023,"Household, Leisure, Sports",Other Plastics,All,132.575298080376
+South,2023,Others,"PE-LD, -LLD",All,462.075307929262
+South,2023,Others,"PE-HD, -MD",All,222.897065486012
+South,2023,Others,PP,All,589.611194094302
+South,2023,Others,PS,All,79.4676494341433
+South,2023,Others,PS-E,All,0
+South,2023,Others,PVC,All,107.378238503696
+South,2023,Others,PET,All,3.87647070410455
+South,2023,Others,"ABS, SAN",All,31.7870597736573
+South,2023,Others,PMMA,All,35.6635304777619
+South,2023,Others,"PA (PA6, PA66)",All,95.7488263913824
+South,2023,Others,PC,All,55.8211781391055
+South,2023,Others,Other Thermoplastics,All,171.340005121421
+South,2023,Others,PUR,All,712.882962484827
+South,2023,Others,Other Plastics,All,688.848844119379
+South,2023,Household packaging,"PE-LD, -LLD",All,1591.84943581631
+South,2023,Household packaging,"PE-HD, -MD",All,908.562035000419
+South,2023,Household packaging,PP,All,1170.11655850466
+South,2023,Household packaging,PS,All,145.832827888413
+South,2023,Household packaging,PS-E,All,71.7906868517346
+South,2023,Household packaging,PVC,All,102.579167772015
+South,2023,Household packaging,PET,All,1040.05708991125
+South,2023,Household packaging,"ABS, SAN",All,5.03941191533592
+South,2023,Household packaging,PMMA,All,0
+South,2023,Household packaging,"PA (PA6, PA66)",All,15.1182357460077
+South,2023,Household packaging,PC,All,5.03941191533592
+South,2023,Household packaging,Other Thermoplastics,All,12.792353323545
+South,2023,Household packaging,PUR,All,12.792353323545
+South,2023,Household packaging,Other Plastics,All,48.0682367308964
+South,2023,Commercial & industrial packaging,"PE-LD, -LLD",All,914.676521457693
+South,2023,Commercial & industrial packaging,"PE-HD, -MD",All,521.956443052467
+South,2023,Commercial & industrial packaging,PP,All,672.366090685526
+South,2023,Commercial & industrial packaging,PS,All,83.6619907359844
+South,2023,Commercial & industrial packaging,PS-E,All,41.191377701815
+South,2023,Commercial & industrial packaging,PVC,All,58.7285311671839
+South,2023,Commercial & industrial packaging,PET,All,597.751782572922
+South,2023,Commercial & industrial packaging,"ABS, SAN",All,3.10117656328364
+South,2023,Commercial & industrial packaging,PMMA,All,0
+South,2023,Commercial & industrial packaging,"PA (PA6, PA66)",All,8.91588261944047
+South,2023,Commercial & industrial packaging,PC,All,3.10117656328364
+South,2023,Commercial & industrial packaging,Other Thermoplastics,All,7.36529433779864
+South,2023,Commercial & industrial packaging,PUR,All,7.36529433779864
+South,2023,Commercial & industrial packaging,Other Plastics,All,27.5229419991423
+North,2023,Building and Construction,"PE-LD, -LLD",All,59.2700981997566
+North,2023,Building and Construction,"PE-HD, -MD",All,179.039964686402
+North,2023,Building and Construction,PP,All,103.233263154896
+North,2023,Building and Construction,PS,All,31.8951827200267
+North,2023,Building and Construction,PS-E,All,162.316451501408
+North,2023,Building and Construction,PVC,All,462.491216471171
+North,2023,Building and Construction,PET,All,0
+North,2023,Building and Construction,"ABS, SAN",All,15.4938430978617
+North,2023,Building and Construction,PMMA,All,10.3292287319078
+North,2023,Building and Construction,"PA (PA6, PA66)",All,6.39428445308578
+North,2023,Building and Construction,PC,All,20.6584574638156
+North,2023,Building and Construction,Other Thermoplastics,All,42.5465850147631
+North,2023,Building and Construction,PUR,All,133.896316447616
+North,2023,Building and Construction,Other Plastics,All,90.1348173867668
+North,2023,Automotive,"PE-LD, -LLD",All,8.49218490405019
+North,2023,Automotive,"PE-HD, -MD",All,16.4475075440512
+North,2023,Automotive,PP,All,46.8534339533804
+North,2023,Automotive,PS,All,2.97714528245438
+North,2023,Automotive,PS-E,All,0.488056603681045
+North,2023,Automotive,PVC,All,7.46726603631999
+North,2023,Automotive,PET,All,0
+North,2023,Automotive,"ABS, SAN",All,12.9823056579158
+North,2023,Automotive,PMMA,All,2.48908867877333
+North,2023,Automotive,"PA (PA6, PA66)",All,12.9823056579158
+North,2023,Automotive,PC,All,9.46829811141228
+North,2023,Automotive,Other Thermoplastics,All,49.8305792358347
+North,2023,Automotive,PUR,All,30.4059264093291
+North,2023,Automotive,Other Plastics,All,15.4713943366891
+North,2023,Electrical and Electronics,"PE-LD, -LLD",All,18.2691878807399
+North,2023,Electrical and Electronics,"PE-HD, -MD",All,11.0875071276215
+North,2023,Electrical and Electronics,PP,All,32.0025773910893
+North,2023,Electrical and Electronics,PS,All,11.0875071276215
+North,2023,Electrical and Electronics,PS-E,All,0
+North,2023,Electrical and Electronics,PVC,All,8.50462194448239
+North,2023,Electrical and Electronics,PET,All,0.629971995887584
+North,2023,Electrical and Electronics,"ABS, SAN",All,14.9933335021245
+North,2023,Electrical and Electronics,PMMA,All,0.629971995887584
+North,2023,Electrical and Electronics,"PA (PA6, PA66)",All,14.3633615062369
+North,2023,Electrical and Electronics,PC,All,12.4104483189854
+North,2023,Electrical and Electronics,Other Thermoplastics,All,39.8142301400953
+North,2023,Electrical and Electronics,PUR,All,20.9150702634678
+North,2023,Electrical and Electronics,Other Plastics,All,13.040420314873
+North,2023,Agriculture,"PE-LD, -LLD",All,20.9164314269878
+North,2023,Agriculture,"PE-HD, -MD",All,1.56777639580713
+North,2023,Agriculture,PP,All,20.9164314269878
+North,2023,Agriculture,PS,All,0.803007422242677
+North,2023,Agriculture,PS-E,All,0
+North,2023,Agriculture,PVC,All,5.50633660966407
+North,2023,Agriculture,PET,All,0.382384486782227
+North,2023,Agriculture,"ABS, SAN",All,0
+North,2023,Agriculture,PMMA,All,0
+North,2023,Agriculture,"PA (PA6, PA66)",All,0
+North,2023,Agriculture,PC,All,0.382384486782227
+North,2023,Agriculture,Other Thermoplastics,All,3.93856021385694
+North,2023,Agriculture,PUR,All,0
+North,2023,Agriculture,Other Plastics,All,7.49473594093165
+North,2023,"Household, Leisure, Sports","PE-LD, -LLD",All,3.22795568140746
+North,2023,"Household, Leisure, Sports","PE-HD, -MD",All,13.4845245400731
+North,2023,"Household, Leisure, Sports",PP,All,42.119615262236
+North,2023,"Household, Leisure, Sports",PS,All,8.12195300483167
+North,2023,"Household, Leisure, Sports",PS-E,All,0.520638013130235
+North,2023,"Household, Leisure, Sports",PVC,All,10.2565688586656
+North,2023,"Household, Leisure, Sports",PET,All,0.520638013130235
+North,2023,"Household, Leisure, Sports","ABS, SAN",All,6.45591136281491
+North,2023,"Household, Leisure, Sports",PMMA,All,1.09333982757349
+North,2023,"Household, Leisure, Sports","PA (PA6, PA66)",All,1.09333982757349
+North,2023,"Household, Leisure, Sports",PC,All,1.61397784070373
+North,2023,"Household, Leisure, Sports",Other Thermoplastics,All,4.84193352211119
+North,2023,"Household, Leisure, Sports",PUR,All,2.13461585383396
+North,2023,"Household, Leisure, Sports",Other Plastics,All,17.805820049054
+North,2023,Others,"PE-LD, -LLD",All,62.060051165124
+North,2023,Others,"PE-HD, -MD",All,29.9366857549885
+North,2023,Others,PP,All,79.1890417971087
+North,2023,Others,PS,All,10.6730792691698
+North,2023,Others,PS-E,All,0
+North,2023,Others,PVC,All,14.4216729637075
+North,2023,Others,PET,All,0.520638013130235
+North,2023,Others,"ABS, SAN",All,4.26923170766793
+North,2023,Others,PMMA,All,4.78986972079816
+North,2023,Others,"PA (PA6, PA66)",All,12.8597589243168
+North,2023,Others,PC,All,7.49718738907538
+North,2023,Others,Other Thermoplastics,All,23.0122001803564
+North,2023,Others,PUR,All,95.7453306146502
+North,2023,Others,Other Plastics,All,92.5173749332428
+North,2023,Household packaging,"PE-LD, -LLD",All,213.796876263852
+North,2023,Household packaging,"PE-HD, -MD",All,122.026443333447
+North,2023,Household packaging,PP,All,157.155104901375
+North,2023,Household packaging,PS,All,19.5864020539594
+North,2023,Household packaging,PS-E,All,9.6420077479667
+North,2023,Household packaging,PVC,All,13.7771231034523
+North,2023,Household packaging,PET,All,139.687178922842
+North,2023,Household packaging,"ABS, SAN",All,0.676829417069306
+North,2023,Household packaging,PMMA,All,0
+North,2023,Household packaging,"PA (PA6, PA66)",All,2.03048825120792
+North,2023,Household packaging,PC,All,0.676829417069306
+North,2023,Household packaging,Other Thermoplastics,All,1.71810544332978
+North,2023,Household packaging,PUR,All,1.71810544332978
+North,2023,Household packaging,Other Plastics,All,6.45591136281491
+North,2023,Commercial & industrial packaging,"PE-LD, -LLD",All,122.847663026158
+North,2023,Commercial & industrial packaging,"PE-HD, -MD",All,70.1025200999511
+North,2023,Commercial & industrial packaging,PP,All,90.303622101413
+North,2023,Commercial & industrial packaging,PS,All,11.2364095993767
+North,2023,Commercial & industrial packaging,PS-E,All,5.53229952752188
+North,2023,Commercial & industrial packaging,PVC,All,7.88766589892306
+North,2023,Commercial & industrial packaging,PET,All,80.2823816246822
+North,2023,Commercial & industrial packaging,"ABS, SAN",All,0.416510410504188
+North,2023,Commercial & industrial packaging,PMMA,All,0
+North,2023,Commercial & industrial packaging,"PA (PA6, PA66)",All,1.19746743019954
+North,2023,Commercial & industrial packaging,PC,All,0.416510410504188
+North,2023,Commercial & industrial packaging,Other Thermoplastics,All,0.989212224947447
+North,2023,Commercial & industrial packaging,PUR,All,0.989212224947447
+North,2023,Commercial & industrial packaging,Other Plastics,All,3.69652989322467
+East,2023,Building and Construction,"PE-LD, -LLD",All,105.88366991857
+East,2023,Building and Construction,"PE-HD, -MD",All,319.847766393025
+East,2023,Building and Construction,PP,All,184.422113215846
+East,2023,Building and Construction,PS,All,56.9794736586695
+East,2023,Building and Construction,PS-E,All,289.971876125544
+East,2023,Building and Construction,PVC,All,826.222138860443
+East,2023,Building and Construction,PET,All,0
+East,2023,Building and Construction,"ABS, SAN",All,27.6791336301656
+East,2023,Building and Construction,PMMA,All,18.4527557534437
+East,2023,Building and Construction,"PA (PA6, PA66)",All,11.4231345140366
+East,2023,Building and Construction,PC,All,36.9055115068875
+East,2023,Building and Construction,Other Thermoplastics,All,76.0077796510897
+East,2023,Building and Construction,PUR,All,239.200436723926
+East,2023,Building and Construction,Other Plastics,All,161.02226151517
+East,2023,Automotive,"PE-LD, -LLD",All,25.0445455281592
+East,2023,Automotive,"PE-HD, -MD",All,48.5058151895958
+East,2023,Automotive,PP,All,138.176802913982
+East,2023,Automotive,PS,All,8.77998435182594
+East,2023,Automotive,PS-E,All,1.43934169702065
+East,2023,Automotive,PVC,All,22.0219279644159
+East,2023,Automotive,PET,All,0
+East,2023,Automotive,"ABS, SAN",All,38.2864891407492
+East,2023,Automotive,PMMA,All,7.34064265480529
+East,2023,Automotive,"PA (PA6, PA66)",All,38.2864891407492
+East,2023,Automotive,PC,All,27.9232289222005
+East,2023,Automotive,Other Thermoplastics,All,146.956787265808
+East,2023,Automotive,PUR,All,89.6709877243862
+East,2023,Automotive,Other Plastics,All,45.6271317955545
+East,2023,Electrical and Electronics,"PE-LD, -LLD",All,73.5316961241519
+East,2023,Electrical and Electronics,"PE-HD, -MD",All,44.626132820175
+East,2023,Electrical and Electronics,PP,All,128.807247003687
+East,2023,Electrical and Electronics,PS,All,44.626132820175
+East,2023,Electrical and Electronics,PS-E,All,0
+East,2023,Electrical and Electronics,PVC,All,34.2302723336569
+East,2023,Electrical and Electronics,PET,All,2.53557572841903
+East,2023,Electrical and Electronics,"ABS, SAN",All,60.346702336373
+East,2023,Electrical and Electronics,PMMA,All,2.53557572841903
+East,2023,Electrical and Electronics,"PA (PA6, PA66)",All,57.8111266079539
+East,2023,Electrical and Electronics,PC,All,49.9508418498549
+East,2023,Electrical and Electronics,Other Thermoplastics,All,160.248386036083
+East,2023,Electrical and Electronics,PUR,All,84.1811141835119
+East,2023,Electrical and Electronics,Other Plastics,All,52.486417578274
+East,2023,Agriculture,"PE-LD, -LLD",All,98.0962055851087
+East,2023,Agriculture,"PE-HD, -MD",All,7.35273204568457
+East,2023,Agriculture,PP,All,98.0962055851087
+East,2023,Agriculture,PS,All,3.76603348681405
+East,2023,Agriculture,PS-E,All,0
+East,2023,Agriculture,PVC,All,25.8242296238677
+East,2023,Agriculture,PET,All,1.79334927943526
+East,2023,Agriculture,"ABS, SAN",All,0
+East,2023,Agriculture,PMMA,All,0
+East,2023,Agriculture,"PA (PA6, PA66)",All,0
+East,2023,Agriculture,PC,All,1.79334927943526
+East,2023,Agriculture,Other Thermoplastics,All,18.4714975781832
+East,2023,Agriculture,PUR,All,0
+East,2023,Agriculture,Other Plastics,All,35.1496458769311
+East,2023,"Household, Leisure, Sports","PE-LD, -LLD",All,12.9922062117339
+East,2023,"Household, Leisure, Sports","PE-HD, -MD",All,54.2738936909528
+East,2023,"Household, Leisure, Sports",PP,All,169.527335891818
+East,2023,"Household, Leisure, Sports",PS,All,32.6900672424272
+East,2023,"Household, Leisure, Sports",PS-E,All,2.09551713092482
+East,2023,"Household, Leisure, Sports",PVC,All,41.281687479219
+East,2023,"Household, Leisure, Sports",PET,All,2.09551713092482
+East,2023,"Household, Leisure, Sports","ABS, SAN",All,25.9844124234678
+East,2023,"Household, Leisure, Sports",PMMA,All,4.40058597494212
+East,2023,"Household, Leisure, Sports","PA (PA6, PA66)",All,4.40058597494212
+East,2023,"Household, Leisure, Sports",PC,All,6.49610310586694
+East,2023,"Household, Leisure, Sports",Other Thermoplastics,All,19.4883093176008
+East,2023,"Household, Leisure, Sports",PUR,All,8.59162023679176
+East,2023,"Household, Leisure, Sports",Other Plastics,All,71.6666858776288
+East,2023,Others,"PE-LD, -LLD",All,249.785642006239
+East,2023,Others,"PE-HD, -MD",All,120.492235028177
+East,2023,Others,PP,All,318.728155613665
+East,2023,Others,PS,All,42.9581011839588
+East,2023,Others,PS-E,All,0
+East,2023,Others,PVC,All,58.0458245266175
+East,2023,Others,PET,All,2.09551713092482
+East,2023,Others,"ABS, SAN",All,17.1832404735835
+East,2023,Others,PMMA,All,19.2787576045083
+East,2023,Others,"PA (PA6, PA66)",All,51.7592731338431
+East,2023,Others,PC,All,30.1754466853174
+East,2023,Others,Other Thermoplastics,All,92.621857186877
+East,2023,Others,PUR,All,385.365600377074
+East,2023,Others,Other Plastics,All,372.373394165341
+East,2023,Household packaging,"PE-LD, -LLD",All,860.511536711492
+East,2023,Household packaging,"PE-HD, -MD",All,491.144511123318
+East,2023,Household packaging,PP,All,632.533941486788
+East,2023,Household packaging,PS,All,78.8333544653917
+East,2023,Household packaging,PS-E,All,38.8081390578753
+East,2023,Household packaging,PVC,All,55.4515743185326
+East,2023,Household packaging,PET,All,562.227246227129
+East,2023,Household packaging,"ABS, SAN",All,2.72417227020227
+East,2023,Household packaging,PMMA,All,0
+East,2023,Household packaging,"PA (PA6, PA66)",All,8.1725168106068
+East,2023,Household packaging,PC,All,2.72417227020227
+East,2023,Household packaging,Other Thermoplastics,All,6.91520653205191
+East,2023,Household packaging,PUR,All,6.91520653205191
+East,2023,Household packaging,Other Plastics,All,25.9844124234678
+East,2023,Commercial & industrial packaging,"PE-LD, -LLD",All,494.449840144497
+East,2023,Commercial & industrial packaging,"PE-HD, -MD",All,282.155793633345
+East,2023,Commercial & industrial packaging,PP,All,363.463255324648
+East,2023,Commercial & industrial packaging,PS,All,45.2254507196195
+East,2023,Commercial & industrial packaging,PS-E,All,22.2669650332071
+East,2023,Commercial & industrial packaging,PVC,All,31.747084533511
+East,2023,Commercial & industrial packaging,PET,All,323.128741588607
+East,2023,Commercial & industrial packaging,"ABS, SAN",All,1.67641370473986
+East,2023,Commercial & industrial packaging,PMMA,All,0
+East,2023,Commercial & industrial packaging,"PA (PA6, PA66)",All,4.81968940112709
+East,2023,Commercial & industrial packaging,PC,All,1.67641370473986
+East,2023,Commercial & industrial packaging,Other Thermoplastics,All,3.98148254875716
+East,2023,Commercial & industrial packaging,PUR,All,3.98148254875716
+East,2023,Commercial & industrial packaging,Other Plastics,All,14.8781716295662
+Extra-EU27+3,2023,Building and Construction,"PE-LD, -LLD",All,0
+Extra-EU27+3,2023,Building and Construction,"PE-HD, -MD",All,0
+Extra-EU27+3,2023,Building and Construction,PP,All,0
+Extra-EU27+3,2023,Building and Construction,PS,All,0
+Extra-EU27+3,2023,Building and Construction,PS-E,All,0
+Extra-EU27+3,2023,Building and Construction,PVC,All,0
+Extra-EU27+3,2023,Building and Construction,PET,All,0
+Extra-EU27+3,2023,Building and Construction,"ABS, SAN",All,0
+Extra-EU27+3,2023,Building and Construction,PMMA,All,0
+Extra-EU27+3,2023,Building and Construction,"PA (PA6, PA66)",All,0
+Extra-EU27+3,2023,Building and Construction,PC,All,0
+Extra-EU27+3,2023,Building and Construction,Other Thermoplastics,All,0
+Extra-EU27+3,2023,Building and Construction,PUR,All,0
+Extra-EU27+3,2023,Building and Construction,Other Plastics,All,0
+Extra-EU27+3,2023,Automotive,"PE-LD, -LLD",All,0
+Extra-EU27+3,2023,Automotive,"PE-HD, -MD",All,0
+Extra-EU27+3,2023,Automotive,PP,All,0
+Extra-EU27+3,2023,Automotive,PS,All,0
+Extra-EU27+3,2023,Automotive,PS-E,All,0
+Extra-EU27+3,2023,Automotive,PVC,All,0
+Extra-EU27+3,2023,Automotive,PET,All,0
+Extra-EU27+3,2023,Automotive,"ABS, SAN",All,0
+Extra-EU27+3,2023,Automotive,PMMA,All,0
+Extra-EU27+3,2023,Automotive,"PA (PA6, PA66)",All,0
+Extra-EU27+3,2023,Automotive,PC,All,0
+Extra-EU27+3,2023,Automotive,Other Thermoplastics,All,0
+Extra-EU27+3,2023,Automotive,PUR,All,0
+Extra-EU27+3,2023,Automotive,Other Plastics,All,0
+Extra-EU27+3,2023,Electrical and Electronics,"PE-LD, -LLD",All,0
+Extra-EU27+3,2023,Electrical and Electronics,"PE-HD, -MD",All,0
+Extra-EU27+3,2023,Electrical and Electronics,PP,All,0
+Extra-EU27+3,2023,Electrical and Electronics,PS,All,0
+Extra-EU27+3,2023,Electrical and Electronics,PS-E,All,0
+Extra-EU27+3,2023,Electrical and Electronics,PVC,All,0
+Extra-EU27+3,2023,Electrical and Electronics,PET,All,0
+Extra-EU27+3,2023,Electrical and Electronics,"ABS, SAN",All,0
+Extra-EU27+3,2023,Electrical and Electronics,PMMA,All,0
+Extra-EU27+3,2023,Electrical and Electronics,"PA (PA6, PA66)",All,0
+Extra-EU27+3,2023,Electrical and Electronics,PC,All,0
+Extra-EU27+3,2023,Electrical and Electronics,Other Thermoplastics,All,0
+Extra-EU27+3,2023,Electrical and Electronics,PUR,All,0
+Extra-EU27+3,2023,Electrical and Electronics,Other Plastics,All,0
+Extra-EU27+3,2023,Agriculture,"PE-LD, -LLD",All,0
+Extra-EU27+3,2023,Agriculture,"PE-HD, -MD",All,0
+Extra-EU27+3,2023,Agriculture,PP,All,0
+Extra-EU27+3,2023,Agriculture,PS,All,0
+Extra-EU27+3,2023,Agriculture,PS-E,All,0
+Extra-EU27+3,2023,Agriculture,PVC,All,0
+Extra-EU27+3,2023,Agriculture,PET,All,0
+Extra-EU27+3,2023,Agriculture,"ABS, SAN",All,0
+Extra-EU27+3,2023,Agriculture,PMMA,All,0
+Extra-EU27+3,2023,Agriculture,"PA (PA6, PA66)",All,0
+Extra-EU27+3,2023,Agriculture,PC,All,0
+Extra-EU27+3,2023,Agriculture,Other Thermoplastics,All,0
+Extra-EU27+3,2023,Agriculture,PUR,All,0
+Extra-EU27+3,2023,Agriculture,Other Plastics,All,0
+Extra-EU27+3,2023,"Household, Leisure, Sports","PE-LD, -LLD",All,0
+Extra-EU27+3,2023,"Household, Leisure, Sports","PE-HD, -MD",All,0
+Extra-EU27+3,2023,"Household, Leisure, Sports",PP,All,0
+Extra-EU27+3,2023,"Household, Leisure, Sports",PS,All,0
+Extra-EU27+3,2023,"Household, Leisure, Sports",PS-E,All,0
+Extra-EU27+3,2023,"Household, Leisure, Sports",PVC,All,0
+Extra-EU27+3,2023,"Household, Leisure, Sports",PET,All,0
+Extra-EU27+3,2023,"Household, Leisure, Sports","ABS, SAN",All,0
+Extra-EU27+3,2023,"Household, Leisure, Sports",PMMA,All,0
+Extra-EU27+3,2023,"Household, Leisure, Sports","PA (PA6, PA66)",All,0
+Extra-EU27+3,2023,"Household, Leisure, Sports",PC,All,0
+Extra-EU27+3,2023,"Household, Leisure, Sports",Other Thermoplastics,All,0
+Extra-EU27+3,2023,"Household, Leisure, Sports",PUR,All,0
+Extra-EU27+3,2023,"Household, Leisure, Sports",Other Plastics,All,0
+Extra-EU27+3,2023,Others,"PE-LD, -LLD",All,0
+Extra-EU27+3,2023,Others,"PE-HD, -MD",All,0
+Extra-EU27+3,2023,Others,PP,All,0
+Extra-EU27+3,2023,Others,PS,All,0
+Extra-EU27+3,2023,Others,PS-E,All,0
+Extra-EU27+3,2023,Others,PVC,All,0
+Extra-EU27+3,2023,Others,PET,All,0
+Extra-EU27+3,2023,Others,"ABS, SAN",All,0
+Extra-EU27+3,2023,Others,PMMA,All,0
+Extra-EU27+3,2023,Others,"PA (PA6, PA66)",All,0
+Extra-EU27+3,2023,Others,PC,All,0
+Extra-EU27+3,2023,Others,Other Thermoplastics,All,0
+Extra-EU27+3,2023,Others,PUR,All,0
+Extra-EU27+3,2023,Others,Other Plastics,All,0
+Extra-EU27+3,2023,Household packaging,"PE-LD, -LLD",All,0
+Extra-EU27+3,2023,Household packaging,"PE-HD, -MD",All,0
+Extra-EU27+3,2023,Household packaging,PP,All,0
+Extra-EU27+3,2023,Household packaging,PS,All,0
+Extra-EU27+3,2023,Household packaging,PS-E,All,0
+Extra-EU27+3,2023,Household packaging,PVC,All,0
+Extra-EU27+3,2023,Household packaging,PET,All,0
+Extra-EU27+3,2023,Household packaging,"ABS, SAN",All,0
+Extra-EU27+3,2023,Household packaging,PMMA,All,0
+Extra-EU27+3,2023,Household packaging,"PA (PA6, PA66)",All,0
+Extra-EU27+3,2023,Household packaging,PC,All,0
+Extra-EU27+3,2023,Household packaging,Other Thermoplastics,All,0
+Extra-EU27+3,2023,Household packaging,PUR,All,0
+Extra-EU27+3,2023,Household packaging,Other Plastics,All,0
+Extra-EU27+3,2023,Commercial & industrial packaging,"PE-LD, -LLD",All,0
+Extra-EU27+3,2023,Commercial & industrial packaging,"PE-HD, -MD",All,0
+Extra-EU27+3,2023,Commercial & industrial packaging,PP,All,0
+Extra-EU27+3,2023,Commercial & industrial packaging,PS,All,0
+Extra-EU27+3,2023,Commercial & industrial packaging,PS-E,All,0
+Extra-EU27+3,2023,Commercial & industrial packaging,PVC,All,0
+Extra-EU27+3,2023,Commercial & industrial packaging,PET,All,0
+Extra-EU27+3,2023,Commercial & industrial packaging,"ABS, SAN",All,0
+Extra-EU27+3,2023,Commercial & industrial packaging,PMMA,All,0
+Extra-EU27+3,2023,Commercial & industrial packaging,"PA (PA6, PA66)",All,0
+Extra-EU27+3,2023,Commercial & industrial packaging,PC,All,0
+Extra-EU27+3,2023,Commercial & industrial packaging,Other Thermoplastics,All,0
+Extra-EU27+3,2023,Commercial & industrial packaging,PUR,All,0
+Extra-EU27+3,2023,Commercial & industrial packaging,Other Plastics,All,0
+Intra-EU27+3,2023,Building and Construction,"PE-LD, -LLD",All,0
+Intra-EU27+3,2023,Building and Construction,"PE-HD, -MD",All,0
+Intra-EU27+3,2023,Building and Construction,PP,All,0
+Intra-EU27+3,2023,Building and Construction,PS,All,0
+Intra-EU27+3,2023,Building and Construction,PS-E,All,0
+Intra-EU27+3,2023,Building and Construction,PVC,All,0
+Intra-EU27+3,2023,Building and Construction,PET,All,0
+Intra-EU27+3,2023,Building and Construction,"ABS, SAN",All,0
+Intra-EU27+3,2023,Building and Construction,PMMA,All,0
+Intra-EU27+3,2023,Building and Construction,"PA (PA6, PA66)",All,0
+Intra-EU27+3,2023,Building and Construction,PC,All,0
+Intra-EU27+3,2023,Building and Construction,Other Thermoplastics,All,0
+Intra-EU27+3,2023,Building and Construction,PUR,All,0
+Intra-EU27+3,2023,Building and Construction,Other Plastics,All,0
+Intra-EU27+3,2023,Automotive,"PE-LD, -LLD",All,0
+Intra-EU27+3,2023,Automotive,"PE-HD, -MD",All,0
+Intra-EU27+3,2023,Automotive,PP,All,0
+Intra-EU27+3,2023,Automotive,PS,All,0
+Intra-EU27+3,2023,Automotive,PS-E,All,0
+Intra-EU27+3,2023,Automotive,PVC,All,0
+Intra-EU27+3,2023,Automotive,PET,All,0
+Intra-EU27+3,2023,Automotive,"ABS, SAN",All,0
+Intra-EU27+3,2023,Automotive,PMMA,All,0
+Intra-EU27+3,2023,Automotive,"PA (PA6, PA66)",All,0
+Intra-EU27+3,2023,Automotive,PC,All,0
+Intra-EU27+3,2023,Automotive,Other Thermoplastics,All,0
+Intra-EU27+3,2023,Automotive,PUR,All,0
+Intra-EU27+3,2023,Automotive,Other Plastics,All,0
+Intra-EU27+3,2023,Electrical and Electronics,"PE-LD, -LLD",All,0
+Intra-EU27+3,2023,Electrical and Electronics,"PE-HD, -MD",All,0
+Intra-EU27+3,2023,Electrical and Electronics,PP,All,0
+Intra-EU27+3,2023,Electrical and Electronics,PS,All,0
+Intra-EU27+3,2023,Electrical and Electronics,PS-E,All,0
+Intra-EU27+3,2023,Electrical and Electronics,PVC,All,0
+Intra-EU27+3,2023,Electrical and Electronics,PET,All,0
+Intra-EU27+3,2023,Electrical and Electronics,"ABS, SAN",All,0
+Intra-EU27+3,2023,Electrical and Electronics,PMMA,All,0
+Intra-EU27+3,2023,Electrical and Electronics,"PA (PA6, PA66)",All,0
+Intra-EU27+3,2023,Electrical and Electronics,PC,All,0
+Intra-EU27+3,2023,Electrical and Electronics,Other Thermoplastics,All,0
+Intra-EU27+3,2023,Electrical and Electronics,PUR,All,0
+Intra-EU27+3,2023,Electrical and Electronics,Other Plastics,All,0
+Intra-EU27+3,2023,Agriculture,"PE-LD, -LLD",All,0
+Intra-EU27+3,2023,Agriculture,"PE-HD, -MD",All,0
+Intra-EU27+3,2023,Agriculture,PP,All,0
+Intra-EU27+3,2023,Agriculture,PS,All,0
+Intra-EU27+3,2023,Agriculture,PS-E,All,0
+Intra-EU27+3,2023,Agriculture,PVC,All,0
+Intra-EU27+3,2023,Agriculture,PET,All,0
+Intra-EU27+3,2023,Agriculture,"ABS, SAN",All,0
+Intra-EU27+3,2023,Agriculture,PMMA,All,0
+Intra-EU27+3,2023,Agriculture,"PA (PA6, PA66)",All,0
+Intra-EU27+3,2023,Agriculture,PC,All,0
+Intra-EU27+3,2023,Agriculture,Other Thermoplastics,All,0
+Intra-EU27+3,2023,Agriculture,PUR,All,0
+Intra-EU27+3,2023,Agriculture,Other Plastics,All,0
+Intra-EU27+3,2023,"Household, Leisure, Sports","PE-LD, -LLD",All,0
+Intra-EU27+3,2023,"Household, Leisure, Sports","PE-HD, -MD",All,0
+Intra-EU27+3,2023,"Household, Leisure, Sports",PP,All,0
+Intra-EU27+3,2023,"Household, Leisure, Sports",PS,All,0
+Intra-EU27+3,2023,"Household, Leisure, Sports",PS-E,All,0
+Intra-EU27+3,2023,"Household, Leisure, Sports",PVC,All,0
+Intra-EU27+3,2023,"Household, Leisure, Sports",PET,All,0
+Intra-EU27+3,2023,"Household, Leisure, Sports","ABS, SAN",All,0
+Intra-EU27+3,2023,"Household, Leisure, Sports",PMMA,All,0
+Intra-EU27+3,2023,"Household, Leisure, Sports","PA (PA6, PA66)",All,0
+Intra-EU27+3,2023,"Household, Leisure, Sports",PC,All,0
+Intra-EU27+3,2023,"Household, Leisure, Sports",Other Thermoplastics,All,0
+Intra-EU27+3,2023,"Household, Leisure, Sports",PUR,All,0
+Intra-EU27+3,2023,"Household, Leisure, Sports",Other Plastics,All,0
+Intra-EU27+3,2023,Others,"PE-LD, -LLD",All,0
+Intra-EU27+3,2023,Others,"PE-HD, -MD",All,0
+Intra-EU27+3,2023,Others,PP,All,0
+Intra-EU27+3,2023,Others,PS,All,0
+Intra-EU27+3,2023,Others,PS-E,All,0
+Intra-EU27+3,2023,Others,PVC,All,0
+Intra-EU27+3,2023,Others,PET,All,0
+Intra-EU27+3,2023,Others,"ABS, SAN",All,0
+Intra-EU27+3,2023,Others,PMMA,All,0
+Intra-EU27+3,2023,Others,"PA (PA6, PA66)",All,0
+Intra-EU27+3,2023,Others,PC,All,0
+Intra-EU27+3,2023,Others,Other Thermoplastics,All,0
+Intra-EU27+3,2023,Others,PUR,All,0
+Intra-EU27+3,2023,Others,Other Plastics,All,0
+Intra-EU27+3,2023,Household packaging,"PE-LD, -LLD",All,0
+Intra-EU27+3,2023,Household packaging,"PE-HD, -MD",All,0
+Intra-EU27+3,2023,Household packaging,PP,All,0
+Intra-EU27+3,2023,Household packaging,PS,All,0
+Intra-EU27+3,2023,Household packaging,PS-E,All,0
+Intra-EU27+3,2023,Household packaging,PVC,All,0
+Intra-EU27+3,2023,Household packaging,PET,All,0
+Intra-EU27+3,2023,Household packaging,"ABS, SAN",All,0
+Intra-EU27+3,2023,Household packaging,PMMA,All,0
+Intra-EU27+3,2023,Household packaging,"PA (PA6, PA66)",All,0
+Intra-EU27+3,2023,Household packaging,PC,All,0
+Intra-EU27+3,2023,Household packaging,Other Thermoplastics,All,0
+Intra-EU27+3,2023,Household packaging,PUR,All,0
+Intra-EU27+3,2023,Household packaging,Other Plastics,All,0
+Intra-EU27+3,2023,Commercial & industrial packaging,"PE-LD, -LLD",All,0
+Intra-EU27+3,2023,Commercial & industrial packaging,"PE-HD, -MD",All,0
+Intra-EU27+3,2023,Commercial & industrial packaging,PP,All,0
+Intra-EU27+3,2023,Commercial & industrial packaging,PS,All,0
+Intra-EU27+3,2023,Commercial & industrial packaging,PS-E,All,0
+Intra-EU27+3,2023,Commercial & industrial packaging,PVC,All,0
+Intra-EU27+3,2023,Commercial & industrial packaging,PET,All,0
+Intra-EU27+3,2023,Commercial & industrial packaging,"ABS, SAN",All,0
+Intra-EU27+3,2023,Commercial & industrial packaging,PMMA,All,0
+Intra-EU27+3,2023,Commercial & industrial packaging,"PA (PA6, PA66)",All,0
+Intra-EU27+3,2023,Commercial & industrial packaging,PC,All,0
+Intra-EU27+3,2023,Commercial & industrial packaging,Other Thermoplastics,All,0
+Intra-EU27+3,2023,Commercial & industrial packaging,PUR,All,0
+Intra-EU27+3,2023,Commercial & industrial packaging,Other Plastics,All,0
