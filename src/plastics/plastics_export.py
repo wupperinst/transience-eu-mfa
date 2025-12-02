@@ -148,7 +148,7 @@ class PlasticsDataExporter(CustomDataExporter):
         # App layout
         app.layout = [
             # header
-            html.Div(children=f'EU-MFA Plastics Dashboard {scenario} - scenario', style={'fontSize': 30, 'textAlign': 'center'}),
+            html.Div(children=f'EU-MFA Plastics Dashboard - {scenario} scenario', style={'fontSize': 30, 'textAlign': 'center'}),
             html.Br(),
             html.Br(),
             # GRAPHS
