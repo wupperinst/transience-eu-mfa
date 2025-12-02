@@ -89,7 +89,9 @@ class GeneralCfg(EUMFABaseModel):
     visualization: VisualizationCfg
     output_path: str
     do_export: dict[str, bool]
-    selected_export: dict = {"csv_selected_flows": []} # list of flow names to export to csv
+    selected_export: dict = {"csv_selected_flows": [], # list of flow names to export to csv
+                             "csv_selected_stocks": [], # list of flow stocks to export to csv
+                             "csv_slice_stocks": {}} # slices of stocks to export to csv
 
     @classmethod
     def from_model_class(cls, **kwargs) -> "GeneralCfg":

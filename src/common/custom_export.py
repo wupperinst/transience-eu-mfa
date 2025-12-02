@@ -52,6 +52,29 @@ class CustomDataExporter(EUMFABaseModel):
                 logging.INFO(f"Export to csv: flow '{flow_name}' not found in provided flow_dfs dictionary.")
                 continue
 
+
+    def export_sliced_stocks_to_csv(self, mfa: fd.MFASystem, stock_names: list[str], slice_dicts: list[Dict]):
+        '''Export sliced stocks from the flodym MFA system to CSV files.'''
+        dir_out = os.path.join(self.export_path(), "stocks")
+        if not os.path.exists(dir_out):
+            os.makedirs(dir_out)
+        for stock_name in stock_names:
+            try:
+                stock = mfa.stocks[stock_name].stock
+                df_stock = stock.to_df(index=False)
+                print(df_stock.columns)
+                sliced_stock = df_stock
+                for slice_dict in slice_dicts:
+                    for col, vals in slice_dict.items():
+                        print(col) 
+                        print(vals)
+                        sliced_stock = sliced_stock[sliced_stock[col].isin(vals)]
+                sliced_stock.to_csv(os.path.join(dir_out, f"{fde.helper.to_valid_file_name(stock_name)}_sliced.csv"))
+            except KeyError:
+                logging.INFO(f"Export to csv: stock '{stock_name}' not found in MFA system.")
+                continue
+
+
     def export_path(self, filename: str = None):
         path_tuple = (self.output_path, "export")
         if filename is not None:
