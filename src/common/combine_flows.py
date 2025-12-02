@@ -1,171 +1,172 @@
+
+# src/common/combine_flows.py
+
 import logging
 import os
+from typing import Optional, List, Dict, Tuple
+import re
+
 import pandas as pd
-import flodym as fd  
+
 
 class FlowCalculator:
-    # Function to sanitize file names
-    def sanitize_filename(filename):
+    @staticmethod
+    def sanitize_filename(filename: str) -> str:
         return filename.replace("=>", "_to_").replace(" ", "_")
 
-    def map_dimensions(self, original_df, mapping_dict):
-        mapping_df = pd.DataFrame(mapping_dict)
-        mapping_df['factor'] = pd.to_numeric(mapping_df.get('factor', 1), errors='coerce').fillna(1.0)
-        df_flat = original_df.reset_index() if 'value' in original_df else original_df.copy()
-        if 'value' not in df_flat.columns and 'Value' in df_flat.columns:
-            df_flat = df_flat.rename(columns={'Value': 'value'})
-        if 'value' not in df_flat.columns:
-            raise ValueError("'value' Spalte nicht gefunden für Mapping.")
-        df_flat['cumulative_factor'] = 1.0
-        for dimension in mapping_df['original_dimension'].unique():
-            dim_map = mapping_df[mapping_df['original_dimension']==dimension]
-            element_to_target = dict(zip(dim_map['original_element'], dim_map['target_element']))
-            element_to_factor = dict(zip(dim_map['original_element'], dim_map['factor']))
-            target_dimension = dim_map['target_dimension'].iloc[0]
-            if dimension in df_flat.columns:
-                df_flat[dimension + '_original'] = df_flat[dimension]
-                df_flat[dimension] = df_flat[dimension].map(element_to_target).fillna(df_flat[dimension])
-                df_flat['factor_' + dimension] = df_flat[dimension + '_original'].map(element_to_factor).fillna(1.0)
-                df_flat['cumulative_factor'] *= df_flat['factor_' + dimension]
-                if target_dimension != dimension:
-                    df_flat.rename(columns={dimension: target_dimension}, inplace=True)
-        df_flat['value'] = df_flat['value'] * df_flat['cumulative_factor']
-        helper_cols = [c for c in df_flat.columns if c.startswith('factor_') or c.endswith('_original') or c=='cumulative_factor']
-        df_flat.drop(columns=helper_cols, inplace=True)
-        index_cols = [c for c in df_flat.columns if c != 'value']
-        remapped = df_flat.groupby(index_cols, as_index=False)['value'].sum()
-        return remapped
+    @staticmethod
+    def _read_dim_items(path: str, sep: Optional[str] = None) -> List[str]:
+        df = pd.read_csv(path, sep=sep or None, engine="python")
+        if df.empty:
+            return []
+        first_col = df.columns[0]
+        return df[first_col].dropna().astype(str).str.replace("\ufeff", "", regex=False).str.strip().tolist()
 
-
-    def map_dimensions_dual_targets(
+    # --- Region mapping (pandas) ---
+    def build_region_map_df(
         self,
-        original_df: pd.DataFrame,
-        mapping_df: pd.DataFrame,
-        value_col: str = "value",
-        drop_source_dims: bool = True,
+        mapping_csv: str,
+        *,
+        src_dim: str,
+        tgt_dim: str,
+        sep: Optional[str] = None,
     ) -> pd.DataFrame:
-        """
-        Map each original_dimension/original_element to up to two target dimensions at once,
-        replicating rows and multiplying by 'factor'. Overlapping factors are allowed (sum != 1).
+        m = pd.read_csv(mapping_csv, sep=sep or None, engine="python")
+        m["factor"] = pd.to_numeric(m.get("factor", 1.0), errors="coerce").fillna(1.0)
+        for col in ("original_dimension", "original_element", "target_dimension", "target_element"):
+            if col in m.columns:
+                m[col] = m[col].astype(str).str.replace("\ufeff", "", regex=False).str.strip()
+        sel = m[m["original_dimension"] == src_dim].copy()
+        sel = sel.rename(columns={"original_element": src_dim, "target_element": tgt_dim})
+        return sel[[src_dim, tgt_dim, "factor"]]
 
-        Mapping columns (supported):
-
-          - original_dimension
-          - original_element
-
-          - target_dimension_1 / target_element_1
-          - target_dimension_2 / target_element_2
-
-          - OR duplicated headers: target_dimension, target_element, target_dimension.1, target_element.1
-          - factor (optional; defaults to 1.0)
-
-          - comment (ignored)
-
-        Behavior:
-
-          - For each rule row, filters rows where df[original_dimension] == original_element,
-
-            writes target_element(s) into the named target_dimension(s), multiplies value by factor,
-            and concatenates all splits.
-
-          - Does not require factors to sum to 1; totals can increase (intentional overlap).
-
-        """
-        # Normalize input df
-        df = original_df.reset_index() if value_col not in original_df.columns else original_df.copy()
+    def apply_region_map_array(
+        self,
+        flow_df: pd.DataFrame,
+        *,
+        src_dim: str,
+        tgt_dim: str,
+        mapping_csv: str,
+        value_col: str = "value",
+        sep: Optional[str] = None,
+    ) -> pd.DataFrame:
+        df = flow_df.copy()
         if value_col not in df.columns and "Value" in df.columns:
             df = df.rename(columns={"Value": value_col})
-        if value_col not in df.columns:
-            raise ValueError(f"Column '{value_col}' not found.")
-        df[value_col] = pd.to_numeric(df[value_col], errors="coerce").fillna(0)
+        map_df = self.build_region_map_df(mapping_csv, src_dim=src_dim, tgt_dim=tgt_dim, sep=sep)
+        # Merge on src_dim -> create target dim and factor, then scale values
+        merged = df.merge(map_df, on=src_dim, how="inner")
+        merged[value_col] = pd.to_numeric(merged[value_col], errors="coerce").fillna(0) * merged["factor"]
+        # Replace source region with target region
+        merged = merged.drop(columns=[src_dim, "factor"]).rename(columns={tgt_dim: tgt_dim})
+        return merged
 
-        # Prepare mapping
-        m = mapping_df.copy()
-        # Factor
-        if "factor" not in m.columns:
-            m["factor"] = 1.0
-        m["factor"] = pd.to_numeric(m["factor"], errors="coerce").fillna(1.0)
+    # --- Products/materials mapping (pandas) ---
+    def build_products_map_array(
+        self,
+        mapping_csv: str,
+        *,
+        orig_dim: str,
+        target_pairs: List[Tuple[str, str]],  # [(target_dimension_col, target_element_col), ...]
+        region_col: Optional[str] = None,
+        dim_catalog: Optional[Dict[str, Tuple[str, Optional[str]]]] = None,  # name -> (csv_path, sep)
+        sep: Optional[str] = None,
+    ) -> pd.DataFrame:
+        m = pd.read_csv(mapping_csv, sep=sep or None, engine="python")
+        m["factor"] = pd.to_numeric(m.get("factor", 1.0), errors="coerce").fillna(1.0)
+        for c in m.columns:
+            if m[c].dtype == object:
+                m[c] = m[c].astype(str).str.replace("\ufeff", "", regex=False).str.strip()
 
-        # Find target dimension/element pairs (support both numbered and duplicated headers)
-        dim_cols = [c for c in m.columns if c.startswith("target_dimension")]
-        elem_cols = [c for c in m.columns if c.startswith("target_element")]
-        # If duplicates like 'target_dimension' and 'target_dimension.1' exist, include them
-        dim_cols = sorted(dim_cols, key=lambda x: (x.rstrip(".0123456789"), x))
-        elem_cols = sorted(elem_cols, key=lambda x: (x.rstrip(".0123456789"), x))
-        pairs = []
-        for i in range(min(len(dim_cols), len(elem_cols))):
-            pairs.append((dim_cols[i], elem_cols[i]))
-        if not pairs:
-            raise ValueError("No target_dimension/target_element pairs found in mapping_df.")
+        rows = []
+        for _, r in m.iterrows():
+            base = {orig_dim: r["original_element"], "factor": r["factor"]}
+            if region_col and "target_region" in r and pd.notna(r["target_region"]):
+                base["target_region"] = str(r["target_region"]).strip()
+            if "target_parameter" in r and pd.notna(r["target_parameter"]):
+                base["target_parameter"] = str(r["target_parameter"]).strip()
 
-        # Apply mapping per original_dimension group
-        result_df = df.copy()
-        for odim, grp in m.groupby("original_dimension"):
-            if odim not in result_df.columns:
-                continue
-
-            # Base rows to be split for any of the listed original_elements
-            orig_elements = grp["original_element"].dropna().unique()
-            mask_any = result_df[odim].isin(orig_elements)
-            base_rows = result_df[mask_any]
-            if base_rows.empty:
-                continue
-            remainder = result_df[~mask_any]
-
-            mapped_parts = []
-            for _, rule in grp.iterrows():
-                oe = rule["original_element"]
-                sub = base_rows[base_rows[odim] == oe].copy()
-                if sub.empty:
+            parts = [base]
+            for dcol, ecol in target_pairs:
+                tgt_dim_name = str(r.get(dcol, "")).strip()
+                tgt_elem_val = r.get(ecol, "")
+                if not tgt_dim_name:
                     continue
-
-                # Write each target pair
-                for dcol, ecol in pairs:
-                    tgt_dim_name = rule[dcol]
-                    tgt_elem_val = rule[ecol]
-                    if pd.isna(tgt_dim_name) or pd.isna(tgt_elem_val):
+                is_all = isinstance(tgt_elem_val, str) and tgt_elem_val.strip().lower() == "all"
+                if is_all and dim_catalog and tgt_dim_name in dim_catalog:
+                    csv_path, csv_sep = dim_catalog[tgt_dim_name]
+                    items = self._read_dim_items(csv_path, sep=csv_sep)
+                    if not items:
+                        logging.warning(f"No items for dimension '{tgt_dim_name}' to expand 'all'.")
                         continue
-                    # Create/overwrite the target dimension column using its NAME from the mapping
-                    sub[str(tgt_dim_name)] = tgt_elem_val
+                    new_parts = []
+                    for p in parts:
+                        for it in items:
+                            q = dict(p)
+                            q[tgt_dim_name] = it
+                            new_parts.append(q)
+                    parts = new_parts or parts
+                else:
+                    for i in range(len(parts)):
+                        parts[i] = dict(parts[i])
+                        parts[i][tgt_dim_name] = tgt_elem_val
 
-                # Multiply by factor
-                sub[value_col] = sub[value_col] * float(rule["factor"])
-                mapped_parts.append(sub)
+            rows.extend(parts)
 
-            # Replace matched rows with concatenated splits
-            if mapped_parts:
-                result_df = pd.concat([remainder, pd.concat(mapped_parts, ignore_index=True)], ignore_index=True)
+        return pd.DataFrame(rows)
 
-        # Optionally drop source dimensions used in mapping
-        if drop_source_dims:
-            for s in m["original_dimension"].unique():
-                if s in result_df.columns:
-                    result_df = result_df.drop(columns=[s])
+    def apply_products_map_array(
+        self,
+        flow_df: pd.DataFrame,
+        mapping_df: pd.DataFrame,
+        *,
+        orig_dim: str,
+        target_dims: List[str],
+        region_col: Optional[str],
+        value_col: str = "value",
+        aggregate: bool = True,  #  aggregate identical keys
+        group_keys: Optional[List[str]] = None,  #  override keys if needed
+    ) -> pd.DataFrame:
+        df = flow_df.copy()
+        df[value_col] = pd.to_numeric(df.get(value_col, df.get("Value", 0)), errors="coerce").fillna(0)
+        map_df = mapping_df.copy()
 
-        # Aggregate over all dims except value
-        idx_cols = [c for c in result_df.columns if c != value_col]
-        result_df[value_col] = pd.to_numeric(result_df[value_col], errors="coerce").fillna(0)
-        out = result_df.groupby(idx_cols, as_index=False)[value_col].sum()
+        # Optional region selector
+        if region_col and "target_region" in map_df.columns:
+            reg_unique = df[region_col].astype(str).str.strip().unique()
+            map_df = map_df[
+                (map_df["target_region"].astype(str).str.lower() == "all")
+                | (map_df["target_region"].astype(str).str.strip().isin(reg_unique))
+            ]
+
+        if "target_parameter" in map_df.columns:
+            map_df = map_df.rename(columns={"target_parameter": "parameter"})
+
+        # Merge on original dimension, add target dims, scale by factor
+        merged = df.merge(map_df, on=orig_dim, how="inner")
+        merged[value_col] = merged[value_col] * pd.to_numeric(merged["factor"], errors="coerce").fillna(0)
+        merged = merged.drop(columns=["factor", orig_dim, "target_region"], errors="ignore")
+
+        # Auto-detect mapped dimension columns created by the mapping
+        auto_mapped_dims = [
+            c for c in map_df.columns
+            if c not in {orig_dim, "factor", "target_region", "target_parameter", "parameter"}
+        ]
+        # Keep passed target_dims plus auto-detected ones, plus any existing dims and optional parameter
+        keep_cols = list(dict.fromkeys(
+            (target_dims or []) + auto_mapped_dims + list(df.columns) + ["parameter", value_col]
+        ))
+        keep_cols = [c for c in keep_cols if c in merged.columns]
+        out = merged[keep_cols].copy()
+        # aggregate duplicates (e.g., same Time × Region × Product × Sector)
+        if aggregate:
+            keys = group_keys or [c for c in out.columns if c != value_col]
+            out[value_col] = pd.to_numeric(out[value_col], errors="coerce").fillna(0)
+            out = out.groupby(keys, as_index=False)[value_col].sum()
+
         return out
 
-    def map_building_flows_to_material(self, building_flows_df, mapping_csv_path,
-                                      source_col='Building type', target_col='Concrete product simple',
-                                      value_col='value', agg_cols=None):
-        """
-        Mappt Gebäudeflows (z.B. nach Gebäudetyp) auf Material-Endnutzungen (z.B. Zementprodukte)
-        mittels einer Mapping-Tabelle (CSV). Gibt DataFrame mit gemappten und aggregierten Flows zurück.
-        """
-        mapping_df = pd.read_csv(mapping_csv_path, delimiter=';')
-        # Merge: ordnet jedem Gebäudetyp die Ziel-Endnutzung zu
-        merged = pd.merge(building_flows_df, mapping_df, on=source_col, how='left')
-        # Aggregation: summiere nach Ziel-Endnutzung und ggf. weiteren Dimensionen
-        if agg_cols is None:
-            agg_cols = [c for c in merged.columns if c not in [source_col, value_col]]
-            if target_col not in agg_cols:
-                agg_cols.append(target_col)
-        grouped = merged.groupby(agg_cols, as_index=False)[value_col].sum()
-        return grouped
-
+    # --- Residual future (pandas) ---
     def compute_residual_flodym(
         self,
         start_value_df: pd.DataFrame,
@@ -173,39 +174,23 @@ class FlowCalculator:
         growth_rate_df: pd.DataFrame,
         *,
         base_year: int,
-        key_cols: tuple | list | None = None,
-        time_col: str = 'Time',
-        value_col: str = 'value',
-        default_fill: str = 'Unknown',
-        fill_values_per_df: dict[str, dict] | None = None,
+        key_cols: Tuple[str, ...] | List[str] | None = None,
+        time_col: str = "Time",
+        value_col: str = "value",
+        default_fill: str = "Unknown",
+        fill_values_per_df: Optional[Dict[str, Dict]] = None,
     ) -> pd.DataFrame:
-        """
-        Residual = (top-down at base_year) − (bottom-up at base_year), then project by growth factors.
-
-
-        - If key_cols is None: auto-align on the intersection of non-value, non-time columns
-
-          present in BOTH start_value_df and bottom_up_df (after filling).
-
-        - fill_values_per_df lets you inject constant dims per dataset, e.g.:
-
-            {'bottom_up': {'End use sector': 'Buildings'}}
-
-        - Growth dims not in the residual keys are broadcast across residual combinations.
-
-        """
         def _ensure_value(df: pd.DataFrame) -> pd.DataFrame:
             if value_col not in df.columns:
-                for alt in ['Value', 'VALUE', 'val', 'growth', 'Growth', 'factor', 'Factor']:
+                for alt in ["Value", "VALUE", "val", "growth", "Growth", "factor", "Factor"]:
                     if alt in df.columns:
                         df = df.rename(columns={alt: value_col})
                         break
             if value_col not in df.columns:
                 raise ValueError(f"Column '{value_col}' not found in DataFrame with columns {df.columns.tolist()}")
-            df[value_col] = pd.to_numeric(df[value_col], errors='coerce').fillna(0)
+            df[value_col] = pd.to_numeric(df[value_col], errors="coerce").fillna(0)
             return df
 
-        # Normalize
         start_value_df = _ensure_value(start_value_df.copy())
         bottom_up_df = _ensure_value(bottom_up_df.copy())
         growth_rate_df = _ensure_value(growth_rate_df.copy())
@@ -213,11 +198,11 @@ class FlowCalculator:
         if time_col not in start_value_df.columns or time_col not in bottom_up_df.columns:
             raise ValueError(f"time_col '{time_col}' must exist in both start_value_df and bottom_up_df.")
 
-        # Inject constant dims per dataset (optional)
+        # Optional fills
         if fill_values_per_df:
-            sv_fills = fill_values_per_df.get('start_value', {})
-            bu_fills = fill_values_per_df.get('bottom_up', {})
-            gr_fills = fill_values_per_df.get('growth_rate', {})
+            sv_fills = fill_values_per_df.get("start_value", {})
+            bu_fills = fill_values_per_df.get("bottom_up", {})
+            gr_fills = fill_values_per_df.get("growth_rate", {})
             for k, v in sv_fills.items():
                 if k not in start_value_df.columns:
                     start_value_df[k] = v
@@ -228,7 +213,7 @@ class FlowCalculator:
                 if k not in growth_rate_df.columns:
                     growth_rate_df[k] = v
 
-        # If key_cols provided, use only those present in BOTH; else find intersection
+        # Determine alignment keys
         if key_cols is None:
             start_keys = set(start_value_df.columns) - {value_col, time_col}
             bu_keys = set(bottom_up_df.columns) - {value_col, time_col}
@@ -241,43 +226,38 @@ class FlowCalculator:
             if dropped:
                 logging.warning(f"compute_residual_flodym: dropping keys not shared by start/bottom_up: {dropped}")
 
-        # Base-year slices
+        # Base-year aggregation
         sv_base = start_value_df[start_value_df[time_col] == base_year]
         bu_base = bottom_up_df[bottom_up_df[time_col] == base_year]
-
-        # Aggregate on align_keys
         if align_keys:
-            sv_base_agg = sv_base.groupby(align_keys, as_index=False)[value_col].sum().rename(columns={value_col: 'start_val'})
-            bu_base_agg = bu_base.groupby(align_keys, as_index=False)[value_col].sum().rename(columns={value_col: 'bu_val'})
-            base_merged = sv_base_agg.merge(bu_base_agg, on=align_keys, how='outer').fillna(0)
+            sv_base_agg = sv_base.groupby(align_keys, as_index=False)[value_col].sum().rename(columns={value_col: "start_val"})
+            bu_base_agg = bu_base.groupby(align_keys, as_index=False)[value_col].sum().rename(columns={value_col: "bu_val"})
+            base_merged = sv_base_agg.merge(bu_base_agg, on=align_keys, how="outer").fillna(0)
         else:
-            base_merged = pd.DataFrame({
-                'start_val': [sv_base[value_col].sum()],
-                'bu_val': [bu_base[value_col].sum()]
-            })
-        base_merged['residual_base'] = (base_merged.get('start_val', 0) - base_merged.get('bu_val', 0)).clip(lower=0)
-        residual_base = base_merged[(align_keys if align_keys else []) + ['residual_base']]
+            base_merged = pd.DataFrame({"start_val": [sv_base[value_col].sum()], "bu_val": [bu_base[value_col].sum()]})
 
-        # Ensure base-year exists in growth
+        base_merged["residual_base"] = (base_merged.get("start_val", 0) - base_merged.get("bu_val", 0)).clip(lower=0)
+        residual_base = base_merged[(align_keys if align_keys else []) + ["residual_base"]]
+
+        # Ensure base-year in growth_rate
         if base_year not in set(growth_rate_df[time_col].unique()):
             stub = growth_rate_df.iloc[:1].copy()
             stub[time_col] = base_year
             stub[value_col] = 1.0
             growth_rate_df = pd.concat([growth_rate_df, stub], ignore_index=True)
 
-        # Broadcast growth across residual keys not present in growth
+        # Broadcast growth across missing keys
         for k in (align_keys or []):
             if k not in growth_rate_df.columns:
                 uniques = residual_base[[k]].drop_duplicates()
-                growth_rate_df = growth_rate_df.assign(__k=1).merge(uniques.assign(__k=1), on='__k').drop(columns='__k')
+                growth_rate_df = growth_rate_df.assign(__k=1).merge(uniques.assign(__k=1), on="__k").drop(columns="__k")
 
-        # Merge and project
-        gr_merged = growth_rate_df.merge(residual_base, on=align_keys, how='left') if align_keys else \
-                    growth_rate_df.assign(residual_base=float(residual_base['residual_base'].iloc[0] if not residual_base.empty else 0))
-        gr_merged['residual_base'] = gr_merged['residual_base'].fillna(0)
-        gr_merged[value_col] = gr_merged['residual_base'] * gr_merged[value_col]
-        mask_base = (gr_merged[time_col] == base_year)
-        gr_merged.loc[mask_base, value_col] = gr_merged.loc[mask_base, 'residual_base']
+        # Merge and project residual
+        gr_merged = growth_rate_df.merge(residual_base, on=align_keys, how="left") if align_keys else \
+            growth_rate_df.assign(residual_base=float(residual_base["residual_base"].iloc[0] if not residual_base.empty else 0))
+        gr_merged["residual_base"] = gr_merged["residual_base"].fillna(0)
+        gr_merged[value_col] = gr_merged["residual_base"] * gr_merged[value_col]
+        gr_merged.loc[gr_merged[time_col] == base_year, value_col] = gr_merged.loc[gr_merged[time_col] == base_year, "residual_base"]
 
         out_cols = (align_keys if align_keys else []) + [time_col, value_col]
         return gr_merged[out_cols]
@@ -285,64 +265,41 @@ class FlowCalculator:
     def compute_total_future_flodym(
         self,
         *,
-        key_cols: tuple | list,
-        time_col: str = 'Time',
-        value_col: str = 'value',
-        base_year: int | None = None,
+        key_cols: Tuple[str, ...] | List[str],
+        time_col: str = "Time",
+        value_col: str = "value",
+        base_year: Optional[int] = None,
         include_base_year: bool = False,
-        flows: dict[str, pd.DataFrame] | None = None,
-        bottom_up_df: pd.DataFrame | None = None,
-        residual_df: pd.DataFrame | None = None,
-        fill_values_per_df: dict[str, dict] | None = None,
-        default_fill: str = 'Unknown'
+        flows: Optional[Dict[str, pd.DataFrame]] = None,
+        bottom_up_df: Optional[pd.DataFrame] = None,
+        residual_df: Optional[pd.DataFrame] = None,
+        fill_values_per_df: Optional[Dict[str, Dict]] = None,
+        default_fill: str = "Unknown",
     ) -> pd.DataFrame:
-        """
-        Generic total for future flows: sum across multiple inputs after an optional base_year cut.
-
-        Inputs:
-
-          - key_cols: list/tuple of alignment dimensions
-          - base_year: if provided, filters to years > base_year (or >= with include_base_year=True)
-
-          - flows: dict name -> DataFrame (preferred generic path)
-          - or bottom_up_df/residual_df: kept for backward compatibility
-
-          - fill_values_per_df: optional dict of per-dataset fill values, e.g.:
-
-              {'bottom_up': {'End use sector': 'Buildings', 'Region simple': 'EU28'},
-               'residual':  {'End use sector': 'Residual',  'Region simple': 'EU28'}}
-
-          - default_fill: fallback for any missing key column
-
-        Returns a DataFrame grouped by key_cols + time_col with summed values.
-        """
         def _ensure_value(df: pd.DataFrame) -> pd.DataFrame:
             if value_col not in df.columns:
-                for alt in ['Value', 'VALUE', 'val', 'residual', 'Residual']:
+                for alt in ["Value", "VALUE", "val", "residual", "Residual"]:
                     if alt in df.columns:
                         df = df.rename(columns={alt: value_col})
                         break
             if value_col not in df.columns:
                 raise ValueError(f"Column '{value_col}' not found in DataFrame with columns {df.columns.tolist()}")
-            df[value_col] = pd.to_numeric(df[value_col], errors='coerce').fillna(0)
+            df[value_col] = pd.to_numeric(df[value_col], errors="coerce").fillna(0)
             return df
 
-        # Build a dict of inputs
-        items: list[tuple[str, pd.DataFrame]] = []
+        items: List[Tuple[str, pd.DataFrame]] = []
         if flows is not None:
             items.extend(list(flows.items()))
         if bottom_up_df is not None:
-            items.append(('bottom_up', bottom_up_df))
+            items.append(("bottom_up", bottom_up_df))
         if residual_df is not None:
-            items.append(('residual', residual_df))
+            items.append(("residual", residual_df))
         if not items:
             raise ValueError("No inputs provided. Pass 'flows' dict or bottom_up_df/residual_df.")
 
-        # Normalize, fill missing key columns per dataset
         normed = []
         for name, df in items:
             df = _ensure_value(df.copy())
-            # Fill missing key columns
             for k in key_cols:
                 if k not in df.columns:
                     fill_val = default_fill
@@ -351,65 +308,83 @@ class FlowCalculator:
                     df[k] = fill_val
             normed.append(df)
 
-        # Concatenate
         cat = pd.concat(normed, ignore_index=True, sort=False)
-
-        # Optional future filter
         if base_year is not None:
-            if include_base_year:
-                cat = cat[cat[time_col] >= base_year]
-            else:
-                cat = cat[cat[time_col] > base_year]
+            cat = cat[cat[time_col] >= base_year] if include_base_year else cat[cat[time_col] > base_year]
 
-        # Sum by keys + time
         needed_cols = list(key_cols) + [time_col, value_col]
         cat = cat[[c for c in cat.columns if c in needed_cols]].copy()
         total_df = cat.groupby(list(key_cols) + [time_col], as_index=False)[value_col].sum()
-
         return total_df
 
-
-    def combine_hist_future_flodym(self, historic_path, future_path, output_path,
-                                   time_col='Time', value_col='value',
-                                   fill_value_dim='Unknown', base_year=None):
-        """Kombiniert historic + future CSV via optional flodym; summiert überlappende Jahre.
-        Warnung bei negativen Jahren. Schreibt output_path und gibt kombinierten DataFrame zurück.
-        """
+    def combine_hist_future_flodym(
+        self,
+        historic_path: str,
+        future_path: str,
+        output_path: str,
+        time_col: str = "Time",
+        value_col: str = "value",
+        fill_value_dim: str = "Unknown",
+        base_year: Optional[int] = None,
+    ) -> pd.DataFrame:
         if not (os.path.exists(historic_path) and os.path.exists(future_path)):
-            raise FileNotFoundError(f"Dateien nicht gefunden: {historic_path} / {future_path}")
+            raise FileNotFoundError(f"Files not found: {historic_path} / {future_path}")
         hist = pd.read_csv(historic_path)
         fut = pd.read_csv(future_path)
-        # Optional: für Stocks historische Jahre auf <= base_year beschränken und Zukunft > base_year
-        if base_year is not None and historic_path.endswith('_stock.csv'):
-            if time_col in hist.columns:
-                hist = hist[hist[time_col] <= base_year]
-            if time_col in fut.columns:
-                fut = fut[fut[time_col] > base_year]
-        # Negative Jahre prüfen
-        for name, df in (('historic', hist), ('future', fut)):
-            if time_col in df.columns:
-                neg = df[df[time_col] < 0]
-                if not neg.empty:
-                    logging.warning(f"Negative Jahre in {name}: {sorted(neg[time_col].unique())}")
-        # Spaltenunion
+
+
+
         all_cols = sorted(set(hist.columns) | set(fut.columns))
         for df in (hist, fut):
             for c in all_cols:
                 if c not in df.columns:
                     df[c] = fill_value_dim if c != value_col else 0
-        for df in (hist, fut):
-            df[value_col] = pd.to_numeric(df[value_col], errors='coerce').fillna(0)
-        try:
+            df[value_col] = pd.to_numeric(df[value_col], errors="coerce").fillna(0)
 
-            dims = [c for c in all_cols if c != value_col]
-            da_hist = fd.from_dataframe(hist[dims + [value_col]], dims=dims, value_col=value_col)
-            da_fut = fd.from_dataframe(fut[dims + [value_col]], dims=dims, value_col=value_col)
-            da_comb = da_hist + da_fut
-            combined_df = da_comb.to_df().reset_index()
-        except Exception:
-            combined_df = pd.concat([hist[all_cols], fut[all_cols]], ignore_index=True)
-            dims = [c for c in all_cols if c != value_col]
-            combined_df = combined_df.groupby(dims, as_index=False)[value_col].sum()
+        combined_df = pd.concat([hist[all_cols], fut[all_cols]], ignore_index=True)
+        dims = [c for c in all_cols if c != value_col]
+        combined_df = combined_df.groupby(dims, as_index=False)[value_col].sum()
         combined_df.to_csv(output_path, index=False)
-        logging.info(f"Combined geschrieben: {output_path}")
+        logging.info(f"Combined written: {output_path}")
         return combined_df
+
+def _parse_cohort_years(cohort_str):
+    # Gibt (start_jahr, end_jahr) zurück, z.B. '1970-1989' → (1970, 1989), '2040<' → (2040, 9999)
+    s = str(cohort_str).strip()
+    if s.startswith(">"):
+        return (0, int(s[1:]))
+    if s.endswith("<"):
+        return (int(s[:-1]), 9999)
+    if "-" in s:
+        a, b = s.split("-")
+        return (int(a), int(b))
+    if s.isdigit():
+        y = int(s)
+        return (y, y)
+    return (None, None)
+
+def _filter_and_split_buildings_eol(df, baseyear):
+    """
+    Gibt nur den Teil der EoL-Flüsse zurück, der nach dem baseyear liegt.
+    Falls Kohorte baseyear schneidet, wird anteilig gesplittet.
+    """
+    result = []
+    for _, row in df.iterrows():
+        start, end = _parse_cohort_years(row["Age cohort"])
+        if start is None or end is None:
+            continue
+        # Kohorte NACH baseyear: komplett übernehmen
+        if start > baseyear:
+            result.append(row)
+        # Kohorte enthält baseyear: Anteil nach baseyear extrahieren
+        elif start <= baseyear < end:
+            years_total = end - start + 1
+            years_after = end - baseyear
+            if years_after > 0 and years_total > 0:
+                fraction = years_after / years_total
+                new_row = row.copy()
+                new_row["value"] = row["value"] * fraction
+                new_row["Age cohort"] = f"{baseyear + 1}-{end}"
+                result.append(new_row)
+        # Kohorte liegt davor: ignorieren
+    return pd.DataFrame(result)

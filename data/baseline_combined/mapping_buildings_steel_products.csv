@@ -1,0 +1,3 @@
+original_parameter,target_parameter,target_region,original_dimension,original_element,target_dimension,target_element,target_dimension,target_element,factor,comment
+BottomUpDemand,FinalDemand,all,Steel product,Concrete reinforcing bars in transport concrete,sector,Construction,product,Rebar,0.001,kg in buildings model but t in steel model
+BottomUpDemand,FinalDemand,all,Steel product,Concrete reinforcing bars in precast concrete,sector,Construction,product,Rebar,0.001,kg in buildings model but t in steel model

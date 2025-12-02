@@ -35,17 +35,17 @@ def get_definition(cfg: GeneralCfg):
         fd.FlowDefinition(from_process="sysenv", to_process="Glass stock in buildings",
                           dim_letters=("t", "r", "g")),
         fd.FlowDefinition(from_process="Steel stock in buildings", to_process="Steel stock in buildings",
-                          dim_letters=("t", "r", "l")),
+                          dim_letters=("t", "r", "l","a")),
         fd.FlowDefinition(from_process="Concrete stock in buildings",to_process="Concrete stock in buildings",
-                          dim_letters=("t", "r", "o")),
+                          dim_letters=("t", "r", "o","a")),
         fd.FlowDefinition(from_process="Steel stock in buildings", to_process="sysenv",
-                          dim_letters=("t", "r", "l")),
+                          dim_letters=("t", "r", "l","a")),
         fd.FlowDefinition(from_process="Concrete stock in buildings", to_process="sysenv",
-                          dim_letters=("t", "r", "o")),
+                          dim_letters=("t", "r", "o","a")),
         fd.FlowDefinition(from_process="Insulation stock in buildings", to_process="sysenv",
-                          dim_letters=("t", "r", "i")),
+                          dim_letters=("t", "r", "i","a")),
         fd.FlowDefinition(from_process="Glass stock in buildings", to_process="sysenv",
-                          dim_letters=("t", "r", "g")),
+                          dim_letters=("t", "r", "g","a")),
     ]
 
     stocks = [
