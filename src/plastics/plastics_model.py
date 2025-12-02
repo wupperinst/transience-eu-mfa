@@ -64,8 +64,12 @@ class PlasticsModel:
         self.data_writer.export_mfa(mfa=self.mfa)
         
         logging.info("Exporting stock slices to csv.")
-        print(self.cfg.selected_export["csv_slice_stocks"])
-        print(type(self.cfg.selected_export["csv_slice_stocks"]))
+        # Export sliced stocks with age-cohort dimension
+        self.data_writer.export_sliced_stocks_by_age_cohort_to_csv(
+            mfa=self.mfa, 
+            stock_names=self.cfg.selected_export["csv_selected_stocks"], 
+            slice_dicts=self.cfg.selected_export["csv_slice_stocks"])
+        # Export stock slices aggregating age-cohorts
         self.data_writer.export_sliced_stocks_to_csv(
             mfa=self.mfa, 
             stock_names=self.cfg.selected_export["csv_selected_stocks"], 

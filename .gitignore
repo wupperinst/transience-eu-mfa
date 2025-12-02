@@ -7,6 +7,7 @@ venv/
 
 # Output csv files
 data/*/output/export/flows/
+data/*/output/export/stocks/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
