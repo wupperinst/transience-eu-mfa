@@ -72,6 +72,12 @@ def get_definition(cfg: GeneralCfg):
     elif cfg.customization.model_driven == "final_demand":
         logging.debug("Final-demand-driven model, loading prm 'FinalDemand'")
         parameters = [fd.ParameterDefinition(name="FinalDemand", dim_letters=("r", "t", "s", "p", "e"))] # F_3_4_NewPlastics: New plastic products
+    elif cfg.customization.model_driven == "final_demand_with_start_value_and_growth_rate":
+        logging.debug("Final-demand-driven model with start value and growth rate, loading prm 'start_value' and 'growth_rate'")
+        parameters = [
+            fd.ParameterDefinition(name="start_value", dim_letters=("r", "t", "s", "p", "e")), # initial value of FinalDemand
+            fd.ParameterDefinition(name="growth_rate", dim_letters=("r", "t", "s", "p", "e")), # growth rate of FinalDemand
+        ]
     else:
         raise ValueError(f"Unknown model_driven option in config: {cfg.customization.model_driven}")
     

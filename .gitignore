@@ -4,6 +4,7 @@ venv/
 # Excel files
 *.xlsx
 *.xls
+.~lock*
 
 # Output csv files
 data/*/output/export/flows/

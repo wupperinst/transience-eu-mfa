@@ -14,8 +14,10 @@ class PlasticsMFASystem(fd.MFASystem):
             self.compute_inflows_production_driven()
         elif self.cfg.customization.model_driven == 'final_demand':
             self.compute_inflows_final_demand_driven()
+        elif self.cfg.customization.model_driven == 'final_demand_with_start_value_and_growth_rate':
+            self.compute_inflows_final_demand_driven(with_start_value_and_growth_rate=True)
         else:
-            raise ValueError(f"Config item model_driven has invalid value: {self.cfg.model_driven}. Choose 'production' or 'final_demand'.")
+            raise ValueError(f"Config item model_driven has invalid value: {self.cfg.model_driven}. Choose 'production', 'final_demand', or 'final_demand_with_start_value_and_growth_rate'.")
         self.compute_stock()
         self.compute_outflows()
 
@@ -140,6 +142,54 @@ class PlasticsMFASystem(fd.MFASystem):
                         DomesticDemand, ImportNew, ExportNew, ImportUsed, ExportUsed, ImportRateUsed, ExportRateUsed')
 
 
+    def _extrapolate_parameter_start_value_and_growth_rate(self, start_value: fd.FlodymArray, growth_rate: fd.FlodymArray):
+        """
+        Extrapolate a parameter based on its start value and growth rate.
+        The parameter is assumed to be defined as:
+        parameter[1] = start_value[0] * growth_rate[1]
+        parameter[t+1] = parameter[t-1] * growth_rate[t]
+        where start_value is the initial value at the beginning of the time series,
+        and growth_rate is a multiplicative growth factor over time.
+
+        WARNING: this function is *not* generic and only works for the specific case of FinalDemand extrapolation
+        (or other parameters with same dimensions).
+        """
+        Nt = len(self.dims["t"].items)
+        Nr = len(self.dims["r"].items)
+        Ns = len(self.dims["s"].items)
+        Np = len(self.dims["p"].items)
+        Ne = len(self.dims["e"].items)
+
+        parameter = self.get_new_array(dim_letters=("r","t","s","p","e"))
+
+        # Identify the start year and max extrapolation year
+        df_start_value = start_value.to_df(index=False)
+        df_start_value = df_start_value.loc[df_start_value['value']!=0, :] # Only the start year has non-zero values
+        df_start_value.rename(columns={'value': 'start_value'}, inplace=True)
+        start_year = df_start_value['time'].iloc[0]
+        
+        df_growth_rate = growth_rate.to_df(index=False)
+        df_growth_rate.rename(columns={'value': 'growth_rate'}, inplace=True)
+        max_year = df_growth_rate['time'].max()
+
+        # Extrapolate start_value with growth_rate over time
+        df_combined = df_growth_rate.merge(df_start_value, on=['region','time','sector','polymer','element'], how='outer')
+        df_combined['value'] = 0.0
+        df_combined['growth_rate'] = 1 + df_combined['growth_rate']
+
+        for year in range(start_year, max_year + 1):
+            mask = (df_combined['time'] == year)
+            if year == start_year:
+                df_combined.loc[mask, 'value'] = df_combined.loc[mask, 'start_value']
+            else:
+                prev_year_mask = (df_combined['time'] == year - 1)
+                df_combined.loc[mask, 'value'] = df_combined.loc[prev_year_mask, 'value'].values * df_combined.loc[mask, 'growth_rate'].values
+
+        df_combined = df_combined[['region','time','sector','polymer','element','value']]
+        parameter = fd.FlodymArray.from_df(dims=start_value.dims, df=df_combined, allow_missing_values=True)
+
+        return parameter
+
     def compute_inflows_production_driven(self):
         """
         Compute flows from production (converter demand) downstream down to final consumption entering the stock.
@@ -204,7 +254,7 @@ class PlasticsMFASystem(fd.MFASystem):
                                                             prm["MarketShare"].values)
 
 
-    def compute_inflows_final_demand_driven(self):
+    def compute_inflows_final_demand_driven(self, with_start_value_and_growth_rate: bool = False):
         """
         Compute flows from final consumption entering the stock upstream up to production (converter demand).
         """
@@ -228,7 +278,14 @@ class PlasticsMFASystem(fd.MFASystem):
         logging.info("mfa_system - PLASTICS MARKET")
 
         # F_3_4_NewPlastics
+        if with_start_value_and_growth_rate:
+            logging.info("Building FinalDemand from start_value and growth_rate parameters.")
+            if "FinalDemand" not in prm:
+                self.parameters["FinalDemand"] = self._extrapolate_parameter_start_value_and_growth_rate(prm["start_value"], prm["growth_rate"])
+        else:
+            logging.info("Using FinalDemand provided as exogenous parameter.")
         flw["Plastics market => End use stock"][...] = prm["FinalDemand"]
+    
         # F_2_3_NewPlastics
         flw["Plastics manufacturing => Plastics market"].values = np.einsum('rtspe,rRtsp->Rtspe',
                                                                         flw["Plastics market => End use stock"].values,
