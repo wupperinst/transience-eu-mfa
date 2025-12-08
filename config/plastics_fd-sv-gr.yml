@@ -31,7 +31,7 @@ visualization:
     do_visualize: True
 
 # data export
-output_path: 'data/alternative_plastics/output'
+output_path: 'data/fd-sv-gr_plastics/output'
 do_export:
   pickle: False
   csv: False
