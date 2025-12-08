@@ -34,6 +34,9 @@ class PlasticsModel:
             "secondary_raw_material": "secondary_raw_materials",
         }
 
+        if self.cfg.customization.prodcom:
+            dimension_map["product"] = f"products_{self.cfg.customization.end_use_sectors}"
+
         dimension_files = {}
         for dimension in self.definition.dimensions:
             dimension_filename = dimension_map[dimension.name]

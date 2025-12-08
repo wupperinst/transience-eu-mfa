@@ -137,7 +137,8 @@ class PlasticsDataExporter(CustomDataExporter):
         dfs['outflow'].reset_index(inplace=True, drop=True)
 
         data_type = {'time': 'numeric', 'age-cohort': 'numeric', 'region': 'text', 
-                     'sector': 'text', 'polymer': 'text', 'element': 'text', 'value': 'numeric'}
+                     'sector': 'text', 'product': 'text', 'polymer': 'text', 'element': 'text', 
+                     'value': 'numeric'}
         regions = dfs['final_demand']['region'].unique().tolist()
 
         # Prepare tables

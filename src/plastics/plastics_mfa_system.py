@@ -9,7 +9,8 @@ class PlasticsMFASystem(fd.MFASystem):
         """
         Perform all computations for the MFA system in sequence.
         """
-        self.interpolate_parameters()
+        if not self.cfg.customization.prodcom:
+            self.interpolate_parameters()
         if self.cfg.customization.model_driven == 'production':
             self.compute_inflows_production_driven()
         elif self.cfg.customization.model_driven == 'final_demand':
@@ -154,13 +155,13 @@ class PlasticsMFASystem(fd.MFASystem):
         WARNING: this function is *not* generic and only works for the specific case of FinalDemand extrapolation
         (or other parameters with same dimensions).
         """
-        Nt = len(self.dims["t"].items)
-        Nr = len(self.dims["r"].items)
-        Ns = len(self.dims["s"].items)
-        Np = len(self.dims["p"].items)
-        Ne = len(self.dims["e"].items)
+        # Nt = len(self.dims["t"].items)
+        # Nr = len(self.dims["r"].items)
+        # Ns = len(self.dims["s"].items)
+        # Np = len(self.dims["p"].items)
+        # Ne = len(self.dims["e"].items)
 
-        parameter = self.get_new_array(dim_letters=("r","t","s","p","e"))
+        # parameter = self.get_new_array(dim_letters=("r","t","s","p","e"))
 
         # Identify the start year and max extrapolation year
         df_start_value = start_value.to_df(index=False)
@@ -203,12 +204,21 @@ class PlasticsMFASystem(fd.MFASystem):
         stk = self.stocks
 
         # Define auxiliary flows for the MFA system in addition to the main flows defined in plastics_definition.py
-        aux = {
-            "DomesticInputManufacturing": self.get_new_array(dim_letters=("r", "t", "s", "p", "e")),
-            "ImportNew": self.get_new_array(dim_letters=("r", "t", "s", "p", "e")),
-            "ExportNew": self.get_new_array(dim_letters=("r", "t", "s", "p", "e")),
-            "NetImport": self.get_new_array(dim_letters=("r", "t", "s", "p", "e")),
-        }
+        if not self.cfg.customization.prodcom:
+            aux = {
+                "DomesticInputManufacturing": self.get_new_array(dim_letters=("r", "t", "s", "p", "e")),
+                "ImportNew": self.get_new_array(dim_letters=("r", "t", "s", "p", "e")),
+                "ExportNew": self.get_new_array(dim_letters=("r", "t", "s", "p", "e")),
+                "NetImport": self.get_new_array(dim_letters=("r", "t", "s", "p", "e")),
+            }
+        else:
+            aux = {
+                "DomesticInputManufacturing": self.get_new_array(dim_letters=("r", "t", "s", "d", "p")),
+                "ImportNew": self.get_new_array(dim_letters=("r", "t", "s", "d", "p")),
+                "ExportNew": self.get_new_array(dim_letters=("r", "t", "s", "d", "p")),
+                "NetImport": self.get_new_array(dim_letters=("r", "t", "s", "d", "p")),
+            }
+
 
         ### POLYMER MARKET
         logging.info("mfa_system - POLYMER MARKET")
@@ -239,8 +249,12 @@ class PlasticsMFASystem(fd.MFASystem):
         # Sum over all import and export regions to calculate TOTAL imports and exports and NET imports
         # ImportNew_0_2 = np.einsum('Rrtspe->rtspe', Plastics_MFA_System.FlowDict['F_0_2_ImportNew'].Values)
         # ExportNew_2_0 = np.einsum('rRtspe->rtspe', Plastics_MFA_System.FlowDict['F_2_0_ExportNew'].Values)
-        aux["ImportNew"] = flw["sysenv => Plastics manufacturing"].sum_to(("r","t","s","p","e"))
-        aux["ExportNew"] = flw["Plastics manufacturing => sysenv"].sum_to(("r","t","s","p","e"))
+        if not self.cfg.customization.prodcom:
+            aux["ImportNew"] = flw["sysenv => Plastics manufacturing"].sum_to(("r","t","s","p","e"))
+            aux["ExportNew"] = flw["Plastics manufacturing => sysenv"].sum_to(("r","t","s","p","e"))
+        else:
+            aux["ImportNew"] = flw["sysenv => Plastics manufacturing"].sum_to(("r","t","s","d","p"))
+            aux["ExportNew"] = flw["Plastics manufacturing => sysenv"].sum_to(("r","t","s","d","p"))
         aux["NetImport"] = aux["ImportNew"] - aux["ExportNew"]
         # Mass balance equation for plastics manufacturing
         flw["Plastics manufacturing => Plastics market"][...] = aux["DomesticInputManufacturing"] + aux["NetImport"] # F_2_3_NewPlastics
@@ -249,9 +263,14 @@ class PlasticsMFASystem(fd.MFASystem):
         logging.info("mfa_system - PLASTICS MARKET")
 
         # F_3_4_NewPlastics
-        flw["Plastics market => End use stock"].values = np.einsum('rtspe,rRtsp->Rtspe',
-                                                            flw["Plastics manufacturing => Plastics market"].values,
-                                                            prm["MarketShare"].values)
+        if not self.cfg.customization.prodcom:
+            flw["Plastics market => End use stock"].values = np.einsum('rtspe,rRtsp->Rtspe',
+                                                                flw["Plastics manufacturing => Plastics market"].values,
+                                                                prm["MarketShare"].values)
+        else:
+            flw["Plastics market => End use stock"].values = np.einsum('rtsdp,rRtsdp->Rtsdp',
+                                                                flw["Plastics manufacturing => Plastics market"].values,
+                                                                prm["MarketShare"].values)
 
 
     def compute_inflows_final_demand_driven(self, with_start_value_and_growth_rate: bool = False):
@@ -359,14 +378,24 @@ class PlasticsMFASystem(fd.MFASystem):
         stk = self.stocks
 
         # Define auxiliary flows for the MFA system in addition to the main flows defined in plastics_definition.py
-        aux = {
-            "DeprivedEOL": self.get_new_array(dim_letters=("t", "c", "r", "s", "p", "e")),
-            "CollectedWaste": self.get_new_array(dim_letters=("r", "t", "c", "s", "p", "e")),
-            "UtilisedWaste": self.get_new_array(dim_letters=("r", "t", "c", "s", "p", "e")),
-            "SortedWaste": self.get_new_array(dim_letters=("r", "t", "c", "s", "p", "w", "e")),
-            "SortedEOL_agg": self.get_new_array(dim_letters=("r", "t", "s", "p", "e")),
-            "SortedEOL_inclImports": self.get_new_array(dim_letters=("r", "t", "s", "p", "w", "e")),
-        }
+        if not self.cfg.customization.prodcom:
+            aux = {
+                "DeprivedEOL": self.get_new_array(dim_letters=("t", "c", "r", "s", "p", "e")),
+                "CollectedWaste": self.get_new_array(dim_letters=("r", "t", "c", "s", "p", "e")),
+                "UtilisedWaste": self.get_new_array(dim_letters=("r", "t", "c", "s", "p", "e")),
+                "SortedWaste": self.get_new_array(dim_letters=("r", "t", "c", "s", "p", "w", "e")),
+                "SortedEOL_agg": self.get_new_array(dim_letters=("r", "t", "s", "p", "e")),
+                "SortedEOL_inclImports": self.get_new_array(dim_letters=("r", "t", "s", "p", "w", "e")),
+            }
+        else:
+            aux = {
+                "DeprivedEOL": self.get_new_array(dim_letters=("t", "c", "r", "s", "d", "p")),
+                "CollectedWaste": self.get_new_array(dim_letters=("r", "t", "c", "s", "d", "p")),
+                "UtilisedWaste": self.get_new_array(dim_letters=("r", "t", "c", "s", "d", "p")),
+                "SortedWaste": self.get_new_array(dim_letters=("r", "t", "c", "s", "d", "p", "w")),
+                "SortedEOL_agg": self.get_new_array(dim_letters=("r", "t", "s", "d", "p")),
+                "SortedEOL_inclImports": self.get_new_array(dim_letters=("r", "t", "s", "d", "p", "w")),
+            }
 
         ### EOL PLASTICS
         logging.info("mfa_system - EOL PLASTICS")
@@ -428,11 +457,16 @@ class PlasticsMFASystem(fd.MFASystem):
             logging.warning('config: waste_not_for_recycling is empty! We assume all waste types are for recycling.')
         
         for w in np.arange(0, len(waste_categories)):
-            if w in waste_not_for_recycling_ix:
-                flw["Waste sorting => Sorted waste market"].values[:,:,:,:,:,w,:] = 0
+            if not self.cfg.customization.prodcom:
+                if w in waste_not_for_recycling_ix:
+                    flw["Waste sorting => Sorted waste market"].values[:,:,:,:,:,w,:] = 0
+                else:
+                    flw["Waste sorting => sysenv"].values[:,:,:,:,:,w,:] = 0
             else:
-                flw["Waste sorting => sysenv"].values[:,:,:,:,:,w,:] = 0
-
+                if w in waste_not_for_recycling_ix:
+                    flw["Waste sorting => Sorted waste market"].values[:,:,:,:,:,:,w] = 0
+                else:
+                    flw["Waste sorting => sysenv"].values[:,:,:,:,:,:,w] = 0
 
         ### SORTED WASTE MARKET
         logging.info("mfa_system - SORTED WASTE MARKET")
@@ -440,16 +474,23 @@ class PlasticsMFASystem(fd.MFASystem):
         # Import of sorted waste as import RATE
         # ImportRateSortedWaste gives which waste categories are imported (as a % of total SortedEOL)
         # Sum all age-cohorts and waste categories
-        aux["SortedEOL_agg"] = flw["Waste sorting => Sorted waste market"].sum_to(("r","t","s","p","e"))
+        if not self.cfg.customization.prodcom:
+            dim_letters_wo_waste = ("r","t","s","p","e")
+            dim_letters_waste = ("r","t","s","p","w","e")
+        else:
+            dim_letters_wo_waste = ("r","t","s","d","p")
+            dim_letters_waste = ("r","t","s","d","p","w")
+
+        aux["SortedEOL_agg"] = flw["Waste sorting => Sorted waste market"].sum_to(dim_letters_wo_waste)
         flw["sysenv => Sorted waste market"][...] = aux["SortedEOL_agg"] * prm["ImportRateSortedWaste"]
-        aux["SortedEOL_inclImports"][...] = (flw["Waste sorting => Sorted waste market"].sum_to(("r","t","s","p","w","e"))
-                                                + flw["sysenv => Sorted waste market"].sum_to(("r","t","s","p","w","e")))
+        aux["SortedEOL_inclImports"][...] = (flw["Waste sorting => Sorted waste market"].sum_to(dim_letters_waste)
+                                                + flw["sysenv => Sorted waste market"].sum_to(dim_letters_waste))
         # Export of sorted waste as export RATE
         # ExportRateSortedWaste gives which waste categories are exported (as a % of total SortedEOL_inclImports)
         flw["Sorted waste market => sysenv"][...] = aux["SortedEOL_inclImports"] * prm["ExportRateSortedWaste"]
 
         # Net domestic input of sorted waste into recycling
-        flw["Sorted waste market => Recycling"][...] = aux["SortedEOL_inclImports"] - flw["Sorted waste market => sysenv"].sum_to(("r","t","s","p","w","e"))
+        flw["Sorted waste market => Recycling"][...] = aux["SortedEOL_inclImports"] - flw["Sorted waste market => sysenv"].sum_to(dim_letters_waste)
 
 
         ### RECYCLING
@@ -458,8 +499,8 @@ class PlasticsMFASystem(fd.MFASystem):
         # Recyclates
         flw["Recycling => RECYCLATE sysenv"][...] = flw["Sorted waste market => Recycling"] * prm["RecyclingConversionRate"]
         # Losses
-        flw["Recycling => LOSSES sysenv"][...] = (flw["Sorted waste market => Recycling"].sum_to(("r","t","s","p","e")) 
-                                                    - flw["Recycling => RECYCLATE sysenv"].sum_to(("r","t","s","p","e")))
+        flw["Recycling => LOSSES sysenv"][...] = (flw["Sorted waste market => Recycling"].sum_to(dim_letters_wo_waste) 
+                                                    - flw["Recycling => RECYCLATE sysenv"].sum_to(dim_letters_wo_waste))
         
 
     def get_flows_as_dataframes(self, flow_names=[]):

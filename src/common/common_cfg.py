@@ -39,6 +39,7 @@ class ModelCustomization(EUMFABaseModel):
 class PlasticsCustomizationCfg(ModelCustomization):
     
     model_driven: str = "production"  # options: production, final_demand
+    prodcom: bool = False # Enable prodcom-specific features (e.g. product-level in addition to sector-level)
     end_use_sectors: str = "all"
     waste_not_for_recycling: list = []
 
