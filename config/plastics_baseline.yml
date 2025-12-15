@@ -27,7 +27,7 @@ visualization:
   sankey:
     do_visualize: False
   dashboard:
-    do_visualize: True
+    do_visualize: False
 
 # data export
 output_path: 'data/baseline_plastics/output'
