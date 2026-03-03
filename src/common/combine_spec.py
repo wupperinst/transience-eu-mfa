@@ -1,4 +1,3 @@
-
 # src/common/combine_spec.py
 
 from dataclasses import dataclass
@@ -11,7 +10,7 @@ MAPPING = {
     "vehicles_plastics_products": "data/baseline_combined/mapping_vehicles_plastics_products.csv",
 
     "buildings_concrete_regions": "data/baseline_combined/mapping_buildings_concrete_regions.csv",
-    "buildings_concrete_products": "data/baseline_combined/mapping_buildings_concrete_products.csv",  # semicolon
+    "buildings_concrete_products": "data/baseline_combined/mapping_buildings_concrete_products.csv",
 
     "vehicles_steel_regions": "data/baseline_combined/mapping_vehicles_steel_regions.csv",
     "vehicles_steel_products": "data/baseline_combined/mapping_vehicles_steel_products.csv",
@@ -69,7 +68,5 @@ class SourceFlowNames:
 SOURCE_FLOWS = SourceFlowNames()
 
 def get_dim_catalog(target: str) -> Dict[str, Tuple[str, Optional[str]]]:
+    """Return dimension catalog for a given target material (plastics/steel/cement)."""
     return DIM_CATALOGS[target]
-
-def products_csv_sep_for(target: str) -> Optional[str]:
-    return None

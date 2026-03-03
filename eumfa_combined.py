@@ -1,4 +1,3 @@
-
 # eumfa_combined.py
 
 import os
@@ -6,11 +5,10 @@ import logging
 from typing import List, Dict, Optional, Tuple
 import glob
 import pandas as pd
-import re
 from run_eumfa import run_eumfa
 from src.common.combine_flows import FlowCalculator
-from src.common.combine_spec import MAPPING, TOPDOWN, SOURCE_FLOWS, get_dim_catalog, products_csv_sep_for
-from src.common.combine_flows import _filter_and_split_buildings_eol, _parse_cohort_years
+from src.common.combine_spec import MAPPING, TOPDOWN, SOURCE_FLOWS, get_dim_catalog
+from src.common.combine_flows import _filter_and_split_buildings_eol
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 
@@ -101,7 +99,7 @@ def _map_bu_source_to_target(
         value_col=value_col,
     )
     # Products map
-    sep = products_csv_sep_for(target)
+    sep = ','
     orig_dim = _original_dimension_from_products_csv(products_csv, sep=sep)
     # Clean original product strings before merge (strip BOM/whitespace)
     if orig_dim in reg_mapped.columns:
