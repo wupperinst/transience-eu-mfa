@@ -48,7 +48,7 @@ class PlasticsDataExporter(CustomDataExporter):
 
     def stop_and_show(self, figs: list = None):
         if figs is not None:
-            for fig in figs:
+            for fig_name,fig in figs.items():
                 fig.show()
 
     def visualize_inflow(self, flows_dfs: dict[str, pd.DataFrame], scenario: str = ""):
@@ -74,10 +74,10 @@ class PlasticsDataExporter(CustomDataExporter):
     def visualize_outflow(self, flows_dfs: dict[str, pd.DataFrame], scenario: str = ""):
         df = flows_dfs.get("Waste collection => Waste sorting")
         df.reset_index(inplace=True)
-        fig = px.area(df.loc[df['region']=="EU27+3", ['time', 'sector', 'polymer', 'value']], 
+        fig = px.area(df.loc[df['region']=="Germany", ['time', 'sector', 'polymer', 'value']], 
                         x="time", y="value", line_group="polymer", color="sector",
                         labels={"value":"Collected plastic waste [t]"},
-                        title="Plastics Outflow by Sector and Polymer in EU27+3",
+                        title="Plastics Outflow by Sector and Polymer in Germany",
                         subtitle=f"Scenario: {scenario}")
         return fig, df
     
@@ -137,7 +137,8 @@ class PlasticsDataExporter(CustomDataExporter):
         dfs['outflow'].reset_index(inplace=True, drop=True)
 
         data_type = {'time': 'numeric', 'age-cohort': 'numeric', 'region': 'text', 
-                     'sector': 'text', 'polymer': 'text', 'element': 'text', 'value': 'numeric'}
+                     'sector': 'text', 'product': 'text', 'polymer': 'text', 'element': 'text', 
+                     'value': 'numeric'}
         regions = dfs['final_demand']['region'].unique().tolist()
 
         # Prepare tables

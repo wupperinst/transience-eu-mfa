@@ -3,3 +3,5 @@
 python>=3.10
 flodym
 yaml
+dash
+dash_ag_grid

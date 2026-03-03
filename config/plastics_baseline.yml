@@ -26,6 +26,8 @@ visualization:
     do_visualize: True
   sankey:
     do_visualize: False
+  dashboard:
+    do_visualize: False
 
 # data export
 output_path: 'data/baseline_plastics/output'
@@ -37,4 +39,7 @@ selected_export:
     - 'sysenv => Polymer market'
     - 'Plastics market => End use stock'
     - 'Waste collection => Waste sorting'
-
+  csv_selected_stocks:
+    - 'End use stock'
+  csv_slice_stocks:
+    - 'time': [2020, 2030, 2040, 2050]

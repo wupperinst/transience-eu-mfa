@@ -1,0 +1,46 @@
+# general config
+model_class: 'plastics'
+scenario: 'fd-sv-gr'
+
+# logging
+logging:
+  level: 'DEBUG' # options: DEBUG, INFO, WARNING, ERROR, CRITICAL
+
+# data sources
+input_data_path: 'data/fd-sv-gr_plastics/input'
+
+# model customization
+customization:
+  model_driven: 'final_demand_with_start_value_and_growth_rate' # options: production, final_demand, final_demand_with_start_value_and_growth_rate
+  lifetime_model_name: 'NormalLifetime'
+
+  end_use_sectors: 'MainSectors' # options: MainSectors, ...
+  waste_not_for_recycling: ['Landfill', 'Incineration']
+
+# visualization
+visualization:
+  inflow:
+    do_visualize: False
+  production:
+    do_visualize: False
+  outflow:
+    do_visualize: False
+  sankey:
+    do_visualize: False
+  dashboard:
+    do_visualize: True
+
+# data export
+output_path: 'data/fd-sv-gr_plastics/output'
+do_export:
+  pickle: False
+  csv: False
+selected_export:
+  csv_selected_flows:
+    - 'sysenv => Polymer market'
+    - 'Plastics market => End use stock'
+    - 'Waste collection => Waste sorting'
+  csv_selected_stocks:
+    - 'End use stock'
+  csv_slice_stocks:
+    - 'time': [2020, 2030, 2040, 2050]
