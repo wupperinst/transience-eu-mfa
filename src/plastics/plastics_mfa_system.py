@@ -438,8 +438,8 @@ class PlasticsMFASystem(fd.MFASystem):
         aux["SortedWaste"][...] = flw["Waste collection => Waste sorting"] * prm["SortingRate"]
         logging.debug(f"aux['SortedWaste'].shape: {aux['SortedWaste'].shape}")
 
-        flw["Waste sorting => Sorted waste market"].set_values(aux["SortedWaste"].values)
-        flw["Waste sorting => sysenv"].set_values(aux["SortedWaste"].values)
+        flw["Waste sorting => Sorted waste market"].set_values(aux["SortedWaste"].values.copy())
+        flw["Waste sorting => sysenv"].set_values(aux["SortedWaste"].values.copy())
 
         #waste_categories = self.dims.get_subset("w").dim_list[0].items
         waste_categories = self.dims["w"].items
