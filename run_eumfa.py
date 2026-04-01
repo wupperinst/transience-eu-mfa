@@ -1,5 +1,5 @@
 import logging
-import yaml
+import yaml, os
 import flodym as fd
 
 
@@ -47,6 +47,16 @@ def recalculate_mfa(model_config):
 
 def run_eumfa(cfg_file: str):
     model_config = get_model_config(cfg_file)
+    
+    # Check that input data folder exists and is not empty
+    input_path = f"data/{model_config['scenario']}_{model_config['model_class']}/input"
+    if not os.path.exists(input_path):
+        raise FileNotFoundError(f"Input data folder not found: {input_path}")
+    if not os.listdir(input_path):
+        raise ValueError(f"Input data folder is empty: {input_path}")
+    # Add iinput and output data paths to config
+    model_config['input_data_path'] = input_path
+    model_config['output_path'] = f"data/{model_config['scenario']}_{model_config['model_class']}/output"
 
     try:
         logging_level = model_config['logging']['level'].upper()
