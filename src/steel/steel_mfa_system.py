@@ -10,16 +10,23 @@ class SteelMFASystem(fd.MFASystem):
         Perform all computations for the MFA system in sequence.
         """
         #self.interpolate_parameters()
-        self.compute_inflows()
+        if self.cfg.customization.model_driven == 'production':
+            self.compute_inflows_production_driven()
+        elif self.cfg.customization.model_driven == 'final_demand':
+            self.compute_inflows_final_demand_driven()
+        elif self.cfg.customization.model_driven == 'final_demand_with_start_value_and_growth_rate':
+            self.compute_inflows_final_demand_driven(with_start_value_and_growth_rate=True)
+        else:
+            raise ValueError(f"Config item model_driven has invalid value: {self.cfg.model_driven}. Choose 'production', 'final_demand', or 'final_demand_with_start_value_and_growth_rate'.")
         self.compute_stock()
         self.compute_outflows()
 
-    def compute_inflows(self):
+    def compute_inflows_production_driven(self):
         """
-        Compute flows up to final consumption entering the stock.
+        Compute flows from production downstream down to to final consumption entering the stock.
         """
         
-        logging.info("mfa_system - compute_inflows")
+        logging.info("mfa_system - compute_inflows_production_driven")
 
         # Abbreviation for better readability
         prm = self.parameters
@@ -66,6 +73,70 @@ class SteelMFASystem(fd.MFASystem):
             flw["sysenv => Steel goods market"][...] -
             flw["Steel goods market => sysenv"][...]
         ) # F_3_4
+
+
+    def compute_inflows_final_demand_driven(self, with_start_value_and_growth_rate: bool =False):
+        """
+        Compute flows from final consumption entering the stock upstream to production.
+        """
+        
+        logging.info("mfa_system - compute_inflows_final_demand_driven")
+
+        # Abbreviation for better readability
+        prm = self.parameters
+        flw = self.flows
+        stk = self.stocks
+
+        # Define auxiliary flows for the MFA system in addition to the main flows defined in steel_definition.py
+        aux = {
+        }
+
+        ### STEEL GOODS MARKET
+        logging.info("mfa_system - STEEL GOODS MARKET")
+
+        # Initialise exogenously defined flow
+        if with_start_value_and_growth_rate:
+            # Compute FinalDemand from start value and growth rate
+            time_dim = self.dimensions["t"]
+            prm["FinalDemand"][...] = prm["start_value"][...] * (1 + prm["growth_rate"][...]) ** time_dim.values[np.newaxis, :]
+        flw["Steel goods market => End use stock"][...] = prm["FinalDemand"] # F_3_4: New steel goods
+
+        # Account for trade flows
+        flw["sysenv => Steel goods market"][...] = prm["ImportNewGoods"] # F_0_3_Import
+        flw["Steel goods market => sysenv"][...] = prm["ExportNewGoods"] # F_3_0
+        # Endogenous input flow (mass balance equation)
+        flw["Steel goods manufacturing => Steel goods market"][...] = (
+            flw["Steel goods market => End use stock"][...] -
+            flw["sysenv => Steel goods market"][...] +
+            flw["Steel goods market => sysenv"][...]
+        ) # F_2_3
+
+        ### STEEL GOODS MANUFACTURING
+        logging.info("mfa_system - STEEL GOODS MANUFACTURING")
+
+        # Endogenous input flow (mass balance equation)
+        flw["Steel product market => Steel goods manufacturing"][...] = (
+            flw["Steel goods manufacturing => Steel goods market"][...] 
+            / (1 - prm["NewScrapRate"])
+        ) # F_1_2
+
+        flw["Steel goods manufacturing => sysenv"][...] = (
+            flw["Steel product market => Steel goods manufacturing"][...] 
+            - flw["Steel product market => Steel goods manufacturing"][...]
+        ) # F_2_0
+
+        ### STEEL PRODUCT MARKET
+        logging.info("mfa_system - STEEL PRODUCT MARKET")
+
+        # Initialise exogenously defined flows
+        flw["sysenv => IMPORT Steel product market"][...] = prm["ImportNewProducts"] # F_0_1_Import
+        flw["Steel product market => sysenv"][...] = prm["ExportNewProducts"] # F_1_0
+        # Endogenous input flow (mass balance equation)
+        flw["sysenv => Steel product market"][...] = (
+            flw["Steel product market => Steel goods manufacturing"][...] -
+            flw["sysenv => IMPORT Steel product market"][...] +
+            flw["Steel product market => sysenv"][...]
+        ) # F_0_1_DomesticProduction
 
 
     def compute_stock(self):

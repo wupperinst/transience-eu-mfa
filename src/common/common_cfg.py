@@ -43,6 +43,10 @@ class PlasticsCustomizationCfg(ModelCustomization):
     end_use_sectors: str = "all"
     waste_not_for_recycling: list = []
 
+class SteelCustomizationCfg(ModelCustomization):
+
+    model_driven: str = "production"  # options: production, final_demand
+
 
 class VisualizationCfg(EUMFABaseModel):
 
@@ -64,6 +68,11 @@ class VehiclesVisualizationCfg(VisualizationCfg):
     pass
 
 class PlasticsVisualizationCfg(VisualizationCfg):
+
+    outflow: dict = {"do_visualize": False}
+    dashboard: dict = {"do_visualize": False}
+
+class SteelVisualizationCfg(VisualizationCfg):
 
     outflow: dict = {"do_visualize": False}
     dashboard: dict = {"do_visualize": False}
@@ -129,7 +138,8 @@ class PlasticsCfg(GeneralCfg):
 
 class SteelCfg(GeneralCfg):
 
-    pass
+    visualization: SteelVisualizationCfg
+    customization: SteelCustomizationCfg
 
 class CementTopdownCfg(GeneralCfg):
     visualization: CementTopdownVisualizationCfg

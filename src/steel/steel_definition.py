@@ -1,3 +1,4 @@
+import logging
 import flodym as fd
 
 from src.common.common_cfg import GeneralCfg
@@ -54,19 +55,35 @@ def get_definition(cfg: GeneralCfg):
             ),
     ]
 
-    parameters = [
+    # If config requires production-driven then DomesticProduction is an exogenous parameter
+    if cfg.customization.model_driven == "production":
+        logging.debug("Production-driven model, loading prm 'DomesticProduction'")
+        parameters = [fd.ParameterDefinition(name="DomesticProduction", dim_letters=("r", "t", "s", "i", "p", "e"))] # Domestic production of steel products
+    # If config requires inflow-driven then FinalDemand is an exogenous parameter
+    elif cfg.customization.model_driven == "final_demand":
+        logging.debug("Final-demand-driven model, loading prm 'FinalDemand'")
+        parameters = [fd.ParameterDefinition(name="FinalDemand", dim_letters=("r", "t", "s", "i", "p", "e"))] # F_3_4: New steel goods
+    elif cfg.customization.model_driven == "final_demand_with_start_value_and_growth_rate":
+        logging.debug("Final-demand-driven model with start value and growth rate, loading prm 'start_value' and 'growth_rate'")
+        parameters = [
+            fd.ParameterDefinition(name="start_value", dim_letters=("r", "t", "s", "i", "p", "e")), # initial value of FinalDemand
+            fd.ParameterDefinition(name="growth_rate", dim_letters=("r", "t", "s", "i", "p", "e")), # growth rate of FinalDemand
+        ]
+    else:
+        raise ValueError(f"Unknown model_driven option in config: {cfg.customization.model_driven}")
+        
+    parameters.extend([
         fd.ParameterDefinition(name="Lifetime", dim_letters=("r", "s", "i", "p")), # Steel product lifetime
         fd.ParameterDefinition(name="EoLRecoveryRate", dim_letters=("r", "t", "s", "i", "p")), # Recovery rate of end-of-life (EoL) steel products
         fd.ParameterDefinition(name="ScrapSortingRate", dim_letters=("r", "t", "s", "i", "p", "w")), # Sorting rate of scrap steel
         fd.ParameterDefinition(name="Contamination", dim_letters=("r", "t", "s", "i", "p", "e")), # Contamination of steel from scrap management
-        fd.ParameterDefinition(name="DomesticProduction", dim_letters=("r", "t", "s", "i", "p", "e")), # Domestic production of steel products
         fd.ParameterDefinition(name="ImportNewProducts", dim_letters=("r", "t", "s", "i", "p", "e")), # Import of new steel products
         fd.ParameterDefinition(name="ImportNewGoods", dim_letters=("r", "t", "s", "i", "p", "e")), # Import of new steel goods
         fd.ParameterDefinition(name="ExportNewProducts", dim_letters=("r", "t", "s", "i", "p", "e")), # Export of new steel products
         fd.ParameterDefinition(name="ExportNewGoods", dim_letters=("r", "t", "s", "i", "p", "e")), # Export of new steel goods
         fd.ParameterDefinition(name="InitialStock", dim_letters=("r", "t", "c", "s", "i", "p", "e")), # Stock of steel products, initial modelling year
         fd.ParameterDefinition(name="NewScrapRate", dim_letters=("r", "t", "s", "i", "p")), # Rate of generation of new scrap in steel goods production
-    ]
+    ])
 
     return fd.MFADefinition(
         dimensions=dimensions,
