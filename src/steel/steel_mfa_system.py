@@ -75,12 +75,61 @@ class SteelMFASystem(fd.MFASystem):
         ) # F_3_4
 
 
+    def _extrapolate_parameter_start_value_and_growth_rate(self, start_value: fd.FlodymArray, growth_rate: fd.FlodymArray, dimensions: list) -> fd.FlodymArray:
+            """
+            Extrapolate a parameter based on its start value and growth rate.
+            The parameter is assumed to be defined as:
+            parameter[1] = start_value[0] * growth_rate[1]
+            parameter[t+1] = parameter[t-1] * growth_rate[t]
+            where start_value is the initial value at the beginning of the time series,
+            and growth_rate is a multiplicative growth factor over time.
+
+            WARNING: this function is *not* generic and only works for the specific case of FinalDemand extrapolation
+            (or other parameters with same dimensions).
+            """
+
+            # parameter = self.get_new_array(dim_letters=("r","t","s","p","e"))
+
+            # Identify the start year and max extrapolation year
+            df_start_value = start_value.to_df(index=False)
+            df_start_value = df_start_value.loc[df_start_value['value']!=0, :] # Only the start year has non-zero values
+            df_start_value.rename(columns={'value': 'start_value'}, inplace=True)
+            start_year = df_start_value['time'].iloc[0]
+            
+            df_growth_rate = growth_rate.to_df(index=False)
+            df_growth_rate.rename(columns={'value': 'growth_rate'}, inplace=True)
+            max_year = df_growth_rate['time'].max()
+
+            # Extrapolate start_value with growth_rate over time
+            df_combined = df_growth_rate.merge(df_start_value, on=dimensions, how='outer')
+            df_combined['value'] = 0.0
+            df_combined['growth_rate'] = 1 + df_combined['growth_rate']
+
+            for year in range(start_year, max_year + 1):
+                mask = (df_combined['time'] == year)
+                if year == start_year:
+                    df_combined.loc[mask, 'value'] = df_combined.loc[mask, 'start_value']
+                else:
+                    prev_year_mask = (df_combined['time'] == year - 1)
+                    df_combined.loc[mask, 'value'] = df_combined.loc[prev_year_mask, 'value'].values * df_combined.loc[mask, 'growth_rate'].values
+
+            all_dimensions = dimensions + ['value']
+            df_combined = df_combined[all_dimensions]
+            parameter = fd.FlodymArray.from_df(dims=start_value.dims, df=df_combined, allow_missing_values=True)
+
+            return parameter
+
+
     def compute_inflows_final_demand_driven(self, with_start_value_and_growth_rate: bool =False):
         """
         Compute flows from final consumption entering the stock upstream to production.
         """
         
-        logging.info("mfa_system - compute_inflows_final_demand_driven")
+        if not with_start_value_and_growth_rate:
+            logging.info("mfa_system - compute_inflows_final_demand_driven")
+        else:
+            logging.info("mfa_system - compute_inflows_final_demand_driven with start value and growth rate")
+            
 
         # Abbreviation for better readability
         prm = self.parameters
@@ -96,9 +145,14 @@ class SteelMFASystem(fd.MFASystem):
 
         # Initialise exogenously defined flow
         if with_start_value_and_growth_rate:
-            # Compute FinalDemand from start value and growth rate
-            time_dim = self.dimensions["t"]
-            prm["FinalDemand"][...] = prm["start_value"][...] * (1 + prm["growth_rate"][...]) ** time_dim.values[np.newaxis, :]
+            logging.info("Building FinalDemand from start_value and growth_rate parameters.")
+            if "FinalDemand" not in prm:
+                self.parameters["FinalDemand"] = self._extrapolate_parameter_start_value_and_growth_rate(
+                     prm["start_value"], prm["growth_rate"], 
+                     dimensions=["region", "time", "sector", "intermediate", "product", "element"]
+                )
+        else:
+            logging.info("Using FinalDemand provided as exogenous parameter.")
         flw["Steel goods market => End use stock"][...] = prm["FinalDemand"] # F_3_4: New steel goods
 
         # Account for trade flows

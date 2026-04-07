@@ -1,0 +1,31 @@
+# general config
+model_class: 'steel'
+scenario: 'baseline_fd-sv-gr'
+
+# logging
+logging:
+  level: 'INFO' # options: DEBUG, INFO, WARNING, ERROR, CRITICAL
+
+# model customization
+customization:
+  model_driven: 'final_demand_with_start_value_and_growth_rate' # options: production, final_demand, final_demand_with_start_value_and_growth_rate
+  lifetime_model_name: 'NormalLifetime'
+
+# visualization
+visualization:
+  inflow:
+    do_visualize: False
+  production:
+    do_visualize: False
+  outflow:
+    do_visualize: False
+  sankey:
+    do_visualize: False
+  dashboard:
+    do_visualize: True
+
+# data export
+do_export:
+  pickle: False
+  csv: True
+
