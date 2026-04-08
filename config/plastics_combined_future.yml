@@ -1,22 +1,25 @@
-# general config
+# config/plastics_combined_future.yml
+
+# Plastics model for combined workflow - reads pre-computed FinalDemand directly
+
 model_class: 'plastics'
-scenario: 'baseline'
+scenario: 'combined_future'
 
-# logging
 logging:
-  level: 'DEBUG' # options: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  level: 'INFO'
 
-# data sources
-input_data_path: 'data/baseline_plastics/input'
+# Input path - same as fd-sv-gr since we save FinalDemand.csv there
 
-# model customization
+input_data_path: 'data/fd-sv-gr_plastics/input'
+
 customization:
-  model_driven: 'production' # options: production, final_demand
+  model_driven: 'final_demand'  # KEY DIFFERENCE: reads FinalDemand.csv directly
   lifetime_model_name: 'NormalLifetime'
-  end_use_sectors: 'MainSectors' # options: MainSectors, ...
+  end_use_sectors: 'MainSectors'
   waste_not_for_recycling: ['Landfill', 'Incineration']
 
-# visualization
+# Visualization disabled for combined workflow
+
 visualization:
   inflow:
     do_visualize: False
@@ -29,8 +32,9 @@ visualization:
   dashboard:
     do_visualize: False
 
-# data export
-output_path: 'data/baseline_plastics/output'
+# Output to separate directory for combined results
+
+output_path: 'data/combined_plastics_future/output'
 do_export:
   pickle: False
   csv: True
@@ -47,7 +51,9 @@ selected_export:
     - 'Sorted waste market => Recycling'
     - 'Recycling => RECYCLATE sysenv'
     - 'Recycling => LOSSES sysenv'
+
   csv_selected_stocks:
     - 'End use stock'
+
   csv_slice_stocks:
-    - 'time': [2020, 2030, 2040, 2050]
+    - 'time': [2023, 2030, 2040, 2050]
