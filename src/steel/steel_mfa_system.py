@@ -9,7 +9,7 @@ class SteelMFASystem(fd.MFASystem):
         """
         Perform all computations for the MFA system in sequence.
         """
-        #self.interpolate_parameters()
+        self.interpolate_parameters()
         if self.cfg.customization.model_driven == 'production':
             self.compute_inflows_production_driven()
         elif self.cfg.customization.model_driven == 'final_demand':
@@ -20,6 +20,93 @@ class SteelMFASystem(fd.MFASystem):
             raise ValueError(f"Config item model_driven has invalid value: {self.cfg.model_driven}. Choose 'production', 'final_demand', or 'final_demand_with_start_value_and_growth_rate'.")
         self.compute_stock()
         self.compute_outflows()
+
+
+    def _prepare_interpolate(self, array): 
+        try:
+            xp=np.nonzero(array)[0].tolist()
+            xp.sort()
+            x=list(range(min(xp),max(xp)+1))
+            return xp, x
+        except ValueError:
+            return None, None
+
+    def interpolate_parameters(self):
+        """
+        Interpolate parameters to the model time step.
+        """
+        
+        logging.info("mfa_system - interpolate_parameters")
+
+        # Abbreviation for better readability
+        prm = self.parameters
+        Nr = len(self.dims["r"].items)
+        Ns = len(self.dims["s"].items)
+        Ni = len(self.dims["i"].items)
+        Np = len(self.dims["p"].items)
+        Nw = len(self.dims["w"].items)
+        Ne = len(self.dims["e"].items)
+
+        # DOMESTIC PRODUCTION, IMPORT NEW (absolute), EXPORT NEW (absolute)
+        # Index: rtsipe
+        # These data should already be provided for each year.
+
+        # EoLRecoveryRate
+        # Index: rtsip
+
+        for param in ['NewScrapRate', 'EoLRecoveryRate']:
+
+            logging.info('Interpolating parameter ' + param)
+            for r in np.arange(0,Nr):
+                for s in np.arange(0,Ns):
+                    for i in np.arange(0,Ni):
+                        for p in np.arange(0,Np):
+
+                            xp,x = self._prepare_interpolate(prm[param].values[r,:,s,i,p])
+                            if xp is not None:
+                                fp = prm[param].values[r,xp,s,i,p]
+                                yp = np.interp(x, xp, fp)
+                                prm[param].values[r,x,s,i,p] = yp
+
+        # Contamination
+        # Index: rtsipe
+
+        for param in ['Contamination']:
+
+            logging.info('Interpolating parameter ' + param)
+            for r in np.arange(0,Nr):
+                for s in np.arange(0,Ns):
+                    for i in np.arange(0,Ni):
+                        for p in np.arange(0,Np):
+                            for e in np.arange(0,Ne):
+
+                                xp,x = self._prepare_interpolate(prm[param].values[r,:,s,i,p,e])
+                                if xp is not None:
+                                    fp = prm[param].values[r,xp,s,i,p,e]
+                                    yp = np.interp(x, xp, fp)
+                                    prm[param].values[r,x,s,i,p,e] = yp
+
+        # ScrapSortingRate
+        # Index: rtsipw
+
+        for param in ['ScrapSortingRate']:
+
+            logging.info('Interpolating parameter ' + param)
+            for r in np.arange(0,Nr):
+                for s in np.arange(0,Ns):
+                    for i in np.arange(0,Ni):
+                        for p in np.arange(0,Np):
+                            for w in np.arange(0,Nw):
+
+                                xp,x = self._prepare_interpolate(prm[param].values[r,:,s,i,p,w])
+                                if xp is not None:
+                                    fp = prm[param].values[r,xp,s,i,p,w]
+                                    yp = np.interp(x, xp, fp)
+                                    prm[param].values[r,x,s,i,p,w] = yp
+
+        logging.info('Those parameters were not interpolated (i.e. must be provided in full):\n \
+                        DomesticProduction, ImportNew, ExportNew, InitialStock')
+
 
     def compute_inflows_production_driven(self):
         """
@@ -234,42 +321,35 @@ class SteelMFASystem(fd.MFASystem):
 
         # Define auxiliary flows for the MFA system in addition to the main flows defined in steel_definition.py
         aux = {
+            "EOLFlow": self.get_new_array(dim_letters=("t","c","r","s","i","p","e")),
             "ContaminatedScrap": self.get_new_array(dim_letters=("r", "t", "s", "i", "p", "e")),
         }
 
         ### EOL STEEL
         logging.info("mfa_system - EOL STEEL")
 
-        flw["End use stock => Waste management"].set_values(stk["End use stock"]._outflow_by_cohort)
+        #aux["EOLFlow"].set_values(stk["End use stock"]._outflow_by_cohort)
+        #flw["End use stock => Waste management"][...] = aux["EOLFlow"] * prm["EoLRecoveryRate"] # F_4_5: Collected end-of-life steel products
+        
+        flw["End use stock => Waste management"][...] = stk["End use stock"].outflow * prm["EoLRecoveryRate"] # F_4_5: Collected end-of-life steel products
+        
 
         ### WASTE MANAGEMENT
         logging.info("mfa_system - WASTE MANAGEMENT")
 
         # Contamination
         # Sum recovered EoL flow over age cohorts
-        aux["ContaminatedScrap"][...] = flw["End use stock => Waste management"].sum_to(("r","t","s","i","p","e"))
+        #aux["ContaminatedScrap"][...] = flw["End use stock => Waste management"].sum_to(("r","t","s","i","p","e"))
         # The Cu content of the flow needs to be increased with the new contamination:
         # Total Cu contamination = Cu contamination in EoL flow + Contamination factor * EoL flow
         # Element Cu has index 1 in Element classification [All, Cu]        
-        # element[0] = All = steel + Cu
-        aux["ContaminatedScrap"]["All"] += prm["Contamination"]["Cu"] * aux["ContaminatedScrap"]["All"]
 
-        # aux["ContaminatedScrap"][:,:,:,:,:, 0] = (
-        #     aux["ContaminatedScrap"][:,:,:,:,:, 0] +
-        #     np.einsum('rtsip,rtsip->rtsip',
-        #               prm["Contamination"][:,:,:,:,:, 1],
-        #               aux["ContaminatedScrap"][:,:,:,:,:, 0])
-        # )
+        #aux["ContaminatedScrap"]["All"] += prm["Contamination"]["Cu"] * aux["ContaminatedScrap"]["All"]
+        aux["ContaminatedScrap"]["All"] = (flw["End use stock => Waste management"] 
+                                           + flw["End use stock => Waste management"] * prm["Contamination"]["Cu"])
 
-        # element[1] = Cu
-        aux["ContaminatedScrap"]["Cu"] += prm["Contamination"]["Cu"] * aux["ContaminatedScrap"]["All"]
-
-        # aux["ContaminatedScrap"][..., 1] = (
-        #     aux["ContaminatedScrap"][..., 1] +
-        #     np.einsum('rtsip,rtsip->rtsip',
-        #               prm["Contamination"][..., 1],
-        #               aux["ContaminatedScrap"][..., 0])
-        # )
+        #aux["ContaminatedScrap"]["Cu"] += prm["Contamination"]["Cu"] * aux["ContaminatedScrap"]["All"]
+        aux["ContaminatedScrap"]["Cu"] = flw["End use stock => Waste management"] * prm["Contamination"]["Cu"]
 
         # Sorting scrap
         flw["Waste management => AVAILABLE SCRAP sysenv"][...] = aux["ContaminatedScrap"] * prm["ScrapSortingRate"] # F_5_0_AvailableScrap
