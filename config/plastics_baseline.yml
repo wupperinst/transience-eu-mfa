@@ -39,6 +39,7 @@ selected_export:
     - 'sysenv => Polymer market'
     - 'Plastics market => End use stock'
     - 'Waste collection => Waste sorting'
+    - 'Waste sorting => Sorted waste market'
   csv_selected_stocks:
     - 'End use stock'
   csv_slice_stocks:
