@@ -4,7 +4,7 @@ scenario: 'baseline_fd'
 
 # logging
 logging:
-  level: 'DEBUG' # options: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  level: 'INFO' # options: DEBUG, INFO, WARNING, ERROR, CRITICAL
 
 # model customization
 customization:
@@ -27,13 +27,5 @@ visualization:
 # data export
 do_export:
   pickle: False
-  csv: False
-selected_export:
-  csv_selected_flows:
-    - 'sysenv => Steel product market'
-    - 'Steel goods market => End use stock'
-    - 'Waste management => sysenv'
-  csv_selected_stocks:
-    - 'End use stock'
-  csv_slice_stocks:
-    - 'time': [2020, 2030, 2040, 2050]
+  csv: True
+

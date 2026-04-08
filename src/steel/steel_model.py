@@ -63,7 +63,11 @@ class SteelModel:
         logging.info("Exporting flows as dataframes.")
         flows_as_dataframes = self.mfa.get_flows_as_dataframes()
 
-        self.data_writer.export_mfa(mfa=self.mfa)
-        self.data_writer.visualize_results(model=self)
+        if self.cfg.do_export["csv"]:
+            logging.info("Exporting MFA system to csv.")
+            self.data_writer.export_mfa(mfa=self.mfa)
+
+        logging.info("Visualizing results.")
+        self.data_writer.visualize_results(model=self, flows_dfs=flows_as_dataframes, scenario=self.cfg.scenario)
 
         return flows_as_dataframes
