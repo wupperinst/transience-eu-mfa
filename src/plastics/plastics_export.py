@@ -85,11 +85,23 @@ class PlasticsDataExporter(CustomDataExporter):
 
     def visualize_flow(self, df: pd.DataFrame, scenario: str = "", region: str = "EU27+3", select_col: str = "sector", label_type: str = "production"):
         #df.reset_index(inplace=True, drop=True)
-        line_group = "sector" if select_col == "polymer" else "polymer"
+        if not label_type.startswith("sorted_waste"):
+            line_group = "sector" if select_col == "polymer" else "polymer"
+            dimensions = ['time', 'sector', 'polymer', 'value']
+        elif label_type == "sorted_waste_polymer":
+            line_group = "waste_category" if select_col == "polymer" else "waste_category"
+            dimensions = ['time', 'polymer', 'waste_category', 'value']
+        else: # label_type == "sorted_waste_sector"
+            line_group = "waste_category" if select_col == "sector" else "waste_category"
+            dimensions = ['time', 'sector', 'waste_category', 'value']
+
         labels = {"production": {"y_label":"Converter demand [t]", "title": f"Plastics Production by Sector and Polymer in {region}"},
                   "final_demand": {"y_label":"Final demand [t]", "title": f"Plastics Inflow by Sector and Polymer in {region}"},
-                  "outflow": {"y_label":"Collected plastic waste [t]", "title": f"Plastics Outflow by Sector and Polymer in {region}"}}
-        fig = px.area(df.loc[df['region']==region, ['time', 'sector', 'polymer', 'value']], 
+                  "outflow": {"y_label":"Collected plastic waste [t]", "title": f"Plastics Outflow by Sector and Polymer in {region}"},
+                  "sorted_waste_polymer": {"y_label":"Sorted plastic waste [t]", "title": f"Sorted Plastics Waste by Polymer and Waste Type in {region}"},
+                  "sorted_waste_sector": {"y_label":"Sorted plastic waste [t]", "title": f"Sorted Plastics Waste by Sector and Waste Type in {region}"}
+        }
+        fig = px.area(df.loc[df['region']==region, dimensions], 
                         x="time", y="value", line_group=line_group, color=select_col,
                         labels={"value":labels[label_type]["y_label"]},
                         title=labels[label_type]["title"],
@@ -135,9 +147,16 @@ class PlasticsDataExporter(CustomDataExporter):
         dfs['production'].reset_index(inplace=True, drop=True)
         dfs['outflow'] = flows_dfs.get("Waste collection => Waste sorting")
         dfs['outflow'].reset_index(inplace=True, drop=True)
+        dfs['sorted_waste'] = flows_dfs.get("Waste sorting => Sorted waste market")
+        dfs['sorted_waste'].reset_index(inplace=True, drop=True)
+        dfs['sorted_waste_polymer'] = flows_dfs.get("Waste sorting => Sorted waste market").groupby(
+            ['time', 'region', 'polymer', 'waste_category', 'element'])['value'].sum().reset_index()
+        dfs['sorted_waste_sector'] = flows_dfs.get("Waste sorting => Sorted waste market").groupby(
+            ['time', 'region', 'sector', 'waste_category', 'element'])['value'].sum().reset_index()
 
         data_type = {'time': 'numeric', 'age-cohort': 'numeric', 'region': 'text', 
-                     'sector': 'text', 'product': 'text', 'polymer': 'text', 'element': 'text', 
+                     'sector': 'text', 'product': 'text', 'polymer': 'text', 
+                     'waste_category': 'text', 'element': 'text', 
                      'value': 'numeric'}
         regions = dfs['final_demand']['region'].unique().tolist()
 
@@ -145,7 +164,8 @@ class PlasticsDataExporter(CustomDataExporter):
         table_production = self.build_table(df=dfs['production'], data_type=data_type)
         table_final_demand = self.build_table(df=dfs['final_demand'], data_type=data_type)
         table_outflow = self.build_table(df=dfs['outflow'], data_type=data_type)
-    
+        table_sorted_waste = self.build_table(df=dfs['sorted_waste'], data_type=data_type)
+
         # App layout
         app.layout = [
             # header
@@ -167,6 +187,15 @@ class PlasticsDataExporter(CustomDataExporter):
             dcc.RadioItems(options=['sector', 'polymer'], value='sector', id='controls-button-outflow'),
             dcc.Dropdown(options=regions, value='Germany', placeholder="Select a region", id='dropdown-outflow'),
             dcc.Graph(figure={}, id='controls-graph-outflow'),
+            #dcc.Graph(figure=figs['sorted_waste_polymer']),
+            dcc.RadioItems(options=['polymer', 'waste_category'], value='waste_category', id='controls-button-sorted-waste-polymer'),
+            dcc.Dropdown(options=regions, value='Germany', placeholder="Select a region", id='dropdown-sorted-waste-polymer'),
+            dcc.Graph(figure={}, id='controls-graph-sorted_waste-polymer'),
+            #dcc.Graph(figure=figs['sorted_waste_sector']),
+            dcc.RadioItems(options=['sector', 'waste_category'], value='waste_category', id='controls-button-sorted-waste-sector'),
+            dcc.Dropdown(options=regions, value='Germany', placeholder="Select a region", id='dropdown-sorted-waste-sector'),
+            dcc.Graph(figure={}, id='controls-graph-sorted_waste-sector'),
+
 
             html.Br(),
             html.Br(),
@@ -190,6 +219,10 @@ class PlasticsDataExporter(CustomDataExporter):
             # Outflow table
             html.Div(children=f'Outflow', style={'fontSize': 20, 'textAlign': 'left'}),
             table_outflow,
+            html.Br(),
+            # Sorted waste table
+            html.Div(children=f'Sorted waste', style={'fontSize': 20, 'textAlign': 'left'}),
+            table_sorted_waste,
         ]
 
         # Add controls to build the interaction
@@ -222,5 +255,26 @@ class PlasticsDataExporter(CustomDataExporter):
             fig = self.visualize_flow(df=dfs['outflow'], scenario=scenario, 
                                       select_col=col_chosen, region=region_chosen, label_type="outflow")
             return fig
+        
+        @callback(
+            Output(component_id='controls-graph-sorted_waste-polymer', component_property='figure'),
+            [Input(component_id='controls-button-sorted-waste-polymer', component_property='value')
+             ,Input(component_id='dropdown-sorted-waste-polymer', component_property='value')]
+        )
+        def update_graph(col_chosen, region_chosen):
+            fig = self.visualize_flow(df=dfs['sorted_waste_polymer'], scenario=scenario, 
+                                      select_col=col_chosen, region=region_chosen, label_type="sorted_waste_polymer")
+            return fig
+        
+        @callback(
+            Output(component_id='controls-graph-sorted_waste-sector', component_property='figure'),
+            [Input(component_id='controls-button-sorted-waste-sector', component_property='value')
+             ,Input(component_id='dropdown-sorted-waste-sector', component_property='value')]
+        )
+        def update_graph(col_chosen, region_chosen):
+            fig = self.visualize_flow(df=dfs['sorted_waste_sector'], scenario=scenario, 
+                                      select_col=col_chosen, region=region_chosen, label_type="sorted_waste_sector")
+            return fig
+
 
         app.run(debug=True)
