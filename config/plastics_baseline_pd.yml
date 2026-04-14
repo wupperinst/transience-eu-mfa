@@ -1,13 +1,13 @@
 # general config
 model_class: 'plastics'
-scenario: 'baseline'
+scenario: 'baseline_pd'
 
 # logging
 logging:
-  level: 'DEBUG' # options: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  level: 'INFO' # options: DEBUG, INFO, WARNING, ERROR, CRITICAL
 
 # data sources
-input_data_path: 'data/baseline_plastics/input'
+#input_data_path: 'data/baseline_plastics/input'
 
 # model customization
 customization:
@@ -27,10 +27,10 @@ visualization:
   sankey:
     do_visualize: False
   dashboard:
-    do_visualize: False
+    do_visualize: True
 
 # data export
-output_path: 'data/baseline_plastics/output'
+#output_path: 'data/baseline_plastics/output'
 do_export:
   pickle: False
   csv: True
@@ -41,10 +41,8 @@ selected_export:
     - 'Polymer market => SECONDARY Plastics manufacturing'
     - 'Plastics manufacturing => Plastics market'
     - 'Plastics market => End use stock'
-    - 'End use stock => Waste collection'
     - 'Waste collection => Waste sorting'
     - 'Waste sorting => Sorted waste market'
-    - 'Sorted waste market => Recycling'
     - 'Recycling => RECYCLATE sysenv'
     - 'Recycling => LOSSES sysenv'
   csv_selected_stocks:
