@@ -64,7 +64,7 @@ class PlasticsModel:
         self.mfa.compute()
         logging.info("Model computations completed.")
 
-        self.data_writer.export_mfa(mfa=self.mfa)
+        #self.data_writer.export_mfa(mfa=self.mfa)
         
         logging.info("Exporting stock slices to csv.")
         # Export sliced stocks with age-cohort dimension
@@ -82,7 +82,7 @@ class PlasticsModel:
         flows_as_dataframes = self.mfa.get_flows_as_dataframes(flow_names=self.cfg.selected_export["csv_selected_flows"])
         
         logging.info("Aggregating flows along age-cohort.")
-        flows_as_dataframes = self.mfa.aggregate_flows_by_age_cohort(flows_as_dataframes)
+        flows_as_dataframes = self.mfa.aggregate_flows_by_age_cohort(flows_as_dataframes, flow_names=self.cfg.selected_export["csv_selected_flows"])
         
         logging.info("Exporting flows to csv.")
         #self.data_writer.export_selected_mfa_flows_to_csv(mfa=self.mfa, flow_names=self.cfg.selected_export["csv_selected_flows"])

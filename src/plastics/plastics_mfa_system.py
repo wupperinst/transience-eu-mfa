@@ -511,8 +511,10 @@ class PlasticsMFASystem(fd.MFASystem):
         dfs_index_reset = {flow_name: df.reset_index() for flow_name, df in dfs.items()}
         return dfs_index_reset
 
-    def aggregate_flows_by_age_cohort(self, flows_dfs):
+    def aggregate_flows_by_age_cohort(self, flows_dfs, flow_names=[]):
         """Aggregate flow DataFrames by age-cohort."""
+        if flow_names:
+            flows_dfs = {flow_name: df for flow_name, df in flows_dfs.items() if flow_name in flow_names}
         for flow_name, df in flows_dfs.items():
             if 'age-cohort' in df.columns:
                 logging.debug(f"Aggregating {flow_name}.")
