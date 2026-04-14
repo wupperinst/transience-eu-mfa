@@ -86,12 +86,9 @@ class CustomDataExporter(EUMFABaseModel):
                     dimensions = mfa.dims.get_subset(dims=('t','c','r','s','d','p')) # get dimensions including age-cohort
                 fd_stock = fd.FlodymArray(dims=dimensions, name=f"{stock_name}_by_age_cohort", values=stock)
                 df_stock = fd_stock.to_df(index=False)
-                print(df_stock.columns)
                 sliced_stock = df_stock
                 for slice_dict in slice_dicts:
                     for col, vals in slice_dict.items():
-                        print(col) 
-                        print(vals)
                         sliced_stock = sliced_stock[sliced_stock[col].isin(vals)]
                 sliced_stock.to_csv(os.path.join(dir_out, f"{fde.helper.to_valid_file_name(stock_name)}_by_age_cohort_sliced.csv"))
             except KeyError:
