@@ -5,10 +5,10 @@ from .vehicles_mfa_system import VehiclesMFASystem
 from .vehicles_export import VehiclesDataExporter
 from .vehicles_definition import get_definition
 
-#todo übergabe hinzufügen (eol, material demand übergeben für kombiniertes modell)
+# todo übergabe hinzufügen (eol, material demand übergeben für kombiniertes modell)
+
 
 class VehiclesModel:
-
     def __init__(self, cfg: GeneralCfg):
         self.cfg = cfg
         self.definition = get_definition(cfg)
@@ -20,7 +20,6 @@ class VehiclesModel:
         self.init_mfa()
 
     def init_mfa(self):
-
         dimension_map = {
             "Time": "time_in_years",
             "Region": "regions",
@@ -55,5 +54,7 @@ class VehiclesModel:
 
     def run(self):
         self.mfa.compute()
+        flows_as_dataframes = self.mfa.get_flows_as_dataframes()
         self.data_writer.export_mfa(mfa=self.mfa)
         self.data_writer.visualize_results(model=self)
+        return flows_as_dataframes

@@ -48,26 +48,32 @@ MAPPING = {
 TOPDOWN = {
     # Legacy paths (for steel/cement flows models)
     "plastics_dir": "data/baseline_plastics_flows/input/datasets",
-    "steel_dir": "data/baseline_steel_flows/input/datasets",
+    "steel_dir": "data/baseline_fd-sv-gr_steel/input/datasets",
     "cement_stock_dir": "data/baseline_cement_stock_flows/input/datasets",
     "cement_flows_dir": "data/baseline_cement_stock_flows/input/datasets",
     # Start value and growth rate files
     "plastics_start": "data/baseline_plastics_flows/input/datasets/start_value.csv",
     "plastics_growth": "data/baseline_plastics_flows/input/datasets/growth_rate.csv",
-    "steel_start": "data/baseline_steel_flows/input/datasets/start_value.csv",
-    "steel_growth": "data/baseline_steel_flows/input/datasets/growth_rate.csv",
+    "steel_start": "data/baseline_fd-sv-gr_steel/input/datasets/start_value.csv",
+    "steel_growth": "data/baseline_fd-sv-gr_steel/input/datasets/growth_rate.csv",
     "cement_start": "data/baseline_cement_stock_flows/input/datasets/start_value.csv",
     "cement_growth": "data/baseline_cement_stock_flows/input/datasets/growth_rate.csv",
     # Plastics baseline model (production-driven, for historic stock)
     "plastics_baseline_dir": "data/baseline_plastics/input/datasets",
     "plastics_baseline_lifetime": "data/baseline_plastics/input/datasets/Lifetime.csv",
     "plastics_baseline_domestic_demand": "data/baseline_plastics/input/datasets/DomesticDemand.csv",
+    "steel_baseline_dir": "data/baseline_pd_steel/input/datasets",
+    "steel_baseline_lifetime": "data/baseline_pd_steel/input/datasets/Lifetime.csv",
     # Plastics fd-sv-gr model (final-demand-driven with start value & growth rate)
     "plastics_fd_sv_gr_dir": "data/fd-sv-gr_plastics/input/datasets",
     "plastics_fd_sv_gr_start": "data/fd-sv-gr_plastics/input/datasets/start_value.csv",
     "plastics_fd_sv_gr_growth": "data/fd-sv-gr_plastics/input/datasets/growth_rate.csv",
+    "steel_fd_sv_gr_dir": "data/baseline_fd-sv-gr_steel/input/datasets",
+    "steel_fd_sv_gr_start": "data/baseline_fd-sv-gr_steel/input/datasets/start_value.csv",
+    "steel_fd_sv_gr_growth": "data/baseline_fd-sv-gr_steel/input/datasets/growth_rate.csv",
     # Combined output
     "plastics_combined_output_dir": "data/combined_plastics/output",
+    "steel_combined_output_dir": "data/combined_steel/output",
 }
 
 
@@ -100,15 +106,15 @@ DIM_CATALOGS: Dict[str, Dict[str, Tuple[str, Optional[str]]]] = {
     },
     "steel": {
         "sector": (
-            "data/baseline_steel_flows/input/dimensions/end_use_sectors.csv",
+            "data/baseline_fd-sv-gr_steel/input/dimensions/end_use_sectors.csv",
             None,
         ),
-        "product": ("data/baseline_steel_flows/input/dimensions/products.csv", None),
+        "product": ("data/baseline_fd-sv-gr_steel/input/dimensions/products.csv", None),
         "intermediate": (
-            "data/baseline_steel_flows/input/dimensions/intermediates.csv",
+            "data/baseline_fd-sv-gr_steel/input/dimensions/intermediates.csv",
             None,
         ),
-        "element": ("data/baseline_steel_flows/input/dimensions/elements.csv", None),
+        "element": ("data/baseline_fd-sv-gr_steel/input/dimensions/elements.csv", None),
     },
     "cement": {
         "Concrete product simple": (
@@ -144,6 +150,14 @@ PLASTICS_AUTO_SECTOR = "Automotive"
 
 PLASTICS_INSULATION_POLYMERS = ["PS-E", "PUR"]
 
+STEEL_KEY_COLS = ("region", "sector", "intermediate", "product", "element")
+STEEL_TIME_COL = "time"
+STEEL_VALUE_COL = "value"
+STEEL_BASE_YEAR = 2023
+STEEL_MAX_YEAR = 2050
+STEEL_CONSTRUCTION_SECTOR = "Construction"
+STEEL_AUTOMOTIVE_SECTOR = "Automotive"
+
 
 # =============================================================================
 
@@ -172,6 +186,7 @@ class SourceFlowNames:
 
     # Vehicles outflows (EOL)
     vehicles_plastics_eol: str = "Plastics stock in vehicles => sysenv"
+    vehicles_steel_eol: str = "Steel stock in vehicles => sysenv"
 
 
 SOURCE_FLOWS = SourceFlowNames()
@@ -204,4 +219,17 @@ def get_plastics_config() -> Dict:
         "bc_sector": PLASTICS_BC_SECTOR,
         "auto_sector": PLASTICS_AUTO_SECTOR,
         "insulation_polymers": PLASTICS_INSULATION_POLYMERS,
+    }
+
+
+def get_steel_config() -> Dict:
+    """Return steel-specific configuration for combined model."""
+    return {
+        "key_cols": STEEL_KEY_COLS,
+        "time_col": STEEL_TIME_COL,
+        "value_col": STEEL_VALUE_COL,
+        "base_year": STEEL_BASE_YEAR,
+        "max_year": STEEL_MAX_YEAR,
+        "construction_sector": STEEL_CONSTRUCTION_SECTOR,
+        "automotive_sector": STEEL_AUTOMOTIVE_SECTOR,
     }
