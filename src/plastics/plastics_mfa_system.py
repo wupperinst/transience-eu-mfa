@@ -507,7 +507,7 @@ class PlasticsMFASystem(fd.MFASystem):
         """Retrieve flows as pandas DataFrames from the MFA system."""
         if not flow_names:
             flow_names = list(self.flows.keys())
-        dfs = {flow_name: self.flows[flow_name].to_df() for flow_name in flow_names}
+        dfs = {flow_name: self.flows[flow_name].to_df(sparse=True) for flow_name in flow_names}
         dfs_index_reset = {flow_name: df.reset_index() for flow_name, df in dfs.items()}
         return dfs_index_reset
 
