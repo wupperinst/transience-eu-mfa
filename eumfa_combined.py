@@ -23,7 +23,7 @@ Configuration flags at the top of the file control which models run.
 import glob
 import logging
 import os
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple, cast
 
 import numpy as np
 import pandas as pd
@@ -39,6 +39,7 @@ from src.common.combine_spec import (
     PLASTICS_AUTO_SECTOR,
     get_dim_catalog,
     get_plastics_config,
+    get_steel_config,
 )
 
 # =============================================================================
@@ -54,7 +55,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(mess
 USE_BUILDINGS = False
 USE_VEHICLES = True
 COMBINE_PLASTICS = True
-COMBINE_STEEL = False
+COMBINE_STEEL = True
 COMBINE_CEMENT = False
 DOWNSTREAM_ONLY = False
 BASE_YEAR = 2023
@@ -104,9 +105,11 @@ def std_steel_cols(df: pd.DataFrame) -> pd.DataFrame:
         },
         errors="ignore",
     )
-    for c in ("time", "region", "sector", "intermediate", "product"):
+    for c in ("time", "region", "sector", "product"):
         if c not in df.columns:
             df[c] = "Unknown"
+    if "intermediate" not in df.columns:
+        df["intermediate"] = "Steel Intermediary"
     if "element" not in df.columns:
         df["element"] = "All"
     return df
@@ -259,9 +262,10 @@ def map_bottom_up_to_target(
 def aggregate_vehicle_type(df: pd.DataFrame, value_col: str = "value") -> pd.DataFrame:
     """Aggregate flow DataFrame over Vehicle type dimension."""
     if "Vehicle type" not in df.columns:
-        return df
+        return df.copy()
     group_cols = [c for c in df.columns if c not in ["Vehicle type", value_col]]
-    return df.groupby(group_cols, as_index=False)[value_col].sum()
+    grouped_df = df.groupby(group_cols, as_index=False)[value_col].sum()
+    return cast(pd.DataFrame, grouped_df)
 
 
 def map_vehicles_to_plastics(
@@ -360,7 +364,11 @@ def compute_residual_eol_inline(
     lt_df["lt_value"] = pd.to_numeric(lt_df["lt_value"], errors="coerce").fillna(35.0)
 
     # Group by dimensions
-    dim_cols = [c for c in ["region", "sector", "polymer"] if c in demand_df.columns]
+    dim_cols = [
+        c
+        for c in ["region", "sector", "polymer", "intermediate", "product"]
+        if c in demand_df.columns
+    ]
 
     if dim_cols:
         grouped = demand_df.groupby(dim_cols)
@@ -378,7 +386,7 @@ def compute_residual_eol_inline(
         inflows = group.groupby(time_col)[value_col].sum()
 
         for cohort_year, inflow_val in inflows.items():
-            cohort_year = int(cohort_year)
+            cohort_year = int(cast(int, cohort_year))
             if inflow_val <= 0:
                 continue
 
@@ -447,9 +455,10 @@ def _get_lifetime_for_key(
 def aggregate_eol_no_cohort(df: pd.DataFrame, value_col: str = "value") -> pd.DataFrame:
     """Aggregate EOL DataFrame, removing cohort dimension."""
     if df.empty:
-        return df
+        return df.copy()
     group_cols = [c for c in df.columns if c not in [value_col, "age-cohort"]]
-    return df.groupby(group_cols, as_index=False)[value_col].sum()
+    grouped_df = df.groupby(group_cols, as_index=False)[value_col].sum()
+    return cast(pd.DataFrame, grouped_df)
 
 
 # =============================================================================
@@ -1105,6 +1114,131 @@ def _map_vehicles_to_plastics_flows(
     return bu_demand, bu_eol
 
 
+def _map_buildings_to_steel(
+    flows: Optional[Dict],
+    time_col: str,
+    value_col: str,
+    base_year: int,
+) -> Tuple[pd.DataFrame, pd.DataFrame]:
+    """Map buildings steel flows to steel model dimensions."""
+    empty_df = pd.DataFrame(
+        columns=[
+            time_col,
+            "region",
+            "sector",
+            "intermediate",
+            "product",
+            "element",
+            value_col,
+        ]
+    )
+
+    if not flows:
+        return empty_df, empty_df
+
+    df_steel = flows.get(SOURCE_FLOWS.buildings_steel)
+    if df_steel is not None:
+        mapped_demand = map_bottom_up_to_target(
+            flow_df=df_steel.reset_index(),
+            region_src_dim="Region",
+            region_tgt_dim="region",
+            regions_csv=MAPPING["buildings_steel_regions"],
+            products_csv=MAPPING["buildings_steel_products"],
+            target="steel",
+        )
+        bu_demand = std_steel_cols(mapped_demand)
+        if "Time" in bu_demand.columns and time_col not in bu_demand.columns:
+            bu_demand = bu_demand.rename(columns={"Time": time_col})
+    else:
+        bu_demand = empty_df
+
+    df_steel_eol = flows.get(SOURCE_FLOWS.buildings_steel_eol)
+    if df_steel_eol is not None:
+        df_filtered = _filter_and_split_buildings_eol(
+            df_steel_eol.reset_index(), base_year
+        )
+        if not df_filtered.empty:
+            mapped_eol = map_bottom_up_to_target(
+                flow_df=df_filtered,
+                region_src_dim="Region",
+                region_tgt_dim="region",
+                regions_csv=MAPPING["buildings_steel_regions"],
+                products_csv=MAPPING["buildings_steel_products"],
+                target="steel",
+            )
+            bu_eol = std_steel_cols(mapped_eol)
+            if "Time" in bu_eol.columns and time_col not in bu_eol.columns:
+                bu_eol = bu_eol.rename(columns={"Time": time_col})
+        else:
+            bu_eol = empty_df
+    else:
+        bu_eol = empty_df
+
+    return bu_demand, bu_eol
+
+
+def _map_vehicles_to_steel(
+    flows: Optional[Dict],
+    time_col: str,
+    value_col: str,
+) -> Tuple[pd.DataFrame, pd.DataFrame]:
+    """Map vehicles steel flows to steel model dimensions."""
+    empty_df = pd.DataFrame(
+        columns=[
+            time_col,
+            "region",
+            "sector",
+            "intermediate",
+            "product",
+            "element",
+            value_col,
+        ]
+    )
+
+    if not flows:
+        return empty_df, empty_df
+
+    df_steel = flows.get(SOURCE_FLOWS.vehicles_steel)
+    if df_steel is not None:
+        logging.info(f"[Steel] Mapping vehicles steel demand: {len(df_steel)} rows")
+        mapped_demand = map_bottom_up_to_target(
+            flow_df=aggregate_vehicle_type(df_steel.reset_index(), value_col=value_col),
+            region_src_dim="Region",
+            region_tgt_dim="region",
+            regions_csv=MAPPING["vehicles_steel_regions"],
+            products_csv=MAPPING["vehicles_steel_products"],
+            target="steel",
+            value_col=value_col,
+        )
+        bu_demand = std_steel_cols(mapped_demand)
+        if "Time" in bu_demand.columns and time_col not in bu_demand.columns:
+            bu_demand = bu_demand.rename(columns={"Time": time_col})
+    else:
+        bu_demand = empty_df
+
+    df_steel_eol = flows.get(SOURCE_FLOWS.vehicles_steel_eol)
+    if df_steel_eol is not None:
+        logging.info(f"[Steel] Mapping vehicles steel EOL: {len(df_steel_eol)} rows")
+        mapped_eol = map_bottom_up_to_target(
+            flow_df=aggregate_vehicle_type(
+                df_steel_eol.reset_index(), value_col=value_col
+            ),
+            region_src_dim="Region",
+            region_tgt_dim="region",
+            regions_csv=MAPPING["vehicles_steel_regions"],
+            products_csv=MAPPING["vehicles_steel_products"],
+            target="steel",
+            value_col=value_col,
+        )
+        bu_eol = std_steel_cols(mapped_eol)
+        if "Time" in bu_eol.columns and time_col not in bu_eol.columns:
+            bu_eol = bu_eol.rename(columns={"Time": time_col})
+    else:
+        bu_eol = empty_df
+
+    return bu_demand, bu_eol
+
+
 def _save_plastics_intermediate_files(
     bu_demand_buildings: pd.DataFrame,
     bu_eol_buildings: pd.DataFrame,
@@ -1130,6 +1264,517 @@ def _save_plastics_intermediate_files(
         logging.info(f"[Plastics] Saved: {filename}")
 
 
+def _zero_future_steel_parameters(model, time_items: List, base_year: int) -> None:
+    """Zero out steel inflow-related parameters for years >= base_year."""
+    demand_param = model.mfa.parameters["DomesticProduction"]
+    for t_idx, year in enumerate(time_items):
+        if year >= base_year:
+            demand_param.values[:, t_idx, :, :, :, :] = 0.0
+
+    for pname in [
+        "ImportNewProducts",
+        "ImportNewGoods",
+        "ExportNewProducts",
+        "ExportNewGoods",
+    ]:
+        if pname not in model.mfa.parameters:
+            continue
+        param = model.mfa.parameters[pname]
+        for t_idx, year in enumerate(time_items):
+            if year >= base_year:
+                param.values[:, t_idx, :, :, :, :] = 0.0
+
+
+def extract_eol_flow_steel(
+    mfa_model,
+    flow_name: str = "End use stock => Waste management",
+    base_year: int = 2023,
+    sector_filter: Optional[str] = None,
+) -> pd.DataFrame:
+    """Extract steel EOL flow for time >= base_year."""
+    if flow_name not in mfa_model.mfa.flows:
+        logging.warning(f"Flow '{flow_name}' not found in model")
+        return pd.DataFrame()
+
+    df = mfa_model.mfa.flows[flow_name].to_df().reset_index()
+    df = std_steel_cols(df)
+    df = df[df["time"] >= base_year]
+    if sector_filter and "sector" in df.columns:
+        df = df[df["sector"] == sector_filter]
+    return df[df["value"].abs() > 1e-9].copy()
+
+
+def _export_historic_steel_flows(model) -> None:
+    """Export historic steel flows."""
+    output_dir = "data/baseline_pd_steel/output/export/flows"
+    os.makedirs(output_dir, exist_ok=True)
+
+    export_flows = [
+        "sysenv => Steel product market",
+        "Steel product market => Steel goods manufacturing",
+        "Steel goods manufacturing => Steel goods market",
+        "Steel goods market => End use stock",
+        "End use stock => Waste management",
+        "Waste management => AVAILABLE SCRAP sysenv",
+        "Waste management => LOST SCRAP sysenv",
+    ]
+
+    for flow_name in export_flows:
+        if flow_name not in model.mfa.flows:
+            continue
+        df = model.mfa.flows[flow_name].to_df().reset_index()
+        safe_name = _steel_flow_export_stem(flow_name)
+        out_path = os.path.join(output_dir, f"{safe_name}_baseline.csv")
+        fc.export_numeric_csv(df, out_path, value_cols=("value",))
+
+
+def _steel_flow_export_stem(flow_name: str) -> str:
+    """Return normalized file stem for steel flow export names."""
+    return flow_name.replace(" => ", "__").replace(" ", "_").lower()
+
+
+def _extract_historic_steel_future_supplements(
+    model, base_year: int
+) -> Dict[str, pd.DataFrame]:
+    """Extract post-base-year historic steel outflows to supplement future exports."""
+    flow_names = [
+        "End use stock => Waste management",
+        "Waste management => AVAILABLE SCRAP sysenv",
+        "Waste management => LOST SCRAP sysenv",
+    ]
+    supplements = {}
+    for flow_name in flow_names:
+        if flow_name not in model.mfa.flows:
+            continue
+        df = model.mfa.flows[flow_name].to_df().reset_index()
+        df = std_steel_cols(df)
+        df = df[df["time"] >= base_year].copy()
+        df = df[df["value"].abs() > 1e-9].copy()
+        supplements[flow_name] = df
+    return supplements
+
+
+def _save_historic_steel_future_supplements(
+    supplements: Dict[str, pd.DataFrame],
+    base_dir: str,
+) -> None:
+    """Save historic steel supplements used to patch future exports."""
+    for flow_name, df in supplements.items():
+        if df.empty:
+            continue
+        stem = _steel_flow_export_stem(flow_name)
+        out_path = os.path.join(base_dir, f"{stem}_historic_future_supplement.csv")
+        df.to_csv(out_path, index=False)
+
+
+def _run_historic_steel_model(
+    base_year: int,
+    coupled_sectors: List[str],
+    time_col: str,
+    value_col: str,
+) -> Dict[str, pd.DataFrame]:
+    """Run historic steel model and extract continuing EOL for coupled sectors."""
+    empty_df = pd.DataFrame(
+        columns=[
+            time_col,
+            "region",
+            "sector",
+            "intermediate",
+            "product",
+            "element",
+            value_col,
+        ]
+    )
+
+    try:
+        from src.steel.steel_model import SteelModel
+        from src.common.common_cfg import GeneralCfg
+
+        with open("config/steel_baseline_pd.yml", "r") as f:
+            config_dict = yaml.safe_load(f)
+
+        config_dict["input_data_path"] = "data/baseline_pd_steel/input"
+        config_dict["output_path"] = "data/baseline_pd_steel/output"
+
+        config_dict["do_export"] = {"pickle": False, "csv": False}
+        config_dict["visualization"] = {
+            "inflow": {"do_visualize": False},
+            "production": {"do_visualize": False},
+            "outflow": {"do_visualize": False},
+            "sankey": {"do_visualize": False},
+            "dashboard": {"do_visualize": False},
+        }
+
+        cfg = GeneralCfg.from_model_class(**config_dict)
+        model = SteelModel(cfg=cfg)
+        time_items = list(model.mfa.dims["t"].items)
+        _zero_future_steel_parameters(model, time_items, base_year)
+        model.mfa.compute()
+
+        _export_historic_steel_flows(model)
+        supplements = _extract_historic_steel_future_supplements(model, base_year)
+        _save_historic_steel_future_supplements(
+            supplements, TOPDOWN["steel_fd_sv_gr_dir"]
+        )
+
+        historic_eol_by_sector = {}
+        for sector in coupled_sectors:
+            historic_eol = extract_eol_flow_steel(
+                mfa_model=model,
+                flow_name="End use stock => Waste management",
+                base_year=base_year,
+                sector_filter=sector,
+            )
+            if not historic_eol.empty:
+                path = os.path.join(
+                    TOPDOWN["steel_fd_sv_gr_dir"],
+                    f"historic_continuing_eol_{sector.lower()}.csv",
+                )
+                historic_eol.to_csv(path, index=False)
+            historic_eol_by_sector[sector] = historic_eol
+
+        return historic_eol_by_sector
+    except Exception as e:
+        logging.error(f"[Steel] Failed to run historic model: {e}")
+        return {sector: empty_df.copy() for sector in coupled_sectors}
+
+
+def _export_future_steel_flows(model) -> None:
+    """Export future steel flows."""
+    output_dir = "data/combined_steel_future/output/export/flows"
+    os.makedirs(output_dir, exist_ok=True)
+
+    export_flows = [
+        "sysenv => Steel product market",
+        "Steel product market => Steel goods manufacturing",
+        "Steel goods manufacturing => Steel goods market",
+        "Steel goods market => End use stock",
+        "End use stock => Waste management",
+        "Waste management => AVAILABLE SCRAP sysenv",
+        "Waste management => LOST SCRAP sysenv",
+    ]
+
+    for flow_name in export_flows:
+        if flow_name not in model.mfa.flows:
+            continue
+        df = model.mfa.flows[flow_name].to_df().reset_index()
+        safe_name = _steel_flow_export_stem(flow_name)
+        out_path = os.path.join(output_dir, f"{safe_name}_combined_future.csv")
+        fc.export_numeric_csv(df, out_path, value_cols=("value",))
+
+
+def _append_historic_supplements_to_future_steel_exports() -> None:
+    """Append historic continuing steel outflows to future export CSVs."""
+    base_dir = TOPDOWN["steel_fd_sv_gr_dir"]
+    future_dir = "data/combined_steel_future/output/export/flows"
+    if not os.path.exists(future_dir):
+        return
+
+    stems = [
+        _steel_flow_export_stem("End use stock => Waste management"),
+        _steel_flow_export_stem("Waste management => AVAILABLE SCRAP sysenv"),
+        _steel_flow_export_stem("Waste management => LOST SCRAP sysenv"),
+    ]
+
+    for stem in stems:
+        supplement_path = os.path.join(
+            base_dir, f"{stem}_historic_future_supplement.csv"
+        )
+        future_path = os.path.join(future_dir, f"{stem}_combined_future.csv")
+        if not (os.path.exists(supplement_path) and os.path.exists(future_path)):
+            continue
+
+        future_df = pd.read_csv(future_path)
+        supplement_df = pd.read_csv(supplement_path)
+        if future_df.empty and supplement_df.empty:
+            continue
+
+        combined_df = pd.concat(
+            [future_df, supplement_df], ignore_index=True, sort=False
+        )
+        if "value" in combined_df.columns:
+            combined_df["value"] = pd.to_numeric(
+                combined_df["value"], errors="coerce"
+            ).fillna(0.0)
+        dims = [c for c in combined_df.columns if c != "value"]
+        combined_df = combined_df.groupby(dims, as_index=False)["value"].sum()
+        fc.export_numeric_csv(combined_df, future_path, value_cols=("value",))
+
+
+def _combine_steel_flows(base_year: int) -> None:
+    """Combine historic and future steel flow CSVs."""
+    historic_dir = "data/baseline_pd_steel/output/export/flows"
+    future_dir = "data/combined_steel_future/output/export/flows"
+    combined_dir = "data/combined_steel/output/flows"
+
+    os.makedirs(combined_dir, exist_ok=True)
+    if not os.path.exists(historic_dir) or not os.path.exists(future_dir):
+        logging.warning("[Steel] Historic or future directory not found")
+        return
+
+    historic_files = glob.glob(os.path.join(historic_dir, "*.csv"))
+    future_files = glob.glob(os.path.join(future_dir, "*.csv"))
+
+    def normalize_filename(fname):
+        base = fname.replace(".csv", "")
+        for suffix in ("_baseline", "_combined_future", "_historic", "_future"):
+            if base.endswith(suffix):
+                base = base[: -len(suffix)]
+        return base
+
+    flow_pairs = {}
+    for fpath in historic_files:
+        key = normalize_filename(os.path.basename(fpath))
+        flow_pairs.setdefault(key, {})["historic"] = fpath
+    for fpath in future_files:
+        key = normalize_filename(os.path.basename(fpath))
+        flow_pairs.setdefault(key, {})["future"] = fpath
+
+    for flow_key, paths in flow_pairs.items():
+        if "historic" in paths and "future" in paths:
+            out_path = os.path.join(combined_dir, f"{flow_key}_combined.csv")
+            fc.combine_hist_future_flodym(
+                historic_path=paths["historic"],
+                future_path=paths["future"],
+                output_path=out_path,
+                time_col="time",
+                value_col="value",
+                base_year=base_year,
+            )
+
+
+def _run_future_steel_model_and_combine(
+    total_future_demand: pd.DataFrame,
+    time_col: str,
+    value_col: str,
+    base_year: int,
+) -> None:
+    """Run future steel model and combine with historic outputs."""
+    final_demand_path = os.path.join(TOPDOWN["steel_fd_sv_gr_dir"], "FinalDemand.csv")
+    final_demand_cols = [
+        "region",
+        "time",
+        "sector",
+        "intermediate",
+        "product",
+        "element",
+        "value",
+    ]
+
+    export_df = total_future_demand.copy()
+    for col in final_demand_cols:
+        if col not in export_df.columns:
+            if col == "element":
+                export_df[col] = "All"
+            elif col == "time":
+                export_df[col] = export_df.get(time_col, base_year)
+            else:
+                export_df[col] = "Unknown"
+
+    if time_col != "time" and time_col in export_df.columns:
+        export_df = export_df.rename(columns={time_col: "time"})
+    if value_col != "value" and value_col in export_df.columns:
+        export_df = export_df.rename(columns={value_col: "value"})
+
+    export_df = export_df[[c for c in final_demand_cols if c in export_df.columns]]
+    export_df.to_csv(final_demand_path, index=False)
+
+    try:
+        from src.steel.steel_model import SteelModel
+        from src.common.common_cfg import GeneralCfg
+
+        with open("config/steel_combined_future.yml", "r") as f:
+            config_dict = yaml.safe_load(f)
+
+        config_dict["do_export"] = {"pickle": False, "csv": False}
+        config_dict["visualization"] = {
+            "inflow": {"do_visualize": False},
+            "production": {"do_visualize": False},
+            "outflow": {"do_visualize": False},
+            "sankey": {"do_visualize": False},
+            "dashboard": {"do_visualize": False},
+        }
+
+        cfg = GeneralCfg.from_model_class(**config_dict)
+        model = SteelModel(cfg=cfg)
+        model.mfa.compute()
+        _export_future_steel_flows(model)
+        _append_historic_supplements_to_future_steel_exports()
+    except Exception as e:
+        logging.error(f"[Steel] Future model failed: {e}")
+        return
+
+    _combine_steel_flows(base_year)
+
+
+def run_steel_coupling(
+    flows_buildings: Optional[Dict],
+    flows_vehicles: Optional[Dict] = None,
+) -> None:
+    """Run steel coupling with buildings and vehicles."""
+    logging.info("=" * 60)
+    logging.info("STARTING STEEL + BUILDINGS + VEHICLES COUPLING")
+    logging.info("=" * 60)
+
+    cfg = get_steel_config()
+    key_cols = cfg["key_cols"]
+    time_col = cfg["time_col"]
+    value_col = cfg["value_col"]
+    base_year = cfg["base_year"]
+    max_year = cfg["max_year"]
+    construction_sector = cfg["construction_sector"]
+    automotive_sector = cfg["automotive_sector"]
+
+    bu_demand_buildings, bu_eol_buildings = _map_buildings_to_steel(
+        flows_buildings, time_col, value_col, base_year
+    )
+    bu_demand_vehicles, bu_eol_vehicles = _map_vehicles_to_steel(
+        flows_vehicles, time_col, value_col
+    )
+
+    base_dir = TOPDOWN["steel_fd_sv_gr_dir"]
+    for filename, df in {
+        "bottom_up_demand_buildings.csv": bu_demand_buildings,
+        "bottom_up_eol_buildings.csv": bu_eol_buildings,
+        "bottom_up_demand_vehicles.csv": bu_demand_vehicles,
+        "bottom_up_eol_vehicles.csv": bu_eol_vehicles,
+    }.items():
+        path = os.path.join(base_dir, filename)
+        ensure_dir(path)
+        df.to_csv(path, index=False)
+
+    start_st = std_steel_cols(pd.read_csv(TOPDOWN["steel_fd_sv_gr_start"]))
+    growth_st = std_steel_cols(pd.read_csv(TOPDOWN["steel_fd_sv_gr_growth"]))
+    lifetime_st = pd.read_csv(TOPDOWN["steel_baseline_lifetime"]).rename(
+        columns={"intermediary_product": "intermediate"}
+    )
+
+    residual_construction_future, residual_construction_eol = (
+        _calculate_sector_residual(
+            sector_name=construction_sector,
+            bu_demand=bu_demand_buildings,
+            start_values=start_st,
+            growth_rates=growth_st,
+            lifetime_df=lifetime_st,
+            merge_keys=list(key_cols),
+            time_col=time_col,
+            value_col=value_col,
+            base_year=base_year,
+            max_year=max_year,
+            output_prefix="construction",
+            output_dir=TOPDOWN["steel_fd_sv_gr_dir"],
+            log_label="Steel",
+        )
+    )
+
+    residual_automotive_future, residual_automotive_eol = _calculate_sector_residual(
+        sector_name=automotive_sector,
+        bu_demand=bu_demand_vehicles,
+        start_values=start_st,
+        growth_rates=growth_st,
+        lifetime_df=lifetime_st,
+        merge_keys=list(key_cols),
+        time_col=time_col,
+        value_col=value_col,
+        base_year=base_year,
+        max_year=max_year,
+        output_prefix="automotive",
+        output_dir=TOPDOWN["steel_fd_sv_gr_dir"],
+        log_label="Steel",
+    )
+
+    historic_eol_by_sector = _run_historic_steel_model(
+        base_year=base_year,
+        coupled_sectors=[construction_sector, automotive_sector],
+        time_col=time_col,
+        value_col=value_col,
+    )
+    historic_eol_construction = historic_eol_by_sector[construction_sector]
+    historic_eol_automotive = historic_eol_by_sector[automotive_sector]
+
+    total_future_eol = fc.compute_total_future_flodym(
+        key_cols=key_cols,
+        time_col=time_col,
+        value_col=value_col,
+        base_year=base_year,
+        include_base_year=True,
+        flows={
+            "buildings_eol": bu_eol_buildings,
+            "vehicles_eol": bu_eol_vehicles,
+            "historic_construction_eol": historic_eol_construction,
+            "historic_automotive_eol": historic_eol_automotive,
+            "residual_construction_eol": residual_construction_eol,
+            "residual_automotive_eol": residual_automotive_eol,
+        },
+    )
+    total_future_eol.to_csv(
+        os.path.join(base_dir, "total_future_eol_flows.csv"), index=False
+    )
+
+    bu_demand_future_construction = bu_demand_buildings[
+        bu_demand_buildings[time_col] >= base_year
+    ].copy()
+    construction_total = fc.compute_total_future_flodym(
+        key_cols=key_cols,
+        time_col=time_col,
+        value_col=value_col,
+        base_year=base_year,
+        include_base_year=True,
+        flows={
+            "buildings": bu_demand_future_construction,
+            "residual": residual_construction_future,
+        },
+    )
+
+    bu_demand_future_automotive = bu_demand_vehicles[
+        bu_demand_vehicles[time_col] >= base_year
+    ].copy()
+    automotive_total = fc.compute_total_future_flodym(
+        key_cols=key_cols,
+        time_col=time_col,
+        value_col=value_col,
+        base_year=base_year,
+        include_base_year=True,
+        flows={
+            "vehicles": bu_demand_future_automotive,
+            "residual": residual_automotive_future,
+        },
+    )
+
+    coupled_sectors = {construction_sector, automotive_sector}
+    start_other = start_st[~start_st["sector"].isin(coupled_sectors)].copy()
+    growth_other = growth_st[~growth_st["sector"].isin(coupled_sectors)].copy()
+    if not start_other.empty and not growth_other.empty:
+        other_total = fc.compute_residual_cumulative_growth(
+            residual_base_df=start_other,
+            growth_rate_df=growth_other,
+            base_year=base_year,
+            max_year=max_year,
+            key_cols=key_cols,
+            time_col=time_col,
+            value_col=value_col,
+        )
+    else:
+        other_total = pd.DataFrame(columns=list(key_cols) + [time_col, value_col])
+
+    total_future_demand = pd.concat(
+        [construction_total, automotive_total, other_total], ignore_index=True
+    )
+    total_future_demand = total_future_demand.groupby(
+        list(key_cols) + [time_col], as_index=False
+    )[value_col].sum()
+    total_future_demand.to_csv(
+        os.path.join(base_dir, "total_future_demand.csv"), index=False
+    )
+
+    _run_future_steel_model_and_combine(
+        total_future_demand=total_future_demand,
+        time_col=time_col,
+        value_col=value_col,
+        base_year=base_year,
+    )
+
+
 def _calculate_sector_residual(
     sector_name: str,
     bu_demand: pd.DataFrame,
@@ -1142,6 +1787,8 @@ def _calculate_sector_residual(
     base_year: int,
     max_year: int,
     output_prefix: str,
+    output_dir: Optional[str] = None,
+    log_label: str = "Plastics",
 ) -> Tuple[pd.DataFrame, pd.DataFrame]:
     """
     Calculate residual demand and EOL for a single sector.
@@ -1152,19 +1799,19 @@ def _calculate_sector_residual(
     start_sector = start_values[start_values["sector"] == sector_name].copy()
     growth_sector = growth_rates[growth_rates["sector"] == sector_name].copy()
 
-    logging.info(f"[Plastics] {sector_name}: {len(start_sector)} start value rows")
+    logging.info(f"[{log_label}] {sector_name}: {len(start_sector)} start value rows")
 
     # Aggregate bottom-up at base year
     bu_base = bu_demand[bu_demand[time_col] == base_year].copy()
     bu_base_agg = bu_base.groupby(merge_keys, as_index=False)[value_col].sum()
 
     logging.info(
-        f"[Plastics] {sector_name} bottom-up at base year: {bu_base_agg[value_col].sum():.2f}"
+        f"[{log_label}] {sector_name} bottom-up at base year: {bu_base_agg[value_col].sum():.2f}"
     )
 
     # Calculate residual: start_value - bottom_up
     residual_base = start_sector.merge(
-        bu_base_agg[merge_keys + [value_col]].rename(columns={value_col: "bu_val"}),
+        bu_base_agg[merge_keys + [value_col]].rename({value_col: "bu_val"}, axis=1),
         on=merge_keys,
         how="left",
     )
@@ -1177,7 +1824,7 @@ def _calculate_sector_residual(
     )
 
     logging.info(
-        f"[Plastics] {sector_name} residual at base year: {residual_base[value_col].sum():.2f}"
+        f"[{log_label}] {sector_name} residual at base year: {residual_base[value_col].sum():.2f}"
     )
 
     # Project residual with cumulative growth
@@ -1192,11 +1839,10 @@ def _calculate_sector_residual(
     )
 
     # Save residual
-    residual_path = os.path.join(
-        TOPDOWN["plastics_fd_sv_gr_dir"], f"residual_demand_{output_prefix}.csv"
-    )
+    output_dir = output_dir or TOPDOWN["plastics_fd_sv_gr_dir"]
+    residual_path = os.path.join(output_dir, f"residual_demand_{output_prefix}.csv")
     residual_future.to_csv(residual_path, index=False)
-    logging.info(f"[Plastics] {sector_name} residual saved: {residual_path}")
+    logging.info(f"[{log_label}] {sector_name} residual saved: {residual_path}")
 
     # Calculate residual EOL
     residual_eol = compute_residual_eol_inline(
@@ -1209,11 +1855,9 @@ def _calculate_sector_residual(
     )
 
     # Save residual EOL
-    residual_eol_path = os.path.join(
-        TOPDOWN["plastics_fd_sv_gr_dir"], f"residual_eol_{output_prefix}.csv"
-    )
+    residual_eol_path = os.path.join(output_dir, f"residual_eol_{output_prefix}.csv")
     residual_eol.to_csv(residual_eol_path, index=False)
-    logging.info(f"[Plastics] {sector_name} residual EOL: {len(residual_eol)} rows")
+    logging.info(f"[{log_label}] {sector_name} residual EOL: {len(residual_eol)} rows")
 
     return residual_future, residual_eol
 
@@ -1526,7 +2170,7 @@ def _calculate_total_demand(
         f"[Plastics] Sectors: {sorted(total_future_demand['sector'].unique())}"
     )
 
-    return total_future_demand
+    return cast(pd.DataFrame, total_future_demand)
 
 
 def _run_future_plastics_model_and_combine(
@@ -1732,6 +2376,9 @@ def main():
 
         if COMBINE_PLASTICS:
             run_plastics_coupling(flows_buildings, flows_vehicles)
+
+        if COMBINE_STEEL:
+            run_steel_coupling(flows_buildings, flows_vehicles)
 
         logging.info("=" * 60)
         logging.info("COMBINED MODEL COMPLETE")
