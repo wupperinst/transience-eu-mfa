@@ -332,7 +332,7 @@ class SteelMFASystem(fd.MFASystem):
         #flw["End use stock => Waste management"][...] = aux["EOLFlow"] * prm["EoLRecoveryRate"] # F_4_5: Collected end-of-life steel products
         
         flw["End use stock => Waste management"][...] = stk["End use stock"].outflow * prm["EoLRecoveryRate"] # F_4_5: Collected end-of-life steel products
-        
+        flw["End use stock => sysenv"][...] = stk["End use stock"].outflow * (1 - prm["EoLRecoveryRate"]) # F_4_0: Lost end-of-life steel products
 
         ### WASTE MANAGEMENT
         logging.info("mfa_system - WASTE MANAGEMENT")
