@@ -332,7 +332,7 @@ class PlasticsMFASystem(fd.MFASystem):
         logging.info("mfa_system - POLYMER MARKET")
 
         # Use 1 - RecyclateShare to avoid "divide by zero" when splittig DomesticInputManufacturing into primary and secondary
-        flw["Polymer market => PRIMARY Plastics manufacturing"][...] = aux["DomesticInputManufacturing"] / (1 - prm["RecyclateShare"]) # F_1_2_Primary
+        flw["Polymer market => PRIMARY Plastics manufacturing"][...] = aux["DomesticInputManufacturing"] * (1 - prm["RecyclateShare"]) # F_1_2_Primary
         flw["Polymer market => SECONDARY Plastics manufacturing"][...] = aux["DomesticInputManufacturing"] - flw["Polymer market => PRIMARY Plastics manufacturing"] # F_1_2_Recyclate
 
         flw["sysenv => Polymer market"][...] = aux["DomesticInputManufacturing"] # F_0_1_Domestic
