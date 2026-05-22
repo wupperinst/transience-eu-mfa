@@ -81,7 +81,10 @@ class CustomDataExporter(EUMFABaseModel):
                 stock = mfa.stocks[stock_name]._stock_by_cohort # WARNING: this is a numpy array, not a FlodymArray!
                 # 
                 if not mfa.cfg.customization.prodcom:
-                    dimensions = mfa.dims.get_subset(dims=('t','c','r','s','p','e')) # get dimensions including age-cohort
+                    if not mfa.cfg.customization.reuse:
+                        dimensions = mfa.dims.get_subset(dims=('t','c','r','s','p','e')) # get dimensions including age-cohort
+                    else:
+                        dimensions = mfa.dims.get_subset(dims=('t','c','r','s','p','e','x','z')) # get dimensions including age-cohort and reuse cycles
                 else:
                     dimensions = mfa.dims.get_subset(dims=('t','c','r','s','d','p')) # get dimensions including age-cohort
                 fd_stock = fd.FlodymArray(dims=dimensions, name=f"{stock_name}_by_age_cohort", values=stock)

@@ -40,6 +40,7 @@ class PlasticsCustomizationCfg(ModelCustomization):
     
     model_driven: str = "production"  # options: production, final_demand
     prodcom: bool = False # Enable prodcom-specific features (e.g. product-level in addition to sector-level)
+    reuse: bool = False # Enable reuse-specific features (cycles of reused plastics)
     end_use_sectors: str = "all"
     waste_not_for_recycling: list = []
 

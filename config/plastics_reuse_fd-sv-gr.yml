@@ -1,0 +1,53 @@
+# general config
+model_class: 'plastics'
+scenario: 'reuse_fd-sv-gr'
+
+# logging
+logging:
+  level: 'INFO' # options: DEBUG, INFO, WARNING, ERROR, CRITICAL
+
+# model customization
+customization:
+  model_driven: 'final_demand_with_start_value_and_growth_rate' # options: production, final_demand, final_demand_with_start_value_and_growth_rate
+  reuse: True # Enable reuse-specific features (cycles of reused plastics)
+  lifetime_model_name: 'NormalLifetime'
+
+  end_use_sectors: 'PET-Packaging' # options: MainSectors, ...
+  waste_not_for_recycling: [] #['Landfill', 'Incineration']
+
+# visualization
+visualization:
+  inflow:
+    do_visualize: False
+  production:
+    do_visualize: False
+  outflow:
+    do_visualize: False
+  sankey:
+    do_visualize: False
+  dashboard:
+    do_visualize: False
+
+# data export
+do_export:
+  pickle: False
+  csv: False
+selected_export:
+  csv_selected_flows:
+    - 'Polymer market => PRIMARY Plastics manufacturing'
+    - 'Polymer market => SECONDARY Plastics manufacturing'
+    - 'Polymer market => RECYCLATE sysenv'
+    - 'Plastics manufacturing => Plastics market'
+    - 'Plastics market => End use stock'
+    - 'Reuse => End use stock'
+    - 'Waste collection => Reuse'
+    - 'End use stock => Waste collection'
+    - 'Waste collection => Waste sorting'
+    - 'Sorted waste market => Recycling'
+    - 'Recycling => Polymer market'
+    - 'Recycling => NON-MECH sysenv'
+    - 'Recycling => LOSSES sysenv'
+  csv_selected_stocks:
+    - 'End use stock'
+  csv_slice_stocks:
+    - 'time': [2020, 2030, 2040, 2050]
