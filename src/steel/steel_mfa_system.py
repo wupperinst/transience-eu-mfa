@@ -323,7 +323,8 @@ class SteelMFASystem(fd.MFASystem):
         aux = {
             "EOLFlow": self.get_new_array(dim_letters=("t","c","r","s","i","p","e")),
             "ContaminatedScrap": self.get_new_array(dim_letters=("r", "t", "s", "i", "p", "e")),
-            "ScrapLossRate": self.get_new_array(dim_letters=("r", "t", "s", "i", "p", "w")),
+            "AvailableScrap": self.get_new_array(dim_letters=("r", "t", "s", "i", "p", "w", "e")),
+            "LostScrap": self.get_new_array(dim_letters=("r", "t", "s", "i", "p", "e")),
         }
 
         ### EOL STEEL
@@ -353,9 +354,11 @@ class SteelMFASystem(fd.MFASystem):
         aux["ContaminatedScrap"]["Cu"] = flw["End use stock => Waste management"] * prm["Contamination"]["Cu"]
 
         # Sorting scrap
-        flw["Waste management => AVAILABLE SCRAP sysenv"][...] = aux["ContaminatedScrap"] * prm["ScrapSortingRate"] # F_5_0_AvailableScrap
-        aux["ScrapLossRate"][...] = 1 - prm["ScrapSortingRate"]
-        flw["Waste management => LOST SCRAP sysenv"][...] = aux["ContaminatedScrap"] * aux["ScrapLossRate"] # F_5_0_LostScrap
+        aux["AvailableScrap"][...] = aux["ContaminatedScrap"] * prm["ScrapSortingRate"] # F_5_0_AvailableScrap        
+        aux["LostScrap"][...] = aux["ContaminatedScrap"] - aux["AvailableScrap"].sum_over('w')
+
+        flw["Waste management => AVAILABLE SCRAP sysenv"][...] = aux["AvailableScrap"].sum_to(('r','t','w','e')) # F_5_0_AvailableScrap
+        flw["Waste management => LOST SCRAP sysenv"][...] = aux["LostScrap"].sum_to(('r','t','s','e')) # F_5_0_LostScrap
 
 
     def get_flows_as_dataframes(self):

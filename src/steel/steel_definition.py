@@ -43,7 +43,7 @@ def get_definition(cfg: GeneralCfg):
         fd.FlowDefinition(from_process="End use stock", to_process="sysenv", dim_letters=("r", "t", "s", "i", "p", "e")), # F_4_0: Lost end-of-life steel products
         fd.FlowDefinition(from_process="End use stock", to_process="Waste management", dim_letters=("t", "r", "s", "i", "p", "e")), # F_4_5: Collected end-of-life steel products
         fd.FlowDefinition(from_process="Waste management", to_process="sysenv", name_override="Waste management => AVAILABLE SCRAP sysenv", dim_letters=("r", "t", "w", "e")), # F_5_0_AvailableScrap: Available sorted steel scrap
-        fd.FlowDefinition(from_process="Waste management", to_process="sysenv", name_override="Waste management => LOST SCRAP sysenv", dim_letters=("r", "t", "w", "e")), # F_5_0_LostScrap: Lost sorted steel scrap
+        fd.FlowDefinition(from_process="Waste management", to_process="sysenv", name_override="Waste management => LOST SCRAP sysenv", dim_letters=("r", "t", "s", "e")), # F_5_0_LostScrap: Lost sorted steel scrap
     ]
 
     stocks = [
