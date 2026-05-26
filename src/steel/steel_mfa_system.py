@@ -323,6 +323,7 @@ class SteelMFASystem(fd.MFASystem):
         aux = {
             "EOLFlow": self.get_new_array(dim_letters=("t","c","r","s","i","p","e")),
             "ContaminatedScrap": self.get_new_array(dim_letters=("r", "t", "s", "i", "p", "e")),
+            "ScrapLossRate": self.get_new_array(dim_letters=("r", "t", "s", "i", "p", "w")),
         }
 
         ### EOL STEEL
@@ -353,7 +354,8 @@ class SteelMFASystem(fd.MFASystem):
 
         # Sorting scrap
         flw["Waste management => AVAILABLE SCRAP sysenv"][...] = aux["ContaminatedScrap"] * prm["ScrapSortingRate"] # F_5_0_AvailableScrap
-        flw["Waste management => LOST SCRAP sysenv"][...] = aux["ContaminatedScrap"] * (1 - prm["ScrapSortingRate"]) # F_5_0_LostScrap
+        aux["ScrapLossRate"][...] = 1 - prm["ScrapSortingRate"]
+        flw["Waste management => LOST SCRAP sysenv"][...] = aux["ContaminatedScrap"] * aux["ScrapLossRate"] # F_5_0_LostScrap
 
 
     def get_flows_as_dataframes(self):
