@@ -44,7 +44,8 @@ selected_export:
     - 'End use stock => Waste collection'
     - 'Waste collection => Waste sorting'
     - 'Sorted waste market => Recycling'
-    - 'Recycling => Polymer market'
+    - 'Recycling => Recyclate market'
+    - 'Recyclate market => Polymer market'
     - 'Recycling => NON-MECH sysenv'
     - 'Recycling => LOSSES sysenv'
   csv_selected_stocks:

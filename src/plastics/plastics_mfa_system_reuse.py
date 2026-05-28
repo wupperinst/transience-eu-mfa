@@ -265,8 +265,8 @@ class ReusePlasticsMFASystem(fd.MFASystem):
 
 ###############################################################################################
 
-        ### REUSE CYCLES
-        logging.info("mfa_system - REUSE CYCLES")
+        ### REUSE & RECYCLING CYCLES
+        logging.info("mfa_system - REUSE & RECYCLING CYCLES")
 
         for t in self.dims["t"].items:
             logging.info(f"Computing reuse for year {t}.")
@@ -320,8 +320,8 @@ class ReusePlasticsMFASystem(fd.MFASystem):
                 # Note: for x>MaxMechanicalRecyclingCycles, the RecyclingConversionRate is set to 0, so "Recycling => Polymer market" is 0.
                 #for x in range(len(self.dims["x"].items) - 1):
                 for x in np.arange(0,Nx-1):
-                    flw["Recycling => Polymer market"][{'t': t, 'x': x+1}] = flw["Recycling => Polymer market"][{'t': t-1, 'x': x}]
-                flw["Recycling => Polymer market"][{'t': t, 'x': 0}] = 0
+                    flw["Recyclate market => Polymer market"][{'t': t, 'x': x+1}] = flw["Recycling => Recyclate market"][{'t': t-1, 'x': x}]
+                flw["Recyclate market => Polymer market"][{'t': t, 'x': 0}] = 0
                 
                 # Assumption: final demand and imports have the same rate of recycled content and the same cycle distribution as "Recycling => Polymer market".
                 # ShareCycle = {}
@@ -335,14 +335,82 @@ class ReusePlasticsMFASystem(fd.MFASystem):
                             for e in self.dims["e"].items:
 
                                 for x in np.arange(1,Nx):
-                                    if flw["Recycling => Polymer market"][{'r': r, 't': t, 's': s, 'p': p, 'e': e}].sum_over('x').values != 0:
-                                        ShareCycle = flw["Recycling => Polymer market"][{'r': r, 't': t, 's': s, 'p': p, 'e': e, 'x': x}] / flw["Recycling => Polymer market"][{'r': r, 't': t, 's': s, 'p': p, 'e': e}].sum_over('x')
+                                    if flw["Recyclate market => Polymer market"][{'r': r, 't': t, 's': s, 'p': p, 'e': e}].sum_over('x').values != 0:
+                                        ShareCycle = flw["Recyclate market => Polymer market"][{'r': r, 't': t, 's': s, 'p': p, 'e': e, 'x': x}] / flw["Recyclate market => Polymer market"][{'r': r, 't': t, 's': s, 'p': p, 'e': e}].sum_over('x')
                                         flw["Plastics market => End use stock"][{'r': r, 't': t, 's': s, 'p': p, 'e': e, 'x': x, 'z': 0}] = prm["FinalDemand"][{'r': r, 't': t, 's': s, 'p': p}] * prm["RecyclateShare"][{'r': r, 't': t, 's': s, 'p': p}] * ShareCycle
                                     else:
                                         flw["Plastics market => End use stock"][{'t': t, 'x': x, 'z': 0}] = 0
 
+###############################################################################################
+            ### UPSTREAM FLOWS TO PRODUCTION (CONVERTER DEMAND) 
+            # Compute flows from final consumption entering the stock upstream up to production (converter demand).
 
- ###############################################################################################
+            # F_2_3_NewPlastics
+            # Note: "Plastics market => End use stock" is indexed with "z" but only has z=0 for new plastics, so we eliminate this dimension here
+            flw["Plastics manufacturing => Plastics market"].values = np.einsum('rtspexz,rRtsp->Rtspex',
+                                                                            flw["Plastics market => End use stock"].values,
+                                                                            prm["MarketShare"].values)
+
+            ### PLASTICS MANUFACTURING
+            #logging.info("mfa_system - PLASTICS MANUFACTURING")
+
+            # Remove absolute import and export provided exogenously.
+            # Note: not implementing rate of import and export as in production_driven.
+            # Imports: absolute
+            # flw["sysenv => Plastics manufacturing"][...] = prm["ImportNew"] # F_0_2_ImportNew
+            # # Exports: absolute
+            # flw["Plastics manufacturing => sysenv"][...] = prm["ExportNew"] # F_2_0_ExportNew
+
+            # Sum over all import and export regions to calculate TOTAL imports and exports and NET imports
+            # aux["ImportNew"][...] = flw["sysenv => Plastics manufacturing"].sum_to(("r","t","s","p","e"))
+            # aux["ExportNew"][...] = flw["Plastics manufacturing => sysenv"].sum_to(("r","t","s","p","e"))
+            # aux["NetImport"][...] = aux["ImportNew"] - aux["ExportNew"]
+
+            ### POLYMER MARKET
+            #logging.info("mfa_system - POLYMER MARKET")
+
+            if t == min(self.dims["t"].items): # i.e. first year of the model
+
+                #flw["Polymer market => PRIMARY Plastics manufacturing"][{'t': t, 'x': 0}] = flw["Plastics manufacturing => Plastics market"][{'t': t}].sum_over('x') + aux["NetImport"][{'t': t}] # F_1_2_Primary
+                flw["Polymer market => PRIMARY Plastics manufacturing"][{'t': t, 'x': 0}] = flw["Plastics manufacturing => Plastics market"][{'t': t}].sum_over('x') # F_1_2_Primary
+                flw["Polymer market => SECONDARY Plastics manufacturing"][{'t': t}] = 0 # F_1_2_Recyclate
+
+            else: # t > min_t
+
+                # Primary vs. recycled content in plastics put to market
+                aux["PrimaryContent"][{'t': t}] = flw["Plastics manufacturing => Plastics market"][{'t': t, 'x': 0}]
+                aux["RecycledContent"][{'t': t}] = flw["Plastics manufacturing => Plastics market"][{'t': t}].sum_over('x') - aux["PrimaryContent"][{'t': t}]
+
+                # # Assumption: net imports have the same recycled content and cycle distribution as domestic plastics.
+                # ShareCycle = {}
+                # for x in np.arange(0,Nx):
+                #     ShareCycle['x'] = flw["Plastics manufacturing => Plastics market"][{'t': t, 'x': x}] / flw["Plastics manufacturing => Plastics market"][{'t': t}].sum_over('x')
+
+                # Primary polymers cover the converter demand not required to be met with recycled content
+                flw["Polymer market => PRIMARY Plastics manufacturing"][{'t': t, 'x': 0}] = aux["PrimaryContent"][{'t': t}]
+                #flw["Polymer market => PRIMARY Plastics manufacturing"][{'t': t, 'x': 0}] = aux["PrimaryContent"][{'t': t}] - aux["NetImport"][{'t': t}] * (1 - prm["RecyclateShare"][{'t': t}])
+
+                for r in self.dims["r"].items:
+                    for s in self.dims["s"].items:
+                        for p in self.dims["p"].items:
+                            for e in self.dims["e"].items:
+                                                                
+                                # RatioRecycledToRecyclate > 1
+                                # means recycled content quotas exceed secondary production capacity 
+                                # thus all mechanically recycled plastics are used domestically and the remaining demand for recycled content is imported ("Polymer market => RECYCLATE sysenv" < 0)
+                                
+                                # RatioRecycledToRecyclate < 1
+                                # means recycled content quotas can be met with domestic mechanically recycled plastics, 
+                                # and the excess mechanically recycled plastics are exported ("Polymer market => RECYCLATE sysenv" > 0)
+                                
+                                if flw["Recyclate market => Polymer market"][{'r': r, 't': t, 's': s, 'p': p, 'e': e}].sum_over('x').values != 0:
+                                    RatioRecycledToRecyclate = aux["RecycledContent"][{'r': r, 't': t, 's': s, 'p': p, 'e': e}] / flw["Recyclate market => Polymer market"][{'r': r, 't': t, 's': s, 'p': p, 'e': e}].sum_over('x')
+                                else:
+                                    RatioRecycledToRecyclate = 0
+                                flw["Polymer market => SECONDARY Plastics manufacturing"][{'r': r, 't': t, 's': s, 'p': p, 'e': e}] = flw["Recyclate market => Polymer market"][{'r': r, 't': t, 's': s, 'p': p, 'e': e}] * RatioRecycledToRecyclate
+                                flw["Polymer market => RECYCLATE sysenv"][{'r': r, 't': t, 's': s, 'p': p, 'e': e}] = flw["Recyclate market => Polymer market"][{'r': r, 't': t, 's': s, 'p': p, 'e': e}] * (1 - RatioRecycledToRecyclate)
+
+###############################################################################################
 
             ### END USE STOCK
             #logging.info("mfa_system - END USE STOCK")
@@ -439,77 +507,9 @@ class ReusePlasticsMFASystem(fd.MFASystem):
             # Mechanical recycling
             w_type = "Mechanical recycling"
             m_type = "Granulate"
-            flw["Recycling => Polymer market"][...] = flw["Recycling => NON-MECH sysenv"][{'m': m_type}]
+            flw["Recycling => Recyclate market"][...] = flw["Recycling => NON-MECH sysenv"][{'m': m_type}]
             flw["Recycling => NON-MECH sysenv"][{'m': m_type}] = 0 # To respect mass balance, as mech. recycled polymers are sent back to "Polymer market"
 
-###############################################################################################
-            # Compute flows from final consumption entering the stock upstream up to production (converter demand).
-
-            # F_2_3_NewPlastics
-            # Note: "Plastics market => End use stock" is indexed with "z" but only has z=0 for new plastics, so we eliminate this dimension here
-            flw["Plastics manufacturing => Plastics market"].values = np.einsum('rtspexz,rRtsp->Rtspex',
-                                                                            flw["Plastics market => End use stock"].values,
-                                                                            prm["MarketShare"].values)
-
-            ### PLASTICS MANUFACTURING
-            #logging.info("mfa_system - PLASTICS MANUFACTURING")
-
-            # Remove absolute import and export provided exogenously.
-            # Note: not implementing rate of import and export as in production_driven.
-            # Imports: absolute
-            # flw["sysenv => Plastics manufacturing"][...] = prm["ImportNew"] # F_0_2_ImportNew
-            # # Exports: absolute
-            # flw["Plastics manufacturing => sysenv"][...] = prm["ExportNew"] # F_2_0_ExportNew
-
-            # Sum over all import and export regions to calculate TOTAL imports and exports and NET imports
-            # aux["ImportNew"][...] = flw["sysenv => Plastics manufacturing"].sum_to(("r","t","s","p","e"))
-            # aux["ExportNew"][...] = flw["Plastics manufacturing => sysenv"].sum_to(("r","t","s","p","e"))
-            # aux["NetImport"][...] = aux["ImportNew"] - aux["ExportNew"]
-
-            ### POLYMER MARKET
-            #logging.info("mfa_system - POLYMER MARKET")
-
-            if t == min(self.dims["t"].items): # i.e. first year of the model
-
-                #flw["Polymer market => PRIMARY Plastics manufacturing"][{'t': t, 'x': 0}] = flw["Plastics manufacturing => Plastics market"][{'t': t}].sum_over('x') + aux["NetImport"][{'t': t}] # F_1_2_Primary
-                flw["Polymer market => PRIMARY Plastics manufacturing"][{'t': t, 'x': 0}] = flw["Plastics manufacturing => Plastics market"][{'t': t}].sum_over('x') # F_1_2_Primary
-                flw["Polymer market => SECONDARY Plastics manufacturing"][{'t': t}] = 0 # F_1_2_Recyclate
-
-            else: # t > min_t
-
-                # Primary vs. recycled content in plastics put to market
-                aux["PrimaryContent"][{'t': t}] = flw["Plastics manufacturing => Plastics market"][{'t': t, 'x': 0}]
-                aux["RecycledContent"][{'t': t}] = flw["Plastics manufacturing => Plastics market"][{'t': t}].sum_over('x') - aux["PrimaryContent"][{'t': t}]
-
-                # # Assumption: net imports have the same recycled content and cycle distribution as domestic plastics.
-                # ShareCycle = {}
-                # for x in np.arange(0,Nx):
-                #     ShareCycle['x'] = flw["Plastics manufacturing => Plastics market"][{'t': t, 'x': x}] / flw["Plastics manufacturing => Plastics market"][{'t': t}].sum_over('x')
-
-                # Primary polymers cover the converter demand not required to be met with recycled content
-                flw["Polymer market => PRIMARY Plastics manufacturing"][{'t': t, 'x': 0}] = aux["PrimaryContent"][{'t': t}]
-                #flw["Polymer market => PRIMARY Plastics manufacturing"][{'t': t, 'x': 0}] = aux["PrimaryContent"][{'t': t}] - aux["NetImport"][{'t': t}] * (1 - prm["RecyclateShare"][{'t': t}])
-
-                for r in self.dims["r"].items:
-                    for s in self.dims["s"].items:
-                        for p in self.dims["p"].items:
-                            for e in self.dims["e"].items:
-                                                                
-                                # RatioRecycledToRecyclate > 1
-                                # means recycled content quotas exceed secondary production capacity 
-                                # thus all mechanically recycled plastics are used domestically and the remaining demand for recycled content is imported ("Polymer market => RECYCLATE sysenv" < 0)
-                                
-                                # RatioRecycledToRecyclate < 1
-                                # means recycled content quotas can be met with domestic mechanically recycled plastics, 
-                                # and the excess mechanically recycled plastics are exported ("Polymer market => RECYCLATE sysenv" > 0)
-                                
-                                if flw["Recycling => Polymer market"][{'r': r, 't': t, 's': s, 'p': p, 'e': e}].sum_over('x').values != 0:
-                                    RatioRecycledToRecyclate = aux["RecycledContent"][{'r': r, 't': t, 's': s, 'p': p, 'e': e}] / flw["Recycling => Polymer market"][{'r': r, 't': t, 's': s, 'p': p, 'e': e}].sum_over('x')
-                                else:
-                                    RatioRecycledToRecyclate = 0
-                                flw["Polymer market => SECONDARY Plastics manufacturing"][{'r': r, 't': t, 's': s, 'p': p, 'e': e}] = flw["Recycling => Polymer market"][{'r': r, 't': t, 's': s, 'p': p, 'e': e}] * RatioRecycledToRecyclate
-                                flw["Polymer market => RECYCLATE sysenv"][{'r': r, 't': t, 's': s, 'p': p, 'e': e}] = flw["Recycling => Polymer market"][{'r': r, 't': t, 's': s, 'p': p, 'e': e}] * (1 - RatioRecycledToRecyclate)
-  
 
 ###############################################################################################
 ###############################################################################################

@@ -31,6 +31,7 @@ def get_definition_reuse(cfg: GeneralCfg):
         "Sorted waste market", # 7
         "Recycling", # 8
         "Reuse", # 9
+        "Recyclate market", # 10
     ]
 
     flows = [
@@ -56,7 +57,8 @@ def get_definition_reuse(cfg: GeneralCfg):
         fd.FlowDefinition(from_process="Sorted waste market", to_process="sysenv", dim_letters=("r", "o", "t", "s", "p", "w", "e")), # F_7_0_ExportSorted: Export sorted EoL plastics
         fd.FlowDefinition(from_process="Recycling", to_process="sysenv", name_override="Recycling => NON-MECH sysenv", dim_letters=("r", "t", "s", "p", "m", "e", "x")), # F_8_0_ProcessedEOL: Processed EoL plastics
         fd.FlowDefinition(from_process="Recycling", to_process="sysenv", name_override="Recycling => LOSSES sysenv", dim_letters=("r", "t", "s", "p", "e", "x")), # F_8_0_Losses: Recycling losses
-        fd.FlowDefinition(from_process="Recycling", to_process="Polymer market", dim_letters=("r", "t", "s", "p", "e", "x")), # F_8_1_Recyclate: Recyclates from mechanicalrecycling
+        fd.FlowDefinition(from_process="Recycling", to_process="Recyclate market", dim_letters=("r", "t", "s", "p", "e", "x")), # F_8_10_Recyclate: Recyclates from mechanicalrecycling
+        fd.FlowDefinition(from_process="Recyclate market", to_process="Polymer market", dim_letters=("r", "t", "s", "p", "e", "x")), # F_10_1_Recyclate: Recyclates from mechanicalrecycling
         fd.FlowDefinition(from_process="Polymer market", to_process="sysenv", name_override="Polymer market => RECYCLATE sysenv", dim_letters=("r", "t", "s", "p", "e", "x")), # F_8_0_RecyclateSysenv: Recyclates not used in the system (e.g. exported or stockpiled)
     ]
 
