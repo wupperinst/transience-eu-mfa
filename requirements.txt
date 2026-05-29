@@ -1,7 +1,6 @@
 # Virtual environment requirements for EU-MFA
 
-python>=3.10
 flodym
-yaml
+pyyaml
 dash
 dash_ag_grid
