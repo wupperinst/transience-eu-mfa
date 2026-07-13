@@ -7,8 +7,8 @@ from src.common.common_cfg import GeneralCfg
 def get_definition_reuse(cfg: GeneralCfg):
 
     dimensions = [
-        fd.DimensionDefinition(name="time", dim_letter="t", dtype=int),
-        fd.DimensionDefinition(name="age-cohort", dim_letter="c", dtype=int),
+        fd.DimensionDefinition(name="time", dim_letter="t", dtype=float), # using float to allow for sub-annual time steps if needed
+        fd.DimensionDefinition(name="age-cohort", dim_letter="c", dtype=float), # using float to allow for sub-annual time steps if needed
         fd.DimensionDefinition(name="region", dim_letter="r", dtype=str),
         fd.DimensionDefinition(name="other_region", dim_letter="o", dtype=str),
         fd.DimensionDefinition(name="polymer", dim_letter="p", dtype=str),
@@ -82,8 +82,8 @@ def get_definition_reuse(cfg: GeneralCfg):
     
     # If config requires inflow-driven then FinalDemand is an exogenous parameter
     elif cfg.customization.model_driven == "final_demand":
-        logging.info("Including 'cycle' dimension in 'FinalDemand' parameter for reuse-specific modelling")
-        parameters = [fd.ParameterDefinition(name="FinalDemand", dim_letters=("r", "t", "s", "p", "e", "x", "z"))] # F_3_4_NewPlastics: New plastic products
+        logging.info("Final-demand-driven model, loading prm FinalDemand")
+        parameters = [fd.ParameterDefinition(name="FinalDemand", dim_letters=("r", "t", "s", "p", "e"))] # F_3_4_NewPlastics: New plastic products
 
     elif cfg.customization.model_driven == "final_demand_with_start_value_and_growth_rate":
         logging.debug("Final-demand-driven model with start value and growth rate, loading prm 'start_value' and 'growth_rate'")

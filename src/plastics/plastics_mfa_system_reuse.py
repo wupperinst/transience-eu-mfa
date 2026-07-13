@@ -223,6 +223,9 @@ class ReusePlasticsMFASystem(fd.MFASystem):
             "RecycledContent": self.get_new_array(dim_letters=("r", "t", "s", "p", "e")),
     }
 
+        # TMP!!!
+        time_step = 0.25
+
         Nr = len(self.dims["r"].items)
         Nt = len(self.dims["t"].items)
         Ns = len(self.dims["s"].items)
@@ -269,7 +272,7 @@ class ReusePlasticsMFASystem(fd.MFASystem):
         logging.info("mfa_system - REUSE & RECYCLING CYCLES")
 
         for t in self.dims["t"].items:
-            logging.info(f"Computing reuse for year {t}.")
+            logging.info(f"Computing CE for year {t}.")
 
         ### FINAL DEMAND
 
@@ -293,7 +296,7 @@ class ReusePlasticsMFASystem(fd.MFASystem):
                 # For subsequent years, the inflow to the stock is made of new plastics and reused plastics from previous cycles
                 if with_start_value_and_growth_rate:
                     # Total final demand 
-                    prm["FinalDemand"][{'t': t}] = prm["FinalDemand"][{'t': t-1}] * (1 + prm["growth_rate"][{'t': t}])
+                    prm["FinalDemand"][{'t': t}] = prm["FinalDemand"][{'t': t - time_step}] * (1 + prm["growth_rate"][{'t': t}])
                 else:
                     #logging.info("Using FinalDemand provided as exogenous parameter.")
                     pass
@@ -304,42 +307,45 @@ class ReusePlasticsMFASystem(fd.MFASystem):
                 # Note: for x>MaxReuseCycles, the ReuseRate is set to 0, so "Waste collection => Reuse" is 0.
                 #for z in range(len(self.dims["z"].items) - 1):
                 for z in np.arange(0,Nz-1):
-                    flw["Reuse => End use stock"][{'t': t, 'z': z+1}] = flw["Waste collection => Reuse"][{'t': t-1, 'z': z}]
+                    flw["Reuse => End use stock"][{'t': t, 'z': z+1}] = flw["Waste collection => Reuse"][{'t': t - time_step, 'z': z}]
                 flw["Reuse => End use stock"][{'t': t, 'z': 0}] = 0
 
-                # Final demand
-                # Primary and mechanically recycled plastics, z=0
-                # Primary plastics x=0
-                flw["Plastics market => End use stock"][{'t': t, 'x': 0, 'z': 0}] = prm["FinalDemand"][{'t': t}] * (1 - prm["RecyclateShare"][{'t': t}]) - flw["Reuse => End use stock"][{'t': t}].sum_over(('x','z'))
-                # if t == 2024 or t==2023: # DEBUGGING
-                #     logging.info(f"Year {t}: FinalDemand={prm['FinalDemand'][{'t': t}]}, ReusedPlastics={flw['Reuse => End use stock'][{'t': t}].sum_over(('x','z'))}, PrimaryPlastics={flw['Plastics market => End use stock'][{'t': t, 'x': 0, 'z': 0}]}")
-                #flw["Plastics market => End use stock"][{'t': t, 'x': 0, 'z': 0}] = prm["FinalDemand"][{'t': t}] - flw["Reuse => End use stock"][{'t': t}].sum_over('z')
 
                 # Mechanically recycled plastics x>0
                 # Increment cycle counter for mechanically recycled plastics
                 # Note: for x>MaxMechanicalRecyclingCycles, the RecyclingConversionRate is set to 0, so "Recycling => Polymer market" is 0.
                 #for x in range(len(self.dims["x"].items) - 1):
                 for x in np.arange(0,Nx-1):
-                    flw["Recyclate market => Polymer market"][{'t': t, 'x': x+1}] = flw["Recycling => Recyclate market"][{'t': t-1, 'x': x}]
+                    flw["Recyclate market => Polymer market"][{'t': t, 'x': x+1}] = flw["Recycling => Recyclate market"][{'t': t - time_step, 'x': x}]
                 flw["Recyclate market => Polymer market"][{'t': t, 'x': 0}] = 0
-                
-                # Assumption: final demand and imports have the same rate of recycled content and the same cycle distribution as "Recycling => Polymer market".
-                # ShareCycle = {}
-                # for x in np.arange(1,Nx):
-                #     ShareCycle['x'] = flw["Recycling => Polymer market"][{'t': t, 'x': x}] / flw["Recycling => Polymer market"][{'t': t}].sum_over('x')
-                #     flw["Plastics market => End use stock"][{'t': t, 'x': x, 'z': 0}] = prm["FinalDemand"][{'t': t}] * prm["RecyclateShare"][{'t': t}] * ShareCycle['x']
 
+                # Final demand
+                # Assumption: final demand and imports have the same rate of recycled content and the same cycle distribution as "Recycling => Polymer market".
+                # Assumption: reused materials replace first use material in the same recycled cycle (i.e. same x).
                 for r in self.dims["r"].items:
                     for s in self.dims["s"].items:
                         for p in self.dims["p"].items:
                             for e in self.dims["e"].items:
 
+                                flw["Plastics market => End use stock"][{'r': r, 't': t, 's': s, 'p': p, 'e': e, 'x': 0, 'z': 0}] = (
+                                    prm["FinalDemand"][{'r': r, 't': t, 's': s, 'p': p}] * (1 - prm["RecyclateShare"][{'r': r, 't': t, 's': s, 'p': p}]) 
+                                    - flw["Reuse => End use stock"][{'r': r, 't': t, 's': s, 'p': p, 'e': e, 'x': 0}].sum_over(('z'))
+                                )
+                                # if flw["Plastics market => End use stock"][{'r': r, 't': t, 's': s, 'p': p, 'e': e, 'x': 0, 'z': 0}].values < 0:
+                                #     flw["Plastics market => End use stock"][{'r': r, 't': t, 's': s, 'p': p, 'e': e, 'x': 0, 'z': 0}] = 0
+
                                 for x in np.arange(1,Nx):
                                     if flw["Recyclate market => Polymer market"][{'r': r, 't': t, 's': s, 'p': p, 'e': e}].sum_over('x').values != 0:
                                         ShareCycle = flw["Recyclate market => Polymer market"][{'r': r, 't': t, 's': s, 'p': p, 'e': e, 'x': x}] / flw["Recyclate market => Polymer market"][{'r': r, 't': t, 's': s, 'p': p, 'e': e}].sum_over('x')
-                                        flw["Plastics market => End use stock"][{'r': r, 't': t, 's': s, 'p': p, 'e': e, 'x': x, 'z': 0}] = prm["FinalDemand"][{'r': r, 't': t, 's': s, 'p': p}] * prm["RecyclateShare"][{'r': r, 't': t, 's': s, 'p': p}] * ShareCycle
+                                        flw["Plastics market => End use stock"][{'r': r, 't': t, 's': s, 'p': p, 'e': e, 'x': x, 'z': 0}] = (
+                                            prm["FinalDemand"][{'r': r, 't': t, 's': s, 'p': p}] 
+                                            * prm["RecyclateShare"][{'r': r, 't': t, 's': s, 'p': p}] 
+                                            * ShareCycle 
+                                            - flw["Reuse => End use stock"][{'r': r, 't': t, 's': s, 'p': p, 'e': e, 'x': x}].sum_over(('z'))
+                                        )
                                     else:
-                                        flw["Plastics market => End use stock"][{'t': t, 'x': x, 'z': 0}] = 0
+                                        flw["Plastics market => End use stock"][{'r': r, 't': t, 's': s, 'p': p, 'e': e, 'x': x, 'z': 0}] = 0
+
 
 ###############################################################################################
             ### UPSTREAM FLOWS TO PRODUCTION (CONVERTER DEMAND) 
@@ -420,7 +426,7 @@ class ReusePlasticsMFASystem(fd.MFASystem):
             stk["End use stock"].inflow[...] = aux["StockInflow"]
             stk["End use stock"].lifetime_model.set_prms(
                 mean=self.parameters["Lifetime"],
-                std=self.parameters["Lifetime"] * 0.3,
+                #std=self.parameters["Lifetime"] * 0.3,
             )
             stk["End use stock"].compute()
 
@@ -464,7 +470,7 @@ class ReusePlasticsMFASystem(fd.MFASystem):
                     raise
             else:
                 waste_not_for_recycling_ix = []
-                logging.warning('config: waste_not_for_recycling is empty! We assume all waste types are for recycling.')
+                #logging.warning('config: waste_not_for_recycling is empty! We assume all waste types are for recycling.')
             
             for w in np.arange(0, len(waste_categories)):
                 if w in waste_not_for_recycling_ix:
