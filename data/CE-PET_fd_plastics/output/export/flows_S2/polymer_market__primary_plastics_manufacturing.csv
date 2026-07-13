@@ -1,0 +1,1029 @@
+,region,time,sector,polymer,element,mechanical_recycling_cycle,value
+0,EU27+3,2018.0,single-use beverage bottles,PET,All,0,731.5815815815815
+1,EU27+3,2018.0,single-use non-beverage bottles,PET,All,0,72.92292292292292
+2,EU27+3,2018.0,single-use sheet (tray),PET,All,0,251.7017017017017
+3,EU27+3,2018.0,flexible packaging,PET,All,0,87.03703703703704
+4,EU27+3,2018.0,other,PET,All,0,31.75675675675676
+5,EU27+3,2018.25,single-use beverage bottles,PET,All,0,556.002002002002
+6,EU27+3,2018.25,single-use non-beverage bottles,PET,All,0,55.42142142142142
+7,EU27+3,2018.25,single-use sheet (tray),PET,All,0,140.95295295295296
+8,EU27+3,2018.25,flexible packaging,PET,All,0,87.03703703703704
+9,EU27+3,2018.25,other,PET,All,0,6.351351351351351
+10,EU27+3,2018.5,single-use beverage bottles,PET,All,0,556.002002002002
+11,EU27+3,2018.5,single-use non-beverage bottles,PET,All,0,55.42142142142142
+12,EU27+3,2018.5,single-use sheet (tray),PET,All,0,140.95295295295296
+13,EU27+3,2018.5,flexible packaging,PET,All,0,87.03703703703704
+14,EU27+3,2018.5,other,PET,All,0,6.351351351351351
+15,EU27+3,2018.75,single-use beverage bottles,PET,All,0,556.002002002002
+16,EU27+3,2018.75,single-use non-beverage bottles,PET,All,0,55.42142142142142
+17,EU27+3,2018.75,single-use sheet (tray),PET,All,0,140.95295295295296
+18,EU27+3,2018.75,flexible packaging,PET,All,0,87.03703703703704
+19,EU27+3,2018.75,other,PET,All,0,6.351351351351351
+20,EU27+3,2019.0,single-use beverage bottles,PET,All,0,575.4340161862913
+21,EU27+3,2019.0,reusable beverage bottles,PET,All,0,4.227645475370284
+22,EU27+3,2019.0,single-use non-beverage bottles,PET,All,0,57.34837276300692
+23,EU27+3,2019.0,reusable non-beverage bottles,PET,All,0,0.4213316936635254
+24,EU27+3,2019.0,single-use sheet (tray),PET,All,0,146.95095095095098
+25,EU27+3,2019.0,flexible packaging,PET,All,0,90.74074074074072
+26,EU27+3,2019.0,other,PET,All,0,6.621621621621621
+27,EU27+3,2019.25,single-use beverage bottles,PET,All,0,575.4340161862913
+28,EU27+3,2019.25,reusable beverage bottles,PET,All,0,1.7544728722786682
+29,EU27+3,2019.25,single-use non-beverage bottles,PET,All,0,57.34837276300692
+30,EU27+3,2019.25,reusable non-beverage bottles,PET,All,0,0.20961251759760385
+31,EU27+3,2019.25,single-use sheet (tray),PET,All,0,146.95095095095098
+32,EU27+3,2019.25,flexible packaging,PET,All,0,90.74074074074072
+33,EU27+3,2019.25,other,PET,All,0,6.621621621621621
+34,EU27+3,2019.5,single-use beverage bottles,PET,All,0,575.4340161862913
+35,EU27+3,2019.5,reusable beverage bottles,PET,All,0,1.6963427469923267
+36,EU27+3,2019.5,single-use non-beverage bottles,PET,All,0,57.34837276300692
+37,EU27+3,2019.5,reusable non-beverage bottles,PET,All,0,0.21250917299154062
+38,EU27+3,2019.5,single-use sheet (tray),PET,All,0,146.95095095095098
+39,EU27+3,2019.5,flexible packaging,PET,All,0,90.74074074074072
+40,EU27+3,2019.5,other,PET,All,0,6.621621621621621
+41,EU27+3,2019.75,single-use beverage bottles,PET,All,0,575.4340161862913
+42,EU27+3,2019.75,reusable beverage bottles,PET,All,0,1.6382126217059851
+43,EU27+3,2019.75,single-use non-beverage bottles,PET,All,0,57.34837276300692
+44,EU27+3,2019.75,reusable non-beverage bottles,PET,All,0,0.21540582838547734
+45,EU27+3,2019.75,single-use sheet (tray),PET,All,0,146.95095095095098
+46,EU27+3,2019.75,flexible packaging,PET,All,0,90.74074074074072
+47,EU27+3,2019.75,other,PET,All,0,6.621621621621621
+48,EU27+3,2020.0,single-use beverage bottles,PET,All,0,547.9265994040618
+49,EU27+3,2020.0,reusable beverage bottles,PET,All,0,5.4278396189895
+50,EU27+3,2020.0,single-use non-beverage bottles,PET,All,0,54.59751525559256
+51,EU27+3,2020.0,reusable non-beverage bottles,PET,All,0,0.6016349860421654
+52,EU27+3,2020.0,single-use sheet (tray),PET,All,0,140.95295295295296
+53,EU27+3,2020.0,flexible packaging,PET,All,0,87.03703703703704
+54,EU27+3,2020.0,other,PET,All,0,6.351351351351351
+55,EU27+3,2020.25,single-use beverage bottles,PET,All,0,547.9265994040618
+56,EU27+3,2020.25,reusable beverage bottles,PET,All,0,2.90714493525845
+57,EU27+3,2020.25,single-use non-beverage bottles,PET,All,0,54.59751525559256
+58,EU27+3,2020.25,reusable non-beverage bottles,PET,All,0,0.4224487028612953
+59,EU27+3,2020.25,single-use sheet (tray),PET,All,0,140.95295295295296
+60,EU27+3,2020.25,flexible packaging,PET,All,0,87.03703703703704
+61,EU27+3,2020.25,other,PET,All,0,6.351351351351351
+62,EU27+3,2020.5,single-use beverage bottles,PET,All,0,547.9265994040618
+63,EU27+3,2020.5,reusable beverage bottles,PET,All,0,2.7961081495367734
+64,EU27+3,2020.5,single-use non-beverage bottles,PET,All,0,54.59751525559256
+65,EU27+3,2020.5,reusable non-beverage bottles,PET,All,0,0.42798076920828837
+66,EU27+3,2020.5,single-use sheet (tray),PET,All,0,140.95295295295296
+67,EU27+3,2020.5,flexible packaging,PET,All,0,87.03703703703704
+68,EU27+3,2020.5,other,PET,All,0,6.351351351351351
+69,EU27+3,2020.75,single-use beverage bottles,PET,All,0,547.9265994040618
+70,EU27+3,2020.75,reusable beverage bottles,PET,All,0,2.685071363815097
+71,EU27+3,2020.75,single-use non-beverage bottles,PET,All,0,54.59751525559256
+72,EU27+3,2020.75,reusable non-beverage bottles,PET,All,0,0.4335128355552816
+73,EU27+3,2020.75,single-use sheet (tray),PET,All,0,140.95295295295296
+74,EU27+3,2020.75,flexible packaging,PET,All,0,87.03703703703704
+75,EU27+3,2020.75,other,PET,All,0,6.351351351351351
+76,EU27+3,2021.0,single-use beverage bottles,PET,All,0,567.0870234785173
+77,EU27+3,2021.0,reusable beverage bottles,PET,All,0,7.073270163297659
+78,EU27+3,2021.0,single-use non-beverage bottles,PET,All,0,56.49705156562582
+79,EU27+3,2021.0,reusable non-beverage bottles,PET,All,0,0.8871513609883648
+80,EU27+3,2021.0,single-use sheet (tray),PET,All,0,146.95095095095098
+81,EU27+3,2021.0,flexible packaging,PET,All,0,90.74074074074072
+82,EU27+3,2021.0,other,PET,All,0,6.621621621621621
+83,EU27+3,2021.25,single-use beverage bottles,PET,All,0,567.0870234785173
+84,EU27+3,2021.25,reusable beverage bottles,PET,All,0,3.8352646458590343
+85,EU27+3,2021.25,single-use non-beverage bottles,PET,All,0,56.49705156562582
+86,EU27+3,2021.25,reusable non-beverage bottles,PET,All,0,0.6921557868943327
+87,EU27+3,2021.25,single-use sheet (tray),PET,All,0,146.95095095095098
+88,EU27+3,2021.25,flexible packaging,PET,All,0,90.74074074074072
+89,EU27+3,2021.25,other,PET,All,0,6.621621621621621
+90,EU27+3,2021.5,single-use beverage bottles,PET,All,0,567.0870234785173
+91,EU27+3,2021.5,reusable beverage bottles,PET,All,0,3.6623633708408025
+92,EU27+3,2021.5,single-use non-beverage bottles,PET,All,0,56.49705156562582
+93,EU27+3,2021.5,reusable non-beverage bottles,PET,All,0,0.7007685851475427
+94,EU27+3,2021.5,single-use sheet (tray),PET,All,0,146.95095095095098
+95,EU27+3,2021.5,flexible packaging,PET,All,0,90.74074074074072
+96,EU27+3,2021.5,other,PET,All,0,6.621621621621621
+97,EU27+3,2021.75,single-use beverage bottles,PET,All,0,567.0870234785173
+98,EU27+3,2021.75,reusable beverage bottles,PET,All,0,3.4894620958225637
+99,EU27+3,2021.75,single-use non-beverage bottles,PET,All,0,56.49705156562582
+100,EU27+3,2021.75,reusable non-beverage bottles,PET,All,0,0.7093813834007526
+101,EU27+3,2021.75,single-use sheet (tray),PET,All,0,146.95095095095098
+102,EU27+3,2021.75,flexible packaging,PET,All,0,90.74074074074072
+103,EU27+3,2021.75,other,PET,All,0,6.621621621621621
+104,EU27+3,2022.0,single-use beverage bottles,PET,All,0,573.881417015202
+105,EU27+3,2022.0,reusable beverage bottles,PET,All,0,7.76050562245797
+106,EU27+3,2022.0,single-use non-beverage bottles,PET,All,0,57.16424361493124
+107,EU27+3,2022.0,reusable non-beverage bottles,PET,All,0,1.1604420768149095
+108,EU27+3,2022.0,single-use sheet (tray),PET,All,0,149.8
+109,EU27+3,2022.0,flexible packaging,PET,All,0,92.5
+110,EU27+3,2022.0,other,PET,All,0,6.749999999999998
+111,EU27+3,2022.25,single-use beverage bottles,PET,All,0,573.2521610754924
+112,EU27+3,2022.25,reusable beverage bottles,PET,All,0,4.235985019242488
+113,EU27+3,2022.25,single-use non-beverage bottles,PET,All,0,57.101563523248196
+114,EU27+3,2022.25,reusable non-beverage bottles,PET,All,0,0.9813679668305948
+115,EU27+3,2022.25,single-use sheet (tray),PET,All,0,149.0197916666667
+116,EU27+3,2022.25,flexible packaging,PET,All,0,92.5
+117,EU27+3,2022.25,other,PET,All,0,6.749999999999998
+118,EU27+3,2022.5,single-use beverage bottles,PET,All,0,572.6229051357827
+119,EU27+3,2022.5,reusable beverage bottles,PET,All,0,4.202986633740165
+120,EU27+3,2022.5,single-use non-beverage bottles,PET,All,0,57.03888343156516
+121,EU27+3,2022.5,reusable non-beverage bottles,PET,All,0,0.9746453347876927
+122,EU27+3,2022.5,single-use sheet (tray),PET,All,0,148.23958333333334
+123,EU27+3,2022.5,flexible packaging,PET,All,0,92.5
+124,EU27+3,2022.5,other,PET,All,0,6.749999999999998
+125,EU27+3,2022.75,single-use beverage bottles,PET,All,0,571.9936491960732
+126,EU27+3,2022.75,reusable beverage bottles,PET,All,0,4.170050450661037
+127,EU27+3,2022.75,single-use non-beverage bottles,PET,All,0,56.976203339882126
+128,EU27+3,2022.75,reusable non-beverage bottles,PET,All,0,0.9679350946932569
+129,EU27+3,2022.75,single-use sheet (tray),PET,All,0,147.459375
+130,EU27+3,2022.75,flexible packaging,PET,All,0,92.5
+131,EU27+3,2022.75,other,PET,All,0,6.749999999999998
+132,EU27+3,2023.0,single-use beverage bottles,PET,All,0,549.2535888118142
+133,EU27+3,2023.0,reusable beverage bottles,PET,All,0,18.763856242073633
+134,EU27+3,2023.0,single-use non-beverage bottles,PET,All,0,55.77686931739113
+135,EU27+3,2023.0,reusable non-beverage bottles,PET,All,0,2.4794599316100894
+136,EU27+3,2023.0,single-use sheet (tray),PET,All,0,144.4596702294922
+137,EU27+3,2023.0,reusable sheet (tray),PET,All,0,2.271378462727841
+138,EU27+3,2023.0,flexible packaging,PET,All,0,93.425
+139,EU27+3,2023.0,other,PET,All,0,6.817499999999998
+140,EU27+3,2023.25,single-use beverage bottles,PET,All,0,548.648683978321
+141,EU27+3,2023.25,reusable beverage bottles,PET,All,0,7.647414758145942
+142,EU27+3,2023.25,single-use non-beverage bottles,PET,All,0,55.71544104721779
+143,EU27+3,2023.25,reusable non-beverage bottles,PET,All,0,1.8132059271367709
+144,EU27+3,2023.25,single-use sheet (tray),PET,All,0,143.6912677282715
+145,EU27+3,2023.25,reusable sheet (tray),PET,All,0,1.9564462006971368
+146,EU27+3,2023.25,flexible packaging,PET,All,0,93.425
+147,EU27+3,2023.25,other,PET,All,0,6.817499999999998
+148,EU27+3,2023.5,single-use beverage bottles,PET,All,0,548.0437791448278
+149,EU27+3,2023.5,reusable beverage bottles,PET,All,0,7.586394452160199
+150,EU27+3,2023.5,single-use non-beverage bottles,PET,All,0,55.65401277704445
+151,EU27+3,2023.5,reusable non-beverage bottles,PET,All,0,1.8005301983069228
+152,EU27+3,2023.5,single-use sheet (tray),PET,All,0,142.92286522705078
+153,EU27+3,2023.5,reusable sheet (tray),PET,All,0,1.898906626608087
+154,EU27+3,2023.5,flexible packaging,PET,All,0,93.425
+155,EU27+3,2023.5,other,PET,All,0,6.817499999999998
+156,EU27+3,2023.75,single-use beverage bottles,PET,All,0,547.4388743113345
+157,EU27+3,2023.75,reusable beverage bottles,PET,All,0,7.525490044191507
+158,EU27+3,2023.75,single-use non-beverage bottles,PET,All,0,55.59258450687111
+159,EU27+3,2023.75,reusable non-beverage bottles,PET,All,0,1.787878008434977
+160,EU27+3,2023.75,single-use sheet (tray),PET,All,0,142.15446272583006
+161,EU27+3,2023.75,reusable sheet (tray),PET,All,0,1.8418704608662733
+162,EU27+3,2023.75,flexible packaging,PET,All,0,93.425
+163,EU27+3,2023.75,other,PET,All,0,6.817499999999998
+164,EU27+3,2024.0,single-use beverage bottles,PET,All,0,524.807963270754
+165,EU27+3,2024.0,reusable beverage bottles,PET,All,0,21.13342912472338
+166,EU27+3,2024.0,single-use non-beverage bottles,PET,All,0,54.39534318406188
+167,EU27+3,2024.0,reusable non-beverage bottles,PET,All,0,3.2579235063087744
+168,EU27+3,2024.0,single-use sheet (tray),PET,All,0,139.19030859908855
+169,EU27+3,2024.0,reusable sheet (tray),PET,All,0,3.967043043315448
+170,EU27+3,2024.0,flexible packaging,PET,All,0,94.35925
+171,EU27+3,2024.0,other,PET,All,0,6.885674999999999
+172,EU27+3,2024.25,single-use beverage bottles,PET,All,0,524.2274234883748
+173,EU27+3,2024.25,reusable beverage bottles,PET,All,0,10.626142935859932
+174,EU27+3,2024.25,single-use non-beverage bottles,PET,All,0,54.3351713442565
+175,EU27+3,2024.25,reusable non-beverage bottles,PET,All,0,2.5814171709036056
+176,EU27+3,2024.25,single-use sheet (tray),PET,All,0,138.43383953061524
+177,EU27+3,2024.25,reusable sheet (tray),PET,All,0,3.4264537763970107
+178,EU27+3,2024.25,flexible packaging,PET,All,0,94.35925
+179,EU27+3,2024.25,other,PET,All,0,6.885674999999999
+180,EU27+3,2024.5,single-use beverage bottles,PET,All,0,523.6468837059957
+181,EU27+3,2024.5,reusable beverage bottles,PET,All,0,10.538198980995666
+182,EU27+3,2024.5,single-use non-beverage bottles,PET,All,0,54.27499950445113
+183,EU27+3,2024.5,reusable non-beverage bottles,PET,All,0,2.562991268755039
+184,EU27+3,2024.5,single-use sheet (tray),PET,All,0,137.67737046214197
+185,EU27+3,2024.5,reusable sheet (tray),PET,All,0,3.3164346067601382
+186,EU27+3,2024.5,flexible packaging,PET,All,0,94.35925
+187,EU27+3,2024.5,other,PET,All,0,6.885674999999999
+188,EU27+3,2024.75,single-use beverage bottles,PET,All,0,523.0663439236166
+189,EU27+3,2024.75,reusable beverage bottles,PET,All,0,10.451771455049908
+190,EU27+3,2024.75,single-use non-beverage bottles,PET,All,0,54.21482766464575
+191,EU27+3,2024.75,reusable non-beverage bottles,PET,All,0,2.544599851545934
+192,EU27+3,2024.75,single-use sheet (tray),PET,All,0,136.92090139366866
+193,EU27+3,2024.75,reusable sheet (tray),PET,All,0,3.2074128910637607
+194,EU27+3,2024.75,flexible packaging,PET,All,0,94.35925
+195,EU27+3,2024.75,other,PET,All,0,6.885674999999999
+196,EU27+3,2025.0,single-use beverage bottles,PET,All,0,500.5514723475822
+197,EU27+3,2025.0,reusable beverage bottles,PET,All,0,23.05320306672283
+198,EU27+3,2025.0,single-use non-beverage bottles,PET,All,0,53.01999048595974
+199,EU27+3,2025.0,reusable non-beverage bottles,PET,All,0,3.972312161506546
+200,EU27+3,2025.0,single-use sheet (tray),PET,All,0,133.9935352254126
+201,EU27+3,2025.0,reusable sheet (tray),PET,All,0,5.191352664897531
+202,EU27+3,2025.0,flexible packaging,PET,All,0,95.3028425
+203,EU27+3,2025.0,other,PET,All,0,6.954531749999998
+204,EU27+3,2025.25,single-use beverage bottles,PET,All,0,498.88296743975695
+205,EU27+3,2025.25,reusable beverage bottles,PET,All,0,13.06099799313678
+206,EU27+3,2025.25,single-use non-beverage bottles,PET,All,0,52.843257184339876
+207,EU27+3,2025.25,reusable non-beverage bottles,PET,All,0,3.2736356785338563
+208,EU27+3,2025.25,single-use sheet (tray),PET,All,0,133.2916643266128
+209,EU27+3,2025.25,reusable sheet (tray),PET,All,0,4.447146676384849
+210,EU27+3,2025.25,flexible packaging,PET,All,0,95.3028425
+211,EU27+3,2025.25,other,PET,All,0,6.954531749999998
+212,EU27+3,2025.5,single-use beverage bottles,PET,All,0,497.21446253193164
+213,EU27+3,2025.5,reusable beverage bottles,PET,All,0,12.64109733534142
+214,EU27+3,2025.5,single-use non-beverage bottles,PET,All,0,52.66652388272001
+215,EU27+3,2025.5,reusable non-beverage bottles,PET,All,0,3.24137714336383
+216,EU27+3,2025.5,single-use sheet (tray),PET,All,0,132.58979342781305
+217,EU27+3,2025.5,reusable sheet (tray),PET,All,0,4.410941598782314
+218,EU27+3,2025.5,flexible packaging,PET,All,0,95.3028425
+219,EU27+3,2025.5,other,PET,All,0,6.954531749999998
+220,EU27+3,2025.75,single-use beverage bottles,PET,All,0,495.54595762410634
+221,EU27+3,2025.75,reusable beverage bottles,PET,All,0,12.22711882171486
+222,EU27+3,2025.75,single-use non-beverage bottles,PET,All,0,52.48979058110014
+223,EU27+3,2025.75,reusable non-beverage bottles,PET,All,0,3.209260947778501
+224,EU27+3,2025.75,single-use sheet (tray),PET,All,0,131.88792252901325
+225,EU27+3,2025.75,reusable sheet (tray),PET,All,0,4.374870636638147
+226,EU27+3,2025.75,flexible packaging,PET,All,0,95.3028425
+227,EU27+3,2025.75,other,PET,All,0,6.954531749999998
+228,EU27+3,2026.0,single-use beverage bottles,PET,All,0,472.2367267784257
+229,EU27+3,2026.0,reusable beverage bottles,PET,All,0,23.39459705418627
+230,EU27+3,2026.0,single-use non-beverage bottles,PET,All,0,51.18996898316325
+231,EU27+3,2026.0,reusable non-beverage bottles,PET,All,0,4.573108508732254
+232,EU27+3,2026.0,single-use sheet (tray),PET,All,0,129.03833448512052
+233,EU27+3,2026.0,reusable sheet (tray),PET,All,0,6.34377229780346
+234,EU27+3,2026.0,flexible packaging,PET,All,0,96.255870925
+235,EU27+3,2026.0,other,PET,All,0,7.024077067499998
+236,EU27+3,2026.25,single-use beverage bottles,PET,All,0,470.6413324312013
+237,EU27+3,2026.25,reusable beverage bottles,PET,All,0,13.742388612318067
+238,EU27+3,2026.25,single-use non-beverage bottles,PET,All,0,51.017029898760676
+239,EU27+3,2026.25,reusable non-beverage bottles,PET,All,0,3.8749420281172178
+240,EU27+3,2026.25,single-use sheet (tray),PET,All,0,128.34795429089078
+241,EU27+3,2026.25,reusable sheet (tray),PET,All,0,5.679753030094485
+242,EU27+3,2026.25,flexible packaging,PET,All,0,96.255870925
+243,EU27+3,2026.25,other,PET,All,0,7.024077067499998
+244,EU27+3,2026.5,single-use beverage bottles,PET,All,0,469.04593808397686
+245,EU27+3,2026.5,reusable beverage bottles,PET,All,0,13.24468450761671
+246,EU27+3,2026.5,single-use non-beverage bottles,PET,All,0,50.84409081435809
+247,EU27+3,2026.5,reusable non-beverage bottles,PET,All,0,3.835903539543819
+248,EU27+3,2026.5,single-use sheet (tray),PET,All,0,127.65757409666105
+249,EU27+3,2026.5,reusable sheet (tray),PET,All,0,5.632673606825973
+250,EU27+3,2026.5,flexible packaging,PET,All,0,96.255870925
+251,EU27+3,2026.5,other,PET,All,0,7.024077067499998
+252,EU27+3,2026.75,single-use beverage bottles,PET,All,0,467.4505437367524
+253,EU27+3,2026.75,reusable beverage bottles,PET,All,0,12.758579306088834
+254,EU27+3,2026.75,single-use non-beverage bottles,PET,All,0,50.67115172995551
+255,EU27+3,2026.75,reusable non-beverage bottles,PET,All,0,3.7970404014378323
+256,EU27+3,2026.75,single-use sheet (tray),PET,All,0,126.96719390243133
+257,EU27+3,2026.75,reusable sheet (tray),PET,All,0,5.585771204120089
+258,EU27+3,2026.75,flexible packaging,PET,All,0,96.255870925
+259,EU27+3,2026.75,other,PET,All,0,7.024077067499998
+260,EU27+3,2027.0,single-use beverage bottles,PET,All,0,444.51494563302606
+261,EU27+3,2027.0,reusable beverage bottles,PET,All,0,22.739522414446647
+262,EU27+3,2027.0,single-use non-beverage bottles,PET,All,0,49.38707630505015
+263,EU27+3,2027.0,reusable non-beverage bottles,PET,All,0,5.103428968276975
+264,EU27+3,2027.0,single-use sheet (tray),PET,All,0,124.15333082002553
+265,EU27+3,2027.0,reusable sheet (tray),PET,All,0,7.456743665290997
+266,EU27+3,2027.0,flexible packaging,PET,All,0,97.21842963425
+267,EU27+3,2027.0,other,PET,All,0,7.094317838174997
+268,EU27+3,2027.25,single-use beverage bottles,PET,All,0,442.9926341753787
+269,EU27+3,2027.25,reusable beverage bottles,PET,All,0,13.642681466858178
+270,EU27+3,2027.25,single-use non-beverage bottles,PET,All,0,49.21794248208766
+271,EU27+3,2027.25,reusable non-beverage bottles,PET,All,0,4.4039128513901655
+272,EU27+3,2027.25,single-use sheet (tray),PET,All,0,123.47456012468741
+273,EU27+3,2027.25,reusable sheet (tray),PET,All,0,6.793718353674142
+274,EU27+3,2027.25,flexible packaging,PET,All,0,97.21842963425
+275,EU27+3,2027.25,other,PET,All,0,7.094317838174997
+276,EU27+3,2027.5,single-use beverage bottles,PET,All,0,441.47032271773134
+277,EU27+3,2027.5,reusable beverage bottles,PET,All,0,13.075847082179578
+278,EU27+3,2027.5,single-use non-beverage bottles,PET,All,0,49.04880865912515
+279,EU27+3,2027.5,reusable non-beverage bottles,PET,All,0,4.358525598390343
+280,EU27+3,2027.5,single-use sheet (tray),PET,All,0,122.79578942934933
+281,EU27+3,2027.5,reusable sheet (tray),PET,All,0,6.736361234653126
+282,EU27+3,2027.5,flexible packaging,PET,All,0,97.21842963425
+283,EU27+3,2027.5,other,PET,All,0,7.094317838174997
+284,EU27+3,2027.75,single-use beverage bottles,PET,All,0,439.948011260084
+285,EU27+3,2027.75,reusable beverage bottles,PET,All,0,12.52917910202764
+286,EU27+3,2027.75,single-use non-beverage bottles,PET,All,0,48.87967483616266
+287,EU27+3,2027.75,reusable non-beverage bottles,PET,All,0,4.313345943563024
+288,EU27+3,2027.75,single-use sheet (tray),PET,All,0,122.1170187340112
+289,EU27+3,2027.75,reusable sheet (tray),PET,All,0,6.679223073920923
+290,EU27+3,2027.75,flexible packaging,PET,All,0,97.21842963425
+291,EU27+3,2027.75,other,PET,All,0,7.094317838174997
+292,EU27+3,2028.0,single-use beverage bottles,PET,All,0,417.39283321859267
+293,EU27+3,2028.0,reusable beverage bottles,PET,All,0,21.330276062580452
+294,EU27+3,2028.0,single-use non-beverage bottles,PET,All,0,47.61172827976744
+295,EU27+3,2028.0,reusable non-beverage bottles,PET,All,0,5.562233724814319
+296,EU27+3,2028.0,single-use sheet (tray),PET,All,0,119.34005446900113
+297,EU27+3,2028.0,reusable sheet (tray),PET,All,0,8.452928051032696
+298,EU27+3,2028.0,flexible packaging,PET,All,0,98.1906139305925
+299,EU27+3,2028.0,other,PET,All,0,7.165261016556748
+300,EU27+3,2028.25,single-use beverage bottles,PET,All,0,415.9435525476948
+301,EU27+3,2028.25,reusable beverage bottles,PET,All,0,12.940915105898867
+302,EU27+3,2028.25,single-use non-beverage bottles,PET,All,0,47.446409778796024
+303,EU27+3,2028.25,reusable non-beverage bottles,PET,All,0,4.863459204745452
+304,EU27+3,2028.25,single-use sheet (tray),PET,All,0,118.67301148162358
+305,EU27+3,2028.25,reusable sheet (tray),PET,All,0,7.79287342535876
+306,EU27+3,2028.25,flexible packaging,PET,All,0,98.1906139305925
+307,EU27+3,2028.25,other,PET,All,0,7.165261016556748
+308,EU27+3,2028.5,single-use beverage bottles,PET,All,0,414.4942718767969
+309,EU27+3,2028.5,reusable beverage bottles,PET,All,0,12.26381601168869
+310,EU27+3,2028.5,single-use non-beverage bottles,PET,All,0,47.281091277824615
+311,EU27+3,2028.5,reusable non-beverage bottles,PET,All,0,4.812152171622892
+312,EU27+3,2028.5,single-use sheet (tray),PET,All,0,118.00596849424602
+313,EU27+3,2028.5,reusable sheet (tray),PET,All,0,7.725834423825061
+314,EU27+3,2028.5,flexible packaging,PET,All,0,98.1906139305925
+315,EU27+3,2028.5,other,PET,All,0,7.165261016556748
+316,EU27+3,2028.75,single-use beverage bottles,PET,All,0,413.044991205899
+317,EU27+3,2028.75,reusable beverage bottles,PET,All,0,11.671628678850752
+318,EU27+3,2028.75,single-use non-beverage bottles,PET,All,0,47.1157727768532
+319,EU27+3,2028.75,reusable non-beverage bottles,PET,All,0,4.761084251382137
+320,EU27+3,2028.75,single-use sheet (tray),PET,All,0,117.33892550686849
+321,EU27+3,2028.75,reusable sheet (tray),PET,All,0,7.659055309171348
+322,EU27+3,2028.75,flexible packaging,PET,All,0,98.1906139305925
+323,EU27+3,2028.75,other,PET,All,0,7.165261016556748
+324,EU27+3,2029.0,single-use beverage bottles,PET,All,0,390.87688797147206
+325,EU27+3,2029.0,reusable beverage bottles,PET,All,0,19.303691776814603
+326,EU27+3,2029.0,single-use non-beverage bottles,PET,All,0,45.864333241007294
+327,EU27+3,2029.0,reusable non-beverage bottles,PET,All,0,5.952454145472366
+328,EU27+3,2029.0,single-use sheet (tray),PET,All,0,114.60003360149227
+329,EU27+3,2029.0,reusable sheet (tray),PET,All,0,9.3362386607117
+330,EU27+3,2029.0,flexible packaging,PET,All,0,99.17252006989844
+331,EU27+3,2029.0,other,PET,All,0,7.236913626722317
+332,EU27+3,2029.25,single-use beverage bottles,PET,All,0,389.50056090115004
+333,EU27+3,2029.25,reusable beverage bottles,PET,All,0,11.675885497615525
+334,EU27+3,2029.25,single-use non-beverage bottles,PET,All,0,45.702839109877
+335,EU27+3,2029.25,reusable non-beverage bottles,PET,All,0,5.256516107106277
+336,EU27+3,2029.25,single-use sheet (tray),PET,All,0,113.94483590418643
+337,EU27+3,2029.25,reusable sheet (tray),PET,All,0,8.68110086997105
+338,EU27+3,2029.25,flexible packaging,PET,All,0,99.17252006989844
+339,EU27+3,2029.25,other,PET,All,0,7.236913626722317
+340,EU27+3,2029.5,single-use beverage bottles,PET,All,0,388.12423383082796
+341,EU27+3,2029.5,reusable beverage bottles,PET,All,0,10.922957721031224
+342,EU27+3,2029.5,single-use non-beverage bottles,PET,All,0,45.54134497874669
+343,EU27+3,2029.5,reusable non-beverage bottles,PET,All,0,5.199715825323953
+344,EU27+3,2029.5,single-use sheet (tray),PET,All,0,113.28963820688062
+345,EU27+3,2029.5,reusable sheet (tray),PET,All,0,8.604974527906752
+346,EU27+3,2029.5,flexible packaging,PET,All,0,99.17252006989844
+347,EU27+3,2029.5,other,PET,All,0,7.236913626722317
+348,EU27+3,2029.75,single-use beverage bottles,PET,All,0,386.7479067605058
+349,EU27+3,2029.75,reusable beverage bottles,PET,All,0,10.304234388495573
+350,EU27+3,2029.75,single-use non-beverage bottles,PET,All,0,45.37985084761638
+351,EU27+3,2029.75,reusable non-beverage bottles,PET,All,0,5.143185344547403
+352,EU27+3,2029.75,single-use sheet (tray),PET,All,0,112.63444050957479
+353,EU27+3,2029.75,reusable sheet (tray),PET,All,0,8.529147949502118
+354,EU27+3,2029.75,flexible packaging,PET,All,0,99.17252006989844
+355,EU27+3,2029.75,other,PET,All,0,7.236913626722317
+356,EU27+3,2030.0,single-use beverage bottles,PET,All,0,364.97339285473436
+357,EU27+3,2030.0,reusable beverage bottles,PET,All,0,16.784062041820448
+358,EU27+3,2030.0,single-use non-beverage bottles,PET,All,0,44.145291605547506
+359,EU27+3,2030.0,reusable non-beverage bottles,PET,All,0,6.277045706342861
+360,EU27+3,2030.0,single-use sheet (tray),PET,All,0,109.93479364693547
+361,EU27+3,2030.0,reusable sheet (tray),PET,All,0,10.110642233777144
+362,EU27+3,2030.0,flexible packaging,PET,All,0,100.1642452705974
+363,EU27+3,2030.0,other,PET,All,0,7.309282762989538
+364,EU27+3,2030.25,single-use beverage bottles,PET,All,0,360.4112254440502
+365,EU27+3,2030.25,reusable beverage bottles,PET,All,0,9.174204529703204
+366,EU27+3,2030.25,single-use non-beverage bottles,PET,All,0,43.59347546047817
+367,EU27+3,2030.25,reusable non-beverage bottles,PET,All,0,5.479110149411888
+368,EU27+3,2030.25,single-use sheet (tray),PET,All,0,109.23308219812525
+369,EU27+3,2030.25,reusable sheet (tray),PET,All,0,9.454638468387326
+370,EU27+3,2030.25,flexible packaging,PET,All,0,100.1642452705974
+371,EU27+3,2030.25,other,PET,All,0,7.309282762989538
+372,EU27+3,2030.5,single-use beverage bottles,PET,All,0,355.849058033366
+373,EU27+3,2030.5,reusable beverage bottles,PET,All,0,8.877996728814054
+374,EU27+3,2030.5,single-use non-beverage bottles,PET,All,0,43.04165931540882
+375,EU27+3,2030.5,reusable non-beverage bottles,PET,All,0,5.370313847046005
+376,EU27+3,2030.5,single-use sheet (tray),PET,All,0,108.53137074931502
+377,EU27+3,2030.5,reusable sheet (tray),PET,All,0,9.364954820933654
+378,EU27+3,2030.5,flexible packaging,PET,All,0,100.1642452705974
+379,EU27+3,2030.5,other,PET,All,0,7.309282762989538
+380,EU27+3,2030.75,single-use beverage bottles,PET,All,0,351.2868906226819
+381,EU27+3,2030.75,reusable beverage bottles,PET,All,0,8.795399809041726
+382,EU27+3,2030.75,single-use non-beverage bottles,PET,All,0,42.48984317033948
+383,EU27+3,2030.75,reusable non-beverage bottles,PET,All,0,5.262490887578447
+384,EU27+3,2030.75,single-use sheet (tray),PET,All,0,107.82965930050479
+385,EU27+3,2030.75,reusable sheet (tray),PET,All,0,9.275640495326297
+386,EU27+3,2030.75,flexible packaging,PET,All,0,100.1642452705974
+387,EU27+3,2030.75,other,PET,All,0,7.309282762989538
+388,EU27+3,2031.0,single-use beverage bottles,PET,All,0,344.3554376033823
+389,EU27+3,2031.0,reusable beverage bottles,PET,All,0,23.905212762687242
+390,EU27+3,2031.0,single-use non-beverage bottles,PET,All,0,41.651450507264116
+391,EU27+3,2031.0,reusable non-beverage bottles,PET,All,0,6.993088549173821
+392,EU27+3,2031.0,single-use sheet (tray),PET,All,0,107.34502290392037
+393,EU27+3,2031.0,reusable sheet (tray),PET,All,0,11.463164383385827
+394,EU27+3,2031.0,flexible packaging,PET,All,0,101.16588772330338
+395,EU27+3,2031.0,other,PET,All,0,7.382375590619433
+396,EU27+3,2031.25,single-use beverage bottles,PET,All,0,339.8244450033378
+397,EU27+3,2031.25,reusable beverage bottles,PET,All,0,10.407480330922311
+398,EU27+3,2031.25,single-use non-beverage bottles,PET,All,0,41.103405105852744
+399,EU27+3,2031.25,reusable non-beverage bottles,PET,All,0,5.86530177757931
+400,EU27+3,2031.25,single-use sheet (tray),PET,All,0,106.64188956612176
+401,EU27+3,2031.25,reusable sheet (tray),PET,All,0,10.567466158899691
+402,EU27+3,2031.25,flexible packaging,PET,All,0,101.16588772330338
+403,EU27+3,2031.25,other,PET,All,0,7.382375590619433
+404,EU27+3,2031.5,single-use beverage bottles,PET,All,0,335.29345240329326
+405,EU27+3,2031.5,reusable beverage bottles,PET,All,0,9.95488800857862
+406,EU27+3,2031.5,single-use non-beverage bottles,PET,All,0,40.55535970444137
+407,EU27+3,2031.5,reusable non-beverage bottles,PET,All,0,5.743455740968238
+408,EU27+3,2031.5,single-use sheet (tray),PET,All,0,105.93875622832316
+409,EU27+3,2031.5,reusable sheet (tray),PET,All,0,10.465014471548564
+410,EU27+3,2031.5,flexible packaging,PET,All,0,101.16588772330338
+411,EU27+3,2031.5,other,PET,All,0,7.382375590619433
+412,EU27+3,2031.75,single-use beverage bottles,PET,All,0,330.76245980324876
+413,EU27+3,2031.75,reusable beverage bottles,PET,All,0,9.860530693050961
+414,EU27+3,2031.75,single-use non-beverage bottles,PET,All,0,40.00731430303
+415,EU27+3,2031.75,reusable non-beverage bottles,PET,All,0,5.622740414448371
+416,EU27+3,2031.75,single-use sheet (tray),PET,All,0,105.23562289052455
+417,EU27+3,2031.75,reusable sheet (tray),PET,All,0,10.362991751532974
+418,EU27+3,2031.75,flexible packaging,PET,All,0,101.16588772330338
+419,EU27+3,2031.75,other,PET,All,0,7.382375590619433
+420,EU27+3,2032.0,single-use beverage bottles,PET,All,0,323.90914150446963
+421,EU27+3,2032.0,reusable beverage bottles,PET,All,0,24.434653417550905
+422,EU27+3,2032.0,single-use non-beverage bottles,PET,All,0,39.17837241113254
+423,EU27+3,2032.0,reusable non-beverage bottles,PET,All,0,7.277632057450509
+424,EU27+3,2032.0,single-use sheet (tray),PET,All,0,104.73767268871802
+425,EU27+3,2032.0,reusable sheet (tray),PET,All,0,12.521185239806075
+426,EU27+3,2032.0,flexible packaging,PET,All,0,102.17754660053642
+427,EU27+3,2032.0,other,PET,All,0,7.4561993465256275
+428,EU27+3,2032.25,single-use beverage bottles,PET,All,0,319.41040342801864
+429,EU27+3,2032.25,reusable beverage bottles,PET,All,0,11.567729010504252
+430,EU27+3,2032.25,single-use non-beverage bottles,PET,All,0,38.63422834986681
+431,EU27+3,2032.25,reusable non-beverage bottles,PET,All,0,6.1479243136192565
+432,EU27+3,2032.25,single-use sheet (tray),PET,All,0,104.03315919529615
+433,EU27+3,2032.25,reusable sheet (tray),PET,All,0,11.600335834193078
+434,EU27+3,2032.25,flexible packaging,PET,All,0,102.17754660053642
+435,EU27+3,2032.25,other,PET,All,0,7.4561993465256275
+436,EU27+3,2032.5,single-use beverage bottles,PET,All,0,314.9116653515677
+437,EU27+3,2032.5,reusable beverage bottles,PET,All,0,10.92612486572962
+438,EU27+3,2032.5,single-use non-beverage bottles,PET,All,0,38.09008428860108
+439,EU27+3,2032.5,reusable non-beverage bottles,PET,All,0,6.0139695886298945
+440,EU27+3,2032.5,single-use sheet (tray),PET,All,0,103.32864570187428
+441,EU27+3,2032.5,reusable sheet (tray),PET,All,0,11.485321808738465
+442,EU27+3,2032.5,flexible packaging,PET,All,0,102.17754660053642
+443,EU27+3,2032.5,other,PET,All,0,7.4561993465256275
+444,EU27+3,2032.75,single-use beverage bottles,PET,All,0,310.4129272751167
+445,EU27+3,2032.75,reusable beverage bottles,PET,All,0,10.79962385393145
+446,EU27+3,2032.75,single-use non-beverage bottles,PET,All,0,37.54594022733535
+447,EU27+3,2032.75,reusable non-beverage bottles,PET,All,0,5.881306136081177
+448,EU27+3,2032.75,single-use sheet (tray),PET,All,0,102.62413220845241
+449,EU27+3,2032.75,reusable sheet (tray),PET,All,0,11.370797552100978
+450,EU27+3,2032.75,flexible packaging,PET,All,0,102.17754660053642
+451,EU27+3,2032.75,other,PET,All,0,7.4561993465256275
+452,EU27+3,2033.0,single-use beverage bottles,PET,All,0,303.6462046925377
+453,EU27+3,2033.0,reusable beverage bottles,PET,All,0,24.789570565048493
+454,EU27+3,2033.0,single-use non-beverage bottles,PET,All,0,36.72747250483841
+455,EU27+3,2033.0,reusable non-beverage bottles,PET,All,0,7.458163365200399
+456,EU27+3,2033.0,single-use sheet (tray),PET,All,0,102.11310248317939
+457,EU27+3,2033.0,reusable sheet (tray),PET,All,0,13.498177138896425
+458,EU27+3,2033.0,flexible packaging,PET,All,0,103.19932206654178
+459,EU27+3,2033.0,other,PET,All,0,7.530761339990884
+460,EU27+3,2033.25,single-use beverage bottles,PET,All,0,299.18081932941215
+461,EU27+3,2033.25,reusable beverage bottles,PET,All,0,12.513955642928508
+462,EU27+3,2033.25,single-use non-beverage bottles,PET,All,0,36.187362615061375
+463,EU27+3,2033.25,reusable non-beverage bottles,PET,All,0,6.330979557865563
+464,EU27+3,2033.25,single-use sheet (tray),PET,All,0,101.40725154435557
+465,EU27+3,2033.25,reusable sheet (tray),PET,All,0,12.553264051234681
+466,EU27+3,2033.25,flexible packaging,PET,All,0,103.19932206654178
+467,EU27+3,2033.25,other,PET,All,0,7.530761339990884
+468,EU27+3,2033.5,single-use beverage bottles,PET,All,0,294.71543396628664
+469,EU27+3,2033.5,reusable beverage bottles,PET,All,0,11.691722165159945
+470,EU27+3,2033.5,single-use non-beverage bottles,PET,All,0,35.64725272528434
+471,EU27+3,2033.5,reusable non-beverage bottles,PET,All,0,6.185889240202341
+472,EU27+3,2033.5,single-use sheet (tray),PET,All,0,100.70140060553175
+473,EU27+3,2033.5,reusable sheet (tray),PET,All,0,12.42590330126339
+474,EU27+3,2033.5,flexible packaging,PET,All,0,103.19932206654178
+475,EU27+3,2033.5,other,PET,All,0,7.530761339990884
+476,EU27+3,2033.75,single-use beverage bottles,PET,All,0,290.2500486031611
+477,EU27+3,2033.75,reusable beverage bottles,PET,All,0,11.504677329697586
+478,EU27+3,2033.75,single-use non-beverage bottles,PET,All,0,35.107142835507304
+479,EU27+3,2033.75,reusable non-beverage bottles,PET,All,0,6.042254080035104
+480,EU27+3,2033.75,single-use sheet (tray),PET,All,0,99.99554966670793
+481,EU27+3,2033.75,reusable sheet (tray),PET,All,0,12.299094294741277
+482,EU27+3,2033.75,flexible packaging,PET,All,0,103.19932206654178
+483,EU27+3,2033.75,other,PET,All,0,7.530761339990884
+484,EU27+3,2034.0,single-use beverage bottles,PET,All,0,283.57860619046335
+485,EU27+3,2034.0,reusable beverage bottles,PET,All,0,24.861278809132926
+486,EU27+3,2034.0,single-use non-beverage bottles,PET,All,0,34.30019970895622
+487,EU27+3,2034.0,reusable non-beverage bottles,PET,All,0,7.538703188311027
+488,EU27+3,2034.0,single-use sheet (tray),PET,All,0,99.47168523768188
+489,EU27+3,2034.0,reusable sheet (tray),PET,All,0,14.394142959975529
+490,EU27+3,2034.0,flexible packaging,PET,All,0,104.2313152872072
+491,EU27+3,2034.0,other,PET,All,0,7.606068953390792
+492,EU27+3,2034.25,single-use beverage bottles,PET,All,0,279.1476904687373
+493,EU27+3,2034.25,reusable beverage bottles,PET,All,0,13.091146192886143
+494,EU27+3,2034.25,single-use non-beverage bottles,PET,All,0,33.76425908850378
+495,EU27+3,2034.25,reusable non-beverage bottles,PET,All,0,6.418693486703226
+496,EU27+3,2034.25,single-use sheet (tray),PET,All,0,98.76454055589741
+497,EU27+3,2034.25,reusable sheet (tray),PET,All,0,13.426320360915753
+498,EU27+3,2034.25,flexible packaging,PET,All,0,104.2313152872072
+499,EU27+3,2034.25,other,PET,All,0,7.606068953390792
+500,EU27+3,2034.5,single-use beverage bottles,PET,All,0,274.7167747470113
+501,EU27+3,2034.5,reusable beverage bottles,PET,All,0,12.144550801292567
+502,EU27+3,2034.5,single-use non-beverage bottles,PET,All,0,33.228318468051334
+503,EU27+3,2034.5,reusable non-beverage bottles,PET,All,0,6.263473389799792
+504,EU27+3,2034.5,single-use sheet (tray),PET,All,0,98.05739587411294
+505,EU27+3,2034.5,reusable sheet (tray),PET,All,0,13.286838634683537
+506,EU27+3,2034.5,flexible packaging,PET,All,0,104.2313152872072
+507,EU27+3,2034.5,other,PET,All,0,7.606068953390792
+508,EU27+3,2034.75,single-use beverage bottles,PET,All,0,270.28585902528533
+509,EU27+3,2034.75,reusable beverage bottles,PET,All,0,11.8849580298658
+510,EU27+3,2034.75,single-use non-beverage bottles,PET,All,0,32.69237784759889
+511,EU27+3,2034.75,reusable non-beverage bottles,PET,All,0,6.10987582598699
+512,EU27+3,2034.75,single-use sheet (tray),PET,All,0,97.35025119232847
+513,EU27+3,2034.75,reusable sheet (tray),PET,All,0,13.147971817074875
+514,EU27+3,2034.75,flexible packaging,PET,All,0,104.2313152872072
+515,EU27+3,2034.75,other,PET,All,0,7.606068953390792
+516,EU27+3,2035.0,single-use beverage bottles,PET,All,0,263.7186089377272
+517,EU27+3,2035.0,reusable beverage bottles,PET,All,0,24.572480680893577
+518,EU27+3,2035.0,single-use non-beverage bottles,PET,All,0,31.8980372851426
+519,EU27+3,2035.0,reusable non-beverage bottles,PET,All,0,7.523497099566248
+520,EU27+3,2035.0,single-use sheet (tray),PET,All,0,96.81380764976097
+521,EU27+3,2035.0,reusable sheet (tray),PET,All,0,15.209138432448185
+522,EU27+3,2035.0,flexible packaging,PET,All,0,105.27362844007926
+523,EU27+3,2035.0,other,PET,All,0,7.682129642924703
+524,EU27+3,2035.25,single-use beverage bottles,PET,All,0,259.32329878876504
+525,EU27+3,2035.25,reusable beverage bottles,PET,All,0,13.218547054509031
+526,EU27+3,2035.25,single-use non-beverage bottles,PET,All,0,31.36640333039022
+527,EU27+3,2035.25,reusable non-beverage bottles,PET,All,0,6.415522587088978
+528,EU27+3,2035.25,single-use sheet (tray),PET,All,0,96.10541393525055
+529,EU27+3,2035.25,reusable sheet (tray),PET,All,0,14.219629086944643
+530,EU27+3,2035.25,flexible packaging,PET,All,0,105.27362844007926
+531,EU27+3,2035.25,other,PET,All,0,7.682129642924703
+532,EU27+3,2035.5,single-use beverage bottles,PET,All,0,254.92798863980298
+533,EU27+3,2035.5,reusable beverage bottles,PET,All,0,12.158243099050935
+534,EU27+3,2035.5,single-use non-beverage bottles,PET,All,0,30.834769375637848
+535,EU27+3,2035.5,reusable non-beverage bottles,PET,All,0,6.251211247842166
+536,EU27+3,2035.5,single-use sheet (tray),PET,All,0,95.39702022074007
+537,EU27+3,2035.5,reusable sheet (tray),PET,All,0,14.068262494172021
+538,EU27+3,2035.5,flexible packaging,PET,All,0,105.27362844007926
+539,EU27+3,2035.5,other,PET,All,0,7.682129642924703
+540,EU27+3,2035.75,single-use beverage bottles,PET,All,0,250.53267849084082
+541,EU27+3,2035.75,reusable beverage bottles,PET,All,0,11.898191301857238
+542,EU27+3,2035.75,single-use non-beverage bottles,PET,All,0,30.30313542088547
+543,EU27+3,2035.75,reusable non-beverage bottles,PET,All,0,6.088693799658527
+544,EU27+3,2035.75,single-use sheet (tray),PET,All,0,94.68862650622965
+545,EU27+3,2035.75,reusable sheet (tray),PET,All,0,13.917575183366575
+546,EU27+3,2035.75,flexible packaging,PET,All,0,105.27362844007926
+547,EU27+3,2035.75,other,PET,All,0,7.682129642924703
+548,EU27+3,2036.0,single-use beverage bottles,PET,All,0,244.07876489756484
+549,EU27+3,2036.0,reusable beverage bottles,PET,All,0,23.97233998302903
+550,EU27+3,2036.0,single-use non-beverage bottles,PET,All,0,29.522503453870886
+551,EU27+3,2036.0,reusable non-beverage bottles,PET,All,0,7.417020356679348
+552,EU27+3,2036.0,single-use sheet (tray),PET,All,0,94.1398704474202
+553,EU27+3,2036.0,reusable sheet (tray),PET,All,0,15.943273913415165
+554,EU27+3,2036.0,flexible packaging,PET,All,0,106.32636472448006
+555,EU27+3,2036.0,other,PET,All,0,7.758950939353948
+556,EU27+3,2036.25,single-use beverage bottles,PET,All,0,239.720215524394
+557,EU27+3,2036.25,reusable beverage bottles,PET,All,0,14.098418547395283
+558,EU27+3,2036.25,single-use non-beverage bottles,PET,All,0,28.99531589219462
+559,EU27+3,2036.25,reusable non-beverage bottles,PET,All,0,6.326164637743259
+560,EU27+3,2036.25,single-use sheet (tray),PET,All,0,93.43027343399746
+561,EU27+3,2036.25,reusable sheet (tray),PET,All,0,14.933371145497858
+562,EU27+3,2036.25,flexible packaging,PET,All,0,106.32636472448006
+563,EU27+3,2036.25,other,PET,All,0,7.758950939353948
+564,EU27+3,2036.5,single-use beverage bottles,PET,All,0,235.3616661512232
+565,EU27+3,2036.5,reusable beverage bottles,PET,All,0,12.371885649754176
+566,EU27+3,2036.5,single-use non-beverage bottles,PET,All,0,28.46812833051835
+567,EU27+3,2036.5,reusable non-beverage bottles,PET,All,0,6.15383281671339
+568,EU27+3,2036.5,single-use sheet (tray),PET,All,0,92.72067642057469
+569,EU27+3,2036.5,reusable sheet (tray),PET,All,0,14.770366388014134
+570,EU27+3,2036.5,flexible packaging,PET,All,0,106.32636472448006
+571,EU27+3,2036.5,other,PET,All,0,7.758950939353948
+572,EU27+3,2036.75,single-use beverage bottles,PET,All,0,231.00311677805243
+573,EU27+3,2036.75,reusable beverage bottles,PET,All,0,12.07273879596491
+574,EU27+3,2036.75,single-use non-beverage bottles,PET,All,0,27.940940768842086
+575,EU27+3,2036.75,reusable non-beverage bottles,PET,All,0,5.983473141696187
+576,EU27+3,2036.75,single-use sheet (tray),PET,All,0,92.01107940715193
+577,EU27+3,2036.75,reusable sheet (tray),PET,All,0,14.6081065120623
+578,EU27+3,2036.75,flexible packaging,PET,All,0,106.32636472448006
+579,EU27+3,2036.75,other,PET,All,0,7.758950939353948
+580,EU27+3,2037.0,single-use beverage bottles,PET,All,0,224.67192024413538
+581,EU27+3,2037.0,reusable beverage bottles,PET,All,0,23.46106455001663
+582,EU27+3,2037.0,single-use non-beverage bottles,PET,All,0,27.175152021844188
+583,EU27+3,2037.0,reusable non-beverage bottles,PET,All,0,7.223991592495651
+584,EU27+3,2037.0,single-use sheet (tray),PET,All,0,91.45028867718857
+585,EU27+3,2037.0,reusable sheet (tray),PET,All,0,16.596716206020854
+586,EU27+3,2037.0,flexible packaging,PET,All,0,107.38962837172484
+587,EU27+3,2037.0,other,PET,All,0,7.8365404487474875
+588,EU27+3,2037.25,single-use beverage bottles,PET,All,0,220.35130639328665
+589,EU27+3,2037.25,reusable beverage bottles,PET,All,0,14.098672974196631
+590,EU27+3,2037.25,single-use non-beverage bottles,PET,All,0,26.652552944501032
+591,EU27+3,2037.25,reusable non-beverage bottles,PET,All,0,6.155553071154385
+592,EU27+3,2037.25,single-use sheet (tray),PET,All,0,90.73953513824668
+593,EU27+3,2037.25,reusable sheet (tray),PET,All,0,15.567785904166946
+594,EU27+3,2037.25,flexible packaging,PET,All,0,107.38962837172484
+595,EU27+3,2037.25,other,PET,All,0,7.8365404487474875
+596,EU27+3,2037.5,single-use beverage bottles,PET,All,0,216.0306925424379
+597,EU27+3,2037.5,reusable beverage bottles,PET,All,0,12.41876192431097
+598,EU27+3,2037.5,single-use non-beverage bottles,PET,All,0,26.129953867157873
+599,EU27+3,2037.5,reusable non-beverage bottles,PET,All,0,5.976309880912787
+600,EU27+3,2037.5,single-use sheet (tray),PET,All,0,90.0287815993048
+601,EU27+3,2037.5,reusable sheet (tray),PET,All,0,15.393400511106927
+602,EU27+3,2037.5,flexible packaging,PET,All,0,107.38962837172484
+603,EU27+3,2037.5,other,PET,All,0,7.8365404487474875
+604,EU27+3,2037.75,single-use beverage bottles,PET,All,0,211.7100786915891
+605,EU27+3,2037.75,reusable beverage bottles,PET,All,0,12.07653305933215
+606,EU27+3,2037.75,single-use non-beverage bottles,PET,All,0,25.607354789814714
+607,EU27+3,2037.75,reusable non-beverage bottles,PET,All,0,5.799220512861645
+608,EU27+3,2037.75,single-use sheet (tray),PET,All,0,89.31802806036292
+609,EU27+3,2037.75,reusable sheet (tray),PET,All,0,15.21982684324772
+610,EU27+3,2037.75,flexible packaging,PET,All,0,107.38962837172484
+611,EU27+3,2037.75,other,PET,All,0,7.8365404487474875
+612,EU27+3,2038.0,single-use beverage bottles,PET,All,0,205.51122063086197
+613,EU27+3,2038.0,reusable beverage bottles,PET,All,0,22.745983099519705
+614,EU27+3,2038.0,single-use non-beverage bottles,PET,All,0,24.857573019226532
+615,EU27+3,2038.0,reusable non-beverage bottles,PET,All,0,6.949369058327271
+616,EU27+3,2038.0,single-use sheet (tray),PET,All,0,88.74549199699761
+617,EU27+3,2038.0,reusable sheet (tray),PET,All,0,17.16969041743082
+618,EU27+3,2038.0,flexible packaging,PET,All,0,108.4635246554421
+619,EU27+3,2038.0,other,PET,All,0,7.914905853234963
+620,EU27+3,2038.25,single-use beverage bottles,PET,All,0,201.22973686771905
+621,EU27+3,2038.25,reusable beverage bottles,PET,All,0,13.916702814145026
+622,EU27+3,2038.25,single-use non-beverage bottles,PET,All,0,24.339706914659317
+623,EU27+3,2038.25,reusable non-beverage bottles,PET,All,0,5.908879241934775
+624,EU27+3,2038.25,single-use sheet (tray),PET,All,0,88.03362976172758
+625,EU27+3,2038.25,reusable sheet (tray),PET,All,0,16.12317308516264
+626,EU27+3,2038.25,flexible packaging,PET,All,0,108.4635246554421
+627,EU27+3,2038.25,other,PET,All,0,7.914905853234963
+628,EU27+3,2038.5,single-use beverage bottles,PET,All,0,196.94825310457608
+629,EU27+3,2038.5,reusable beverage bottles,PET,All,0,12.278668673611705
+630,EU27+3,2038.5,single-use non-beverage bottles,PET,All,0,23.821840810092095
+631,EU27+3,2038.5,reusable non-beverage bottles,PET,All,0,5.72386705194257
+632,EU27+3,2038.5,single-use sheet (tray),PET,All,0,87.32176752645755
+633,EU27+3,2038.5,reusable sheet (tray),PET,All,0,15.937675651564806
+634,EU27+3,2038.5,flexible packaging,PET,All,0,108.4635246554421
+635,EU27+3,2038.5,other,PET,All,0,7.914905853234963
+636,EU27+3,2038.75,single-use beverage bottles,PET,All,0,192.66676934143317
+637,EU27+3,2038.75,reusable beverage bottles,PET,All,0,11.893851952857077
+638,EU27+3,2038.75,single-use non-beverage bottles,PET,All,0,23.30397470552488
+639,EU27+3,2038.75,reusable non-beverage bottles,PET,All,0,5.541196562476502
+640,EU27+3,2038.75,single-use sheet (tray),PET,All,0,86.60990529118752
+641,EU27+3,2038.75,reusable sheet (tray),PET,All,0,15.753058049440902
+642,EU27+3,2038.75,flexible packaging,PET,All,0,108.4635246554421
+643,EU27+3,2038.75,other,PET,All,0,7.914905853234963
+644,EU27+3,2039.0,single-use beverage bottles,PET,All,0,186.61011654111013
+645,EU27+3,2039.0,reusable beverage bottles,PET,All,0,21.80978906936673
+646,EU27+3,2039.0,single-use non-beverage bottles,PET,All,0,22.57139334683325
+647,EU27+3,2039.0,reusable non-beverage bottles,PET,All,0,6.598364713213774
+648,EU27+3,2039.0,single-use sheet (tray),PET,All,0,86.02592497395018
+649,EU27+3,2039.0,reusable sheet (tray),PET,All,0,17.662481860196714
+650,EU27+3,2039.0,flexible packaging,PET,All,0,109.54815990199651
+651,EU27+3,2039.0,other,PET,All,0,7.9940549117673125
+652,EU27+3,2039.25,single-use beverage bottles,PET,All,0,182.36897752881217
+653,EU27+3,2039.25,reusable beverage bottles,PET,All,0,13.535750754703471
+654,EU27+3,2039.25,single-use non-beverage bottles,PET,All,0,22.058407134405222
+655,EU27+3,2039.25,reusable non-beverage bottles,PET,All,0,5.59159134038711
+656,EU27+3,2039.25,single-use sheet (tray),PET,All,0,85.31300294377932
+657,EU27+3,2039.25,reusable sheet (tray),PET,All,0,16.599894709291554
+658,EU27+3,2039.25,flexible packaging,PET,All,0,109.54815990199651
+659,EU27+3,2039.25,other,PET,All,0,7.9940549117673125
+660,EU27+3,2039.5,single-use beverage bottles,PET,All,0,178.12783851651417
+661,EU27+3,2039.5,reusable beverage bottles,PET,All,0,11.929773131334258
+662,EU27+3,2039.5,single-use non-beverage bottles,PET,All,0,21.54542092197719
+663,EU27+3,2039.5,reusable non-beverage bottles,PET,All,0,5.401988065747576
+664,EU27+3,2039.5,single-use sheet (tray),PET,All,0,84.60008091360847
+665,EU27+3,2039.5,reusable sheet (tray),PET,All,0,16.403565139305236
+666,EU27+3,2039.5,flexible packaging,PET,All,0,109.54815990199651
+667,EU27+3,2039.5,other,PET,All,0,7.9940549117673125
+668,EU27+3,2039.75,single-use beverage bottles,PET,All,0,173.8866995042162
+669,EU27+3,2039.75,reusable beverage bottles,PET,All,0,11.508096009913942
+670,EU27+3,2039.75,single-use non-beverage bottles,PET,All,0,21.03243470954916
+671,EU27+3,2039.75,reusable non-beverage bottles,PET,All,0,5.21492191569215
+672,EU27+3,2039.75,single-use sheet (tray),PET,All,0,83.8871588834376
+673,EU27+3,2039.75,reusable sheet (tray),PET,All,0,16.208184788346763
+674,EU27+3,2039.75,flexible packaging,PET,All,0,109.54815990199651
+675,EU27+3,2039.75,other,PET,All,0,7.9940549117673125
+676,EU27+3,2040.0,single-use beverage bottles,PET,All,0,167.98236872238974
+677,EU27+3,2040.0,reusable beverage bottles,PET,All,0,20.63695714365666
+678,EU27+3,2040.0,single-use non-beverage bottles,PET,All,0,20.318277433423873
+679,EU27+3,2040.0,reusable non-beverage bottles,PET,All,0,6.176449821575652
+680,EU27+3,2040.0,single-use sheet (tray),PET,All,0,83.29204738705326
+681,EU27+3,2040.0,reusable sheet (tray),PET,All,0,18.075437995353816
+682,EU27+3,2040.0,flexible packaging,PET,All,0,110.64364150101648
+683,EU27+3,2040.0,other,PET,All,0,8.073995460884985
+684,EU27+3,2040.25,single-use beverage bottles,PET,All,0,167.98236872238974
+685,EU27+3,2040.25,reusable beverage bottles,PET,All,0,16.360297131075612
+686,EU27+3,2040.25,single-use non-beverage bottles,PET,All,0,20.318277433423873
+687,EU27+3,2040.25,reusable non-beverage bottles,PET,All,0,5.62281527605718
+688,EU27+3,2040.25,single-use sheet (tray),PET,All,0,83.29204738705326
+689,EU27+3,2040.25,reusable sheet (tray),PET,All,0,17.253352739281702
+690,EU27+3,2040.25,flexible packaging,PET,All,0,110.64364150101648
+691,EU27+3,2040.25,other,PET,All,0,8.073995460884985
+692,EU27+3,2040.5,single-use beverage bottles,PET,All,0,167.98236872238974
+693,EU27+3,2040.5,reusable beverage bottles,PET,All,0,15.117961191010323
+694,EU27+3,2040.5,single-use non-beverage bottles,PET,All,0,20.318277433423873
+695,EU27+3,2040.5,reusable non-beverage bottles,PET,All,0,5.568954936973789
+696,EU27+3,2040.5,single-use sheet (tray),PET,All,0,83.29204738705326
+697,EU27+3,2040.5,reusable sheet (tray),PET,All,0,17.198009188713566
+698,EU27+3,2040.5,flexible packaging,PET,All,0,110.64364150101648
+699,EU27+3,2040.5,other,PET,All,0,8.073995460884985
+700,EU27+3,2040.75,single-use beverage bottles,PET,All,0,167.98236872238974
+701,EU27+3,2040.75,reusable beverage bottles,PET,All,0,15.001943804031981
+702,EU27+3,2040.75,single-use non-beverage bottles,PET,All,0,20.318277433423873
+703,EU27+3,2040.75,reusable non-beverage bottles,PET,All,0,5.5151493466096895
+704,EU27+3,2040.75,single-use sheet (tray),PET,All,0,83.29204738705326
+705,EU27+3,2040.75,reusable sheet (tray),PET,All,0,17.142665642330567
+706,EU27+3,2040.75,flexible packaging,PET,All,0,110.64364150101648
+707,EU27+3,2040.75,other,PET,All,0,8.073995460884985
+708,EU27+3,2041.0,single-use beverage bottles,PET,All,0,164.0067859959598
+709,EU27+3,2041.0,reusable beverage bottles,PET,All,0,30.14896645857688
+710,EU27+3,2041.0,single-use non-beverage bottles,PET,All,0,19.837411534166172
+711,EU27+3,2041.0,reusable non-beverage bottles,PET,All,0,7.296893372522636
+712,EU27+3,2041.0,single-use sheet (tray),PET,All,0,82.92318260576772
+713,EU27+3,2041.0,reusable sheet (tray),PET,All,0,20.38925683222592
+714,EU27+3,2041.0,flexible packaging,PET,All,0,111.75007791602664
+715,EU27+3,2041.0,other,PET,All,0,8.154735415493835
+716,EU27+3,2041.25,single-use beverage bottles,PET,All,0,164.0067859959598
+717,EU27+3,2041.25,reusable beverage bottles,PET,All,0,17.81217806851018
+718,EU27+3,2041.25,single-use non-beverage bottles,PET,All,0,19.837411534166172
+719,EU27+3,2041.25,reusable non-beverage bottles,PET,All,0,6.0078544539730245
+720,EU27+3,2041.25,single-use sheet (tray),PET,All,0,82.92318260576772
+721,EU27+3,2041.25,reusable sheet (tray),PET,All,0,18.922528174800114
+722,EU27+3,2041.25,flexible packaging,PET,All,0,111.75007791602664
+723,EU27+3,2041.25,other,PET,All,0,8.154735415493835
+724,EU27+3,2041.5,single-use beverage bottles,PET,All,0,164.0067859959598
+725,EU27+3,2041.5,reusable beverage bottles,PET,All,0,16.73178356625914
+726,EU27+3,2041.5,single-use non-beverage bottles,PET,All,0,19.837411534166172
+727,EU27+3,2041.5,reusable non-beverage bottles,PET,All,0,5.948006038525406
+728,EU27+3,2041.5,single-use sheet (tray),PET,All,0,82.92318260576772
+729,EU27+3,2041.5,reusable sheet (tray),PET,All,0,18.86104149114343
+730,EU27+3,2041.5,flexible packaging,PET,All,0,111.75007791602664
+731,EU27+3,2041.5,other,PET,All,0,8.154735415493835
+732,EU27+3,2041.75,single-use beverage bottles,PET,All,0,164.0067859959598
+733,EU27+3,2041.75,reusable beverage bottles,PET,All,0,16.542868081896955
+734,EU27+3,2041.75,single-use non-beverage bottles,PET,All,0,19.837411534166172
+735,EU27+3,2041.75,reusable non-beverage bottles,PET,All,0,5.8882392640789725
+736,EU27+3,2041.75,single-use sheet (tray),PET,All,0,82.92318260576772
+737,EU27+3,2041.75,reusable sheet (tray),PET,All,0,18.799554813837922
+738,EU27+3,2041.75,flexible packaging,PET,All,0,111.75007791602664
+739,EU27+3,2041.75,other,PET,All,0,8.154735415493835
+740,EU27+3,2042.0,single-use beverage bottles,PET,All,0,159.93489337812906
+741,EU27+3,2042.0,reusable beverage bottles,PET,All,0,31.975450938920943
+742,EU27+3,2042.0,single-use non-beverage bottles,PET,All,0,19.344896489179977
+743,EU27+3,2042.0,reusable non-beverage bottles,PET,All,0,7.699080236895199
+744,EU27+3,2042.0,single-use sheet (tray),PET,All,0,82.53861132411777
+745,EU27+3,2042.0,reusable sheet (tray),PET,All,0,22.103066851805412
+746,EU27+3,2042.0,flexible packaging,PET,All,0,112.86757869518692
+747,EU27+3,2042.0,other,PET,All,0,8.236282769648774
+748,EU27+3,2042.25,single-use beverage bottles,PET,All,0,159.93489337812906
+749,EU27+3,2042.25,reusable beverage bottles,PET,All,0,19.302766347798922
+750,EU27+3,2042.25,single-use non-beverage bottles,PET,All,0,19.344896489179977
+751,EU27+3,2042.25,reusable non-beverage bottles,PET,All,0,6.356182666581031
+752,EU27+3,2042.25,single-use sheet (tray),PET,All,0,82.53861132411777
+753,EU27+3,2042.25,reusable sheet (tray),PET,All,0,20.578197035480414
+754,EU27+3,2042.25,flexible packaging,PET,All,0,112.86757869518692
+755,EU27+3,2042.25,other,PET,All,0,8.236282769648774
+756,EU27+3,2042.5,single-use beverage bottles,PET,All,0,159.93489337812906
+757,EU27+3,2042.5,reusable beverage bottles,PET,All,0,18.2783429257193
+758,EU27+3,2042.5,single-use non-beverage bottles,PET,All,0,19.344896489179977
+759,EU27+3,2042.5,reusable non-beverage bottles,PET,All,0,6.290225344877694
+760,EU27+3,2042.5,single-use sheet (tray),PET,All,0,82.53861132411777
+761,EU27+3,2042.5,reusable sheet (tray),PET,All,0,20.5104498909069
+762,EU27+3,2042.5,flexible packaging,PET,All,0,112.86757869518692
+763,EU27+3,2042.5,other,PET,All,0,8.236282769648774
+764,EU27+3,2042.75,single-use beverage bottles,PET,All,0,159.93489337812906
+765,EU27+3,2042.75,reusable beverage bottles,PET,All,0,18.09452875680998
+766,EU27+3,2042.75,single-use non-beverage bottles,PET,All,0,19.344896489179977
+767,EU27+3,2042.75,reusable non-beverage bottles,PET,All,0,6.22438801448024
+768,EU27+3,2042.75,single-use sheet (tray),PET,All,0,82.53861132411777
+769,EU27+3,2042.75,reusable sheet (tray),PET,All,0,20.44270275582644
+770,EU27+3,2042.75,flexible packaging,PET,All,0,112.86757869518692
+771,EU27+3,2042.75,other,PET,All,0,8.236282769648774
+772,EU27+3,2043.0,single-use beverage bottles,PET,All,0,155.76516222934214
+773,EU27+3,2043.0,reusable beverage bottles,PET,All,0,33.81651477892666
+774,EU27+3,2043.0,single-use non-beverage bottles,PET,All,0,18.840547402140647
+775,EU27+3,2043.0,reusable non-beverage bottles,PET,All,0,8.064734255011324
+776,EU27+3,2043.0,single-use sheet (tray),PET,All,0,82.13805629857428
+777,EU27+3,2043.0,reusable sheet (tray),PET,All,0,23.803949401204612
+778,EU27+3,2043.0,flexible packaging,PET,All,0,113.9962544821388
+779,EU27+3,2043.0,other,PET,All,0,8.318645597345261
+780,EU27+3,2043.25,single-use beverage bottles,PET,All,0,155.76516222934214
+781,EU27+3,2043.25,reusable beverage bottles,PET,All,0,20.80046609419628
+782,EU27+3,2043.25,single-use non-beverage bottles,PET,All,0,18.840547402140647
+783,EU27+3,2043.25,reusable non-beverage bottles,PET,All,0,6.6666152487478865
+784,EU27+3,2043.25,single-use sheet (tray),PET,All,0,82.13805629857428
+785,EU27+3,2043.25,reusable sheet (tray),PET,All,0,22.2194706322421
+786,EU27+3,2043.25,flexible packaging,PET,All,0,113.9962544821388
+787,EU27+3,2043.25,other,PET,All,0,8.318645597345261
+788,EU27+3,2043.5,single-use beverage bottles,PET,All,0,155.76516222934214
+789,EU27+3,2043.5,reusable beverage bottles,PET,All,0,19.834375170611793
+790,EU27+3,2043.5,single-use non-beverage bottles,PET,All,0,18.840547402140647
+791,EU27+3,2043.5,reusable non-beverage bottles,PET,All,0,6.594423073983119
+792,EU27+3,2043.5,single-use sheet (tray),PET,All,0,82.13805629857428
+793,EU27+3,2043.5,reusable sheet (tray),PET,All,0,22.145343966791273
+794,EU27+3,2043.5,flexible packaging,PET,All,0,113.9962544821388
+795,EU27+3,2043.5,other,PET,All,0,8.318645597345261
+796,EU27+3,2043.75,single-use beverage bottles,PET,All,0,155.76516222934214
+797,EU27+3,2043.75,reusable beverage bottles,PET,All,0,19.655143130791714
+798,EU27+3,2043.75,single-use non-beverage bottles,PET,All,0,18.840547402140647
+799,EU27+3,2043.75,reusable non-beverage bottles,PET,All,0,6.52240465035098
+800,EU27+3,2043.75,single-use sheet (tray),PET,All,0,82.13805629857428
+801,EU27+3,2043.75,reusable sheet (tray),PET,All,0,22.0712173153246
+802,EU27+3,2043.75,flexible packaging,PET,All,0,113.9962544821388
+803,EU27+3,2043.75,other,PET,All,0,8.318645597345261
+804,EU27+3,2044.0,single-use beverage bottles,PET,All,0,151.49604296824165
+805,EU27+3,2044.0,reusable beverage bottles,PET,All,0,35.670922199570924
+806,EU27+3,2044.0,single-use non-beverage bottles,PET,All,0,18.324176843711605
+807,EU27+3,2044.0,reusable non-beverage bottles,PET,All,0,8.392670049870784
+808,EU27+3,2044.0,single-use sheet (tray),PET,All,0,81.72123631138747
+809,EU27+3,2044.0,reusable sheet (tray),PET,All,0,25.491022911038606
+810,EU27+3,2044.0,flexible packaging,PET,All,0,115.13621702696018
+811,EU27+3,2044.0,other,PET,All,0,8.401832053318715
+812,EU27+3,2044.25,single-use beverage bottles,PET,All,0,151.49604296824165
+813,EU27+3,2044.25,reusable beverage bottles,PET,All,0,22.303817222322465
+814,EU27+3,2044.25,single-use non-beverage bottles,PET,All,0,18.324176843711605
+815,EU27+3,2044.25,reusable non-beverage bottles,PET,All,0,6.937946432602921
+816,EU27+3,2044.25,single-use sheet (tray),PET,All,0,81.72123631138747
+817,EU27+3,2044.25,reusable sheet (tray),PET,All,0,23.845439338876723
+818,EU27+3,2044.25,flexible packaging,PET,All,0,115.13621702696018
+819,EU27+3,2044.25,other,PET,All,0,8.401832053318715
+820,EU27+3,2044.5,single-use beverage bottles,PET,All,0,151.49604296824165
+821,EU27+3,2044.5,reusable beverage bottles,PET,All,0,21.39848031389667
+822,EU27+3,2044.5,single-use non-beverage bottles,PET,All,0,18.324176843711605
+823,EU27+3,2044.5,reusable non-beverage bottles,PET,All,0,6.85938684585237
+824,EU27+3,2044.5,single-use sheet (tray),PET,All,0,81.72123631138747
+825,EU27+3,2044.5,reusable sheet (tray),PET,All,0,23.764812337539933
+826,EU27+3,2044.5,flexible packaging,PET,All,0,115.13621702696018
+827,EU27+3,2044.5,other,PET,All,0,8.401832053318715
+828,EU27+3,2044.75,single-use beverage bottles,PET,All,0,151.49604296824165
+829,EU27+3,2044.75,reusable beverage bottles,PET,All,0,21.22275586577976
+830,EU27+3,2044.75,single-use non-beverage bottles,PET,All,0,18.324176843711605
+831,EU27+3,2044.75,reusable non-beverage bottles,PET,All,0,6.7810749809844495
+832,EU27+3,2044.75,single-use sheet (tray),PET,All,0,81.72123631138747
+833,EU27+3,2044.75,reusable sheet (tray),PET,All,0,23.68418535651686
+834,EU27+3,2044.75,flexible packaging,PET,All,0,115.13621702696018
+835,EU27+3,2044.75,other,PET,All,0,8.401832053318715
+836,EU27+3,2045.0,single-use beverage bottles,PET,All,0,147.12596480569624
+837,EU27+3,2045.0,reusable beverage bottles,PET,All,0,37.53734778966978
+838,EU27+3,2045.0,single-use non-beverage bottles,PET,All,0,17.795594819373772
+839,EU27+3,2045.0,reusable non-beverage bottles,PET,All,0,8.681678331711648
+840,EU27+3,2045.0,single-use sheet (tray),PET,All,0,81.2878661188271
+841,EU27+3,2045.0,reusable sheet (tray),PET,All,0,27.163384959477117
+842,EU27+3,2045.0,flexible packaging,PET,All,0,116.2875791972298
+843,EU27+3,2045.0,other,PET,All,0,8.485850373851902
+844,EU27+3,2045.25,single-use beverage bottles,PET,All,0,147.12596480569624
+845,EU27+3,2045.25,reusable beverage bottles,PET,All,0,23.811560279415687
+846,EU27+3,2045.25,single-use non-beverage bottles,PET,All,0,17.795594819373772
+847,EU27+3,2045.25,reusable non-beverage bottles,PET,All,0,7.168945905178557
+848,EU27+3,2045.25,single-use sheet (tray),PET,All,0,81.2878661188271
+849,EU27+3,2045.25,reusable sheet (tray),PET,All,0,25.455172217554026
+850,EU27+3,2045.25,flexible packaging,PET,All,0,116.2875791972298
+851,EU27+3,2045.25,other,PET,All,0,8.485850373851902
+852,EU27+3,2045.5,single-use beverage bottles,PET,All,0,147.12596480569624
+853,EU27+3,2045.5,reusable beverage bottles,PET,All,0,23.34361246397995
+854,EU27+3,2045.5,single-use non-beverage bottles,PET,All,0,17.795594819373772
+855,EU27+3,2045.5,reusable non-beverage bottles,PET,All,0,7.084079669411462
+856,EU27+3,2045.5,single-use sheet (tray),PET,All,0,81.2878661188271
+857,EU27+3,2045.5,reusable sheet (tray),PET,All,0,25.367922295480582
+858,EU27+3,2045.5,flexible packaging,PET,All,0,116.2875791972298
+859,EU27+3,2045.5,other,PET,All,0,8.485850373851902
+860,EU27+3,2045.75,single-use beverage bottles,PET,All,0,147.12596480569624
+861,EU27+3,2045.75,reusable beverage bottles,PET,All,0,23.207677321256256
+862,EU27+3,2045.75,single-use non-beverage bottles,PET,All,0,17.795594819373772
+863,EU27+3,2045.75,reusable non-beverage bottles,PET,All,0,6.999454691796366
+864,EU27+3,2045.75,single-use sheet (tray),PET,All,0,81.2878661188271
+865,EU27+3,2045.75,reusable sheet (tray),PET,All,0,25.280672400545782
+866,EU27+3,2045.75,flexible packaging,PET,All,0,116.2875791972298
+867,EU27+3,2045.75,other,PET,All,0,8.485850373851902
+868,EU27+3,2046.0,single-use beverage bottles,PET,All,0,142.6533354756031
+869,EU27+3,2046.0,reusable beverage bottles,PET,All,0,39.86301144032305
+870,EU27+3,2046.0,single-use non-beverage bottles,PET,All,0,17.254608736864807
+871,EU27+3,2046.0,reusable non-beverage bottles,PET,All,0,8.930929874473197
+872,EU27+3,2046.0,single-use sheet (tray),PET,All,0,80.83765639878438
+873,EU27+3,2046.0,reusable sheet (tray),PET,All,0,28.8201119213352
+874,EU27+3,2046.0,flexible packaging,PET,All,0,117.45045498920209
+875,EU27+3,2046.0,other,PET,All,0,8.570708877590421
+876,EU27+3,2046.25,single-use beverage bottles,PET,All,0,142.6533354756031
+877,EU27+3,2046.25,reusable beverage bottles,PET,All,0,26.519157585690976
+878,EU27+3,2046.25,single-use non-beverage bottles,PET,All,0,17.254608736864807
+879,EU27+3,2046.25,reusable non-beverage bottles,PET,All,0,7.359404243411234
+880,EU27+3,2046.25,single-use sheet (tray),PET,All,0,80.83765639878438
+881,EU27+3,2046.25,reusable sheet (tray),PET,All,0,27.047716725342333
+882,EU27+3,2046.25,flexible packaging,PET,All,0,117.45045498920209
+883,EU27+3,2046.25,other,PET,All,0,8.570708877590421
+884,EU27+3,2046.5,single-use beverage bottles,PET,All,0,142.6533354756031
+885,EU27+3,2046.5,reusable beverage bottles,PET,All,0,25.169278670920477
+886,EU27+3,2046.5,single-use non-beverage bottles,PET,All,0,17.254608736864807
+887,EU27+3,2046.5,reusable non-beverage bottles,PET,All,0,7.2675170341530375
+888,EU27+3,2046.5,single-use sheet (tray),PET,All,0,80.83765639878438
+889,EU27+3,2046.5,reusable sheet (tray),PET,All,0,26.953719461778757
+890,EU27+3,2046.5,flexible packaging,PET,All,0,117.45045498920209
+891,EU27+3,2046.5,other,PET,All,0,8.570708877590421
+892,EU27+3,2046.75,single-use beverage bottles,PET,All,0,142.6533354756031
+893,EU27+3,2046.75,reusable beverage bottles,PET,All,0,25.051062996620914
+894,EU27+3,2046.75,single-use non-beverage bottles,PET,All,0,17.254608736864807
+895,EU27+3,2046.75,reusable non-beverage bottles,PET,All,0,7.176464484202533
+896,EU27+3,2046.75,single-use sheet (tray),PET,All,0,80.83765639878438
+897,EU27+3,2046.75,reusable sheet (tray),PET,All,0,26.85972226467483
+898,EU27+3,2046.75,flexible packaging,PET,All,0,117.45045498920209
+899,EU27+3,2046.75,other,PET,All,0,8.570708877590421
+900,EU27+3,2047.0,single-use beverage bottles,PET,All,0,138.07654096242746
+901,EU27+3,2047.0,reusable beverage bottles,PET,All,0,42.01022776675782
+902,EU27+3,2047.0,single-use non-beverage bottles,PET,All,0,16.701023373223727
+903,EU27+3,2047.0,reusable non-beverage bottles,PET,All,0,9.139237408610736
+904,EU27+3,2047.0,single-use sheet (tray),PET,All,0,80.3703136977289
+905,EU27+3,2047.0,reusable sheet (tray),PET,All,0,30.460258589084578
+906,EU27+3,2047.0,flexible packaging,PET,All,0,118.6249595390941
+907,EU27+3,2047.0,other,PET,All,0,8.656415966366325
+908,EU27+3,2047.25,single-use beverage bottles,PET,All,0,138.07654096242746
+909,EU27+3,2047.25,reusable beverage bottles,PET,All,0,28.416993242341334
+910,EU27+3,2047.25,single-use non-beverage bottles,PET,All,0,16.701023373223727
+911,EU27+3,2047.25,reusable non-beverage bottles,PET,All,0,7.507317509852676
+912,EU27+3,2047.25,single-use sheet (tray),PET,All,0,80.3703136977289
+913,EU27+3,2047.25,reusable sheet (tray),PET,All,0,28.622098113783125
+914,EU27+3,2047.25,flexible packaging,PET,All,0,118.6249595390941
+915,EU27+3,2047.25,other,PET,All,0,8.656415966366325
+916,EU27+3,2047.5,single-use beverage bottles,PET,All,0,138.07654096242746
+917,EU27+3,2047.5,reusable beverage bottles,PET,All,0,27.030360904798272
+918,EU27+3,2047.5,single-use non-beverage bottles,PET,All,0,16.701023373223727
+919,EU27+3,2047.5,reusable non-beverage bottles,PET,All,0,7.40850578803779
+920,EU27+3,2047.5,single-use sheet (tray),PET,All,0,80.3703136977289
+921,EU27+3,2047.5,reusable sheet (tray),PET,All,0,28.521227307919258
+922,EU27+3,2047.5,flexible packaging,PET,All,0,118.6249595390941
+923,EU27+3,2047.5,other,PET,All,0,8.656415966366325
+924,EU27+3,2047.75,single-use beverage bottles,PET,All,0,138.07654096242746
+925,EU27+3,2047.75,reusable beverage bottles,PET,All,0,26.918269529511633
+926,EU27+3,2047.75,single-use non-beverage bottles,PET,All,0,16.701023373223727
+927,EU27+3,2047.75,reusable non-beverage bottles,PET,All,0,7.3109658705459175
+928,EU27+3,2047.75,single-use sheet (tray),PET,All,0,80.3703136977289
+929,EU27+3,2047.75,reusable sheet (tray),PET,All,0,28.42035659971596
+930,EU27+3,2047.75,flexible packaging,PET,All,0,118.6249595390941
+931,EU27+3,2047.75,other,PET,All,0,8.656415966366325
+932,EU27+3,2048.0,single-use beverage bottles,PET,All,0,133.39394522544083
+933,EU27+3,2048.0,reusable beverage bottles,PET,All,0,44.194368906505474
+934,EU27+3,2048.0,single-use non-beverage bottles,PET,All,0,16.134640841436145
+935,EU27+3,2048.0,reusable non-beverage bottles,PET,All,0,9.305533890041048
+936,EU27+3,2048.0,single-use sheet (tray),PET,All,0,79.88554037701243
+937,EU27+3,2048.0,reusable sheet (tray),PET,All,0,32.08285773289293
+938,EU27+3,2048.0,flexible packaging,PET,All,0,119.81120913448504
+939,EU27+3,2048.0,other,PET,All,0,8.742980126029988
+940,EU27+3,2048.25,single-use beverage bottles,PET,All,0,133.39394522544083
+941,EU27+3,2048.25,reusable beverage bottles,PET,All,0,30.348061800395726
+942,EU27+3,2048.25,single-use non-beverage bottles,PET,All,0,16.134640841436145
+943,EU27+3,2048.25,reusable non-beverage bottles,PET,All,0,7.612042090863653
+944,EU27+3,2048.25,single-use sheet (tray),PET,All,0,79.88554037701243
+945,EU27+3,2048.25,reusable sheet (tray),PET,All,0,30.177319264911706
+946,EU27+3,2048.25,flexible packaging,PET,All,0,119.81120913448504
+947,EU27+3,2048.25,other,PET,All,0,8.742980126029988
+948,EU27+3,2048.5,single-use beverage bottles,PET,All,0,133.39394522544083
+949,EU27+3,2048.5,reusable beverage bottles,PET,All,0,28.92385891082597
+950,EU27+3,2048.5,single-use non-beverage bottles,PET,All,0,16.134640841436145
+951,EU27+3,2048.5,reusable non-beverage bottles,PET,All,0,7.506054877013575
+952,EU27+3,2048.5,single-use sheet (tray),PET,All,0,79.88554037701243
+953,EU27+3,2048.5,reusable sheet (tray),PET,All,0,30.069446849743322
+954,EU27+3,2048.5,flexible packaging,PET,All,0,119.81120913448504
+955,EU27+3,2048.5,other,PET,All,0,8.742980126029988
+956,EU27+3,2048.75,single-use beverage bottles,PET,All,0,133.39394522544083
+957,EU27+3,2048.75,reusable beverage bottles,PET,All,0,28.81815021855826
+958,EU27+3,2048.75,single-use non-beverage bottles,PET,All,0,16.134640841436145
+959,EU27+3,2048.75,reusable non-beverage bottles,PET,All,0,7.4019908023099426
+960,EU27+3,2048.75,single-use sheet (tray),PET,All,0,79.88554037701243
+961,EU27+3,2048.75,reusable sheet (tray),PET,All,0,29.96157457714009
+962,EU27+3,2048.75,flexible packaging,PET,All,0,119.81120913448504
+963,EU27+3,2048.75,other,PET,All,0,8.742980126029988
+964,EU27+3,2049.0,single-use beverage bottles,PET,All,0,128.60388991961815
+965,EU27+3,2049.0,reusable beverage bottles,PET,All,0,46.41575693851246
+966,EU27+3,2049.0,single-use non-beverage bottles,PET,All,0,15.555260556675485
+967,EU27+3,2049.0,reusable non-beverage bottles,PET,All,0,9.4288830823971
+968,EU27+3,2049.0,single-use sheet (tray),PET,All,0,79.38303455851188
+969,EU27+3,2049.0,reusable sheet (tray),PET,All,0,33.68691978008455
+970,EU27+3,2049.0,flexible packaging,PET,All,0,121.00932122582992
+971,EU27+3,2049.0,other,PET,All,0,8.830409927290289
+972,EU27+3,2049.25,single-use beverage bottles,PET,All,0,128.60388991961815
+973,EU27+3,2049.25,reusable beverage bottles,PET,All,0,32.31269099665772
+974,EU27+3,2049.25,single-use non-beverage bottles,PET,All,0,15.555260556675485
+975,EU27+3,2049.25,reusable non-beverage bottles,PET,All,0,7.672761440490373
+976,EU27+3,2049.25,single-use sheet (tray),PET,All,0,79.38303455851188
+977,EU27+3,2049.25,reusable sheet (tray),PET,All,0,31.712360196952478
+978,EU27+3,2049.25,flexible packaging,PET,All,0,121.00932122582992
+979,EU27+3,2049.25,other,PET,All,0,8.830409927290289
+980,EU27+3,2049.5,single-use beverage bottles,PET,All,0,128.60388991961815
+981,EU27+3,2049.5,reusable beverage bottles,PET,All,0,30.850075882432435
+982,EU27+3,2049.5,single-use non-beverage bottles,PET,All,0,15.555260556675485
+983,EU27+3,2049.5,reusable non-beverage bottles,PET,All,0,7.559280594682772
+984,EU27+3,2049.5,single-use sheet (tray),PET,All,0,79.38303455851188
+985,EU27+3,2049.5,reusable sheet (tray),PET,All,0,31.597356233125264
+986,EU27+3,2049.5,flexible packaging,PET,All,0,121.00932122582992
+987,EU27+3,2049.5,other,PET,All,0,8.830409927290289
+988,EU27+3,2049.75,single-use beverage bottles,PET,All,0,128.60388991961815
+989,EU27+3,2049.75,reusable beverage bottles,PET,All,0,30.75101483308896
+990,EU27+3,2049.75,single-use non-beverage bottles,PET,All,0,15.555260556675485
+991,EU27+3,2049.75,reusable non-beverage bottles,PET,All,0,7.448686537686623
+992,EU27+3,2049.75,single-use sheet (tray),PET,All,0,79.38303455851188
+993,EU27+3,2049.75,reusable sheet (tray),PET,All,0,31.482352476102697
+994,EU27+3,2049.75,flexible packaging,PET,All,0,121.00932122582992
+995,EU27+3,2049.75,other,PET,All,0,8.830409927290289
+996,EU27+3,2050.0,single-use beverage bottles,PET,All,0,123.70469411315649
+997,EU27+3,2050.0,reusable beverage bottles,PET,All,0,48.67470181941576
+998,EU27+3,2050.0,single-use non-beverage bottles,PET,All,0,14.962679202135465
+999,EU27+3,2050.0,reusable non-beverage bottles,PET,All,0,9.508472496169084
+1000,EU27+3,2050.0,single-use sheet (tray),PET,All,0,78.86249006960358
+1001,EU27+3,2050.0,reusable sheet (tray),PET,All,0,35.27143240602627
+1002,EU27+3,2050.0,flexible packaging,PET,All,0,122.2194144380882
+1003,EU27+3,2050.0,other,PET,All,0,8.918714026563192
+1004,EU27+3,2050.25,single-use beverage bottles,PET,All,0,123.70469411315649
+1005,EU27+3,2050.25,reusable beverage bottles,PET,All,0,34.31120485579606
+1006,EU27+3,2050.25,single-use non-beverage bottles,PET,All,0,14.962679202135465
+1007,EU27+3,2050.25,reusable non-beverage bottles,PET,All,0,7.688840141346894
+1008,EU27+3,2050.25,single-use sheet (tray),PET,All,0,78.86249006960358
+1009,EU27+3,2050.25,reusable sheet (tray),PET,All,0,33.22617768749292
+1010,EU27+3,2050.25,flexible packaging,PET,All,0,122.2194144380882
+1011,EU27+3,2050.25,other,PET,All,0,8.918714026563192
+1012,EU27+3,2050.5,single-use beverage bottles,PET,All,0,123.70469411315649
+1013,EU27+3,2050.5,reusable beverage bottles,PET,All,0,32.80934306139011
+1014,EU27+3,2050.5,single-use non-beverage bottles,PET,All,0,14.962679202135465
+1015,EU27+3,2050.5,reusable non-beverage bottles,PET,All,0,7.567448143999634
+1016,EU27+3,2050.5,single-use sheet (tray),PET,All,0,78.86249006960358
+1017,EU27+3,2050.5,reusable sheet (tray),PET,All,0,33.10391033918045
+1018,EU27+3,2050.5,flexible packaging,PET,All,0,122.2194144380882
+1019,EU27+3,2050.5,other,PET,All,0,8.918714026563192
+1020,EU27+3,2050.75,single-use beverage bottles,PET,All,0,123.70469411315649
+1021,EU27+3,2050.75,reusable beverage bottles,PET,All,0,32.75814068445891
+1022,EU27+3,2050.75,single-use non-beverage bottles,PET,All,0,14.962679202135465
+1023,EU27+3,2050.75,reusable non-beverage bottles,PET,All,0,7.450359718530699
+1024,EU27+3,2050.75,single-use sheet (tray),PET,All,0,78.86249006960358
+1025,EU27+3,2050.75,reusable sheet (tray),PET,All,0,32.98164328904303
+1026,EU27+3,2050.75,flexible packaging,PET,All,0,122.2194144380882
+1027,EU27+3,2050.75,other,PET,All,0,8.918714026563192

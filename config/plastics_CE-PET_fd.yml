@@ -1,0 +1,59 @@
+# general config
+model_class: 'plastics'
+scenario: 'CE-PET_fd'
+
+# logging
+logging:
+  level: 'INFO' # options: DEBUG, INFO, WARNING, ERROR, CRITICAL
+
+# model customization
+customization:
+  model_driven: 'final_demand' # options: production, final_demand, final_demand_with_start_value_and_growth_rate
+  reuse: True # Enable reuse-specific features (cycles of reused plastics)
+  lifetime_model_name: 'FixedLifetime' #'NormalLifetime'
+
+  end_use_sectors: 'PET-packaging' # options: MainSectors, ...
+  waste_not_for_recycling: [] #['Landfill', 'Incineration']
+
+# visualization
+visualization:
+  inflow:
+    do_visualize: False
+  production:
+    do_visualize: False
+  outflow:
+    do_visualize: False
+  sankey:
+    do_visualize: False
+  dashboard:
+    do_visualize: False
+
+# data export
+do_export:
+  params: False # export all (interpolated) input parameters to csv
+  pickle: False # export the MFA object to a pickle file
+  csv: False # export all flows and stocks to csv
+selected_export:
+  selected_flows: True # export to csv the flows listed in csv_selected_flows
+  slice_stocks: False # export to csv the stocks listed in csv_selected_stocks, sliced by time dimension in csv_slice_stocks
+  # The following lists define which flows and stocks to export to csv if the previous items are True.
+  # The names must match the flow and stock names defined in the model.
+  csv_selected_flows:
+    - 'Polymer market => PRIMARY Plastics manufacturing'
+    - 'Polymer market => SECONDARY Plastics manufacturing'
+    - 'Polymer market => RECYCLATE sysenv'
+    - 'Plastics manufacturing => Plastics market'
+    - 'Plastics market => End use stock'
+    - 'Reuse => End use stock'
+    - 'Waste collection => Reuse'
+    - 'End use stock => Waste collection'
+    - 'Waste collection => Waste sorting'
+    - 'Sorted waste market => Recycling'
+    - 'Recycling => Recyclate market'
+    - 'Recyclate market => Polymer market'
+    - 'Recycling => NON-MECH sysenv'
+    - 'Recycling => LOSSES sysenv'
+  csv_selected_stocks:
+    - 'End use stock' 
+  csv_slice_stocks:
+    - 'time': [2020, 2030, 2040, 2050]

@@ -1,0 +1,49 @@
+"region","time","sector","polymer","value"
+"EU27+3",2018,"single-use beverage bottles","PET",0
+"EU27+3",2018,"reusable beverage bottles","PET",0.53
+"EU27+3",2018,"single-use non-beverage bottles","PET",0
+"EU27+3",2018,"reusable non-beverage bottles","PET",0.53
+"EU27+3",2018,"single-use sheet (tray)","PET",0
+"EU27+3",2018,"reusable sheet (tray)","PET",0.05
+"EU27+3",2018,"flexible packaging","PET",0
+"EU27+3",2018,"other","PET",0
+"EU27+3",2022,"single-use beverage bottles","PET",0
+"EU27+3",2022,"reusable beverage bottles","PET",0.75
+"EU27+3",2022,"single-use non-beverage bottles","PET",0
+"EU27+3",2022,"reusable non-beverage bottles","PET",0.42
+"EU27+3",2022,"single-use sheet (tray)","PET",0
+"EU27+3",2022,"reusable sheet (tray)","PET",0.05
+"EU27+3",2022,"flexible packaging","PET",0
+"EU27+3",2022,"other","PET",0
+"EU27+3",2025,"single-use beverage bottles","PET",0
+"EU27+3",2025,"reusable beverage bottles","PET",0.77
+"EU27+3",2025,"single-use non-beverage bottles","PET",0
+"EU27+3",2025,"reusable non-beverage bottles","PET",0.46
+"EU27+3",2025,"single-use sheet (tray)","PET",0
+"EU27+3",2025,"reusable sheet (tray)","PET",0.3
+"EU27+3",2025,"flexible packaging","PET",0
+"EU27+3",2025,"other","PET",0
+"EU27+3",2030,"single-use beverage bottles","PET",0
+"EU27+3",2030,"reusable beverage bottles","PET",0.9
+"EU27+3",2030,"single-use non-beverage bottles","PET",0
+"EU27+3",2030,"reusable non-beverage bottles","PET",0.53
+"EU27+3",2030,"single-use sheet (tray)","PET",0
+"EU27+3",2030,"reusable sheet (tray)","PET",0.34
+"EU27+3",2030,"flexible packaging","PET",0
+"EU27+3",2030,"other","PET",0
+"EU27+3",2040,"single-use beverage bottles","PET",0
+"EU27+3",2040,"reusable beverage bottles","PET",0.9
+"EU27+3",2040,"single-use non-beverage bottles","PET",0
+"EU27+3",2040,"reusable non-beverage bottles","PET",0.66
+"EU27+3",2040,"single-use sheet (tray)","PET",0
+"EU27+3",2040,"reusable sheet (tray)","PET",0.42
+"EU27+3",2040,"flexible packaging","PET",0
+"EU27+3",2040,"other","PET",0
+"EU27+3",2050.75,"single-use beverage bottles","PET",0
+"EU27+3",2050.75,"reusable beverage bottles","PET",0.9
+"EU27+3",2050.75,"single-use non-beverage bottles","PET",0
+"EU27+3",2050.75,"reusable non-beverage bottles","PET",0.8
+"EU27+3",2050.75,"single-use sheet (tray)","PET",0
+"EU27+3",2050.75,"reusable sheet (tray)","PET",0.5
+"EU27+3",2050.75,"flexible packaging","PET",0
+"EU27+3",2050.75,"other","PET",0

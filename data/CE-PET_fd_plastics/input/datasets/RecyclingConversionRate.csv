@@ -1,0 +1,17 @@
+"region","time","sector","polymer","waste_category","secondary_raw_material","value"
+"EU27+3",2018,"single-use beverage bottles","PET","Mechanical recycling","Granulate",0.73
+"EU27+3",2018,"reusable beverage bottles","PET","Mechanical recycling","Granulate",0.73
+"EU27+3",2018,"single-use non-beverage bottles","PET","Mechanical recycling","Granulate",0.6
+"EU27+3",2018,"reusable non-beverage bottles","PET","Mechanical recycling","Granulate",0.6
+"EU27+3",2018,"single-use sheet (tray)","PET","Mechanical recycling","Granulate",0.55
+"EU27+3",2018,"reusable sheet (tray)","PET","Mechanical recycling","Granulate",0.55
+"EU27+3",2018,"flexible packaging","PET","Mechanical recycling","Granulate",0
+"EU27+3",2018,"other","PET","Mechanical recycling","Granulate",1
+"EU27+3",2050.75,"single-use beverage bottles","PET","Mechanical recycling","Granulate",0.73
+"EU27+3",2050.75,"reusable beverage bottles","PET","Mechanical recycling","Granulate",0.73
+"EU27+3",2050.75,"single-use non-beverage bottles","PET","Mechanical recycling","Granulate",0.6
+"EU27+3",2050.75,"reusable non-beverage bottles","PET","Mechanical recycling","Granulate",0.6
+"EU27+3",2050.75,"single-use sheet (tray)","PET","Mechanical recycling","Granulate",0.55
+"EU27+3",2050.75,"reusable sheet (tray)","PET","Mechanical recycling","Granulate",0.55
+"EU27+3",2050.75,"flexible packaging","PET","Mechanical recycling","Granulate",0
+"EU27+3",2050.75,"other","PET","Mechanical recycling","Granulate",1
