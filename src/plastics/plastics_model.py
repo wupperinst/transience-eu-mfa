@@ -85,35 +85,44 @@ class PlasticsModel:
         self.mfa.compute()
         logging.info("Model computations completed.")
 
-        #self.data_writer.export_mfa(mfa=self.mfa)
-        
-        logging.info("Exporting stock slices to csv.")
-        # Export sliced stocks with age-cohort dimension
-        self.data_writer.export_sliced_stocks_by_age_cohort_to_csv(
-            mfa=self.mfa, 
-            stock_names=self.cfg.selected_export["csv_selected_stocks"], 
-            slice_dicts=self.cfg.selected_export["csv_slice_stocks"])
-        # Export stock slices aggregating age-cohorts
-        self.data_writer.export_sliced_stocks_to_csv(
-            mfa=self.mfa, 
-            stock_names=self.cfg.selected_export["csv_selected_stocks"], 
-            slice_dicts=self.cfg.selected_export["csv_slice_stocks"])
+        if self.cfg.do_export["params"]:
+            logging.info("Exporting parameters to csv.")
+            os.makedirs(os.path.join(self.data_writer.output_path, "parameters"), exist_ok=True)
+            for prm_name, prm_fd in self.mfa.parameters.items():
+                prm_df = prm_fd.to_df(index=False, sparse=True)
+                prm_df.to_csv(os.path.join(self.data_writer.output_path, "parameters", f"{prm_name}.csv"), index=False)
+
+        if self.cfg.do_export["csv"]:
+            logging.info("Exporting the MFA (all flows and stocks) to csv.")
+            self.data_writer.export_mfa(mfa=self.mfa)
+
+        if self.cfg.selected_export["slice_stocks"]:
+            logging.info("Exporting stock slices to csv.")
+            # Export sliced stocks with age-cohort dimension
+            self.data_writer.export_sliced_stocks_by_age_cohort_to_csv(
+                mfa=self.mfa, 
+                stock_names=self.cfg.selected_export["csv_selected_stocks"], 
+                slice_dicts=self.cfg.selected_export["csv_slice_stocks"])
+            # Export stock slices aggregating age-cohorts
+            self.data_writer.export_sliced_stocks_to_csv(
+                mfa=self.mfa, 
+                stock_names=self.cfg.selected_export["csv_selected_stocks"], 
+                slice_dicts=self.cfg.selected_export["csv_slice_stocks"])
 
         logging.info("Exporting flows as dataframes.")
-        flows_as_dataframes = self.mfa.get_flows_as_dataframes(flow_names=self.cfg.selected_export["csv_selected_flows"])
+        if self.cfg.selected_export["selected_flows"]:
+            flows_as_dataframes = self.mfa.get_flows_as_dataframes(flow_names=self.cfg.selected_export["csv_selected_flows"])
+        else:
+            flows_as_dataframes = self.mfa.get_flows_as_dataframes()
         
-        # logging.info("Aggregating flows along age-cohort.")
-        # flows_as_dataframes = self.mfa.aggregate_flows_by_age_cohort(flows_as_dataframes, flow_names=self.cfg.selected_export["csv_selected_flows"])
-        
-        logging.info("Exporting flows to csv.")
-        #self.data_writer.export_selected_mfa_flows_to_csv(mfa=self.mfa, flow_names=self.cfg.selected_export["csv_selected_flows"])
-        self.data_writer.export_selected_flows_to_csv(flow_dfs=flows_as_dataframes, flow_names=self.cfg.selected_export["csv_selected_flows"])
+        if self.cfg.selected_export["selected_flows"]:
 
-        logging.info("Exporting parameters to csv.")
-        os.makedirs(os.path.join(self.data_writer.output_path, "parameters"), exist_ok=True)
-        for prm_name, prm_fd in self.mfa.parameters.items():
-            prm_df = prm_fd.to_df(index=False, sparse=True)
-            prm_df.to_csv(os.path.join(self.data_writer.output_path, "parameters", f"{prm_name}.csv"), index=False)
+            logging.info("Aggregating flows along age-cohort.")
+            flows_as_dataframes = self.mfa.aggregate_flows_by_age_cohort(flows_as_dataframes, flow_names=self.cfg.selected_export["csv_selected_flows"])
+        
+            logging.info("Exporting flows to csv.")
+            #self.data_writer.export_selected_mfa_flows_to_csv(mfa=self.mfa, flow_names=self.cfg.selected_export["csv_selected_flows"])
+            self.data_writer.export_selected_flows_to_csv(flow_dfs=flows_as_dataframes, flow_names=self.cfg.selected_export["csv_selected_flows"])
 
         logging.info("Visualizing results.")
         self.data_writer.visualize_results(model=self, flows_dfs=flows_as_dataframes, scenario=self.cfg.scenario)
