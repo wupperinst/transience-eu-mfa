@@ -3,10 +3,10 @@ import logging
 
 from src.common.common_cfg import GeneralCfg
 from .plastics_mfa_system import PlasticsMFASystem
-from .plastics_mfa_system_reuse import ReusePlasticsMFASystem
+from .plastics_mfa_system_circular import CircularPlasticsMFASystem
 from .plastics_export import PlasticsDataExporter
 from .plastics_definition import get_definition
-from .plastics_definition_reuse import get_definition_reuse
+from .plastics_definition_circular import get_definition_circular
 
 
 class PlasticsModel:
@@ -17,9 +17,9 @@ class PlasticsModel:
             logging.info(f"Plastics EU-MFA | scenario: {self.cfg.scenario} | variant: {self.cfg.variant}")
         except KeyError:
             logging.info(f"Plastics EU-MFA | scenario: {self.cfg.scenario}")
-        if self.cfg.customization.reuse:
-            logging.info("Initializing model with reuse customization.")
-            self.definition = get_definition_reuse(cfg)
+        if self.cfg.customization.circular:
+            logging.info("Initializing model with circular customization.")
+            self.definition = get_definition_circular(cfg)
         else:
             self.definition = get_definition(cfg)
         self.data_writer = PlasticsDataExporter(
@@ -44,7 +44,7 @@ class PlasticsModel:
             "secondary_raw_material": "secondary_raw_materials",          
         }
 
-        if self.cfg.customization.reuse:
+        if self.cfg.customization.circular:
             dimension_map["reuse_cycle"] = "reuse_cycles"
             dimension_map["mechanical_recycling_cycle"] = "mechanical_recycling_cycles"
 
@@ -71,7 +71,7 @@ class PlasticsModel:
             if os.path.exists(variant_parameter_name):
                 parameter_files[parameter.name] = variant_parameter_name
 
-        if not self.cfg.customization.reuse:
+        if not self.cfg.customization.circular:
             logging.info(f"model - Initializing PlasticsMFASystem.from_csv")
             self.mfa = PlasticsMFASystem.from_csv(
                 definition=self.definition,
@@ -82,8 +82,8 @@ class PlasticsModel:
             )
             self.mfa.cfg = self.cfg
         else:
-            logging.info(f"model - Initializing ReusePlasticsMFASystem.from_csv")
-            self.mfa = ReusePlasticsMFASystem.from_csv(
+            logging.info(f"model - Initializing CircularPlasticsMFASystem.from_csv")
+            self.mfa = CircularPlasticsMFASystem.from_csv(
                 definition=self.definition,
                 dimension_files=dimension_files,
                 parameter_files=parameter_files,

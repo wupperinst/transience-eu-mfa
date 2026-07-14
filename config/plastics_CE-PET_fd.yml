@@ -10,7 +10,7 @@ logging:
 # model customization
 customization:
   model_driven: 'final_demand' # options: production, final_demand, final_demand_with_start_value_and_growth_rate
-  reuse: True # Enable reuse-specific features (cycles of reused plastics)
+  circular: True # Enable recycling- and reuse-specific features (cycles of recycled and reused plastics)
   lifetime_model_name: 'FixedLifetime' #'NormalLifetime'
 
   end_use_sectors: 'PET-packaging' # options: MainSectors, ...

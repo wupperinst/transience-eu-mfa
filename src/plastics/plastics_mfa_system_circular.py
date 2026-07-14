@@ -3,7 +3,7 @@ import numpy as np
 import logging
 
 
-class ReusePlasticsMFASystem(fd.MFASystem):
+class CircularPlasticsMFASystem(fd.MFASystem):
 
     def compute(self):
         """
@@ -14,9 +14,9 @@ class ReusePlasticsMFASystem(fd.MFASystem):
         if self.cfg.customization.model_driven == 'production':
             self.compute_inflows_production_driven()
         elif self.cfg.customization.model_driven == 'final_demand':
-            self.compute_reuse_cycles()
+            self.compute_circular_mfa()
         elif self.cfg.customization.model_driven == 'final_demand_with_start_value_and_growth_rate':
-            self.compute_reuse_cycles(with_start_value_and_growth_rate=True)
+            self.compute_circular_mfa(with_start_value_and_growth_rate=True)
         else:
             raise ValueError(f"Config item model_driven has invalid value: {self.cfg.model_driven}. Choose 'production', 'final_demand', or 'final_demand_with_start_value_and_growth_rate'.")
         # self.compute_stock()
@@ -186,12 +186,12 @@ class ReusePlasticsMFASystem(fd.MFASystem):
         return parameter
 
 
-    def compute_reuse_cycles(self, with_start_value_and_growth_rate: bool = False):
+    def compute_circular_mfa(self, with_start_value_and_growth_rate: bool = False):
         """
-        Compute the reuse cycles of plastics.
+        Compute the circular MFA of plastics, i.e. explicitely accounting for recycling loops and reuse cycles.
         """
 
-        logging.info("mfa_system - compute_reuse_cycles")
+        logging.info("mfa_system - compute_circular_mfa")
 
         # Abbreviation for better readability
         prm = self.parameters

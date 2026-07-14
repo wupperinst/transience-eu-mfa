@@ -4,7 +4,7 @@ import flodym as fd
 from src.common.common_cfg import GeneralCfg
 
 
-def get_definition_reuse(cfg: GeneralCfg):
+def get_definition_circular(cfg: GeneralCfg):
 
     dimensions = [
         fd.DimensionDefinition(name="time", dim_letter="t", dtype=float), # using float to allow for sub-annual time steps if needed
