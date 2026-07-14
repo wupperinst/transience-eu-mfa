@@ -7,6 +7,7 @@ venv/
 .~lock*
 
 # Output csv files
+data/*/output_*/
 data/*/output/export/flows/
 data/*/output/export/stocks/
 

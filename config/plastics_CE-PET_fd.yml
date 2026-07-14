@@ -1,6 +1,7 @@
 # general config
 model_class: 'plastics'
 scenario: 'CE-PET_fd'
+variant: 'R3'
 
 # logging
 logging:

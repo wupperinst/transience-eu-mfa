@@ -13,6 +13,10 @@ class PlasticsModel:
     
     def __init__(self, cfg: GeneralCfg):
         self.cfg = cfg
+        try:
+            logging.info(f"Plastics EU-MFA | scenario: {self.cfg.scenario} | variant: {self.cfg.variant}")
+        except KeyError:
+            logging.info(f"Plastics EU-MFA | scenario: {self.cfg.scenario}")
         if self.cfg.customization.reuse:
             logging.info("Initializing model with reuse customization.")
             self.definition = get_definition_reuse(cfg)
@@ -59,7 +63,14 @@ class PlasticsModel:
             parameter_files[parameter.name] = os.path.join(
                 self.cfg.input_data_path, "datasets", f"{parameter.name}.csv"
             )
-        
+            # If a scenario variant is defined in config, some parameters may have variant-specific files, 
+            # which will override the default parameter file.
+            variant_parameter_name = os.path.join(
+                self.cfg.input_data_path, "datasets", f"{parameter.name}_{self.cfg.variant}.csv"
+            )
+            if os.path.exists(variant_parameter_name):
+                parameter_files[parameter.name] = variant_parameter_name
+
         if not self.cfg.customization.reuse:
             logging.info(f"model - Initializing PlasticsMFASystem.from_csv")
             self.mfa = PlasticsMFASystem.from_csv(

@@ -94,6 +94,7 @@ class GeneralCfg(EUMFABaseModel):
 
     model_class: str
     scenario: str
+    variant: str = None
     logging: dict = {"level": "INFO"}
     input_data_path: str
     customization: ModelCustomization

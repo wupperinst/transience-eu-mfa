@@ -54,9 +54,13 @@ def run_eumfa(cfg_file: str):
         raise FileNotFoundError(f"Input data folder not found: {input_path}")
     if not os.listdir(input_path):
         raise ValueError(f"Input data folder is empty: {input_path}")
-    # Add iinput and output data paths to config
+    # Add input and output data paths to config
     model_config['input_data_path'] = input_path
-    model_config['output_path'] = f"data/{model_config['scenario']}_{model_config['model_class']}/output"
+    # If the config file specifies a variant, include it in the output path; otherwise, use a default output path.
+    try:
+        model_config['output_path'] = f"data/{model_config['scenario']}_{model_config['model_class']}/output_{model_config['variant']}"
+    except KeyError:
+        model_config['output_path'] = f"data/{model_config['scenario']}_{model_config['model_class']}/output"
 
     try:
         logging_level = model_config['logging']['level'].upper()
