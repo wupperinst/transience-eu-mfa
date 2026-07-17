@@ -2,6 +2,28 @@
 model_class: 'vehicles'
 scenario: 'baseline'
 
+# -------------------------------------------------------------------
+# Scenario switches for the differentiated measures.
+# Each measure picks ONE dataset variant. Letters: B = baseline,
+# C = conservative, A = ambitious. (steel_intensity is special, see below.)
+#
+#   technology_share : downsizing measure
+#                      B = baseline, C = conservative,
+#                      A = ambitious
+#   steel_intensity  : B | HSS_A | HSS_C | Redesign_A | Redesign_C
+#                      (HSS and Redesign share the same file slot, so pick one)
+#   steel_reuse      : remanufacturing of steel
+#                      B = baseline, C / A = combined conservative / ambitious
+#                      S1_C / S1_A = Strategy 1 (remanufacturing of car panels),
+#                                    conservative / ambitious
+#                      S2_C / S2_A = Strategy 2 (remanufacturing of components),
+#                                    conservative / ambitious
+# -------------------------------------------------------------------
+scenarios:
+  technology_share: 'B'        # B | C | A
+  steel_intensity: 'B'         # B | HSS_A | HSS_C | Redesign_A | Redesign_C
+  steel_reuse: 'B'             # B | C | A | S1_C | S1_A | S2_C | S2_A
+
 # logging
 logging:
   level: 'DEBUG' # options: DEBUG, INFO, WARNING, ERROR, CRITICAL

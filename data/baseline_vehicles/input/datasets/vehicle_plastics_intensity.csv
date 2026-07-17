@@ -39,22 +39,22 @@ microcar,Internal Combustion Engine – Ethanol,PC,0.831847353
 microcar,Internal Combustion Engine – Ethanol,PA/Nylon,6.654778824
 microcar,Internal Combustion Engine – Ethanol,PUR,14.97325235
 microcar,Internal Combustion Engine – Ethanol,Rubber,8.31847353
-microcar,Internal Combustion Engine – Biodiesel,PP,27.076016
-microcar,Internal Combustion Engine – Biodiesel,PE,8.461255001
-microcar,Internal Combustion Engine – Biodiesel,ABS,12.6918825
-microcar,Internal Combustion Engine – Biodiesel,PVC,4.2306275
-microcar,Internal Combustion Engine – Biodiesel,PC,0.8461255
-microcar,Internal Combustion Engine – Biodiesel,PA/Nylon,6.769004001
-microcar,Internal Combustion Engine – Biodiesel,PUR,15.230259
-microcar,Internal Combustion Engine – Biodiesel,Rubber,8.461255001
-microcar,Internal Combustion Engine – Methanol,PP,26.6191153
-microcar,Internal Combustion Engine – Methanol,PE,8.31847353
-microcar,Internal Combustion Engine – Methanol,ABS,12.4777103
-microcar,Internal Combustion Engine – Methanol,PVC,4.159236765
-microcar,Internal Combustion Engine – Methanol,PC,0.831847353
-microcar,Internal Combustion Engine – Methanol,PA/Nylon,6.654778824
-microcar,Internal Combustion Engine – Methanol,PUR,14.97325235
-microcar,Internal Combustion Engine – Methanol,Rubber,8.31847353
+microcar,Gas Turbine Kerosene,PP,27.076016
+microcar,Gas Turbine Kerosene,PE,8.461255001
+microcar,Gas Turbine Kerosene,ABS,12.6918825
+microcar,Gas Turbine Kerosene,PVC,4.2306275
+microcar,Gas Turbine Kerosene,PC,0.8461255
+microcar,Gas Turbine Kerosene,PA/Nylon,6.769004001
+microcar,Gas Turbine Kerosene,PUR,15.230259
+microcar,Gas Turbine Kerosene,Rubber,8.461255001
+microcar,Fuel Cells – Hydrogen,PP,32.39423605
+microcar,Fuel Cells – Hydrogen,PE,10.1231987
+microcar,Fuel Cells – Hydrogen,ABS,15.1847981
+microcar,Fuel Cells – Hydrogen,PVC,5.0615993
+microcar,Fuel Cells – Hydrogen,PC,1.01231987
+microcar,Fuel Cells – Hydrogen,PA/Nylon,8.0985590
+microcar,Fuel Cells – Hydrogen,PUR,18.2217577
+microcar,Fuel Cells – Hydrogen,Rubber,10.1231987
 microcar,Electric Vehicle/Pure Electric Engine,PP,36.27219437
 microcar,Electric Vehicle/Pure Electric Engine,PE,11.33506074
 microcar,Electric Vehicle/Pure Electric Engine,ABS,17.00259111
@@ -135,22 +135,22 @@ passenger car,Internal Combustion Engine – Ethanol,PC,1.477953448
 passenger car,Internal Combustion Engine – Ethanol,PA/Nylon,11.82362758
 passenger car,Internal Combustion Engine – Ethanol,PUR,26.60316206
 passenger car,Internal Combustion Engine – Ethanol,Rubber,14.77953448
-passenger car,Internal Combustion Engine – Biodiesel,PP,47.98733662
-passenger car,Internal Combustion Engine – Biodiesel,PE,14.99604269
-passenger car,Internal Combustion Engine – Biodiesel,ABS,22.49406404
-passenger car,Internal Combustion Engine – Biodiesel,PVC,7.498021347
-passenger car,Internal Combustion Engine – Biodiesel,PC,1.499604269
-passenger car,Internal Combustion Engine – Biodiesel,PA/Nylon,11.99683415
-passenger car,Internal Combustion Engine – Biodiesel,PUR,26.99287685
-passenger car,Internal Combustion Engine – Biodiesel,Rubber,14.99604269
-passenger car,Internal Combustion Engine – Methanol,PP,47.29451033
-passenger car,Internal Combustion Engine – Methanol,PE,14.77953448
-passenger car,Internal Combustion Engine – Methanol,ABS,22.16930172
-passenger car,Internal Combustion Engine – Methanol,PVC,7.389767239
-passenger car,Internal Combustion Engine – Methanol,PC,1.477953448
-passenger car,Internal Combustion Engine – Methanol,PA/Nylon,11.82362758
-passenger car,Internal Combustion Engine – Methanol,PUR,26.60316206
-passenger car,Internal Combustion Engine – Methanol,Rubber,14.77953448
+passenger car,Gas Turbine Kerosene,PP,47.98733662
+passenger car,Gas Turbine Kerosene,PE,14.99604269
+passenger car,Gas Turbine Kerosene,ABS,22.49406404
+passenger car,Gas Turbine Kerosene,PVC,7.498021347
+passenger car,Gas Turbine Kerosene,PC,1.499604269
+passenger car,Gas Turbine Kerosene,PA/Nylon,11.99683415
+passenger car,Gas Turbine Kerosene,PUR,26.99287685
+passenger car,Gas Turbine Kerosene,Rubber,14.99604269
+passenger car,Fuel Cells – Hydrogen,PP,56.4070273
+passenger car,Fuel Cells – Hydrogen,PE,17.627196
+passenger car,Fuel Cells – Hydrogen,ABS,26.44079406
+passenger car,Fuel Cells – Hydrogen,PVC,8.81359801
+passenger car,Fuel Cells – Hydrogen,PC,1.7627196
+passenger car,Fuel Cells – Hydrogen,PA/Nylon,14.1017568
+passenger car,Fuel Cells – Hydrogen,PUR,31.7289528
+passenger car,Fuel Cells – Hydrogen,Rubber,17.62719603
 passenger car,Electric Vehicle/Pure Electric Engine,PP,59.52829538
 passenger car,Electric Vehicle/Pure Electric Engine,PE,18.60259231
 passenger car,Electric Vehicle/Pure Electric Engine,ABS,27.90388846
@@ -231,22 +231,22 @@ minivan_SUV,Internal Combustion Engine – Ethanol,PC,1.951992487
 minivan_SUV,Internal Combustion Engine – Ethanol,PA/Nylon,15.6159399
 minivan_SUV,Internal Combustion Engine – Ethanol,PUR,35.13586477
 minivan_SUV,Internal Combustion Engine – Ethanol,Rubber,19.51992487
-minivan_SUV,Internal Combustion Engine – Biodiesel,PP,63.29150469
-minivan_SUV,Internal Combustion Engine – Biodiesel,PE,19.77859521
-minivan_SUV,Internal Combustion Engine – Biodiesel,ABS,29.66789282
-minivan_SUV,Internal Combustion Engine – Biodiesel,PVC,9.889297607
-minivan_SUV,Internal Combustion Engine – Biodiesel,PC,1.977859521
-minivan_SUV,Internal Combustion Engine – Biodiesel,PA/Nylon,15.82287617
-minivan_SUV,Internal Combustion Engine – Biodiesel,PUR,35.60147139
-minivan_SUV,Internal Combustion Engine – Biodiesel,Rubber,19.77859521
-minivan_SUV,Internal Combustion Engine – Methanol,PP,62.46375959
-minivan_SUV,Internal Combustion Engine – Methanol,PE,19.51992487
-minivan_SUV,Internal Combustion Engine – Methanol,ABS,29.27988731
-minivan_SUV,Internal Combustion Engine – Methanol,PVC,9.759962437
-minivan_SUV,Internal Combustion Engine – Methanol,PC,1.951992487
-minivan_SUV,Internal Combustion Engine – Methanol,PA/Nylon,15.6159399
-minivan_SUV,Internal Combustion Engine – Methanol,PUR,35.13586477
-minivan_SUV,Internal Combustion Engine – Methanol,Rubber,19.51992487
+minivan_SUV,Gas Turbine Kerosene,PP,63.29150469
+minivan_SUV,Gas Turbine Kerosene,PE,19.77859521
+minivan_SUV,Gas Turbine Kerosene,ABS,29.66789282
+minivan_SUV,Gas Turbine Kerosene,PVC,9.889297607
+minivan_SUV,Gas Turbine Kerosene,PC,1.977859521
+minivan_SUV,Gas Turbine Kerosene,PA/Nylon,15.82287617
+minivan_SUV,Gas Turbine Kerosene,PUR,35.60147139
+minivan_SUV,Gas Turbine Kerosene,Rubber,19.77859521
+minivan_SUV,Fuel Cells – Hydrogen,PP,75.9148062
+minivan_SUV,Fuel Cells – Hydrogen,PE,23.7233769
+minivan_SUV,Fuel Cells – Hydrogen,ABS,35.5850654
+minivan_SUV,Fuel Cells – Hydrogen,PVC,11.861688
+minivan_SUV,Fuel Cells – Hydrogen,PC,2.3723376
+minivan_SUV,Fuel Cells – Hydrogen,PA/Nylon,18.9787015
+minivan_SUV,Fuel Cells – Hydrogen,PUR,42.7020785
+minivan_SUV,Fuel Cells – Hydrogen,Rubber,23.7233769
 minivan_SUV,Electric Vehicle/Pure Electric Engine,PP,76.00974134
 minivan_SUV,Electric Vehicle/Pure Electric Engine,PE,23.75304417
 minivan_SUV,Electric Vehicle/Pure Electric Engine,ABS,35.62956625
@@ -327,22 +327,22 @@ light truck,Internal Combustion Engine – Ethanol,PC,2.322335487
 light truck,Internal Combustion Engine – Ethanol,PA/Nylon,18.5786839
 light truck,Internal Combustion Engine – Ethanol,PUR,41.80203877
 light truck,Internal Combustion Engine – Ethanol,Rubber,23.22335487
-light truck,Internal Combustion Engine – Biodiesel,PP,75.51806545
-light truck,Internal Combustion Engine – Biodiesel,PE,23.59939545
-light truck,Internal Combustion Engine – Biodiesel,ABS,35.39909318
-light truck,Internal Combustion Engine – Biodiesel,PVC,11.79969773
-light truck,Internal Combustion Engine – Biodiesel,PC,2.359939545
-light truck,Internal Combustion Engine – Biodiesel,PA/Nylon,18.87951636
-light truck,Internal Combustion Engine – Biodiesel,PUR,42.47891182
-light truck,Internal Combustion Engine – Biodiesel,Rubber,23.59939545
-light truck,Internal Combustion Engine – Methanol,PP,74.31473558
-light truck,Internal Combustion Engine – Methanol,PE,23.22335487
-light truck,Internal Combustion Engine – Methanol,ABS,34.8350323
-light truck,Internal Combustion Engine – Methanol,PVC,11.61167743
-light truck,Internal Combustion Engine – Methanol,PC,2.322335487
-light truck,Internal Combustion Engine – Methanol,PA/Nylon,18.5786839
-light truck,Internal Combustion Engine – Methanol,PUR,41.80203877
-light truck,Internal Combustion Engine – Methanol,Rubber,23.22335487
+light truck,Gas Turbine Kerosene,PP,75.51806545
+light truck,Gas Turbine Kerosene,PE,23.59939545
+light truck,Gas Turbine Kerosene,ABS,35.39909318
+light truck,Gas Turbine Kerosene,PVC,11.79969773
+light truck,Gas Turbine Kerosene,PC,2.359939545
+light truck,Gas Turbine Kerosene,PA/Nylon,18.87951636
+light truck,Gas Turbine Kerosene,PUR,42.47891182
+light truck,Gas Turbine Kerosene,Rubber,23.59939545
+light truck,Fuel Cells – Hydrogen,PP,87.6033242
+light truck,Fuel Cells – Hydrogen,PE,27.3760388
+light truck,Fuel Cells – Hydrogen,ABS,41.0640582
+light truck,Fuel Cells – Hydrogen,PVC,13.6880194
+light truck,Fuel Cells – Hydrogen,PC,2.7376038
+light truck,Fuel Cells – Hydrogen,PA/Nylon,21.9008311
+light truck,Fuel Cells – Hydrogen,PUR,49.2768699
+light truck,Fuel Cells – Hydrogen,Rubber,27.3760388
 light truck,Electric Vehicle/Pure Electric Engine,PP,90.76935641
 light truck,Electric Vehicle/Pure Electric Engine,PE,28.36542388
 light truck,Electric Vehicle/Pure Electric Engine,ABS,42.54813582

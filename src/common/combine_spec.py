@@ -59,15 +59,24 @@ TOPDOWN = {
     "cement_start": "data/baseline_cement_stock_flows/input/datasets/start_value.csv",
     "cement_growth": "data/baseline_cement_stock_flows/input/datasets/growth_rate.csv",
     # Plastics baseline model (production-driven, for historic stock)
-    "plastics_baseline_dir": "data/baseline_plastics/input/datasets",
-    "plastics_baseline_lifetime": "data/baseline_plastics/input/datasets/Lifetime.csv",
-    "plastics_baseline_domestic_demand": "data/baseline_plastics/input/datasets/DomesticDemand.csv",
+    "plastics_baseline_dir": "data/baseline_pd_plastics/input/datasets",
+    "plastics_baseline_lifetime": "data/baseline_pd_plastics/input/datasets/Lifetime.csv",
+    "plastics_baseline_domestic_demand": "data/baseline_pd_plastics/input/datasets/DomesticDemand.csv",
     "steel_baseline_dir": "data/baseline_pd_steel/input/datasets",
     "steel_baseline_lifetime": "data/baseline_pd_steel/input/datasets/Lifetime.csv",
     # Plastics fd-sv-gr model (final-demand-driven with start value & growth rate)
+    # Working/output dir (where bottom-up coupling files are written) is
+    # fd-sv-gr_plastics; the start value & growth rate inputs come from the
+    # baseline_fd-sv-gr_plastics source dataset.
     "plastics_fd_sv_gr_dir": "data/fd-sv-gr_plastics/input/datasets",
-    "plastics_fd_sv_gr_start": "data/fd-sv-gr_plastics/input/datasets/start_value.csv",
-    "plastics_fd_sv_gr_growth": "data/fd-sv-gr_plastics/input/datasets/growth_rate.csv",
+    "plastics_fd_sv_gr_start": "data/baseline_fd-sv-gr_plastics/input/datasets/start_value.csv",
+    "plastics_fd_sv_gr_growth": "data/baseline_fd-sv-gr_plastics/input/datasets/growth_rate.csv",
+    # Source dataset for the fd-sv-gr working dir. The working dir
+    # (plastics_fd_sv_gr_dir's parent) is seeded from this complete input tree
+    # (dimensions + all parameter CSVs) before the coupling overwrites the
+    # bottom-up / FinalDemand files.
+    "plastics_fd_sv_gr_source_input": "data/baseline_fd-sv-gr_plastics/input",
+    "plastics_fd_sv_gr_working_input": "data/fd-sv-gr_plastics/input",
     "steel_fd_sv_gr_dir": "data/baseline_fd-sv-gr_steel/input/datasets",
     "steel_fd_sv_gr_start": "data/baseline_fd-sv-gr_steel/input/datasets/start_value.csv",
     "steel_fd_sv_gr_growth": "data/baseline_fd-sv-gr_steel/input/datasets/growth_rate.csv",
@@ -187,6 +196,9 @@ class SourceFlowNames:
     # Vehicles outflows (EOL)
     vehicles_plastics_eol: str = "Plastics stock in vehicles => sysenv"
     vehicles_steel_eol: str = "Steel stock in vehicles => sysenv"
+
+    # Vehicles steel reuse (diverted from EOL back into new vehicles)
+    vehicles_steel_reuse: str = "Steel stock in vehicles => Steel stock in vehicles"
 
 
 SOURCE_FLOWS = SourceFlowNames()
