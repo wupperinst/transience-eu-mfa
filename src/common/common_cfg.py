@@ -40,13 +40,14 @@ class PlasticsCustomizationCfg(ModelCustomization):
     
     model_driven: str = "production"  # options: production, final_demand
     prodcom: bool = False # Enable prodcom-specific features (e.g. product-level in addition to sector-level)
-    circular: bool = False # Enable circular-specific features (cycles of recycled and reused plastics)
+    reuse: bool = False # Enable reuse-specific features (cycles of reused plastics)
     end_use_sectors: str = "all"
     waste_not_for_recycling: list = []
 
 class SteelCustomizationCfg(ModelCustomization):
 
     model_driven: str = "production"  # options: production, final_demand
+    reuse: bool = False  # Enable subtracting reused steel from EOL waste management
 
 
 class VisualizationCfg(EUMFABaseModel):
@@ -67,6 +68,16 @@ class BuildingsVisualizationCfg(VisualizationCfg):
 class VehiclesVisualizationCfg(VisualizationCfg):
 
     pass
+
+class VehiclesScenarioCfg(EUMFABaseModel):
+    """Differentiated-measure switches. Each picks one dataset variant.
+
+    Letters: B = baseline, C = conservative, A = ambitious.
+    """
+
+    technology_share: str = "B"   # B | C | A  (downsizing)
+    steel_intensity: str = "B"    # B | HSS_A | HSS_C | Redesign_A | Redesign_C
+    steel_reuse: str = "B"        # B | C | A | S1_C | S1_A | S2_C | S2_A  (remanufacturing of steel)
 
 class PlasticsVisualizationCfg(VisualizationCfg):
 
@@ -94,7 +105,6 @@ class GeneralCfg(EUMFABaseModel):
 
     model_class: str
     scenario: str
-    variant: str = None
     logging: dict = {"level": "INFO"}
     input_data_path: str
     customization: ModelCustomization
@@ -132,6 +142,7 @@ class BuildingsCfg(GeneralCfg):
 class VehiclesCfg(GeneralCfg):
 
     visualization: VehiclesVisualizationCfg
+    scenarios: VehiclesScenarioCfg = VehiclesScenarioCfg()
 
 class PlasticsCfg(GeneralCfg):
 
