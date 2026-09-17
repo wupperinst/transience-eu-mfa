@@ -1,0 +1,29 @@
+model_class: 'steel'
+scenario: 'combined_future'
+
+logging:
+  level: 'INFO'
+
+input_data_path: 'data/baseline_fd-sv-gr_steel/input'
+
+customization:
+  model_driven: 'final_demand'
+  lifetime_model_name: 'NormalLifetime'
+  reuse: true
+
+visualization:
+  inflow:
+    do_visualize: False
+  production:
+    do_visualize: False
+  outflow:
+    do_visualize: False
+  sankey:
+    do_visualize: False
+  dashboard:
+    do_visualize: False
+
+output_path: 'data/combined_steel_future/output'
+do_export:
+  pickle: False
+  csv: True

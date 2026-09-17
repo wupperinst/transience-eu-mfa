@@ -61,3 +61,19 @@ class VehiclesMFASystem(fd.MFASystem):
         flw["Glass stock in vehicles => sysenv"][...] = stk[
             "Glass stock in vehicles"
         ].outflow
+
+        # Steel element reuse: a fraction of the steel leaving vehicles is reused
+        # directly into new vehicles instead of being supplied as primary steel.
+        # Mirrors the buildings model, but note vehicle outflow is POSITIVE here
+        # (it comes from the DSM), so reuse is subtracted from both inflow and outflow.
+        flw["Steel stock in vehicles => Steel stock in vehicles"][...] = (
+            flw["Steel stock in vehicles => sysenv"] * prm["vehicle_steel_element_reuse"]
+        )
+        flw["sysenv => Steel stock in vehicles"][...] = (
+            flw["sysenv => Steel stock in vehicles"]
+            - flw["Steel stock in vehicles => Steel stock in vehicles"]
+        )
+        flw["Steel stock in vehicles => sysenv"][...] = (
+            flw["Steel stock in vehicles => sysenv"]
+            - flw["Steel stock in vehicles => Steel stock in vehicles"]
+        )

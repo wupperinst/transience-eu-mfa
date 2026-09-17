@@ -33,6 +33,8 @@ def get_definition(cfg: GeneralCfg):
                           dim_letters=("t", "r", "v", "g")),
         fd.FlowDefinition(from_process="Steel stock in vehicles", to_process="sysenv",
                           dim_letters=("t", "r", "v", "l")),
+        fd.FlowDefinition(from_process="Steel stock in vehicles", to_process="Steel stock in vehicles",
+                          dim_letters=("t", "r", "v", "l")),
         fd.FlowDefinition(from_process="Plastics stock in vehicles", to_process="sysenv",
                           dim_letters=("t", "r", "v", "d")),
         fd.FlowDefinition(from_process="Glass stock in vehicles", to_process="sysenv",
@@ -79,9 +81,10 @@ def get_definition(cfg: GeneralCfg):
         fd.ParameterDefinition(name="vehicle_technology_share", dim_letters=("t", "r", "z")),
         fd.ParameterDefinition(name="vehicle_lifetime_mean", dim_letters=("v",)),
         fd.ParameterDefinition(name="vehicle_lifetime_std", dim_letters=("v",)),
-        fd.ParameterDefinition(name="vehicle_steel_intensity", dim_letters=("v", "z", "l")),
+        fd.ParameterDefinition(name="vehicle_steel_intensity", dim_letters=("t", "v", "z", "l")),
         fd.ParameterDefinition(name="vehicle_plastics_intensity", dim_letters=("v", "z", "d")),
         fd.ParameterDefinition(name="vehicle_glass_intensity", dim_letters=("v", "z", "g")),
+        fd.ParameterDefinition(name="vehicle_steel_element_reuse", dim_letters=("t", "r", "v", "l")),
     ]
 
     return fd.MFADefinition(
