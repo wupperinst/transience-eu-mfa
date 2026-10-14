@@ -41,6 +41,15 @@ def get_definition(cfg: GeneralCfg):
                           dim_letters=("t", "r", "v", "g")),
     ]
 
+    if cfg.scenarios.plastics_reuse_available:
+        flows.append(
+            fd.FlowDefinition(
+                from_process="Plastics stock in vehicles",
+                to_process="Plastics stock in vehicles",
+                dim_letters=("t", "r", "v", "d"),
+            )
+        )
+
     stocks = [
         fd.StockDefinition(
             name="Vehicle stock",
@@ -86,6 +95,14 @@ def get_definition(cfg: GeneralCfg):
         fd.ParameterDefinition(name="vehicle_glass_intensity", dim_letters=("v", "z", "g")),
         fd.ParameterDefinition(name="vehicle_steel_element_reuse", dim_letters=("t", "r", "v", "l")),
     ]
+
+    if cfg.scenarios.plastics_reuse_available:
+        parameters.append(
+            fd.ParameterDefinition(
+                name="vehicle_plastics_element_reuse",
+                dim_letters=("t", "r", "v", "d"),
+            )
+        )
 
     return fd.MFADefinition(
         dimensions=dimensions,

@@ -37,10 +37,11 @@ class ModelCustomization(EUMFABaseModel):
         return choose_subclass_by_name(self.lifetime_model_name, fd.LifetimeModel)
 
 class PlasticsCustomizationCfg(ModelCustomization):
-    
+
     model_driven: str = "production"  # options: production, final_demand
     prodcom: bool = False # Enable prodcom-specific features (e.g. product-level in addition to sector-level)
     reuse: bool = False # Enable reuse-specific features (cycles of reused plastics)
+    circular: bool = False # Enable recycling- and reuse-specific features (cycles of recycled and reused plastics)
     end_use_sectors: str = "all"
     waste_not_for_recycling: list = []
 
@@ -78,6 +79,8 @@ class VehiclesScenarioCfg(EUMFABaseModel):
     technology_share: str = "B"   # B | C | A  (downsizing)
     steel_intensity: str = "B"    # B | HSS_A | HSS_C | Redesign_A | Redesign_C
     steel_reuse: str = "B"        # B | C | A | S1_C | S1_A | S2_C | S2_A  (remanufacturing of steel)
+    plastics_reuse: str = "B"     # B | C | A  (remanufacturing of plastics)
+    plastics_reuse_available: bool = False
 
 class PlasticsVisualizationCfg(VisualizationCfg):
 
@@ -110,6 +113,7 @@ class GeneralCfg(EUMFABaseModel):
     customization: ModelCustomization
     visualization: VisualizationCfg
     output_path: str
+    variant: str = ""  # Optional variant identifier (e.g., 'R3', 'combined_future')
     do_export: dict[str, bool]
     selected_export: dict = {"csv_selected_flows": [], # list of flow names to export to csv
                              "csv_selected_stocks": [], # list of flow stocks to export to csv

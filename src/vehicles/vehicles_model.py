@@ -1,4 +1,5 @@
 import os
+import logging
 
 from src.common.common_cfg import GeneralCfg
 from .vehicles_mfa_system import VehiclesMFASystem
@@ -11,6 +12,7 @@ from .vehicles_definition import get_definition
 class VehiclesModel:
     def __init__(self, cfg: GeneralCfg):
         self.cfg = cfg
+        self._configure_plastics_reuse()
         self.definition = get_definition(cfg)
         self.data_writer = VehiclesDataExporter(
             cfg=self.cfg.visualization,
@@ -18,6 +20,19 @@ class VehiclesModel:
             output_path=self.cfg.output_path,
         )
         self.init_mfa()
+
+    def _configure_plastics_reuse(self) -> None:
+        """Enable plastics reuse only when the selected input dataset exists."""
+        filename = f"vehicle_plastics_element_reuse_{self.cfg.scenarios.plastics_reuse}.csv"
+        dataset_path = os.path.join(self.cfg.input_data_path, "datasets", filename)
+        is_available = os.path.isfile(dataset_path)
+        self.cfg.scenarios.plastics_reuse_available = is_available
+
+        if not is_available:
+            logging.warning(
+                "Plastics reuse dataset not found: %s. Continuing with zero plastics reuse.",
+                dataset_path,
+            )
 
     def init_mfa(self):
         dimension_map = {
@@ -94,6 +109,12 @@ class VehiclesModel:
                 "S2_C": "vehicle_steel_element_reuse_S2_C",
                 "S2_A": "vehicle_steel_element_reuse_S2_A",
             },
+            "vehicle_plastics_element_reuse": {
+                # remanufacturing of plastics
+                "B": "vehicle_plastics_element_reuse_B",
+                "C": "vehicle_plastics_element_reuse_C",
+                "A": "vehicle_plastics_element_reuse_A",
+            },
         }
 
         # Which config switch drives which parameter.
@@ -102,6 +123,9 @@ class VehiclesModel:
             "vehicle_steel_intensity": sc.steel_intensity,
             "vehicle_steel_element_reuse": sc.steel_reuse,
         }
+
+        if sc.plastics_reuse_available:
+            chosen["vehicle_plastics_element_reuse"] = sc.plastics_reuse
 
         resolved = {}
         for param_name, value in chosen.items():

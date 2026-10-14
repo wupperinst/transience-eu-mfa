@@ -18,11 +18,14 @@ scenario: 'baseline'
 #                                    conservative / ambitious
 #                      S2_C / S2_A = Strategy 2 (remanufacturing of components),
 #                                    conservative / ambitious
+#   plastics_reuse   : remanufacturing of plastics; B | C | A
+#                      A missing selected dataset gives zero reuse and a warning.
 # -------------------------------------------------------------------
 scenarios:
   technology_share: 'B'        # B | C | A
   steel_intensity: 'B'         # B | HSS_A | HSS_C | Redesign_A | Redesign_C
   steel_reuse: 'B'             # B | C | A | S1_C | S1_A | S2_C | S2_A
+  plastics_reuse: 'B'          # B | C | A
 
 # logging
 logging:

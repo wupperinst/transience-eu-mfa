@@ -23,6 +23,7 @@ Configuration flags at the top of the file control which models run.
 import glob
 import logging
 import os
+import shutil
 from typing import Dict, List, Optional, Tuple, cast
 
 import numpy as np
@@ -135,6 +136,13 @@ def std_cement_cols(df: pd.DataFrame) -> pd.DataFrame:
 def ensure_dir(path: str) -> None:
     """Ensure directory exists for a file path."""
     os.makedirs(os.path.dirname(path), exist_ok=True)
+
+
+def _prepare_plastics_working_input() -> None:
+    """Seed the combined plastics input tree from its baseline source."""
+    source = TOPDOWN["plastics_fd_sv_gr_source_input"]
+    working = TOPDOWN["plastics_fd_sv_gr_working_input"]
+    shutil.copytree(source, working, dirs_exist_ok=True)
 
 
 # =============================================================================
@@ -839,8 +847,10 @@ def run_plastics_coupling(
 
     if DOWNSTREAM_ONLY:
         logging.info("[Plastics] Running downstream-only mode")
-        run_eumfa("config/plastics_fd-sv-gr.yml")
+        run_eumfa("config/plastics_combined_future.yml")
         return
+
+    _prepare_plastics_working_input()
 
     # Get configuration
     cfg = get_plastics_config()
@@ -869,6 +879,9 @@ def run_plastics_coupling(
     bu_demand_vehicles, bu_eol_vehicles = _map_vehicles_to_plastics_flows(
         flows_vehicles, time_col, value_col
     )
+    vehicles_reuse = _map_vehicles_to_plastics_reuse(
+        flows_vehicles, time_col, value_col
+    )
 
     # Save intermediate files
     _save_plastics_intermediate_files(
@@ -879,6 +892,7 @@ def run_plastics_coupling(
         time_col,
         value_col,
     )
+    _save_plastics_reuse(vehicles_reuse)
 
     # =========================================================================
     # Load reference data
@@ -1237,6 +1251,43 @@ def _map_vehicles_to_steel(
         bu_eol = empty_df
 
     return bu_demand, bu_eol
+
+
+def _map_vehicles_to_plastics_reuse(
+    flows: Optional[Dict],
+    time_col: str,
+    value_col: str,
+) -> pd.DataFrame:
+    """Map the vehicles plastics reuse flow to plastics model dimensions."""
+    empty_df = pd.DataFrame(
+        columns=[time_col, "region", "sector", "polymer", "element", value_col]
+    )
+
+    if not flows:
+        return empty_df
+
+    reuse_flow = flows.get(SOURCE_FLOWS.vehicles_plastics_reuse)
+    if reuse_flow is None:
+        return empty_df
+
+    logging.info("[Plastics] Mapping vehicles plastics reuse: %s rows", len(reuse_flow))
+    mapped_reuse = map_vehicles_to_plastics(
+        flow_df=reuse_flow.reset_index(),
+        regions_csv=MAPPING["vehicles_plastics_regions"],
+        products_csv=MAPPING["vehicles_plastics_products"],
+    )
+    reuse = std_plastics_cols(mapped_reuse)
+    if "Time" in reuse.columns and time_col not in reuse.columns:
+        reuse = reuse.rename(columns={"Time": time_col})
+    return reuse
+
+
+def _save_plastics_reuse(reuse: pd.DataFrame) -> None:
+    """Save mapped vehicle plastics reuse for the plastics flow combination."""
+    path = os.path.join(TOPDOWN["plastics_fd_sv_gr_dir"], "vehicles_plastics_reuse.csv")
+    ensure_dir(path)
+    reuse.to_csv(path, index=False)
+    logging.info("[Plastics] Vehicles plastics reuse saved: %s rows", len(reuse))
 
 
 def _save_plastics_intermediate_files(
@@ -1616,6 +1667,11 @@ def run_steel_coupling(
     logging.info("STARTING STEEL + BUILDINGS + VEHICLES COUPLING")
     logging.info("=" * 60)
 
+    if DOWNSTREAM_ONLY:
+        logging.info("[Steel] Running downstream-only mode")
+        run_eumfa("config/steel_combined_future.yml")
+        return
+
     cfg = get_steel_config()
     key_cols = cfg["key_cols"]
     time_col = cfg["time_col"]
@@ -1891,9 +1947,11 @@ def _run_historic_plastics_model(
         from src.common.common_cfg import GeneralCfg
 
         # Load and modify config
-        with open("config/plastics_baseline.yml", "r") as f:
+        with open("config/plastics_baseline_pd.yml", "r") as f:
             config_dict = yaml.safe_load(f)
 
+        config_dict["input_data_path"] = "data/baseline_pd_plastics/input"
+        config_dict["output_path"] = "data/baseline_pd_plastics/output"
         config_dict["do_export"] = {"pickle": False, "csv": False}
         config_dict["visualization"] = {
             "inflow": {"do_visualize": False},
@@ -1989,7 +2047,7 @@ def _zero_future_parameters(model, time_items: List, base_year: int) -> None:
 
 def _export_historic_plastics_flows(model) -> None:
     """Export historic plastics flows with cohort aggregation."""
-    output_dir = "data/baseline_plastics/output/export/flows"
+    output_dir = "data/baseline_pd_plastics/output/export/flows"
     os.makedirs(output_dir, exist_ok=True)
 
     export_flows = [
@@ -2283,9 +2341,76 @@ def _export_future_plastics_flows(model) -> None:
     logging.info(f"[Plastics] Future: exported {exported} flows")
 
 
+def _load_plastics_reuse(base_year: int) -> pd.DataFrame:
+    """Load future mapped vehicle plastics reuse by plastics dimensions."""
+    keys = ["time", "region", "sector", "polymer", "element"]
+    path = os.path.join(
+        TOPDOWN["plastics_fd_sv_gr_dir"], "vehicles_plastics_reuse.csv"
+    )
+    if not os.path.exists(path):
+        logging.warning("[Plastics] Reuse file missing: vehicles_plastics_reuse.csv")
+        return pd.DataFrame(columns=keys + ["value"])
+
+    reuse = pd.read_csv(path)
+    if reuse.empty or "value" not in reuse.columns:
+        return pd.DataFrame(columns=keys + ["value"])
+
+    reuse = std_plastics_cols(reuse)
+    reuse["value"] = pd.to_numeric(reuse["value"], errors="coerce").fillna(0.0)
+    reuse = reuse[reuse["time"] >= base_year]
+    return reuse.groupby(keys, as_index=False)["value"].sum()
+
+
+def _subtract_plastics_reuse(
+    future_path: str,
+    reuse: pd.DataFrame,
+    collection_eol: pd.DataFrame,
+    is_collection_flow: bool,
+) -> str:
+    """Subtract vehicle reuse from a future plastics waste-flow export."""
+    if reuse.empty:
+        return future_path
+
+    keys = ["time", "region", "sector", "polymer", "element"]
+    future = pd.read_csv(future_path)
+    future["value"] = pd.to_numeric(future["value"], errors="coerce").fillna(0.0)
+    merged = future.merge(
+        reuse.rename(columns={"value": "_reuse"}), on=keys, how="left"
+    )
+    merged["_reuse"] = merged["_reuse"].fillna(0.0)
+
+    if is_collection_flow:
+        merged["value"] = (merged["value"] - merged["_reuse"]).clip(lower=0.0)
+    else:
+        merged = _subtract_proportional_plastics_reuse(
+            merged, collection_eol, keys
+        )
+
+    adjusted_path = future_path.replace(".csv", "_reuseadj.csv")
+    merged.drop(columns=["_reuse"]).to_csv(adjusted_path, index=False)
+    return adjusted_path
+
+
+def _subtract_proportional_plastics_reuse(
+    future: pd.DataFrame,
+    collection_eol: pd.DataFrame,
+    keys: List[str],
+) -> pd.DataFrame:
+    """Reduce a waste flow using its share of collection-stage EOL."""
+    collection = collection_eol.rename(columns={"value": "_collection"})
+    merged = future.merge(collection, on=keys, how="left")
+    merged["_collection"] = merged["_collection"].fillna(0.0)
+    ratio = merged["value"] / merged["_collection"].where(
+        merged["_collection"] > 0, other=1.0
+    )
+    ratio = ratio.where(merged["_collection"] > 0, other=0.0)
+    merged["value"] = (merged["value"] - merged["_reuse"] * ratio).clip(lower=0.0)
+    return merged.drop(columns=["_collection"])
+
+
 def _combine_plastics_flows(base_year: int) -> None:
     """Combine historic and future plastics flow CSVs."""
-    historic_dir = "data/baseline_plastics/output/export/flows"
+    historic_dir = "data/baseline_pd_plastics/output/export/flows"
     future_dir = "data/combined_plastics_future/output/export/flows"
     combined_dir = "data/combined_plastics/output/flows"
 
@@ -2296,7 +2421,11 @@ def _combine_plastics_flows(base_year: int) -> None:
         return
 
     historic_files = glob.glob(os.path.join(historic_dir, "*.csv"))
-    future_files = glob.glob(os.path.join(future_dir, "*.csv"))
+    future_files = [
+        path
+        for path in glob.glob(os.path.join(future_dir, "*.csv"))
+        if not path.endswith("_reuseadj.csv")
+    ]
 
     logging.info(
         f"[Plastics] Found {len(historic_files)} historic, {len(future_files)} future files"
@@ -2319,15 +2448,44 @@ def _combine_plastics_flows(base_year: int) -> None:
         key = normalize_filename(os.path.basename(fpath))
         flow_pairs.setdefault(key, {})["future"] = fpath
 
+    reuse = _load_plastics_reuse(base_year)
+    collection_key = "end_use_stock__waste_collection"
+    waste_flow_keys = {
+        collection_key,
+        "waste_collection__waste_sorting",
+        "waste_sorting__sorted_waste_market",
+        "sorted_waste_market__recycling",
+        "recycling__recyclate_sysenv",
+        "recycling__losses_sysenv",
+    }
+    collection_eol = pd.DataFrame()
+    collection_paths = flow_pairs.get(collection_key, {})
+    if not reuse.empty and "future" in collection_paths:
+        collection_eol = pd.read_csv(collection_paths["future"])
+        collection_eol["value"] = pd.to_numeric(
+            collection_eol["value"], errors="coerce"
+        ).fillna(0.0)
+        collection_eol = collection_eol.groupby(
+            ["time", "region", "sector", "polymer", "element"], as_index=False
+        )["value"].sum()
+
     # Combine pairs
     combined_count = 0
     for flow_key, paths in flow_pairs.items():
         if "historic" in paths and "future" in paths:
             out_path = os.path.join(combined_dir, f"{flow_key}_combined.csv")
             try:
+                future_path = paths["future"]
+                if flow_key in waste_flow_keys:
+                    future_path = _subtract_plastics_reuse(
+                        future_path=future_path,
+                        reuse=reuse,
+                        collection_eol=collection_eol,
+                        is_collection_flow=(flow_key == collection_key),
+                    )
                 fc.combine_hist_future_flodym(
                     historic_path=paths["historic"],
-                    future_path=paths["future"],
+                    future_path=future_path,
                     output_path=out_path,
                     time_col="time",
                     value_col="value",
