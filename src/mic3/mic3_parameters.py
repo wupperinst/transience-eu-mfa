@@ -208,6 +208,67 @@ def service_output(opengem_path, regions):
 
 
 # --------------------------------------------------------------------------- #
+# cement growth rate
+# --------------------------------------------------------------------------- #
+CEMENT_SECTOR = "IND35"            # OpenGEM's construction sector
+CEMENT_VARIABLE = "DEMAND"         # domestic consumption, not production
+CEMENT_BASE_YEAR = 2023
+CEMENT_FIRST_NODE = 2020           # earlier nodes do not affect 2023 onwards
+# Elasticity of change: cement demand responds to construction demand at 30 %,
+# so a 10 % rise in construction demand raises cement demand by 3 %.
+CEMENT_ELASTICITY_OF_CHANGE = 0.3
+
+
+def cement_growth_rate(opengem_path, sectors):
+    """
+    Growth factors for the cement sub-module, one block per end use sector.
+
+    Construction demand drives cement demand, so the driver is OpenGEM's
+    construction sector. DEMAND is domestic consumption (production + imports
+    - exports), which is what cement is consumed against; PROD would also
+    count construction output sold abroad.
+
+    Reported at interval years and linearly interpolated. The result is a
+    growth factor applied to a base-year cement level, so only the relative
+    change matters: it is rebased on the base year, and the elasticity scales
+    that change rather than the level. The base year itself carries the step
+    from the year before, so it is slightly above 1 rather than exactly 1.
+
+    OpenGEM has a single construction sector, so every end use sector is given
+    the same factors.
+    """
+    df = pd.read_excel(opengem_path, sheet_name=OPENGEM_SECTOR_SHEET, header=1).iloc[:, 1:]
+    df.columns = ["variable", "sector", "Region"] + [int(c) for c in df.columns[3:]]
+    df = df[(df["variable"] == CEMENT_VARIABLE) & (df["sector"] == CEMENT_SECTOR)]
+    df = df[df["Region"] != REST_OF_WORLD].dropna(subset=["Region"])
+    if df.empty:
+        raise ValueError(
+            f"OpenGEM has no {CEMENT_VARIABLE} rows for sector {CEMENT_SECTOR}."
+        )
+
+    # DEMAND is a monetary aggregate, so the EU figure is the sum over regions.
+    nodes = df.drop(columns=["variable", "sector", "Region"]).astype(float).sum(axis=0)
+    nodes.index = nodes.index.astype(int)
+    annual = _interpolate_to_annual(nodes.to_frame().T).iloc[0]
+    annual = annual[annual.index >= CEMENT_FIRST_NODE]
+
+    base = annual.loc[CEMENT_BASE_YEAR]
+    relative = annual.loc[CEMENT_BASE_YEAR:] / base - 1
+    relative.loc[CEMENT_BASE_YEAR] = base / annual.loc[CEMENT_BASE_YEAR - 1] - 1
+    factors = 1 + CEMENT_ELASTICITY_OF_CHANGE * relative
+
+    frames = [
+        pd.DataFrame({
+            "End use sector": sector,
+            "Time": factors.index,
+            "Value": factors.to_numpy(),
+        })
+        for sector in sectors
+    ]
+    return pd.concat(frames, ignore_index=True)
+
+
+# --------------------------------------------------------------------------- #
 # material intensities
 # --------------------------------------------------------------------------- #
 # The P&S inventory sheets and the model's product dimensions name the same

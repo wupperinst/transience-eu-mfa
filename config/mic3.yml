@@ -1,0 +1,70 @@
+# =====================================================================
+# MIC3 -- the supply module for the core model, EU MFA.
+#
+# EU MFA takes its data from OPEN-GEM, OPEN-PROM and the P&S database;
+# this step turns all of it into model input.
+#
+#   python eumfa_mic3.py         # this step: refresh the inputs
+#   python eumfa_buildings.py    # run the buildings sub-module
+#   python eumfa_vehicles.py     # run the vehicles sub-module
+#
+# All paths are relative to the repository root, the same convention
+# run_eumfa uses for data/... paths.
+# =====================================================================
+model_class: 'mic3'
+
+# --- Raw upstream inputs (data, not code) ----------------------------
+inputs:
+  opengem: 'data/MIC3_models/input/datasets/OPEN_GEM_REPORT.xlsx'
+  ps_database: 'data/MIC3_models/input/datasets/TRANSIENCE_P&S_Database_v1.01.xlsx'
+  # Calibrated population 2020-2024, exported once from the residential
+  # stock workbook; OPEN-GEM supplies 2025 onwards.
+  population_history: 'data/MIC3_models/input/datasets/population_history.csv'
+  # --- vehicles sub-module
+  openprom: 'data/MIC3_models/input/datasets/Open-prom.xlsx'
+  eurostat: 'data/MIC3_models/input/datasets/Eurostat data.xlsx'
+
+# --- Outputs ----------------------------------------------------------
+output:
+  # Where the buildings sub-module reads its parameters from.
+  datasets: 'data/baseline_buildings/input/datasets'
+  # Where the vehicles sub-module reads its inflow from.
+  # NOTE: the OPEN-PROM output covers 2023-2050 only (per project decision).
+  vehicle_inflow: 'data/baseline_vehicles/input/datasets/vehicle_inflow.csv'
+  # Where the cement sub-modules read growth_rate.csv from. The same file is
+  # written to both: cement_topdown reads the first, eumfa_combined the second.
+  cement_datasets:
+    - 'data/baseline_cement_topdown/input/datasets'
+    - 'data/baseline_cement_stock_flows/input/datasets'
+  # Provenance copies kept in the MIC3 module's own output area.
+  archive: 'data/MIC3_models/output'
+
+# Back up the existing vehicle_inflow.csv before overwriting (once).
+backup_existing: True
+
+# Translate the buildings material intensities from the P&S database.
+# Off by default: the intensities already ship with the model, and leaving
+# this False means a P&S change cannot move the model's numbers unasked.
+# Turning it on reproduces the shipped files exactly from
+# MInventory_{material}_buildings (verified to 4e-7).
+translate_intensities: False
+
+# Which vehicle material intensities to translate from the P&S database.
+# Only the BASELINE steel scenario (vehicle_steel_intensity_B) is written;
+# the HSS_* and Redesign_* scenario files are never touched. Steel carries a
+# time dimension, which the P&S sheet does not: the value is broadcast across
+# the years below, matching the shipped baseline (which is constant over time).
+#
+# steel    : reproduces the shipped file exactly (max diff 6e-14) -- safe.
+# plastics : P&S is 15-18% LOWER for Fuel Cells - Hydrogen (32 of 384 rows).
+# glass    : the shipped file predates the current vehicle_types dimension --
+#            it carries Biodiesel and Methanol, which the model no longer has,
+#            and omits Fuel Cells - Hydrogen and Gas Turbine Kerosene, which it
+#            does. Those two therefore get zero glass today. Enabling glass
+#            fixes that but changes results.
+translate_vehicle_intensities: ['steel']
+vehicle_intensity_years: [2012, 2050]
+
+# logging
+logging:
+  level: 'INFO'   # DEBUG, INFO, WARNING, ERROR, CRITICAL

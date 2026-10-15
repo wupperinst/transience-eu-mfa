@@ -56,6 +56,9 @@ class Mic3Model:
         # own time dimension; keep that range so the file stays a drop-in match.
         span = cfg.get("vehicle_intensity_years")
         self.vehicle_intensity_years = list(range(span[0], span[1] + 1)) if span else None
+        self.cement_datasets_paths = [
+            self._resolve(p) for p in (output.get("cement_datasets") or [])
+        ]
 
     def _resolve(self, rel):
         if rel is None:
@@ -136,6 +139,28 @@ class Mic3Model:
         return tables
 
     # ----------------------------------------------------------------- #
+    # cement: OPEN-GEM
+    # ----------------------------------------------------------------- #
+    def run_cement_growth(self):
+        """Write growth_rate.csv for every cement sub-module that reads one."""
+        if not self.cement_datasets_paths:
+            logging.warning("[MIC3] no output.cement_datasets configured; skipping")
+            return None
+
+        logging.info("[MIC3] cement growth rate <- OPEN-GEM  %s", self.opengem_path.name)
+        sectors = self._dimension_items(
+            "end_use_sectors.csv", datasets_path=self.cement_datasets_paths[0]
+        )
+        table = prm.cement_growth_rate(self.opengem_path, sectors)
+        for datasets in self.cement_datasets_paths:
+            datasets.mkdir(parents=True, exist_ok=True)
+            table.to_csv(datasets / "growth_rate.csv", index=False, encoding="utf-8-sig")
+            logging.info("[MIC3]   wrote growth_rate.csv  %6d rows  %s",
+                         len(table), datasets)
+        self._archive(table, "cement_growth_rate")
+        return table
+
+    # ----------------------------------------------------------------- #
     # vehicles: OPEN-PROM
     # ----------------------------------------------------------------- #
     def run_vehicles(self):
@@ -202,4 +227,7 @@ class Mic3Model:
         vehicles = self.run_vehicles()
         if vehicles is not None:
             tables["vehicle_inflow"] = vehicles
+        cement_growth = self.run_cement_growth()
+        if cement_growth is not None:
+            tables["cement_growth_rate"] = cement_growth
         return tables
