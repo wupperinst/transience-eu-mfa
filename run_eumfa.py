@@ -47,20 +47,23 @@ def recalculate_mfa(model_config):
 
 def run_eumfa(cfg_file: str):
     model_config = get_model_config(cfg_file)
-    
-    # Check that input data folder exists and is not empty
-    input_path = f"data/{model_config['scenario']}_{model_config['model_class']}/input"
+
+    input_path = model_config.get(
+        "input_data_path",
+        f"data/{model_config['scenario']}_{model_config['model_class']}/input",
+    )
     if not os.path.exists(input_path):
         raise FileNotFoundError(f"Input data folder not found: {input_path}")
     if not os.listdir(input_path):
         raise ValueError(f"Input data folder is empty: {input_path}")
-    # Add input and output data paths to config
-    model_config['input_data_path'] = input_path
-    # If the config file specifies a variant, include it in the output path; otherwise, use a default output path.
-    try:
-        model_config['output_path'] = f"data/{model_config['scenario']}_{model_config['model_class']}/output_{model_config['variant']}"
-    except KeyError:
-        model_config['output_path'] = f"data/{model_config['scenario']}_{model_config['model_class']}/output"
+    model_config["input_data_path"] = input_path
+    if "output_path" not in model_config:
+        # Derive output path from variant, but don't pass variant to the model config
+        variant = model_config.pop("variant", None)
+        output_name = f"output_{variant}" if variant else "output"
+        model_config["output_path"] = (
+            f"data/{model_config['scenario']}_{model_config['model_class']}/{output_name}"
+        )
 
     try:
         logging_level = model_config['logging']['level'].upper()

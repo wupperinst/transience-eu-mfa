@@ -333,7 +333,15 @@ class SteelMFASystem(fd.MFASystem):
         #aux["EOLFlow"].set_values(stk["End use stock"]._outflow_by_cohort)
         #flw["End use stock => Waste management"][...] = aux["EOLFlow"] * prm["EoLRecoveryRate"] # F_4_5: Collected end-of-life steel products
         
-        flw["End use stock => Waste management"][...] = stk["End use stock"].outflow * prm["EoLRecoveryRate"] # F_4_5: Collected end-of-life steel products
+        # Reused steel is diverted from the end-of-life outflow before recovery, so it
+        # never reaches waste management. Available scrap (derived below from waste
+        # management) therefore drops automatically. SteelReuse is only present when
+        # reuse is enabled in the config.
+        eol_outflow = stk["End use stock"].outflow
+        if "SteelReuse" in prm:
+            eol_outflow = eol_outflow - prm["SteelReuse"]
+
+        flw["End use stock => Waste management"][...] = eol_outflow * prm["EoLRecoveryRate"] # F_4_5: Collected end-of-life steel products
         flw["End use stock => sysenv"][...] = stk["End use stock"].outflow * (1 - prm["EoLRecoveryRate"]) # F_4_0: Lost end-of-life steel products
 
         ### WASTE MANAGEMENT

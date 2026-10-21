@@ -15,7 +15,7 @@ class PlasticsModel:
         self.cfg = cfg
         try:
             logging.info(f"Plastics EU-MFA | scenario: {self.cfg.scenario} | variant: {self.cfg.variant}")
-        except KeyError:
+        except (KeyError, AttributeError):
             logging.info(f"Plastics EU-MFA | scenario: {self.cfg.scenario}")
         if self.cfg.customization.circular:
             logging.info("Initializing model with circular customization.")
