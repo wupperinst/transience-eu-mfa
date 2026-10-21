@@ -1253,6 +1253,51 @@ def _map_vehicles_to_steel(
     return bu_demand, bu_eol
 
 
+def _map_vehicles_steel_reuse(
+    flows: Optional[Dict],
+    time_col: str,
+    value_col: str,
+) -> pd.DataFrame:
+    """Map the vehicles steel reuse flow to steel model dimensions.
+
+    Returns the reused steel tonnage (diverted from end-of-life) on steel
+    dimensions. Empty DataFrame if the flow is absent.
+    """
+    empty_df = pd.DataFrame(
+        columns=[
+            time_col,
+            "region",
+            "sector",
+            "intermediate",
+            "product",
+            "element",
+            value_col,
+        ]
+    )
+
+    if not flows:
+        return empty_df
+
+    df_reuse = flows.get(SOURCE_FLOWS.vehicles_steel_reuse)
+    if df_reuse is None:
+        return empty_df
+
+    logging.info(f"[Steel] Mapping vehicles steel reuse: {len(df_reuse)} rows")
+    mapped_reuse = map_bottom_up_to_target(
+        flow_df=aggregate_vehicle_type(df_reuse.reset_index(), value_col=value_col),
+        region_src_dim="Region",
+        region_tgt_dim="region",
+        regions_csv=MAPPING["vehicles_steel_regions"],
+        products_csv=MAPPING["vehicles_steel_products"],
+        target="steel",
+        value_col=value_col,
+    )
+    reuse = std_steel_cols(mapped_reuse)
+    if "Time" in reuse.columns and time_col not in reuse.columns:
+        reuse = reuse.rename(columns={"Time": time_col})
+    return reuse
+
+
 def _map_vehicles_to_plastics_reuse(
     flows: Optional[Dict],
     time_col: str,
@@ -1599,6 +1644,7 @@ def _run_future_steel_model_and_combine(
     time_col: str,
     value_col: str,
     base_year: int,
+    reuse_df: Optional[pd.DataFrame] = None,
 ) -> None:
     """Run future steel model and combine with historic outputs."""
     final_demand_path = os.path.join(TOPDOWN["steel_fd_sv_gr_dir"], "FinalDemand.csv")
@@ -1629,6 +1675,31 @@ def _run_future_steel_model_and_combine(
 
     export_df = export_df[[c for c in final_demand_cols if c in export_df.columns]]
     export_df.to_csv(final_demand_path, index=False)
+
+    # Write the reused steel (diverted from EOL) as the SteelReuse parameter consumed
+    # by the combined steel MFA (reuse enabled in config/steel_combined_future.yml).
+    # Restricted to future years so the verbatim historic baseline is unaffected.
+    reuse_cols = ["region", "time", "sector", "intermediate", "product", "element", "value"]
+    reuse_path = os.path.join(TOPDOWN["steel_fd_sv_gr_dir"], "SteelReuse.csv")
+    ensure_dir(reuse_path)
+    if reuse_df is not None and not reuse_df.empty:
+        reuse_out = reuse_df.copy()
+        if time_col != "time" and time_col in reuse_out.columns:
+            reuse_out = reuse_out.rename(columns={time_col: "time"})
+        if value_col != "value" and value_col in reuse_out.columns:
+            reuse_out = reuse_out.rename(columns={value_col: "value"})
+        for col in reuse_cols:
+            if col not in reuse_out.columns:
+                reuse_out[col] = "All" if col == "element" else "Unknown"
+        reuse_out["value"] = pd.to_numeric(reuse_out["value"], errors="coerce").fillna(0.0).abs()
+        reuse_out = reuse_out[reuse_out["time"] >= base_year]
+        reuse_out = reuse_out.groupby(
+            [c for c in reuse_cols if c != "value"], as_index=False
+        )["value"].sum()
+    else:
+        reuse_out = pd.DataFrame(columns=reuse_cols)
+    reuse_out[reuse_cols].to_csv(reuse_path, index=False)
+    logging.info(f"[Steel] SteelReuse saved: {reuse_path} ({len(reuse_out)} rows)")
 
     try:
         from src.steel.steel_model import SteelModel
@@ -1687,6 +1758,7 @@ def run_steel_coupling(
     bu_demand_vehicles, bu_eol_vehicles = _map_vehicles_to_steel(
         flows_vehicles, time_col, value_col
     )
+    reuse_vehicles = _map_vehicles_steel_reuse(flows_vehicles, time_col, value_col)
 
     base_dir = TOPDOWN["steel_fd_sv_gr_dir"]
     for filename, df in {
@@ -1828,6 +1900,7 @@ def run_steel_coupling(
         time_col=time_col,
         value_col=value_col,
         base_year=base_year,
+        reuse_df=reuse_vehicles,
     )
 
 
