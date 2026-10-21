@@ -1,0 +1,267 @@
+region,time,sector,intermediate,product,element,value
+EU27+1,2023,Construction,Steel Intermediary,Light Sections,All,2518.77784
+EU27+1,2023,Construction,Steel Intermediary,Light Sections,Cu,0
+EU27+1,2023,Construction,Steel Intermediary,Heavy Sections,All,4651.259785
+EU27+1,2023,Construction,Steel Intermediary,Heavy Sections,Cu,0
+EU27+1,2023,Construction,Steel Intermediary,Rail,All,989.0730389
+EU27+1,2023,Construction,Steel Intermediary,Rail,Cu,0
+EU27+1,2023,Construction,Steel Intermediary,Rebar,All,10097.04043
+EU27+1,2023,Construction,Steel Intermediary,Rebar,Cu,0
+EU27+1,2023,Construction,Steel Intermediary,Wire Rod,All,9142.464996
+EU27+1,2023,Construction,Steel Intermediary,Wire Rod,Cu,0
+EU27+1,2023,Construction,Steel Intermediary,Hot Rolled Bar,All,234.7549442
+EU27+1,2023,Construction,Steel Intermediary,Hot Rolled Bar,Cu,0
+EU27+1,2023,Construction,Steel Intermediary,Plate,All,301.4235353
+EU27+1,2023,Construction,Steel Intermediary,Plate,Cu,0
+EU27+1,2023,Construction,Steel Intermediary,Hot Rolled Coil,All,12247.56845
+EU27+1,2023,Construction,Steel Intermediary,Hot Rolled Coil,Cu,0
+EU27+1,2023,Construction,Steel Intermediary,Hot Rolled Coil Galvanized,All,926.3103575
+EU27+1,2023,Construction,Steel Intermediary,Hot Rolled Coil Galvanized,Cu,0
+EU27+1,2023,Construction,Steel Intermediary,Hot Rolled Narrow Strip,All,926.4535223
+EU27+1,2023,Construction,Steel Intermediary,Hot Rolled Narrow Strip,Cu,0
+EU27+1,2023,Construction,Steel Intermediary,Cold Rolled Coil,All,5611.818735
+EU27+1,2023,Construction,Steel Intermediary,Cold Rolled Coil,Cu,0
+EU27+1,2023,Construction,Steel Intermediary,Cold Rolled Coil Galvanized,All,0
+EU27+1,2023,Construction,Steel Intermediary,Cold Rolled Coil Galvanized,Cu,0
+EU27+1,2023,Construction,Steel Intermediary,Cold Rolled Coil Organic Coated,All,0
+EU27+1,2023,Construction,Steel Intermediary,Cold Rolled Coil Organic Coated,Cu,0
+EU27+1,2023,Construction,Steel Intermediary,Cold Rolled Coil Tinned,All,0
+EU27+1,2023,Construction,Steel Intermediary,Cold Rolled Coil Tinned,Cu,0
+EU27+1,2023,Construction,Steel Intermediary,Electrical Sheet,All,0
+EU27+1,2023,Construction,Steel Intermediary,Electrical Sheet,Cu,0
+EU27+1,2023,Construction,Steel Intermediary,Welded Tube,All,6661.259462
+EU27+1,2023,Construction,Steel Intermediary,Welded Tube,Cu,0
+EU27+1,2023,Construction,Steel Intermediary,Seamless Tube,All,1352.858968
+EU27+1,2023,Construction,Steel Intermediary,Seamless Tube,Cu,0
+EU27+1,2023,Construction,Steel Intermediary,Cast Iron,All,3021.086214
+EU27+1,2023,Construction,Steel Intermediary,Cast Iron,Cu,0
+EU27+1,2023,Construction,Steel Intermediary,Cast Steel,All,0
+EU27+1,2023,Construction,Steel Intermediary,Cast Steel,Cu,0
+EU27+1,2023,Automotive,Steel Intermediary,Light Sections,All,0
+EU27+1,2023,Automotive,Steel Intermediary,Light Sections,Cu,0
+EU27+1,2023,Automotive,Steel Intermediary,Heavy Sections,All,0
+EU27+1,2023,Automotive,Steel Intermediary,Heavy Sections,Cu,0
+EU27+1,2023,Automotive,Steel Intermediary,Rail,All,0
+EU27+1,2023,Automotive,Steel Intermediary,Rail,Cu,0
+EU27+1,2023,Automotive,Steel Intermediary,Rebar,All,0
+EU27+1,2023,Automotive,Steel Intermediary,Rebar,Cu,0
+EU27+1,2023,Automotive,Steel Intermediary,Wire Rod,All,1510.332366
+EU27+1,2023,Automotive,Steel Intermediary,Wire Rod,Cu,0
+EU27+1,2023,Automotive,Steel Intermediary,Hot Rolled Bar,All,1158.765577
+EU27+1,2023,Automotive,Steel Intermediary,Hot Rolled Bar,Cu,0
+EU27+1,2023,Automotive,Steel Intermediary,Plate,All,0
+EU27+1,2023,Automotive,Steel Intermediary,Plate,Cu,0
+EU27+1,2023,Automotive,Steel Intermediary,Hot Rolled Coil,All,1077.791979
+EU27+1,2023,Automotive,Steel Intermediary,Hot Rolled Coil,Cu,0
+EU27+1,2023,Automotive,Steel Intermediary,Hot Rolled Coil Galvanized,All,0
+EU27+1,2023,Automotive,Steel Intermediary,Hot Rolled Coil Galvanized,Cu,0
+EU27+1,2023,Automotive,Steel Intermediary,Hot Rolled Narrow Strip,All,0
+EU27+1,2023,Automotive,Steel Intermediary,Hot Rolled Narrow Strip,Cu,0
+EU27+1,2023,Automotive,Steel Intermediary,Cold Rolled Coil,All,0
+EU27+1,2023,Automotive,Steel Intermediary,Cold Rolled Coil,Cu,0
+EU27+1,2023,Automotive,Steel Intermediary,Cold Rolled Coil Galvanized,All,10220.3844
+EU27+1,2023,Automotive,Steel Intermediary,Cold Rolled Coil Galvanized,Cu,0
+EU27+1,2023,Automotive,Steel Intermediary,Cold Rolled Coil Organic Coated,All,0
+EU27+1,2023,Automotive,Steel Intermediary,Cold Rolled Coil Organic Coated,Cu,0
+EU27+1,2023,Automotive,Steel Intermediary,Cold Rolled Coil Tinned,All,0
+EU27+1,2023,Automotive,Steel Intermediary,Cold Rolled Coil Tinned,Cu,0
+EU27+1,2023,Automotive,Steel Intermediary,Electrical Sheet,All,0
+EU27+1,2023,Automotive,Steel Intermediary,Electrical Sheet,Cu,0
+EU27+1,2023,Automotive,Steel Intermediary,Welded Tube,All,203.5331381
+EU27+1,2023,Automotive,Steel Intermediary,Welded Tube,Cu,0
+EU27+1,2023,Automotive,Steel Intermediary,Seamless Tube,All,568.9816227
+EU27+1,2023,Automotive,Steel Intermediary,Seamless Tube,Cu,0
+EU27+1,2023,Automotive,Steel Intermediary,Cast Iron,All,2462.552499
+EU27+1,2023,Automotive,Steel Intermediary,Cast Iron,Cu,0
+EU27+1,2023,Automotive,Steel Intermediary,Cast Steel,All,0
+EU27+1,2023,Automotive,Steel Intermediary,Cast Steel,Cu,0
+EU27+1,2023,Other Transport,Steel Intermediary,Light Sections,All,0
+EU27+1,2023,Other Transport,Steel Intermediary,Light Sections,Cu,0
+EU27+1,2023,Other Transport,Steel Intermediary,Heavy Sections,All,0
+EU27+1,2023,Other Transport,Steel Intermediary,Heavy Sections,Cu,0
+EU27+1,2023,Other Transport,Steel Intermediary,Rail,All,0
+EU27+1,2023,Other Transport,Steel Intermediary,Rail,Cu,0
+EU27+1,2023,Other Transport,Steel Intermediary,Rebar,All,0
+EU27+1,2023,Other Transport,Steel Intermediary,Rebar,Cu,0
+EU27+1,2023,Other Transport,Steel Intermediary,Wire Rod,All,155.0214659
+EU27+1,2023,Other Transport,Steel Intermediary,Wire Rod,Cu,0
+EU27+1,2023,Other Transport,Steel Intermediary,Hot Rolled Bar,All,73.21761049
+EU27+1,2023,Other Transport,Steel Intermediary,Hot Rolled Bar,Cu,0
+EU27+1,2023,Other Transport,Steel Intermediary,Plate,All,2183.100332
+EU27+1,2023,Other Transport,Steel Intermediary,Plate,Cu,0
+EU27+1,2023,Other Transport,Steel Intermediary,Hot Rolled Coil,All,0
+EU27+1,2023,Other Transport,Steel Intermediary,Hot Rolled Coil,Cu,0
+EU27+1,2023,Other Transport,Steel Intermediary,Hot Rolled Coil Galvanized,All,0
+EU27+1,2023,Other Transport,Steel Intermediary,Hot Rolled Coil Galvanized,Cu,0
+EU27+1,2023,Other Transport,Steel Intermediary,Hot Rolled Narrow Strip,All,0
+EU27+1,2023,Other Transport,Steel Intermediary,Hot Rolled Narrow Strip,Cu,0
+EU27+1,2023,Other Transport,Steel Intermediary,Cold Rolled Coil,All,0
+EU27+1,2023,Other Transport,Steel Intermediary,Cold Rolled Coil,Cu,0
+EU27+1,2023,Other Transport,Steel Intermediary,Cold Rolled Coil Galvanized,All,0
+EU27+1,2023,Other Transport,Steel Intermediary,Cold Rolled Coil Galvanized,Cu,0
+EU27+1,2023,Other Transport,Steel Intermediary,Cold Rolled Coil Organic Coated,All,0
+EU27+1,2023,Other Transport,Steel Intermediary,Cold Rolled Coil Organic Coated,Cu,0
+EU27+1,2023,Other Transport,Steel Intermediary,Cold Rolled Coil Tinned,All,0
+EU27+1,2023,Other Transport,Steel Intermediary,Cold Rolled Coil Tinned,Cu,0
+EU27+1,2023,Other Transport,Steel Intermediary,Electrical Sheet,All,0
+EU27+1,2023,Other Transport,Steel Intermediary,Electrical Sheet,Cu,0
+EU27+1,2023,Other Transport,Steel Intermediary,Welded Tube,All,243.6019772
+EU27+1,2023,Other Transport,Steel Intermediary,Welded Tube,Cu,0
+EU27+1,2023,Other Transport,Steel Intermediary,Seamless Tube,All,113.4991657
+EU27+1,2023,Other Transport,Steel Intermediary,Seamless Tube,Cu,0
+EU27+1,2023,Other Transport,Steel Intermediary,Cast Iron,All,154.9816409
+EU27+1,2023,Other Transport,Steel Intermediary,Cast Iron,Cu,0
+EU27+1,2023,Other Transport,Steel Intermediary,Cast Steel,All,0
+EU27+1,2023,Other Transport,Steel Intermediary,Cast Steel,Cu,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Light Sections,All,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Light Sections,Cu,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Heavy Sections,All,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Heavy Sections,Cu,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Rail,All,109.5648638
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Rail,Cu,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Rebar,All,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Rebar,Cu,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Wire Rod,All,118.1731699
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Wire Rod,Cu,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Hot Rolled Bar,All,2155.360824
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Hot Rolled Bar,Cu,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Plate,All,1567.45208
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Plate,Cu,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Hot Rolled Coil,All,4508.655109
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Hot Rolled Coil,Cu,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Hot Rolled Coil Galvanized,All,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Hot Rolled Coil Galvanized,Cu,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Hot Rolled Narrow Strip,All,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Hot Rolled Narrow Strip,Cu,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Cold Rolled Coil,All,1678.365012
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Cold Rolled Coil,Cu,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Cold Rolled Coil Galvanized,All,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Cold Rolled Coil Galvanized,Cu,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Cold Rolled Coil Organic Coated,All,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Cold Rolled Coil Organic Coated,Cu,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Cold Rolled Coil Tinned,All,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Cold Rolled Coil Tinned,Cu,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Electrical Sheet,All,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Electrical Sheet,Cu,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Welded Tube,All,2894.850323
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Welded Tube,Cu,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Seamless Tube,All,238.0182772
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Seamless Tube,Cu,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Cast Iron,All,1090.124169
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Cast Iron,Cu,0
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Cast Steel,All,239.3803351
+EU27+1,2023,Mechanical Engineering,Steel Intermediary,Cast Steel,Cu,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Light Sections,All,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Light Sections,Cu,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Heavy Sections,All,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Heavy Sections,Cu,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Rail,All,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Rail,Cu,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Rebar,All,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Rebar,Cu,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Wire Rod,All,715.512628
+EU27+1,2023,Miscellaneous,Steel Intermediary,Wire Rod,Cu,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Hot Rolled Bar,All,186.0217718
+EU27+1,2023,Miscellaneous,Steel Intermediary,Hot Rolled Bar,Cu,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Plate,All,168.0768813
+EU27+1,2023,Miscellaneous,Steel Intermediary,Plate,Cu,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Hot Rolled Coil,All,206.9506321
+EU27+1,2023,Miscellaneous,Steel Intermediary,Hot Rolled Coil,Cu,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Hot Rolled Coil Galvanized,All,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Hot Rolled Coil Galvanized,Cu,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Hot Rolled Narrow Strip,All,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Hot Rolled Narrow Strip,Cu,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Cold Rolled Coil,All,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Cold Rolled Coil,Cu,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Cold Rolled Coil Galvanized,All,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Cold Rolled Coil Galvanized,Cu,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Cold Rolled Coil Organic Coated,All,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Cold Rolled Coil Organic Coated,Cu,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Cold Rolled Coil Tinned,All,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Cold Rolled Coil Tinned,Cu,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Electrical Sheet,All,1488.643399
+EU27+1,2023,Miscellaneous,Steel Intermediary,Electrical Sheet,Cu,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Welded Tube,All,547.1356012
+EU27+1,2023,Miscellaneous,Steel Intermediary,Welded Tube,Cu,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Seamless Tube,All,63.73042924
+EU27+1,2023,Miscellaneous,Steel Intermediary,Seamless Tube,Cu,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Cast Iron,All,594.2903132
+EU27+1,2023,Miscellaneous,Steel Intermediary,Cast Iron,Cu,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Cast Steel,All,0
+EU27+1,2023,Miscellaneous,Steel Intermediary,Cast Steel,Cu,0
+EU27+1,2023,Metalware,Steel Intermediary,Light Sections,All,0
+EU27+1,2023,Metalware,Steel Intermediary,Light Sections,Cu,0
+EU27+1,2023,Metalware,Steel Intermediary,Heavy Sections,All,0
+EU27+1,2023,Metalware,Steel Intermediary,Heavy Sections,Cu,0
+EU27+1,2023,Metalware,Steel Intermediary,Rail,All,0
+EU27+1,2023,Metalware,Steel Intermediary,Rail,Cu,0
+EU27+1,2023,Metalware,Steel Intermediary,Rebar,All,0
+EU27+1,2023,Metalware,Steel Intermediary,Rebar,Cu,0
+EU27+1,2023,Metalware,Steel Intermediary,Wire Rod,All,5099.37075
+EU27+1,2023,Metalware,Steel Intermediary,Wire Rod,Cu,0
+EU27+1,2023,Metalware,Steel Intermediary,Hot Rolled Bar,All,2369.433313
+EU27+1,2023,Metalware,Steel Intermediary,Hot Rolled Bar,Cu,0
+EU27+1,2023,Metalware,Steel Intermediary,Plate,All,1682.105939
+EU27+1,2023,Metalware,Steel Intermediary,Plate,Cu,0
+EU27+1,2023,Metalware,Steel Intermediary,Hot Rolled Coil,All,878.6708446
+EU27+1,2023,Metalware,Steel Intermediary,Hot Rolled Coil,Cu,0
+EU27+1,2023,Metalware,Steel Intermediary,Hot Rolled Coil Galvanized,All,0
+EU27+1,2023,Metalware,Steel Intermediary,Hot Rolled Coil Galvanized,Cu,0
+EU27+1,2023,Metalware,Steel Intermediary,Hot Rolled Narrow Strip,All,940.0200832
+EU27+1,2023,Metalware,Steel Intermediary,Hot Rolled Narrow Strip,Cu,0
+EU27+1,2023,Metalware,Steel Intermediary,Cold Rolled Coil,All,594.8950666
+EU27+1,2023,Metalware,Steel Intermediary,Cold Rolled Coil,Cu,0
+EU27+1,2023,Metalware,Steel Intermediary,Cold Rolled Coil Galvanized,All,0
+EU27+1,2023,Metalware,Steel Intermediary,Cold Rolled Coil Galvanized,Cu,0
+EU27+1,2023,Metalware,Steel Intermediary,Cold Rolled Coil Organic Coated,All,2222.604392
+EU27+1,2023,Metalware,Steel Intermediary,Cold Rolled Coil Organic Coated,Cu,0
+EU27+1,2023,Metalware,Steel Intermediary,Cold Rolled Coil Tinned,All,2225.236992
+EU27+1,2023,Metalware,Steel Intermediary,Cold Rolled Coil Tinned,Cu,0
+EU27+1,2023,Metalware,Steel Intermediary,Electrical Sheet,All,0
+EU27+1,2023,Metalware,Steel Intermediary,Electrical Sheet,Cu,0
+EU27+1,2023,Metalware,Steel Intermediary,Welded Tube,All,165.9305672
+EU27+1,2023,Metalware,Steel Intermediary,Welded Tube,Cu,0
+EU27+1,2023,Metalware,Steel Intermediary,Seamless Tube,All,77.31046015
+EU27+1,2023,Metalware,Steel Intermediary,Seamless Tube,Cu,0
+EU27+1,2023,Metalware,Steel Intermediary,Cast Iron,All,1090.826318
+EU27+1,2023,Metalware,Steel Intermediary,Cast Iron,Cu,0
+EU27+1,2023,Metalware,Steel Intermediary,Cast Steel,All,233.2586061
+EU27+1,2023,Metalware,Steel Intermediary,Cast Steel,Cu,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Light Sections,All,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Light Sections,Cu,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Heavy Sections,All,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Heavy Sections,Cu,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Rail,All,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Rail,Cu,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Rebar,All,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Rebar,Cu,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Wire Rod,All,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Wire Rod,Cu,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Hot Rolled Bar,All,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Hot Rolled Bar,Cu,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Plate,All,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Plate,Cu,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Hot Rolled Coil,All,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Hot Rolled Coil,Cu,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Hot Rolled Coil Galvanized,All,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Hot Rolled Coil Galvanized,Cu,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Hot Rolled Narrow Strip,All,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Hot Rolled Narrow Strip,Cu,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Cold Rolled Coil,All,1677.417772
+EU27+1,2023,Domestic appliances,Steel Intermediary,Cold Rolled Coil,Cu,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Cold Rolled Coil Galvanized,All,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Cold Rolled Coil Galvanized,Cu,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Cold Rolled Coil Organic Coated,All,1462.311267
+EU27+1,2023,Domestic appliances,Steel Intermediary,Cold Rolled Coil Organic Coated,Cu,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Cold Rolled Coil Tinned,All,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Cold Rolled Coil Tinned,Cu,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Electrical Sheet,All,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Electrical Sheet,Cu,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Welded Tube,All,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Welded Tube,Cu,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Seamless Tube,All,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Seamless Tube,Cu,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Cast Iron,All,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Cast Iron,Cu,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Cast Steel,All,0
+EU27+1,2023,Domestic appliances,Steel Intermediary,Cast Steel,Cu,0
