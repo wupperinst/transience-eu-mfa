@@ -47,6 +47,8 @@ class PlasticsCustomizationCfg(ModelCustomization):
 class SteelCustomizationCfg(ModelCustomization):
 
     model_driven: str = "production"  # options: production, final_demand
+    prodcom: bool = False # Keep it False - steel model does not have prodcom-specific features, but needed for using shared methods with plastics model
+    circular: bool = False # Keep it False - steel model does not have circular-specific features, but needed for using shared methods with plastics model
 
 
 class VisualizationCfg(EUMFABaseModel):

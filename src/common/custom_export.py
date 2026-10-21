@@ -82,7 +82,10 @@ class CustomDataExporter(EUMFABaseModel):
                 # 
                 if not mfa.cfg.customization.prodcom:
                     if not mfa.cfg.customization.circular:
-                        dimensions = mfa.dims.get_subset(dims=('t','c','r','s','p','e')) # get dimensions including age-cohort
+                        if mfa.cfg.model_class == "plastics":
+                            dimensions = mfa.dims.get_subset(dims=('t','c','r','s','p','e')) # get dimensions including age-cohort
+                        elif mfa.cfg.model_class == "steel":
+                            dimensions = mfa.dims.get_subset(dims=('t','c','r','s','i','p','e')) # get dimensions including age-cohort
                     else:
                         dimensions = mfa.dims.get_subset(dims=('t','c','r','s','p','e','x','z')) # get dimensions including age-cohort and reuse cycles
                 else:

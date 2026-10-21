@@ -67,6 +67,19 @@ class SteelModel:
             logging.info("Exporting MFA system to csv.")
             self.data_writer.export_mfa(mfa=self.mfa)
 
+        if self.cfg.selected_export["slice_stocks"]:
+            logging.info("Exporting stock slices to csv.")
+            # Export sliced stocks with age-cohort dimension
+            self.data_writer.export_sliced_stocks_by_age_cohort_to_csv(
+                mfa=self.mfa, 
+                stock_names=self.cfg.selected_export["csv_selected_stocks"], 
+                slice_dicts=self.cfg.selected_export["csv_slice_stocks"])
+            # Export stock slices aggregating age-cohorts
+            self.data_writer.export_sliced_stocks_to_csv(
+                mfa=self.mfa, 
+                stock_names=self.cfg.selected_export["csv_selected_stocks"], 
+                slice_dicts=self.cfg.selected_export["csv_slice_stocks"])
+
         logging.info("Visualizing results.")
         self.data_writer.visualize_results(model=self, flows_dfs=flows_as_dataframes, scenario=self.cfg.scenario)
 
