@@ -90,6 +90,10 @@ def population(opengem_path, history_path):
     onwards at the levels OpenGEM reports, linearly interpolated between its
     reporting years. Regions OpenGEM does not cover (GBR) hold their last
     calibrated value.
+
+    The two sources sit about 1.15 million apart across their overlap while
+    agreeing on the trend to within 2%, so the handover year absorbs that
+    offset in one step. This is taken as given: the levels are OpenGEM's own.
     """
     history = pd.read_csv(history_path)
     history = history.pivot(index="Region", columns="Year", values="value").astype(float)

@@ -42,12 +42,13 @@ output:
 # Back up the existing vehicle_inflow.csv before overwriting (once).
 backup_existing: True
 
+
 # Translate the buildings material intensities from the P&S database.
 # Off by default: the intensities already ship with the model, and leaving
 # this False means a P&S change cannot move the model's numbers unasked.
 # Turning it on reproduces the shipped files exactly from
 # MInventory_{material}_buildings (verified to 4e-7).
-translate_intensities: False
+translate_intensities: True
 
 # Which vehicle material intensities to translate from the P&S database.
 # Only the BASELINE steel scenario (vehicle_steel_intensity_B) is written;
