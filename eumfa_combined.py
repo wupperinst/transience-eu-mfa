@@ -61,6 +61,16 @@ COMBINE_CEMENT = False
 DOWNSTREAM_ONLY = False
 BASE_YEAR = 2023
 
+# The historic plastics leg. 'plastics_baseline_fd' is final-demand driven, the
+# same drive the future leg uses, and its FinalDemand.csv is the file the
+# fd-sv-gr start_value was taken from -- so both legs of the splice are anchored
+# to one dataset. 'plastics_baseline_pd' is production-driven and anchored to a
+# different workbook, which put a level step at the base year.
+HISTORIC_PLASTICS_CONFIG = "config/plastics_baseline_fd.yml"
+# Written by _export_historic_plastics_flows and read back by
+# _combine_plastics_flows, independently of the scenario name in the config.
+HISTORIC_PLASTICS_FLOW_DIR = "data/baseline_fd_plastics/output/export/flows"
+
 # Global FlowCalculator instance
 
 fc = FlowCalculator()
@@ -1942,16 +1952,30 @@ def _run_historic_plastics_model(
         ]
     )
 
+    # A missing config is a deployment error, not a recoverable data condition,
+    # so it is raised rather than caught below: swallowing it used to leave the
+    # flows from an earlier run in place for _combine_plastics_flows to pick up.
+    if not os.path.exists(HISTORIC_PLASTICS_CONFIG):
+        raise FileNotFoundError(
+            f"Historic plastics config not found: {HISTORIC_PLASTICS_CONFIG}"
+        )
+
+    # Clear the previous run's flows first. If this run then fails, the combine
+    # step finds nothing to pair and says so, instead of splicing stale years.
+    if os.path.isdir(HISTORIC_PLASTICS_FLOW_DIR):
+        for stale in glob.glob(os.path.join(HISTORIC_PLASTICS_FLOW_DIR, "*.csv")):
+            os.remove(stale)
+
     try:
         from src.plastics.plastics_model import PlasticsModel
         from src.common.common_cfg import GeneralCfg
 
         # Load and modify config
-        with open("config/plastics_baseline_pd.yml", "r") as f:
+        with open(HISTORIC_PLASTICS_CONFIG, "r") as f:
             config_dict = yaml.safe_load(f)
 
-        config_dict["input_data_path"] = "data/baseline_pd_plastics/input"
-        config_dict["output_path"] = "data/baseline_pd_plastics/output"
+        config_dict["input_data_path"] = "data/baseline_fd_plastics/input"
+        config_dict["output_path"] = "data/baseline_fd_plastics/output"
         config_dict["do_export"] = {"pickle": False, "csv": False}
         config_dict["visualization"] = {
             "inflow": {"do_visualize": False},
@@ -2018,16 +2042,30 @@ def _run_historic_plastics_model(
         return empty_df, empty_df
 
 
+# Whichever of these the historic config's drive loads is the one to blank: the
+# production drive loads DomesticDemand, the final_demand drive FinalDemand.
+# Both carry dims ("r", "t", "s", "p", "e"), so time is axis 1 either way.
+PLASTICS_DRIVE_PARAMETERS = ("DomesticDemand", "FinalDemand")
+
+
 def _zero_future_parameters(model, time_items: List, base_year: int) -> None:
     """Zero out parameters for years >= base_year in historic model."""
-    # Zero DomesticDemand
-    demand_param = model.mfa.parameters["DomesticDemand"]
+    # Zero the drive parameter
+    drive = next(
+        (n for n in PLASTICS_DRIVE_PARAMETERS if n in model.mfa.parameters), None
+    )
+    if drive is None:
+        raise KeyError(
+            "Historic plastics model loads none of "
+            f"{PLASTICS_DRIVE_PARAMETERS}: nothing to truncate at {base_year}"
+        )
+    demand_param = model.mfa.parameters[drive]
     zeroed_years = 0
     for t_idx, year in enumerate(time_items):
         if year >= base_year:
             demand_param.values[:, t_idx, :, :, :] = 0.0
             zeroed_years += 1
-    logging.info(f"[Plastics] Zeroed DomesticDemand for {zeroed_years} years")
+    logging.info(f"[Plastics] Zeroed {drive} for {zeroed_years} years")
 
     # Zero import/export parameters
     for pname in ["ImportNew", "ExportNew", "ImportRateNew", "ExportRateNew"]:
@@ -2047,7 +2085,7 @@ def _zero_future_parameters(model, time_items: List, base_year: int) -> None:
 
 def _export_historic_plastics_flows(model) -> None:
     """Export historic plastics flows with cohort aggregation."""
-    output_dir = "data/baseline_pd_plastics/output/export/flows"
+    output_dir = HISTORIC_PLASTICS_FLOW_DIR
     os.makedirs(output_dir, exist_ok=True)
 
     export_flows = [
@@ -2410,7 +2448,7 @@ def _subtract_proportional_plastics_reuse(
 
 def _combine_plastics_flows(base_year: int) -> None:
     """Combine historic and future plastics flow CSVs."""
-    historic_dir = "data/baseline_pd_plastics/output/export/flows"
+    historic_dir = HISTORIC_PLASTICS_FLOW_DIR
     future_dir = "data/combined_plastics_future/output/export/flows"
     combined_dir = "data/combined_plastics/output/flows"
 

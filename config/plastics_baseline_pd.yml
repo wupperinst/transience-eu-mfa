@@ -2,6 +2,10 @@
 model_class: 'plastics'
 scenario: 'baseline_pd'
 
+# data paths
+input_data_path: 'data/baseline_pd_plastics/input'
+output_path: 'data/baseline_pd_plastics/output'
+
 # logging
 logging:
   level: 'INFO' # options: DEBUG, INFO, WARNING, ERROR, CRITICAL

@@ -1,3 +1,10 @@
 original_parameter,target_parameter,target_region,original_dimension,original_element,target_dimension,target_element,target_dimension,target_element,factor,comment
 BottomUpDemand,FinalDemand,all,Steel product,Concrete reinforcing bars in transport concrete,sector,Construction,product,Rebar,0.000001,kg in buildings model but kt in steel model
 BottomUpDemand,FinalDemand,all,Steel product,Concrete reinforcing bars in precast concrete,sector,Construction,product,Rebar,0.000001,kg in buildings model but kt in steel model
+BottomUpDemand,FinalDemand,all,Steel product,Heavy sections,sector,Construction,product,Heavy Sections,1.000000e-06,kg in buildings model but kt in steel model
+BottomUpDemand,FinalDemand,all,Steel product,Light sections,sector,Construction,product,Light Sections,1.000000e-06,kg in buildings model but kt in steel model
+BottomUpDemand,FinalDemand,all,Steel product,Wire rod,sector,Construction,product,Wire Rod,1.000000e-06,kg in buildings model but kt in steel model
+BottomUpDemand,FinalDemand,all,Steel product,Hot rolled plate,sector,Construction,product,Plate,1.000000e-06,kg in buildings model but kt in steel model
+BottomUpDemand,FinalDemand,all,Steel product,Other metal coated sheet and strip,sector,Construction,product,Hot Rolled Coil Galvanized,1.000000e-06,kg in buildings model but kt in steel model
+BottomUpDemand,FinalDemand,all,Steel product,"Hot rolled coil, sheet and strip",sector,Construction,product,Hot Rolled Coil,5.952381e-07,kg in buildings model but kt in steel model; 75/126 of the flat product total
+BottomUpDemand,FinalDemand,all,Steel product,"Hot rolled coil, sheet and strip",sector,Construction,product,Cold Rolled Coil,4.047619e-07,kg in buildings model but kt in steel model; 51/126 of the flat product total

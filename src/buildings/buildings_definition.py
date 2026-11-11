@@ -35,20 +35,27 @@ def get_definition(cfg: GeneralCfg):
         fd.FlowDefinition(from_process="sysenv", to_process="Glass stock in buildings",
                           dim_letters=("t", "r", "g")),
         fd.FlowDefinition(from_process="Steel stock in buildings", to_process="Steel stock in buildings",
-                          dim_letters=("t", "r", "l","a")),
-        fd.FlowDefinition(from_process="Concrete stock in buildings",to_process="Concrete stock in buildings",
-                          dim_letters=("t", "r", "o","a")),
+                          dim_letters=("t", "r", "l", "a")),
+        fd.FlowDefinition(from_process="Concrete stock in buildings", to_process="Concrete stock in buildings",
+                          dim_letters=("t", "r", "o", "a")),
         fd.FlowDefinition(from_process="Steel stock in buildings", to_process="sysenv",
-                          dim_letters=("t", "r", "l","a")),
+                          dim_letters=("t", "r", "l", "a")),
         fd.FlowDefinition(from_process="Concrete stock in buildings", to_process="sysenv",
-                          dim_letters=("t", "r", "o","a")),
+                          dim_letters=("t", "r", "o", "a")),
         fd.FlowDefinition(from_process="Insulation stock in buildings", to_process="sysenv",
-                          dim_letters=("t", "r", "i","a")),
+                          dim_letters=("t", "r", "i", "a")),
         fd.FlowDefinition(from_process="Glass stock in buildings", to_process="sysenv",
-                          dim_letters=("t", "r", "g","a")),
+                          dim_letters=("t", "r", "g", "a")),
     ]
 
     stocks = [
+        # The floor-area stock: computed inside the MFA from the drivers below.
+        fd.StockDefinition(
+            name="Building stock",
+            process="Building stock",
+            dim_letters=("t", "r", "b", "a"),
+            subclass=fd.SimpleFlowDrivenStock,
+        ),
         fd.StockDefinition(
             name="Steel stock in buildings",
             process="Steel stock in buildings",
@@ -61,11 +68,28 @@ def get_definition(cfg: GeneralCfg):
             dim_letters=("t", "r", "o"),
             subclass=fd.SimpleFlowDrivenStock,
         ),
+        fd.StockDefinition(
+            name="Insulation stock in buildings",
+            process="Insulation stock in buildings",
+            dim_letters=("t", "r", "i"),
+            subclass=fd.SimpleFlowDrivenStock,
+        ),
+        fd.StockDefinition(
+            name="Glass stock in buildings",
+            process="Glass stock in buildings",
+            dim_letters=("t", "r", "g"),
+            subclass=fd.SimpleFlowDrivenStock,
+        ),
     ]
 
     parameters = [
-        fd.ParameterDefinition(name="building_inflow", dim_letters=("t", "r", "b", "a")),
-        fd.ParameterDefinition(name="building_outflow", dim_letters=("t", "r", "b", "a")),
+        # --- exogenous parameters derived from OPEN-GEM model and P&S database
+        fd.ParameterDefinition(name="building_population", dim_letters=("t", "r")),
+        fd.ParameterDefinition(name="building_floor_space_per_capita", dim_letters=("t", "r")),
+        fd.ParameterDefinition(name="building_residential_share", dim_letters=("t", "r", "b")),
+        fd.ParameterDefinition(name="building_old_stock", dim_letters=("t", "r", "b", "a")),
+        fd.ParameterDefinition(name="building_commercial_base_year", dim_letters=("r", "b")),
+        fd.ParameterDefinition(name="building_service_output", dim_letters=("t", "r", "b")),
         fd.ParameterDefinition(name="building_steel_intensity", dim_letters=("r", "b", "a", "l")),
         fd.ParameterDefinition(name="building_concrete_intensity", dim_letters=("r", "b", "a", "o")),
         fd.ParameterDefinition(name="building_insulation_intensity", dim_letters=("r", "b", "a", "i")),

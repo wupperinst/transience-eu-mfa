@@ -1,3 +1,3 @@
 original_parameter,target_parameter,target_region,original_dimension,original_element,target_dimension,target_element,target_dimension,target_element,factor,comment
-BottomUpDemand,FinalDemand,all,Insulation product,Insulation,sector,Building and Construction,polymer,PS-E,0.56,Based on Plastics Europe data
-BottomUpDemand,FinalDemand,all,Insulation product,Insulation,sector,Building and Construction,polymer,PUR,0.44,Based on Plastics Europe data
+BottomUpDemand,FinalDemand,all,Insulation product,Insulation,sector,Building and Construction,polymer,PS-E,0.35,EPS+XPS share of the European insulation market. The buildings model Insulation product covers all insulation materials incl. stone and glass wool; only the plastic share is mapped
+BottomUpDemand,FinalDemand,all,Insulation product,Insulation,sector,Building and Construction,polymer,PUR,0.08,PUR/PIR share of the European insulation market. The remaining 57 pct is non-plastic and is deliberately left unmapped

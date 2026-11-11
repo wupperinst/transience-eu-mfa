@@ -37,6 +37,8 @@ def get_definition(cfg: GeneralCfg):
                           dim_letters=("t", "r", "v", "l")),
         fd.FlowDefinition(from_process="Plastics stock in vehicles", to_process="sysenv",
                           dim_letters=("t", "r", "v", "d")),
+        fd.FlowDefinition(from_process="Plastics stock in vehicles", to_process="Plastics stock in vehicles",
+                          dim_letters=("t", "r", "v", "d")),
         fd.FlowDefinition(from_process="Glass stock in vehicles", to_process="sysenv",
                           dim_letters=("t", "r", "v", "g")),
     ]
