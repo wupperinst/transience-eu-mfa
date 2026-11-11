@@ -1,0 +1,39 @@
+# general config
+model_class: 'steel'
+scenario: 'BASE_fd-sv-gr'
+
+# logging
+logging:
+  level: 'INFO' # options: DEBUG, INFO, WARNING, ERROR, CRITICAL
+
+# model customization
+customization:
+  model_driven: 'final_demand_with_start_value_and_growth_rate' # options: production, final_demand, final_demand_with_start_value_and_growth_rate
+  lifetime_model_name: 'NormalLifetime'
+
+# visualization
+visualization:
+  inflow:
+    do_visualize: False
+  production:
+    do_visualize: False
+  outflow:
+    do_visualize: False
+  sankey:
+    do_visualize: False
+  dashboard:
+    do_visualize: False
+
+# data export
+do_export:
+  pickle: False
+  csv: True
+selected_export:
+  slice_stocks: True # export to csv the stocks listed in csv_selected_stocks, sliced by time dimension in csv_slice_stocks
+  # The following lists define which flows and stocks to export to csv if the previous items are True.
+  # The names must match the flow and stock names defined in the model.
+  csv_selected_stocks:
+    - 'End use stock' 
+  csv_slice_stocks:
+    - 'time': [2023]
+

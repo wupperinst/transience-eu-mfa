@@ -78,18 +78,19 @@ class VehiclesMFASystem(fd.MFASystem):
             - flw["Steel stock in vehicles => Steel stock in vehicles"]
         )
 
-        # Plastics element reuse: a fraction of the plastics leaving vehicles is
-        # reused directly into new vehicles instead of being supplied as primary
-        # plastics. Mirrors the steel element reuse above (vehicle outflow is
-        # POSITIVE here, so reuse is subtracted from both inflow and outflow).
-        flw["Plastics stock in vehicles => Plastics stock in vehicles"][...] = (
-            flw["Plastics stock in vehicles => sysenv"] * prm["vehicle_plastics_element_reuse"]
-        )
-        flw["sysenv => Plastics stock in vehicles"][...] = (
-            flw["sysenv => Plastics stock in vehicles"]
-            - flw["Plastics stock in vehicles => Plastics stock in vehicles"]
-        )
-        flw["Plastics stock in vehicles => sysenv"][...] = (
-            flw["Plastics stock in vehicles => sysenv"]
-            - flw["Plastics stock in vehicles => Plastics stock in vehicles"]
-        )
+        # Plastics element reuse: a fraction of the plastics leaving vehicles is reused
+        # directly into new vehicles instead of being supplied as primary plastics.
+        # TODO: Enable once parameter datasets exist and scenario is activated
+        # Follows same pattern as steel reuse.
+        if "vehicle_plastics_element_reuse" in prm:
+            flw["Plastics stock in vehicles => Plastics stock in vehicles"][...] = (
+                flw["Plastics stock in vehicles => sysenv"] * prm["vehicle_plastics_element_reuse"]
+            )
+            flw["sysenv => Plastics stock in vehicles"][...] = (
+                flw["sysenv => Plastics stock in vehicles"]
+                - flw["Plastics stock in vehicles => Plastics stock in vehicles"]
+            )
+            flw["Plastics stock in vehicles => sysenv"][...] = (
+                flw["Plastics stock in vehicles => sysenv"]
+                - flw["Plastics stock in vehicles => Plastics stock in vehicles"]
+            )

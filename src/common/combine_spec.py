@@ -201,6 +201,7 @@ class SourceFlowNames:
     vehicles_steel_reuse: str = "Steel stock in vehicles => Steel stock in vehicles"
 
     # Vehicles plastics reuse (diverted from EOL back into new vehicles)
+    # TODO: Enable once vehicle model implements the source flow
     vehicles_plastics_reuse: str = "Plastics stock in vehicles => Plastics stock in vehicles"
 
 

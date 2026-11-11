@@ -1,4 +1,8 @@
 original_parameter,target_parameter,target_region,original_dimension,original_element,target_dimension,target_element,target_dimension,target_element,factor,comment
-BottomUpDemand,FinalDemand,all,Steel product,Hot rolled bars,sector,Automotive,product,Hot Rolled Bar,0.000001,kg in vehicles model but kt in steel model
-BottomUpDemand,FinalDemand,all,Steel product,"Hot rolled coil, sheet and strip",sector,Automotive,product,Hot Rolled Coil,0.000001,kg in vehicles model but kt in steel model
-BottomUpDemand,FinalDemand,all,Steel product,"Hot rolled coil, sheet and strip",sector,Automotive,product,Hot Rolled Narrow Strip,0,kg in vehicles model but kt in steel model - inactive placeholder
+BottomUpDemand,FinalDemand,all,Steel product,Hot rolled bars,sector,Automotive,product,Hot Rolled Bar,1.0,no unit conversion
+BottomUpDemand,FinalDemand,all,Steel product,"Hot rolled coil, sheet and strip",sector,Automotive,product,Hot Rolled Coil,1.0,no unit conversion
+BottomUpDemand,FinalDemand,all,Steel product,Seamless tubes,sector,Automotive,product,Seamless Tube,1.0,no unit conversion
+BottomUpDemand,FinalDemand,all,Steel product,Wire rod,sector,Automotive,product,Wire Rod,1.0,no unit conversion
+BottomUpDemand,FinalDemand,all,Steel product,Cold Rolled Coil Galvanized,sector,Automotive,product,Cold Rolled Coil Galvanized,1.0,no unit conversion
+BottomUpDemand,FinalDemand,all,Steel product,Welded tubes,sector,Automotive,product,Welded Tube,1.0,no unit conversion
+BottomUpDemand,FinalDemand,all,Steel product,Cast iron,sector,Automotive,product,Cast Iron,1.0,no unit conversion

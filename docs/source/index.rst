@@ -10,6 +10,7 @@
    :maxdepth: 3
 
    overview
+   combined_workflow
 
 .. toctree::
    :hidden:

@@ -87,6 +87,14 @@ def get_definition(cfg: GeneralCfg):
         fd.ParameterDefinition(name="NewScrapRate", dim_letters=("r", "t", "s", "i", "p")), # Rate of generation of new scrap in steel goods production
     ])
 
+    # Reused steel (e.g. from coupled bottom-up models) diverted from end-of-life
+    # before it reaches waste management. Only loaded when reuse is enabled, so
+    # standalone steel runs (which have no SteelReuse.csv) are unaffected.
+    if getattr(cfg.customization, "reuse", False):
+        parameters.append(
+            fd.ParameterDefinition(name="SteelReuse", dim_letters=("r", "t", "s", "i", "p", "e"))
+        )
+
     return fd.MFADefinition(
         dimensions=dimensions,
         processes=processes,

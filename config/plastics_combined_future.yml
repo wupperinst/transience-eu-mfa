@@ -17,6 +17,7 @@ customization:
   lifetime_model_name: 'NormalLifetime'
   end_use_sectors: 'MainSectors'
   waste_not_for_recycling: ['Landfill', 'Incineration']
+  circular: False  # Disable circular economy features for combined workflow
 
 # Visualization disabled for combined workflow
 
@@ -38,6 +39,7 @@ output_path: 'data/combined_plastics_future/output'
 do_export:
   pickle: False
   csv: True
+  params: False
 selected_export:
   csv_selected_flows:
     - 'sysenv => Polymer market'

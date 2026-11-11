@@ -1,0 +1,995 @@
+region,time,sector,polymer,value
+EU27+3,2020,Packaging,"PE-LD, -LLD",0.11
+EU27+3,2025,Packaging,"PE-LD, -LLD",0.17
+EU27+3,2030,Packaging,"PE-LD, -LLD",0.23
+EU27+3,2035,Packaging,"PE-LD, -LLD",0.29
+EU27+3,2040,Packaging,"PE-LD, -LLD",0.29
+EU27+3,2045,Packaging,"PE-LD, -LLD",0.29
+EU27+3,2050,Packaging,"PE-LD, -LLD",0.29
+EU27+3,2020,Packaging,"PE-HD, -MD",0.11
+EU27+3,2025,Packaging,"PE-HD, -MD",0.17
+EU27+3,2030,Packaging,"PE-HD, -MD",0.23
+EU27+3,2035,Packaging,"PE-HD, -MD",0.29
+EU27+3,2040,Packaging,"PE-HD, -MD",0.29
+EU27+3,2045,Packaging,"PE-HD, -MD",0.29
+EU27+3,2050,Packaging,"PE-HD, -MD",0.29
+EU27+3,2020,Packaging,PP,0.05
+EU27+3,2025,Packaging,PP,0.09
+EU27+3,2030,Packaging,PP,0.13
+EU27+3,2035,Packaging,PP,0.17
+EU27+3,2040,Packaging,PP,0.17
+EU27+3,2045,Packaging,PP,0.17
+EU27+3,2050,Packaging,PP,0.17
+EU27+3,2020,Packaging,PS,0.02
+EU27+3,2025,Packaging,PS,0.04
+EU27+3,2030,Packaging,PS,0.06
+EU27+3,2035,Packaging,PS,0.08
+EU27+3,2040,Packaging,PS,0.08
+EU27+3,2045,Packaging,PS,0.08
+EU27+3,2050,Packaging,PS,0.08
+EU27+3,2020,Packaging,PS-E,0.02
+EU27+3,2025,Packaging,PS-E,0.04
+EU27+3,2030,Packaging,PS-E,0.06
+EU27+3,2035,Packaging,PS-E,0.08
+EU27+3,2040,Packaging,PS-E,0.08
+EU27+3,2045,Packaging,PS-E,0.08
+EU27+3,2050,Packaging,PS-E,0.08
+EU27+3,2020,Packaging,PVC,0.02
+EU27+3,2025,Packaging,PVC,0.04
+EU27+3,2030,Packaging,PVC,0.06
+EU27+3,2035,Packaging,PVC,0.08
+EU27+3,2040,Packaging,PVC,0.08
+EU27+3,2045,Packaging,PVC,0.08
+EU27+3,2050,Packaging,PVC,0.08
+EU27+3,2020,Packaging,"ABS, SAN",0.02
+EU27+3,2025,Packaging,"ABS, SAN",0.04
+EU27+3,2030,Packaging,"ABS, SAN",0.06
+EU27+3,2035,Packaging,"ABS, SAN",0.08
+EU27+3,2040,Packaging,"ABS, SAN",0.08
+EU27+3,2045,Packaging,"ABS, SAN",0.08
+EU27+3,2050,Packaging,"ABS, SAN",0.08
+EU27+3,2020,Packaging,PMMA,0.02
+EU27+3,2025,Packaging,PMMA,0.04
+EU27+3,2030,Packaging,PMMA,0.06
+EU27+3,2035,Packaging,PMMA,0.08
+EU27+3,2040,Packaging,PMMA,0.08
+EU27+3,2045,Packaging,PMMA,0.08
+EU27+3,2050,Packaging,PMMA,0.08
+EU27+3,2020,Packaging,"PA (PA6, PA66)",0.02
+EU27+3,2025,Packaging,"PA (PA6, PA66)",0.04
+EU27+3,2030,Packaging,"PA (PA6, PA66)",0.06
+EU27+3,2035,Packaging,"PA (PA6, PA66)",0.08
+EU27+3,2040,Packaging,"PA (PA6, PA66)",0.08
+EU27+3,2045,Packaging,"PA (PA6, PA66)",0.08
+EU27+3,2050,Packaging,"PA (PA6, PA66)",0.08
+EU27+3,2020,Packaging,PC,0.02
+EU27+3,2025,Packaging,PC,0.04
+EU27+3,2030,Packaging,PC,0.06
+EU27+3,2035,Packaging,PC,0.08
+EU27+3,2040,Packaging,PC,0.08
+EU27+3,2045,Packaging,PC,0.08
+EU27+3,2050,Packaging,PC,0.08
+EU27+3,2020,Packaging,PET,0.22
+EU27+3,2025,Packaging,PET,0.28
+EU27+3,2030,Packaging,PET,0.34
+EU27+3,2035,Packaging,PET,0.41
+EU27+3,2040,Packaging,PET,0.41
+EU27+3,2045,Packaging,PET,0.41
+EU27+3,2050,Packaging,PET,0.41
+EU27+3,2020,Packaging,Other Thermoplastics,0.02
+EU27+3,2025,Packaging,Other Thermoplastics,0.04
+EU27+3,2030,Packaging,Other Thermoplastics,0.06
+EU27+3,2035,Packaging,Other Thermoplastics,0.08
+EU27+3,2040,Packaging,Other Thermoplastics,0.08
+EU27+3,2045,Packaging,Other Thermoplastics,0.08
+EU27+3,2050,Packaging,Other Thermoplastics,0.08
+EU27+3,2020,Packaging,PUR,0.0
+EU27+3,2025,Packaging,PUR,0.0
+EU27+3,2030,Packaging,PUR,0.0
+EU27+3,2035,Packaging,PUR,0.0
+EU27+3,2040,Packaging,PUR,0.0
+EU27+3,2045,Packaging,PUR,0.0
+EU27+3,2050,Packaging,PUR,0.0
+EU27+3,2020,Packaging,Other Plastics,0.02
+EU27+3,2025,Packaging,Other Plastics,0.04
+EU27+3,2030,Packaging,Other Plastics,0.06
+EU27+3,2035,Packaging,Other Plastics,0.08
+EU27+3,2040,Packaging,Other Plastics,0.08
+EU27+3,2045,Packaging,Other Plastics,0.08
+EU27+3,2050,Packaging,Other Plastics,0.08
+EU27+3,2020,Household packaging,"PE-LD, -LLD",0.11
+EU27+3,2025,Household packaging,"PE-LD, -LLD",0.17
+EU27+3,2030,Household packaging,"PE-LD, -LLD",0.23
+EU27+3,2035,Household packaging,"PE-LD, -LLD",0.29
+EU27+3,2040,Household packaging,"PE-LD, -LLD",0.29
+EU27+3,2045,Household packaging,"PE-LD, -LLD",0.29
+EU27+3,2050,Household packaging,"PE-LD, -LLD",0.29
+EU27+3,2020,Household packaging,"PE-HD, -MD",0.11
+EU27+3,2025,Household packaging,"PE-HD, -MD",0.17
+EU27+3,2030,Household packaging,"PE-HD, -MD",0.23
+EU27+3,2035,Household packaging,"PE-HD, -MD",0.29
+EU27+3,2040,Household packaging,"PE-HD, -MD",0.29
+EU27+3,2045,Household packaging,"PE-HD, -MD",0.29
+EU27+3,2050,Household packaging,"PE-HD, -MD",0.29
+EU27+3,2020,Household packaging,PP,0.05
+EU27+3,2025,Household packaging,PP,0.09
+EU27+3,2030,Household packaging,PP,0.13
+EU27+3,2035,Household packaging,PP,0.17
+EU27+3,2040,Household packaging,PP,0.17
+EU27+3,2045,Household packaging,PP,0.17
+EU27+3,2050,Household packaging,PP,0.17
+EU27+3,2020,Household packaging,PS,0.02
+EU27+3,2025,Household packaging,PS,0.04
+EU27+3,2030,Household packaging,PS,0.06
+EU27+3,2035,Household packaging,PS,0.08
+EU27+3,2040,Household packaging,PS,0.08
+EU27+3,2045,Household packaging,PS,0.08
+EU27+3,2050,Household packaging,PS,0.08
+EU27+3,2020,Household packaging,PS-E,0.02
+EU27+3,2025,Household packaging,PS-E,0.04
+EU27+3,2030,Household packaging,PS-E,0.06
+EU27+3,2035,Household packaging,PS-E,0.08
+EU27+3,2040,Household packaging,PS-E,0.08
+EU27+3,2045,Household packaging,PS-E,0.08
+EU27+3,2050,Household packaging,PS-E,0.08
+EU27+3,2020,Household packaging,PVC,0.02
+EU27+3,2025,Household packaging,PVC,0.04
+EU27+3,2030,Household packaging,PVC,0.06
+EU27+3,2035,Household packaging,PVC,0.08
+EU27+3,2040,Household packaging,PVC,0.08
+EU27+3,2045,Household packaging,PVC,0.08
+EU27+3,2050,Household packaging,PVC,0.08
+EU27+3,2020,Household packaging,"ABS, SAN",0.02
+EU27+3,2025,Household packaging,"ABS, SAN",0.04
+EU27+3,2030,Household packaging,"ABS, SAN",0.06
+EU27+3,2035,Household packaging,"ABS, SAN",0.08
+EU27+3,2040,Household packaging,"ABS, SAN",0.08
+EU27+3,2045,Household packaging,"ABS, SAN",0.08
+EU27+3,2050,Household packaging,"ABS, SAN",0.08
+EU27+3,2020,Household packaging,PMMA,0.02
+EU27+3,2025,Household packaging,PMMA,0.04
+EU27+3,2030,Household packaging,PMMA,0.06
+EU27+3,2035,Household packaging,PMMA,0.08
+EU27+3,2040,Household packaging,PMMA,0.08
+EU27+3,2045,Household packaging,PMMA,0.08
+EU27+3,2050,Household packaging,PMMA,0.08
+EU27+3,2020,Household packaging,"PA (PA6, PA66)",0.02
+EU27+3,2025,Household packaging,"PA (PA6, PA66)",0.04
+EU27+3,2030,Household packaging,"PA (PA6, PA66)",0.06
+EU27+3,2035,Household packaging,"PA (PA6, PA66)",0.08
+EU27+3,2040,Household packaging,"PA (PA6, PA66)",0.08
+EU27+3,2045,Household packaging,"PA (PA6, PA66)",0.08
+EU27+3,2050,Household packaging,"PA (PA6, PA66)",0.08
+EU27+3,2020,Household packaging,PC,0.02
+EU27+3,2025,Household packaging,PC,0.04
+EU27+3,2030,Household packaging,PC,0.06
+EU27+3,2035,Household packaging,PC,0.08
+EU27+3,2040,Household packaging,PC,0.08
+EU27+3,2045,Household packaging,PC,0.08
+EU27+3,2050,Household packaging,PC,0.08
+EU27+3,2020,Household packaging,PET,0.22
+EU27+3,2025,Household packaging,PET,0.28
+EU27+3,2030,Household packaging,PET,0.34
+EU27+3,2035,Household packaging,PET,0.41
+EU27+3,2040,Household packaging,PET,0.41
+EU27+3,2045,Household packaging,PET,0.41
+EU27+3,2050,Household packaging,PET,0.41
+EU27+3,2020,Household packaging,Other Thermoplastics,0.02
+EU27+3,2025,Household packaging,Other Thermoplastics,0.04
+EU27+3,2030,Household packaging,Other Thermoplastics,0.06
+EU27+3,2035,Household packaging,Other Thermoplastics,0.08
+EU27+3,2040,Household packaging,Other Thermoplastics,0.08
+EU27+3,2045,Household packaging,Other Thermoplastics,0.08
+EU27+3,2050,Household packaging,Other Thermoplastics,0.08
+EU27+3,2020,Household packaging,PUR,0.0
+EU27+3,2025,Household packaging,PUR,0.0
+EU27+3,2030,Household packaging,PUR,0.0
+EU27+3,2035,Household packaging,PUR,0.0
+EU27+3,2040,Household packaging,PUR,0.0
+EU27+3,2045,Household packaging,PUR,0.0
+EU27+3,2050,Household packaging,PUR,0.0
+EU27+3,2020,Household packaging,Other Plastics,0.02
+EU27+3,2025,Household packaging,Other Plastics,0.04
+EU27+3,2030,Household packaging,Other Plastics,0.06
+EU27+3,2035,Household packaging,Other Plastics,0.08
+EU27+3,2040,Household packaging,Other Plastics,0.08
+EU27+3,2045,Household packaging,Other Plastics,0.08
+EU27+3,2050,Household packaging,Other Plastics,0.08
+EU27+3,2020,Commercial & industrial packaging,"PE-LD, -LLD",0.11
+EU27+3,2025,Commercial & industrial packaging,"PE-LD, -LLD",0.17
+EU27+3,2030,Commercial & industrial packaging,"PE-LD, -LLD",0.23
+EU27+3,2035,Commercial & industrial packaging,"PE-LD, -LLD",0.29
+EU27+3,2040,Commercial & industrial packaging,"PE-LD, -LLD",0.29
+EU27+3,2045,Commercial & industrial packaging,"PE-LD, -LLD",0.29
+EU27+3,2050,Commercial & industrial packaging,"PE-LD, -LLD",0.29
+EU27+3,2020,Commercial & industrial packaging,"PE-HD, -MD",0.11
+EU27+3,2025,Commercial & industrial packaging,"PE-HD, -MD",0.17
+EU27+3,2030,Commercial & industrial packaging,"PE-HD, -MD",0.23
+EU27+3,2035,Commercial & industrial packaging,"PE-HD, -MD",0.29
+EU27+3,2040,Commercial & industrial packaging,"PE-HD, -MD",0.29
+EU27+3,2045,Commercial & industrial packaging,"PE-HD, -MD",0.29
+EU27+3,2050,Commercial & industrial packaging,"PE-HD, -MD",0.29
+EU27+3,2020,Commercial & industrial packaging,PP,0.05
+EU27+3,2025,Commercial & industrial packaging,PP,0.09
+EU27+3,2030,Commercial & industrial packaging,PP,0.13
+EU27+3,2035,Commercial & industrial packaging,PP,0.17
+EU27+3,2040,Commercial & industrial packaging,PP,0.17
+EU27+3,2045,Commercial & industrial packaging,PP,0.17
+EU27+3,2050,Commercial & industrial packaging,PP,0.17
+EU27+3,2020,Commercial & industrial packaging,PS,0.02
+EU27+3,2025,Commercial & industrial packaging,PS,0.04
+EU27+3,2030,Commercial & industrial packaging,PS,0.06
+EU27+3,2035,Commercial & industrial packaging,PS,0.08
+EU27+3,2040,Commercial & industrial packaging,PS,0.08
+EU27+3,2045,Commercial & industrial packaging,PS,0.08
+EU27+3,2050,Commercial & industrial packaging,PS,0.08
+EU27+3,2020,Commercial & industrial packaging,PS-E,0.02
+EU27+3,2025,Commercial & industrial packaging,PS-E,0.04
+EU27+3,2030,Commercial & industrial packaging,PS-E,0.06
+EU27+3,2035,Commercial & industrial packaging,PS-E,0.08
+EU27+3,2040,Commercial & industrial packaging,PS-E,0.08
+EU27+3,2045,Commercial & industrial packaging,PS-E,0.08
+EU27+3,2050,Commercial & industrial packaging,PS-E,0.08
+EU27+3,2020,Commercial & industrial packaging,PVC,0.02
+EU27+3,2025,Commercial & industrial packaging,PVC,0.04
+EU27+3,2030,Commercial & industrial packaging,PVC,0.06
+EU27+3,2035,Commercial & industrial packaging,PVC,0.08
+EU27+3,2040,Commercial & industrial packaging,PVC,0.08
+EU27+3,2045,Commercial & industrial packaging,PVC,0.08
+EU27+3,2050,Commercial & industrial packaging,PVC,0.08
+EU27+3,2020,Commercial & industrial packaging,"ABS, SAN",0.02
+EU27+3,2025,Commercial & industrial packaging,"ABS, SAN",0.04
+EU27+3,2030,Commercial & industrial packaging,"ABS, SAN",0.06
+EU27+3,2035,Commercial & industrial packaging,"ABS, SAN",0.08
+EU27+3,2040,Commercial & industrial packaging,"ABS, SAN",0.08
+EU27+3,2045,Commercial & industrial packaging,"ABS, SAN",0.08
+EU27+3,2050,Commercial & industrial packaging,"ABS, SAN",0.08
+EU27+3,2020,Commercial & industrial packaging,PMMA,0.02
+EU27+3,2025,Commercial & industrial packaging,PMMA,0.04
+EU27+3,2030,Commercial & industrial packaging,PMMA,0.06
+EU27+3,2035,Commercial & industrial packaging,PMMA,0.08
+EU27+3,2040,Commercial & industrial packaging,PMMA,0.08
+EU27+3,2045,Commercial & industrial packaging,PMMA,0.08
+EU27+3,2050,Commercial & industrial packaging,PMMA,0.08
+EU27+3,2020,Commercial & industrial packaging,"PA (PA6, PA66)",0.02
+EU27+3,2025,Commercial & industrial packaging,"PA (PA6, PA66)",0.04
+EU27+3,2030,Commercial & industrial packaging,"PA (PA6, PA66)",0.06
+EU27+3,2035,Commercial & industrial packaging,"PA (PA6, PA66)",0.08
+EU27+3,2040,Commercial & industrial packaging,"PA (PA6, PA66)",0.08
+EU27+3,2045,Commercial & industrial packaging,"PA (PA6, PA66)",0.08
+EU27+3,2050,Commercial & industrial packaging,"PA (PA6, PA66)",0.08
+EU27+3,2020,Commercial & industrial packaging,PC,0.02
+EU27+3,2025,Commercial & industrial packaging,PC,0.04
+EU27+3,2030,Commercial & industrial packaging,PC,0.06
+EU27+3,2035,Commercial & industrial packaging,PC,0.08
+EU27+3,2040,Commercial & industrial packaging,PC,0.08
+EU27+3,2045,Commercial & industrial packaging,PC,0.08
+EU27+3,2050,Commercial & industrial packaging,PC,0.08
+EU27+3,2020,Commercial & industrial packaging,PET,0.22
+EU27+3,2025,Commercial & industrial packaging,PET,0.28
+EU27+3,2030,Commercial & industrial packaging,PET,0.34
+EU27+3,2035,Commercial & industrial packaging,PET,0.41
+EU27+3,2040,Commercial & industrial packaging,PET,0.41
+EU27+3,2045,Commercial & industrial packaging,PET,0.41
+EU27+3,2050,Commercial & industrial packaging,PET,0.41
+EU27+3,2020,Commercial & industrial packaging,Other Thermoplastics,0.02
+EU27+3,2025,Commercial & industrial packaging,Other Thermoplastics,0.04
+EU27+3,2030,Commercial & industrial packaging,Other Thermoplastics,0.06
+EU27+3,2035,Commercial & industrial packaging,Other Thermoplastics,0.08
+EU27+3,2040,Commercial & industrial packaging,Other Thermoplastics,0.08
+EU27+3,2045,Commercial & industrial packaging,Other Thermoplastics,0.08
+EU27+3,2050,Commercial & industrial packaging,Other Thermoplastics,0.08
+EU27+3,2020,Commercial & industrial packaging,PUR,0.0
+EU27+3,2025,Commercial & industrial packaging,PUR,0.0
+EU27+3,2030,Commercial & industrial packaging,PUR,0.0
+EU27+3,2035,Commercial & industrial packaging,PUR,0.0
+EU27+3,2040,Commercial & industrial packaging,PUR,0.0
+EU27+3,2045,Commercial & industrial packaging,PUR,0.0
+EU27+3,2050,Commercial & industrial packaging,PUR,0.0
+EU27+3,2020,Commercial & industrial packaging,Other Plastics,0.02
+EU27+3,2025,Commercial & industrial packaging,Other Plastics,0.04
+EU27+3,2030,Commercial & industrial packaging,Other Plastics,0.06
+EU27+3,2035,Commercial & industrial packaging,Other Plastics,0.08
+EU27+3,2040,Commercial & industrial packaging,Other Plastics,0.08
+EU27+3,2045,Commercial & industrial packaging,Other Plastics,0.08
+EU27+3,2050,Commercial & industrial packaging,Other Plastics,0.08
+EU27+3,2020,Building and Construction,"PE-LD, -LLD",0.19
+EU27+3,2025,Building and Construction,"PE-LD, -LLD",0.25
+EU27+3,2030,Building and Construction,"PE-LD, -LLD",0.31
+EU27+3,2035,Building and Construction,"PE-LD, -LLD",0.37
+EU27+3,2040,Building and Construction,"PE-LD, -LLD",0.37
+EU27+3,2045,Building and Construction,"PE-LD, -LLD",0.37
+EU27+3,2050,Building and Construction,"PE-LD, -LLD",0.37
+EU27+3,2020,Building and Construction,"PE-HD, -MD",0.26
+EU27+3,2025,Building and Construction,"PE-HD, -MD",0.32
+EU27+3,2030,Building and Construction,"PE-HD, -MD",0.38
+EU27+3,2035,Building and Construction,"PE-HD, -MD",0.44
+EU27+3,2040,Building and Construction,"PE-HD, -MD",0.44
+EU27+3,2045,Building and Construction,"PE-HD, -MD",0.44
+EU27+3,2050,Building and Construction,"PE-HD, -MD",0.44
+EU27+3,2020,Building and Construction,PP,0.22
+EU27+3,2025,Building and Construction,PP,0.28
+EU27+3,2030,Building and Construction,PP,0.34
+EU27+3,2035,Building and Construction,PP,0.4
+EU27+3,2040,Building and Construction,PP,0.4
+EU27+3,2045,Building and Construction,PP,0.4
+EU27+3,2050,Building and Construction,PP,0.4
+EU27+3,2020,Building and Construction,PS,0.17
+EU27+3,2025,Building and Construction,PS,0.19
+EU27+3,2030,Building and Construction,PS,0.21
+EU27+3,2035,Building and Construction,PS,0.23
+EU27+3,2040,Building and Construction,PS,0.23
+EU27+3,2045,Building and Construction,PS,0.23
+EU27+3,2050,Building and Construction,PS,0.23
+EU27+3,2020,Building and Construction,PS-E,0.17
+EU27+3,2025,Building and Construction,PS-E,0.19
+EU27+3,2030,Building and Construction,PS-E,0.21
+EU27+3,2035,Building and Construction,PS-E,0.23
+EU27+3,2040,Building and Construction,PS-E,0.23
+EU27+3,2045,Building and Construction,PS-E,0.23
+EU27+3,2050,Building and Construction,PS-E,0.23
+EU27+3,2020,Building and Construction,PVC,0.29
+EU27+3,2025,Building and Construction,PVC,0.35
+EU27+3,2030,Building and Construction,PVC,0.41
+EU27+3,2035,Building and Construction,PVC,0.47
+EU27+3,2040,Building and Construction,PVC,0.47
+EU27+3,2045,Building and Construction,PVC,0.47
+EU27+3,2050,Building and Construction,PVC,0.47
+EU27+3,2020,Building and Construction,"ABS, SAN",0.17
+EU27+3,2025,Building and Construction,"ABS, SAN",0.19
+EU27+3,2030,Building and Construction,"ABS, SAN",0.21
+EU27+3,2035,Building and Construction,"ABS, SAN",0.23
+EU27+3,2040,Building and Construction,"ABS, SAN",0.23
+EU27+3,2045,Building and Construction,"ABS, SAN",0.23
+EU27+3,2050,Building and Construction,"ABS, SAN",0.23
+EU27+3,2020,Building and Construction,PMMA,0.17
+EU27+3,2025,Building and Construction,PMMA,0.19
+EU27+3,2030,Building and Construction,PMMA,0.21
+EU27+3,2035,Building and Construction,PMMA,0.23
+EU27+3,2040,Building and Construction,PMMA,0.23
+EU27+3,2045,Building and Construction,PMMA,0.23
+EU27+3,2050,Building and Construction,PMMA,0.23
+EU27+3,2020,Building and Construction,"PA (PA6, PA66)",0.17
+EU27+3,2025,Building and Construction,"PA (PA6, PA66)",0.19
+EU27+3,2030,Building and Construction,"PA (PA6, PA66)",0.21
+EU27+3,2035,Building and Construction,"PA (PA6, PA66)",0.23
+EU27+3,2040,Building and Construction,"PA (PA6, PA66)",0.23
+EU27+3,2045,Building and Construction,"PA (PA6, PA66)",0.23
+EU27+3,2050,Building and Construction,"PA (PA6, PA66)",0.23
+EU27+3,2020,Building and Construction,PC,0.17
+EU27+3,2025,Building and Construction,PC,0.19
+EU27+3,2030,Building and Construction,PC,0.21
+EU27+3,2035,Building and Construction,PC,0.23
+EU27+3,2040,Building and Construction,PC,0.23
+EU27+3,2045,Building and Construction,PC,0.23
+EU27+3,2050,Building and Construction,PC,0.23
+EU27+3,2020,Building and Construction,PET,0.0
+EU27+3,2025,Building and Construction,PET,0.0
+EU27+3,2030,Building and Construction,PET,0.0
+EU27+3,2035,Building and Construction,PET,0.0
+EU27+3,2040,Building and Construction,PET,0.0
+EU27+3,2045,Building and Construction,PET,0.0
+EU27+3,2050,Building and Construction,PET,0.0
+EU27+3,2020,Building and Construction,Other Thermoplastics,0.17
+EU27+3,2025,Building and Construction,Other Thermoplastics,0.19
+EU27+3,2030,Building and Construction,Other Thermoplastics,0.21
+EU27+3,2035,Building and Construction,Other Thermoplastics,0.23
+EU27+3,2040,Building and Construction,Other Thermoplastics,0.23
+EU27+3,2045,Building and Construction,Other Thermoplastics,0.23
+EU27+3,2050,Building and Construction,Other Thermoplastics,0.23
+EU27+3,2020,Building and Construction,PUR,0.0
+EU27+3,2025,Building and Construction,PUR,0.0
+EU27+3,2030,Building and Construction,PUR,0.0
+EU27+3,2035,Building and Construction,PUR,0.0
+EU27+3,2040,Building and Construction,PUR,0.0
+EU27+3,2045,Building and Construction,PUR,0.0
+EU27+3,2050,Building and Construction,PUR,0.0
+EU27+3,2020,Building and Construction,Other Plastics,0.17
+EU27+3,2025,Building and Construction,Other Plastics,0.19
+EU27+3,2030,Building and Construction,Other Plastics,0.21
+EU27+3,2035,Building and Construction,Other Plastics,0.23
+EU27+3,2040,Building and Construction,Other Plastics,0.23
+EU27+3,2045,Building and Construction,Other Plastics,0.23
+EU27+3,2050,Building and Construction,Other Plastics,0.23
+EU27+3,2020,EPS ETICS,PS-E,0.17
+EU27+3,2025,EPS ETICS,PS-E,0.38
+EU27+3,2030,EPS ETICS,PS-E,0.59
+EU27+3,2035,EPS ETICS,PS-E,0.8
+EU27+3,2040,EPS ETICS,PS-E,0.8
+EU27+3,2045,EPS ETICS,PS-E,0.8
+EU27+3,2050,EPS ETICS,PS-E,0.8
+EU27+3,2020,EPS flat roof,PS-E,0.17
+EU27+3,2025,EPS flat roof,PS-E,0.38
+EU27+3,2030,EPS flat roof,PS-E,0.59
+EU27+3,2035,EPS flat roof,PS-E,0.8
+EU27+3,2040,EPS flat roof,PS-E,0.8
+EU27+3,2045,EPS flat roof,PS-E,0.8
+EU27+3,2050,EPS flat roof,PS-E,0.8
+EU27+3,2020,EPS flooring,PS-E,0.17
+EU27+3,2025,EPS flooring,PS-E,0.38
+EU27+3,2030,EPS flooring,PS-E,0.59
+EU27+3,2035,EPS flooring,PS-E,0.8
+EU27+3,2040,EPS flooring,PS-E,0.8
+EU27+3,2045,EPS flooring,PS-E,0.8
+EU27+3,2050,EPS flooring,PS-E,0.8
+EU27+3,2020,EPS perimeter,PS-E,0.17
+EU27+3,2025,EPS perimeter,PS-E,0.38
+EU27+3,2030,EPS perimeter,PS-E,0.59
+EU27+3,2035,EPS perimeter,PS-E,0.8
+EU27+3,2040,EPS perimeter,PS-E,0.8
+EU27+3,2045,EPS perimeter,PS-E,0.8
+EU27+3,2050,EPS perimeter,PS-E,0.8
+EU27+3,2020,EPS others in B&C,PS-E,0.17
+EU27+3,2025,EPS others in B&C,PS-E,0.38
+EU27+3,2030,EPS others in B&C,PS-E,0.59
+EU27+3,2035,EPS others in B&C,PS-E,0.8
+EU27+3,2040,EPS others in B&C,PS-E,0.8
+EU27+3,2045,EPS others in B&C,PS-E,0.8
+EU27+3,2050,EPS others in B&C,PS-E,0.8
+EU27+3,2020,PVC pipes,PVC,0.29
+EU27+3,2025,PVC pipes,PVC,0.35
+EU27+3,2030,PVC pipes,PVC,0.41
+EU27+3,2035,PVC pipes,PVC,0.47
+EU27+3,2040,PVC pipes,PVC,0.47
+EU27+3,2045,PVC pipes,PVC,0.47
+EU27+3,2050,PVC pipes,PVC,0.47
+EU27+3,2020,PVC profiles,PVC,0.29
+EU27+3,2025,PVC profiles,PVC,0.46
+EU27+3,2030,PVC profiles,PVC,0.63
+EU27+3,2035,PVC profiles,PVC,0.8
+EU27+3,2040,PVC profiles,PVC,0.8
+EU27+3,2045,PVC profiles,PVC,0.8
+EU27+3,2050,PVC profiles,PVC,0.8
+EU27+3,2020,PVC others in B&C,PVC,0.29
+EU27+3,2025,PVC others in B&C,PVC,0.35
+EU27+3,2030,PVC others in B&C,PVC,0.41
+EU27+3,2035,PVC others in B&C,PVC,0.47
+EU27+3,2040,PVC others in B&C,PVC,0.47
+EU27+3,2045,PVC others in B&C,PVC,0.47
+EU27+3,2050,PVC others in B&C,PVC,0.47
+EU27+3,2020,PUR rigid spray foam,PUR,0.0
+EU27+3,2025,PUR rigid spray foam,PUR,0.0
+EU27+3,2030,PUR rigid spray foam,PUR,0.0
+EU27+3,2035,PUR rigid spray foam,PUR,0.0
+EU27+3,2040,PUR rigid spray foam,PUR,0.0
+EU27+3,2045,PUR rigid spray foam,PUR,0.0
+EU27+3,2050,PUR rigid spray foam,PUR,0.0
+EU27+3,2020,PUR boards and panels rigid foam,PUR,0.0
+EU27+3,2025,PUR boards and panels rigid foam,PUR,0.0
+EU27+3,2030,PUR boards and panels rigid foam,PUR,0.0
+EU27+3,2035,PUR boards and panels rigid foam,PUR,0.0
+EU27+3,2040,PUR boards and panels rigid foam,PUR,0.0
+EU27+3,2045,PUR boards and panels rigid foam,PUR,0.0
+EU27+3,2050,PUR boards and panels rigid foam,PUR,0.0
+EU27+3,2020,Automotive,"PE-LD, -LLD",0.06
+EU27+3,2025,Automotive,"PE-LD, -LLD",0.1
+EU27+3,2030,Automotive,"PE-LD, -LLD",0.14
+EU27+3,2035,Automotive,"PE-LD, -LLD",0.18
+EU27+3,2040,Automotive,"PE-LD, -LLD",0.18
+EU27+3,2045,Automotive,"PE-LD, -LLD",0.18
+EU27+3,2050,Automotive,"PE-LD, -LLD",0.18
+EU27+3,2020,Automotive,"PE-HD, -MD",0.06
+EU27+3,2025,Automotive,"PE-HD, -MD",0.1
+EU27+3,2030,Automotive,"PE-HD, -MD",0.14
+EU27+3,2035,Automotive,"PE-HD, -MD",0.18
+EU27+3,2040,Automotive,"PE-HD, -MD",0.18
+EU27+3,2045,Automotive,"PE-HD, -MD",0.18
+EU27+3,2050,Automotive,"PE-HD, -MD",0.18
+EU27+3,2020,Automotive,PP,0.06
+EU27+3,2025,Automotive,PP,0.1
+EU27+3,2030,Automotive,PP,0.14
+EU27+3,2035,Automotive,PP,0.18
+EU27+3,2040,Automotive,PP,0.18
+EU27+3,2045,Automotive,PP,0.18
+EU27+3,2050,Automotive,PP,0.18
+EU27+3,2020,Automotive,PS,0.06
+EU27+3,2025,Automotive,PS,0.1
+EU27+3,2030,Automotive,PS,0.14
+EU27+3,2035,Automotive,PS,0.18
+EU27+3,2040,Automotive,PS,0.18
+EU27+3,2045,Automotive,PS,0.18
+EU27+3,2050,Automotive,PS,0.18
+EU27+3,2020,Automotive,PS-E,0.06
+EU27+3,2025,Automotive,PS-E,0.1
+EU27+3,2030,Automotive,PS-E,0.14
+EU27+3,2035,Automotive,PS-E,0.18
+EU27+3,2040,Automotive,PS-E,0.18
+EU27+3,2045,Automotive,PS-E,0.18
+EU27+3,2050,Automotive,PS-E,0.18
+EU27+3,2020,Automotive,PVC,0.06
+EU27+3,2025,Automotive,PVC,0.1
+EU27+3,2030,Automotive,PVC,0.14
+EU27+3,2035,Automotive,PVC,0.18
+EU27+3,2040,Automotive,PVC,0.18
+EU27+3,2045,Automotive,PVC,0.18
+EU27+3,2050,Automotive,PVC,0.18
+EU27+3,2020,Automotive,"ABS, SAN",0.06
+EU27+3,2025,Automotive,"ABS, SAN",0.1
+EU27+3,2030,Automotive,"ABS, SAN",0.14
+EU27+3,2035,Automotive,"ABS, SAN",0.18
+EU27+3,2040,Automotive,"ABS, SAN",0.18
+EU27+3,2045,Automotive,"ABS, SAN",0.18
+EU27+3,2050,Automotive,"ABS, SAN",0.18
+EU27+3,2020,Automotive,PMMA,0.06
+EU27+3,2025,Automotive,PMMA,0.1
+EU27+3,2030,Automotive,PMMA,0.14
+EU27+3,2035,Automotive,PMMA,0.18
+EU27+3,2040,Automotive,PMMA,0.18
+EU27+3,2045,Automotive,PMMA,0.18
+EU27+3,2050,Automotive,PMMA,0.18
+EU27+3,2020,Automotive,"PA (PA6, PA66)",0.06
+EU27+3,2025,Automotive,"PA (PA6, PA66)",0.1
+EU27+3,2030,Automotive,"PA (PA6, PA66)",0.14
+EU27+3,2035,Automotive,"PA (PA6, PA66)",0.18
+EU27+3,2040,Automotive,"PA (PA6, PA66)",0.18
+EU27+3,2045,Automotive,"PA (PA6, PA66)",0.18
+EU27+3,2050,Automotive,"PA (PA6, PA66)",0.18
+EU27+3,2020,Automotive,PC,0.06
+EU27+3,2025,Automotive,PC,0.1
+EU27+3,2030,Automotive,PC,0.14
+EU27+3,2035,Automotive,PC,0.18
+EU27+3,2040,Automotive,PC,0.18
+EU27+3,2045,Automotive,PC,0.18
+EU27+3,2050,Automotive,PC,0.18
+EU27+3,2020,Automotive,PET,0.06
+EU27+3,2025,Automotive,PET,0.1
+EU27+3,2030,Automotive,PET,0.14
+EU27+3,2035,Automotive,PET,0.18
+EU27+3,2040,Automotive,PET,0.18
+EU27+3,2045,Automotive,PET,0.18
+EU27+3,2050,Automotive,PET,0.18
+EU27+3,2020,Automotive,Other Thermoplastics,0.06
+EU27+3,2025,Automotive,Other Thermoplastics,0.1
+EU27+3,2030,Automotive,Other Thermoplastics,0.14
+EU27+3,2035,Automotive,Other Thermoplastics,0.18
+EU27+3,2040,Automotive,Other Thermoplastics,0.18
+EU27+3,2045,Automotive,Other Thermoplastics,0.18
+EU27+3,2050,Automotive,Other Thermoplastics,0.18
+EU27+3,2020,Automotive,PUR,0.0
+EU27+3,2025,Automotive,PUR,0.0
+EU27+3,2030,Automotive,PUR,0.0
+EU27+3,2035,Automotive,PUR,0.0
+EU27+3,2040,Automotive,PUR,0.0
+EU27+3,2045,Automotive,PUR,0.0
+EU27+3,2050,Automotive,PUR,0.0
+EU27+3,2020,Automotive,Other Plastics,0.06
+EU27+3,2025,Automotive,Other Plastics,0.1
+EU27+3,2030,Automotive,Other Plastics,0.14
+EU27+3,2035,Automotive,Other Plastics,0.18
+EU27+3,2040,Automotive,Other Plastics,0.18
+EU27+3,2045,Automotive,Other Plastics,0.18
+EU27+3,2050,Automotive,Other Plastics,0.18
+EU27+3,2020,PUR moulded automotive,PUR,0.0
+EU27+3,2025,PUR moulded automotive,PUR,0.0
+EU27+3,2030,PUR moulded automotive,PUR,0.0
+EU27+3,2035,PUR moulded automotive,PUR,0.0
+EU27+3,2040,PUR moulded automotive,PUR,0.0
+EU27+3,2045,PUR moulded automotive,PUR,0.0
+EU27+3,2050,PUR moulded automotive,PUR,0.0
+EU27+3,2020,PUR others in Automotive,PUR,0.0
+EU27+3,2025,PUR others in Automotive,PUR,0.0
+EU27+3,2030,PUR others in Automotive,PUR,0.0
+EU27+3,2035,PUR others in Automotive,PUR,0.0
+EU27+3,2040,PUR others in Automotive,PUR,0.0
+EU27+3,2045,PUR others in Automotive,PUR,0.0
+EU27+3,2050,PUR others in Automotive,PUR,0.0
+EU27+3,2020,Electrical and Electronics,"PE-LD, -LLD",0.04
+EU27+3,2025,Electrical and Electronics,"PE-LD, -LLD",0.08
+EU27+3,2030,Electrical and Electronics,"PE-LD, -LLD",0.12
+EU27+3,2035,Electrical and Electronics,"PE-LD, -LLD",0.16
+EU27+3,2040,Electrical and Electronics,"PE-LD, -LLD",0.16
+EU27+3,2045,Electrical and Electronics,"PE-LD, -LLD",0.16
+EU27+3,2050,Electrical and Electronics,"PE-LD, -LLD",0.16
+EU27+3,2020,Electrical and Electronics,"PE-HD, -MD",0.04
+EU27+3,2025,Electrical and Electronics,"PE-HD, -MD",0.08
+EU27+3,2030,Electrical and Electronics,"PE-HD, -MD",0.12
+EU27+3,2035,Electrical and Electronics,"PE-HD, -MD",0.16
+EU27+3,2040,Electrical and Electronics,"PE-HD, -MD",0.16
+EU27+3,2045,Electrical and Electronics,"PE-HD, -MD",0.16
+EU27+3,2050,Electrical and Electronics,"PE-HD, -MD",0.16
+EU27+3,2020,Electrical and Electronics,PP,0.04
+EU27+3,2025,Electrical and Electronics,PP,0.08
+EU27+3,2030,Electrical and Electronics,PP,0.12
+EU27+3,2035,Electrical and Electronics,PP,0.16
+EU27+3,2040,Electrical and Electronics,PP,0.16
+EU27+3,2045,Electrical and Electronics,PP,0.16
+EU27+3,2050,Electrical and Electronics,PP,0.16
+EU27+3,2020,Electrical and Electronics,PS,0.04
+EU27+3,2025,Electrical and Electronics,PS,0.08
+EU27+3,2030,Electrical and Electronics,PS,0.12
+EU27+3,2035,Electrical and Electronics,PS,0.16
+EU27+3,2040,Electrical and Electronics,PS,0.16
+EU27+3,2045,Electrical and Electronics,PS,0.16
+EU27+3,2050,Electrical and Electronics,PS,0.16
+EU27+3,2020,Electrical and Electronics,PS-E,0.04
+EU27+3,2025,Electrical and Electronics,PS-E,0.08
+EU27+3,2030,Electrical and Electronics,PS-E,0.12
+EU27+3,2035,Electrical and Electronics,PS-E,0.16
+EU27+3,2040,Electrical and Electronics,PS-E,0.16
+EU27+3,2045,Electrical and Electronics,PS-E,0.16
+EU27+3,2050,Electrical and Electronics,PS-E,0.16
+EU27+3,2020,Electrical and Electronics,PVC,0.04
+EU27+3,2025,Electrical and Electronics,PVC,0.08
+EU27+3,2030,Electrical and Electronics,PVC,0.12
+EU27+3,2035,Electrical and Electronics,PVC,0.16
+EU27+3,2040,Electrical and Electronics,PVC,0.16
+EU27+3,2045,Electrical and Electronics,PVC,0.16
+EU27+3,2050,Electrical and Electronics,PVC,0.16
+EU27+3,2020,Electrical and Electronics,"ABS, SAN",0.04
+EU27+3,2025,Electrical and Electronics,"ABS, SAN",0.08
+EU27+3,2030,Electrical and Electronics,"ABS, SAN",0.12
+EU27+3,2035,Electrical and Electronics,"ABS, SAN",0.16
+EU27+3,2040,Electrical and Electronics,"ABS, SAN",0.16
+EU27+3,2045,Electrical and Electronics,"ABS, SAN",0.16
+EU27+3,2050,Electrical and Electronics,"ABS, SAN",0.16
+EU27+3,2020,Electrical and Electronics,PMMA,0.04
+EU27+3,2025,Electrical and Electronics,PMMA,0.08
+EU27+3,2030,Electrical and Electronics,PMMA,0.12
+EU27+3,2035,Electrical and Electronics,PMMA,0.16
+EU27+3,2040,Electrical and Electronics,PMMA,0.16
+EU27+3,2045,Electrical and Electronics,PMMA,0.16
+EU27+3,2050,Electrical and Electronics,PMMA,0.16
+EU27+3,2020,Electrical and Electronics,"PA (PA6, PA66)",0.04
+EU27+3,2025,Electrical and Electronics,"PA (PA6, PA66)",0.08
+EU27+3,2030,Electrical and Electronics,"PA (PA6, PA66)",0.12
+EU27+3,2035,Electrical and Electronics,"PA (PA6, PA66)",0.16
+EU27+3,2040,Electrical and Electronics,"PA (PA6, PA66)",0.16
+EU27+3,2045,Electrical and Electronics,"PA (PA6, PA66)",0.16
+EU27+3,2050,Electrical and Electronics,"PA (PA6, PA66)",0.16
+EU27+3,2020,Electrical and Electronics,PC,0.0
+EU27+3,2025,Electrical and Electronics,PC,0.05
+EU27+3,2030,Electrical and Electronics,PC,0.1
+EU27+3,2035,Electrical and Electronics,PC,0.16
+EU27+3,2040,Electrical and Electronics,PC,0.16
+EU27+3,2045,Electrical and Electronics,PC,0.16
+EU27+3,2050,Electrical and Electronics,PC,0.16
+EU27+3,2020,Electrical and Electronics,PET,0.04
+EU27+3,2025,Electrical and Electronics,PET,0.08
+EU27+3,2030,Electrical and Electronics,PET,0.12
+EU27+3,2035,Electrical and Electronics,PET,0.16
+EU27+3,2040,Electrical and Electronics,PET,0.16
+EU27+3,2045,Electrical and Electronics,PET,0.16
+EU27+3,2050,Electrical and Electronics,PET,0.16
+EU27+3,2020,Electrical and Electronics,Other Thermoplastics,0.04
+EU27+3,2025,Electrical and Electronics,Other Thermoplastics,0.08
+EU27+3,2030,Electrical and Electronics,Other Thermoplastics,0.12
+EU27+3,2035,Electrical and Electronics,Other Thermoplastics,0.16
+EU27+3,2040,Electrical and Electronics,Other Thermoplastics,0.16
+EU27+3,2045,Electrical and Electronics,Other Thermoplastics,0.16
+EU27+3,2050,Electrical and Electronics,Other Thermoplastics,0.16
+EU27+3,2020,Electrical and Electronics,PUR,0.0
+EU27+3,2025,Electrical and Electronics,PUR,0.0
+EU27+3,2030,Electrical and Electronics,PUR,0.0
+EU27+3,2035,Electrical and Electronics,PUR,0.0
+EU27+3,2040,Electrical and Electronics,PUR,0.0
+EU27+3,2045,Electrical and Electronics,PUR,0.0
+EU27+3,2050,Electrical and Electronics,PUR,0.0
+EU27+3,2020,Electrical and Electronics,Other Plastics,0.04
+EU27+3,2025,Electrical and Electronics,Other Plastics,0.08
+EU27+3,2030,Electrical and Electronics,Other Plastics,0.12
+EU27+3,2035,Electrical and Electronics,Other Plastics,0.16
+EU27+3,2040,Electrical and Electronics,Other Plastics,0.16
+EU27+3,2045,Electrical and Electronics,Other Plastics,0.16
+EU27+3,2050,Electrical and Electronics,Other Plastics,0.16
+EU27+3,2020,Agriculture,"PE-LD, -LLD",0.23
+EU27+3,2025,Agriculture,"PE-LD, -LLD",0.3
+EU27+3,2030,Agriculture,"PE-LD, -LLD",0.37
+EU27+3,2035,Agriculture,"PE-LD, -LLD",0.44
+EU27+3,2040,Agriculture,"PE-LD, -LLD",0.44
+EU27+3,2045,Agriculture,"PE-LD, -LLD",0.44
+EU27+3,2050,Agriculture,"PE-LD, -LLD",0.44
+EU27+3,2020,Agriculture,"PE-HD, -MD",0.23
+EU27+3,2025,Agriculture,"PE-HD, -MD",0.3
+EU27+3,2030,Agriculture,"PE-HD, -MD",0.37
+EU27+3,2035,Agriculture,"PE-HD, -MD",0.44
+EU27+3,2040,Agriculture,"PE-HD, -MD",0.44
+EU27+3,2045,Agriculture,"PE-HD, -MD",0.44
+EU27+3,2050,Agriculture,"PE-HD, -MD",0.44
+EU27+3,2020,Agriculture,PP,0.23
+EU27+3,2025,Agriculture,PP,0.3
+EU27+3,2030,Agriculture,PP,0.37
+EU27+3,2035,Agriculture,PP,0.44
+EU27+3,2040,Agriculture,PP,0.44
+EU27+3,2045,Agriculture,PP,0.44
+EU27+3,2050,Agriculture,PP,0.44
+EU27+3,2020,Agriculture,PS,0.23
+EU27+3,2025,Agriculture,PS,0.3
+EU27+3,2030,Agriculture,PS,0.37
+EU27+3,2035,Agriculture,PS,0.44
+EU27+3,2040,Agriculture,PS,0.44
+EU27+3,2045,Agriculture,PS,0.44
+EU27+3,2050,Agriculture,PS,0.44
+EU27+3,2020,Agriculture,PS-E,0.23
+EU27+3,2025,Agriculture,PS-E,0.3
+EU27+3,2030,Agriculture,PS-E,0.37
+EU27+3,2035,Agriculture,PS-E,0.44
+EU27+3,2040,Agriculture,PS-E,0.44
+EU27+3,2045,Agriculture,PS-E,0.44
+EU27+3,2050,Agriculture,PS-E,0.44
+EU27+3,2020,Agriculture,PVC,0.23
+EU27+3,2025,Agriculture,PVC,0.3
+EU27+3,2030,Agriculture,PVC,0.37
+EU27+3,2035,Agriculture,PVC,0.44
+EU27+3,2040,Agriculture,PVC,0.44
+EU27+3,2045,Agriculture,PVC,0.44
+EU27+3,2050,Agriculture,PVC,0.44
+EU27+3,2020,Agriculture,PET,0.23
+EU27+3,2025,Agriculture,PET,0.3
+EU27+3,2030,Agriculture,PET,0.37
+EU27+3,2035,Agriculture,PET,0.44
+EU27+3,2040,Agriculture,PET,0.44
+EU27+3,2045,Agriculture,PET,0.44
+EU27+3,2050,Agriculture,PET,0.44
+EU27+3,2020,Agriculture,"ABS, SAN",0.23
+EU27+3,2025,Agriculture,"ABS, SAN",0.3
+EU27+3,2030,Agriculture,"ABS, SAN",0.37
+EU27+3,2035,Agriculture,"ABS, SAN",0.44
+EU27+3,2040,Agriculture,"ABS, SAN",0.44
+EU27+3,2045,Agriculture,"ABS, SAN",0.44
+EU27+3,2050,Agriculture,"ABS, SAN",0.44
+EU27+3,2020,Agriculture,PMMA,0.23
+EU27+3,2025,Agriculture,PMMA,0.3
+EU27+3,2030,Agriculture,PMMA,0.37
+EU27+3,2035,Agriculture,PMMA,0.44
+EU27+3,2040,Agriculture,PMMA,0.44
+EU27+3,2045,Agriculture,PMMA,0.44
+EU27+3,2050,Agriculture,PMMA,0.44
+EU27+3,2020,Agriculture,"PA (PA6, PA66)",0.23
+EU27+3,2025,Agriculture,"PA (PA6, PA66)",0.3
+EU27+3,2030,Agriculture,"PA (PA6, PA66)",0.37
+EU27+3,2035,Agriculture,"PA (PA6, PA66)",0.44
+EU27+3,2040,Agriculture,"PA (PA6, PA66)",0.44
+EU27+3,2045,Agriculture,"PA (PA6, PA66)",0.44
+EU27+3,2050,Agriculture,"PA (PA6, PA66)",0.44
+EU27+3,2020,Agriculture,PC,0.23
+EU27+3,2025,Agriculture,PC,0.3
+EU27+3,2030,Agriculture,PC,0.37
+EU27+3,2035,Agriculture,PC,0.44
+EU27+3,2040,Agriculture,PC,0.44
+EU27+3,2045,Agriculture,PC,0.44
+EU27+3,2050,Agriculture,PC,0.44
+EU27+3,2020,Agriculture,Other Thermoplastics,0.23
+EU27+3,2025,Agriculture,Other Thermoplastics,0.3
+EU27+3,2030,Agriculture,Other Thermoplastics,0.37
+EU27+3,2035,Agriculture,Other Thermoplastics,0.44
+EU27+3,2040,Agriculture,Other Thermoplastics,0.44
+EU27+3,2045,Agriculture,Other Thermoplastics,0.44
+EU27+3,2050,Agriculture,Other Thermoplastics,0.44
+EU27+3,2020,Agriculture,PUR,0.0
+EU27+3,2025,Agriculture,PUR,0.0
+EU27+3,2030,Agriculture,PUR,0.0
+EU27+3,2035,Agriculture,PUR,0.0
+EU27+3,2040,Agriculture,PUR,0.0
+EU27+3,2045,Agriculture,PUR,0.0
+EU27+3,2050,Agriculture,PUR,0.0
+EU27+3,2020,Agriculture,Other Plastics,0.23
+EU27+3,2025,Agriculture,Other Plastics,0.3
+EU27+3,2030,Agriculture,Other Plastics,0.37
+EU27+3,2035,Agriculture,Other Plastics,0.44
+EU27+3,2040,Agriculture,Other Plastics,0.44
+EU27+3,2045,Agriculture,Other Plastics,0.44
+EU27+3,2050,Agriculture,Other Plastics,0.44
+EU27+3,2020,"Household, Leisure, Sports","PE-LD, -LLD",0.03
+EU27+3,2025,"Household, Leisure, Sports","PE-LD, -LLD",0.04
+EU27+3,2030,"Household, Leisure, Sports","PE-LD, -LLD",0.05
+EU27+3,2035,"Household, Leisure, Sports","PE-LD, -LLD",0.06
+EU27+3,2040,"Household, Leisure, Sports","PE-LD, -LLD",0.06
+EU27+3,2045,"Household, Leisure, Sports","PE-LD, -LLD",0.06
+EU27+3,2050,"Household, Leisure, Sports","PE-LD, -LLD",0.06
+EU27+3,2020,"Household, Leisure, Sports","PE-HD, -MD",0.03
+EU27+3,2025,"Household, Leisure, Sports","PE-HD, -MD",0.04
+EU27+3,2030,"Household, Leisure, Sports","PE-HD, -MD",0.05
+EU27+3,2035,"Household, Leisure, Sports","PE-HD, -MD",0.06
+EU27+3,2040,"Household, Leisure, Sports","PE-HD, -MD",0.06
+EU27+3,2045,"Household, Leisure, Sports","PE-HD, -MD",0.06
+EU27+3,2050,"Household, Leisure, Sports","PE-HD, -MD",0.06
+EU27+3,2020,"Household, Leisure, Sports",PP,0.03
+EU27+3,2025,"Household, Leisure, Sports",PP,0.04
+EU27+3,2030,"Household, Leisure, Sports",PP,0.05
+EU27+3,2035,"Household, Leisure, Sports",PP,0.06
+EU27+3,2040,"Household, Leisure, Sports",PP,0.06
+EU27+3,2045,"Household, Leisure, Sports",PP,0.06
+EU27+3,2050,"Household, Leisure, Sports",PP,0.06
+EU27+3,2020,"Household, Leisure, Sports",PS,0.03
+EU27+3,2025,"Household, Leisure, Sports",PS,0.04
+EU27+3,2030,"Household, Leisure, Sports",PS,0.05
+EU27+3,2035,"Household, Leisure, Sports",PS,0.06
+EU27+3,2040,"Household, Leisure, Sports",PS,0.06
+EU27+3,2045,"Household, Leisure, Sports",PS,0.06
+EU27+3,2050,"Household, Leisure, Sports",PS,0.06
+EU27+3,2020,"Household, Leisure, Sports",PS-E,0.03
+EU27+3,2025,"Household, Leisure, Sports",PS-E,0.04
+EU27+3,2030,"Household, Leisure, Sports",PS-E,0.05
+EU27+3,2035,"Household, Leisure, Sports",PS-E,0.06
+EU27+3,2040,"Household, Leisure, Sports",PS-E,0.06
+EU27+3,2045,"Household, Leisure, Sports",PS-E,0.06
+EU27+3,2050,"Household, Leisure, Sports",PS-E,0.06
+EU27+3,2020,"Household, Leisure, Sports",PVC,0.03
+EU27+3,2025,"Household, Leisure, Sports",PVC,0.04
+EU27+3,2030,"Household, Leisure, Sports",PVC,0.05
+EU27+3,2035,"Household, Leisure, Sports",PVC,0.06
+EU27+3,2040,"Household, Leisure, Sports",PVC,0.06
+EU27+3,2045,"Household, Leisure, Sports",PVC,0.06
+EU27+3,2050,"Household, Leisure, Sports",PVC,0.06
+EU27+3,2020,"Household, Leisure, Sports",PET,0.03
+EU27+3,2025,"Household, Leisure, Sports",PET,0.04
+EU27+3,2030,"Household, Leisure, Sports",PET,0.05
+EU27+3,2035,"Household, Leisure, Sports",PET,0.06
+EU27+3,2040,"Household, Leisure, Sports",PET,0.06
+EU27+3,2045,"Household, Leisure, Sports",PET,0.06
+EU27+3,2050,"Household, Leisure, Sports",PET,0.06
+EU27+3,2020,"Household, Leisure, Sports","ABS, SAN",0.03
+EU27+3,2025,"Household, Leisure, Sports","ABS, SAN",0.04
+EU27+3,2030,"Household, Leisure, Sports","ABS, SAN",0.05
+EU27+3,2035,"Household, Leisure, Sports","ABS, SAN",0.06
+EU27+3,2040,"Household, Leisure, Sports","ABS, SAN",0.06
+EU27+3,2045,"Household, Leisure, Sports","ABS, SAN",0.06
+EU27+3,2050,"Household, Leisure, Sports","ABS, SAN",0.06
+EU27+3,2020,"Household, Leisure, Sports",PMMA,0.03
+EU27+3,2025,"Household, Leisure, Sports",PMMA,0.04
+EU27+3,2030,"Household, Leisure, Sports",PMMA,0.05
+EU27+3,2035,"Household, Leisure, Sports",PMMA,0.06
+EU27+3,2040,"Household, Leisure, Sports",PMMA,0.06
+EU27+3,2045,"Household, Leisure, Sports",PMMA,0.06
+EU27+3,2050,"Household, Leisure, Sports",PMMA,0.06
+EU27+3,2020,"Household, Leisure, Sports","PA (PA6, PA66)",0.03
+EU27+3,2025,"Household, Leisure, Sports","PA (PA6, PA66)",0.04
+EU27+3,2030,"Household, Leisure, Sports","PA (PA6, PA66)",0.05
+EU27+3,2035,"Household, Leisure, Sports","PA (PA6, PA66)",0.06
+EU27+3,2040,"Household, Leisure, Sports","PA (PA6, PA66)",0.06
+EU27+3,2045,"Household, Leisure, Sports","PA (PA6, PA66)",0.06
+EU27+3,2050,"Household, Leisure, Sports","PA (PA6, PA66)",0.06
+EU27+3,2020,"Household, Leisure, Sports",PC,0.03
+EU27+3,2025,"Household, Leisure, Sports",PC,0.04
+EU27+3,2030,"Household, Leisure, Sports",PC,0.05
+EU27+3,2035,"Household, Leisure, Sports",PC,0.06
+EU27+3,2040,"Household, Leisure, Sports",PC,0.06
+EU27+3,2045,"Household, Leisure, Sports",PC,0.06
+EU27+3,2050,"Household, Leisure, Sports",PC,0.06
+EU27+3,2020,"Household, Leisure, Sports",Other Thermoplastics,0.03
+EU27+3,2025,"Household, Leisure, Sports",Other Thermoplastics,0.04
+EU27+3,2030,"Household, Leisure, Sports",Other Thermoplastics,0.05
+EU27+3,2035,"Household, Leisure, Sports",Other Thermoplastics,0.06
+EU27+3,2040,"Household, Leisure, Sports",Other Thermoplastics,0.06
+EU27+3,2045,"Household, Leisure, Sports",Other Thermoplastics,0.06
+EU27+3,2050,"Household, Leisure, Sports",Other Thermoplastics,0.06
+EU27+3,2020,"Household, Leisure, Sports",PUR,0.0
+EU27+3,2025,"Household, Leisure, Sports",PUR,0.0
+EU27+3,2030,"Household, Leisure, Sports",PUR,0.0
+EU27+3,2035,"Household, Leisure, Sports",PUR,0.0
+EU27+3,2040,"Household, Leisure, Sports",PUR,0.0
+EU27+3,2045,"Household, Leisure, Sports",PUR,0.0
+EU27+3,2050,"Household, Leisure, Sports",PUR,0.0
+EU27+3,2020,"Household, Leisure, Sports",Other Plastics,0.03
+EU27+3,2025,"Household, Leisure, Sports",Other Plastics,0.04
+EU27+3,2030,"Household, Leisure, Sports",Other Plastics,0.05
+EU27+3,2035,"Household, Leisure, Sports",Other Plastics,0.06
+EU27+3,2040,"Household, Leisure, Sports",Other Plastics,0.06
+EU27+3,2045,"Household, Leisure, Sports",Other Plastics,0.06
+EU27+3,2050,"Household, Leisure, Sports",Other Plastics,0.06
+EU27+3,2020,Others,"PE-LD, -LLD",0.13
+EU27+3,2025,Others,"PE-LD, -LLD",0.11
+EU27+3,2030,Others,"PE-LD, -LLD",0.1
+EU27+3,2035,Others,"PE-LD, -LLD",0.08
+EU27+3,2040,Others,"PE-LD, -LLD",0.08
+EU27+3,2045,Others,"PE-LD, -LLD",0.08
+EU27+3,2050,Others,"PE-LD, -LLD",0.08
+EU27+3,2020,Others,"PE-HD, -MD",0.13
+EU27+3,2025,Others,"PE-HD, -MD",0.11
+EU27+3,2030,Others,"PE-HD, -MD",0.1
+EU27+3,2035,Others,"PE-HD, -MD",0.08
+EU27+3,2040,Others,"PE-HD, -MD",0.08
+EU27+3,2045,Others,"PE-HD, -MD",0.08
+EU27+3,2050,Others,"PE-HD, -MD",0.08
+EU27+3,2020,Others,PP,0.13
+EU27+3,2025,Others,PP,0.11
+EU27+3,2030,Others,PP,0.1
+EU27+3,2035,Others,PP,0.08
+EU27+3,2040,Others,PP,0.08
+EU27+3,2045,Others,PP,0.08
+EU27+3,2050,Others,PP,0.08
+EU27+3,2020,Others,PS,0.13
+EU27+3,2025,Others,PS,0.11
+EU27+3,2030,Others,PS,0.1
+EU27+3,2035,Others,PS,0.08
+EU27+3,2040,Others,PS,0.08
+EU27+3,2045,Others,PS,0.08
+EU27+3,2050,Others,PS,0.08
+EU27+3,2020,Others,PS-E,0.13
+EU27+3,2025,Others,PS-E,0.11
+EU27+3,2030,Others,PS-E,0.1
+EU27+3,2035,Others,PS-E,0.08
+EU27+3,2040,Others,PS-E,0.08
+EU27+3,2045,Others,PS-E,0.08
+EU27+3,2050,Others,PS-E,0.08
+EU27+3,2020,Others,PVC,0.13
+EU27+3,2025,Others,PVC,0.11
+EU27+3,2030,Others,PVC,0.1
+EU27+3,2035,Others,PVC,0.08
+EU27+3,2040,Others,PVC,0.08
+EU27+3,2045,Others,PVC,0.08
+EU27+3,2050,Others,PVC,0.08
+EU27+3,2020,Others,"ABS, SAN",0.13
+EU27+3,2025,Others,"ABS, SAN",0.11
+EU27+3,2030,Others,"ABS, SAN",0.1
+EU27+3,2035,Others,"ABS, SAN",0.08
+EU27+3,2040,Others,"ABS, SAN",0.08
+EU27+3,2045,Others,"ABS, SAN",0.08
+EU27+3,2050,Others,"ABS, SAN",0.08
+EU27+3,2020,Others,PMMA,0.13
+EU27+3,2025,Others,PMMA,0.11
+EU27+3,2030,Others,PMMA,0.1
+EU27+3,2035,Others,PMMA,0.08
+EU27+3,2040,Others,PMMA,0.08
+EU27+3,2045,Others,PMMA,0.08
+EU27+3,2050,Others,PMMA,0.08
+EU27+3,2020,Others,"PA (PA6, PA66)",0.13
+EU27+3,2025,Others,"PA (PA6, PA66)",0.11
+EU27+3,2030,Others,"PA (PA6, PA66)",0.1
+EU27+3,2035,Others,"PA (PA6, PA66)",0.08
+EU27+3,2040,Others,"PA (PA6, PA66)",0.08
+EU27+3,2045,Others,"PA (PA6, PA66)",0.08
+EU27+3,2050,Others,"PA (PA6, PA66)",0.08
+EU27+3,2020,Others,PC,0.0
+EU27+3,2025,Others,PC,0.03
+EU27+3,2030,Others,PC,0.05
+EU27+3,2035,Others,PC,0.08
+EU27+3,2040,Others,PC,0.08
+EU27+3,2045,Others,PC,0.08
+EU27+3,2050,Others,PC,0.08
+EU27+3,2020,Others,PET,0.13
+EU27+3,2025,Others,PET,0.11
+EU27+3,2030,Others,PET,0.1
+EU27+3,2035,Others,PET,0.08
+EU27+3,2040,Others,PET,0.08
+EU27+3,2045,Others,PET,0.08
+EU27+3,2050,Others,PET,0.08
+EU27+3,2020,Others,Other Thermoplastics,0.13
+EU27+3,2025,Others,Other Thermoplastics,0.17
+EU27+3,2030,Others,Other Thermoplastics,0.21
+EU27+3,2035,Others,Other Thermoplastics,0.25
+EU27+3,2040,Others,Other Thermoplastics,0.25
+EU27+3,2045,Others,Other Thermoplastics,0.25
+EU27+3,2050,Others,Other Thermoplastics,0.25
+EU27+3,2020,Others,PUR,0.0
+EU27+3,2025,Others,PUR,0.0
+EU27+3,2030,Others,PUR,0.0
+EU27+3,2035,Others,PUR,0.0
+EU27+3,2040,Others,PUR,0.0
+EU27+3,2045,Others,PUR,0.0
+EU27+3,2050,Others,PUR,0.0
+EU27+3,2020,Others,Other Plastics,0.13
+EU27+3,2025,Others,Other Plastics,0.11
+EU27+3,2030,Others,Other Plastics,0.1
+EU27+3,2035,Others,Other Plastics,0.08
+EU27+3,2040,Others,Other Plastics,0.08
+EU27+3,2045,Others,Other Plastics,0.08
+EU27+3,2050,Others,Other Plastics,0.08
+EU27+3,2020,PUR slabstock mattresses,PUR,0.0
+EU27+3,2025,PUR slabstock mattresses,PUR,0.0
+EU27+3,2030,PUR slabstock mattresses,PUR,0.0
+EU27+3,2035,PUR slabstock mattresses,PUR,0.0
+EU27+3,2040,PUR slabstock mattresses,PUR,0.0
+EU27+3,2045,PUR slabstock mattresses,PUR,0.0
+EU27+3,2050,PUR slabstock mattresses,PUR,0.0
+EU27+3,2020,PUR slabstock furniture,PUR,0.0
+EU27+3,2025,PUR slabstock furniture,PUR,0.0
+EU27+3,2030,PUR slabstock furniture,PUR,0.0
+EU27+3,2035,PUR slabstock furniture,PUR,0.0
+EU27+3,2040,PUR slabstock furniture,PUR,0.0
+EU27+3,2045,PUR slabstock furniture,PUR,0.0
+EU27+3,2050,PUR slabstock furniture,PUR,0.0
+EU27+3,2020,PUR moulded furniture,PUR,0.0
+EU27+3,2025,PUR moulded furniture,PUR,0.0
+EU27+3,2030,PUR moulded furniture,PUR,0.0
+EU27+3,2035,PUR moulded furniture,PUR,0.0
+EU27+3,2040,PUR moulded furniture,PUR,0.0
+EU27+3,2045,PUR moulded furniture,PUR,0.0
+EU27+3,2050,PUR moulded furniture,PUR,0.0
+EU27+3,2020,PUR others in Others,PUR,0.0
+EU27+3,2025,PUR others in Others,PUR,0.0
+EU27+3,2030,PUR others in Others,PUR,0.0
+EU27+3,2035,PUR others in Others,PUR,0.0
+EU27+3,2040,PUR others in Others,PUR,0.0
+EU27+3,2045,PUR others in Others,PUR,0.0
+EU27+3,2050,PUR others in Others,PUR,0.0

@@ -1,0 +1,41 @@
+model_class: plastics
+scenario: residual
+logging:
+  level: INFO
+input_data_path: data/fd-sv-gr_plastics/input
+customization:
+  model_driven: final_demand
+  lifetime_model_name: NormalLifetime
+  end_use_sectors: MainSectors
+  waste_not_for_recycling:
+  - Landfill
+  - Incineration
+visualization:
+  inflow:
+    do_visualize: false
+  production:
+    do_visualize: false
+  outflow:
+    do_visualize: false
+  sankey:
+    do_visualize: false
+  dashboard:
+    do_visualize: false
+output_path: data/fd-sv-gr_plastics/output_residual
+do_export:
+  pickle: false
+  csv: false
+selected_export:
+  csv_selected_flows:
+  - sysenv => Polymer market
+  - Plastics market => End use stock
+  - Waste collection => Waste sorting
+  - End use stock => Waste collection
+  csv_selected_stocks:
+  - End use stock
+  csv_slice_stocks:
+  - time:
+    - 2020
+    - 2030
+    - 2040
+    - 2050
