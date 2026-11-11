@@ -54,6 +54,10 @@ import pandas as pd
 # ---------------------------------------------------------------------------
 DASH = "–"  # en-dash used in the output vehicle names
 
+# The workbook sheet holding the passenger-car rows. Older exports put them on
+# the only sheet, so fall back to the first sheet when this name is absent.
+OPENPROM_SHEET = "PassengerCars"
+
 # Removes the van share Eurostat includes but TRANSIENCE excludes.
 # Source: ICCT Pocketbook 2025/26, fig. 3.3. Applied to every country/type.
 REDUCTION = 0.95
@@ -156,7 +160,12 @@ def build_inflow(eurostat_path, openprom_path):
         euro_h2[code] = _num(raw.iloc[r, COL_H2])
 
     # -- 2. OPEN-PROM capacity additions per region+type -------------------
-    tv = pd.read_excel(openprom_path)
+    sheets = pd.ExcelFile(openprom_path).sheet_names
+    sheet = OPENPROM_SHEET if OPENPROM_SHEET in sheets else sheets[0]
+    tv = pd.read_excel(openprom_path, sheet_name=sheet)
+    # Year headers come through as ints in newer exports and as strings in older
+    # ones; the lookups below use strings.
+    tv.columns = [str(c) for c in tv.columns]
     tv = tv[tv['Variable'].astype(str)
             .str.startswith('Capacity Additions|Passenger Cars|')].copy()
     tv['Suffix'] = tv['Variable'].astype(str).str.split('|').str[-1]
@@ -233,15 +242,12 @@ def build_inflow(eurostat_path, openprom_path):
             base = base_2024[code][vt]
             series = {2023: base * RATIO_2023, 2024: base}
 
-            if vt == V_H2:
-                series[2025] = base
-                series[2026] = base
-                for y in range(2027, 2051):
-                    series[y] = op_scaled(code, vt, y)
-            else:
-                for y in range(2026, 2051):
-                    series[y] = op_scaled(code, vt, y)
-                series[2025] = (series[2024] + series[2026]) / 2.0
+            # Every type, hydrogen included: Eurostat through 2024, OPEN-PROM
+            # from 2026, 2025 interpolated between them. Holding hydrogen at the
+            # Eurostat level for a year or two longer only moved the step.
+            for y in range(2026, 2051):
+                series[y] = op_scaled(code, vt, y)
+            series[2025] = (series[2024] + series[2026]) / 2.0
 
             for y in YEARS:
                 rows.append({'Region': code, 'Vehicle type': vt,
