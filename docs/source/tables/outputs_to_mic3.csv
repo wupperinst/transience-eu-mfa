@@ -1,8 +1,4 @@
-Parameter, Sink, Description
-Steel production, Techno-economic industry modules, Production of steel products
-Plastics production, Techno-economic industry modules, Production of polymers
-Concrete production, Techno-economic industry module, Production of concrete
-Cement production, Techno-economic industry modules, Production of cement
-Clinker production, Techno-economic industry modules, Production of clinker
-Steel scrap, Techno-economic industry module, Availability of secondary material
-Recyclates, Techno-economic industry module, Availability of secondary material
+Receiving module, Output from EU MFA, Coverage, Unit, Use in receiving module
+REMIND-MFA, "Material demand, stock outflows and end-of-life flows", Steel and plastics, kt/year, "Material demand is used to determine production and trade, while stock outflows and end-of-life flows inform collection, sorting and recycling"
+FORECAST-Sites, Material production requirements and scrap availability, "Steel, plastics and cement", Mt/year, "Provides production volumes to be allocated across industrial sites and constrains secondary production"
+ITOM, "Material demand, production requirements and scrap availability",  "Steel, plastics and cement", Mt/year, "Provides physical demand and secondary-material availability for modelling industrial production pathways"
