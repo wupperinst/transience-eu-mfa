@@ -1,5 +1,5 @@
 Source, Input to EU MFA, Coverage, Unit, Use in EU MFA
 OPEN-GEM, "Sectoral demand, production, household consumption and GDP", "Steel, plastics, cement and commercial buildings", Billion USD 2017, "Growth in socioeconomic indicators is translated into changes in physical product and material demand using sector-specific correspondence tables and elasticity assumptions"
-OPEN-PROM, "New passenger-car registrations by technology", Passenger vehicles, Vehicles per year, "Determines future vehicle inflows and their distribution across vehicle sizes and powertrain technologies calibrated to Eurostat
+OPEN-PROM, "New passenger-car registrations by technology", Passenger vehicles, Vehicles per year, "Determines future vehicle inflows and their distribution across vehicle sizes and powertrain technologies calibrated to Eurostat"
 Product and Service Database, "Floor space, building and vehicle shares, and material intensities", "Buildings and passenger vehicles", "m2/capita, %, kg/m2 and kg/vehicle", "Translates service and product demand into physical stocks and material requirements"
 REMIND-MFA, "Imports and exports of materials and manufactured products", "Steel and plastics", "Tonnes per year", "Trade at the aggregated REMIND-MFA level is disaggregated to EU MFA sectors, products and polymers using the structure of EU MFA demand"
