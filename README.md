@@ -1,10 +1,10 @@
 # TRANSIENCE EU MFA module
-*This repo displays the status of development for the EU MFA module within the TRANSIENCE project (Task 4.3).*
+*This repo displays the EU MFA module within the TRANSIENCE project.*
 
 The EU MFA module is a multi-regional dynamic Material Flow Analysis (MFA) of the basic materials steel, plastics and cement. 
 It is able to combine bottom-up approaches for buildings and vehicles with top-down approaches for steel, plastics and cement.
 
-The EU MFA is planned to be one module in a larger framework developed within the [TRANSIENCE (TRANSItioning towards an Efficient, carbon-Neutral Circular European industry) project](https://www.transience.eu/).
+The EU MFA is one module in a larger framework developed within the [TRANSIENCE (TRANSItioning towards an Efficient, carbon-Neutral Circular European industry) project](https://www.transience.eu/).
 
 ## Acknowledgements
 The module development is funded from the European Union’s Horizon programme under Grant Agreement No. 101137606 (TRANSIENCE). 
@@ -23,7 +23,7 @@ The module is built with the framework [flodym (Flexibe Open Dynamic Material Sy
  <!-- stop parsing here on readthedocs -->
 
 ## Documentation
-A preliminary documentation of the module is available on [readthedocs](https://transience-eu-mfa.readthedocs.io/en/latest/).
+A documentation of the module is available on [readthedocs](https://transience-eu-mfa.readthedocs.io/en/latest/).
 
 ## License
 [TRANSIENCE EU MFA](https://github.com/wupperinst/transience-eu-mfa) © 2025 by [Wuppertal Institute for climate, environment and energy](https://wupperinst.org/) and [Fraunhofer ISI](https://www.isi.fraunhofer.de/en.html) is licensed under [GNU AGPL 3.0](https://www.gnu.org/licenses/agpl-3.0.html)
