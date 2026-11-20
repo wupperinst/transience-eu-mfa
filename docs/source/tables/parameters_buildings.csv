@@ -1,4 +1,9 @@
 Parameter, Index, Description
-Material intensity buildings, "r, b, a, l, o, i, g", "Differentiates the use of steel, concrete, insulation and glass in buildings by region, building type and age cohort"
-Building inflow, "t, r, b, a", "Floor space development differentiated by region, building type and age cohort"
-Building outflow, "t, r, b, a", "Floor space development differentiated by region, building type and age cohort"
+"Material intensity buildings", "r, b, a, l, o, i, g", "Differentiates the use of steel, concrete, insulation and glass in buildings by region, building type and age cohort"
+"Population", "t, r", "Population change differentiated by time and region"
+"Floor space per capita", "t, r", "Residential square metre per inhabitant differentiated by time and region"
+"Building share", "t, r, b", "Residential building share differentiated by time, region and building type"
+"Old stock", "t, r, b, a", "Residential and commercial existing stock to calibrate the required new stock differentiated by time, region, age cohort and building type"
+"Service production", "t, r, b", "Commercial building production in monetary terms differentiated by time, region and building type"
+"Base year stock", "r, b", "Commercial building stock at base year differentiated by region and building type"
+"Reuse parameter (steel and concrete)", "t, r, l, o", "Material fraction send back to stock differentiated by time, region and material product"

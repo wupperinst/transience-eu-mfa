@@ -1,3 +1,6 @@
 Variable, Index, Description
+"Building inflow", "t, r, a, b", "Yearly constructed building floor space"
+"Building outflow", "t, r, a, b", "Yearly demolished building floor space"
 "Material inflows for buildings", "t, r, l, o, i, g", "Yearly steel, insulation, concrete and glass inflows"
 "Material outflows from buildings", "t, r, l, o, i, g", "Yearly steel, insulation, concrete and glass outflows"
+"Reuse flow", "t, r, a, l, o", "Yearly steel and concrete reuse flow"

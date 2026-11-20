@@ -8,6 +8,15 @@ the top-down plastics, steel, and cement models. It is implemented in
 each material model, calculates the residual top-down demand, and creates the
 future final-demand inputs used by the material models.
 
+The figure below shows these steps: the historic chain, the residual at the base
+year and the bottom-up sub-modules are combined into one result for all sectors.
+
+.. figure:: img/Combined_model_computation.png
+   :class: without-border
+   :alt: Computation of the combined model
+
+   Computation of the combined model
+
 Selecting models
 ================
 
