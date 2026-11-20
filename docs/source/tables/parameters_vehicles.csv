@@ -1,6 +1,8 @@
 Parameter, Index, Description
-Material intensity vehicles, "v, z, l, d, g", "Differentiates the use of steel in cars by car type and size"
-Vehicle registrations, "t, r, v", "Number of passenger vehicles differentiated by type and size"
-Consumption change, "t, s", "Indicates changes in the consumption per use sector"
-Translation, "t, s", "Indicates changes in the relationship between monetary and physical units"
-Lifetimes, "s", "Indicates lifetime of products per use sector (mean and standard deviation)"
+"Material intensity for steel in vehicles", "t, v, z, l", "Differentiates the use of steel in cars by type, size and time"
+"Material intensity for plastics in vehicles", "v,z, d", "Differentiates the use of plastics in cars by car type and size"
+"Material intensity for glass in vehicle", "v,z,g", "Differentiates the use of glass in cars by car type and size"
+"New vehicle registrations", "t, r, v", "Number of passenger vehicles differentiated by type"
+"Lifetimes", "s", "Indicates lifetime of products per use sector (mean and standard deviation)"
+"Vehicle technology share", "t, r, z", "Differentiates the share of vehicle sizes by region and over time"
+"Reuse parameter (steel and plastics)", "t, r, v, l, d", "Indicates material faction send back to stock"
